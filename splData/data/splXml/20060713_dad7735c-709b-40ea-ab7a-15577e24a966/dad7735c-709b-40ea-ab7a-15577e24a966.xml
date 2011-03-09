@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="dad7735c-709b-40ea-ab7a-15577e24a966" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title ID="INV-fdfda890-b3c2-4728-8f68-24b2af219d23" mediaType="text/x-hl7-title+xml">Lactated Ringer&#8217;s Injection, USP<br />in
+        VIAFLEX Plastic Container</title>
+<effectiveTime value="20060608" />
+<setId root="dad7735c-709b-40ea-ab7a-15577e24a966" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Baxter Healthcare Corporation</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="53B71D92-7502-1AB3-5819-BDB61C88A9D7" />
+<effectiveTime value="20060608" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0117" codeSystem="2.16.840.1.113883.6.69" />
+<name>Lactated Ringers</name>
+<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="600">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="600" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sodium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="310">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="310" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="TU7HW0W0QT" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sodium Lactate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="TU7HW0W0QT" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium lactate</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="30">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="30" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>potassium chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="20">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="20" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="M4I0D6VV5M" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Calcium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="M4I0D6VV5M" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>calcium chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Sodium chloride, potassium chloride, sodium lactate and calcium chloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="250">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="250" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0117-02" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="mL" value="500">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="500" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0117-03" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="mL" value="1000">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1000" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0117-04" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="INV-64601724-ad92-4ff0-8bfb-6da906dc23d3">
+<id root="8771D7C6-D586-BBB1-3905-9534B90BB749" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title ID="INV-ffa4c872-ffcc-4219-9a69-91195ba78c1b" mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text ID="INV-e18151e4-b141-464f-bec8-689cf2a6cce4"><paragraph ID="INV-2a3923e5-1400-44b3-b81b-3b9b0d0238a7">Lactated Ringer&#8217;s
+                            Injection, USP is a sterile, nonpyrogenic solution for fluid and
+                            electrolyte replenishment in single dose containers for intravenous
+                            administration. It contains no antimicrobial agents. Composition,
+                            osmolarity, pH, ionic concentration and caloric content are shown in
+                            Table 1.</paragraph><table border="1" frame="border"><col align="left" width="60pt" />
+<col align="left" width="40pt" />
+<col align="left" width="60pt" />
+<col align="left" width="67pt" />
+<col align="left" width="62pt" />
+<col align="left" width="67pt" />
+<col align="left" width="71pt" />
+<col align="left" width="75pt" />
+<col align="left" width="49pt" />
+<col align="left" width="53pt" />
+<col align="left" width="52pt" />
+<col align="left" width="53pt" />
+<col align="left" width="47pt" />
+<col align="left" width="59pt" />
+<tbody valign="top">
+<tr valign="top"><td align="center" rowspan="2" styleCode="Botrule Lrule Rrule" valign="middle"><content styleCode="bold">Table 1</content></td><td align="center" rowspan="2" styleCode="Botrule                                         Rrule" valign="middle"> Size (mL) </td><td align="center" colspan="4" styleCode="Botrule Rrule" valign="middle"> Composition (g/L) </td><td align="center" rowspan="2" styleCode="Botrule                                         Rrule" valign="middle"> Osmolarity (mOsmol/L) (calc) </td><td align="center" rowspan="2" styleCode="Botrule                                         Rrule" valign="middle"> pH </td><td align="center" colspan="5" styleCode="Botrule                                         Rrule" valign="middle"> Ionic Composition (mEq/L) </td><td align="center" rowspan="2" styleCode="Botrule                                         Rrule" valign="middle"> Caloric Content (kcal/L) </td></tr>
+<tr valign="top"><td align="center" styleCode="Botrule Lrule Rrule" valign="middle">Sodium Chloride, USP, (NaCl)</td><td align="center" styleCode="Botrule Rrule" valign="middle">Sodium Lactate, (C<sub>3</sub>H<sub>5</sub>NaO<sub>3</sub>)</td><td align="center" styleCode="Botrule Rrule" valign="middle">Potassium Chloride, USP, (KCl)</td><td align="center" styleCode="Botrule Rrule" valign="middle">Calcium Chloride, USP (CaCl<sub>2</sub>&#183;2H<sub>2</sub>O)</td><td align="center" styleCode="Botrule Rrule" valign="middle">Sodium</td><td align="center" styleCode="Botrule Rrule" valign="middle"><content styleCode="bold">Potassium</content></td><td align="center" styleCode="Botrule Rrule" valign="middle">Calcium</td><td align="center" styleCode="Botrule Rrule" valign="middle">Chloride</td><td align="center" styleCode="Botrule Rrule" valign="middle">Lactate</td></tr>
+<tr valign="top"><td align="left" rowspan="3" styleCode="Botrule                                         Lrule Rrule" valign="middle"> Lactated Ringer&#8217;s Injection, USP </td><td align="center" styleCode="Botrule Rrule" valign="middle"> 250 </td><td align="center" rowspan="3" styleCode="Botrule                                         Rrule" valign="middle"> 6 </td><td align="center" rowspan="3" styleCode="Botrule                                         Rrule" valign="middle"> 3.1 </td><td align="center" rowspan="3" styleCode="Botrule                                         Rrule" valign="middle"> 0.3 </td><td align="center" rowspan="3" styleCode="Botrule                                         Rrule" valign="middle"> 0.2 </td><td align="center" rowspan="3" styleCode="Botrule                                         Rrule" valign="middle"> 273 </td><td align="center" rowspan="3" styleCode="Botrule Rrule" valign="middle"> 6.5 <br />(6.0 to 7.5) </td><td align="center" rowspan="3" styleCode="Botrule Rrule" valign="middle"> 130 </td><td align="center" rowspan="3" styleCode="Botrule Rrule" valign="middle"><content styleCode="bold">4</content></td><td align="center" rowspan="3" styleCode="Botrule Rrule" valign="middle"> 2.7 </td><td align="center" rowspan="3" styleCode="Botrule Rrule" valign="middle"> 109 </td><td align="center" rowspan="3" styleCode="Botrule Rrule" valign="middle"> 28 </td><td align="center" rowspan="3" styleCode="Botrule Rrule" valign="middle"> 9 </td></tr>
+<tr valign="top"><td align="center" styleCode="Botrule Lrule Rrule" valign="middle">500</td></tr>
+<tr valign="top"><td align="center" styleCode="Botrule Lrule Rrule" valign="middle">1000</td></tr>
+</tbody>
+</table><paragraph ID="INV-e5ef41ff-91ee-438c-afa5-562e43188e48">The VIAFLEX plastic
+                            container is fabricated from a specially formulated polyvinyl chloride
+                            (PL 146 Plastic). The amount of water that can permeate from inside the     container into the overwrap is insufficient to affect the solution
+                            significantly. Solutions in contact with the plastic container can leach
+                            out certain of its chemical components in very small amounts within the
+                            expiration period, e.g., di-2-ethylhexyl phthalate (DEHP), up to 5 parts
+                            per million. However, the safety of the plastic has been confirmed in
+                            tests in animals according to USP biological tests for plastic
+                            containers as well as by tissue culture toxicity studies.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-bf9470bc-ddfe-4d62-bcd4-32c414bfe94c">
+<id root="EDE07D2B-DED1-3CE1-54FD-BA74540137D3" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title ID="INV-34d80d54-3446-435f-913e-880a87307eb3" mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text ID="INV-2e85707b-072c-4113-b225-060c4cd67de0"><paragraph ID="INV-88407cef-894d-4e99-9058-e155d19240a8">Lactated Ringer&#8217;s
+                            Injection, USP has value as a source of water and electrolytes. It is
+                            capable of inducing diuresis depending on the clinical condition of the
+                            patient.</paragraph><paragraph ID="INV-0c96bff2-b9fa-4fa4-9525-447ec00ea981">Lactated Ringer&#8217;s
+                            Injection, USP produces a metabolic alkalinizing effect. Lactate ions
+                            are metabolized ultimately to carbon dioxide and water, which requires
+                            the consumption of hydrogen cations.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-95686bda-6a10-4b07-be20-56b1a18e594c">
+<id root="04D09E9B-D613-79F7-B8AC-31C115E1BD43" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS AND USAGE SECTION" />
+<title ID="INV-f7a108d9-1b55-4e11-9006-9cdfccf4a54f" mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text ID="INV-03a5968d-09ac-497d-9c66-2bd3bbf7a125"><paragraph ID="INV-d3a8a618-61a9-497b-9cae-a28d4a62003f">Lactated Ringer&#8217;s
+                            Injection, USP is indicated as a source of water and electrolytes or as
+                            an alkalinizing agent.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-13ff7959-b07d-421d-b49e-a8c733db6f08">
+<id root="FFB9B512-B733-69D8-AB86-C0FFDCEF5318" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title ID="INV-03565abd-603e-4e20-accc-0caee0dc6df6" mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text ID="INV-ca3be693-8421-40b9-ac20-95286ad033ce"><paragraph ID="INV-72114844-ad7b-4b0f-92bb-965359d56836">None
+                        known</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-3702da0b-318a-4a06-a170-8fd1379df18c">
+<id root="177CF354-B27D-2074-0543-BB2D1002FD90" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title ID="INV-0c0d162e-c232-44a1-bda3-2c579bf1af3c" mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text ID="INV-b96bb9f5-f1cc-4338-8dfd-74b04bc6bcf4"><paragraph ID="INV-92801183-39e7-4802-8bad-e459db8b23a0">Lactated Ringer&#8217;s
+                            Injection, USP should be used with great care, if at all, in patients
+                            with congestive heart failure, severe renal insufficiency, and in
+                            clinical states in which there exists edema with sodium retention.</paragraph><paragraph ID="INV-705070bb-e648-457d-ba85-3abe94dc382e">Lactated Ringer&#8217;s
+                            Injection, USP should be used with great care, if at all, in patients
+                            with hyperkalemia, severe renal failure, and in conditions in which
+                            potassium retention is present.</paragraph><paragraph ID="INV-35a3fb93-bdd7-4804-9758-c8419e77de8e">Lactated Ringer&#8217;s
+                            Injection, USP should be used with great care in patients with metabolic
+                            or respiratory alkalosis. The administration of lactate ions should be
+                            done with great care in those conditions in which there is an increased
+                            level or an impaired utilization of these ions, such as severe hepatic
+                            insufficiency.</paragraph><paragraph ID="INV-405b696c-f421-45c4-a188-6f7a71534c9b">Lactated Ringer&#8217;s
+                            Injection, USP should not be administered simultaneously with blood
+                            through the same administration set because of the likelihood of
+                            coagulation.</paragraph><paragraph ID="INV-7478efac-a641-4f12-9f05-23cf54d258b5">The intravenous
+                            administration of Lactated Ringer&#8217;s Injection, USP can cause fluid
+                            and/or solute overloading resulting in dilution of serum electrolyte                            concentrations, overhydration, congested states, or pulmonary edema. The
+                            risk of dilutional states is inversely proportional to the electrolyte
+                            concentrations of the injections. The risk of solute overload causing
+                            congested states with peripheral and pulmonary edema is directly
+                            proportional to the electrolyte concentrations of the injections.</paragraph><paragraph ID="INV-dee2c8c3-13b4-48fd-91c0-83854e67524b">In patients with
+                            diminished renal function, administration of Lactated Ringer&#8217;s
+                            Injection, USP may result in sodium or potassium retention.</paragraph><paragraph ID="INV-d9e28820-0914-456d-827b-fe81518be821">Lactated Ringer&#8217;s
+                            Injection, USP is not for use in the treatment of lactic
+                        acidosis.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-00993beb-0ad0-4d27-bc6b-1e2e1ef9177b">
+<id root="50C591E9-D218-7956-313C-A43E6FFDE460" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title ID="INV-a913cb95-d655-42d4-9eaa-70d301d16c3e" mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text ID="INV-a13fc3ac-a287-443a-812a-d1a547bcf82c"><paragraph ID="INV-aba5c72d-8c25-4c00-afda-0b4f49bb3b44">Clinical evaluation
+                            and periodic laboratory determinations are necessary to monitor changes
+                            in fluid balance, electrolyte concentrations, and acid base balance
+                            during prolonged parenteral therapy or whenever the condition of the
+                            patient warrants such evaluation.</paragraph><paragraph ID="INV-5a4366b2-ce23-47bc-8065-517103a708c2">Lactated Ringer&#8217;s
+                            Injection, USP must be used with caution. Excess administration may
+                            result in metabolic alkalosis.</paragraph><paragraph ID="INV-70c93607-984a-4f76-81ed-c891895cdb20">Caution must be
+                            exercised in the administration of Lactated Ringer&#8217;s Injection, USP to
+                            patients receiving corticosteroids or corticotropin.</paragraph></text>
+<effectiveTime value="20060608" />
+<component>
+<section ID="INV-5c253037-3169-4f57-854f-86bf27211875">
+<id root="63931FDD-0CDC-1181-75CF-03B6514420A9" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title ID="INV-2676264e-2622-4aed-8b49-d8777c88d7dc" mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20060608" />
+<component>
+<section ID="INV-65aeaa78-4b40-4c0f-8984-532885fc29db">
+<id root="721E9426-F0D9-65BD-84B1-6DEA0EA537B5" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERATOGENIC EFFECTS SECTION" />
+<title ID="INV-2d56912d-874c-4451-8329-f0418b427a4d" mediaType="text/x-hl7-title+xml">Teratogenic
+                                        Effects</title>
+<effectiveTime value="20060608" />
+<component>
+<section>
+<id root="9408DEAC-1C57-D7CB-BAD6-ACF6E4624CC2" />
+<title ID="INV-1add8f04-f39a-44ff-aa62-0d29c4d4cdae" mediaType="text/x-hl7-title+xml">Pregnancy Category C</title>
+<text ID="INV-35b09680-fc47-4666-ac67-14cb113b405e"><paragraph ID="INV-913b7291-9343-4609-a94c-7d7cf1fb324b">Animal reproduction studies have not been
+                                                  conducted with Lactated Ringer&#8217;s Injection, USP.
+                                                  It is also not known whether Lactated Ringer&#8217;s
+                                                  Injection, USP can cause fetal harm when
+                                                  administered to a pregnant woman or can affect
+                                                  reproduction capacity. Lactated Ringer&#8217;s   Injection, USP should be given to a pregnant
+                                                  woman only if clearly needed.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-95f79c5c-2778-4c0e-8063-78243b2e0f10">
+<id root="F2C6200D-544C-9766-2858-42EEC9F0727F" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title ID="INV-92d81018-5fa2-462d-9a9c-6c49dab52860" mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text ID="INV-d193aeb3-d94d-42a9-9af3-02abb77077aa"><paragraph ID="INV-7a58bf7f-d897-4aec-9040-6d4d13486bad">Safety and
+                                    effectiveness of Lactated Ringer&#8217;s Injection, USP in pediatric
+                                    patients have not been established by adequate and well
+                                    controlled trials, however, the use of electrolyte solutions in
+                                    the pediatric population is referenced in the medical
+                                    literature. The warnings, precautions and adverse reactions
+                                    identified in the label copy should be observed in the pediatric
+                                    population.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-2fc20330-7a7e-41c7-9942-b4bfb2637693">
+<id root="70684688-DBEC-6EF2-C252-352C84AEFECB" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GERIATRIC USE SECTION" />
+<title ID="INV-dbf753ff-5d13-4c9f-8eb6-b0790e0c0a3e" mediaType="text/x-hl7-title+xml">Geriatric Use</title>
+<text ID="INV-5e32f3e4-e27b-47f5-b3f5-8e656d85da33"><paragraph ID="INV-25aa7cd5-9272-47e5-8d59-b747eb8025e4">Clinical           studies of Lactated Ringer&#8217;s Injection, USP did not include
+                                    sufficient numbers of subjects aged 65 and over to determine
+                                    whether they respond differently from younger subjects. Other
+                                    reported clinical experience has not identified differences in
+                                    responses between the elderly and younger patients. In general,
+                                    dose selection for an elderly patient should be cautious,
+                                    usually starting at the low end of the dosing range, reflecting                              the greater frequency of decreased hepatic, renal, or cardiac
+                                    function, and of concomitant disease or drug therapy.</paragraph><paragraph ID="INV-d54090dc-403a-4743-ab4f-615de3e606d8">Do not
+                                    administer unless solution is clear and seal is
+                                intact.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-0938fd63-b672-4596-8cb9-abcbef8b4aae">
+<id root="EE63EB10-695A-8988-6F74-6DD19612CFC4" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title ID="INV-dc12e031-bc8c-4184-a570-d26f1e511f9b" mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text ID="INV-082627f3-d883-4d50-a649-323a1c53c3cf"><paragraph ID="INV-d102874c-5e09-459a-be53-4680e3a48b91">Allergic reactions
+                            or anaphylactoid symptoms such as localized or generalized urticaria and
+                            pruritis; periorbital, facial, and/or laryngeal edema; coughing,
+                            sneezing, and/or difficulty with breathing have been reported during
+                            administration of Lactated Ringer&#8217;s Injection, USP. The reporting
+                            frequency of these signs and symptoms is higher in women during
+                            pregnancy.</paragraph><paragraph ID="INV-0a8698a9-0aca-4dd6-98a3-5a6fc5d648d5">Reactions which may
+                            occur because of the solution or the technique of administration include
+                            febrile response, infection at the site of injection, venous thrombosis                        or phlebitis extending from the site of injection, extravasation, and
+                            hypervolemia.</paragraph><paragraph ID="INV-5f64e1f1-b7bb-46d2-87dd-3106171488b0">If an adverse
+                            reaction does occur, discontinue the infusion, evaluate the patient,
+                            institute appropriate therapeutic countermeasures, and save the
+                            remainder of the fluid for examination if deemed necessary.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-ac2c45fe-f973-402a-8bad-3fd52b802b62">
+<id root="9C205E9C-588A-CB8D-9A97-95F7914B33CD" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title ID="INV-4677976a-a194-41ab-a39d-c80a8534492e" mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text ID="INV-293f6889-b231-46ce-8058-aa7c99657a95"><paragraph ID="INV-a7d66e8d-f332-4db9-a9d9-8b4623577059">As directed by a
+                            physician. Dosage is dependent upon the age, weight and clinical
+                            condition of the patient as well as laboratory determinations.</paragraph><paragraph ID="INV-981c5e22-9fb7-49c5-8423-59dbd9a36d79">Parenteral drug
+                            products should be inspected visually for particulate matter and
+                            discoloration prior to administration whenever solution and container            permit.</paragraph><paragraph ID="INV-7a968364-79d8-4463-8215-f4b49b3b8059">All injections in
+                            VIAFLEX plastic containers are intended for intravenous administration
+                            using sterile equipment.</paragraph><paragraph ID="INV-2c1c5422-9875-4c3d-8dec-64b80e4311d0">Additives may be
+                            incompatible. Complete information is not available. Those additives
+                            known to be incompatible should not be used. Consult with pharmacist, if
+                            available. If, in the informed judgment of the physician, it is deemed
+                            advisable to introduce additives, use aseptic technique. Mix thoroughly
+                            when additives have been introduced. Do not store solutions containing
+                            additives.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-46eb48fd-8f18-47a7-8dd8-31b3b3ba7c1e">
+<id root="C990E9D1-86BF-1928-B5D4-022D8FFA385E" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title ID="INV-11e11b41-d69a-4ce3-a6f8-ef2f07639136" mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text ID="INV-49bb349d-9938-4c8e-a775-a524cc26e69b"><paragraph ID="INV-e77c5201-f3e0-478e-aee0-1c1f4d2bbf5e">Lactated Ringer&#8217;s
+                            Injection, USP in VIAFLEX plastic container is available as follows:</paragraph><table frame="void"><col align="left" width="140pt" />
+<col align="left" width="140pt" />
+<col align="left" width="140pt" />
+<tbody valign="top">
+<tr valign="top"><td align="left" valign="middle"><content styleCode="bold">Code</content></td><td align="left" valign="middle"><content styleCode="bold">Size (mL)</content></td><td align="left" valign="middle"><content styleCode="bold">NDC</content></td></tr>
+<tr valign="top"><td align="left" valign="middle">
+                                        2B2322 </td><td align="left" valign="middle"> 250 </td><td align="left" valign="middle">
+                                        0338-0117-02 </td></tr>
+<tr valign="top"><td align="left" valign="middle">
+                                        2B2323 </td><td align="left" valign="middle"> 500 </td><td align="left" valign="middle">
+                                        0338-0117-03 </td></tr>
+<tr valign="top"><td align="left" valign="middle"> 2B2324 </td><td align="left" valign="middle"> 1000 </td><td align="left" valign="middle"> 0338-0117-04 </td></tr>
+</tbody>
+</table><paragraph ID="INV-9eb677be-3689-4ded-ba7b-f65c2a3be3cb">Exposure of
+                            pharmaceutical products to heat should be minimized. Avoid excessive
+                            heat. It is recommended the product be stored at room temperature
+                            (25&#176;C); brief exposure up to 40&#176;C does not adversely affect the         product.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-e15b3991-7871-4593-b9b3-72307b886bb3">
+<id root="FBFFF613-F5F6-AD07-DDA8-C08CC5C17C46" />
+<code code="38056-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SUPPLEMENTAL PATIENT MATERIAL" />
+<title ID="INV-c1fb2f06-7cee-4845-822c-0fd08947f51a" mediaType="text/x-hl7-title+xml">DIRECTIONS FOR USE OF
+                        VIAFLEX PLASTIC CONTAINER</title>
+<text ID="INV-51aefaa0-136c-4074-a37a-11da6eaa3545"><paragraph ID="INV-f7b0da15-f5e7-4a44-8925-acb3131a23c7"><content styleCode="bold">WARNING:</content> Do not use plastic containers in                         series connections. Such use could result in air embolism due to
+                            residual air being drawn from the primary container before
+                            administration of the fluid from the secondary container is
+                        completed.</paragraph></text>
+<effectiveTime value="20060608" />
+<component>
+<section ID="INV-cec397a3-6600-4ef4-a1b6-86b0df19f0a0">
+<id root="742D4EDD-1A32-0397-7ED4-514A025DEEE5" />
+<title ID="INV-b7fc5a15-7b1a-4e36-9121-3eebe054d7f0" mediaType="text/x-hl7-title+xml">To Open</title>
+<text ID="INV-500ea581-8797-49e5-a5d2-34637522142c"><paragraph ID="INV-141bfe41-6fe1-4a13-adb6-9baed96ac776">Tear
+                                    overwrap down side at slit and remove solution container. Some
+                                    opacity of the plastic due to moisture absorption during the
+                                    sterilization process may be observed. This is normal and does
+                                    not affect the solution quality or safety. The opacity will
+                                    diminish gradually. Check for minute leaks by squeezing inner
+                                    bag firmly. If leaks are found, discard solution as sterility
+                                    may be impaired. If supplemental medication is desired, follow
+                                    directions below.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-dbf612db-3c3c-479b-8de6-c948187a2cae">
+<id root="B828A1AF-D009-ED46-41FF-5686457CBA8A" />
+<title ID="INV-19ca05d6-310c-4bf2-bf33-2b01c11150af" mediaType="text/x-hl7-title+xml">Preparation for
+                                Administration</title>
+<text ID="INV-1079900f-1fe5-4718-811f-52914ca1bf38"><paragraph ID="INV-3d710670-0e71-4893-ae6f-75210ca012bc">1. Suspend
+                                    container from eyelet support.</paragraph><paragraph ID="INV-3b3ea8df-f637-4e62-b861-7ded92f8cf0d">2. Remove
+                                    plastic protector from outlet port at bottom of container.</paragraph><paragraph ID="INV-ab7eef57-d9f9-4131-a439-c70cb04284ee">3. Attach
+                                    administration set. Refer to complete directions accompanying
+                                    set.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-d895c3fe-e6b2-4b4b-98f4-3a84c5adb538">
+<id root="ED552866-792C-4ACA-9760-318286F79DEB" />
+<title ID="INV-595630a9-2a72-4808-83e9-c5af57a2e00d" mediaType="text/x-hl7-title+xml">To Add Medication</title>
+<text ID="INV-14cf0e9f-0073-4044-b89b-db38734fec08"><paragraph ID="INV-a76a40de-89ba-4e36-b4e0-2194442a0813"><content styleCode="bold">WARNING:</content> Additives may be
+                                    incompatible.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-c945fd32-8581-4817-99bd-8841c34b5ec2">
+<id root="E63F5A86-791E-F5F6-EA24-1AB7CA4EE429" />
+<title ID="INV-b5f7679f-86a6-487a-9711-d83b9bf25041" mediaType="text/x-hl7-title+xml">To add medication
+                                before solution administration</title>
+<text ID="INV-f63345c9-090b-4c7c-9e60-e2d232df9f10"><paragraph ID="INV-3dfd5727-3d66-4132-a183-f798842f134c">1. Prepare
+                                    medication site.</paragraph><paragraph ID="INV-c9eade2b-a51d-44bd-af07-304c44cf93fd">2. Using
+                                    syringe with 19 to 22 gauge needle, puncture medication port and
+                                    inject.</paragraph><paragraph ID="INV-504b45bd-2521-461e-ba41-447f2f48c716">3. Mix
+                                    solution and medication thoroughly. For high density medication
+                                    such as potassium chloride, squeeze ports while ports are
+                                    upright and mix thoroughly.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+<component>
+<section ID="INV-8913c05d-08b1-400b-90a0-c9479f025f44">
+<id root="94AF43B9-D699-FAB2-CB99-FC6C46EA4B83" />
+<title ID="INV-535c4a83-94de-4b73-9bcc-7e4bb0fc4b70" mediaType="text/x-hl7-title+xml">To add medication             during solution administration</title>
+<text ID="INV-ed23740c-ef1e-44fb-9baf-d16152e5bf30"><paragraph ID="INV-c10dc0d5-5320-4d01-9cc8-bf53e2534bd6">1. Close
+                                    clamp on the set.</paragraph><paragraph ID="INV-3b0af3cc-ea5c-4794-b548-f5d8b4e7079e">2. Prepare
+                                    medication site.</paragraph><paragraph ID="INV-3be56b8a-c182-46bf-a0c5-c4bf059ffc1b">3. Using
+                                    syringe with 19 to 22 gauge needle, puncture resealable
+                                    medication port and inject.</paragraph><paragraph ID="INV-212a1d8c-020a-4c5c-8812-f13e1d3da551">4. Remove
+                                    container from IV pole and/or turn to an upright position.</paragraph><paragraph ID="INV-176773ac-99f3-4dab-bd0c-af9cd12a6873">5. Evacuate
+                                    both ports by squeezing them while container is in the upright
+                                    position.</paragraph><paragraph ID="INV-c5579092-5bf0-4436-bdd1-f4e9b0e35ece">6. Mix
+                                    solution and medication thoroughly.</paragraph><paragraph ID="INV-804698cb-7730-4427-ad9c-40b9be23c11b">7. Return
+                                    container to in use position and continue administration.</paragraph><paragraph ID="INV-67b6f440-b059-44d7-9d24-9adc1fe73e18"><content styleCode="bold">Baxter Healthcare
+                                    Corporation</content></paragraph><paragraph ID="INV-3738cd4a-5800-4775-82d2-fbf35c1d5167">Deerfield,
+                                    IL 60015 USA</paragraph><paragraph ID="INV-60ab8944-8fa4-47ec-a6e8-880b1fdac681">Printed in
+                                    USA</paragraph><paragraph ID="INV-219a5445-a2dc-4700-ad16-7d8dde851759">&#169;Copyright
+                                    1978, 1981, 1982, 1983, 1984, 1989, 1994, 1995,</paragraph><paragraph ID="INV-1b443c1e-5c23-4b04-ba5c-32ae528896ca">Baxter
+                                    Healthcare Corporation. All rights reserved.</paragraph><paragraph ID="INV-57598397-9df1-457e-82ed-4c6ae46df8f1"><content styleCode="bold">7-19-39-661 Rev. July 2003</content></paragraph><paragraph ID="INV-77f2d620-a96c-4035-98ee-551b7f4aaa80">BAXTER,
+                                    VIAFLEX, and PL 146 are trademarks of</paragraph><paragraph ID="INV-6f2f0401-7bc6-4d85-8977-16a8b2aa6a28">Baxter
+                                    International Inc.</paragraph></text>
+<effectiveTime value="20060608" />
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

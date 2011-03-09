@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="68322B78-8B39-4D42-9889-6126CDD7D43A" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">EULEXIN<sup>&#174;</sup><br />brand of flutamide<br />Capsules, USP</title>
+<effectiveTime value="20060510" />
+<setId root="68322B78-8B39-4D42-9889-6126CDD7D43A" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Schering Corporation</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="474DB029-AFA3-ABFD-A363-72B20B4307C3" />
+<effectiveTime value="20060510" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0085-0525" codeSystem="2.16.840.1.113883.6.69" />
+<name>EULEXIN</name>
+<formCode code="C25158" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="125">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="125" />
+</numerator>
+<denominator value="1">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="76W6J0943E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>flutamide</name>
+<activeMoiety>
+<activeMoiety>
+<code code="76W6J0943E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>flutamide</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>flutamide</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>corn starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="368GB5141J" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium lauryl sulfate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="500">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="500" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0085-0525-05" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="180">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="180" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0085-0525-06" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0085-0525-03" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43233" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKAGE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48332" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BROWN" xsi:type="CE"><originalText>Opaque, two-toned brown</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="1" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48336" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="8" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">Schering;525</value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="Boxed_Warning">
+<id root="415B0750-774E-5B7C-DC08-8131009549F1" />
+<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BOXED WARNING SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<effectiveTime value="20060510" />
+<component>
+<section ID="Hepatic">
+<id root="F5581B42-EEE1-D6D4-543B-C79344982416" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Hepatic Injury</title>
+<text><paragraph>There have been postmarketing reports of hospitalization and rarely death due to liver failure in patients taking flutamide. Evidence of hepatic injury included elevated serum transaminase levels, jaundice, hepatic encephalopathy, and death related to acute hepatic failure. The hepatic injury was reversible after discontinuation of therapy in some patients. Approximately half of the reported cases occurred within the initial 3 months of treatment with flutamide.</paragraph><paragraph>Serum transaminase levels should be measured prior to starting treatment with flutamide. Flutamide is not recommended in patients whose ALT values exceed twice the upper limit of normal. Serum transaminase levels should then be measured monthly for the first 4 months of therapy, and periodically thereafter. Liver function tests also should be obtained at the first signs and symptoms suggestive of liver dysfunction, eg, nausea, vomiting, abdominal pain, fatigue, anorexia, "flu-like" symptoms, hyperbilirubinuria, jaundice, or right upper quadrant tenderness. If at any time a patient has jaundice, or their ALT rises above 2 times the upper limit of normal, flutamide should be immediately discontinued with close follow-up of liver function tests until resolution.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="E3987C1E-C6B5-E948-7F89-A80ACE0EDE47" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<text><paragraph><content styleCode="bold">PRODUCT<br />INFORMATION</content></paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="A860A9E5-ADC4-6A71-58F6-12DB27E5BF53" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>EULEXIN Capsules contain flutamide, an acetanilid, nonsteroidal, orally active antiandrogen having the chemical name, 2-methyl-<content styleCode="italics">N</content>-[4-nitro-3-(trifluoromethyl)phenyl]propanamide.</paragraph><paragraph>Each capsule contains 125 mg flutamide, USP. The compound is a buff to yellow powder with a molecular weight of 276.2 and the following structural formula:</paragraph><renderMultiMedia referencedObject="MM1" /><paragraph>The inactive ingredients for EULEXIN Capsules include: corn starch, lactose, magnesium stearate, povidone, and sodium lauryl sulfate. Gelatin capsule shells may also contain benzyl alcohol, butylparaben, colloidal silicon dioxide, edetate calcium disodium, methylparaben, propylparaben, and sodium propionate, and the following dye systems: FD&amp;C Blue No. 1, FD&amp;C Red No. 3, FD&amp;C Yellow No. 6, titanium dioxide, black ink, and other inactive ingredients.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="eulexin-image01.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="6DAC99B3-3E62-9E5C-029B-C7FDEF30A83D" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="A0F0FC77-B087-F7D1-EBB3-842C11A1A4EE" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>In animal studies, flutamide demonstrates potent antiandrogenic effects. It exerts its antiandrogenic action by inhibiting androgen uptake and/or by inhibiting nuclear binding of androgen in target tissues or both. Prostatic carcinoma is known to be androgen-sensitive and responds to treatment that counteracts the effect of androgen and/or removes the source of androgen, eg, castration. Elevations of plasma testosterone and estradiol levels have been noted following flutamide administration.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="DA23AD08-F6A0-B757-6566-3843A082CB0B" />
+<code code="43682-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHARMACOKINETICS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pharmacokinetics</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="0B522EEB-A198-6AC8-9098-EA9744772ACA" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Absorption</title>
+<text><paragraph>Analysis of plasma, urine, and feces following a single oral 200 mg dose of tritium-labeled flutamide to human volunteers showed that the drug is rapidly and completely absorbed. Following a single 250 mg oral dose to normal adult volunteers, the biologically active alpha-hydroxylated metabolite reaches maximum plasma concentrations in about 2 hours, indicating that it is rapidly formed from flutamide. Food has no effect on the bioavailability of flutamide.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="83E8BE7F-E91A-03EB-230B-889EDA12E102" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Distribution</title>
+<text><paragraph>In male rats administered an oral 5 mg/kg dose of <sup>14</sup>C-flutamide neither flutamide nor any of its metabolites is preferentially accumulated in any tissue except the prostate. Total drug levels were highest 6 hours after drug administration in all tissues. Levels declined at roughly similar rates to low levels at 18 hours. The major metabolite was present at higher concentrations than flutamide in all tissues studied. Following a single 250 mg oral dose to normal adult volunteers, low plasma concentrations of flutamide were detected. The plasma half-life for the alpha-hydroxylated metabolite of flutamide is approximately 6 hours. Flutamide, <content styleCode="italics">in vivo</content>, at steady-state plasma concentrations of 24 to 78 ng/mL is 94% to 96% bound to plasma proteins. The active metabolite of flutamide, <content styleCode="italics">in vivo</content>, at steady-state plasma concentrations of 1556 to 2284 ng/mL, is 92% to 94% bound to plasma proteins.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="BF01EA87-3390-D18B-F3F1-4A68E194F1F9" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Metabolism</title>
+<text><paragraph>The composition of plasma radioactivity, following a single 200 mg oral dose of tritium-labeled flutamide to normal adult volunteers, showed that flutamide is rapidly and extensively metabolized, with flutamide comprising only 2.5% of plasma radioactivity 1 hour after administration. At least six metabolites have been identified in plasma. The major plasma metabolite is a biologically active alpha-hydroxylated derivative which accounts for 23% of the plasma tritium 1 hour after drug administration. The major urinary metabolite is 2-amino-5-nitro-4-(trifluoromethyl)phenol.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="190D1820-4C9F-C016-9FE9-FFE9D1B66ED6" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Excretion</title>
+<text><paragraph>Flutamide and its metabolites are excreted mainly in the urine with only 4.2% of a single dose excreted in the feces over 72 hours.</paragraph><table width="100%"><col align="left" width="30%" />
+<col align="center" width="15%" />
+<col align="center" width="20%" />
+<col align="center" width="15%" />
+<col align="center" width="20%" />
+<thead>
+<tr><th align="center" colspan="5" styleCode="Lrule Botrule Rrule">Plasma Pharmacokinetics of Flutamide and Hydroxyflutamide in Geriatric Volunteers (mean &#177; SD)</th></tr>
+<tr styleCode="Botrule"><th styleCode="Lrule" /><th colspan="2" styleCode="Lrule">Single Dose</th><th colspan="2" styleCode="Lrule Rrule">Steady State</th></tr>
+<tr><th styleCode="Lrule" /><th styleCode="Lrule">Flutamide</th><th styleCode="Lrule">Hydroxyflutamide</th><th styleCode="Lrule">Flutamide</th><th styleCode="Lrule Rrule">Hydroxyflutamide</th></tr>
+</thead>
+<tbody>
+<tr><td styleCode="Lrule">C<sub>max</sub> (ng/mL)</td><td styleCode="Lrule">25.2 &#177; 34.2	</td><td styleCode="Lrule">894 &#177; 406</td><td styleCode="Lrule">113 &#177; 213</td><td styleCode="Lrule Rrule">1629 &#177; 586</td></tr>
+<tr><td styleCode="Lrule">Elimination half-life (hr)</td><td styleCode="Lrule">&#8212;</td><td styleCode="Lrule">8.1 &#177; 1.3</td><td styleCode="Lrule">7.8</td><td styleCode="Lrule Rrule">9.6 &#177; 2.5</td></tr>
+<tr><td styleCode="Lrule">T<sub>max</sub> (hr)</td><td styleCode="Lrule">1.9 &#177; 0.7</td><td styleCode="Lrule">2.7 &#177; 1.0</td><td styleCode="Lrule">1.3 &#177; 0.7</td><td styleCode="Lrule Rrule">1.9 &#177; 0.6</td></tr>
+<tr><td styleCode="Lrule">C<sub>min</sub> (ng/mL)</td><td styleCode="Lrule">&#8212;</td><td styleCode="Lrule">&#8212;</td><td styleCode="Lrule">&#8212;</td><td styleCode="Lrule Rrule">673 &#177; 316</td></tr>
+</tbody>
+</table></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="578752F6-591C-94DD-77C8-86E22B69556D" />
+<code code="43684-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="USE IN SPECIFIC POPULATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Special Populations</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="A6E817EF-04CB-3877-0025-65651CF748CC" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GERIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Geriatric</title>
+<text><paragraph>Following multiple oral dosing of 250 mg t.i.d. in normal geriatric volunteers, flutamide and its active metabolite approached steady-state plasma levels (based on pharmacokinetic simulations) after the fourth flutamide dose. The half-life of the active metabolite in geriatric volunteers after a single flutamide dose is about 8 hours and at steady state in 9.6 hours.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="7952579E-6F3D-D815-B513-B1B5CE5D636E" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Race</title>
+<text><paragraph>There are no known alterations in flutamide absorption, distribution, metabolism, or excretion due to race.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="D24EB330-7AA7-6D63-5913-715E6E6C4214" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Renal Impairment</title>
+<text><paragraph>Following a single 250 mg dose of flutamide administered to subjects with chronic renal insufficiency, there appeared to be no correlation between creatinine clearance and either C<sub>max</sub> or AUC of flutamide. Renal impairment did not have an effect on the C<sub>max</sub> or AUC of the biologically active alpha-hydroxylated metabolite of flutamide. In subjects with creatinine clearance of &lt;29 mL/min, the half-life of the active metabolite was slightly prolonged. Flutamide and its active metabolite were not well dialyzed. Dose adjustment in patients with chronic renal insufficiency is not warranted.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="59837F17-2194-D0DC-DB67-7CA5F35D7925" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Hepatic Impairment</title>
+<text><paragraph>No information on the pharmacokinetics of flutamide in hepatic impairment is available (see <content styleCode="bold"><linkHtml href="#Hepatic">BOXED WARNING, Hepatic Injury</linkHtml></content>).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="8EA66FFE-F224-17BA-D9E2-A8A0B341C28B" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Women, Pediatrics</title>
+<text><paragraph>Flutamide has not been studied in women or pediatric subjects.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="679A2B64-ECEF-D5EB-A6BD-A8F3B3437559" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug-Drug Interactions</title>
+<text><paragraph>Interactions between EULEXIN Capsules and LHRH-agonists have not occurred. Increases in prothrombin time have been noted in patients receiving warfarin therapy (see <content styleCode="bold"><linkHtml href="#PRECAUTIONS">PRECAUTIONS</linkHtml></content>).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="DE05A099-05C2-8249-153D-24BA5CED76E9" />
+<code code="34092-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL STUDIES SECTION" />
+<title mediaType="text/x-hl7-title+xml">Clinical Studies</title>
+<text><paragraph>Flutamide has been demonstrated to interfere with testosterone at the cellular level. This can complement medical castration achieved with LHRH-agonists which suppresses testicular androgen production by inhibiting luteinizing hormone secretion.</paragraph><paragraph>The effects of combination therapy have been evaluated in two studies. One study evaluated the effects of flutamide and an LHRH-agonist as neoadjuvant therapy to radiation in stage B<sub>2</sub>-C prostatic carcinoma and the other study evaluated flutamide and an LHRH-agonist as the sole therapy in stage D<sub>2</sub> prostatic carcinoma.</paragraph><paragraph /></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="A63DCE18-CB67-9DF4-4839-51A03E606E8E" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Stage B<sub>2</sub>-C Prostatic Carcinoma</title>
+<text><paragraph>The effects of hormonal treatment combined with radiation was studied in 466 patients (231 EULEXIN + goserelin acetate implant + radiation, 235 radiation alone) with bulky primary tumors confined to the prostate (stage B<sub>2</sub>) or extending beyond the capsule (stage C), with or without pelvic node involvement.</paragraph><paragraph>In this multicentered, controlled trial, administration of EULEXIN Capsules (250 mg t.i.d.) and goserelin acetate (3.6 mg depot) prior to and during radiation was associated with a significantly lower rate of local failure compared to radiation alone (16% vs 33% at 4 years, P&lt;0.001). The combination therapy also resulted in a trend toward reduction in the incidence of distant metastases (27% vs 36% at 4 years, P = 0.058). Median disease-free survival was significantly increased in patients who received complete hormonal therapy combined with radiation as compared to those patients who received radiation alone (4.4 vs 2.6 years, P&lt;0.001). Inclusion of normal PSA level as a criterion for disease-free survival also resulted in significantly increased median disease-free survival in patients receiving the combination therapy (2.7 vs 1.5 years, P&lt;0.001).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="2DE2A993-DF12-FCED-B60E-48F5BF1C4170" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Stage D<sub>2</sub> Prostatic Carcinoma</title>
+<text><paragraph>To study the effects of combination therapy in metastatic disease, 617 patients (311 leuprolide + flutamide, 306 leuprolide + placebo) with previously untreated advanced prostatic carcinoma were enrolled in a large multicentered, controlled clinical trial.</paragraph><paragraph>Three and one-half years after the study was initiated, median survival had been reached. The median actuarial survival time was 34.9 months for patients treated with leuprolide and flutamide versus 27.9 months for patients treated with leuprolide alone. This 7-month increment represents a 25% improvement in overall survival time with the flutamide therapy. Analysis of progression-free survival showed a 2.6-month improvement in patients who received leuprolide plus flutamide, a 19% increment over leuprolide and placebo.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="B53135C2-C247-5B98-983B-8C8C771DAF78" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>EULEXIN Capsules are indicated for use in combination with LHRH agonists for the management of locally confined Stage B<sub>2</sub>-C and Stage D<sub>2</sub> metastatic carcinoma of the prostate.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="4654A303-2678-156E-1576-D241B95DD3F6" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Stage B<sub>2</sub>-C Prostatic Carcinoma</title>
+<text><paragraph>Treatment with EULEXIN Capsules and the goserelin acetate implant should start 8 weeks prior to initiating radiation therapy and continue during radiation therapy.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="B82A8767-A6AF-7647-88B5-15FD32FAB8D6" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Stage D<sub>2</sub> Metastatic Carcinoma</title>
+<text><paragraph>To achieve benefit from treatment, EULEXIN Capsules should be initiated with the LHRH-agonist and continued until progression.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="9AEF4850-8756-DD32-22AB-11B02A0FB194" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>EULEXIN Capsules are contraindicated in patients who are hypersensitive to flutamide or any component of this preparation.</paragraph><paragraph>EULEXIN Capsules are contraindicated in patients with severe hepatic impairment (baseline hepatic enzymes should be evaluated prior to treatment).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="17F6D556-5443-F7F4-447A-761E7AD40A6B" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="0C04DAA1-5160-85AB-15D5-57242FE35EB5" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Hepatic Injury</title>
+<text><paragraph><content styleCode="bold">SEE <linkHtml href="#Boxed_Warning">BOXED WARNING</linkHtml>.</content></paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="684AC2D6-18E0-7A80-784A-43B328A3BFA2" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Use in Women</title>
+<text><paragraph>EULEXIN Capsules are for use <content styleCode="bold">only</content> in men. This product has no indication for women, and should not be used in this population, particularly for nonserious or nonlife-threatening conditions.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="A15A001A-7266-A52C-6B9A-911ACC0702BC" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Fetal Toxicity</title>
+<text><paragraph>Flutamide may cause fetal harm when administered to a pregnant woman (see <content styleCode="bold"><linkHtml href="#Pregnancy">Pregnancy</linkHtml></content>).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="6DFBDDA9-A213-8106-890A-45300E6D9E92" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Aniline Toxicity</title>
+<text><paragraph>One metabolite of flutamide is 4-nitro-3-fluoro-methylaniline. Several toxicities consistent with aniline exposure, including methemoglobinemia, hemolytic anemia, and cholestatic jaundice have been observed in both animals and humans after flutamide administration. In patients susceptible to aniline toxicity (eg, persons with glucose-6-phosphate dehydrogenase deficiency, hemoglobin M disease, and smokers), monitoring of methemoglobin levels should be considered.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="PRECAUTIONS">
+<id root="EC51B0BE-6155-F4C2-8D14-904D5AEB0D3F" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="1ECCBA84-7EE4-5524-6B2E-1DC087BCED3E" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>In clinical trials, gynecomastia occurred in 9% of patients receiving flutamide together with medical castration.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="6332E5D2-FC6A-BD20-C0C2-B8C434B80A92" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INFORMATION FOR PATIENTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Information for Patients</title>
+<text><paragraph>Patients should be informed that EULEXIN Capsules and the drug used for medical castration should be administered concomitantly, and that they should not interrupt their dosing or stop taking these medications without consulting their physician.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="CD4FF099-482B-34F2-6815-73229D304AB3" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LABORATORY TESTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text><paragraph>Regular assessment of serum Prostate Specific Antigen (PSA) may be helpful in monitoring the patient's response. If PSA levels rise significantly and consistently during EULEXIN therapy the patients should be evaluated for clinical progression. For patients who have objective progression of disease together with an elevated PSA, a treatment period free of antiandrogen while continuing the LHRH analogue may be considered.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="5521E802-96B9-638B-B7C6-E08874CA228F" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph>Increases in prothrombin time have been noted in patients receiving long-term warfarin therapy after flutamide was initiated. Therefore, close monitoring of prothrombin time is recommended and adjustment of the anticoagulant dose may be necessary when EULEXIN Capsules are administered concomitantly with warfarin.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="316C39FF-F0A7-A184-B6F1-A22844779CDB" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+<text><paragraph>In a 1-year dietary study in male rats, interstitial cell adenomas of the testes were present in 49% to 75% of all treated rats (daily doses of 10, 30, and 50 mg/kg/day were administered). These produced plasma C<sub>max</sub> values that are 1-, 2- to 3-, and 4-fold, respectively, those associated with therapeutic doses in humans. In male rats similarly dosed for 1 year, tumors were still present after 1 year of a drug-free period, but the incidences were 43% to 47%. In a 2-year carcinogenicity study in male rats, daily administration of flutamide at these same doses produced testicular interstitial cell adenomas in 91% to 95% of all treated rats as opposed to 11% of untreated control rats. Mammary adenomas, adeno carcinomas, and fibroadenomas were increased in treated male rats at exposure levels that were 1- to 4-fold those observed during therapeutic dosing in humans. There are likewise reports of malignant breast neoplasms in men treated with EULEXIN Capsules (see <content styleCode="bold"><linkHtml href="#ADVERSE">ADVERSE REACTIONS</linkHtml></content> section).</paragraph><paragraph>Flutamide did not demonstrate DNA modifying activity in the Ames <content styleCode="italics">Salmonella</content>/microsome Mutagenesis Assay. Dominant lethal tests in rats were negative.</paragraph><paragraph>Reduced sperm counts were observed during a 6-week study of flutamide monotherapy in normal human volunteers.</paragraph><paragraph>Flutamide did not affect estrous cycles or interfere with the mating behavior of male and female rats when the drug was administered at 25 and 75 mg/kg/day prior to mating. Males treated with 150 mg/kg/day (30 times the minimum effective antiandrogenic dose) failed to mate; mating behavior returned to normal after dosing was stopped. Conception rates were decreased in all dosing groups. Suppression of spermatogenesis was observed in rats dosed for 52 weeks at approximately 3, 8, or 17 times the human dose and in dogs dosed for 78 weeks at 1.4, 2.3, and 3.7 times the human dose.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="8BF2FCFE-DF1B-1963-EBFE-EA71585F81B8" />
+<code code="34091-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ANIMAL PHARMACOLOGY &amp;OR TOXICOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Animal Toxicology</title>
+<text><paragraph>Serious cardiac lesions were observed in 2/10 beagle dogs receiving 25 mg/kg/day for 78 weeks and 3/16 receiving 40 mg/kg/day for 2&#8211;4 years. These lesions, indicative of chronic injury and repair processes, included chronic myxomatous degeneration, intraatrial fibrosis, myocardial acidophilic degeneration, vasculitis, and perivasculitis. The doses at which these lesions occurred were associated with 2-hydroxyflutamide levels that were 1- to 12-fold greater than those observed in humans at therapeutic levels.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="Pregnancy">
+<id root="5ECA2256-56B3-31EB-645C-8017DFEE263E" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="6FFF9C53-C2C5-8820-44FC-844CC633B80A" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy Category D</title>
+<text><paragraph>There was decreased 24-hour survival in the offspring of pregnant rats treated with flutamide at doses of 30, 100, or 200 mg/kg/day (approximately 3, 9, and 19 times the human dose). A slight increase in minor variations in the development of the sternebrae and vertebrae was seen in fetuses of rats treated with two higher doses. Feminization of the male rats also occurred at the two higher dose levels. There was a decreased survival rate in the offspring of rabbits receiving the highest dose (15 mg/kg/day, equal to 1.4 times the human dose).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="ADVERSE">
+<id root="1DEC18F1-BBCC-10D0-33C4-EA84CD8004CF" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="A6F5493E-DDA3-5A12-A834-A79BDF0D06DD" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Stage B<sub>2</sub>-C Prostatic Carcinoma</title>
+<text><paragraph>Treatment with EULEXIN Capsules and the goserelin acetate implant did not add substantially to the toxicity of radiation treatment alone. The following adverse experiences were reported during a multicenter clinical trial comparing flutamide + goserelin acetate implant + radiation versus radiation alone. The most frequently reported (greater than 5%) adverse experiences are listed below.</paragraph><table width="100%"><col align="left" width="16%" />
+<col align="center" width="22%" />
+<col align="center" width="10%" />
+<col align="left" width="20%" />
+<col align="center" width="22%" />
+<col align="center" width="10%" />
+<thead>
+<tr styleCode="Botrule"><th align="center" colspan="3">Adverse Events During Acute Radiation Therapy<br />(within first 90 days of radiation therapy)</th><th align="center" colspan="3" styleCode="Lrule">Adverse Events During Late Radiation Phase<br />(after 90 days of radiation therapy)</th></tr>
+<tr><th /><th>(n=231)</th><th>(n=235)</th><th styleCode="Lrule" /><th>(n=231)</th><th>(n=235)</th></tr>
+<tr><th /><th>Goserelin acetate implant + EULEXIN + Radiation</th><th>Radiation Only</th><th styleCode="Lrule" /><th>Goserelin acetate implant + EULEXIN + Radiation</th><th>Radiation Only</th></tr>
+<tr><th /><th>% All</th><th>% All</th><th styleCode="Lrule" /><th>% All</th><th>% All</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2" valign="bottom">Rectum/<br />Large Bowel</td><td rowspan="2" valign="bottom">80</td><td rowspan="2" valign="bottom">76</td><td styleCode="Lrule">Diarrhea</td><td valign="bottom">36</td><td valign="bottom">40</td></tr>
+<tr><td styleCode="Lrule">Cystitis</td><td valign="bottom">16</td><td valign="bottom">16</td></tr>
+<tr><td valign="top">Bladder</td><td valign="top">58</td><td valign="top">60</td><td styleCode="Lrule">Rectal Bleeding</td><td valign="bottom">14</td><td valign="bottom">20</td></tr>
+<tr><td valign="bottom">Skin</td><td valign="bottom">37</td><td valign="bottom">37</td><td styleCode="Lrule">Proctitis</td><td valign="bottom">8</td><td valign="bottom">8</td></tr>
+<tr><td valign="bottom" /><td valign="bottom" /><td valign="bottom" /><td styleCode="Lrule">Hematuria</td><td valign="bottom">7</td><td valign="bottom">12</td></tr>
+</tbody>
+</table><paragraph>Additional adverse event data were collected for the combination therapy with radiation group over both the hormonal treatment and hormonal treatment plus radiation phases of the study. Adverse experiences occurring in more than 5% of patients in this group, over both parts of the study, were hot flashes (46%), diarrhea (40%), nausea (9%), and skin rash (8%).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="B66F4B8F-AEAC-8C67-4D61-8F940D93E94A" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Stage D<sub>2</sub> Metastatic Carcinoma</title>
+<text><paragraph>The following adverse experiences were reported during a multicenter clinical trial comparing flutamide + LHRH agonist versus placebo + LHRH agonist.</paragraph><paragraph>The most frequently reported (greater than 5%) adverse experiences during treatment with EULEXIN Capsules in combination with an LHRH agonist are listed in the table below. For comparison, adverse experiences seen with an LHRH agonist and placebo are also listed in the following table.</paragraph><table width="85%"><col align="left" width="25%" />
+<col align="center" width="30%" />
+<col align="center" width="30%" />
+<thead>
+<tr><th /><th styleCode="Lrule">(n=294)</th><th styleCode="Lrule">(n=285)</th></tr>
+<tr><th /><th styleCode="Lrule">Flutamide + LHRH agonist</th><th styleCode="Lrule">Placebo + LHRH agonist</th></tr>
+<tr><th /><th styleCode="Lrule">% All</th><th styleCode="Lrule">% All</th></tr>
+</thead>
+<tbody>
+<tr><td>Hot Flashes</td><td styleCode="Lrule">61</td><td styleCode="Lrule">57</td></tr>
+<tr><td>Loss of Libido</td><td styleCode="Lrule">36</td><td styleCode="Lrule">31</td></tr>
+<tr><td>Impotence</td><td styleCode="Lrule">33</td><td styleCode="Lrule">29</td></tr>
+<tr><td>Diarrhea</td><td styleCode="Lrule">12</td><td styleCode="Lrule">4</td></tr>
+<tr><td>Nausea/Vomiting</td><td styleCode="Lrule">11</td><td styleCode="Lrule">10</td></tr>
+<tr><td /><td styleCode="Lrule" /><td styleCode="Lrule" /></tr>
+<tr><td>Gynecomastia</td><td styleCode="Lrule">9</td><td styleCode="Lrule">11</td></tr>
+<tr><td>Other</td><td styleCode="Lrule">7</td><td styleCode="Lrule">9</td></tr>
+<tr><td>Other GI</td><td styleCode="Lrule">6</td><td styleCode="Lrule">4</td></tr>
+</tbody>
+</table><paragraph>As shown in the table, for both treatment groups, the most frequently occurring adverse experiences (hot flashes, impotence, loss of libido) were those known to be associated with low serum androgen levels and known to occur with LHRH agonists alone.</paragraph><paragraph>The only notable difference was the higher incidence of diarrhea in the flutamide + LHRH agonist group (12%), which was severe in 5% as opposed to the placebo + LHRH agonist (4%), which was severe in less than 1%.</paragraph><paragraph>In addition, the following adverse reactions were reported during treatment with flutamide + LHRH agonist.</paragraph><paragraph><content styleCode="italics">Cardiovascular System:</content> hypertension in 1% of patients.</paragraph><paragraph><content styleCode="italics">Central Nervous System:</content> CNS (drowsiness/confusion/depression/anxiety/nervousness) reactions occurred in 1% of patients.</paragraph><paragraph><content styleCode="italics">Gastrointestinal System:</content> anorexia 4%, and other GI disorders occurred in 6% of patients.</paragraph><paragraph><content styleCode="italics">Hematopoietic System:</content> anemia occurred in 6%, leukopenia in 3%, and thrombocytopenia in 1% of patients.</paragraph><paragraph><content styleCode="italics">Liver and Biliary System:</content> hepatitis and jaundice in less than 1% of patients.</paragraph><paragraph><content styleCode="italics">Skin:</content> irritation at the injection site and rash occurred in 3% of patients.</paragraph><paragraph><content styleCode="italics">Other:</content> edema occurred in 4%, genitourinary and neuromuscular symptoms in 2%, and pulmonary symptoms in less than 1% of patients.</paragraph><paragraph>In addition, the following spontaneous adverse experiences have been reported during the marketing of flutamide: hemolytic anemia, macrocytic anemia, methemoglobinemia, sulfhemoglobinemia, photosensitivity reactions (including erythema, ulceration, bullous eruptions, and epidermal necrolysis), and urine discoloration. The urine was noted to change to an amber or yellow-green appearance which can be attributed to the flutamide and/or its metabolites. Also reported were cholestatic jaundice, hepatic encephalopathy, and hepatic necrosis. The hepatic conditions were often reversible after discontinuing therapy; however, there have been reports of death following severe hepatic injury associated with use of flutamide.</paragraph><paragraph>Malignant breast neoplasms have occurred rarely in male patients being treated with EULEXIN Capsules.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="3C0DE17B-640B-AD8D-C678-003FC445A97F" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Abnormal Laboratory Test Values</title>
+<text><paragraph>Laboratory abnormalities including elevated SGOT, SGPT, bilirubin values, SGGT, BUN, and serum creatinine have been reported.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="0FB95D5D-B991-EF05-AC67-C38B6229626E" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>In animal studies with flutamide alone, signs of overdose included hypoactivity, piloerection, slow respiration, ataxia, and/or lacrimation, anorexia, tranquilization, emesis, and methemoglobinemia.</paragraph><paragraph>Clinical trials have been conducted with flutamide in doses up to 1500 mg per day for periods up to 36 weeks with no serious adverse effects reported. Those adverse reactions reported included gynecomastia, breast tenderness, and some increases in SGOT. The single dose of flutamide ordinarily associated with symptoms of overdose or considered to be life threatening has not been established.</paragraph><paragraph>Flutamide is highly protein bound and is not cleared by hemodialysis. As in the management of overdosage with any drug, it should be borne in mind that multiple agents may have been taken. If vomiting does not occur spontaneously, it should be induced if the patient is alert. General supportive care, including frequent monitoring of the vital signs and close observation of the patient, is indicated.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="CB041614-B52E-FFAC-95A2-D08A90764483" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>The recommended dosage is 2 capsules 3 times a day at 8-hour intervals for a total daily dose of 750 mg.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="7D4FBF8A-E6BA-E477-D677-85328D4A1F02" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>EULEXIN Capsules, 125 mg, are available as opaque, two-toned brown capsules, imprinted with "Schering 525". They are supplied as follows:</paragraph><paragraph>NDC 0085-0525-05 - Bottles of 500<br />NDC 0085-0525-03 - Unit Dose packages of 100 (10 &#215; 10's)<br />NDC 0085-0525-06 - Bottles of 180</paragraph><paragraph><content styleCode="bold">Store between 2&#176; and 30&#176;C (36&#176; and 86&#176;F).</content></paragraph><paragraph><content styleCode="bold">Protect the Unit Dose packages from excessive moisture.</content></paragraph><paragraph /></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="E0CD08F5-4D0D-A5DD-5B40-3601225AC973" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<text><renderMultiMedia referencedObject="MM2" /><paragraph>Rev. 12/00</paragraph><paragraph><content styleCode="bold">18822440T</content><br />B-16887692</paragraph><paragraph>Copyright &#169; 1989, 1996, 1999, Schering Corporation. All rights reserved.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<observationMedia ID="MM2">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="eulexin-image02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

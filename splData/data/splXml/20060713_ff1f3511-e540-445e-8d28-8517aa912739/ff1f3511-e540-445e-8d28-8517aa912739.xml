@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="ff1f3511-e540-445e-8d28-8517aa912739" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Human prescription drug label" />
+<title mediaType="text/x-hl7-title+xml">KENALOG<sup>&#174;</sup> IN ORABASE<sup>&#174;</sup><br />Triamcinolone Acetonide Dental Paste USP</title>
+<effectiveTime value="20060605" />
+<setId root="ff1f3511-e540-445e-8d28-8517aa912739" />
+<versionNumber value="2" />
+<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>APOTHECON</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="3B783CC8-221B-FF79-0FB6-FA169D045270" />
+<effectiveTime value="20060605" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0003-0496" codeSystem="2.16.840.1.113883.6.69" />
+<name>KENALOG</name>
+<formCode code="C42907" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PASTE, DENTIFRICE" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="1">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="1" />
+</numerator>
+<denominator unit="g" value="1">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="F446C597KA" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>triamcinolone acetonide</name>
+<activeMoiety>
+<activeMoiety>
+<code code="1ZK20VI6TY" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>triamcinolone</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Triamcinolone Acetonide</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>gelatin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>pectin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>carboboxymethylcellulose sodium</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>plasticized hydrocarbon gel</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="g" value="5">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="5" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0003-0496-20" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C42794" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TUBE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38197" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="DENTAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="s1">
+<id root="2772B845-4C26-6683-6278-D1A6A8B03DE0" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Each gram of Kenalog in Orabase provides 1 mg (0.1%) triamcinolone acetonide in emollient dental paste containing gelatin, pectin, and carboboxymethylcellulose sodium in Plastibase<sup>&#174;</sup> (Plasticized Hydrocarbon Gel), a polyethylene and mineral oil gel base.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s2">
+<id root="830C69A8-549D-DBAA-7ABE-90413BD282EA" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">ACTIONS</title>
+<text><paragraph>Kenalog (Triamcinolone Acetonide) is a synthetic corticosteroid which possesses anti-inflammatory, antipruritic, and antiallergic action. The emollient dental paste acts as an adhesive vehicle for applying the active medication to the oral tissues. The vehicle provides a protective covering which may serve to temporarily reduce the pain associated with oral irritation.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s3">
+<id root="54CEAC6C-8938-DB93-3344-046868DEA8F7" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS AND USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS</title>
+<text><paragraph>Kenalog in Orabase is indicated for adjunctive treatment and for the temporary relief of symptoms associated with oral inflammatory lesions and ulcerative lesions resulting from trauma.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s4">
+<id root="4CB563E6-954A-2E8A-76DA-3D7CB3E62E1C" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>This preparation is contraindicated in patients with a history of hypersensitivity to any of its components.</paragraph><paragraph>Because it contains a corticosteroid, the preparation is contraindicated in the presence of fungal, viral, or bacterial infections of the mouth or throat.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s5">
+<id root="C3A11B65-013C-2787-EB6C-16D41DA8D781" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNING</title>
+<effectiveTime value="20060605" />
+<component>
+<section ID="s5.1">
+<id root="7B4B1DE4-49EF-29D0-A0C7-C28305526206" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Usage in Pregnancy</title>
+<text><paragraph>Safe use of this preparation during pregnancy has not been established with respect to possible adverse reactions upon fetal development; therefore, it should not be used in women of child-bearing potential and particularly during early pregnancy unless, in the judgement of the physician or dentist, the potential benefits outweigh the possible hazards.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="s6">
+<id root="88C227E6-0B00-5B99-4A89-2420A49E4728" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text><paragraph>Patients with tuberculosis, peptic ulcer or diabetes mellitus should not be treated with any corticosteroid preparation without the advice of the patient&#8217;s physician.</paragraph><paragraph>It should be borne in mind that the normal defensive responses of the oral tissues are depressed in patients receiving topical corticosteroid therapy. Virulent strains of oral microorganisms may multiply without producing the usual warning symptoms of oral infections.</paragraph><paragraph>The small amount of steroid released when the preparation is used as recommended makes systemic effects very unlikely; however, they are a possibility when topical corticosteroid preparations are used over a long period of time.</paragraph><paragraph>If local irritation or sensitization should develop, the preparation should be discontinued and appropriate therapy instituted.</paragraph><paragraph>If significant regeneration or repair of oral tissues has not occurred in seven days, additional investigation into the etiology of the oral lesion is advised.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s7">
+<id root="92CD9F9D-D6E8-5957-F306-B85FE82380A6" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>Prolonged administration may elicit the adverse reactions known to occur with systemic steroid preparations; for example, adrenal suppression, alteration of glucose metabolism, protein catabolism, peptic ulcer activations, and others. These are usually reversible and disappear when the hormone is discontinued.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s8">
+<id root="B2447189-CC3D-7DCF-8C3B-0E2E98D59BFB" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>Press a small dab (about 1/4 inch) to the lesion until a thin film develops. A larger quantity may be required for coverage of some lesions. For optimal results use only enough to coat the lesion with a thin film. Do not rub in. Attempting to spread this preparation may result in granular, gritty sensation and cause it to crumble. After application, however, a smooth, slippery film develops.</paragraph><paragraph>The preparation should be applied at bedtime to permit steroid contact with the lesion throughout the night. Depending on the severity of symptoms, it may be necessary to apply the preparation two or three times a day, preferably after meals. If significant repair or regeneration has not occurred in seven days, further investigation is advisable.</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s9">
+<id root="704301D4-C3D9-0CD1-963E-6848FEE091B1" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>Kenalog<sup>&#174;</sup> in Orabase<sup>&#174;</sup> (Triamcinolone Acetonide Dental Paste USP) is available in 5 g tubes (NDC 0003-0496-20).</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+<component>
+<section ID="s10">
+<id root="0C951CFE-7A3F-88B3-0866-610F6C2DF8DB" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold">APOTHECON<sup>&#174;</sup><br />A Bristol-Myers Squibb Company<br />Princeton, NJ 08540 USA</content></paragraph><paragraph>J2-482G<br />Revised May 1994</paragraph></text>
+<effectiveTime value="20060605" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

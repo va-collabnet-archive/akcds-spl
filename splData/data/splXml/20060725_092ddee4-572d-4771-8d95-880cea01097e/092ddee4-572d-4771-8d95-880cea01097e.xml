@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="30AF60ED-4D7F-FBD1-9DFD-AB2F32F6A004" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title ID="INV-f7c77fbc-b114-409f-8ef4-cbf83de9e852" mediaType="text/x-hl7-title+xml">Potassium Chloride Injection<br />in Plastic
+        Container<br />Ready To Use<br />Viaflex&#174; Plus Container</title>
+<effectiveTime value="20060309" />
+<setId root="092ddee4-572d-4771-8d95-880cea01097e" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Baxter Healthcare Corporation</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="2260B7C4-491C-F313-4653-0D04CAA184AF" />
+<effectiveTime value="20060309" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0705" codeSystem="2.16.840.1.113883.6.69" />
+<name>Potassium Chloride</name>
+<formCode code="C42899" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION, CONCENTRATE" />
+<activeIngredient>
+<quantity>
+<numerator unit="meq" value="10">
+<translation code="C48512" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIEQUIVALENT" value="10" />
+</numerator>
+<denominator unit="mL" value="50">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Potassium Chloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="50">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0705-41" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0709" codeSystem="2.16.840.1.113883.6.69" />
+<name>Potassium Chloride</name>
+<formCode code="C42899" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION, CONCENTRATE" />
+<activeIngredient>
+<quantity>
+<numerator unit="meq" value="10">
+<translation code="C48512" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIEQUIVALENT" value="10" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Potassium Chloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0709-48" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0703" codeSystem="2.16.840.1.113883.6.69" />
+<name>Potassium Chloride</name>
+<formCode code="C42899" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION, CONCENTRATE" />
+<activeIngredient>
+<quantity>
+<numerator unit="meq" value="20">
+<translation code="C48512" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIEQUIVALENT" value="20" />
+</numerator>
+<denominator unit="mL" value="50">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Potassium Chloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="50">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0703-41" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0705" codeSystem="2.16.840.1.113883.6.69" />
+<name>Potassium Chloride</name>
+<formCode code="C42899" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION, CONCENTRATE" />
+<activeIngredient>
+<quantity>
+<numerator unit="meq" value="20">
+<translation code="C48512" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIEQUIVALENT" value="20" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Potassium Chloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0705-48" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0707" codeSystem="2.16.840.1.113883.6.69" />
+<name>Potassium Chloride</name>
+<formCode code="C42899" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION, CONCENTRATE" />
+<activeIngredient>
+<quantity>
+<numerator unit="meq" value="30">
+<translation code="C48512" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIEQUIVALENT" value="30" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Potassium Chloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0707-48" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0703" codeSystem="2.16.840.1.113883.6.69" />
+<name>Potassium Chloride</name>
+<formCode code="C42899" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION, CONCENTRATE" />
+<activeIngredient>
+<quantity>
+<numerator unit="meq" value="40">
+<translation code="C48512" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIEQUIVALENT" value="40" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Potassium Chloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0703-48" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="INV-fef021c8-2818-41a1-b42c-486d34cd5a8a">
+<id root="820C3359-3D8E-E6D9-B2DD-5CB88499E313" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title ID="INV-44d6f724-629e-4ca6-ac5f-a85f60f2ac6f" mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text ID="INV-d4e74757-d19a-4d8f-895a-ce3bdfcc46d2"><paragraph ID="INV-cce04967-3966-42b7-b1f1-ed51c77260e4">This Potassium
+                            Chloride Injection, is a sterile, nonpyrogenic, highly concentrated,
+                            ready-to-use, solution of Potassium Chloride, USP in Water for
+                            Injection, USP for electrolyte replenishment in a single dose container
+                            for intravenous administration. It contains no antimicrobial agents.</paragraph><table frame="void"><col align="left" width="150pt" />
+<col align="left" width="150pt" />
+<col align="left" width="150pt" />
+<col align="left" width="100pt" />
+<col align="left" width="75pt" />
+<col align="left" width="75pt" />
+<thead valign="bottom">
+<tr valign="bottom"><td align="left" rowspan="2" styleCode="Botrule                                         Rrule" valign="bottom">Potassium Chloride Injection mEq Potassium/Container</td><td align="center" rowspan="2" styleCode="Botrule                                         Rrule" valign="bottom">Composition(g/L) Potassium Chloride, USP(KCl)</td><td align="center" rowspan="2" styleCode="Botrule                                         Rrule" valign="bottom">Osmolarity<footnote ID="INV-62c16e37-2a82-44bd-a49b-713ca03aa273">Normal
+                                            physiologic osmolarity range is approximately 280 to 310
+                                            mOsmol/L. Administration of substantially hypertonic                                        solutions (&#8805;600 mOsmol/L) may cause vein
+                                        damage.</footnote><br />mOsmol/L)(calc)</td><td align="center" rowspan="2" styleCode="Botrule                                         Rrule" valign="bottom">pH</td><td align="center" colspan="2" styleCode="Botrule                                         Rrule" valign="bottom">Ionic Concentration(mEq/L)</td></tr>
+<tr valign="bottom"><td align="center" styleCode="Botrule Rrule" valign="bottom">Potassium</td><td align="center" styleCode="Botrule" valign="bottom">Chloride</td></tr>
+</thead>
+<tbody valign="top">
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">10
+                                        mEq/100 mL</td><td align="center" styleCode="Botrule Rrule" valign="top">7.46</td><td align="center" styleCode="Botrule Rrule" valign="top">200</td><td align="center" styleCode="Botrule Rrule" valign="top">5.0 (4.0
+                                        to 8.0)</td><td align="center" styleCode="Botrule Rrule" valign="top">100</td><td align="center" styleCode="toprule" valign="top">100</td></tr>
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">10
+                                        mEq/50mL <br />20 mEq/100mL</td><td align="center" styleCode="Botrule Rrule" valign="middle">14.9</td><td align="center" styleCode="Botrule Rrule" valign="middle">400</td><td align="center" styleCode="Botrule Rrule" valign="middle">5.0 (4.0
+                                        to 8.0)</td><td align="center" styleCode="Botrule Rrule" valign="middle">200</td><td align="center" styleCode="toprule" valign="middle">200</td></tr>
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">30
+                                        mEq/100 mL</td><td align="center" styleCode="Botrule Rrule" valign="top">22.4</td><td align="center" styleCode="Botrule Rrule" valign="top">601</td><td align="center" styleCode="Botrule Rrule" valign="top">5.0 (4.0
+                                        to 8.0)</td><td align="center" styleCode="Botrule Rrule" valign="top">300</td><td align="center" styleCode="toprule" valign="top">300</td></tr>
+<tr valign="top"><td align="left" styleCode="Rrule" valign="top">20 mEq/50 mL <br />40
+                                        mEq/100 mL</td><td align="center" styleCode="Rrule" valign="middle">29.8</td><td align="center" styleCode="Rrule" valign="middle">799</td><td align="center" styleCode="Rrule" valign="middle">5.0 (4.0 to 8.0)</td><td align="center" styleCode="Rrule" valign="middle">400</td><td align="center" styleCode="toprule" valign="middle">400</td></tr>
+</tbody>
+</table><paragraph ID="INV-1ce7857e-dbcf-4867-870f-621e5b2b3436">This Viaflex&#174; Plus
+                            plastic container is fabricated from a specially formulated polyvinyl
+                            chloride (PL 146&#174; Plastic). Exposure to temperatures above 25&#176;C/77&#176;F
+                            during transport and storage will lead to minor losses in moisture
+                            content. Higher temperatures lead to greater losses. It is unlikely that
+                            these minor losses will lead to clinically significant changes within
+                            the expiration period. The amount of water that can permeate from inside
+                            the container into the overwrap is insufficient to affect the solution
+                            significantly. Solutions in contact with the plastic container may leach
+                            out certain of its chemical components from the plastic in very small
+                            amounts; however, biological testing was supportive of the safety of the
+                            plastic container materials.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-0ac2e012-a88d-42e8-9b18-e756de3549ef">
+<id root="A99627DF-81A5-0F88-2846-BE8CC44D0FAE" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title ID="INV-a50c7eae-3b33-487a-986a-b306e4f5e8e1" mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text ID="INV-b208a064-c77a-466f-85a0-c3d5a291ce83"><paragraph ID="INV-ecb859c6-1e83-4ed2-984a-873111530618">Potassium is the
+                            major cation of body cells (160 mEq/liter of intracellular water) and is
+                            concerned with the maintenance of the body fluid composition and
+                            electrolyte balance. Potassium participates in carbohydrate utilization,
+                            protein synthesis, and is critical in the regulation of nerve conduction
+                            and muscle contraction, particularly in the heart. Chloride, the major
+                            extracellular anion, closely follows the metabolism of sodium, and
+                            changes in the acid-base of the body are reflected by changes in the
+                            chloride concentration.</paragraph><paragraph ID="INV-22c398ad-ee78-4157-b650-1bd4457d19f2">Normally about 80
+                            to 90% of the potassium intake is excreted in the urine, the remainder
+                            in the stools and to a small extent, in the perspiration. The kidney
+                            does not conserve potassium well so that during fasting, or in patients
+                            on a potassium-free diet, potassium loss from the body continues
+                            resulting in potassium depletion. A deficiency of either potassium or
+                            chloride will lead to a deficit of the other.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-b95cd071-68eb-464d-9cda-265717ebefad">
+<id root="8BA96200-9A7F-16F7-70C2-09CAB41B73A6" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS AND USAGE SECTION" />
+<title ID="INV-3823088a-e84a-4378-bbaa-70caa047daae" mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text ID="INV-ee23fb90-4b35-4923-a586-ba23c102ecc5"><paragraph ID="INV-ce54cc03-ed54-434a-ba16-f043f61602e3">Potassium Chloride
+                            Injection is indicated in the treatment of potassium deficiency states
+                            when oral replacement is not feasible.</paragraph><paragraph ID="INV-55924f48-8dbf-41d2-9593-7161cd8d1ff8"><content styleCode="bold">THIS HIGHLY CONCENTRATED, READY-TO-USE
+                                POTASSIUM CHLORIDE INJECTION IS INTENDED FOR THE MAINTENANCE OF
+                                SERUM K+ LEVELS AND FOR POTASSIUM SUPPLEMENTATION IN FLUID
+                                RESTRICTED PATIENTS WHO CANNOT ACCOMMODATE ADDITIONAL VOLUMES OF
+                                FLUID ASSOCIATED WITH POTASSIUM SOLUTIONS OF LOWER
+                            CONCENTRATION.</content></paragraph><paragraph ID="INV-111b18fa-63f8-4e24-a351-42afbe1e0c73">When using these
+                            products, these patients should be on continuous cardiac monitoring and
+                            frequent testing for serum potassium concentration and acid-base
+                            balance.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-68fbb4d2-7524-4f6b-baa8-39f5aa9015d4">
+<id root="52C028B2-1D14-BEA3-BD8A-98EDD55720A2" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title ID="INV-d59be417-497a-4538-be80-fcc27efbf081" mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text ID="INV-8df748dc-a2c8-4e6f-afe0-ed979cd2d1fe"><paragraph ID="INV-380aa528-46af-43c1-b904-d654b835ea8c">Potassium Chloride
+                            Injection is contraindicated in diseases where high potassium levels may
+                            be encountered, and in patients with hyperkalemia, renal failure and inconditions in which potassium retention is present.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-4b3441b4-441c-4326-b43a-a1d65e3e3a6a">
+<id root="CFD7891E-9CA5-83E2-EA92-77D077B2078C" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title ID="INV-2d956291-4b24-4962-af5f-135861c7a5f6" mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text ID="INV-fdce1715-5755-4000-8fa8-664171a2a106"><paragraph ID="INV-663f879c-64e7-4da1-9c4d-530dc4126d77"><content styleCode="bold">THIS HIGHLY CONCENTRATED, READY-TO-USE
+                                POTASSIUM CHLORIDE INJECTION IS INTENDED FOR THE MAINTENANCE OF
+                                SERUM K+ LEVELS AND FOR POTASSIUM SUPPLEMENTATION IN FLUID
+                                RESTRICTED PATIENTS WHO CANNOT ACCOMMODATE ADDITIONAL VOLUMES OF
+                                FLUID ASSOCIATED WITH POTASSIUM SOLUTIONS OF LOWER
+                            CONCENTRATION.</content></paragraph><paragraph ID="INV-847def91-9b3a-475f-9dda-204db06d8b34"><content styleCode="bold">TO AVOID POTASSIUM INTOXICATION, DO NOT INFUSE
+                                THESE SOLUTIONS RAPIDLY. PATIENTS REQUIRING HIGHLY CONCENTRATED
+                                SOLUTIONS SHOULD BE KEPT ON CONTINUOUS CARDIAC MONITORING AND
+                                UNDERGO FREQUENT TESTING FOR SERUM POTASSIUM AND ACID-BASE BALANCE,
+                                ESPECIALLY IF THEY RECEIVE DIGITALIS.</content></paragraph><paragraph ID="INV-8f3ced9f-4205-4947-ab8b-4d8340538bad">In patients with
+                            renal insufficiency, administration of potassium chloride may cause
+                            potassium intoxication and life-threatening hyperkalemia.</paragraph><paragraph ID="INV-1e267891-db29-46b3-8745-a61cd3acb33c"><content styleCode="bold">Administer intravenously only with a
+                                calibrated infusion device at a slow, controlled rate. (See Dosage
+                                and Administration). Because pain associated with peripheral
+                                infusion of Potassium Chloride solution has been reported, whenever
+                                possible, administration via a central route is recommended for
+                                thorough dilution by the blood stream and avoidance of
+                                extravasation. Highest concentrations (300 and 400 mEq/L) should be
+                                exclusively administered via central route.</content></paragraph><paragraph ID="INV-b1120b8e-c6db-4558-ba19-4d91a6899331">The administration
+                            of intravenous solutions can cause fluid and/or solute overload
+                            resulting in dilution of serum electrolyte concentrations,
+                            overhydration, congested states or pulmonary edema. The risk of
+                            dilutional states is inversely proportional to the electrolyte
+                            concentration. The risk of solute overload causing congested states with
+                            peripheral and pulmonary edema is directly proportional to the
+                            electrolyte concentration.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-9d6cccc0-43ba-4bb8-90a2-d251925829ab">
+<id root="E6A00751-C22F-061D-9501-BB8B349F1B19" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title ID="INV-2bd90362-786f-48a3-b609-f405b3fc3aa5" mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060309" />
+<component>
+<section ID="INV-34b6e2ac-90c3-4d68-b1d3-70bcb1bb8937">
+<id root="BB539F5F-5CF9-D3E3-1618-6CDF896EAA0D" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LABORATORY TESTS SECTION" />
+<title ID="INV-938f48ca-52bc-4719-9c90-334b153b6271" mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text ID="INV-272a78db-30c1-4de3-9ff8-db2cb2efec3f"><paragraph ID="INV-32230c75-b6f8-4a24-8395-bef7989ad719">Serum
+                                    potassium levels are not necessarily indicative of tissue
+                                    potassium levels. Solutions containing potassium should be used
+                                    with caution in the presence of cardiac or renal disease.</paragraph><paragraph ID="INV-42831dc2-bd89-4a2a-9b32-361b07ce0a44">Clinical
+                                    evaluation and periodic laboratory determinations are necessary
+                                    to monitor changes in fluid balance, electrolyte concentrations,
+                                    and acid-base balance during prolonged parenteral therapy or
+                                    whenever the condition of the patient warrants such evaluation.
+                                    Significant deviations from normal concentrations may require
+                                    the use of additional electrolyte supplements, or the use of
+                                    electrolyte-free dextrose solutions to which individualized
+                                    electrolyte supplements may be added.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-24e3a62e-bc38-4225-9c0a-d80890dee202">
+<id root="3751CC45-8685-D6C7-2E6F-511FC564E201" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title ID="INV-c1481af6-5027-435a-b5ef-dbdfbb0f80aa" mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20060309" />
+<component>
+<section ID="INV-e1901b3e-035b-4782-9117-3b1f53dfd9ee">
+<id root="4F638651-6BAC-D3C4-5FBF-E651AB8807C5" />
+<title ID="INV-482c69c6-2906-4d96-a58f-4ac6612f7edd" mediaType="text/x-hl7-title+xml">Pregnancy
+                                        Category C</title>
+<text ID="INV-00b165d9-f220-41c0-b6b4-587c37d5c55c"><paragraph ID="INV-7d8dfc6b-1ad8-4893-b4a3-7616e6dc192c">Animal reproduction studies have not been conducted                 with potassium chloride. It is also not known whether
+                                            potassium chloride can cause fetal harm when
+                                            administered to a pregnant woman or can affect
+                                            reproduction capacity. Potassium chloride should be
+                                            given to a pregnant woman only if clearly
+                                        needed.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-b9ae69dd-76b5-4061-a02a-1a730d0984aa">
+<id root="EEB6E7C0-5694-CE20-4C22-DC134D8335A7" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title ID="INV-f2397ef4-fd05-4620-a039-e7d7aebfd58c" mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text ID="INV-59c9ae6e-63fe-4c44-8fd1-619eb6e9e9ad"><paragraph ID="INV-fb620384-283f-4f99-aa94-f492d84191af">These
+                                    products should not be used in children at this time.</paragraph><paragraph ID="INV-c67b1032-d195-4016-9b9a-f262c6bb633d">Do not
+                                    administer unless solution is clear and seal is
+                                intact.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-24f7f0de-944c-41bb-8f86-1d89238e4ac8">
+<id root="A03CEC38-EFF3-DB35-DDE4-401992137372" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title ID="INV-1fcf4f8c-1cc8-4886-8555-298f632e107a" mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text ID="INV-e27cc248-d40d-43fa-86b0-d295642f24d7"><paragraph ID="INV-d2291e8a-5c77-4583-8d70-dc820f19b9b8">Potassium
+                            intoxication with mild or severe hyperkalemia has been reported. The
+                            signs and symptoms of intoxication include, paresthesia of the
+                            extremities, areflexia, muscular or respiratory paralysis, mental
+                            confusion, weakness, hypotension, cardiac arrhythmia, heart block,
+                            electrographic abnormalities and cardiac arrest. EKG abnormalities serve
+                            as a clinical reflection of the seriousness of changes in serum
+                            potassium concentrations; peaked T waves and prolonged P-R intervals
+                            usually occur with modest elevations above the upper limit of normal
+                            potassium concentrations; P waves disappear, the QRS complex widens, and
+                            eventual asystole usually occurs with higher elevations.</paragraph><paragraph ID="INV-60b75e67-4e19-4b75-ad18-cb0b7996cd00">Reactions which may
+                            occur because of the solution or the technique of administration include
+                            febrile response, infection at the site of injection, venous thrombosis
+                            or phlebitis extending from the site of injection, extravasation and
+                            hypervolemia.</paragraph><paragraph ID="INV-f9516fcf-a666-4414-a028-28e1c9dd6c3f">Infusion of highly
+                            concentrated potassium chloride solutions may cause local pain and vein                   irritation. (See <linkHtml ID="INV-b76a3fba-5b02-42e1-b5d7-af3ed8cdf0f3" href="#INV-663f879c-64e7-4da1-9c4d-530dc4126d77">WARNINGS</linkHtml>).</paragraph><paragraph ID="INV-85a57655-f8af-4191-80a1-106842f671fe">Reactions reported
+                            with the use of potassium-containing solutions include nausea, vomiting,
+                            and abdominal pain and diarrhea.</paragraph><paragraph ID="INV-0c20e9e3-1b9b-498d-9d9a-9ae12508693b">If an adverse
+                            reaction does occur, discontinue the infusion, evaluate the patient,                      institute appropriate therapeutic countermeasures and save the remainder
+                            of the fluid for examination if deemed necessary.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-be9979ee-7e6a-4801-aa68-9444968f908e">
+<id root="586C77AB-ADDE-FC76-1F78-DBE7D308E0B5" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE SECTION" />
+<title ID="INV-5b9303e1-5bf3-4217-b05a-a4bce4597d54" mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text ID="INV-2f81723d-ead5-4cc1-807f-9eecb1796c13"><paragraph ID="INV-4f01c32d-a236-4360-9f6b-fa6ce8ad4db5">In the event of
+                            hyperkalemia, discontinue the infusion immediately and institute
+                            corrective therapy to reduce serum potassium levels as necessary. The
+                            use of potassium containing foods or medications must also be
+                            eliminated.</paragraph><paragraph ID="INV-03cdaf97-5d3e-43c7-b5be-faef13563d41">Treatment of mild
+                            to severe hyperkalemia with signs and symptoms of potassium intoxication
+                            includes the following:</paragraph><paragraph ID="INV-d8b6c807-9cf4-4e28-976c-99d5c464bda2">1. Dextrose
+                            Injection, USP, 10% or 25%, containing 10 units of crystalline insulin
+                            per 20 grams of dextrose administered intravenously, 300 to 500 mL per
+                            hour.</paragraph><paragraph ID="INV-8aeeb6b7-1293-46b7-b5f8-4c79a5ba932c">2. Absorption and
+                            exchange of potassium using sodium or ammonium cycle cation exchange
+                            resin, orally and as retention enema.</paragraph><paragraph ID="INV-2ca7821f-61c8-4d71-8c5b-a2a59db1f1c6">3. Hemodialysis and
+                            peritoneal dialysis.</paragraph><paragraph ID="INV-06b90ecf-afc0-4a56-a3b2-e9596a32f2d3">In cases of                            digitalization, too rapid a lowering of plasma potassium concentration
+                            can cause digitalis toxicity.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-af3aec1c-2d84-48e8-b6aa-d91eaa8abf5f">
+<id root="DA838F76-4C74-8FC0-2A95-547095B90812" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title ID="INV-ba6bdb6b-277e-4c34-8101-d33a94998b64" mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text ID="INV-a0c32e81-b00f-4e41-aa1a-8dec60b2a927"><paragraph ID="INV-7d8e6c7d-5342-4a89-9de8-e3015abb3fe8">The dose and rate
+                            of administration are dependent upon the specific condition of each
+                            patient.</paragraph><paragraph ID="INV-4d175643-d900-4eed-9b5c-55643465ba18"><content styleCode="bold">Administer Intravenously only with a
+                                calibrated infusion device at a slow, controlled rate. Because pain
+                                associated with peripheral infusion of Potassium Chloride solution
+                                has been reported, whenever possible, administration via a central
+                                route is recommended for thorough dilution by the blood stream and
+                                avoidance of extravasation. Highest concentrations (300 and 400
+                                mEq/L) should be exclusively administered via central
+                            route.</content></paragraph><paragraph ID="INV-c7e64849-162d-4e21-b363-8e1928327f01">Recommended
+                            administration rates should not usually exceed 10mEq/hour or 200mEq for
+                            a 24 hour period if the serum potassium level is greater than 2.5
+                            mEq/liter.</paragraph><paragraph ID="INV-e15c0772-a614-444d-a3ae-940cb3a0fb06">In urgent cases
+                            where the serum potassium level is less than 2.0 mEq/liter or where
+                            severe hypokalemia is a threat, (serum potassium level less than 2.0
+                            mEq/liter and electrocardiographic changes and/or muscle paralysis)
+                            rates up to 40 mEq/hour or 400 mEq over a 24 hour period can be
+                            administered very carefully when guided by continuous monitoring of the
+                            EKG and frequent serum K+ determinations to avoid hyperkalemia and
+                            cardiac arrest.</paragraph><paragraph ID="INV-bef6368d-e2ee-4e2b-9b92-2753522364d5">Parenteral drug
+                            products should be inspected visually for particulate matter and
+                            discoloration, whenever solution and container permit. Use of a final
+                            filter is recommended during administration of all parenteral solutions
+                            where possible.<br /><br />Do not add supplementary medication.</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-de42845e-d4c0-47e2-8d3d-3d73234e7403">
+<id root="13D64889-9C96-721C-43A5-16DDE512AC32" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title ID="INV-6c3edfb7-59b2-4023-a031-356d18b56785" mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text ID="INV-c6201298-2392-4921-b4ec-37f50f227667"><paragraph ID="INV-2759857f-6436-4de0-afd3-1b2bc7c569d8">Potassium Chloride
+                            Injection in Viaflex&#174; Plus plastic containers is available as follows:</paragraph><table frame="void"><col align="left" width="100pt" />
+<col align="left" width="150pt" />
+<col align="left" width="150pt" />
+<thead valign="bottom">
+<tr valign="bottom"><td align="left" styleCode="Botrule Rrule" valign="bottom" /><td align="left" styleCode="Botrule Rrule" valign="bottom" /><td align="left" styleCode="Botrule" valign="bottom" /></tr>
+</thead>
+<tbody valign="top">
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">2B0826</td><td align="center" styleCode="Botrule Rrule" valign="top">10
+                                        mEq/100 mL</td><td align="center" styleCode="toprule" valign="top">NDC
+                                        0338-0709-48</td></tr>
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">2B0821</td><td align="center" styleCode="Botrule Rrule" valign="top">10
+                                        mEq/50 mL</td><td align="center" styleCode="toprule" valign="top">NDC
+                                        0338-0705-41</td></tr>
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">2B0827</td><td align="center" styleCode="Botrule Rrule" valign="top">20
+                                        mEq/100 mL</td><td align="center" styleCode="toprule" valign="top">NDC
+                                        0338-0705-48</td></tr>
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">2B0823</td><td align="center" styleCode="Botrule Rrule" valign="top">30
+                                        mEq/100 mL</td><td align="center" styleCode="toprule" valign="top">NDC
+                                        0338-0707-48</td></tr>
+<tr valign="top"><td align="left" styleCode="Botrule Rrule" valign="top">2B0822</td><td align="center" styleCode="Botrule Rrule" valign="top">20
+                                        mEq/50 mL</td><td align="center" styleCode="toprule" valign="top">NDC
+                                        0338-0703-41</td></tr>
+<tr valign="top"><td align="left" styleCode="Rrule" valign="top">2B0824</td><td align="center" styleCode="Rrule" valign="top">40 mEq/100 mL</td><td align="center" styleCode="toprule" valign="top">NDC 0338-0703-48</td></tr>
+</tbody>
+</table><paragraph ID="INV-c6f13d59-5bc4-47ee-bbad-b8aa5796f90a">Exposure of
+                            pharmaceutical products to heat should be minimized.&amp; Avoid
+                            excessive heat.&amp; It is recommended that this product be stored
+                            at room temperature (25&#176;C).</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-3976aa1e-a749-4993-97df-e4816079c402">
+<id root="0593F1CB-1B36-001E-0174-A9ED6CE5B4A1" />
+<title ID="INV-190848c1-5d7f-4974-8bed-ed759bba3503" mediaType="text/x-hl7-title+xml">DIRECTIONS FOR USE OF
+                        VIAFLEX&#174; PLUS PLASTIC CONTAINER</title>
+<text ID="INV-ae4a991a-c1c5-4b45-8272-1716db4052d8"><paragraph ID="INV-35ac54cf-93fd-480d-b51b-23b9d03809a9">Do not use plastic
+                            containers in series connections. Such use could result in air embolism
+                            due to residual air being drawn from the primary container before
+                            administration of the fluid from the secondary container is      completed.</paragraph></text>
+<effectiveTime value="20060309" />
+<component>
+<section ID="INV-7bb5478e-1da1-4597-85fc-ef2e051bf19a">
+<id root="C584300F-2916-EF8D-2D18-61090D1D9C3E" />
+<title ID="INV-9c6d1fe9-be45-463a-bf64-e5e156c6bb0f" mediaType="text/x-hl7-title+xml">TO OPEN</title>
+<text ID="INV-8d2dfa23-dee8-4dd9-ba1e-82e7c18308a1"><paragraph ID="INV-d5498507-114a-4701-ac54-40e5e2be397f">Tear
+                                    overwrap down side at slit and remove solution container. Some
+                                    opacity of the plastic due to moisture absorption during the
+                                    sterilization process may be observed. This is normal and does
+                                    not affect the solution quality or safety. The opacity will
+                                    diminish gradually. Check for minute leaks by squeezing inner
+                                    bag firmly. If leaks are found, discard solution as sterility
+                                    may be impaired. <content styleCode="bold">Do not add                    supplementary medication.</content></paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+<component>
+<section ID="INV-9f5523f9-a7fa-4dba-a567-ff39f2d952cc">
+<id root="53A33442-B776-6FFD-29E4-DF8154099EED" />
+<title ID="INV-413af269-d45f-4ee4-ba0f-57175ccd8b96" mediaType="text/x-hl7-title+xml">PREPARATION FOR
+                                ADMINISTRATION</title>
+<text ID="INV-6ea74d11-bfb7-44e3-abe0-84e2359b41eb"><paragraph ID="INV-0237ee0b-1a6d-4110-8b90-61d8112fb4c4">1. Suspend
+                                    container from eyelet support.</paragraph><paragraph ID="INV-850c0a4b-dcc3-4527-8215-868cf39d2e46">2. Remove
+                                    plastic protector from outlet port at bottom of container.</paragraph><paragraph ID="INV-8bc52bf5-f40f-4e3c-a534-7f06ff461b98">3. Attach
+                                    administration set. Refer to complete directions accompanying
+                                    set.</paragraph><paragraph ID="INV-ad3f1e73-4a0b-4016-a6b0-f38f2b575040"><content styleCode="bold">Baxter Healthcare
+                                    Corporation</content></paragraph><paragraph ID="INV-797490d4-4f10-446b-a417-8688a10a2216">Deerfield,
+                                    IL 60015 USA</paragraph><paragraph ID="INV-12183f7d-77a2-45cc-9378-e51b7d002cc7">Printed in
+                                    USA</paragraph></text>
+<effectiveTime value="20060309" />
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

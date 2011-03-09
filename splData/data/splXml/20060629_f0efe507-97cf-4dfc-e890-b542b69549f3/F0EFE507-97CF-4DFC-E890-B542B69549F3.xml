@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?>
+<document xmlns:voc="http://www.hl7.org/v3/voc" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+	<id root="F0EFE507-97CF-4DFC-E890-B542B69549F3"/>
+	<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Human prescription drug label"/>
+	<title mediaType="text/x-hl7-title+xml">MANNITOL I.V.<br/>MANNITOL Injection, USP</title>
+	<effectiveTime value="20060608"/>
+	<setId root="F0EFE507-97CF-4DFC-E890-B542B69549F3"/>
+	<versionNumber value="1"/>
+	<author>
+		<time/>
+		<assignedEntity>
+			<representedOrganization>
+				<name>Hospira, Inc.</name>
+			</representedOrganization>
+		</assignedEntity>
+	</author>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<id root="71F73616-A1DC-9CB2-CDA7-E47DFD923B31"/>
+					<effectiveTime value="20060608"/>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0409-7712" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Mannitol</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="g" value="5">
+											<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="5"/>
+										</numerator>
+										<denominator unit="mL" value="100">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>mannitol</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>mannitol</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Mannitol</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>sodium bicarbonate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Water</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="1000">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1000"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG"/>
+										<asContent>
+											<quantity>
+												<numerator value="12">
+													<translation code="C48474" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" value="12"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0409-7712-09" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0409-7713" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Mannitol</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="g" value="10">
+											<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="10"/>
+										</numerator>
+										<denominator unit="mL" value="100">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>mannitol</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>mannitol</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Mannitol</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>sodium bicarbonate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Water for Injection, USP</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="1000">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1000"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG"/>
+										<asContent>
+											<quantity>
+												<numerator value="12">
+													<translation code="C48474" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" value="12"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0409-7713-09" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0409-7714" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Mannitol</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="g" value="15">
+											<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="15"/>
+										</numerator>
+										<denominator unit="mL" value="100">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>mannitol</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>mannitol</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Mannitol</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>sodium bicarbonate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Water</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mg" value="500">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="500"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG"/>
+										<asContent>
+											<quantity>
+												<numerator value="12">
+													<translation code="C48474" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" value="12"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0409-7714-03" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0409-7715" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Mannitol</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="g" value="20">
+											<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="20"/>
+										</numerator>
+										<denominator unit="mL" value="100">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>mannitol</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>mannitol</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Mannitol</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>sodium bicarbonate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Water</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="250">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="250"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG"/>
+										<asContent>
+											<quantity>
+												<numerator value="24">
+													<translation code="C48474" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" value="24"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0409-7715-02" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="500">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="500"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG"/>
+										<asContent>
+											<quantity>
+												<numerator value="12">
+													<translation code="C48474" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" value="12"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0409-7715-03" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0409-4031" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Mannitol</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="g" value="25">
+											<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="25"/>
+										</numerator>
+										<denominator unit="mL" value="100">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>mannitol</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>mannitol</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Mannitol</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>sodium bicarbonate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="QTT17582CB" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>hydrochloric acid</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Water</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="50">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43209" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, GLASS"/>
+										<asContent>
+											<quantity>
+												<numerator value="25">
+													<translation code="C48551" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" value="25"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0409-4031-01" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="6F4E93A1-DB0E-4790-F5AB-EEECA3C3C705"/>
+					<code/>
+					<title mediaType="text/x-hl7-title+xml"/>
+					<text>
+						<paragraph>Flexible Plastic Container</paragraph>
+						<paragraph>Fliptop
+Vial</paragraph>
+						<paragraph>R<sub>x</sub> only</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="F3CBC584-6455-9D9A-8F45-B40E6E1C9C23"/>
+					<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+					<text>
+						<paragraph>Mannitol I.V. (Mannitol Injection, USP) is a sterile, nonpyrogenic
+solution of mannitol in water for injection available in concentrations of
+5%, 10%, 15%, 20% in flexible plastic containers and 25% in a Fliptop vial
+for administration by intravenous infusion only.</paragraph>
+						<paragraph>The
+content and characteristics of the available concentrations are as follows:</paragraph>
+						<paragraph/>
+						<table frame="below">
+							<caption/>
+							<colgroup>
+								<col/>
+								<col/>
+								<col/>
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<td valign="top"/>
+									<td valign="top"/>
+									<td align="center" valign="top">
+										<paragraph>
+											<content styleCode="bold">mOsmol/liter</content>
+										</paragraph>
+									</td>
+									<td valign="top"/>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<paragraph>
+											<content styleCode="bold">Conc.
+(%)</content>
+										</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>
+											<content styleCode="bold">g/100
+mL</content>
+										</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>
+											<content styleCode="bold">(calc.)</content>
+										</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>
+											<content styleCode="bold">pH*</content>
+										</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<paragraph>5</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>5</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>274</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>6.3 (4.5 to 7.0)</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<paragraph>10</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>10</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>549</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>6.3 (4.5 to 7.0)</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<paragraph>15</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>15</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>823</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>6.3 (4.5 to 7.0)</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<paragraph>20</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>20</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>1098</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>6.3 (4.5 to 7.0)</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<paragraph>25</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>25</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>1372</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>5.9 (4.5 to 7.0)</paragraph>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<paragraph>*Concentrations up to 20% may contain sodium bicarbonate
+for pH adjustment; the 25% concentration may contain sodium bicarbonate and/or
+hydrochloric acid for pH adjustment.</paragraph>
+						<paragraph>The solutions contain
+no bacteriostat, antimicrobial agent or added buffer (except for pH adjustment)
+and each is intended only as a single-dose injection. When smaller doses are
+required the unused portion should be discarded.</paragraph>
+						<paragraph>Mannitol
+Injection, USP is a parenteral obligatory osmotic diuretic.</paragraph>
+						<paragraph>Mannitol,
+USP is chemically designated D-mannitol (C<sub>6</sub>H<sub>14</sub>O<sub>6</sub>),
+a white crystalline powder or free-flowing granules freely soluble in water.
+It has the following structural formula:</paragraph>
+						<paragraph>
+							<renderMultiMedia referencedObject="MM1136298161-1"/>
+						</paragraph>
+						<paragraph>Water
+for Injection, USP is chemically designated H<sub>2</sub>0.</paragraph>
+						<paragraph>The
+flexible plastic container is fabricated from a specially formulated polyvinylchloride.
+Water can permeate from inside the container into the overwrap, but not in
+amounts sufficient to affect the solution significantly. Solutions in contact
+with the plastic container may leach out certain chemical components from
+the plastic in very small amounts; however, biological testing was supportive
+of the safety of the plastic container materials. Exposure to temperatures
+above 25&#176;C/77&#176;F during transport and storage will lead to minor
+losses in moisture content. Higher temperatures lead to greater losses. It
+is unlikely that these minor losses will lead to clinically significant changes
+within the expiration period.</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+					<component>
+						<observationMedia ID="MM1136298161-1">
+							<id root="714F38DF-570B-4D71-06A7-1470D0A34BB5"/>
+							<value mediaType="image/jpeg" xsi:type="ED">
+								<reference value="xen-0074-1.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="563B3406-DF30-C270-A340-FF0569516FE3"/>
+					<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+					<text>
+						<paragraph>When administered intravenously mannitol is confined to the
+extracellular space, only slightly metabolized and rapidly excreted by the
+kidney. Approximately 80% of a 100 g dose appears in the urine in 3 hours.
+The drug is freely filtered by the glomeruli with less than 10% tubular reabsorption;
+it is not secreted by tubular cells. Mannitol induces diuresis by elevating
+the osmolarity of the glomerular filtrate and thereby hindering tubular reabsorption
+of water. Excretion of sodium and chloride is also enhanced.</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="1DF1621F-EB3A-ED20-4DDD-D7E55790F64E"/>
+					<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+					<text>
+						<paragraph>Mannitol I.V. (Mannitol Injection, USP) is indicated for
+the following purposes in adults and pediatric patients.</paragraph>
+						<paragraph>
+							<content styleCode="bold">Therapeutic Use</content>
+						</paragraph>
+						<list listType="ordered">
+							<item>
+								<paragraph>Promotion of diuresis in the prevention or treatment of the
+oliguric phase of acute renal failure before irreversible renal failure becomes
+established.</paragraph>
+							</item>
+							<item>
+								<paragraph>Reduction of intracranial pressure and brain mass.</paragraph>
+							</item>
+							<item>
+								<paragraph>Reduction of high intraocular pressure when the pressure
+cannot be lowered by other means.</paragraph>
+							</item>
+							<item>
+								<paragraph>Promotion of urinary excretion of toxic materials.</paragraph>
+							</item>
+						</list>
+						<paragraph>
+							<content styleCode="bold">Diagnostic Use</content>
+						</paragraph>
+						<paragraph>Measurement
+of glomerular filtration rate.</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="5959A06F-E0EA-D086-2FA7-6F3BE7DE40D2"/>
+					<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+					<text>
+						<list listType="ordered">
+							<item>
+								<paragraph>Well established anuria due to severe renal disease.</paragraph>
+							</item>
+							<item>
+								<paragraph>Severe pulmonary congestion or frank pulmonary edema.</paragraph>
+							</item>
+							<item>
+								<paragraph>Active intracranial bleeding except during craniotomy.</paragraph>
+							</item>
+							<item>
+								<paragraph>Severe dehydration.</paragraph>
+							</item>
+							<item>
+								<paragraph>Progressive renal damage or dysfunction after institution
+of mannitol therapy, including increasing oliguria and azotemia.</paragraph>
+							</item>
+							<item>
+								<paragraph>Progressive heart failure or pulmonary congestion after institution
+of mannitol therapy.</paragraph>
+							</item>
+							<item>
+								<paragraph>Do not administer to patients with a known hypersensitivity
+to mannitol.</paragraph>
+							</item>
+						</list>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="05171AD8-7ECA-9FFB-D98E-29C0A9B6D0E6"/>
+					<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+					<text>
+						<list listType="ordered">
+							<item>
+								<paragraph>In patients with severe impairment of renal function, a test
+dose should be utilized (see DOSAGE AND ADMINISTRATION). A second test dose
+may be tried if there is an inadequate response, but no more than two test
+doses should be attempted.</paragraph>
+							</item>
+							<item>
+								<paragraph>The obligatory diuretic response following rapid infusion
+of 25% mannitol may further aggravate pre-existing hemoconcentration. Excessive
+loss of water and electrolytes may lead to serious imbalances. Serum sodium
+and potassium should be carefully monitored during mannitol administration.</paragraph>
+							</item>
+							<item>
+								<paragraph>If urine output continues to decline during mannitol infusion,
+the patient&#8217;s clinical status should be closely reviewed and mannitol
+infusion suspended if necessary. Accumulation of mannitol may result in overexpansion
+of the extracellular fluid which may intensify existing or latent congestive
+heart failure.</paragraph>
+							</item>
+							<item>
+								<paragraph>Excessive loss of water and electrolytes may lead to serious
+imbalances. With continued administration of mannitol, loss of water in excess
+of electrolytes can cause hypernatremia. Electrolyte measurements, including
+sodium and potassium are therefore of vital importance in monitoring the infusion
+of mannitol.</paragraph>
+							</item>
+							<item>
+								<paragraph>Osmotic nephrosis, a reversible vacuolization of the tubules
+of no known clinical significance, may proceed to severe irreversible nephrosis,
+so that the renal function must be closely monitored during mannitol infusion.</paragraph>
+							</item>
+							<item>
+								<paragraph>Mannitol injection may increase cerebral blood flow and the
+risk of postoperative bleeding in neurosurgical patients.</paragraph>
+							</item>
+							<item>
+								<paragraph>For intravenous use only. Do not administer intramuscularly
+or subcutaneously. Never add mannitol in whole blood for transfusion.</paragraph>
+							</item>
+							<item>
+								<paragraph>Mannitol may increase the cerebral blood flow and worsen
+intracranial hypertension in children who develop a generalized cerebral hyperemia
+during the first 24 to 48 hours post injury.</paragraph>
+							</item>
+						</list>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="003A46B1-C116-F6C6-8D39-FF92DCEF11FE"/>
+					<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Precautions section"/>
+					<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+					<text>
+						<list listType="ordered">
+							<item>
+								<paragraph>The cardiovascular status of the patient should be carefully
+evaluated before rapidly administering mannitol since sudden expansion of
+the extracellular fluid may lead to fulminating congestive heart failure.</paragraph>
+							</item>
+							<item>
+								<paragraph>Shift of sodium-free intracellular fluid into the extracellular
+compartment following mannitol infusion may lower serum sodium concentration
+and aggravate pre-existing hyponatremia.</paragraph>
+							</item>
+							<item>
+								<paragraph>By sustaining diuresis, mannitol administration may obscure
+and intensify inadequate hydration or hypovolemia.</paragraph>
+							</item>
+							<item>
+								<paragraph>Electrolyte-free mannitol solutions should not be given conjointly
+with blood. If it is essential that blood be given simultaneously, at least
+20 mEq of sodium chloride should be added to each liter of mannitol solution
+to avoid pseudoagglutination.</paragraph>
+							</item>
+							<item>
+								<paragraph>When exposed to low temperatures, solutions of mannitol may
+crystalize. If crystals are observed, the container should be warmed to redissolve,
+then cooled to body temperature before administering. See NOTE under HOW SUPPLIED.
+When infusing 20% or 25% mannitol concentrations, the administration set should
+include a filter. Do not infuse mannitol solution if crystals are present.</paragraph>
+							</item>
+							<item>
+								<paragraph>Do not administer unless solution is clear and container
+is undamaged. Discard unused portion. Do not administer Mannitol 25% if the
+Fliptop vial seal is not intact.</paragraph>
+							</item>
+						</list>
+					</text>
+					<effectiveTime value="20060608"/>
+					<component>
+						<section>
+							<id root="C71E4E91-DF31-7ECD-80B3-F1B7751FC8CD"/>
+							<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility:</title>
+							<text>
+								<paragraph>Studies with solutions from flexible plastic containers have
+not been performed to evaluate carcinogenic potential, mutagenic potential
+or effects on fertility.</paragraph>
+							</text>
+							<effectiveTime value="20060608"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="298F56F3-661B-ACE4-DDD5-B9AC07F7BF20"/>
+							<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy section"/>
+							<title mediaType="text/x-hl7-title+xml">Pregnancy Category C.</title>
+							<text>
+								<paragraph>Animal reproduction studies have not been conducted with
+mannitol injection. It is also not known whether mannitol injection can cause
+fetal harm when given to a pregnant woman or can affect reproduction. Mannitol
+injection should be given to a pregnant woman only if clearly needed.</paragraph>
+							</text>
+							<effectiveTime value="20060608"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="191813A9-B998-7427-0304-10563E2E268F"/>
+							<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">Nursing Mothers:</title>
+							<text>
+								<paragraph>Caution should be exercised when solutions from flexible
+plastic containers are administered to a nursing mother.</paragraph>
+							</text>
+							<effectiveTime value="20060608"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="3219E5D0-3EAB-F138-2BC4-078D0123E046"/>
+							<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">Pediatric Use:</title>
+							<text>
+								<paragraph>See DOSAGE AND ADMINISTRATION sections. Safety and effectiveness
+of solutions from flexible plastic containers in pediatric patients have not
+been well established.</paragraph>
+							</text>
+							<effectiveTime value="20060608"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="70E0E372-9DDC-5624-2A4C-9F30405B8F79"/>
+					<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+					<text>
+						<paragraph>Adverse reactions more commonly reported during or after
+the infusion of mannitol include: Pulmonary congestion, fluid and electrolyte
+imbalance, acidosis, electrolyte loss, dryness of mouth, thirst, marked diuresis,
+urinary retention, edema, headache, blurred vision, convulsions, nausea, vomiting,
+rhinitis, arm pain, skin necrosis, thrombophlebitis, chills, dizziness, urticaria,
+dehydration, hypotension, tachycardia, fever and angina-like chest pains.</paragraph>
+						<paragraph>Reactions
+which may occur because of the solution or the technique of administration
+include febrile response, infection at the site of injection, venous thrombosis
+or phlebitis extending from the site of injection, extravasation and hypervolemia.</paragraph>
+						<paragraph>If
+an adverse reaction does occur, discontinue the infusion, evaluate the patient,
+institute appropriate therapeutic countermeasures and save the remainder of
+the fluid for examination if deemed necessary.</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="184303A4-1973-93F6-9354-66B6AD936963"/>
+					<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+					<text>
+						<paragraph>Too rapid infusion of large amounts of mannitol will cause
+a shift of intracellular water into the extracellular compartment resulting
+in cellular dehydration and overexpansion of the intravascular space with
+hyponatremia, congestive heart failure and pulmonary edema. Repeated doses
+should not be given to patients with persistent oliguria as this can produce
+a hyperosmolar state and precipitate congestive heart failure and pulmonary
+edema due to volume overload. Dosage must be carefully monitored and adjusted
+in accordance with the clinical situation to avoid the consequences of overdosage.
+See CONTRAINDICATIONS, WARNINGS, PRECAUTIONS and DOSAGE AND ADMINISTRATION.</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="DF2DFDC5-CCB4-EEBF-A2DE-726FD8376A0C"/>
+					<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+					<text>
+						<paragraph>Mannitol I.V. (Mannitol Injection, USP) should be administered
+only by intravenous infusion. The total dosage, concentration and rate of
+administration should be governed by the nature and severity of the condition
+being treated, fluid requirement and urinary output. The usual adult dosage
+ranges from 50 to 200 g in a 24-hour period, but in most instances an adequate
+response will be achieved at a dosage of approximately 100 g/24 hours. The
+rate of administration is usually adjusted to maintain a urine flow of at
+least 30 to 50 mL/hr. The total dose should be adjusted according to the clinical
+response and adverse events (See WARNINGS). </paragraph>
+						<paragraph>
+							<content styleCode="italics">Test Dose:</content> A test dose of mannitol should be
+given prior to instituting Mannitol I.V. therapy for patients with marked
+oliguria or those believed to have inadequate renal function. In adults the
+dose is 0.2 g/kg body weight. In pediatric patients the dose is 0.2 g/kg body
+weight or 6 g/m<sup>2</sup> body surface area. The infusion is given as a
+15% to 25% solution over a period of 3 to 5 minutes to produce a urine flow
+of at least 30 to 50 mL/hour. If urine flow does not increase, a second dose
+may be given; but if there is inadequate response, the patient should be re-evaluated.</paragraph>
+						<paragraph>
+							<content styleCode="italics">Prevention of Acute Renal Failure (Oliguria):</content> When
+used during cardiovascular or other types of surgery, 50 to 100 g of mannitol
+as a 5%, 10%, or 15% solution may be given. The concentration will depend
+on the fluid requirements of the patient.</paragraph>
+						<paragraph>
+							<content styleCode="italics">Treatment
+of Oliguria:</content> The usual dose to promote diuresis in oliguric patients:
+Adults, 300 to 400 mg/kg of body weight (21 to 28 g for a 70 kg patient) or
+up to 100 g of solution, given as a single dose (often in conjunction with
+furosemide); pediatric patients, 0.25 to 2 g/kg body weight or 60 g/m<sup>2</sup> body
+surface area as a 15% to 20% solution over a period of 2 to 6 hours. Doses
+should not be repeated in patients with persistent oliguria.</paragraph>
+						<paragraph>
+							<content styleCode="italics">Reduction of Intracranial Pressure and Brain Mass:</content> In
+adults a dose of 0.25 to 2 g/kg body weight as a 15% to 25% solution administered
+over a period of 30 to 60 minutes; pediatric patients 1 to 2 g/kg body weight
+or 30 to 60 g/m<sup>2</sup> body surface area over a period of 30 to 60 minutes.
+In small or debilitated patients, a dose of 500 mg/kg may be sufficient. Careful
+evaluation must be made of the circulatory and renal reserve prior to and
+during administration of mannitol at the higher doses and rapid infusion rates.
+Careful attention must be paid to fluid and electrolyte balance, body weight,
+and total input and output before and after infusion of mannitol. Evidence
+of reduced cerebral spinal fluid pressure must be observed within 15 minutes
+after starting infusion.</paragraph>
+						<paragraph>
+							<content styleCode="italics">Reduction
+of Intraocular Pressure:</content> In adults a dose of 0.25 to 2 g/kg body
+weight as a 15% to 25% solution administered over a period of 30 to 60 minutes;
+pediatric patients 1 to 2 g/kg body weight or 30 to 60 g/m<sup>2</sup> body
+surface area over a period of 30 to 60 minutes. In small or debilitated patients,
+a dose of 500 mg/kg may be sufficient. When used preoperatively, the dose
+should be given one to one and one-half hours before surgery to achieve maximal
+reduction of intraocular pressure before operation. </paragraph>
+						<paragraph>
+							<content styleCode="italics">Adjunctive Therapy for Intoxications:</content> As an
+agent to promote urinary excretion of toxic substances: Adults may receive
+a 5% to 25% solution for as long as indicated if urinary output remains high;
+pediatric patients may receive 2 g/kg of body weight of a 5% or 10% solution.
+The concentration will depend upon the fluid requirement and urinary output
+of the patient. If benefits are not observed after 200 g of mannitol are administered,
+discontinue the mannitol therapy. Intravenous water and electrolytes must
+be given to match the loss of these substances in the urine, sweat and expired
+air.</paragraph>
+						<paragraph>
+							<content styleCode="italics">Measurement of Glomerular
+Filtration Rate (GFR):</content> 100 mL of a 20% solution (20 g) should be
+diluted with 180 mL of sodium chloride injection (normal saline) or 200 mL
+of a 10% solution (20&#160;g) should be diluted with 80 mL of sodium chloride
+injection (normal saline). The resulting 280&#160;mL of 7.2% solution is infused
+at a rate of 20 mL per minute. The urine is collected by catheter for a specific
+period of time and analyzed for mannitol excreted in mg per minute. A blood
+sample is drawn at the start and at the end of the time period and the concentration
+of mannitol determined in mg/mL of plasma. GFR is the number of mL of plasma
+that must have been filtered to account for the amount excreted per minute
+in the urine. Normal clearance rates are approximately 125&#160;mL/minute
+for men; 116 mL/minute for women.</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+					<component>
+						<section>
+							<id root="DFA95B3B-06C2-FCFB-D1B3-D33852320514"/>
+							<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+							<text>
+								<paragraph>Additives may be incompatible. Consult with pharmacist, if
+available. When introducing additives to the flexible container, use aseptic
+technique, mix thoroughly and do not store.</paragraph>
+								<paragraph>Do not place
+25% Mannitol Injection, USP in polyvinylchloride bags; a white flocculent
+precipitate may form from contact with PVC surfaces. Parenteral drug products
+should be inspected visually for particulate matter and discoloration; whenever
+container and solution permit. See PRECAUTIONS.</paragraph>
+							</text>
+							<effectiveTime value="20060608"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="F2CE1EDB-00A8-2F39-6CE0-A244BD4DB271"/>
+					<code/>
+					<title mediaType="text/x-hl7-title+xml">INSTRUCTIONS FOR USE - Flexible Container</title>
+					<text>
+						<paragraph>
+							<content styleCode="bold">To Open</content>
+						</paragraph>
+						<paragraph>Tear
+outer wrap at notch and remove solution container. If supplemental medication
+is desired, follow directions below before preparing for administration. Some
+opacity of the plastic due to moisture absorption during the sterilization
+process may be observed. This is normal and does not affect the solution quality
+or safety. The opacity will diminish gradually.</paragraph>
+						<paragraph>
+							<content styleCode="bold">To Add Medication</content>
+						</paragraph>
+						<list listType="ordered">
+							<item>
+								<paragraph>Prepare additive port.</paragraph>
+							</item>
+							<item>
+								<paragraph>Using aseptic technique and an additive delivery needle of
+appropriate length, puncture resealable additive port at target area, inner
+diaphragm and inject. Withdraw needle after injecting medication.</paragraph>
+							</item>
+							<item>
+								<paragraph>The additive port may be protected by covering with an additive
+cap.</paragraph>
+							</item>
+							<item>
+								<paragraph>Mix container contents thoroughly.</paragraph>
+							</item>
+						</list>
+						<paragraph>
+							<content styleCode="bold">Preparation for Administration</content>
+						</paragraph>
+						<paragraph>
+							<content styleCode="bold">(Use aseptic technique)</content>
+						</paragraph>
+						<list listType="ordered">
+							<item>
+								<paragraph>Close flow control clamp of administration set.</paragraph>
+							</item>
+							<item>
+								<paragraph>Remove cover from outlet port at bottom of container.</paragraph>
+							</item>
+							<item>
+								<paragraph>Insert piercing pin of administration set into port with
+a twisting motion until the set is firmly seated. NOTE: See full directions
+on administration set carton.</paragraph>
+							</item>
+							<item>
+								<paragraph>Suspend container from hanger.</paragraph>
+							</item>
+							<item>
+								<paragraph>Squeeze and release drip chamber to establish proper fluid
+level in chamber.</paragraph>
+							</item>
+							<item>
+								<paragraph>Open flow control clamp and clear air from set. Close clamp.</paragraph>
+							</item>
+							<item>
+								<paragraph>Attach set to venipuncture device. If device is not indwelling,
+prime and make venipuncture.</paragraph>
+							</item>
+							<item>
+								<paragraph>Regulate rate of administration with flow control clamp.</paragraph>
+							</item>
+						</list>
+						<paragraph>
+							<content styleCode="bold">WARNING: Do not use flexible container
+in series connections.</content>
+						</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="F02ADFC2-E6E3-2652-98F2-A4B0DE77FF37"/>
+					<code/>
+					<title mediaType="text/x-hl7-title+xml">INSTRUCTlONS FOR USE - Fliptop Vial</title>
+					<text>
+						<paragraph>Remove cover and cleanse stopper with antiseptic before use. </paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="8E00B559-B8EB-C0AD-A97F-10AB2733E56F"/>
+					<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+					<text>
+						<paragraph>Mannitol I.V. (Mannitol Injection, USP) is supplied in single-dose
+containers as follows:</paragraph>
+						<table frame="void">
+							<caption/>
+							<colgroup>
+								<col/>
+								<col/>
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<td valign="top">
+										<paragraph>
+											<content styleCode="bold">List No.</content>
+										</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>
+											<content styleCode="bold">Conc.
+%</content>
+										</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>
+											<content styleCode="bold">Size
+(mL)</content>
+										</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<paragraph>7712</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>5</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>1000 Flexible Container</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<paragraph>7713</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>10</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>1000 Flexible Container</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<paragraph>7714</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>15</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>500 Flexible Container</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<paragraph>7715</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>20</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>250 Flexible Container</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top"/>
+									<td valign="top"/>
+									<td align="center" valign="top">
+										<paragraph>500 Flexible Container</paragraph>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<paragraph>4031</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>25</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>50 Fliptop Vial</paragraph>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<paragraph>NOTE: Crystals may form in mannitol solutions especially
+if the solutions are chilled. To dissolve crystals in the flexible container,
+warm the unit to 70&#176;C with agitation. Heat solution by using a dry-heat
+cabinet with overwrap intact. The use of a water bath is not recommended.
+To dissolve the crystals in the fliptop vial, warm the bottle in hot water
+at 80&#176;C and periodically shake vigorously.  25% Mannitol Injection, USP
+may be autoclaved at 121&#176;C for 20 minutes at 15 psi. Remove cover from
+fliptop vial and cleanse stopper with antiseptic before use. Cool to body
+temperature or less before administering. When infusing 20% or 25% mannitol
+concentrations, the administration set should include a filter.</paragraph>
+						<paragraph>Exposure
+of pharmaceutical products to heat should be minimized. Avoid excessive heat.
+Protect from freezing. It is recommended that the flexible containers be stored
+at room temperature (25&#176;C), however, brief exposure up to 40&#176;C does
+not adversely affect the product. Store Fliptop vials at controlled room temperature,
+15&#176; to 30&#176;C (59&#176; to 86&#176;F). [See USP.]</paragraph>
+						<table frame="void">
+							<caption/>
+							<colgroup>
+								<col/>
+								<col/>
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<td valign="top"/>
+									<td valign="top"/>
+									<td valign="top">
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<paragraph>&#169;Hospira 2004</paragraph>
+									</td>
+									<td align="center" valign="top">
+										<paragraph>EN-0074</paragraph>
+									</td>
+									<td align="right" valign="top">
+										<paragraph>Printed in USA</paragraph>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<paragraph>
+							<content styleCode="italics">HOSPIRA, INC., LAKE FOREST,
+IL 60045 USA</content>
+						</paragraph>
+					</text>
+					<effectiveTime value="20060608"/>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</document>

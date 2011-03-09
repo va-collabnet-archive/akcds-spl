@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?>
+<document xmlns:voc="http://www.hl7.org/v3/voc" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+	<id root="704DE278-A500-054B-E5AD-AF5251EB499A"/>
+	<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING"/>
+	<title mediaType="text/x-hl7-title+xml">Sansert<sup>&#174;</sup>
+	</title>
+	<effectiveTime value="20060217"/>
+	<setId root="3FAE28EE-700E-4D4F-A040-02EF01A2AEB4"/>
+	<versionNumber value="1"/>
+	<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>Novartis Pharmaceuticals Corporation</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<id root="C1C7728E-731D-BF5D-5284-05A02B15A46E"/>
+					<effectiveTime value="20060217"/>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0078-0058" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Sansert</name>
+								<formCode code="C42897" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, COATED"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="2">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="2"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="2U7H1466GH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>methysergide maleate</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="XZA9HY6Z98" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>methysergide</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>methysergide maleate</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>acacia</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>carnauba wax</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>colloidal silicon dioxide</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>FD&amp;C Blue #1</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>FD&amp;C Yellow #5</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>gelatin</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>lactose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="J3TZF807X5" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>malic acid</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>povidone</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>sodium benzoate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>starch (corn)</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>stearic acid</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>sucrose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>synthetic black iron oxide</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>talc</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>titanium dioxide</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator value="100">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code code="0078-0058-05" codeSystem="2.16.840.1.113883.6.69"/>
+										<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value unit="mm" value="6" xsi:type="PQ"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="false" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="1" xsi:type="INT"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value xsi:type="ST">SANDOZ;78-58</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="true" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48330" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="YELLOW" xsi:type="CE">
+										<originalText>Bright yellow</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="82B47ACE-4AE4-10E5-5AA6-3E5ECBA11273"/>
+					<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+					<title mediaType="text/x-hl7-title+xml"/>
+					<text>
+						<paragraph>T2000-69</paragraph>
+						<paragraph>89011201</paragraph>
+						<paragraph>&#160;&#160;&#160;&#160;&#160;
+	Information for the physician</paragraph>
+						<paragraph/>
+						<paragraph>
+							<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Sansert</content>
+							<content styleCode="bold">
+								<sup>&#174;</sup>
+							</content>
+						</paragraph>
+						<paragraph>
+							<content styleCode="italics">&#160;&#160;&#160;&#160;&#160;
+	(methysergide maleate) tablets, USP</content>
+						</paragraph>
+						<paragraph/>
+						<paragraph>
+							<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Rx only</content>
+						</paragraph>
+						<paragraph/>
+						<paragraph>
+							<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Prescribing Information</content>
+						</paragraph>
+						<paragraph/>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="BE33FBA9-57F2-8243-4054-8FFE5F19ACF0"/>
+					<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="BOXED WARNING SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">WARNING</content>
+					</title>
+					<text>
+						<paragraph>
+							<content styleCode="bold">Retroperitoneal Fibrosis, Pleuropulmonary Fibrosis and Fibrotic Thickening of Cardiac Valves May Occur in Patients Receiving Long-term Methysergide Maleate Therapy. Therefore, This Preparation Must Be Reserved for Prophylaxis in Patients Whose Vascular Headaches Are Frequent and/or Severe and Uncontrollable and Who Are Under Close Medical Supervision.</content>
+							<br/>
+							<content styleCode="bold italics">(See also WARNINGS section)</content>
+						</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="EF34C314-F79A-0BB9-E306-E3CC7C45A297"/>
+					<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">DESCRIPTION</content>
+					</title>
+					<text>
+						<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) is a partially synthetic compound structurally related to lysergic acid butanolamide, well-known as methylergonovine in obstetrical practice as an oxytocic agent.</paragraph>
+						<paragraph/>
+						<paragraph>Chemically, methysergide maleate is designated as ergoline-8-carboxamide, 9,10-didehydro-<content styleCode="italics">N</content>-[1-(hydroxymethyl)propyl]-1,6-dimethyl-, (8&#223;)-, (<content styleCode="italics">Z</content>)-2-butenedioate (1:1) (salt).</paragraph>
+						<paragraph/>
+						<paragraph>Its structural formula is:</paragraph>
+						<paragraph>
+							<renderMultiMedia referencedObject="MM03000002"/>
+						</paragraph>
+						<paragraph/>
+						<paragraph>Methylation in the number 1 position of the ring structure enormously enhances the antagonism to serotonin which is present to a much lesser degree in the partially methylated compound (methylergonovine maleate) as well as profoundly altering other pharmacologic properties.</paragraph>
+						<paragraph/>
+						<paragraph>
+							<content styleCode="italics">Active Ingredient:</content> methysergide maleate, USP.</paragraph>
+						<paragraph/>
+						<paragraph>
+							<content styleCode="italics">Inactive Ingredients:</content> acacia, carnauba wax, colloidal silicon dioxide, FD&amp;C Blue #1, FD&amp;C Yellow #5, gelatin, lactose, malic acid, povidone, sodium benzoate, starch (corn), stearic acid, sucrose, synthetic black iron oxide, talc, and titanium dioxide.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+					<component>
+						<observationMedia ID="MM03000002">
+							<value mediaType="image/jpeg" xsi:type="ED">
+								<reference value="sansert-figure-02.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="D7DB117A-00B2-234D-8684-AC17E3917AC3"/>
+					<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">ACTIONS</content>
+					</title>
+					<text>
+						<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) has been shown, <content styleCode="italics">in vitro</content> and <content styleCode="italics">in vivo</content>, to inhibit or block the effects of serotonin, a substance which may be involved in the mechanism of vascular headaches. Serotonin has been variously described as a central neurohumoral agent or chemical mediator, as a &#8220;headache substance&#8221; acting directly or indirectly to lower pain threshold (others in this category include tyramine; polypeptides, such as bradykinin; histamine; and acetylcholine), as an intrinsic &#8220;motor hormone&#8221; of the gastrointestinal tract, and as a &#8220;hormone&#8221; involved in connective tissue reparative processes. Suggestions have been made by investigators as to the mechanism whereby methysergide produces its clinical effects, but this has not been finally established.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="A50EEF06-8153-0E69-68CB-E53FF2292615"/>
+					<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS AND USAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">INDICATIONS</content>
+					</title>
+					<text>
+						<paragraph>For the prevention or reduction of intensity and frequency of vascular headaches in the following kinds of patients:</paragraph>
+						<list listType="ordered" styleCode="Arabic">
+							<item>Patients suffering from one or more severe vascular headaches per week.<br/>
+							</item>
+							<item>Patients suffering from vascular headaches that are uncontrollable or so severe that preventive therapy is indicated regardless of the frequency of the attack.</item>
+						</list>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="456C36A1-F107-63C9-051E-3B2F54C66929"/>
+					<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">CONTRAINDICATIONS</content>
+					</title>
+					<text>
+						<paragraph>Hypersensitivity to the drug or to tartrazine (FD&amp;C Yellow #5) or any other components of the formulation, pregnancy, lactation, peripheral vascular disease, severe arteriosclerosis, severe hypertension, coronary artery disease, phlebitis or cellulitis of the lower limbs, pulmonary disease, collagen diseases or fibrotic processes, impaired liver or renal function, valvular heart disease, debilitated states and serious infections.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="567FF00F-AE8F-7CE7-B131-466BDA0A48D1"/>
+					<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">WARNINGS</content>
+					</title>
+					<text>
+						<paragraph>With long-term, uninterrupted administration, retroperitoneal fibrosis or related conditions &#8212; pleuropulmonary fibrosis and cardiovascular disorders with murmurs or vascular bruits have been reported. Patients must be warned to report immediately the following symptoms and to discontinue the drug: cold, numb, and painful hands and feet; leg cramps on walking; any type of girdle, flank, or chest pain, shortness of breath, or any associated symptomatology. Should any of these symptoms develop, methysergide should be discontinued. Continuous administration should not exceed 6 months. There must be a drug-free interval of 3-4 weeks after each 6-month course of treatment. The dosage should be reduced gradually during the last 2-3 weeks of each treatment course to avoid &#8220;headache rebound.&#8221;</paragraph>
+						<paragraph/>
+						<paragraph>The drug is not recommended for use in children.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="CFEA99FC-8390-3961-7AE0-4D50C7383C95"/>
+					<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">PRECAUTIONS</content>
+					</title>
+					<text/>
+					<effectiveTime value="20060217"/>
+					<component>
+						<section>
+							<id root="7AD178BE-CA98-16D4-F4F9-8FF95DE6F1BC"/>
+							<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">General</content>
+							</title>
+							<text>
+								<paragraph>All patients receiving Sansert<sup>&#174;</sup> (methysergide maleate) should remain under constant supervision of the physician and be examined regularly for the development of fibrotic or vascular complications. <content styleCode="italics">(See ADVERSE REACTIONS)</content>
+								</paragraph>
+								<paragraph/>
+								<paragraph>The manifestations of retroperitoneal fibrosis, pleuropulmonary fibrosis, and vascular shutdown have shown a high incidence of regression once Sansert<sup>&#174;</sup> (methysergide maleate) is withdrawn. These facts should be borne in mind to avoid unnecessary surgical intervention. Cardiac murmurs, which may indicate endocardial fibrosis, have shown varying degrees of regression, with complete disappearance in some and persistence in others.</paragraph>
+								<paragraph/>
+								<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) has been specifically designed for the prophylaxis of vascular headache and has no place in the management of the acute attack.</paragraph>
+								<paragraph/>
+								<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) tablets contain FD&amp;C Yellow No. 5 (tartrazine) which may cause allergic-type reactions (including bronchial asthma) in certain susceptible individuals. Although the overall incidence of FD&amp;C Yellow No. 5 (tartrazine) sensitivity in the general population is low, it is frequently seen in patients who also have aspirin hypersensitivity.</paragraph>
+								<paragraph/>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="DB8546CF-0608-35BD-BF4D-C268B8C5437B"/>
+							<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">Information for Patients</content>
+							</title>
+							<text>
+								<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) is intended for use as a preventive agent in the treatment of vascular headaches. It should not be used for acute migraine attacks. If, after a 3-week trial period, Sansert<sup>&#174;</sup> (methysergide maleate) has not been effective in decreasing the frequency or intensity of headaches, it is unlikely that longer administration of Sansert<sup>&#174;</sup> (methysergide maleate) will be beneficial.</paragraph>
+								<paragraph/>
+								<paragraph>Patients should be advised to report the following symptoms immediately and to discontinue the drug: cold, numb, and painful hands and feet; leg cramps on walking; any type of girdle, flank, or chest pain; shortness of breath; or any associated symptomatology. There must be a drug-free interval of 3-4 weeks after each 6-month course of treatment.</paragraph>
+								<paragraph/>
+								<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) should be taken with meals. Weight gain may necessitate modification of diet.</paragraph>
+								<paragraph/>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="0A3181BC-AB14-A574-8635-99D7FD93BEFC"/>
+							<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">Drug Interactions</content>
+							</title>
+							<text>
+								<paragraph>Methysergide may reverse the analgesic activity of narcotic analgesics. Concurrent use with vasoconstrictor agents including ergot alkaloids, sumatriptan, and nicotine (e.g. smoking) may result in enhanced vasoconstriction.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="4CD67D30-0CF8-57A9-05D7-FAE3CBE22305"/>
+							<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">Pregnancy Category X</content>
+							</title>
+							<text>
+								<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) is contraindicated in pregnancy due to its oxytocic actions.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="3FE19A81-80F1-59E7-9BF5-BDD3CBD46097"/>
+							<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">Nursing Mothers</content>
+							</title>
+							<text>
+								<paragraph>There are no specific studies on the use of Sansert<sup>&#174;</sup> (methysergide maleate) in nursing mothers. Ergot alkaloids, in general, appear in mothers&#8217; milk.</paragraph>
+								<paragraph/>
+								<paragraph>Sansert<sup>&#174;</sup> (methysergide maleate) is a semi-synthetic compound structurally related to ergotamine, and thus it may appear in breast milk. Ergot alkaloids have been reported to cause nausea, vomiting, diarrhea and weakness in the nursing infant and suppression of prolactin secretion and lactation in the mother.</paragraph>
+								<paragraph/>
+								<paragraph>Because of the potential for serious adverse reactions in nursing infants from Sansert<sup>&#174;</sup> (methysergide maleate), a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="38FF1EA9-D0B9-0E17-BF7C-E8171EABAE0A"/>
+							<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">Pediatric Use</content>
+							</title>
+							<text>
+								<paragraph>Safety and effectiveness in pediatric patients have not been established.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="F1B0CC35-EF53-1A30-422C-FB5426B53BB8"/>
+					<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">ADVERSE REACTIONS</content>
+					</title>
+					<text>
+						<paragraph>Within the recommended dose levels, the following side effects have been reported:</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+					<component>
+						<section>
+							<id root="22E4ACC6-3C72-99E5-0E10-A02473BFDB1F"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">1)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Fibrotic Complications</content>
+							</title>
+							<text>
+								<paragraph>Fibrotic changes have been observed in the retroperitoneal, pleuropulmonary, cardiac, and other tissues, either singly or, very rarely, in combination.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+							<component>
+								<section>
+									<id root="838098CD-5F6B-3D01-FDA1-33339F5CC1E9"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<title mediaType="text/x-hl7-title+xml">
+										<content styleCode="bold italics">Retroperitoneal Fibrosis</content>
+									</title>
+									<text>
+										<paragraph>This nonspecific fibrotic process is usually confined to the retroperitoneal connective tissue above the pelvic brim and may present clinically with one or more symptoms such as general malaise, fatigue, weight loss, backache, low grade fever (elevated sedimentation rate), urinary obstruction (girdle or flank pain, dysuria, polyuria, oliguria, elevated BUN), vascular insufficiency of the lower limbs (leg pain, Leriche syndrome, edema of legs, thrombophlebitis). The single most useful diagnostic procedure in suspected cases of retroperitoneal fibrosis is intravenous pyelography. Typical deviation and obstruction of one or both ureters may be observed.</paragraph>
+									</text>
+									<effectiveTime value="20060217"/>
+								</section>
+							</component>
+							<component>
+								<section>
+									<id root="AADDD083-9428-FA35-BA73-F3B67A028F63"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<title mediaType="text/x-hl7-title+xml">
+										<content styleCode="bold italics">Pleuropulmonary Complications</content>
+									</title>
+									<text>
+										<paragraph>A similar nonspecific fibrotic process, limited to the pleural and immediately subjacent pulmonary tissues, usually presents clinically with dyspnea, tightness and pain in the chest, pleural friction rubs, and pleural effusion. These findings may be confirmed by chest X-ray.</paragraph>
+									</text>
+									<effectiveTime value="20060217"/>
+								</section>
+							</component>
+							<component>
+								<section>
+									<id root="AEE36581-1863-84B4-E4EA-1E6695E732ED"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<title mediaType="text/x-hl7-title+xml">
+										<content styleCode="bold italics">Cardiac Complications</content>
+									</title>
+									<text>
+										<paragraph>Nonrheumatic fibrotic thickenings of the aortic root and of the aortic and mitral valves usually present clinically with cardiac murmurs and dyspnea.</paragraph>
+									</text>
+									<effectiveTime value="20060217"/>
+								</section>
+							</component>
+							<component>
+								<section>
+									<id root="72C9C3BA-0818-32D4-3358-5A49D83D0F92"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<title mediaType="text/x-hl7-title+xml">
+										<content styleCode="bold italics">Other Fibrotic Complications</content>
+									</title>
+									<text>
+										<paragraph>Several cases of fibrotic plaques, simulating Peyronie&#8217;s Disease have been described.</paragraph>
+									</text>
+									<effectiveTime value="20060217"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="AB49858F-CD2B-4822-BB68-FAD1127AEFBF"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">2)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Cardiovascular Complications</content>
+							</title>
+							<text>
+								<paragraph>Encroachment of retroperitoneal fibrosis on the aorta, inferior vena cava and their common iliac branches may result in vascular insufficiency of the lower limbs, the presenting features of which are mentioned under <content styleCode="italics">Retroperitoneal Fibrosis.</content>
+								</paragraph>
+								<paragraph/>
+								<paragraph>Intrinsic vasoconstriction of large and small arteries, involving one or more vessels or merely a segment of a vessel, may occur at any stage of therapy. Depending on the vessel involved, this complication may present with chest pain, abdominal pain, or cold, numb, painful extremities with or without paresthesias and diminished or absent pulses. Progression to ischemic tissue damage has rarely been reported. Prompt withdrawal of the drug at the first signs of impaired circulation is recommended <content styleCode="italics">(see WARNINGS)</content> to obviate such effects.</paragraph>
+								<paragraph/>
+								<paragraph>Postural hypotension and tachycardia have also been observed.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="979D0AF0-A12F-D77B-8E53-24154A77BFF9"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">3)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Gastrointestinal Symptoms</content>
+							</title>
+							<text>
+								<paragraph>Nausea, vomiting, diarrhea, heartburn, abdominal pain. These effects tend to appear early and can frequently be obviated by gradual introduction of the medication and by administration of the drug with meals. Constipation and elevation of gastric HCl have also been reported.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="FB213B6A-2B3F-2FCA-3148-9C34810A9A20"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">4)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	CNS Symptoms</content>
+							</title>
+							<text>
+								<paragraph>Seizure, insomnia, drowsiness, mild euphoria, dizziness, ataxia, lightheadedness, hyperesthesia, unworldly feelings (described variously as &#8220;dissociation&#8221;, &#8220;hallucinatory experiences&#8221;, etc.). Some of these symptoms may be associated with vascular headaches, per se, and may, therefore, be unrelated to the drug.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="31C03F5C-E857-A57A-85BC-48DD0EF5BC1F"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">5)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Dermatological Manifestations</content>
+							</title>
+							<text>
+								<paragraph>Facial flush, telangiectasia, and nonspecific rashes have rarely been reported. Increased hair loss may occur, but in many instances the tendency has abated despite continued therapy.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="9C6A97F2-1A6B-C8D0-1C86-38304032664E"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">6)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Edema</content>
+							</title>
+							<text>
+								<paragraph>Peripheral edema, and, more rarely, localized brawny edema may occur.</paragraph>
+								<paragraph>Dependent edema has responded to lowered doses, salt restriction, or diuretics.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="591D3B2D-AA27-9697-F02C-25AB55C31EFE"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">7)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Weight Gain</content>
+							</title>
+							<text>
+								<paragraph>Weight gain may be a reason to caution patients regarding their caloric intake.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="F48B6851-EC6D-D6BB-3A03-B10CF46EFD7E"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">8)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Hematological Manifestations</content>
+							</title>
+							<text>
+								<paragraph>Neutropenia, eosinophilia, and thrombocytopenia.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+					<component>
+						<section>
+							<id root="0E43C9C2-747B-72B6-FD0B-FCBE8E96EADD"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">9)</content>
+								<content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Miscellaneous</content>
+							</title>
+							<text>
+								<paragraph>Weakness, arthralgia, myalgia, fever, and mydriasis.</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="61123D06-28B2-F3CB-A1A2-6E08F1FCF9E4"/>
+					<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">OVERDOSAGE</content>
+					</title>
+					<text>
+						<paragraph>Few cases of acute Sansert<sup>&#174;</sup> (methysergide maleate) intoxication have been reported. The possible symptom complex is therefore not fully known. The following symptoms are based on these few case reports. Euphoria, hyperactivity, tachycardia, dilated pupils, and dizziness have been reported in a child with a dose of 20-24 mg of Sansert<sup>&#174;</sup> (methysergide maleate). In adults, peripheral vasospasm, with diminished or absent pulses, coldness, mottling and cyanosis, has been observed at a dose of 200 mg. Ischemic tissue damage has not been reported in acute overdosage with Sansert<sup>&#174;</sup> (methysergide maleate).</paragraph>
+						<paragraph/>
+						<paragraph>Treatment consists of removal of the offending drug by induction of emesis, or gastric lavage in the case of very recent intake, repeat dose administration of activated charcoal and catharsis. There is no evidence that forced diuresis accelerates the elimination of Sansert<sup>&#174;</sup> (methysergide maleate). However, I.V. fluids may be given as a general supportive measure.</paragraph>
+						<paragraph/>
+						<paragraph>Treatment of peripheral vasospasm should consist of warmth, but not heat, and protection of the ischemic limbs. In reported cases of Sansert<sup>&#174;</sup> (methysergide maleate) overdosage, the use of vasodilators has not been necessary. However, if vasospasm is persistent, severe, or if there is evidence of impending ischemic tissue damage, these agents may be beneficial. Careful nursing care is recommended in order to prevent tissue damage.</paragraph>
+						<paragraph/>
+						<paragraph>Up-to-date information about the treatment of overdose can often be obtained from a certified Regional Poison Control Center. Telephone numbers of certified Regional Poison Control Centers are listed in the Physicians&#8217; Desk Reference<sup>&#174;</sup>.*</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="ACD1FE73-3569-E447-3084-D5F2A68FFBF1"/>
+					<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE AND ADMINISTRATION SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">DOSAGE AND ADMINISTRATION</content>
+					</title>
+					<text>
+						<paragraph>Usual adult dose 4-8 mg daily. Tablets to be given with meals.</paragraph>
+						<paragraph/>
+						<paragraph>
+							<content styleCode="italics">Note:</content>
+							<content styleCode="italics">&#160;&#160;&#160;&#160;&#160;
+	There must be a medication-free interval of 3</content>
+							<content styleCode="italics">-4 weeks after every 6-month course of treatment. (See WARNINGS)</content>
+						</paragraph>
+						<paragraph/>
+						<paragraph>
+							<content styleCode="italics">No pediatric dosage has been established.</content>
+						</paragraph>
+						<paragraph/>
+						<paragraph>If, after a 3-week trial period, efficacy has not been demonstrated, longer administration of Sansert<sup>&#174;</sup> (methysergide maleate) is unlikely to be of benefit.</paragraph>
+						<paragraph/>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="E44F0588-8B01-E955-069B-26E303C99364"/>
+					<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">HOW SUPPLIED</content>
+					</title>
+					<text/>
+					<effectiveTime value="20060217"/>
+					<component>
+						<section>
+							<id root="D7E215AC-CCFA-B8EB-6738-C69E742D7D54"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">Sansert</content>
+								<content styleCode="bold">
+									<sup>&#174;</sup>
+								</content>
+								<content styleCode="bold"> (methysergide maleate) tablets, USP</content>
+							</title>
+							<text>
+								<paragraph/>
+								<paragraph>
+									<content styleCode="bold">Tablets 2 mg</content>
+								</paragraph>
+								<paragraph/>
+								<paragraph>Bright yellow, coated tablets with &#8220;SANDOZ&#8221; imprinted on one side, &#8220;78-58&#8221; imprinted on the other side, in black.</paragraph>
+								<paragraph/>
+								<paragraph>Bottle of 100&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;.&#8230;&#8230;&#8230;&#8230;&#8230;..NDC 0078-0058-05</paragraph>
+								<paragraph/>
+								<paragraph>
+									<content styleCode="bold italics">Store and Dispense</content>
+								</paragraph>
+								<paragraph/>
+								<paragraph>Below 86&#176;F (30&#176;C); tight container.</paragraph>
+								<paragraph/>
+								<paragraph ID="OLE_LINK1"/>
+								<paragraph ID="OLE_LINK2"/>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="D772033A-70F4-854F-FB4E-0D84077568AE"/>
+					<code code="34091-9" codeSystem="2.16.840.1.113883.6.1" displayName="ANIMAL PHARMACOLOGY AND OR TOXICOLOGY SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">
+						<content styleCode="bold">ANIMAL PHARMACOLOGY AND TOXICOLOGY</content>
+					</title>
+					<text/>
+					<effectiveTime value="20060217"/>
+					<component>
+						<observationMedia ID="MM03000003">
+							<value mediaType="image/jpeg" xsi:type="ED">
+								<reference value="sansert-figure-03.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+					<component>
+						<observationMedia ID="MM03000004">
+							<value mediaType="image/jpeg" xsi:type="ED">
+								<reference value="sansert-figure-04.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+					<component>
+						<observationMedia ID="MM03000005">
+							<value mediaType="image/jpeg" xsi:type="ED">
+								<reference value="sansert-figure-05.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+					<component>
+						<section>
+							<id root="997B9C4D-5AD2-C370-B96E-8469BF7CF0A6"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">
+								<content styleCode="bold">Serotonin Antagonism</content>
+							</title>
+							<text>
+								<paragraph>Considering structure/effect relationships, it has been demonstrated that methylation of the indole nitrogen in the lysergic acid ring of the alkanolamides fundamentally alters their pharmacologic behavior and is associated with inhibition or blockade of a great variety of serotonin-induced effects:</paragraph>
+								<paragraph/>
+								<table>
+									<thead>
+										<tr>
+											<td>1.</td>
+											<td>Methysergide maleate is 6 times more active than methylergonovine maleate in antagonizing the effect of serotonin on the rat uterus <content styleCode="italics">in vitro</content>.</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td/>
+											<td align="center">
+												<renderMultiMedia referencedObject="MM03000003"/>
+											</td>
+										</tr>
+										<tr>
+											<td>2.</td>
+											<td>Greater inhibition of the serotonin-induced edema in the rat&#8217;s paw is revealed by the ED<sub>50</sub> of 12.9 &#181;g/kg for methysergide maleate as against 37.4 &#181;g/kg for methylergonovine maleate <content styleCode="italics">(see following graph)</content>.</td>
+										</tr>
+										<tr>
+											<td/>
+											<td align="center">
+												<renderMultiMedia referencedObject="MM03000004"/>
+												<br/>
+											</td>
+										</tr>
+										<tr>
+											<td>3.</td>
+											<td>The more complex effects of serotonin on the cardiovascular system are equally subject to inhibition by methysergide maleate as is evident from the subsequent record of various circulatory parameters in the dog before and after administration of 10&#160;&#181;g/kg.</td>
+										</tr>
+										<tr>
+											<td/>
+											<td align="center">
+												<renderMultiMedia referencedObject="MM03000005"/>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<paragraph/>
+								<table>
+									<thead>
+										<tr>
+											<td colspan="6" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold">Acute Toxicity</content>
+											</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td styleCode="Toprule " valign="bottom"/>
+											<td align="center" colspan="5" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold">LD</content>
+												<content styleCode="bold">
+													<sub>50</sub>
+												</content>
+												<content styleCode="bold"> in mg/kg</content>
+											</td>
+										</tr>
+										<tr>
+											<td styleCode="Toprule " valign="bottom"/>
+											<td align="center" colspan="2" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold italics underline">Mice</content>
+											</td>
+											<td align="center" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold italics underline">Rabbits</content>
+											</td>
+											<td align="center" colspan="2" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold italics underline">Rats</content>
+											</td>
+										</tr>
+										<tr>
+											<td valign="bottom">
+												<content styleCode="bold">Compound</content>
+											</td>
+											<td align="center" valign="bottom">
+												<content styleCode="bold">i.v.</content>
+											</td>
+											<td align="center" valign="bottom">
+												<content styleCode="bold">oral</content>
+											</td>
+											<td align="center" valign="bottom">
+												<content styleCode="bold">i.v.</content>
+											</td>
+											<td align="center" valign="bottom">
+												<content styleCode="bold">i.v.</content>
+											</td>
+											<td align="center" valign="bottom">
+												<content styleCode="bold">oral</content>
+											</td>
+										</tr>
+										<tr>
+											<td styleCode="Toprule " valign="bottom">Methysergide <br/>
+												<br/>maleate</td>
+											<td align="center" styleCode="Toprule " valign="bottom">185</td>
+											<td align="center" styleCode="Toprule " valign="bottom">581</td>
+											<td align="center" styleCode="Toprule " valign="bottom">28</td>
+											<td align="center" styleCode="Toprule " valign="bottom">125</td>
+											<td align="center" styleCode="Toprule " valign="bottom">2100</td>
+										</tr>
+										<tr>
+											<td styleCode="Toprule " valign="bottom">methylergonovine <br/>
+												<br/>maleate</td>
+											<td align="center" styleCode="Toprule " valign="bottom">85</td>
+											<td align="center" styleCode="Toprule " valign="bottom">187</td>
+											<td align="center" styleCode="Toprule " valign="bottom">2.6</td>
+											<td align="center" styleCode="Toprule " valign="bottom">23</td>
+											<td align="center" styleCode="Toprule " valign="bottom">93</td>
+										</tr>
+									</tbody>
+								</table>
+								<paragraph/>
+								<table>
+									<thead>
+										<tr>
+											<td colspan="3" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold">Chronic Toxicity</content>
+											</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="3" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold italics">Rats</content>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold">Daily Oral Doses </content>
+												<content styleCode="bold">
+													<br/>
+													<br/>mg/kg</content>
+											</td>
+											<td align="center" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold">No. of Weeks </content>
+												<content styleCode="bold">
+													<br/>
+													<br/>Animals Tested</content>
+											</td>
+											<td align="center" styleCode="Toprule " valign="bottom">
+												<content styleCode="bold">Mortality</content>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" styleCode="Toprule " valign="bottom">5</td>
+											<td align="center" styleCode="Toprule " valign="bottom">50</td>
+											<td align="center" styleCode="Toprule " valign="bottom">4/16</td>
+										</tr>
+										<tr>
+											<td align="center" valign="bottom">20</td>
+											<td align="center" valign="bottom">50</td>
+											<td align="center" valign="bottom">2/16</td>
+										</tr>
+										<tr>
+											<td align="center" valign="bottom">50</td>
+											<td align="center" valign="bottom">50</td>
+											<td align="center" valign="bottom">2/16</td>
+										</tr>
+										<tr>
+											<td align="center" valign="bottom">150</td>
+											<td align="center" valign="bottom">17</td>
+											<td align="center" valign="bottom">8/30</td>
+										</tr>
+										<tr>
+											<td align="center" valign="bottom">450</td>
+											<td align="center" valign="bottom">17</td>
+											<td align="center" valign="bottom">17/30</td>
+										</tr>
+										<tr>
+											<td align="center" valign="bottom">Control</td>
+											<td align="center" valign="bottom">50</td>
+											<td align="center" valign="bottom">1/16</td>
+										</tr>
+									</tbody>
+								</table>
+								<paragraph/>
+								<paragraph>
+									<content styleCode="bold italics">Dogs</content>
+								</paragraph>
+								<paragraph>Oral administration of 1, 2, and 5 mg/kg/day of methysergide maleate failed to produce any major signs of toxicity over a period of 6 months.</paragraph>
+								<paragraph/>
+								<paragraph>*Trademark of Medical Economics Company, Inc.</paragraph>
+								<paragraph/>
+								<paragraph>Distributed by:</paragraph>
+								<paragraph>Novartis Pharmaceuticals Corporation</paragraph>
+								<paragraph>East Hanover, New Jersey 07936</paragraph>
+								<paragraph/>
+								<paragraph>REV: NOVEMBER 2000&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+	   T2000-69</paragraph>
+							</text>
+							<effectiveTime value="20060217"/>
+						</section>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</document>

@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="EDAF183D-D91D-CC4F-23AE-A6BDD322A88B" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="Human Prescription Drug Labeling" />
+<title mediaType="text/x-hl7-title+xml"><br />EDECRIN&#174;<br />TABLETS <br />(ETHACRYNIC ACID)<br />and <br /> EDECRIN&#174;
+SODIUM<br />INTRAVENOUS<br />(ETHACRYNATE SODIUM)</title>
+<effectiveTime value="20060510" />
+<availabilityTime />
+<setId root="1720BC0E-4FAE-40DE-BCB4-8361C2E3C5F6" />
+<versionNumber value="3" />
+<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>MERCK and CO.</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="39CAF98D-5CA4-17BF-F6D4-00B1A9DABDF8" />
+<effectiveTime value="20060510" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0006-0065" codeSystem="2.16.840.1.113883.6.69" />
+<name>EDECRIN</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="25">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="M5DP350VZV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" displayName="ethacrynic acid" />
+<name>ethacrynic acid</name>
+<activeMoiety>
+<activeMoiety>
+<code code="M5DP350VZV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" displayName="ethacrynic acid" />
+<name>ethacrynic acid</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>ethacrynic acid</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" displayName="colloidal silicon dioxide" />
+<name>colloidal silicon dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>talc</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0006-0065-68" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">MSD;65;EDECRIN</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"><originalText>capsule shaped</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="10 " xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0006-3620" codeSystem="2.16.840.1.113883.6.69" />
+<name>EDECRIN SODIUM</name>
+<formCode code="C42957" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="50">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="50" />
+</numerator>
+<denominator unit="mL" value="50">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="K41MYV7MPM" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>ethacrynate sodium</name>
+<activeMoiety>
+<activeMoiety>
+<code code="M5DP350VZV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>ethacrynic acid</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>ethacrynate sodium</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<quantity>
+<numerator unit="mg" value="62.5">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="62.5" />
+</numerator>
+<denominator unit="mL" value="50">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50" />
+</denominator>
+</quantity>
+<inactiveIngredientSubstance>
+<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Mannitol</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="50">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="50" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code />
+<formCode code="C43226" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" />
+<asContent>
+<quantity>
+<numerator value="1">
+<translation code="C48551" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" value="1" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0006-3620-50" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON" />
+</containerPackagedMedicine>
+</asContent>
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="0ED2B7E7-15AA-EFC7-21B5-DDD753751297" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><br /><paragraph><content styleCode="bold">EDECRIN <footnote ID="tradeCopy">Registered
+trademark of MERCK &amp; CO., Inc. COPYRIGHT &#169; 1984, 2005 MERCK &amp;
+CO., Inc. All rights reserved</footnote> (Ethacrynic Acid) is a potent diuretic
+which, if given in excessive amounts, may lead to profound diuresis with water
+and electrolyte depletion. Therefore, careful medical supervision is required,
+and dose and dose schedule must be adjusted to the individual patient's needs
+(see <linkHtml href="#DOSAGEANDADMINISTRATION">DOSAGE AND ADMINISTRATION</linkHtml>).</content></paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="D971E933-7941-A507-F18A-DBDACE4846F8" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Description section" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Ethacrynic acid is an unsaturated ketone derivative of an
+aryloxyacetic acid. It is designated chemically as [2,3-dichloro-4-(2-methylene-1-oxobutyl)phenoxy]
+acetic acid, and has a molecular weight of 303.14. Ethacrynic acid is a white,
+or practically white, crystalline powder, very slightly soluble in water,
+but soluble in most organic solvents such as alcohols, chloroform, and benzene.
+Its empirical formula is C<sub>13</sub>H<sub>12</sub>Cl<sub>2</sub>O<sub>4</sub> and
+its structural formula is:</paragraph><paragraph><renderMultiMedia referencedObject="MM1139331254-1" /></paragraph><paragraph>Ethacrynate sodium, the sodium salt
+of ethacrynic acid, is soluble in water at 25&#176;C to the extent of about
+7 percent. Solutions of the sodium salt are relatively stable at about pH
+7 at room temperature for short periods, but as the pH or temperature increases
+the solutions are less stable. The molecular weight of ethacrynate sodium
+is 325.12. Its empirical formula is C<sub>13</sub>H<sub>11</sub>Cl<sub>2</sub>NaO<sub>4</sub> and
+its structural formula is:</paragraph><paragraph><renderMultiMedia referencedObject="MM1139331268-1" /></paragraph><paragraph>EDECRIN is supplied as 25 mg tablets
+for oral use. The tablets contain the following inactive ingredients: colloidal
+silicon dioxide, lactose, magnesium stearate, starch and talc. Intravenous
+SODIUM EDECRIN<footnoteRef IDREF="tradeCopy" /> (Ethacrynate Sodium) is a sterile
+freeze-dried powder and is supplied in a vial containing:</paragraph><paragraph>Ethacrynate
+sodium equivalent<br />to ethacrynic acid...............................................................................50.0
+mg</paragraph><paragraph>Inactive ingredient:<br />Mannitol..............................................................................................62.5
+mg</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<observationMedia ID="MM1139331254-1">
+<id root="1B23CD73-B6AF-49F5-63A7-D7D6B70ED4DD" />
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="edecrin-figure-01.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<observationMedia ID="MM1139331268-1">
+<id root="6528ED4F-B153-4A5E-0F9B-95E78FD82D33" />
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="edecrin-figure-02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="93FF3C62-64E7-A0F3-1EF2-0B30BB8CD11A" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Pharmacology section" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="8B11EDDA-A7F6-E651-53BB-DE2DD2837214" />
+<title mediaType="text/x-hl7-title+xml">Pharmacokinetics and Metabolism</title>
+<text><paragraph>EDECRIN acts on the ascending limb of the loop of Henle
+and on the proximal and distal tubules. Urinary output is usually dose dependent
+and related to the magnitude of fluid accumulation. Water and electrolyte
+excretion may be increased several times over that observed with thiazide
+diuretics, since EDECRIN inhibits reabsorption of a much greater proportion
+of filtered sodium than most other diuretic agents. Therefore, EDECRIN is
+effective in many patients who have significant degrees of renal insufficiency
+(see <linkHtml href="#WARNINGS">WARNINGS</linkHtml> concerning deafness).
+EDECRIN has little or no effect on glomerular filtration or on renal blood
+flow, except following pronounced reductions in plasma volume when associated
+with rapid diuresis.</paragraph><paragraph>The electrolyte excretion pattern
+of ethacrynic acid varies from that of the thiazides and mercurial diuretics.
+Initial sodium and chloride excretion is usually substantial and chloride
+loss exceeds that of sodium. With prolonged administration, chloride excretion
+declines, and potassium and hydrogen ion excretion may increase. EDECRIN is
+effective whether or not there is clinical acidosis or alkalosis.</paragraph><paragraph>Although
+EDECRIN, in carefully controlled studies in animals and experimental subjects,produces a more favorable sodium/potassium excretion ratio than the thiazides,
+in patients with increased diuresis excessive amounts of potassium may be
+excreted.</paragraph><paragraph>Onset of action is rapid, usually within 30
+minutes after an oral dose of EDECRIN or within 5 minutes after an intravenous
+injection of SODIUM EDECRIN. After oral use, diuresis peaks in about 2 hours
+and lasts about 6 to 8 hours.</paragraph><paragraph>The sulfhydryl binding
+propensity of ethacrynic acid differs somewhat from that of the organomercurials.
+Its mode of action is not by carbonic anhydrase inhibition.</paragraph><paragraph>Ethacrynic
+acid does not cross the blood-brain barrier.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="E3373345-5E90-B88D-2EC6-985CBB52FA93" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Indications and Usage section" />
+<title mediaType="text/x-hl7-title+xml"><content ID="INDICATIONS-AND-USAGE">INDICATIONS AND USAGE</content></title>
+<text><paragraph>EDECRIN is indicated for treatment of edema when an agent
+with greater diuretic potential than those commonly employed is required.</paragraph><list listType="ordered"><item><paragraph>Treatment of the edema associated with congestive heart failure,
+cirrhosis of the liver, and renal disease, including the nephrotic syndrome.</paragraph></item><item><paragraph>Short-term management of ascites due to malignancy, idiopathic
+edema, and lymphedema.</paragraph></item><item><paragraph><content ID="PEDIATRIC-INDICATIONS-AND-USAGE">Short-term
+management of hospitalized pediatric patients, other than infants, with congenital
+heart disease or the nephrotic syndrome</content>.</paragraph></item><item><paragraph>Intravenous SODIUM EDECRIN is indicated when a rapid onset
+of diuresis is desired, e.g., in acute pulmonary edema, or when gastrointestinal
+absorption is impaired or oral medication is not practicable.</paragraph></item></list></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="3A6CEE41-7550-BEF3-5C23-70B674111C07" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Contraindications section" />
+<title mediaType="text/x-hl7-title+xml"><content ID="CONTRAINDICATIONS">CONTRAINDICATIONS</content></title>
+<text><paragraph>All diuretics, including ethacrynic acid, are contraindicated
+in anuria. If increasing electrolyte imbalance, azotemia, and/or oliguria
+occur during treatment of severe, progressive renal disease, the diuretic
+should be discontinued.</paragraph><paragraph>In a few patients this diuretic
+has produced severe, watery diarrhea. If this occurs, it should be discontinued
+and not used again.</paragraph><paragraph>Until further experience in infants
+is accumulated, therapy with oral and parenteral EDECRIN is contraindicated.</paragraph><paragraph>Hypersensitivity
+to any component of this product.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="5999A906-F6C4-B645-3D9B-CCF32CDD9123" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Warnings section" />
+<title mediaType="text/x-hl7-title+xml"><content ID="WARNINGS">WARNINGS</content></title>
+<text><paragraph>The effects of EDECRIN on electrolytes are related to its
+renal pharmacologic activity and are dose dependent. The possibility of profound
+electrolyte and water loss may be avoided by weighing the patient throughout
+the treatment period, by careful adjustment of dosage, by initiating treatment
+with small doses, and by using the drug on an intermittent schedule when possible.
+When excessive diuresis occurs, the drug should be withdrawn until homeostasis
+is restored. When excessive electrolyte loss occurs, the dosage should be
+reduced or the drug temporarily withdrawn.</paragraph><paragraph>Initiation
+of diuretic therapy with EDECRIN in the cirrhotic patient with ascites is
+best carried out in the hospital. When maintenance therapy has been established,
+the individual can be satisfactorily followed as an outpatient.</paragraph><paragraph>EDECRIN
+should be given with caution to patients with advanced cirrhosis of the liver,
+particularly those with a history of previous episodes of electrolyte imbalance
+or hepatic encephalopathy. Like other diuretics it may precipitate hepatic
+coma and death.</paragraph><paragraph>Too vigorous a diuresis, as evidenced
+by rapid and excessive weight loss, may induce an acute hypotensive episode.
+In elderly cardiac patients, rapid contraction of plasma volume and the resultant
+hemoconcentration should be avoided to prevent the development of thromboembolic
+episodes, such as cerebral vascular thromboses and pulmonary emboli which
+may be fatal. Excessive loss of potassium in patients receiving digitalis
+glycosides may precipitate digitalis toxicity. Care should also be exercised
+in patients receiving potassium-depleting steroids.</paragraph><paragraph>A
+number of possibly drug-related deaths have occurred in critically ill patients
+refractory to other diuretics. These generally have fallen into two categories:
+(1) patients with severe myocardial disease who have been receiving digitalis
+and presumably developed acute hypokalemia with fatal arrhythmia; (2) patients
+with severely decompensated hepatic cirrhosis with ascites, with or without
+accompanying encephalopathy, who were in electrolyte imbalance and died because
+of intensification of the electrolyte defect.</paragraph><paragraph>Deafness,
+tinnitus, and vertigo with a sense of fullness in the ears have occurred,
+most frequently in patients with severe impairment of renal function. These
+symptoms have been associated most often with intravenous administration and
+with doses in excess of those recommended. The deafness has usually been reversible
+and of short duration (one to 24 hours). However, in some patients the hearing
+loss has been permanent. A number of these patients were also receiving drugs
+known to be ototoxic. EDECRIN may increase the ototoxic potential of other
+drugs (see <linkHtml href="#PRECAUTIONS">PRECAUTIONS, Drug Interactions</linkHtml>).</paragraph><paragraph>Lithium
+generally should not be given with diuretics (see <linkHtml href="#PRECAUTIONS">PRECAUTIONS,
+Drug Interactions</linkHtml>).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="A5FEBD5A-A548-6F2C-97BD-D51784C295E4" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Precautions" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="A5F199C1-600E-0856-51E9-BCE4567E8CE7" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="General Precautions" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>Weakness, muscle cramps, paresthesias, thirst, anorexia,
+and signs of hyponatremia, hypokalemia, and/or hypochloremic alkalosis may
+occur following vigorous or excessive diuresis and these may be accentuated
+by rigid salt restriction. Rarely, tetany has been reported following vigorous
+diuresis. <content styleCode="italics">During therapy with ethacrynic acid,
+liberalization of salt intake and supplementary potassium chloride are often
+necessary.</content></paragraph><paragraph>When a metabolic alkalosis may
+be anticipated, e.g., in cirrhosis with ascites, the use of potassium chloride
+or a potassium-sparing agent before and during therapy with EDECRIN may mitigate
+or prevent the hypokalemia.</paragraph><paragraph>Loop diuretics have been
+shown to increase the urinary excretion of magnesium; this may result in hypomagnesemia.</paragraph><paragraph>The
+safety and efficacy of ethacrynic acid in hypertension have not been established.
+However, the dosage of coadministered antihypertensive agents may require
+adjustment.</paragraph><paragraph>Orthostatic hypotension may occur in patients
+receiving other antihypertensive agents when given ethacrynic acid.</paragraph><paragraph>EDECRIN
+has little or no effect on glomerular filtration or on renal blood flow, except
+following pronounced reductions in plasma volume when associated with rapid
+diuresis. A transient increase in serum urea nitrogen may occur. Usually,
+this is readily reversible when the drug is discontinued.</paragraph><paragraph>As
+with other diuretics used in the treatment of renal edema, hypoproteinemia
+may reduce responsiveness to ethacrynic acid and the use of salt-poor albumin
+should be considered.</paragraph><paragraph>A number of drugs, including ethacrynic
+acid, have been shown to displace warfarin from plasma protein; a reduction
+in the usual anticoagulant dosage may be required in patients receiving both
+drugs.</paragraph><paragraph>EDECRIN may increase the risk of gastric hemorrhage
+associated with corticosteroid treatment.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="B03C171A-808D-BEDF-E7E2-9913B71A9B8A" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Laboratory Tests SECTION" />
+<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text><paragraph>Frequent serum electrolyte, CO<sub>2</sub> and BUN determinations
+should be performed early in therapy and periodically thereafter during active
+diuresis. Any electrolyte abnormalities should be corrected or the drug temporarily
+withdrawn.</paragraph><paragraph>Increases in blood glucose and alterations
+in glucose tolerance tests have been observed in patients receiving EDECRIN.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="54FA0310-F93D-B4E4-C214-87161A9E174B" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content ID="PRECAUTIONS">Drug Interactions</content></title>
+<text><paragraph>Lithium generally should not be given with diuretics because
+they reduce its renal clearance and add a high risk of lithium toxicity. Read
+circulars for lithium preparations before use of such concomitant therapy.</paragraph><paragraph>EDECRIN
+may increase the ototoxic potential of other drugs such as aminoglycoside
+and some cephalosporin antibiotics. Their concurrent use should be avoided.</paragraph><paragraph>A
+number of drugs, including ethacrynic acid, have been shown to displace warfarin
+from plasma protein; a reduction in the usual anticoagulant dosage may be
+required in patients receiving both drugs.</paragraph><paragraph>In some patients,
+the administration of a non-steroidal anti-inflammatory agent can reduce the
+diuretic, natriuretic, and antihypertensive effects of loop, potassium-sparing
+and thiazide diuretics. Therefore, when EDECRIN and non-steroidal anti-inflammatory
+agents are used concomitantly, the patient should be observed closely to determine
+if the desired effect of the diuretic is obtained.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="C0B8F306-719E-1374-1369-90CBD6FA24DF" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carcinogenesis and Mutagenesis Impairment of Fertility Section" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+<text><paragraph>There was no evidence of a tumorigenic effect in a 79-week
+oral chronic toxicity study in rats at doses up to 45 times the human dose.</paragraph><paragraph>Ethacrynic
+acid had no effect on fertility in a two-litter study in rats or a two-generation
+study in mice at 10 times the human dose.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="EE866A0B-503F-5776-35A2-8C9D5D645D93" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="17CB23EC-BF24-4254-2AD3-240479C215E1" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Teratogenic Effects Section" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="italics">Pregnancy Category B:</content> Reproduction
+studies in the mouse and rabbit at doses up to 50 times the human dose showed
+no evidence of external abnormalities of the fetus due to EDECRIN.</paragraph><paragraph>In
+a two-litter study in the dog and rat, oral doses of 5 or 20 mg/kg/day (2&#189;
+or 10 times the human dose), respectively, did not interfere with pregnancy
+or with growth and development of the pups. Although there was reduction in
+the mean body weights of the fetuses in a teratogenic study in the rat at
+a dose level of 100 mg/kg (50 times the human dose), there was no effect on
+mortality or postnatal development. Functional and morphologic abnormalities
+were not observed.</paragraph><paragraph>There are, however, no adequate and
+well-controlled studies in pregnant women. Since animal reproduction studies
+are not always predictive of human response, EDECRIN should be used during
+pregnancy only if clearly needed.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="8F48BDF7-AA3A-87F4-1F86-536FFB15A3DF" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nursing Mothers Section" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>It is not known whether this drug is excreted in human milk.
+Because many drugs are excreted in human milk and because of the potential
+for serious adverse reactions in nursing infants from EDECRIN, a decision
+should be made whether to discontinue nursing or to discontinue the drug,
+taking into account the importance of the drug to the mother.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="523A6203-9664-8444-29A5-CDDA87BF52CC" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pediatric Use Section" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>There are no well-controlled clinical trials in pediatric
+patients. The information on oral dosing in pediatric patients, other than
+infants, is supported by evidence from empiric use in this age group.</paragraph><paragraph>For
+information on oral use in pediatric patients, other than infants, see <linkHtml href="#PEDIATRIC-INDICATIONS-AND-USAGE">INDICATIONS AND USAGE</linkHtml> and <linkHtml href="#DOSAGEANDADMINISTRATION">DOSAGE AND ADMINISTRATION.</linkHtml></paragraph><paragraph>Safety
+and effectiveness of oral and parenteral use in infants have not been established
+(see <linkHtml href="#CONTRAINDICATIONS">CONTRAINDICATIONS</linkHtml>).</paragraph><paragraph>Safety
+and effectiveness of intravenous use in pediatric patients have not been established
+(see <linkHtml href="#Pediatric-Intravenous-Use">DOSAGE AND ADMINISTRATION,
+Intravenous Use</linkHtml>).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="710AB26F-7FE9-C9DB-B1AA-7387CFBFF487" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Geriatric Use section" />
+<title mediaType="text/x-hl7-title+xml">Geriatric Use</title>
+<text><paragraph>Of the total number of subjects in clinical studies of EDECRIN/SODIUM
+EDECRIN, approximately 224 patients (21%) were 65 to 74 years of age, while
+approximately 100 patients (9%) were 75 years of age and over. No overall
+differences in safety or effectiveness were observed between these subjects
+and younger subjects, and other reported clinical experience has not identified
+differences in responses between the elderly and younger patients, but greater
+sensitivity of some older individuals cannot be ruled out. (See <linkHtml href="#WARNINGS">WARNINGS</linkHtml>.)</paragraph><paragraph>This drug is
+known to be substantially excreted by the kidney, and the risk of toxic reactions
+to this drug may be greater in patients with impaired renal function. Because
+elderly patients are more likely to have decreased renal function, care should
+be taken in dose selection, and it may be useful to monitor renal function.
+(See <linkHtml href="#CONTRAINDICATIONS">CONTRAINDICATIONS</linkHtml>.)</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="8B85DE26-D0B6-293F-E94E-7BD9CC8EC9E0" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Adverse Reactions section" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="ADCE64F1-B141-0F95-E8A2-E851D54C72A6" />
+<title mediaType="text/x-hl7-title+xml">Gastrointestinal</title>
+<text><paragraph>Anorexia, malaise, abdominal discomfort or pain, dysphagia,
+nausea, vomiting, and diarrhea have occurred. These are more frequent with
+large doses or after one to three months of continuous therapy. A few patients
+have had sudden onset of profuse, watery diarrhea. Discontinue EDECRIN if
+diarrhea is severe and do not give it again. Gastrointestinal bleeding has
+occurred in some patients. Rarely, acute pancreatitis has been reported.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="755369FF-74C8-70C7-315A-D9EE7B2F6B8C" />
+<title mediaType="text/x-hl7-title+xml">Metabolic</title>
+<text><paragraph>Reversible hyperuricemia and acute gout have been reported.
+Acute symptomatic hypoglycemia with convulsions occurred in two uremic patients
+who received doses above those recommended. Hyperglycemia has been reported.
+Rarely, jaundice and abnormal liver function tests have been reported in seriously
+ill patients receiving multiple drug therapy, including EDECRIN.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="B2453EF6-382C-D6DE-1FEC-D541AD784F2C" />
+<title mediaType="text/x-hl7-title+xml">Hematologic</title>
+<text><paragraph>Agranulocytosis or severe neutropenia has been reported in
+a few critically ill patients also receiving agents known to produce this
+effect. Thrombocytopenia has been reported rarely. Henoch-Sch&#246;nlein purpura
+has been reported rarely in patients with rheumatic heart disease receiving
+multiple drug therapy, including EDECRIN.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="35214F56-159F-0B88-DD6B-84FED5124E48" />
+<title mediaType="text/x-hl7-title+xml">Special Senses </title>
+<text><paragraph>(see <linkHtml href="#WARNINGS">WARNINGS</linkHtml>)</paragraph><paragraph>Deafness,
+tinnitus and vertigo with a sense of fullness in the ears, and blurred vision
+have occurred.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="9FBF2F5A-C7ED-B7E9-965A-E21C3E5BE227" />
+<title mediaType="text/x-hl7-title+xml">Central Nervous System</title>
+<text><paragraph>Headache, fatigue, apprehension, confusion.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="7D50E326-41F6-97CF-E586-F50D1C58FE28" />
+<title mediaType="text/x-hl7-title+xml">Miscellaneous</title>
+<text><paragraph>Skin rash, fever, chills, hematuria.</paragraph><paragraph>SODIUM
+EDECRIN occasionally has caused local irritation and pain after intravenous
+use.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="A6833036-CAC1-89DB-B271-32BF30ED8EDC" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Overdosage section" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>Overdosage may lead to excessive diuresis with electrolyte
+depletion and dehydration.</paragraph><paragraph>In the event of overdosage,
+symptomatic and supportive measures should be employed. Emesis should be induced
+or gastric lavage performed. Correct dehydration, electrolyte imbalance, hepatic
+coma, and hypotension by established procedures. If required, give oxygen
+or artificial respiration for respiratory impairment.</paragraph><paragraph>In
+the mouse, the oral LD<sub>50</sub> of ethacrynic acid is 627 mg/kg and the
+intravenous LD<sub>50</sub> of ethacrynate sodium is 175 mg/kg.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="C1A81487-879E-12AF-9BAC-CBEC34316F84" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dosage and Administration section" />
+<title mediaType="text/x-hl7-title+xml"><content ID="DOSAGEANDADMINISTRATION">DOSAGE AND ADMINISTRATION  </content></title>
+<text><paragraph><content styleCode="bold">Dosage must be regulated carefully
+to prevent a more rapid or substantial loss of fluid or electrolyte than is
+indicated or necessary.</content> The magnitude of diuresis and natriuresis
+is largely dependent on the degree of fluid accumulation present in the patient.
+Similarly, the extent of potassium excretion is determined in large measure
+by the presence and magnitude of aldosteronism.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="0AE58086-E907-0270-C455-1A6AF56D35F2" />
+<title mediaType="text/x-hl7-title+xml">Oral Use</title>
+<text><paragraph>EDECRIN is available for oral use as 25 mg tablets.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="0DC1D277-AEA4-F089-A731-11A5D472C7ED" />
+<title mediaType="text/x-hl7-title+xml">Dosage: To Initiate Diuresis</title>
+<text><paragraph><content styleCode="italics">In Adults:</content> The smallest
+dose required to produce gradual weight loss (about 1 to 2 pounds per day)
+is recommended. Onset of diuresis usually occurs at 50 to 100 mg for adults.After diuresis has been achieved, the minimally effective dose (usually from
+50 to 200 mg daily) may be given on a continuous or intermittent dosage schedule.
+Dosage adjustments are usually in 25 to 50 mg increments to avoid derangement
+of water and electrolyte excretion.</paragraph><paragraph>The patient should
+be weighed under standard conditions before and during the institution of
+diuretic therapy with this compound. Small alterations in dose should effectively
+prevent a massive diuretic response. The following schedule may be helpful
+in determining the smallest effective dose.</paragraph><paragraph>Day 1 &#8212;
+50 mg once daily after a meal</paragraph><paragraph>Day 2 &#8212; 50 mg twice
+daily after meals, if necessary</paragraph><paragraph>Day 3 &#8212; 100 mg
+in the morning and 50 to 100 mg following the afternoon or evening meal, depending
+upon response to the morning dose.</paragraph><paragraph>A few patients may
+require initial and maintenance doses as high as 200 mg twice daily. These
+higher doses, which should be achieved gradually, are most often required
+in patients with severe, refractory edema.</paragraph><paragraph><content styleCode="italics">In Pediatric Patients</content> (excluding infants, see <linkHtml href="#CONTRAINDICATIONS">CONTRAINDICATIONS</linkHtml>): The initial dose
+should be 25 mg. Careful stepwise increments in dosage of 25 mg should be
+made to achieve effective maintenance.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="9500B22A-E98A-7E63-CD58-BD8F41346333" />
+<title mediaType="text/x-hl7-title+xml">Maintenance Therapy</title>
+<text><paragraph>It is usually possible to reduce the dosage and frequency
+of administration once dry weight has been achieved.</paragraph><paragraph><content styleCode="italics">EDECRIN (Ethacrynic Acid) may be given intermittently
+after an effective diuresis is obtained with the regimen outlined above. </content>Dosage may be on an alternate daily schedule or more prolongedperiods of diuretic therapy may be interspersed with rest periods. Such an
+intermittent dosage schedule allows time for correction of any electrolyte
+imbalance and may provide a more efficient diuretic response.</paragraph><paragraph>The
+chloruretic effect of this agent may give rise to retention of bicarbonate
+and a metabolic alkalosis. This may be corrected by giving chloride (ammonium
+chloride or arginine chloride). Ammonium chloride should not be given to cirrhotic
+patients.</paragraph><paragraph>EDECRIN has additive effects when used with
+other diuretics. For example, a patient who is on maintenance dosage of an
+oral diuretic may require additional intermittent diuretic therapy, such as
+an organomercurial, for the maintenance of basal weight. The intermittent
+use of EDECRIN orally may eliminate the need for injections of organomercurials.
+Small doses of EDECRIN may be added to existing diuretic regimens to maintain
+basal weight. This drug may potentiate the action of carbonic anhydrase inhibitors,
+with augmentation of natriuresis and kaliuresis. Therefore, when adding EDECRIN
+the initial dose and changes of dose should be in 25 mg increments, to avoid
+electrolyte depletion. Rarely, patients who failed to respond to ethacrynic
+acid have responded to older established agents.</paragraph><paragraph>While
+many patients do not require supplemental potassium, the use of potassium
+chloride or potassium-sparing agents, or both, during treatment with EDECRIN
+is advisable, especially in cirrhotic or nephrotic patients and in patients
+receiving digitalis.</paragraph><paragraph>Salt liberalization usually prevents
+the development of hyponatremia and hypochloremia. During treatment with EDECRIN,
+salt may be liberalized to a greater extent than with other diuretics. Cirrhotic
+patients, however, usually require at least moderate salt restriction concomitant
+with diuretic therapy.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="34BCB784-744F-1376-A890-05197C403943" />
+<title mediaType="text/x-hl7-title+xml">Intravenous Use</title>
+<text><paragraph>Intravenous SODIUM EDECRIN is for intravenous use when oral
+intake is impractical or in urgent conditions, such as acute pulmonary edema.</paragraph><paragraph>The
+usual intravenous dose for the average sized adult is 50 mg, or 0.5 to 1.0mg per kg of body weight. Usually only one dose has been necessary; occasionally
+a second dose at a new injection site, to avoid possible thrombophlebitis,
+may be required. A single intravenous dose not exceeding 100 mg has been used
+in critical situations.</paragraph><paragraph><content ID="Pediatric-Intravenous-Use">Insufficient
+pediatric experience precludes recommendation for this age group.</content></paragraph><paragraph>To
+reconstitute the dry material, add 50 mL of 5 percent Dextrose Injection,
+or Sodium Chloride Injection to the vial. Occasionally, some 5 percent Dextrose
+Injection solutions may have a low pH (below 5). The resulting solution with
+such a diluent may be hazy or opalescent. Intravenous use of such a solution
+is not recommended. Inspect the vial containing Intravenous SODIUM EDECRIN
+for particulate matter and discoloration before use.</paragraph><paragraph>The
+solution may be given slowly through the tubing of a running infusion or by
+direct intravenous injection over a period of several minutes. Do not mix
+this solution with whole blood or its derivatives. Discard unused reconstituted
+solution after 24 hours.</paragraph><paragraph>SODIUM EDECRIN should not be
+given subcutaneously or intramuscularly because of local pain and irritation.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="5EF43F97-5794-4738-D9E5-A902C26C8F37" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="How Supplied section" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>No. 3321 &#8212; Tablets EDECRIN, 25 mg, are white, capsule
+shaped, scored tablets, coded MSD 65 on one side and EDECRIN on the other.
+They are supplied as follows:</paragraph><paragraph><content styleCode="bold">NDC</content> 0006-0065-68 in bottles of 100</paragraph><paragraph>No. 3620&#8212; Intravenous SODIUM EDECRIN is a dry white material either in a plug
+form or as a powder. It is supplied in vials containing ethacrynate sodium
+equivalent to 50 mg of ethacrynic acid, <content styleCode="bold">NDC</content> 0006-3620-50.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="353562DA-2A3E-300A-3D37-1E38495348D0" />
+<title mediaType="text/x-hl7-title+xml">Storage</title>
+<text><paragraph>Store in a tightly closed container at 25&#176;C (77&#176;F);
+excursions permitted to 15-30&#176;C (59-86&#176;F) [see USP Controlled Room
+Temperature].</paragraph><paragraph>MERCK &amp; CO., Inc., Whitehouse Station,
+NJ 08889, USA</paragraph><paragraph>Issued February 2005</paragraph><paragraph>Printed
+in USA</paragraph><paragraph>9350230</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

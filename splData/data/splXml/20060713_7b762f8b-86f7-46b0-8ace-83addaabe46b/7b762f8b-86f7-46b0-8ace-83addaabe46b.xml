@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="79B20719-5B45-1345-C14E-8632DE3D135E" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Human prescription drug label" />
+<title mediaType="text/x-hl7-title+xml">PROLIXIN<sup>&#174;</sup><br />Fluphenazine Hydrochloride Tablets USP<br />Fluphenazine Hydrochloride Elixir USP</title>
+<effectiveTime value="20060112" />
+<setId root="7b762f8b-86f7-46b0-8ace-83addaabe46b" />
+<versionNumber value="2" />
+<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>APOTHECON</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="8A787804-8F03-08EE-2564-11378F544F35" />
+<effectiveTime value="20060112" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0003-0877" codeSystem="2.16.840.1.113883.6.69" />
+<name>PROLIXIN</name>
+<formCode code="C42931" codeSystem="2.16.84.1.1138833.26.1.1" displayName="TABLET, FILM COATED" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="5">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="5" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="ZOU145W1XL" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>fluphenazine hydrochloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="S79426A41Z" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>fluphenazine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>fluphenazine hydrochloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Blue No.1</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Yellow No. 5 (tartrazine)</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>croscarmellose sodium</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>hydroxypropyl methylcellulose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose monohydrate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polyethylene glycol</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polysorbate 80</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>stearic acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>titanium dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0003-0877-50" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" />
+<value code="C48329" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GREEN" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" />
+<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" />
+<value unit="MM" value="8" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" />
+<value value="true" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" />
+<value value="1" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" />
+<value xsi:type="ST">PPP;877</value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0003-0956" codeSystem="2.16.840.1.113883.6.69" />
+<name>PROLIXIN</name>
+<formCode code="C42931" codeSystem="2.16.84.1.1138833.26.1.1" displayName="TABLET, FILM COATED" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="10">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="10" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="ZOU145W1XL" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>fluphenazine hydrochloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="S79426A41Z" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>fluphenazine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>fluphenazine hydrochloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>D&amp;C Red No. 27 Aluminum Lake</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>D&amp;C Red No. 30 Aluminum Lake</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Blue No. 2 Aluminum Lake</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Yellow No. 6 Aluminum Lake</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>croscarmellose sodium</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>hydroxypropyl methylcellulose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose monohydrate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polyethylene glycol</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polysorbate 80</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>stearic acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>titanium dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0003-0956-50" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" />
+<value code="C48328" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PINK" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" />
+<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" />
+<value unit="MM" value="10" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" />
+<value value="true" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" />
+<value value="1" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" />
+<value xsi:type="ST">PPP;956</value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0003-0820" codeSystem="2.16.840.1.113883.6.69" />
+<name>PROLIXIN</name>
+<formCode code="C42912" codeSystem="2.16.84.1.1138833.26.1.1" displayName="ELIXIR" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="0.5">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="0.5" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="ZOU145W1XL" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>fluphenazine hydrochloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="S79426A41Z" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>fluphenazine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>fluphenazine hydrochloride</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<quantity>
+<numerator unit="mL" value="0.14">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="0.14" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<inactiveIngredientSubstance>
+<code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>alcohol</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Yellow No. 6</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>flavors</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>glycerin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polysorbate 40</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>purified water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium benzoate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sucrose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="60">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="60" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0003-0820-30" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43171" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, DROPPER" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="mL" value="473">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="473" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0003-0820-50" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="F227B6A7-0817-F39C-7404-7819A88C08A4" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>PROLIXIN is a trifluoromethyl phenothiazine derivative intended for the management of schizophrenia.  Fluphenazine hydrochloride is described chemically as 4-[3-[2-(Trifluoromethyl)phenothiazin-10-yl] propyl]-1-piperazineethanol dihydrochloride and its molecular formula is C<sub>22</sub>H<sub>28</sub>F<sub>3</sub>N<sub>3</sub>OS<sub>2</sub>HCl.  The molecular structure is shown below:</paragraph><renderMultiMedia referencedObject="MM1" /><paragraph>PROLIXIN Tablets (Fluphenazine Hydrochloride Tablets) contain 5 and 10 mg fluphenazine hydrochloride per tablet. Inactive ingredients: Aluminum Lakes of the following colorants: [D&amp;C Red No. 27 and D&amp;C Red No. 30 for 10 mg only; FD&amp;C Blue No. 1 for 5 mg only; FD&amp;C Blue No.2 for 10 mg only; FD&amp;C Yellow No. 5 (tartrazine) for 5 mg only; FD&amp;C Yellow No. 6 for 10 mg only], croscarmellose sodium; hydroxypropyl methylcellulose, lactose monohydrate; polyethylene glycol; polysorbate 80, povidone, stearic acid, and titanium dioxide.</paragraph><paragraph>PROLIXIN Elixir (Fluphenazine Hydrochloride Elixir) contains 0.5 mg fluphenazine hydrochloride per mL. Inactive ingredients: alcohol [14% v/v], colorant (FD&amp;C Yellow No. 6), flavors, glycerin, polysorbate 40, purified water, sodium benzoate, and sucrose.</paragraph></text>
+<effectiveTime value="20060112" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="prolixin-tabs-elixir-structure.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="8046B24E-16E3-FA9C-A410-76616E876507" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>PROLIXIN has activity at all levels of the central nervous system as well as on multiple organ systems. The mechanism whereby its therapeutic action is exerted is unknown.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="8491BB4A-076C-03AC-0FBA-B48E6196D5F3" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS AND USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>PROLIXIN is indicated in the management of manifestations of psychotic disorders.</paragraph><paragraph>PROLIXIN has not been shown effective in the management of behavioral complications in patients with mental retardation.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="1FCE0222-A3DB-934E-0CA4-7B201526CCE4" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>Phenothiazines are contraindicated in patients with suspected or established subcortical brain damage, in patients receiving large doses of hypnotics, and in comatose or severely depressed states. The presence of blood dyscrasia or liver damage precludes the use of fluphenazine hydrochloride. PROLIXIN (fluphenazine hydrochloride) is contraindicated in patients who have shown hypersensitivity to fluphenazine; cross-sensitivity to phenothiazine derivatives may occur.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section ID="Warnings">
+<id root="14575E21-C4B6-51BF-DE95-F412EFA5A8B6" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<effectiveTime value="20060112" />
+<component>
+<section>
+<id root="B5BB3D4C-3AEA-990E-52E1-CB21E7783FA7" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Tardive Dyskinesia</title>
+<text><paragraph>Tardive dyskinesia, a syndrome consisting of potentially irreversible, involuntary, dyskinetic movements may develop in patients treated with neuroleptic (anti-psychotic) drugs. Although the prevalence of the syndrome appears to be highest among the elderly, especially elderly women, it is impossible to rely upon prevalence estimates to predict, at the inception of neuroleptic treatment, which patients are likely to develop the syndrome. Whether neuroleptic drug products differ in their potential to cause tardive dyskinesia is unknown.</paragraph><paragraph>Both the risk of developing the syndrome and the likelihood that it will become irreversible are believed to increase as the duration of treatment and the total cumulative dose of neuroleptic drugs administered to the patient increase. However, the syndrome can develop, although much less commonly, after relatively brief treatment periods at low doses.</paragraph><paragraph>There is no known treatment for established cases of tardive dyskinesia, although the syndrome may remit, partially or completely, if neuroleptic treatment is withdrawn. Neuroleptic treatment, itself, however, may suppress (or partially suppress) the signs and symptoms of the syndrome and thereby may possibly mask the underlying disease process. The effect that symptomatic suppression has upon the long- term course of the syndrome is unknown.</paragraph><paragraph>Given these considerations, neuroleptics should be prescribed in a manner that is most likely to minimize the occurrence of tardive dyskinesia. Chronic neuroleptic treatment should generally be reserved for patients who suffer from a chronic illness that, 1) is known to respond to neuroleptic drugs, and, 2) for whom alternative, equally effective, but potentially less harmful treatments are <content styleCode="italics">not</content> available or appropriate. In patients who do require chronic treatment, the smallest dose and the shortest duration of treatment producing a satisfactory clinical response should be sought. The need for continued treatment should be reassessed periodically.</paragraph><paragraph>If signs and symptoms of tardive dyskinesia appear in a patient on neuroleptics, drug discontinuation should be considered. However, some patients may require treatment despite the presence of the syndrome.</paragraph><paragraph>(For further information about the description of tardive dyskinesia and its clinical detection, please refer to the sections on <content styleCode="bold">PRECAUTIONS, Information for Patients</content> and <content styleCode="bold">ADVERSE REACTIONS, Tardive Dyskinesia.)</content></paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section ID="WarningNMS">
+<id root="0ABE9751-E825-3D4A-13FE-0DDFFFF960DB" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Neuroleptic Malignant Syndrome (NMS)</title>
+<text><paragraph>A potentially fatal symptom complex sometimes referred to as Neuroleptic Malignant Syndrome (NMS) has been reported in association with antipsychotic drugs. Clinical manifestations of NMS are hyperpyrexia, muscle rigidity, altered mental status and evidence of autonomic instability (irregular pulse or blood pressure, tachycardia, diaphoresis, and cardiac dysrhythmias).</paragraph><paragraph>The diagnosis evaluation of patients with this syndrome is complicated. In arriving at a diagnosis, it is important to identify cases where the clinical presentation includes both serious medical illness (e.g., pneumonia, systemic infection, etc.) and untreated or inadequately treated extrapyramidal signs and symptoms. Other important considerations in the differential diagnosis include central anticholinergic toxicity, heat stroke, drug fever and primary central nervous system pathology.</paragraph><paragraph>The management of NMS should include: 1) immediate discontinuation of antipsychotic drugs and other drugs not essential to concurrent therapy; 2) intensive symptomatic treatment and medical monitoring; and 3) treatment of any concomitant serious medical problems for which specific treatments are available. There is no general agreement about specific pharmacological treatment regimens for uncomplicated NMS.</paragraph><paragraph>If a patient requires antipsychotic drug treatment after recovery from NMS, the potential reintroduction of drug therapy should be carefully considered. The patient should be carefully monitored, since recurrences of NMS have been reported.</paragraph><paragraph>The use of this drug may impair the mental and physical abilities required for driving or operating heavy machinery.  </paragraph><paragraph>Potentiation of the effects of alcohol may occur with the use of this drug.</paragraph><paragraph>Since there is no adequate experience in children who have received this drug, safety and efficacy in children have not been established.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="5F512424-83FB-F0DA-EFA8-74DA26DE2684" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Usage in Pregnancy</title>
+<text><paragraph>The safety for the use of this drug during pregnancy has not been established; therefore, the possible hazards should be weighed against the potential benefits when administering this drug to pregnant patients.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="3306E810-3F60-05F7-C38E-5B3399FD7DF2" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060112" />
+<component>
+<section>
+<id root="693B6D9F-4356-BD3F-FFC4-F0DEF65497D9" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>Because of the possibility of cross-sensitivity, fluphenazine hydrochloride should be used cautiously in patients who have developed cholestatic jaundice, dermatoses or other allergic reactions to phenothiazine derivatives.</paragraph><paragraph>PROLIXIN Tablets (Fluphenazine Hydrochloride Tablets) 5 mg only contains FD&amp;C Yellow No. 5 (tartrazine) which may cause allergic-type reactions (including bronchial asthma) in certain susceptible individuals. Although the overall incidence FD&amp;C Yellow No. 5 (tartrazine) sensitivity in the general population is low, it is frequently seen in patients who also have aspirin hypersensitivity.</paragraph><paragraph>Psychotic patients on large doses of a phenothiazine drug who are undergoing surgery should be watched carefully for possible hypotensive phenomena. Moreover, it should be remembered that reduced amounts of anesthetics or central nervous system depressants may be necessary.</paragraph><paragraph>The effects of atropine may be potentiated in some patients receiving fluphenazine because of added anticholinergic effects.</paragraph><paragraph>Fluphenazine hydrochloride should be used cautiously in patients exposed to extreme heat or phosphorus insecticides; in patients with a history of convulsive disorders, since grand mal convulsions have been known to occur; and in patients with special medical disorders, such as mitral insufficiency or other cardiovascular diseases and pheochromocytoma.</paragraph><paragraph>The possibility of liver damage, pigmentary retinopathy, lenticular and corneal deposits, and development of irreversible dyskinesia should be remembered when patients are on prolonged therapy.</paragraph><paragraph>Neuroleptic drugs elevate prolactin levels; the elevation persists during chronic administration. Tissue culture experiments indicate that approximately one-third of human breast cancers are prolactin dependent <content styleCode="italics">in vitro</content>, a factor of potential importance if the prescription of these drugs is contemplated in a patient with a previously detected breast cancer. Although disturbances such as galactorrhea, amenorrhea, gynecomastia, and impotence have been reported, the clinical significance of elevated serum prolactin levels is unknown for most patients. An increase in mammary neoplasms has been found in rodents after chronic administration of neuroleptic drugs. Neither clinical studies nor epidemiologic studies conducted to date, however, have shown an association between chronic administration of these drugs and mammary tumorigenesis; the available evidence is considered too limited to be conclusive at this time.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="88E56526-CC25-F1A1-CFA8-F0792645DB34" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INFORMATION FOR PATIENTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Information for Patients</title>
+<text><paragraph>Given the likelihood that some patients exposed chronically to neuroleptics will develop tardive dyskinesia, it is advised that all patients in whom chronic use is contemplated be given, if possible, full information about this risk. The decision to inform patients and/or their guardians must obviously take into account the clinical circumstances and the competency of the patient to understand the information provided.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="12EDA500-6037-FB10-18EE-28001ECB1569" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Abrupt Withdrawal</title>
+<text><paragraph>In general, phenothiazines do not produce psychic dependence; however, gastritis, nausea and vomiting, dizziness, and tremulousness have been reported following abrupt cessation of high dose therapy. Reports suggest that these symptoms can be reduced if concomitant antiparkinsonian agents are continued for several weeks after phenothiazine is withdrawn.</paragraph><paragraph>Facilities should be available for periodic checking of hepatic function, renal function and the blood picture. Renal function of patients on long-term therapy should be monitored; if BUN (blood urea nitrogen) becomes abnormal, treatment should be discontinued.</paragraph><paragraph>As with any phenothiazine, the physician should be alert to the possible development of &#8220;silent pneumonias&#8221; in patients under treatment with fluphenazine hydrochloride.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="93280969-22E0-DC1F-A374-2B17BEF130B7" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<effectiveTime value="20060112" />
+<component>
+<section>
+<id root="4A933787-52BB-6BA1-AAE8-B8EE647C0F8E" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Central Nervous System</title>
+<text><paragraph>The side effects most frequently reported with phenothiazine compounds are extrapyramidal symptoms including pseudoparkinsonism, dystonia, dyskinesia, akathisia, oculogyric crises, opisthotonos, and hyperreflexia. Most often these extrapyramidal symptoms are reversible; however, they may be persistent (see below). With any given phenothiazine derivative, the incidence and severity of such reactions depend more on individual patient sensitivity than on other factors, but dosage level and patient age are also determinants.</paragraph><paragraph>Extrapyramidal reactions may be alarming, and the patient should be forewarned and reassured. These reactions can usually be controlled by administration of antiparkinsonian drugs such as benztropine mesylate or intravenous caffeine and sodium benzoate injection, and by subsequent reduction in dosage.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="DACEA402-8372-0B7A-9CE0-297F4F629510" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Tardive Dyskinesia</title>
+<text><paragraph>See <content styleCode="bold"><linkHtml href="#Warnings">WARNINGS</linkHtml></content>. The syndrome is characterized by involuntary choreoathetoid movements which variously involve the tongue, face, mouth, lips, or jaw (e.g., protrusions of the tongue, puffing of cheeks, puckering of the mouth, chewing movements), trunk and extremities. The severity of the syndrome and the degree of impairment produced vary widely.</paragraph><paragraph>The syndrome may become clinically recognizable either during treatment, upon dosage reduction, or upon withdrawal of treatment. Early detection of tardive dyskinesia is important. To increase the likelihood of detecting the syndrome at the earliest possible time, the dosage of neuroleptic drugs should be reduced periodically (if clinically possible) and the patient observed for signs of the disorder. This maneuver is critical, since neuroleptic drugs may mask the signs of the syndrome.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="A8B249FD-C251-40FD-4A14-EE30271F2F88" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Other CNS Effects</title>
+<text><paragraph>Occurrences of neuroleptic malignant syndrome (NMS) have been reported in patients on neuroleptic therapy (see <content styleCode="bold"><linkHtml href="#WarningNMS">WARNINGS, Neuroleptic Malignant Syndrome</linkHtml></content>). Leukocytosis, elevated CPK, liver function abnormalities, and acute renal failure may also occur with NMS.</paragraph><paragraph>Drowsiness or lethargy, if they occur, may necessitate a reduction in dosage; the induction of a catatonic-like state has been known to occur with dosages of fluphenazine far in excess of the recommended amounts. As with other phenothiazine compounds, reactivation or aggravation of psychotic processes may be encountered.</paragraph><paragraph>Phenothiazine derivatives have been known to cause, in some patients, restlessness, excitement, or bizarre dreams.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="75E8194C-9969-532F-FD0B-A2A7A78AE62C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Autonomic Nervous System</title>
+<text><paragraph>Hypertension and fluctuation in blood pressure have been reported with fluphenazine hydrochloride.</paragraph><paragraph>Hypotension has rarely presented a problem with fluphenazine. However, patients with pheochromocytoma, cerebral vascular or renal insufficiency, or a severe cardiac reserve deficiency (such as mitral insufficiency) appear to be particularly prone to hypotensive reactions with phenothiazine compounds, and should therefore be observed closely when the drug is administered. If severe hypotension should occur, supportive measures including the use of intravenous vasopressor drugs should be instituted immediately. Levarterenol Bitartrate Injection is the most suitable drug for this purpose; <content styleCode="italics">epinephrine should not be used</content> since phenothiazine derivatives have been found to reverse its action, resulting in a further lowering of blood pressure.</paragraph><paragraph>Autonomic reactions including nausea and loss of appetite, salivation, polyuria, perspiration, dry mouth, headache, and constipation may occur. Autonomic effects can usually be controlled by reducing or temporarily discontinuing dosage.</paragraph><paragraph>In some patients, phenothiazine derivatives have caused blurred vision, glaucoma, bladder paralysis, fecal impaction, paralytic ileus, tachycardia, or nasal congestion.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="15B9C375-0506-1C3B-AC10-BDD9B5328B27" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Metabolic and Endocrine</title>
+<text><paragraph>Weight change, peripheral edema, abnormal lactation, gynecomastia, menstrual irregularities, false results on pregnancy tests, impotency in men and increased libido in women have all been known to occur in some patients on phenothiazine therapy.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="026F752F-A8CD-1F6B-F753-2A65A6471E21" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Allergic Reactions</title>
+<text><paragraph>Skin disorders such as itching, erythema, urticaria, seborrhea, photosensitivity, eczema and even exfoliative dermatitis have been reported with phenothiazine derivatives. The possibility of anaphylactoid reactions occurring in some patients should be borne in mind.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="6E339B33-BD28-5501-8ECB-4E3F149B7014" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Hematologic</title>
+<text><paragraph>Routine blood counts are advisable during therapy since blood dyscrasias including leukopenia, agranulocytosis, thrombocytopenic or nonthrombocytopenic purpura, eosinophilia, and pancytopenia have been observed with phenothiazine derivatives. Furthermore, if any soreness of the mouth, gums, or throat, or any symptoms of upper respiratory infection occur and confirmatory leukocyte count indicates cellular depression, therapy should be discontinued and other appropriate measures instituted immediately.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="5227F240-431C-9318-742F-356CD6A17448" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Hepatic</title>
+<text><paragraph>Liver damage as manifested by cholestatic jaundice may be encountered, particularly during the first months of therapy; treatment should be discontinued if this occurs. An increase in cephalin flocculation, sometimes accompanied by alterations in other liver function tests, has been reported in patients receiving fluphenazine hydrochloride who have had no clinical evidence of liver damage.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="D026230F-248C-9F5A-9E0A-0D30D67380A8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Others</title>
+<text><paragraph>Sudden, unexpected and unexplained deaths have been reported in hospitalized psychotic patients receiving phenothiazines. Previous brain damage or seizures may be predisposing factors; high doses should be avoided in known seizure patients. Several patients have shown sudden flare-ups of psychotic behavior patterns shortly before death. Autopsy findings have usually revealed acute fulminating pneumonia or pneumonitis, aspiration of gastric contents, or intramyocardial lesions.</paragraph><paragraph>Although this is not a general feature of fluphenazine, potentiation of central nervous system depressants (opiates, analgesic, antihistamines, barbiturates, alcohol) may occur.</paragraph><paragraph>The following adverse reactions have also occurred with phenothiazine derivatives: systemic lupus erythematosus-like syndrome, hypotension severe enough to cause fatal cardiac arrest, altered electrocardiographic and electroencephalographic tracings, altered cerebrospinal fluid proteins, cerebral edema, asthma, laryngeal edema, and angioneurotic edema; with long-term use &#8212; skin pigmentation, and lenticular and corneal opacities.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="774C2D62-3463-4FC7-56C1-9DFDCBB2EEC1" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>PROLIXIN Elixir should be inspected prior to use. Upon standing a slight wispy precipitate or globular material may develop due to the flavoring oils separating from the solution (potency is not affected). Gentle shaking redisperses the oils and the solution becomes clear. Solutions that do not clarify should not be used.</paragraph><paragraph>Depending on the severity and duration of symptoms, total daily dosage for <content styleCode="italics">adult</content> psychotic patients may range initially from 2.5 to 10.0 mg and should be divided and given at six- to eight-hour intervals.</paragraph><paragraph>The smallest amount that will produce the desired results must be carefully determined for each individual, since optimal dosage levels of this potent drug vary from patient to patient. In general, the oral dose has been found to be approximately two to three times the parenteral dose of fluphenazine. Treatment is best instituted with a <content styleCode="italics">low initial dosage</content>, which may be increased, if necessary, until the desired clinical effects are achieved. Therapeutic effect is often achieved with doses under 20 mg daily. Patients remaining severely disturbed or inadequately controlled may require upward titration of dosage. Daily doses up to 40 mg may be necessary; controlled clinical studies have not been performed to demonstrate safety of prolonged administration of such doses.</paragraph><paragraph>When symptoms are controlled, dosage can generally be reduced gradually to daily maintenance doses of 1.0 or 5.0 mg, often given as a single daily dose. Continued treatment is needed to achieve maximum therapeutic benefits; further adjustments in dosage may be necessary during the course of therapy to meet the patient&#8217;s requirements.</paragraph><paragraph>For psychotic patients who have been stabilized on a fixed daily dosage or orally administered PROLIXIN (fluphenazine hydrochloride) dosage forms, conversion to the long-acting injectable PROLIXIN Decanoate may be indicated [see package insert for PROLIXIN Decanoate (Fluphenazine Decanoate Injection) for conversion information].</paragraph><paragraph>For <content styleCode="italics">geriatric</content> patients, the suggested starting dose is 1.0 to 2.5 mg daily, adjusted according to the response of the patient.</paragraph><paragraph>PROLIXIN<sup>&#174;</sup> Injection (Fluphenazine Hydrochloride Injection USP) is useful when psychotic patients are unable or unwilling to take oral therapy.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+<component>
+<section>
+<id root="35951BB6-1826-ADC2-33B5-3F541B7A053B" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph><content styleCode="bold">PROLIXIN<sup>&#174;</sup> Tablets</content> (Fluphenazine Hydrochloride Tablets USP)</paragraph><paragraph><content styleCode="bold">5 mg</content>:each film-coated tablet is green, round, biconvex, debossed with <content styleCode="bold">PPP</content> over <content styleCode="bold">877</content></paragraph><paragraph>&#160;&#160;&#160;bottles of 100&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC 0003-0877-50</paragraph><paragraph><content styleCode="bold">10 mg</content>:each film-coated tablet is pink, round, biconvex, debossed with <content styleCode="bold">PPP</content> over <content styleCode="bold">956</content></paragraph><paragraph>&#160;&#160;&#160;bottles of 100&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC 0003-0956-50</paragraph><paragraph><content styleCode="bold">PROLIXIN<sup>&#174;</sup> Elixir</content> (Fluphenazine Hydrochloride Elixir USP)</paragraph><paragraph>0.5 mg/mL (2.5 mg per 5 mL teaspoonful)</paragraph><paragraph>&#160;&#160;&#160;<content styleCode="bold">60 mL</content> bottle with<br />&#160;&#160;&#160;calibrated dropper &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC 0003-0820-30</paragraph><paragraph>&#160;&#160;&#160;<content styleCode="bold">473 mL</content> bottle&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC 0003-0820-50</paragraph><paragraph>PROLIXIN (Fluphenazine Hydrochloride) is also available as an oral solution concentrate and a sterile aqueous solution for intramuscular use. See specific package inserts for complete information.</paragraph></text>
+<effectiveTime value="20060112" />
+<component>
+<section>
+<id root="6E6CDAC4-D850-EF71-5789-A038FFF52B05" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Storage</title>
+<text><paragraph>Store tablets and elixir at room temperature. Protect from light. Keep tightly closed.</paragraph><paragraph>&#160;&#160;&#160;Tablets: Avoid excessive heat.</paragraph><paragraph>&#160;&#160;&#160;Elixir: Avoid freezing.</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="27CA9E50-B79E-ECD7-F81C-6691C40AEE4C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>APOTHECON<sup>&#174;</sup><br />A Bristol-Myers Squibb Company<br />Princeton, NJ 08540 USA</paragraph><paragraph>1017859A1+</paragraph></text>
+<effectiveTime value="20060112" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="753D3160-D94A-69BC-72E1-B88F513F2529" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="Human Prescription Drug Labeling" />
+<title mediaType="text/x-hl7-title+xml">BLOCADREN<sup>&#174;</sup><br />(TIMOLOL MALEATE)<br />TABLETS</title>
+<effectiveTime value="20060217" />
+<setId root="6EB7207F-25D7-4816-A8DB-1BDCF543A831" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Merck &amp; Co., Inc.</name>
+<addr>Whitehouse Station, NJ 08889</addr>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="41BE0B0F-4C93-7A49-DFF4-D5BD6BDE8431" />
+<effectiveTime value="20060217" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0006-0059" codeSystem="2.16.840.1.113883.6.69" />
+<name>BLOCADREN</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="5">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="5" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="P8Y54F701R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>timolol maleate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="817W3C6175" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>timolol</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>timolol maleate</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>cellulose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Blue 2</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0006-0059-68" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="6" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48333" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLUE" xsi:type="CE"><originalText>light blue</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">MSD;59;BLOCADREN</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="1" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"><originalText>round</originalText></value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0006-0136" codeSystem="2.16.840.1.113883.6.69" />
+<name>BLOCADREN</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="10">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="10" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="P8Y54F701R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>timolol maleate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="817W3C6175" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>timolol</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>timolol maleate</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>cellulose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Blue 2</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0006-0136-68" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="8" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48333" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLUE" xsi:type="CE"><originalText>light blue</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">MSD;136;BLOCADREN</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"><originalText>round</originalText></value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0006-0437" codeSystem="2.16.840.1.113883.6.69" />
+<name>BLOCADREN</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="20">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="20" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="P8Y54F701R" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>timolol maleate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="817W3C6175" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>timolol</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>timolol maleate</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>cellulose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Blue 2</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0006-0437-68" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="14" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48333" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLUE" xsi:type="CE"><originalText>light blue</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">MSD;437;BLOCADREN</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"><originalText>capsule shaped</originalText></value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="67A734B5-8237-A589-2477-AC007850D954" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Description" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>BLOCADREN<footnote ID="footnote1">Registered trademark of
+MERCK &amp; CO., Inc.<br />COPYRIGHT &#169; MERCK &amp; CO., Inc., 1985<br />All
+rights reserved</footnote> (Timolol Maleate) is a non-selective beta-adrenergic
+receptor blocking agent. The chemical name for timolol maleate is (<content styleCode="italics">S  </content>)-1-[(1,1-dimethylethyl)amino]-3-[[4-(4-morpholinyl)-1,2,5-thiadiazol-3-yl]oxy]-2-propanol
+(<content styleCode="italics">Z</content>)-2-butenedioate (1:1) salt. It possesses
+an asymmetric carbon atom in its structure and is provided as the levo isomer.
+Its empirical formula is C<sub>13</sub>H<sub>24</sub>N<sub>4</sub>O<sub>3</sub>S&#8226;C<sub>4</sub>H<sub>4</sub>O<sub>4</sub> and
+its structural formula is:</paragraph><renderMultiMedia referencedObject="MM1136433480-1" /><paragraph><br /></paragraph><paragraph>Timolol maleate
+has a molecular weight of 432.50. It is a white, odorless, crystalline powder
+which is soluble in water, methanol, and alcohol.</paragraph><paragraph>BLOCADREN
+is supplied as tablets in three strengths containing 5&#160;mg, 10&#160;mg
+or 20&#160;mg timolol maleate for oral administration. Inactive ingredients
+are cellulose, FD&amp;C Blue&#160;2, magnesium stearate, and starch.</paragraph></text>
+<effectiveTime value="20060217" />
+<component>
+<observationMedia ID="MM1136433480-1">
+<id />
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="blocadren-fig01.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="EFCFA60D-68A7-E3A3-DE02-F904BC6D3778" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title ID="ClinPharm" mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>BLOCADREN is a beta<sub>1</sub> and beta<sub>2</sub> (non-selective)
+adrenergic receptor blocking agent that does not have significant intrinsic
+sympathomimetic, direct myocardial depressant, or local anesthetic activity.</paragraph></text>
+<effectiveTime value="20060217" />
+<component>
+<section>
+<id root="23539711-4101-2BEA-F5BE-A12BB4123ACB" />
+<title ID="ClinPharm_PD" mediaType="text/x-hl7-title+xml">Pharmacodynamics</title>
+<text><paragraph>Clinical pharmacology studies have confirmed the beta-adrenergic
+blocking activity as shown by (1)&#160;changes in resting heart rate and response
+of heart rate to changes in posture; (2)&#160;inhibition of isoproterenol-induced
+tachycardia; (3)&#160;alteration of the response to the Valsalva maneuver
+and amyl nitrite administration; and (4)&#160;reduction of heart rate and
+blood pressure changes on exercise.</paragraph><paragraph>BLOCADREN decreases
+the positive chronotropic, positive inotropic, bronchodilator, and vasodilator
+responses caused by beta-adrenergic receptor agonists. The magnitude of this
+decreased response is proportional to the existing sympathetic tone and the
+concentration of BLOCADREN at receptor sites.</paragraph><paragraph>In normal
+volunteers, the reduction in heart rate response to a standard exercise was
+dose dependent over the test range of 0.5 to 20&#160;mg, with a peak reduction
+at 2 hours of approximately 30% at higher doses.</paragraph><paragraph>Beta-adrenergic
+receptor blockade reduces cardiac output in both healthy subjects and patients
+with heart disease. In patients with severe impairment of myocardial function
+beta-adrenergic receptor blockade may inhibit the stimulatory effect of the
+sympathetic nervous system necessary to maintain adequate cardiac function.</paragraph><paragraph>Beta-adrenergic
+receptor blockade in the bronchi and bronchioles results in increased airway
+resistance from unopposed parasympathetic activity. Such an effect in patients
+with asthma or other bronchospastic conditions is potentially dangerous.</paragraph><paragraph>Clinical
+studies indicate that BLOCADREN at a dosage of 20-60 mg/day reduces blood
+pressure without causing postural hypotension in most patients with essential
+hypertension. Administration of BLOCADREN to patients with hypertension results
+initially in a decrease in cardiac output, little immediate change in blood
+pressure, and an increase in calculated peripheral resistance. With continued
+administration of BLOCADREN, blood pressure decreases within a few days, cardiac
+output usually remains reduced, and peripheral resistance falls toward pretreatment
+levels. Plasma volume may decrease or remain unchanged during therapy with
+BLOCADREN. In the majority of patients with hypertension BLOCADREN also decreases
+plasma renin activity. Dosage adjustment to achieve optimal antihypertensive
+effect may require a few weeks. When therapy with BLOCADREN is discontinued,
+the blood pressure tends to return to pretreatment levels gradually. In most
+patients the antihypertensive activity of BLOCADREN is maintained with long-term
+therapy and is well tolerated.</paragraph><paragraph>The mechanism of the
+antihypertensive effects of beta-adrenergic receptor blocking agents is not
+established at this time. Possible mechanisms of action include reduction
+in cardiac output, reduction in plasma renin activity, and a central nervous
+system sympatholytic action.</paragraph><paragraph>A Norwegian multi-center,
+double-blind study, which included patients 20 to 75 years of age, compared
+the effects of timolol maleate with placebo in 1,884 patients who had survived
+the acute phase of a myocardial infarction. Patients with systolic blood pressure
+below 100&#160;mm Hg, sick sinus syndrome and contraindications to beta blockers,
+including uncontrolled heart failure, second or third degree AV block and
+bradycardia (&lt;50 beats per minute), were excluded from the multi-center
+trial. Therapy with BLOCADREN, begun 7 to 28 days following infarction, was
+shown to reduce overall mortality; this was primarily attributable to a reduction
+in cardiovascular mortality. BLOCADREN significantly reduced the incidence
+of sudden deaths (deaths occurring without symptoms or within 24 hours of
+the onset of symptoms), including those occurring within one hour, and particularly
+instantaneous deaths (those occurring without preceding symptoms). The protective
+effect of BLOCADREN was consistent regardless of age, sex or site of infarction.
+The effect was clearest in patients with a first infarction who were considered
+at a high risk of dying, defined as those with one or more of the following
+characteristics during the acute phase: transient left ventricular failure,
+cardiomegaly, newly appearing atrial fibrillation or flutter, systolic hypotension,
+or SGOT (ASAT) levels greater than four times the upper limit of normal. Therapy
+with BLOCADREN also reduced the incidence of non-fatal reinfarction. The mechanism
+of the protective effect of BLOCADREN is unknown.</paragraph><paragraph>BLOCADREN
+was studied for the prophylactic treatment of migraine headache in placebo-controlled
+clinical trials involving 400 patients, mostly women between the ages of 18
+and 66 years. Common migraine was the most frequent diagnosis. All patients
+had at least two headaches per month at baseline. Approximately 50 percent
+of patients who received BLOCADREN had a reduction in the frequency of migraine
+headache of at least 50 percent, compared to a similar decrease in frequency
+in 30 percent of patients receiving placebo. The most common cardiovascular
+adverse effect was bradycardia (5%).</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="4D3A4B1A-5099-0E21-103C-853196FF2C62" />
+<title mediaType="text/x-hl7-title+xml">Pharmacokinetics and Metabolism</title>
+<text><paragraph>BLOCADREN is rapidly and nearly completely absorbed (about
+90%) following oral ingestion. Detectable plasma levels of timolol occur within
+one-half hour and peak plasma levels occur in about one to two hours. The
+drug half-life in plasma is approximately 4 hours and this is essentially
+unchanged in patients with moderate renal insufficiency. Timolol is partially
+metabolized by the liver and timolol and its metabolites are excreted by the
+kidney. Timolol is not extensively bound to plasma proteins; i.e., &lt;10%
+by equilibrium dialysis and approximately 60% by ultrafiltration. An <content styleCode="italics">in vitro</content> hemodialysis study, using <sup>14</sup>C
+timolol added to human plasma or whole blood, showed that timolol was readily
+dialyzed from these fluids; however, a study of patients with renal failure
+showed that timolol did not dialyze readily. Plasma levels following oral
+administration are about half those following intravenous administration indicating
+approximately 50% first pass metabolism. The level of beta sympathetic activity
+varies widely among individuals, and no simple correlation exists between
+the dose or plasma level of timolol maleate and its therapeutic activity.
+Therefore, objective clinical measurements such as reduction of heart rate
+and/or blood pressure should be used as guides in determining the optimal
+dosage for each patient.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="7D7D1D32-2E26-EDFD-FC4C-710479C0DE99" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS AND USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<effectiveTime value="20060217" />
+<component>
+<section>
+<id root="4EDC9954-4800-4F59-E95B-138574E48198" />
+<title mediaType="text/x-hl7-title+xml">Hypertension</title>
+<text><paragraph>BLOCADREN is indicated for the treatment of hypertension.
+It may be used alone or in combination with other antihypertensive agents,
+especially thiazide-type diuretics.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="EDAB9071-79FA-41A2-8815-1543D210D313" />
+<title mediaType="text/x-hl7-title+xml">Myocardial Infarction</title>
+<text><paragraph>BLOCADREN is indicated in patients who have survived the
+acute phase of myocardial infarction, and are clinically stable, to reduce
+cardiovascular mortality and the risk of reinfarction.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="E2C34B14-E4B2-2E0C-04A5-1C62CA1D4DE7" />
+<title mediaType="text/x-hl7-title+xml">Migraine</title>
+<text><paragraph>BLOCADREN is indicated for the prophylaxis of migraine headache.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="4B8B66F1-4E69-361A-95AF-F48A70FD90BE" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION" />
+<title ID="Contraindications" mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>BLOCADREN is contraindicated in patients with bronchial asthma
+or with a history of bronchial asthma, or severe chronic obstructive pulmonary
+disease (see <linkHtml href="#Warnings">WARNINGS);</linkHtml> sinus bradycardia;
+second and third degree atrioventricular block; overt cardiac failure (see <linkHtml href="#Warnings">WARNINGS</linkHtml>); cardiogenic shock; hypersensitivity
+to this product.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="C84BF607-3A2E-EF7C-6C97-C807C5E6A60D" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION" />
+<title ID="Warnings" mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<effectiveTime value="20060217" />
+<component>
+<section>
+<id root="3C370AF2-A002-28D7-13E9-EF8F5A6038CA" />
+<title mediaType="text/x-hl7-title+xml">Cardiac Failure</title>
+<text><paragraph>Sympathetic stimulation may be essential for support of the
+circulation in individuals with diminished myocardial contractility, and its
+inhibition by beta-adrenergic receptor blockade may precipitate more severe
+failure. Although beta blockers should be avoided in overt congestive heart
+failure, they can be used, if necessary, with caution in patients with a history
+of failure who are well-compensated, usually with digitalis and diuretics.
+Both digitalis and timolol maleate slow AV conduction. If cardiac failure
+persists, therapy with BLOCADREN should be withdrawn.</paragraph><paragraph><content styleCode="italics">In Patients Without a History of Cardiac Failure </content>continued
+depression of the myocardium with beta-blocking agents over a period of time
+can, in some cases, lead to cardiac failure. At the first sign or symptom
+of cardiac failure, patients receiving BLOCADREN should be digitalized and/or
+be given a diuretic, and the response observed closely. If cardiac failure
+continues, despite adequate digitalization and diuretic therapy, BLOCADREN
+should be withdrawn.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="C54640DC-B027-9BDA-1EF4-F6EBF4680862" />
+<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="BOXED WARNING SECTION" />
+<text><paragraph><content styleCode="italics">Exacerbation of Ischemic Heart
+Disease Following Abrupt Withdrawal</content>&#160;&#8212; Hypersensitivity
+to catecholamines has been observed in patients withdrawn from beta blocker
+therapy; exacerbation of angina and, in some cases, myocardial infarction
+have occurred after <content styleCode="italics">abrupt</content> discontinuation
+of such therapy. When discontinuing chronically administered timolol maleate,
+particularly in patients with ischemic heart disease, the dosage should be
+gradually reduced over a period of one to two weeks and the patient should
+be carefully monitored. If angina markedly worsens or acute coronary insufficiency
+develops, timolol maleate administration should be reinstituted promptly,
+at least temporarily, and other measures appropriate for the management of
+unstable angina should be taken. Patients should be warned against interruption
+or discontinuation of therapy without the physician's advice. Because
+coronary artery disease is common and may be unrecognized, it may be prudent
+not to discontinue timolol maleate therapy abruptly even in patients treated
+only for hypertension.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="2BE3AA11-59BE-F919-F2E1-F3493AD9A61D" />
+<title mediaType="text/x-hl7-title+xml">Obstructive Pulmonary Disease</title>
+<text><paragraph>PATIENTS WITH CHRONIC OBSTRUCTIVE PULMONARY DISEASE (e.g.,
+CHRONIC BRONCHITIS, EMPHYSEMA) OF MILD OR MODERATE SEVERITY, BRONCHOSPASTIC
+DISEASE OR A HISTORY OF BRONCHOSPASTIC DISEASE (OTHER THAN BRONCHIAL ASTHMA
+OR A HISTORY OF BRONCHIAL ASTHMA, IN WHICH &#8216;BLOCADREN&#8217; IS CONTRAINDICATED,
+see <linkHtml href="#Contraindications">CONTRAINDICATIONS</linkHtml>), SHOULD
+IN GENERAL NOT RECEIVE BETA BLOCKERS, INCLUDING &#8216;BLOCADREN&#8217;.
+However, if BLOCADREN is necessary in such patients, then the drug should
+be administered with caution since it may block bronchodilation produced by
+endogenous and exogenous catecholamine stimulation of beta<sub>2</sub> receptors.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="45F14BC8-9D8A-2672-CFD8-8E388C30F7FB" />
+<title mediaType="text/x-hl7-title+xml">Major Surgery</title>
+<text><paragraph>The necessity or desirability of withdrawal of beta-blocking
+therapy prior to major surgery is controversial. Beta-adrenergic receptor
+blockade impairs the ability of the heart to respond to beta-adrenergically
+mediated reflex stimuli. This may augment the risk of general anesthesia in
+surgical procedures. Some patients receiving beta-adrenergic receptor blocking
+agents have been subject to protracted severe hypotension during anesthesia.
+Difficulty in restarting and maintaining the heartbeat has also been reported.
+For these reasons, in patients undergoing elective surgery, some authorities
+recommend gradual withdrawal of beta-adrenergic receptor blocking agents.</paragraph><paragraph>If
+necessary during surgery, the effects of beta-adrenergic blocking agents may
+be reversed by sufficient doses of such agonists as isoproterenol, dopamine,
+dobutamine or levarterenol (see <linkHtml href="#Overdosage">OVERDOSAGE</linkHtml>).</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="1942FEDB-BC54-F7A7-8713-31B2BFCB280C" />
+<title mediaType="text/x-hl7-title+xml">Diabetes Mellitus</title>
+<text><paragraph>BLOCADREN should be administered with caution in patients
+subject to spontaneous hypoglycemia or to diabetic patients (especially those
+with labile diabetes) who are receiving insulin or oral hypoglycemic agents.
+Beta-adrenergic receptor blocking agents may mask the signs and symptoms of
+acute hypoglycemia.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="7782F1C0-7D79-C613-4FE8-2A6A45F8A2F6" />
+<title mediaType="text/x-hl7-title+xml">Thyrotoxicosis</title>
+<text><paragraph>Beta-adrenergic blockade may mask certain clinical signs
+(e.g., tachycardia) of hyperthyroidism. Patients suspected of developing thyrotoxicosis
+should be managed carefully to avoid abrupt withdrawal of beta blockade which
+might precipitate a thyroid storm.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="8FABF84F-FA95-5069-0D4E-CECB62F149FB" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060217" />
+<component>
+<section>
+<id root="29309C24-D48C-462C-567F-458F5CDA3994" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="General Precautions" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph><content styleCode="italics"><content ID="Precautions_Impaired">Impaired
+Hepatic or Renal Function: </content></content> Since BLOCADREN is partially
+metabolized in the liver and excreted mainly by the kidneys, dosage reductions
+may be necessary when hepatic and/or renal insufficiency is present.</paragraph><paragraph><content styleCode="italics"><content ID="Precautions_Dosing-renal">Dosing in the Presence
+of Marked Renal Failure:</content></content> Although the pharmacokinetics
+of BLOCADREN are not greatly altered by renal impairment, marked hypotensive
+responses have been seen in patients with marked renal impairment undergoing
+dialysis after 20&#160;mg doses. Dosing in such patients should therefore
+be especially cautious.</paragraph><paragraph><content styleCode="italics">Muscle
+Weakness:</content> Beta-adrenergic blockade has been reported to potentiate
+muscle weakness consistent with certain myasthenic symptoms (e.g., diplopia,
+ptosis, and generalized weakness). Timolol has been reported rarely to increase
+muscle weakness in some patients with myasthenia gravis or myasthenic symptoms.</paragraph><paragraph><content styleCode="italics">Cerebrovascular Insufficiency:</content> Because of potential
+effects of beta-adrenergic blocking agents relative to blood pressure and
+pulse, these agents should be used with caution in patients with cerebrovascular
+insufficiency. If signs or symptoms suggesting reduced cerebral blood flow
+are observed, consideration should be given to discontinuing these agents.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="629EC6C0-961C-B874-03E1-74B44E214A86" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug Interactions" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph><content styleCode="italics">Catecholamine-depleting drugs:</content> Close observation of the patient is recommended when BLOCADREN
+is administered to patients receiving catecholamine-depleting drugs such as
+reserpine, because of possible additive effects and the production of hypotension
+and/or marked bradycardia, which may produce vertigo, syncope, or postural
+hypotension.</paragraph><paragraph><content styleCode="italics">Non-steroidal
+anti-inflammatory drugs:</content> Blunting of the antihypertensive effect
+of beta-adrenoceptor blocking agents by non-steroidal anti-inflammatory drugs
+has been reported. When using these agents concomitantly, patients should
+be observed carefully to confirm that the desired therapeutic effect has been
+obtained.</paragraph><paragraph><content styleCode="italics">Calcium antagonists:</content> Literature reports suggest that oral calcium antagonists may be
+used in combination with beta-adrenergic blocking agents when heart function
+is normal, but should be avoided in patients with impaired cardiac function.
+Hypotension, AV conduction disturbances, and left ventricular failure have
+been reported in some patients receiving beta-adrenergic blocking agents when
+an oral calcium antagonist was added to the treatment regimen. Hypotension
+was more likely to occur if the calcium antagonist were a dihydropyridine
+derivative, e.g., nifedipine, while left ventricular failure and AV conduction
+disturbances were more likely to occur with either verapamil or diltiazem.</paragraph><paragraph>Intravenous
+calcium antagonists should be used with caution in patients receiving beta-adrenergic
+blocking agents.</paragraph><paragraph><content styleCode="italics">Digitalis
+and either diltiazem or verapamil:</content> The concomitant use of beta-adrenergic
+blocking agents with digitalis and either diltiazem or verapamil may have
+additive effects in prolonging AV conduction time.</paragraph><paragraph><content styleCode="italics">Quinidine:</content> Potentiated systemic beta-blockade
+(e.g., decreased heart rate) has been reported during combined treatment with
+quinidine and timolol, possibly because quinidine inhibits the metabolism
+of timolol via the P-450 enzyme, CYP2D6.</paragraph><paragraph><content styleCode="italics">Clonidine:</content> Beta adrenergic blocking agents may exacerbate the rebound hypertension
+which can follow the withdrawal of clonidine. If the two drugs are coadministered,
+the beta adrenergic blocking agent should be withdrawn several days before
+the gradual withdrawal of clonidine. If replacing clonidine by beta-blocker
+therapy, the introduction of beta adrenergic blocking agents should be delayed
+for several days after clonidine administration has stopped.</paragraph><paragraph><content styleCode="italics">Risk from Anaphylactic Reaction:</content> While taking
+beta-blockers, patients with a history of atopy or a history of severe anaphylactic
+reaction to a variety of allergens may be more reactive to repeated accidental,
+diagnostic, or therapeutic challenge with such allergens. Such patients may
+be unresponsive to the usual doses of epinephrine used to treat anaphylactic
+reactions.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="33047EAE-ABCF-7476-3526-A87849798C90" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS AND MUTAGENESIS AND IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis,&#160;Mutagenesis, Impairment&#160;of&#160;Fertility</title>
+<text><paragraph>In a two-year study of timolol maleate in rats, there was
+a statistically significant increase in the incidence of adrenal pheochromocytomas
+in male rats administered 300 mg/kg/day (250 times<footnote ID="FN1136753041-1">Based
+on patient weight of 50 kg</footnote> the maximum recommended human dose).
+Similar differences were not observed in rats administered doses equivalent
+to approximately 20 or 80 times<footnoteRef IDREF="FN1136753041-1" /> the maximum
+recommended human dose.</paragraph><paragraph>In a lifetime study in mice,
+there were statistically significant increases in the incidence of benign
+and malignant pulmonary tumors, benign uterine polyps and mammary adenocarcinoma
+in female mice at 500 mg/kg/day (approximately 400 times<footnoteRef IDREF="FN1136753041-1" /> the
+maximum recommended human dose), but not at 5 or 50 mg/kg/day. In a subsequent
+study in female mice, in which post-mortem examinations were limited to uterus
+and lungs, a statistically significant increase in the incidence of pulmonary
+tumors was again observed at 500 mg/kg/day.</paragraph><paragraph>The increased
+occurrence of mammary adenocarcinoma was associated with elevations in serum
+prolactin that occurred in female mice administered timolol at 500 mg/kg/day,
+but not at doses of 5 or 50 mg/kg/day. An increased incidence of mammary adenocarcinomas
+in rodents has been associated with administration of several other therapeutic
+agents which elevate serum prolactin, but no correlation between serum prolactin
+levels and mammary tumors has been established in man. Furthermore, in adult
+human female subjects who received oral dosages of up to 60 mg of timolol
+maleate, the maximum recommended daily human oral dosage, there were no clinically
+meaningful changes in serum prolactin.</paragraph><paragraph>Timolol maleate
+was devoid of mutagenic potential when evaluated <content styleCode="italics">in
+vivo</content> (mouse) in the micronucleus test and cytogenetic assay (doses
+up to 800 mg/kg) and <content styleCode="italics">in vitro</content> in a
+neoplastic cell transformation assay (up to 100 &#956;g/mL). In Ames tests
+the highest concentrations of timolol employed, 5000 or 10,000 &#956;g/plate,
+were associated with statistically significant elevations of revertants observed
+with tester strain TA100 (in seven replicate assays), but not in three additional
+strains. In the assays with tester strain TA100, no consistent dose response
+relationship was observed, nor did the ratio of test to control revertants
+reach 2. A ratio of 2 is usually considered the criterion for a positive Ames
+test.</paragraph><paragraph>Reproduction and fertility studies in rats showed
+no adverse effect on male or female fertility at doses up to 125 times<footnoteRef IDREF="FN1136753041-1" /> the maximum recommended human dose.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="DADD993C-A251-86FA-C8EC-0E7465D0EDE0" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<text><paragraph><content styleCode="italics">Pregnancy Category C.</content> Teratogenicity
+studies with timolol in mice, rats and rabbits at doses up to 50 mg/kg/day
+(approximately 40 times<footnoteRef IDREF="FN1136753041-1" /> the maximum recommended
+daily human dose) showed no evidence of fetal malformations. Although delayed
+fetal ossification was observed at this dose in rats, there were no adverse
+effects on postnatal development of offspring. Doses of 1000 mg/kg/day (approximately
+830 times<footnoteRef IDREF="FN1136753041-1" /> the maximum recommended daily
+human dose) were maternotoxic in mice and resulted in an increased number
+of fetal resorptions. Increased fetal resorptions were also seen in rabbits
+at doses of approximately 40 times<footnoteRef IDREF="FN1136753041-1" /> the
+maximum recommended daily human dose, in this case without apparent maternotoxicity.
+There are no adequate and well-controlled studies in pregnant women. BLOCADREN
+should be used during pregnancy only if the potential benefit justifies the
+potential risk to the fetus.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="0ED35AAF-6D0E-DB28-7F37-0EFFE71A96B9" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>Timolol maleate has been detected in human milk.</paragraph><paragraph>Because
+of the potential for serious adverse reactions from timolol in nursing infants,
+a decision should be made whether to discontinue nursing or to discontinue
+the drug, taking into account the importance of the drug to the mother.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="539DE79B-DD01-189A-0C43-9AF363A550BA" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>Safety and effectiveness in pediatric patients have not been
+established.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="688E725A-7270-7B5E-10DD-380213D13578" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Geriatric Use</title>
+<text><paragraph>Clinical studies of BLOCADREN for the treatment of hypertension
+or migraine did not include sufficient numbers of subjects aged 65 and over
+to determine whether they respond differently from younger subjects. </paragraph><paragraph>In
+a clinical study of BLOCADREN in patients who had survived the acute phase
+of a myocardial infarction, approximately 350 patients (37%) were 65-75 years
+of age. Safety and efficacy were not different between these patients and
+younger patients (see <linkHtml href="#ClinPharm_PD">CLINICAL&#160;PHARMACOLOGY,
+Pharmacodynamics</linkHtml>).</paragraph><paragraph>Other reported clinical
+experience has not identified differences in responses between the elderly
+and younger patients. In general, dose selection for an elderly patient should
+be cautious, usually starting at the low end of the dosing range, reflecting
+the greater frequency of decreased hepatic, renal or cardiac function, and
+of concomitant disease or other drug therapy.</paragraph><paragraph>This drug
+is known to be substantially excreted by the kidney, and the risk of toxic
+reactions to this drug may be greater in patients with impaired renal function.
+Because elderly patients are more likely to have decreased renal function,
+care should be taken in dose selection, and it may be useful to monitor renal
+function. (See <linkHtml href="#Precautions_Impaired">PRECAUTIONS, Impaired
+Hepatic or Renal Function </linkHtml>and <linkHtml href="#Precautions_Dosing-renal">Dosing
+in the Presence of Marked Renal Failure</linkHtml>.)</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="3DFE638C-AD98-3EEF-0425-F54C1DCBA170" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>BLOCADREN is usually well tolerated in properly selected
+patients. Most adverse effects have been mild and transient.</paragraph><paragraph>In
+a multicenter (12-week) clinical trial comparing timolol maleate and placebo
+in hypertensive patients, the following adverse reactions were reported spontaneously
+and considered to be causally related to timolol maleate:</paragraph><table><thead>
+<tr><td>&#160;</td><td align="center"><br />Timolol Maleate<br />(n = 176)<br />%<br /></td><td align="center"><br />Placebo<br />   (n = 168)<br />   %<br /></td></tr>
+</thead>
+<tbody>
+<tr><td>BODY AS A WHOLE<br />&#160;&#160;&#160;fatigue/tiredness<br />&#160;&#160;&#160;headache<br />&#160;&#160;&#160;chest
+pain<br />&#160;&#160;&#160;asthenia</td><td align="center"><br />3.4<br />1.7<br />0.6<br />0.6</td><td align="center"><br />   0.6<br />   1.8<br />0<br />0</td></tr>
+<tr><td>CARDIOVASCULAR<br />&#160;&#160;&#160;bradycardia<br />&#160;&#160;&#160;arrhythmia<br />&#160;&#160;&#160;syncope<br />&#160;&#160;&#160;edema</td><td align="center"><br />9.1<br />1.1<br />0.6<br />0.6</td><td align="center"><br />0<br />   0.6<br />0<br />   1.2</td></tr>
+<tr><td>DIGESTIVE<br />&#160;&#160;&#160;dyspepsia<br />&#160;&#160;&#160;nausea</td><td align="center"><br />0.6<br />0.6</td><td align="center"><br />   0.6<br />0</td></tr>
+<tr><td>SKIN<br />&#160;&#160;&#160;pruritus</td><td align="center"><br />1.1</td><td align="center"><br />0</td></tr>
+<tr><td>NERVOUS SYSTEM<br />&#160;&#160;&#160;dizziness<br />&#160;&#160;&#160;vertigo<br />&#160;&#160;&#160;paresthesia</td><td align="center"><br />2.3<br />0.6<br />0.6</td><td align="center"><br />   1.2<br />0<br />0</td></tr>
+<tr><td>PSYCHIATRIC<br />&#160;&#160;&#160;decreased libido</td><td align="center"><br />0.6</td><td align="center"><br />0</td></tr>
+<tr><td>RESPIRATORY<br />&#160;&#160;&#160;dyspnea<br />&#160;&#160;&#160;bronchial
+spasm<br />&#160;&#160;&#160;rales</td><td align="center"><br />1.7<br />0.6<br />0.6</td><td align="center"><br />   0.6<br />0<br />0</td></tr>
+<tr><td>SPECIAL SENSES<br />&#160;&#160;&#160;eye irritation<br />&#160;&#160;&#160;tinnitus</td><td align="center"><br />1.1<br />0.6</td><td align="center"><br />   0.6<br />0</td></tr>
+</tbody>
+</table><paragraph>These data are representative of the incidence of adverse
+effects that may be observed in properly selected patients treated with BLOCADREN,
+i.e., excluding patients with bronchospastic disease, congestive heart failure
+or other contraindications to beta blocker therapy.</paragraph><paragraph>In
+patients with migraine the incidence of bradycardia was 5 percent.</paragraph><paragraph>In
+a coronary artery disease population studied in the Norwegian multi-center
+trial (see <linkHtml href="#ClinPharm">CLINICAL PHARMACOLOGY</linkHtml>),
+the frequency of the principal adverse reactions and the frequency with which
+these resulted in discontinuation of therapy in the timolol and placebo groups
+were:</paragraph><table width="649"><colgroup>
+<col width="135*" />
+<col width="83*" />
+<col width="102*" />
+<col width="76*" />
+<col width="87*" />
+</colgroup>
+<thead>
+<tr><td>&#160;</td><td align="center" colspan="2">Adverse Reaction<footnote ID="FN1136753301-1">When
+an adverse reaction recurred in a patient, it is listed only once.</footnote></td><td align="center" colspan="2">Withdrawal<footnote ID="FN1136753336-1">Only
+principal reason for withdrawal in each patient is listed. These adverse reactions
+can also occur in patients treated for hypertension.</footnote></td></tr>
+</thead>
+<tbody>
+<tr><td>&#160;</td><td align="center">Timolol<br />(n=945)<br />  %<br /></td><td align="center">Placebo<br />  (n=939)<br />  %<br /></td><td align="center">Timolol<br />  (n=945)<br />  %<br /></td><td align="center">Placebo<br />  (n=939)<br />  %<br /></td></tr>
+<tr><td>Asthenia or Fatigue</td><td align="center">5</td><td align="center">1</td><td align="center">&lt;1</td><td align="center">&lt;1</td></tr>
+<tr><td>Heart Rate &lt;40 beats/minute</td><td align="center">5</td><td align="center">&lt;1</td><td align="center">4</td><td align="center">&lt;1</td></tr>
+<tr><td>Cardiac Failure-Nonfatal</td><td align="center">8</td><td align="center">7</td><td align="center">3</td><td align="center">2</td></tr>
+<tr><td>Hypotension</td><td align="center">3</td><td align="center">2</td><td align="center">3</td><td align="center">1</td></tr>
+<tr><td>Pulmonary Edema-Nonfatal</td><td align="center">2</td><td align="center">&lt;1</td><td align="center">&lt;1</td><td align="center">&lt;1</td></tr>
+<tr><td>Claudication</td><td align="center">3</td><td align="center">3</td><td align="center">1</td><td align="center">&lt;1</td></tr>
+<tr><td>AV Block - 2nd or 3rd degree</td><td align="center">&lt;1</td><td align="center">&lt;1</td><td align="center">&lt;1</td><td align="center">&lt;1</td></tr>
+<tr><td>Sinoatrial Block</td><td align="center">&lt;1</td><td align="center">&lt;1</td><td align="center">&lt;1</td><td align="center">&lt;1</td></tr>
+<tr><td>Cold Hands and Feet</td><td align="center">8</td><td align="center">&lt;1</td><td align="center">&lt;1</td><td align="center">0</td></tr>
+<tr><td>Nausea or Digestive Disorders</td><td align="center">8</td><td align="center">6</td><td align="center">1</td><td align="center">&lt;1</td></tr>
+<tr><td>Dizziness</td><td align="center">6</td><td align="center">4</td><td align="center">1</td><td align="center">0</td></tr>
+<tr><td>Bronchial Obstruction</td><td align="center">2</td><td align="center">&lt;1</td><td align="center">1</td><td align="center">&lt;1</td></tr>
+</tbody>
+</table><paragraph>The following additional adverse effects have been reported
+in clinical experience with the drug: <content styleCode="italics">Body as
+a Whole: </content>anaphylaxis,<content styleCode="italics" />extremity
+pain, decreased exercise tolerance, weight loss, fever; <content styleCode="italics">Cardiovascular:</content> cardiac arrest, cardiac failure, cerebral vascular accident, worsening
+of angina pectoris, worsening of arterial insufficiency, Raynaud's phenomenon,
+palpitations, vasodilatation; <content styleCode="italics">Digestive:</content> gastrointestinal
+pain, hepatomegaly, vomiting, diarrhea, dyspepsia; <content styleCode="italics">Hematologic:</content>nonthrombocytopenic purpura; <content styleCode="italics">Endocrine:</content> hyperglycemia, hypoglycemia; <content styleCode="italics">Skin:</content>rash, skin irritation, increased pigmentation, sweating, alopecia; <content styleCode="italics">Musculoskeletal: </content>arthralgia; <content styleCode="italics">Nervous
+System: </content>local weakness, increase in signs and symptoms of myasthenia
+gravis; <content styleCode="italics">Psychiatric: </content>depression, nightmares,
+somnolence, insomnia, nervousness, diminished concentration, hallucinations; <content styleCode="italics">Respiratory: </content>cough; <content styleCode="italics">Special
+Senses: </content>visual disturbances, diplopia, ptosis, dry eyes; <content styleCode="italics">Urogenital: </content>impotence, urination difficulties.</paragraph><paragraph>There
+have been reports of retroperitoneal fibrosis in patients receiving timolol
+maleate and in patients receiving other beta-adrenergic blocking agents. A
+causal relationship between this condition and therapy with beta-adrenergic
+blocking agents has not been established.</paragraph><paragraph><content styleCode="italics">Potential
+Adverse Effects: </content>In addition, a variety of adverse effects not observed
+in clinical trials with BLOCADREN, but reported with other beta-adrenergic
+blocking agents, should be considered potential adverse effects of BLOCADREN: <content styleCode="italics">Nervous System: </content>Reversible mental depression
+progressing to catatonia; an acute reversible syndrome characterized by disorientation
+for time and place, short-term memory loss, emotional lability, slightly clouded
+sensorium, and decreased performance on neuropsychometrics; <content styleCode="italics">Cardiovascular:</content>Intensification of AV block (see <linkHtml href="#Contraindications">CONTRAINDICATIONS</linkHtml>); <content styleCode="italics">Digestive: </content>Mesenteric arterial thrombosis, ischemic
+colitis; <content styleCode="italics">Hematologic: </content>Agranulocytosis,
+thrombocytopenic purpura; <content styleCode="italics">Allergic: </content>Erythematous
+rash, fever combined with aching and sore throat, laryngospasm with respiratory
+distress; <content styleCode="italics">Miscellaneous: </content>Peyronie's
+disease.</paragraph><paragraph>There have been reports of a syndrome comprising
+psoriasiform skin rash, conjunctivitis sicca, otitis, and sclerosing serositis
+attributed to the beta-adrenergic receptor blocking agent, practolol. This
+syndrome has not been reported with BLOCADREN.</paragraph><paragraph><content styleCode="italics">Clinical Laboratory Test Findings: </content>Clinically
+important changes in standard laboratory parameters were rarely associated
+with the administration of BLOCADREN. Slight increases in blood urea nitrogen,
+serum potassium, uric acid, and triglycerides, and slight decreases in hemoglobin,
+hematocrit and HDL cholesterol occurred, but were not progressive or associated
+with clinical manifestations. Increases in liver function tests have been
+reported.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="43E3A394-CB01-102A-BD76-17D0009EE0FB" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION" />
+<title ID="Overdosage" mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>Overdosage has been reported with Tablets BLOCADREN. A 30-year-old
+female ingested 650&#160;mg of BLOCADREN (maximum recommended daily dose&#160;&#8212;
+60&#160;mg) and experienced second and third degree heart block. She recovered
+without treatment but approximately two months later developed irregular heartbeat,
+hypertension, dizziness, tinnitus, faintness, increased pulse rate and borderline
+first degree heart block.</paragraph><paragraph>The oral LD<sub>50</sub>of
+the drug is 1190 and 900 mg/kg in female mice and female rats, respectively.</paragraph><paragraph>An <content styleCode="italics">in vitro </content>hemodialysis study, using <sup>14</sup>C
+timolol added to human plasma or whole blood, showed that timolol was readily
+dialyzed from these fluids; however, a study of patients with renal failure
+showed that timolol did not dialyze readily.</paragraph><paragraph>The most
+common signs and symptoms to be expected with overdosage with a beta-adrenergic
+receptor blocking agent are symptomatic bradycardia, hypotension, bronchospasm,
+and acute cardiac failure. Therapy with BLOCADREN should be discontinued and
+the patient observed closely. The following additional therapeutic measures
+should be considered:</paragraph><list listType="ordered" styleCode="Arabic"><item><content styleCode="italics">Gastric lavage.</content></item><item><content styleCode="italics">Symptomatic bradycardia: </content>Use
+atropine sulfate intravenously in a dosage of 0.25&#160;mg to 2&#160;mg to
+induce vagal blockade. If bradycardia persists, intravenous isoproterenol
+hydrochloride should be administered cautiously. In refractory cases the use
+of a transvenous cardiac pacemaker may be considered.</item><item><content styleCode="italics">Hypotension: </content>Use sympathomimetic
+pressor drug therapy, such as dopamine, dobutamine or levarterenol. In refractory
+cases the use of glucagon hydrochloride has been reported to be useful.</item><item><content styleCode="italics">Bronchospasm: </content>Use isoproterenol
+hydrochloride. Additional therapy with aminophylline may be considered.</item><item><content styleCode="italics">Acute cardiac failure: </content>Conventional
+therapy with digitalis, diuretics, and oxygen should be instituted immediately.
+In refractory cases the use of intravenous aminophylline is suggested. This
+may be followed if necessary by glucagon hydrochloride which has been reported
+to be useful.</item><item><content styleCode="italics">Heart block (second or third degree): </content>Use isoproterenol hydrochloride or a transvenous cardiac pacemaker.</item></list></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="689926D7-ABD9-E6E4-AFF0-CD71D037A4F3" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<effectiveTime value="20060217" />
+<component>
+<section>
+<id root="C1A6AC6A-8C33-7013-13FC-131BC0A75573" />
+<title mediaType="text/x-hl7-title+xml">Hypertension</title>
+<text><paragraph>The usual initial dosage of BLOCADREN is 10&#160;mg twice
+a day, whether used alone or added to diuretic therapy. Dosage may be increased
+or decreased depending on heart rate and blood pressure response. The usual
+total maintenance dosage is 20-40 mg per day. Increases in dosage to a maximum
+of 60&#160;mg per day divided into two doses may be necessary. There should
+be an interval of at least seven days between increases in dosages.</paragraph><paragraph>BLOCADREN
+may be used with a thiazide diuretic or with other antihypertensive agents.
+Patients should be observed carefully during initiation of such concomitant
+therapy.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="6DAEFB95-3CC0-9340-5AF4-7716DDF47A34" />
+<title mediaType="text/x-hl7-title+xml">Myocardial Infarction</title>
+<text><paragraph>The recommended dosage for long-term prophylactic use in
+patients who have survived the acute phase of a myocardial infarction is 10&#160;mg
+given twice daily (see <linkHtml href="#ClinPharm">CLINICAL PHARMACOLOGY</linkHtml>).</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+<component>
+<section>
+<id root="19172D11-B0D0-19D0-07B8-E027139C6E82" />
+<title mediaType="text/x-hl7-title+xml">Migraine</title>
+<text><paragraph>The usual initial dosage of BLOCADREN is 10&#160;mg twice
+a day. During maintenance therapy the 20&#160;mg daily dosage may be administered
+as a single dose. Total daily dosage may be increased to a maximum of 30&#160;mg,
+given in divided doses, or decreased to 10&#160;mg once per day, depending
+on clinical response and tolerability. If a satisfactory response is not obtained
+after 6-8 weeks use of the maximum daily dosage, therapy with BLOCADREN should
+be discontinued.</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="47F4B7FC-C56B-6704-F433-AAEA998BBCA9" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>No. 3343 &#8212; Tablets BLOCADREN, 5&#160;mg, are light
+blue, round, compressed tablets, with code MSD&#160;59 on one side and BLOCADREN
+on the other. They are supplied as follows:</paragraph><paragraph><content styleCode="bold">NDC</content> 0006-0059-68 bottles of 100.</paragraph><paragraph>No.
+3344 &#8212; Tablets BLOCADREN, 10&#160;mg, are light blue, round, scored,
+compressed tablets, with code MSD&#160;136 on one side and BLOCADREN on theother. They are supplied as follows:</paragraph><paragraph><content styleCode="bold">NDC</content> 0006-0136-68 bottles of 100</paragraph><paragraph>No. 3371 &#8212;
+Tablets BLOCADREN, 20&#160;mg, are light blue, capsule shaped, scored, compressed
+tablets, with code MSD&#160;437 on one side and BLOCADREN on the other. They
+are supplied as follows:</paragraph><paragraph><content styleCode="bold">NDC</content> 0006-0437-68 bottles of 100</paragraph></text>
+<effectiveTime value="20060217" />
+<component>
+<section>
+<id root="B832DA4A-3891-6ED9-1789-60E3C3BEB1C3" />
+<text><paragraph>Storage</paragraph><paragraph>Store  at controlled
+room temperature, 15-30&#176;C (59-86&#176;F). Keep container tightly closed.
+Protect from light.</paragraph><paragraph>MERCK &amp; CO., INC., Whitehouse
+Station, NJ  08889, USA</paragraph><paragraph>Issued March 2002</paragraph><paragraph>Printed
+in USA</paragraph><paragraph>7901233</paragraph></text>
+<effectiveTime value="20060217" />
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

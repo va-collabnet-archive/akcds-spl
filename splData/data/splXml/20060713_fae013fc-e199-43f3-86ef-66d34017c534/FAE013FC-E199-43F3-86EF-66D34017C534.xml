@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="FAE013FC-E199-43F3-86EF-66D34017C534" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">Prostin E2<sup>&#174;</sup><br />dinoprostone vaginal<br />suppository</title>
+<effectiveTime value="20060511" />
+<setId root="FAE013FC-E199-43F3-86EF-66D34017C534" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Pharmacia and UpJohn Company</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="C9BAF145-B240-FED3-5F3F-BC4F6283823D" />
+<effectiveTime value="20060511" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0009-0827" codeSystem="2.16.840.1.113883.6.69" />
+<name>Prostin E2</name>
+<formCode code="C42993" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SUPPOSITORY" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="20">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="20" />
+</numerator>
+<denominator value="1">
+<translation code="C48539" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SUPPOSITORY" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="K7Q1JQR04M" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>dinoprostone</name>
+<activeMoiety>
+<activeMoiety>
+<code code="K7Q1JQR04M" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>dinoprostone</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>dinoprostone</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>glycerides of fatty acids</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="5">
+<translation code="C48539" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SUPPOSITORY" value="5" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0009-0827-03" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38313" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VAGINAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="144BD836-D441-F26C-90E1-23AE9DE30DFD" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>PROSTIN E2 Vaginal Suppository, an oxytocic, contains dinoprostone as the naturally occurring prostaglandin E2 (PGE2).</paragraph><paragraph>Its chemical name is (5Z,11&#945;,13E,15S)-11,15-Dihydroxy-9-oxo-prosta-5,13-dien-1-oic acid and the structural formula is represented below:</paragraph><renderMultiMedia referencedObject="MM1" /><paragraph>The molecular formula is C<sub>20</sub>H<sub>32</sub>O<sub>5</sub>. The molecular weight of dinoprostone is 352.5. Dinoprostone occurs as a white crystalline powder. It has a melting point within the range of 64&#176; to 71&#176;C. Dinoprostone is soluble in ethanol and in 25% ethanol in water. It is soluble in water to the extent of 130 mg/100 mL.</paragraph><paragraph>Each suppository contains 20 mg of dinoprostone in a mixture of glycerides of fatty acids.</paragraph></text>
+<effectiveTime value="20060511" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="prostin-e2-image01.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<observationMedia ID="MM2">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="prostin-e2-image02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="6614BDC8-3F16-416C-7F5A-F0140B2798DB" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>PROSTIN E2 Vaginal Suppository administered intravaginally stimulates the myometrium of the gravid uterus to contract in a manner that is similar to the contractions seen in the term uterus during labor. Whether or not this action results from a direct effect of dinoprostone on the myometrium has not been determined with certainty at this time. Nonetheless, the myometrial contractions induced by the vaginal administration of dinoprostone are sufficient to produce evacuation of the products of conception from the uterus in the majority of cases.</paragraph><paragraph>Dinoprostone is also capable of stimulating the smooth muscle of the gastrointestinal tract of man. This activity may be responsible for the vomiting and/or diarrhea that is not uncommon when dinoprostone is used to terminate pregnancy.</paragraph><paragraph>In laboratory animals, and also in man, large doses of dinoprostone can lower blood pressure, probably as a consequence of its effect on the smooth muscle of the vascular system. With the doses of dinoprostone used for terminating pregnancy this effect has not been clinically significant. In laboratory animals, and also in man, dinoprostone can elevate body temperature. With the clinical doses of dinoprostone used for the termination of pregnancy some patients do exhibit temperature increases.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="983556A8-46BC-C7EE-D17E-7796AA262D70" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><list listType="ordered"><item>PROSTIN E2 Vaginal Suppository is indicated for the termination of pregnancy from the 12th through the 20th gestational week as calculated from the first day of the last normal menstrual period.</item><item>PROSTIN E2 is also indicated for evacuation of the uterine contents in the management of missed abortion or intrauterine fetal death up to 28 weeks of gestational age as calculated from the first day of the last normal menstrual period.</item><item>PROSTIN E2 is indicated in the management of nonmetastatic gestational trophoblastic disease (benign hydatidiform mole).</item></list></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="DF971740-2ACC-ABD4-7CF1-5AB7C9BF4980" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><list listType="ordered"><item>Hypersensitivity to dinoprostone</item><item>Acute pelvic inflammatory disease</item><item>Patients with active cardiac, pulmonary, renal, or hepatic disease</item></list></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="32C88B11-606E-809D-04C6-97DCFBCC00C9" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<effectiveTime value="20060511" />
+<component>
+<section ID="warnings">
+<id root="1DFE9133-BB33-E46C-ABAA-F14ED0DC3328" />
+<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BOXED WARNING SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>Dinoprostone, as with other potent oxytocic agents, should be used only with strict adherence to recommended dosages. Dinoprostone should be used by medically trained personnel in a hospital which can provide immediate intensive care and acute surgical facilities.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="8E55732E-64A8-99F3-0210-4C0B11FADAB2" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Dinoprostone does not appear to directly affect the fetoplacental unit. Therefore, the possibility does exist that the previable fetus aborted by dinoprostone could exhibit transient life signs. Dinoprostone is not indicated if the fetus in utero has reached the stage of viability. Dinoprostone should not be considered a feticidal agent.</paragraph><paragraph>Evidence from animal studies has suggested that certain prostaglandins may have some teratogenic potential. Therefore, any failed pregnancy termination with dinoprostone should be completed by some other means.</paragraph><paragraph>PROSTIN E2 Vaginal Suppository should not be used for extemporaneous preparation of any other dosage form.</paragraph><paragraph>Neither the PROSTIN E2 Vaginal Suppository, as dispensed nor any extemporaneous formulation made from the PROSTIN E2 Vaginal Suppository should be used for cervical ripening or other indication in the patient with term pregnancy.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="6435FE0B-211E-C1F1-32F1-9DBBCE31C6E6" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060511" />
+<component>
+<section>
+<id root="810153C7-DE86-751E-F26D-B9117C3CEABF" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">1. General precautions</title>
+<text><paragraph>Animal studies lasting several weeks at high doses have shown that prostaglandins of the E and F series can induce proliferation of bone. Such effects have also been noted in newborn infants who have received prostaglandin E1 during prolonged treatment. There is no evidence that short term administration of PROSTIN E2 Vaginal Suppository can cause similar bone effects.</paragraph><paragraph>As in spontaneous abortion, where the process is sometimes incomplete, abortion induced by PROSTIN E2 may sometimes be incomplete. In such cases, other measures should be taken to assure complete abortion.</paragraph><paragraph>In patients with a history of asthma, hypo-or hypertension, cardiovascular disease, renal disease, hepatic disease, anemia, jaundice, diabetes or history of epilepsy, dinoprostone should be used with caution.</paragraph><paragraph>Dinoprostone administered by the vaginal route should be used with caution in the presence of cervicitis, infected endocervical lesions, or acute vaginitis.</paragraph><paragraph>As with any oxytocic agent, dinoprostone should be used with caution in patients with compromised (scarred) uteri.</paragraph><paragraph>Dinoprostone vaginal therapy is associated with transient pyrexia that may be due to its effect on hypothalamic thermoregulation. In the patients studied, temperature elevations in excess of 2&#176;F (1.1&#176;C) were observed in approximately one-half of the patients on the recommended dosage regimen. In all cases, temperature returned to normal on discontinuation of therapy. Differentiation of post-abortion endometritis from drug-induced temperature elevations is difficult, but with increasing clinical exposure and experience with PGE2 vaginal therapy the distinctions become more obviously apparent and are summarized below:</paragraph><table width="100%"><col align="left" width="2%" />
+<col align="left" width="49%" />
+<col align="left" width="49%" />
+<thead>
+<tr><th /><th align="center">Endometritis pyrexia</th><th align="center">PGE2 induced pyrexia</th></tr>
+</thead>
+<tbody>
+<tr><td>a.</td><td><content styleCode="bold">Time of onset:</content> Typically, on third post-abortional day (38&#176;C or higher).</td><td>Within 15&#8211;45 minutes of suppository administration.</td></tr>
+<tr><td>b.</td><td><content styleCode="bold">Duration:</content> Untreated pyrexia and infection continue and may give rise to other infective pelvic pathology.</td><td>Elevations revert to pretreatment levels within 2&#8211;6 hours after discontinuation of therapy or removal of suppository from vagina without any other treatment.</td></tr>
+<tr><td>c.</td><td><content styleCode="bold">Retention:</content> Products of conception are often retained in the cervical os or uterine cavity.</td><td>Elevation occurs irrespective of any retained tissue.</td></tr>
+<tr><td>d.</td><td><content styleCode="bold">Histology:</content> Endometrium shows evidence of inflammatory lymphocytic infiltration with areas of necrotic hemorrhagic tissue.</td><td>Although the endometrial stroma may be edematous and vascular, there is relative absence of inflammatory reaction.</td></tr>
+<tr><td>e.</td><td><content styleCode="bold">The uterus:</content> Often remains boggy and soft with tenderness over the fundus, and pain on moving the cervix, on bimanual examination.</td><td>Normal uterine involution not tender.</td></tr>
+<tr><td>f.</td><td><content styleCode="bold">Discharge:</content> Often associated foul-smelling lochia and leukorrhea.</td><td>Lochia normal.</td></tr>
+<tr><td>g.</td><td colspan="2"><content styleCode="bold">Cervical culture</content><br />The culture of pathological organisms from the cervix or uterine cavity after abortion does not, of itself, warrant the diagnosis of septic abortion in the absence of clinical evidence of sepsis. It is not uncommon to culture pathogens from cases of recent abortion <content styleCode="italics">not</content> clinically infected. Persistent positive culture with clear clinical signs of infection are significant in the differential diagnosis.</td></tr>
+<tr><td>h.</td><td colspan="2"><content styleCode="bold">Blood count</content><br />Leukocytosis and differential white cell counts are not of major clinical importance in distinguishing between the two conditions, since total WBC's may be increased as a result of infection and transient leukocytosis may also be drug induced.</td></tr>
+</tbody>
+</table><paragraph>In the absence of clinical or bacteriological evidence of intrauterine infection, supportive therapy for drug induced fevers includes the forcing of fluids. As all PGE2-induced fevers have been found to be transient or self-limiting, it is doubtful if any simple empirical measures for temperature reduction are indicated.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="49FDFFF4-A81A-45BF-CB9B-0FD74C4BBD56" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LABORATORY TESTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">2. Laboratory tests</title>
+<text><paragraph>When a pregnancy diagnosed as missed abortion is electively interrupted with intravaginal administration of dinoprostone, confirmation of intrauterine fetal death should be obtained in respect to a <content styleCode="italics">negative pregnancy test</content> for chorionic gonadotropic activity (U.C.G. test or equivalent). When a pregnancy with late fetal intrauterine death is interrupted with intravaginal administration of dinoprostone, confirmation of intrauterine fetal death should be obtained prior to treatment.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="CF73B30A-5849-A1A3-A734-F04476E8B297" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">3. Drug interactions</title>
+<text><paragraph>PROSTIN E2 may augment the activity of other oxytocic drugs. Concomitant use with other oxytocic agents is not recommended.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="78ED83E6-113B-3542-361C-2FEE1F07724B" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">4. Carcinogenesis, mutagenesis, impairment of fertility</title>
+<text><paragraph>Carcinogenic bioassay studies have not been conducted in animals with PROSTIN E2 due to the limited indications for use and short duration of administration. No evidence of mutagenicity was observed in the Micronucleus Test or Ames Assay.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="B1B9E05C-DEA7-5807-BA43-95EA1F493868" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title mediaType="text/x-hl7-title+xml">5. Pregnancy</title>
+<effectiveTime value="20060511" />
+<component>
+<section>
+<id root="6C6687EE-9955-AF3A-139F-B863D04B3104" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERATOGENIC EFFECTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Teratogenic Effects: Pregnancy Category C</title>
+<text><paragraph>Animal studies do not indicate that PROSTIN E2 is teratogenic, however, it has been shown to be embryotoxic in rats and rabbits and any dose which produces increased uterine tone could put the embryo or fetus at risk. See <linkHtml href="#warnings">WARNINGS</linkHtml> section.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="B12D6CD1-28A5-5538-730A-92605A8B92A8" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">6. Pediatric use</title>
+<text><paragraph>Safety and effectiveness in pediatric patients have not been established.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="62C1A9FE-9447-E392-1352-913C7DE12BD0" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>The most frequent adverse reactions observed with the use of dinoprostone for abortion are related to its contractile effect on smooth muscle.</paragraph><paragraph>In the patients studied, approximately two-thirds experienced vomiting, one-half temperature elevations, two-fifths diarrhea, one-third some nausea, one-tenth headache, and one-tenth shivering and chills.</paragraph><paragraph>In addition, approximately one-tenth of the patients studied exhibited transient diastolic blood pressure decreases of greater than 20 mmHg.</paragraph><paragraph>Two cases of myocardial infarction following the use of dinoprostone have been reported in patients with a history of cardiovascular disease.</paragraph><paragraph>It is not known whether these events were related to the administration of dinoprostone.</paragraph><paragraph>Adverse effects in decreasing order of their frequency, observed with the use of dinoprostone, not all of which are clearly drug related include:</paragraph><table width="85%"><col align="left" width="50%" />
+<col align="left" width="50%" />
+<tbody>
+<tr><td>Vomiting<br />Diarrhea<br />Nausea<br />Fever<br />Headache<br />Chills or shivering<br />Backache<br />Joint inflammation or pain new or exacerbated<br />Flushing or hot flashes<br />Dizziness<br />Arthralgia<br />Vaginal pain<br />Chest pain<br />Dyspnea<br />Endometritis<br />Syncope or fainting sensation<br />Vaginitis or vulvitis<br />Weakness<br />Muscular cramp or pain<br />Tightness in chest</td><td>Nocturnal leg cramps<br />Uterine rupture<br />Breast tenderness<br />Blurred vision<br />Coughing<br />Rash<br />Myalgia<br />Stiff neck<br />Dehydration<br />Tremor<br />Paresthesia<br />Hearing impairment<br />Urine retention<br />Pharyngitis<br />Laryngitis<br />Diaphoresis<br />Eye pain<br />Wheezing<br />Cardiac arrhythmia<br />Skin discoloration<br />Vaginismus<br />Tension</td></tr>
+</tbody>
+</table></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="408DFD04-89D3-D382-A9DF-4AF04A1E188C" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph><content styleCode="bold">STORE IN A FREEZER NOT ABOVE &#8722;20&#176;C (&#8722;4&#176;F) BUT BRING TO ROOM TEMPERATURE JUST PRIOR TO USE.</content></paragraph><paragraph><content styleCode="bold">REMOVE FOIL BEFORE USE.</content></paragraph><paragraph>A suppository containing 20 mg of dinoprostone should be inserted high into the vagina. The patient should remain in the supine position for ten minutes following insertion.</paragraph><paragraph>Additional intravaginal administration of each subsequent suppository should be at 3- to 5-hour intervals until abortion occurs. Within the above recommended intervals administration time should be determined by abortifacient progress, uterine contractility response, and by patient tolerance. Continuous administration of the drug for more than 2 days is not recommended.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="7586E4C8-3FE7-88E3-840C-82A3CAC8110C" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>PROSTIN E2 Vaginal Suppositories are available in foil strips of 5 individually sealed suppositories, NDC 0009-0827-03. Each suppository contains 20 mg of dinoprostone in a mixture of glycerides of fatty acids.</paragraph><paragraph><content styleCode="bold">STORE IN A FREEZER NOT ABOVE &#8722;20&#176;C (&#8722;4&#176;F).</content></paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="E4CD8BFB-D89D-04F3-5E08-947B33CA7DFF" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold">Rx only</content></paragraph><renderMultiMedia referencedObject="MM2" /><paragraph>LAB-0063-2.0</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

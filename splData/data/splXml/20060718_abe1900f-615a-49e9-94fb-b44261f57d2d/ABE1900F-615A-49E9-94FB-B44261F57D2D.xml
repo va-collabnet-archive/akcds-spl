@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="69743729-3C70-9C56-6FE5-55DBFF1581C4" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">FANSIDAR<sup>&#174;</sup><br />brand of<br />sulfadoxine and pyrimethamine<br />TABLETS</title>
+<effectiveTime value="20051214" />
+<setId root="ABE1900F-615A-49E9-94FB-B44261F57D2D" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Roche Pharmaceuticals</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="F096576F-4E37-A09D-14C7-6E541620DDA1" />
+<effectiveTime value="20051214" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0004-0161" codeSystem="2.16.840.1.113883.6.69" />
+<name>Fansidar</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="500">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="500" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="88463U4SM5" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sulfadoxine</name>
+<activeMoiety>
+<activeMoiety>
+<code code="88463U4SM5" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sulfadoxine</name>
+</activeMoiety>
+</activeMoiety>
+<activeMoiety>
+<activeMoiety>
+<code code="88463U4SM5" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sulfadoxine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="25">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="Z3614QOX8W" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Pyrimethamine</name>
+<activeMoiety>
+<activeMoiety>
+<code code="Z3614QOX8W" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Pyrimethamine</name>
+</activeMoiety>
+</activeMoiety>
+<activeMoiety>
+<activeMoiety>
+<code code="Z3614QOX8W" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Pyrimethamine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Sulfadoxine and Pyrimethamine</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>cornstarch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>gelatin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>talc</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="25">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="25" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0004-0161-03" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43179" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX, UNIT-DOSE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE"><originalText>white</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"><originalText>ROUND</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="13" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="true" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">FANSIDAR;ROCHE</value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="4F9779A9-2BFB-0351-EE1D-096E83C608FE" />
+<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BOXED WARNING SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold">WARNING: FATALITIES ASSOCIATED WITH THE ADMINISTRATION OF FANSIDAR HAVE OCCURRED DUE TO SEVERE REACTIONS, INCLUDING STEVENS-JOHNSON SYNDROME AND TOXIC EPIDERMAL NECROLYSIS. FANSIDAR PROPHYLAXIS MUST BE DISCONTINUED AT THE FIRST APPEARANCE OF SKIN RASH, IF A SIGNIFICANT REDUCTION IN THE COUNT OF ANY FORMED BLOOD ELEMENTS IS NOTED, OR UPON THE OCCURRENCE OF ACTIVE BACTERIAL OR FUNGAL INFECTIONS.</content></paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="A11DE4E3-3246-AB7C-9CF5-71D834F9F278" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Fansidar is an antimalarial agent, each tablet containing 500 mg N<sup>1</sup>-(5,6-dimethoxy-4-pyrimidinyl) sulfanilamide (sulfadoxine) and 25 mg 2,4-diamino-5-(p-chlorophenyl)-6-ethylpyrimidine (pyrimethamine). Each tablet also contains cornstarch, gelatin, lactose, magnesium stearate and talc.</paragraph><renderMultiMedia referencedObject="MM1" /></text>
+<effectiveTime value="20051214" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="fansidar-image01.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="62DB9179-604A-6CCD-09FA-906425339FB4" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<effectiveTime value="20051214" />
+<component>
+<section ID="Clin_Pharm_Micro">
+<id root="3876771F-4685-5FFB-48CB-D079FE8866D0" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Microbiology</title>
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="E57452EF-38A7-8F95-2FCE-66F7AB0FFEED" />
+<code code="43679-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MECHANISM OF ACTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">Mechanism of Action</title>
+<text><paragraph>Sulfadoxine and pyrimethamine, the constituents of Fansidar, are folic acid antagonists. Sulfadoxine inhibits the activity of dihydropteroate synthase whereas pyrimethamine inhibits dihydrofolate reductase.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="C1C32B26-DF7D-D424-819D-E1D6BCA8DA51" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Activity in vitro</title>
+<text><paragraph>Sulfadoxine and pyrimethamine are active against the asexual erythrocytic stages of <content styleCode="italics">Plasmodium falciparum</content>. Fansidar may also be effective against strains of <content styleCode="italics">P. falciparum</content> resistant to chloroquine.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="FB6B8ED2-312B-BF14-9CB2-8C8EEC68EB5E" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug Resistance</title>
+<text><paragraph>Strains of <content styleCode="italics">P. falciparum</content> with decreased susceptibility to sulfadoxine and/or pyrimethamine can be selected <content styleCode="italics">in vitro</content> or <content styleCode="italics">in vivo. P. falciparum</content> malaria that is clinically resistant to Fansidar occurs frequently in parts of Southeast Asia and South America, and is also prevalent in East and Central Africa. Therefore, Fansidar should be used with caution in these areas. Likewise, Fansidar may not be effective for treatment of recrudescent malaria that develops after prior therapy (or prophylaxis) with Fansidar.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="335E3732-970C-D8F5-8DB2-DD0763EB28FF" />
+<code code="43682-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHARMACOKINETICS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pharmacokinetics</title>
+<text><paragraph /></text>
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="6D57E358-3E87-3355-68A1-AF760A03CF18" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Absorption</title>
+<text><paragraph>After administration of 1 tablet, peak plasma levels for pyrimethamine (approximately 0.2 mg/L) and for sulfadoxine (approximately 60 mg/L) are reached after about 4 hours.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="40A22C8F-6BA5-5288-84B2-9C6AD0E529F0" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Distribution</title>
+<text><paragraph>The volume of distribution for sulfadoxine and pyrimethamine is 0.14 L/kg and 2.3 L/kg, respectively.</paragraph><paragraph>Patients taking 1 tablet a week (recommended adult dose for malaria prophylaxis) can be expected to have mean steady state plasma concentrations of about 0.15 mg/L for pyrimethamine after about four weeks and about 98 mg/L for sulfadoxine after about seven weeks. Plasma protein binding is about 90% for both pyrimethamine and sulfadoxine. Both pyrimethamine and sulfadoxine cross the placental barrier and pass into breast milk.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="BFAA0B9F-6A47-B670-392F-471C02694A05" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Metabolism</title>
+<text><paragraph>About 5% of sulfadoxine appears in the plasma as acetylated metabolite, about 2 to 3% as the glucuronide. Pyrimethamine is transformed to several unidentified metabolites.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="4A338D3C-32F3-DC44-FD8E-FCE709B112C3" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Elimination</title>
+<text><paragraph>A relatively long elimination half-life is characteristic of both components. The mean values are about 100 hours for pyrimethamine and about 200 hours for sulfadoxine. Both pyrimethamine and sulfadoxine are eliminated mainly via the kidneys.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="24A74C24-146D-D046-6D64-29DDD764939E" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Characteristics in Patients</title>
+<text><paragraph>In malaria patients, single pharmacokinetic parameters may differ from those in healthy subjects, depending on the population concerned. In patients with renal insufficiency, delayed elimination of the components of Fansidar must be anticipated.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INDICATIONS_AND_USAGE">
+<id root="4146948D-A4AA-5838-AE21-6DD550F6DBE0" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph /></text>
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="CE70B994-28F8-B8A7-E659-376A824F50F6" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Treatment of Acute Malaria</title>
+<text><paragraph>Fansidar is indicated for the treatment of acute, uncomplicated <content styleCode="italics">P. falciparum</content> malaria for those patients in whom chloroquine resistance is suspected. However, strains of <content styleCode="italics">P. falciparum</content> (see <content styleCode="bold"><linkHtml href="#Clin_Pharm_Micro">CLINICAL PHARMACOLOGY: Microbiology</linkHtml></content>) may be encountered which have developed resistance to Fansidar, in which case alternative treatment should be administered.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="1A28553D-8D12-4B6E-0234-163382DAF72C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Prevention of Malaria</title>
+<text><paragraph>Malaria prophylaxis with Fansidar is not routinely recommended and should only be considered for travelers to areas where chloroquine-resistant <content styleCode="italics">P. falciparum</content> malaria is endemic and sensitive to Fansidar, and when alternative drugs are not available or are contraindicated (see <content styleCode="bold"><linkHtml href="#Contraindications">CONTRAINDICATIONS</linkHtml></content>). However, strains of <content styleCode="italics">P. falciparum</content> may be encountered which have developed resistance to Fansidar.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="Contraindications">
+<id root="2A9B68AD-CB88-1842-FAC6-BEE5E4BADB37" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><list listType="unordered"><item>Repeated prophylactic (prolonged) use of Fansidar is contraindicated in patients with renal or hepatic failure or with blood dyscrasias;</item><item>Hypersensitivity to pyrimethamine, sulfonamides, or any other ingredient of Fansidar;</item><item>Patients with documented megaloblastic anemia due to folate deficiency;</item><item>Infants less than 2 months of age;</item><item>Prophylactic use of Fansidar in pregnancy at term and during the nursing period.</item></list></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section ID="WARNINGS">
+<id root="A8EEAA70-3692-3FF8-B40E-0A242D112A16" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="20BB24D3-5A1B-4785-8F9F-9D9DB5CB3C83" />
+<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BOXED WARNING SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph><content styleCode="bold">FATALITIES ASSOCIATED WITH THE ADMINISTRATION OF FANSIDAR HAVE OCCURRED DUE TO SEVERE REACTIONS, INCLUDING STEVENS-JOHNSON SYNDROME AND TOXIC EPIDERMAL NECROLYSIS. FANSIDAR PROPHYLAXIS MUST BE DISCONTINUED AT THE FIRST APPEARANCE OF SKIN RASH, IF A SIGNIFICANT REDUCTION IN THE COUNT OF ANY FORMED BLOOD ELEMENTS IS NOTED, OR UPON THE OCCURRENCE OF ACTIVE BACTERIAL OR FUNGAL INFECTIONS.</content></paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="A767FF6B-C916-7E77-6097-33623B09A027" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Fatalities associated with the administration of sulfonamides, although rare, have occurred due to severe reactions, including fulminant hepatic necrosis, agranulocytosis, aplastic anemia and other blood dyscrasias. Fansidar prophylactic regimen has been reported to cause leukopenia during a treatment of 2 months or longer. This leukopenia is generally mild and reversible.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="BD6D3AFB-658C-A2B1-5972-1F425EA83B07" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="6E1A8583-E650-B50B-46FA-E5BB16E5DBD1" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>Oral Fansidar has not been evaluated for the treatment of cerebral malaria or other severe manifestations of complicated malaria, including hyperparasitemia, pulmonary edema or renal failure. Patients with severe malaria are not candidates for oral therapy. In the event of recrudescent <content styleCode="italics">P</content>. <content styleCode="italics">falciparum</content> infections after treatment with Fansidar or failure of chemoprophylaxis with Fansidar, patients should be treated with a different blood schizonticide.</paragraph><paragraph>Fansidar should be given with caution to patients with impaired renal or hepatic function, to those with possible folate deficiency and to those with severe allergy or bronchial asthma. As with some sulfonamide drugs, in glucose-6-phosphate dehydrogenase-deficient individuals, hemolysis may occur. Urinalysis with microscopic examination and renal function tests should be performed during therapy of those patients who have impaired renal function. Excessive sun exposure should be avoided.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section ID="Precautions_Info">
+<id root="0EF326A4-7BDA-94E7-43C9-E7D31CFA625F" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INFORMATION FOR PATIENTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Information for the Patient</title>
+<text><paragraph>Patients should be warned that at the first appearance of a skin rash, they should stop use of Fansidar and seek medical attention immediately. Adequate fluid intake must be maintained in order to prevent crystalluria and stone formation.</paragraph><paragraph>Patients should also be warned that the appearance of sore throat, fever, arthralgia, cough, shortness of breath, pallor, purpura, jaundice or glossitis may be early indications of serious disorders which require prophylactic treatment to be stopped and medical treatment to be sought.</paragraph><paragraph>Females should be cautioned against becoming pregnant and should not breastfeed their infants during Fansidar therapy or prophylactic treatment.</paragraph><paragraph>Patients should be warned to keep Fansidar out of reach of children.</paragraph><paragraph>Patients also should be advised:</paragraph><list><item>that malaria can be a life-threatening infection;</item><item>that Fansidar is being prescribed to help prevent or treat this serious infection;</item><item>that no chemoprophylactic regimen is 100% effective, and protective clothing, insect repellents, and bednets are important components of malaria prophylaxis;</item><item>to seek medical attention for any febrile illness that occurs after return from a malarious area and inform their physician that they may have been exposed to malaria;</item><item>that in a small percentage of cases, patients are unable to take this medication because of side effects, and it may be necessary to change medications;</item><item>that when used as prophylaxis, the first dose of Fansidar should be taken 1 or 2 days prior to arrival in an endemic area;</item><item>that if the patient experiences any symptom that may affect the patient's ability to take this drug as prescribed, the physician should be contacted and alternative antimalarial medication should be considered.</item></list></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="EB972BBA-E5BB-9957-4B4E-34C1EA8C8076" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LABORATORY TESTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text><paragraph>Regularly scheduled complete blood counts, liver enzyme tests and analysis of urine for crystalluria should be performed whenever Fansidar is administered for more than three months.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="0424186C-D904-53E9-5A65-ED8E6FC00E32" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph>There have been reports which may indicate an increase in incidence and severity of adverse reactions when chloroquine is used with Fansidar as compared to the use of Fansidar alone. Fansidar is compatible with quinine and with antibiotics. However, antifolic drugs such as sulfonamides, trimethoprim, or trimethoprim-sulfamethoxazole combinations should not be used while the patient is receiving Fansidar for antimalarial prophylaxis. Fansidar has not been reported to interfere with antidiabetic agents.</paragraph><paragraph>If signs of folic acid deficiency develop, Fansidar should be discontinued. When recovery of depressed platelets or white blood cell counts in patients with drug-induced folic acid deficiency is too slow, folinic acid (leucovorin) may be administered in doses of 5 to 15 mg intramuscularly daily for 3 days or longer.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="D24A4960-9D51-78A6-86DA-A80BE2F8B9D8" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment Of Fertility</title>
+<text><paragraph>Pyrimethamine was not found carcinogenic in female mice or in male and female rats. The carcinogenic potential of pyrimethamine in male mice could not be assessed from the study because of markedly reduced life-span. Pyrimethamine was found to be mutagenic in laboratory animals and also in human bone marrow following 3 or 4 consecutive daily doses totaling 200 mg to 300 mg. Pyrimethamine was not found mutagenic in the Ames test. Testicular changes have been observed in rats treated with 105 mg/kg/day of Fansidar and with 15 mg/kg/day of pyrimethamine alone. Fertility of male rats and the ability of male or female rats to mate were not adversely affected at dosages of up to 210 mg/kg/day of Fansidar. The pregnancy rate of female rats was not affected following their treatment with 10.5 mg/kg/day, but was significantly reduced at dosages of 31.5 mg/kg/day or higher, a dosage approximately 30 times the weekly human prophylactic dose or higher.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="0C66D9DD-15F8-0F14-D0FE-91FBFD4D8EA3" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="4D00CFAA-AC89-552C-9A11-668180F1E24E" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERATOGENIC EFFECTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Teratogenic Effects: Pregnancy Category C</title>
+<text><paragraph>Fansidar has been shown to be teratogenic in rats when given in weekly doses approximately 12 times the weekly human prophylactic dose. Teratology studies with pyrimethamine plus sulfadoxine (1:20) in rats showed the minimum oral teratogenic dose to be approximately 0.9 mg/kg pyrimethamine plus 18 mg/kg sulfadoxine. In rabbits, no teratogenic effects were noted at oral doses as high as 20 mg/kg pyrimethamine plus 400 mg/kg sulfadoxine.</paragraph><paragraph>There are no adequate and well-controlled studies in pregnant women. However, due to the teratogenic effect shown in animals and because pyrimethamine plus sulfadoxine may interfere with folic acid metabolism, Fansidar therapy should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Women of childbearing potential who are traveling to areas where malaria is endemic should be warned against becoming pregnant, and should be advised to practice contraception during prophylaxis with Fansidar and for three months after the last dose.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="B2E97F10-0A89-6E1A-AD17-0B07BAF8B372" />
+<code code="34078-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NONTERATOGENIC EFFECTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Nonteratogenic Effects</title>
+<text><paragraph>See <content styleCode="bold"><linkHtml href="#Contraindications">CONTRAINDICATIONS</linkHtml></content></paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="7D3EE77F-AE61-34FA-FDA6-CA7797B1E960" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>See <content styleCode="bold"><linkHtml href="#Contraindications">CONTRAINDICATIONS</linkHtml></content></paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="3880C4E0-C5D0-6F44-AF26-DE40B6541DC2" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>Fansidar should not be given to infants less than 2 months of age because of inadequate development of the glucuronide-forming enzyme system.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="743A294F-5059-9F69-52BA-A7B1C2802FF3" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GERIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Geriatric Use</title>
+<text><paragraph>Clinical studies of Fansidar did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects. Other reported clinical experience has not identified differences in responses between the elderly and younger patients. In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy. This drug is known to be substantially excreted by the kidney, and the risk of toxic reactions to this drug may be greater in patients with impaired renal function. Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="AFC546DA-625B-AFA3-1089-3B536F50BF56" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>For completeness, all major reactions to sulfonamides and to pyrimethamine are included below, even though they may not have been reported with Fansidar (see <content styleCode="bold"><linkHtml href="#WARNINGS">WARNINGS</linkHtml></content> and <content styleCode="bold"><linkHtml href="#Precautions_Info">PRECAUTIONS: Information for the Patient</linkHtml></content>).</paragraph></text>
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="4CC7F865-5EFD-33BB-F0AD-8D072F3AB723" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Hematological Changes</title>
+<text><paragraph>Agranulocytosis, aplastic anemia, megaloblastic anemia, thrombocytopenia, leukopenia, hemolytic anemia, purpura, hypoprothrombinemia, methemoglobinemia, and eosinophilia.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="4A2216B3-8C98-539C-A24D-985E177B5D1C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Skin and Miscellaneous Sites Allergic Reactions</title>
+<text><paragraph>Erythema multiforme, Stevens-Johnson syndrome, generalized skin eruptions, toxic epidermal necrolysis, urticaria, serum sickness, pruritus, exfoliative dermatitis, anaphylactoid reactions, periorbital edema, conjunctival and scleral injection, photosensitization, arthralgia, allergic myocarditis, slight hair loss, Lyell's syndrome, and allergic pericarditis.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="32C13A98-1C0D-F72A-BE6E-D0BDB604C3B7" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Gastrointestinal Reactions</title>
+<text><paragraph>Glossitis, stomatitis, nausea, emesis, abdominal pains, hepatitis, hepatocellular necrosis, diarrhea, pancreatitis, feeling of fullness, and transient rise of liver enzymes.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="1B23D4D7-C6B9-FF67-3D80-9C30AA2C4B01" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Central Nervous System Reactions</title>
+<text><paragraph>Headache, peripheral neuritis, mental depression, convulsions, ataxia, hallucinations, tinnitus, vertigo, insomnia, apathy, fatigue, muscle weakness, nervousness, and polyneuritis.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="3B4C3929-31D9-8163-F214-D7DD34414140" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Respiratory Reactions</title>
+<text><paragraph>Pulmonary infiltrates resembling eosinophilic or allergic alveolitis.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="FAF5BFC0-F3C3-DB57-F0FC-F81D60ED95F3" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Genitourinary</title>
+<text><paragraph>Renal failure, interstitial nephritis, BUN and serum creatinine elevation, toxic nephrosis with oliguria and anuria, and crystalluria.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="960F4C84-260C-B40B-1BAD-0FD046B0AEC2" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Miscellaneous Reactions</title>
+<text><paragraph>Drug fever, chills, periarteritis nodosa and LE phenomenon have occurred.</paragraph><paragraph>The sulfonamides bear certain chemical similarities to some goitrogens, diuretics (acetazolamide and the thiazides), and oral hypoglycemic agents. Diuresis and hypoglycemia have occurred rarely in patients receiving sulfonamides. Cross-sensitivity may exist with these agents. Rats appear to be especially susceptible to the goitrogenic effects of sulfonamides, and long-term administration has produced thyroid malignancies in the species.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="D4BAFAFF-6360-FCB4-A734-DEFBD2F94928" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>Acute intoxication may be manifested by headache, nausea, anorexia, vomiting and central nervous system stimulation (including convulsions), followed by megaloblastic anemia, leukopenia, thrombocytopenia, glossitis and crystalluria. In acute intoxication, emesis and gastric lavage followed by purges may be of benefit. The patient should be adequately hydrated to prevent renal damage. The renal, hepatic, and hematopoietic systems should be monitored for at least 1 month after an overdosage. If the patient is having convulsions, the use of parenteral diazepam or a barbiturate is indicated. For depressed platelet or white blood cell counts, folinic acid (leucovorin) should be administered in a dosage of 5 mg to 15 mg intramuscularly daily for 3 days or longer.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="5587C70B-E82C-3A21-A7FA-96D10E517C1F" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph><content styleCode="bold">(See <linkHtml href="#INDICATIONS_AND_USAGE">INDICATIONS AND USAGE</linkHtml>)</content></paragraph><paragraph>The dosage should be swallowed whole, and not chewed, with plenty of fluids after a meal.</paragraph></text>
+<effectiveTime value="20051214" />
+<component>
+<section>
+<id root="F5E72B11-FB84-815E-6DA8-72422B66EBA1" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Treatment of Acute Malaria</title>
+<text><table width="55%">
+<col align="center" width="22.5%" />
+<col align="center" width="32.5%" />
+<thead>
+<tr><th styleCode="Lrule Botrule" valign="top">Adults</th><th styleCode="Lrule Botrule Rrule" valign="top">2 to 3 tablets taken as a single dose.</th></tr>
+<tr><th styleCode="Lrule Botrule">&#160;&#160;</th><th styleCode="Lrule Botrule Rrule">&#160;&#160;</th></tr>
+<tr><th styleCode="Lrule Botrule" valign="top">Pediatric patients<br />(&gt;2 months to 18 years)</th><th styleCode="Lrule Botrule Rrule" valign="top">The dosage for treatment of malaria in children is based upon body weight:</th></tr>
+<tr><th styleCode="Lrule Botrule" valign="bottom"><content styleCode="underline">Weight (kg)</content></th><th styleCode="Lrule Botrule Rrule">Number of Tablets Taken<br /><content styleCode="underline">as a Single Dose</content></th></tr>
+</thead>
+<tbody>
+<tr><td styleCode="Lrule Botrule">&gt;45</td><td styleCode="Lrule Botrule Rrule">3</td></tr>
+<tr><td styleCode="Lrule Botrule">31 to 45</td><td styleCode="Lrule Botrule Rrule">2</td></tr>
+<tr><td styleCode="Lrule Botrule">21 to 30</td><td styleCode="Lrule Botrule Rrule">1 &#189;</td></tr>
+<tr><td styleCode="Lrule Botrule">11 to 20</td><td styleCode="Lrule Botrule Rrule">1</td></tr>
+<tr><td styleCode="Lrule Botrule">5 to 10</td><td styleCode="Lrule Botrule Rrule">&#189;</td></tr>
+</tbody>
+</table></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="F8A65E5C-AF3A-7E18-67CD-0B08DC340CD3" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Prevention of Malaria</title>
+<text><paragraph>The malaria risk must be carefully weighed against the risk of serious adverse drug reactions (see <content styleCode="bold"><linkHtml href="#INDICATIONS_AND_USAGE">INDICATIONS AND USAGE</linkHtml></content>). If Fansidar is prescribed for prophylaxis, it is important that the physician inquires about sulfonamide intolerance and points out the risk and the need for immediate drug withdrawal if skin reactions do occur.</paragraph><paragraph>The first dose of Fansidar should be taken 1 or 2 days before arrival in an endemic area; administration should be continued during the stay and for 4 to 6 weeks after return.</paragraph><table width="55%"><col align="center" width="25%" />
+<col align="center" width="15%" />
+<col align="center" width="15%" />
+<thead>
+<tr><th styleCode="Lrule" /><th styleCode="Lrule" valign="bottom"><content styleCode="underline">Once Weekly</content></th><th styleCode="Lrule Rrule">Once Every<br /><content styleCode="underline"> 2 Weeks</content></th></tr>
+<tr><th styleCode="Lrule Botrule">Adults</th><th styleCode="Lrule Botrule">1 tablet</th><th styleCode="Lrule Botrule Rrule">2 tablets</th></tr>
+<tr><th styleCode="Botrule" /><th styleCode="Botrule" /><th styleCode="Botrule" /></tr>
+<tr><th styleCode="Lrule Botrule" valign="top">Pediatric patients<br />(&gt;2 months to 18 years)</th><th colspan="2" styleCode="Lrule Botrule Rrule" valign="top">The dosage for prevention of malaria in children is based upon body weight:</th></tr>
+<tr><th styleCode="Lrule Botrule" valign="bottom"><content styleCode="underline">Weight (kg)</content></th><th colspan="2" styleCode="Lrule Botrule Rrule">Number of Tablets Taken<br /><content styleCode="underline">Once Weekly</content></th></tr>
+</thead>
+<tbody>
+<tr><td styleCode="Lrule Botrule">&gt;45</td><td colspan="2" styleCode="Lrule Botrule Rrule">1 &#189;</td></tr>
+<tr><td styleCode="Lrule Botrule">31 to 45</td><td colspan="2" styleCode="Lrule Botrule Rrule">1</td></tr>
+<tr><td styleCode="Lrule Botrule">21 to 30</td><td colspan="2" styleCode="Lrule Botrule Rrule">&#190;</td></tr>
+<tr><td styleCode="Lrule Botrule">11 to 20</td><td colspan="2" styleCode="Lrule Botrule Rrule">&#189;</td></tr>
+<tr><td styleCode="Lrule Botrule">5 to 10</td><td colspan="2" styleCode="Lrule Botrule Rrule">&#188;</td></tr>
+</tbody>
+</table><paragraph>Prophylaxis with Fansidar should not be continued for more than two years, since no experience of more prolonged administration is available to date.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="2CE8E6E4-C3B9-851F-1E88-4F11C276C0B7" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>Scored tablets, containing 500 mg sulfadoxine and 25 mg pyrimethamine &#8212; unit dose packages of 25 (NDC-0004-0161-03). Imprint on tablets: FANSIDAR ((ROCHE LOGO)) ROCHE.</paragraph></text>
+<effectiveTime value="20051214" />
+</section>
+</component>
+<component>
+<section>
+<id root="CE075CE3-CCCD-33D5-AFD4-21DAE8212C6C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Manufactured by:<br />F. Hoffmann-La Roche Ltd.<br />Basel, Switzerland</paragraph><paragraph>Distributed by:</paragraph><renderMultiMedia referencedObject="MM2" /><paragraph>27898797</paragraph><paragraph>Copyright &#169; 1996-2004 by Roche Laboratories Inc. All rights reserved.</paragraph></text>
+<effectiveTime value="20051214" />
+<component>
+<observationMedia ID="MM2">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="fansidar-image02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

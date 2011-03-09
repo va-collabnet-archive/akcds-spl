@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?>
+<document xmlns:voc="http://www.hl7.org/v3/voc" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+	<id root="e061fb3e-afd7-4188-b5fb-617ac1d3e38d"/>
+	<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABELING"/>
+	<title mediaType="text/x-hl7-title+xml">DOPamine HYDROCHLORIDE <br/>INJECTION, USP</title>
+	<effectiveTime value="20060511"/>
+	<setId root="e061fb3e-afd7-4188-b5fb-617ac1d3e38d"/>
+	<versionNumber value="2"/>
+	<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>American Regent Laboratories</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+	<component>
+		<structuredBody>
+			<component>
+				<section ID="dpl">
+					<id root="30832B17-03AF-5C81-0A41-C8A8D33048F8"/>
+					<effectiveTime value="20060511"/>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0517-1805" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Dopamine Hydrochloride</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="40">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="40"/>
+										</numerator>
+										<denominator unit="mL" value="1">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="7L3E358N9L" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>dopamine hydrochloride</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="VTD58H1Z2X" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>dopamine</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Dopamine Hydrochloride</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>water</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>sodium metabisulfite</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="5">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="5"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43215" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, SINGLE-DOSE"/>
+										<asContent>
+											<quantity>
+												<numerator value="25">
+													<translation code="C48551" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" value="25"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0517-1805-25" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43178" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38279" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS DRIP"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0517-1905" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Dopamine Hydrochloride</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="80">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="80"/>
+										</numerator>
+										<denominator unit="mL" value="1">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="7L3E358N9L" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>dopamine hydrochloride</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="VTD58H1Z2X" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>dopamine</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Dopamine Hydrochloride</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>water</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>sodium metabisulfite</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="5">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="5"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43215" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, SINGLE-DOSE"/>
+										<asContent>
+											<quantity>
+												<numerator value="25">
+													<translation code="C48551" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" value="25"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0517-1905-25" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43178" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38279" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS DRIP"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0517-1305" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Dopamine Hydrochloride</name>
+								<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="160">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="160"/>
+										</numerator>
+										<denominator unit="mL" value="1">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="7L3E358N9L" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>dopamine hydrochloride</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="VTD58H1Z2X" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>dopamine</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Dopamine Hydrochloride</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>water</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>sodium metabisulfite</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator unit="mL" value="5">
+											<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="5"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code/>
+										<formCode code="C43215" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, SINGLE-DOSE"/>
+										<asContent>
+											<quantity>
+												<numerator value="25">
+													<translation code="C48551" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" value="25"/>
+												</numerator>
+												<denominator value="1">
+													<translation value="1"/>
+												</denominator>
+											</quantity>
+											<containerPackagedMedicine>
+												<code code="0517-1305-25" codeSystem="2.16.840.1.113883.6.69"/>
+												<formCode code="C43178" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX"/>
+											</containerPackagedMedicine>
+										</asContent>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38279" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS DRIP"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<component>
+						<observationMedia ID="MM7846">
+							<value xsi:type="ED">
+								<reference value="Dopamine-HCl-figure_01.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="s1">
+					<id root="355AE68C-8E40-5F44-476C-9082130BC9E7"/>
+					<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+					<text>
+						<paragraph>
+							<content styleCode="bold">Rx Only</content>
+						</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+			<component>
+				<section ID="s2">
+					<id root="EF895288-6312-3FC1-1EF0-7D84B72D2571"/>
+					<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">DESCRIPTION:</title>
+					<text>
+						<paragraph>Dopamine Hydrochloride Injection, USP is a clear, practically colorless, aqueous, additive solution for intravenous infusion after dilution. Each mL contains either 40 mg, 80 mg, or 160 mg dopamine HCl, USP (equivalent to 32.3 mg, 64.6 mg and 129.2 mg dopamine base respectively) in Water for Injection, USP, containing 9 mg sodium metabisulfite as an antioxidant. The pH range (2.5 to 5.0) may be adjusted with citric acid and/or sodium citrate. The solution is sterile and nonpyrogenic. Dopamine HCl, a naturally occurring catecholamine, is an inotropic vasopressor agent. Its chemical name is 3,4 dihydroxyphenethylamine hydrochloride and its chemical structure is:</paragraph>
+						<renderMultiMedia referencedObject="MM7846"/>
+						<paragraph>Dopamine HCl is sensitive to alkalis, iron salts and oxidizing agents. DOPAMINE must be diluted in an appropriate, sterile parenteral solution (see <linkHtml href="#s30">DOSAGE AND ADMINISTRATION</linkHtml> section) before intravenous administration.</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+			<component>
+				<section ID="s3">
+					<id root="6864691D-CA91-3505-CA7C-39F7644975CC"/>
+					<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+					<text>
+						<paragraph>Dopamine is a natural catecholamine formed by the decarboxylation of 3,4-dihydroxyphenylalanine (DOPA). It is a precursor to norepinephrine in noradrenergic nerves and is also a neurotransmitter in certain areas of the central nervous system, especially in the nigrostriatal tract, and in a few peripheral sympathetic nerves.</paragraph>
+						<paragraph>Dopamine produces positive chronotropic and inotropic effects on the myocardium, resulting in increased heart rate and cardiac contractility. This is accomplished directly by exerting an agonist action on beta-adrenoceptors and indirectly by causing release of norepinephrine from storage sites in sympathetic nerve endings.</paragraph>
+						<paragraph>Dopamine's onset of action occurs within five minutes of intravenous administration, and with dopamine's plasma half-life of about two minutes, the duration of action is less than ten minutes. If monoamine oxidase (MAO) inhibitors are present, however, the duration may increase to one hour. The drug is widely distributed in the body but does not cross the blood-brain barrier to a significant extent. Dopamine is metabolized in the liver, kidney, and plasma by MAO and catechol-O-methyltransferase to the inactive compounds homovanillic acid (HVA) and 3,4-dihydroxyphenylacetic acid. About 25% of the dose is taken up into specialized neurosecretory vesicles (the adrenergic nerve terminals), where it is hydroxylated to form norepinephrine. It has been reported that about 80% of the drug is excreted in the urine within 24 hours, primarily as HVA and its sulfate and glucuronide conjugates and as 3,4-dihydroxyphenylacetic acid. A very small portion is excreted unchanged.</paragraph>
+						<paragraph>The predominant effects of dopamine are dose-related, although actual response of an individual patient will largely depend on the clinical status of the patient at the time the drug is administered. At low rates of infusion (0.5-2 mcg/kg/min) dopamine causes vasodilation that is presumed to be due to a specific agonist action on dopamine receptors (distinct from alpha and beta adrenoceptors) in the renal, mesenteric, coronary, and intracerebral vascular beds. At these dopamine receptors, haloperidol is an antagonist. The vasodilation in these vascular beds is accompanied by increased glomerular filtration rate, renal blood flow, sodium excretion, and urine flow. Hypotension sometimes occurs. An increase in urinary output produced by dopamine is usually not associated with a decrease in osmolarity of the urine.</paragraph>
+						<paragraph>At intermediate rates of infusion (2-10 mcg/kg/min) dopamine acts to stimulate the beta<sub>1</sub>-adrenoceptors, resulting in improved myocardial contractility, increased SA rate and enhanced impulse conduction in the heart. There is little, if any, stimulation of the beta<sub>2</sub>-adrenoceptors (peripheral vasodilation). Dopamine causes less increase in myocardial oxygen consumption than isoproterenol, and its use is not usually associated with a tachyarrhythmia. Clinical studies indicate that it usually increases systolic and pulse pressure with either no effect or a slight increase in diastolic pressure. Blood flow to the peripheral vascular beds may decrease while mesenteric flow increases due to increased cardiac output. At low and intermediate doses, total peripheral resistance (which would be raised by alpha activity) is usually unchanged.</paragraph>
+						<paragraph>At higher rates of infusion (10-20 mcg/kg/min) there is some effect on alpha-adrenoceptors, with consequent vasoconstrictor effects and a rise in blood pressure. The vasoconstrictor effects are first seen in the skeletal muscle vascular beds, but with increasing doses they are also evident in the renal and mesenteric vessels. At very high rates of infusion (above 20 mcg/kg/min), stimulation of alpha-adrenoceptors predominates and vasoconstriction may compromise the circulation of the limbs and override the dopaminergic effects of dopamine, reversing renal dilation and natriuresis.</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+			<component>
+				<section ID="s4">
+					<id root="E9B98192-1272-82D8-7099-3E1B6DD87D69"/>
+					<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">INDICATIONS</title>
+					<text>
+						<paragraph>DOPAMINE is indicated for the correction of hemodynamic imbalances present in the shock syndrome due to myocardial infarctions, trauma, endotoxic septicemia, open heart surgery, renal failure, and chronic cardiac decompensation as in congestive failure.</paragraph>
+						<paragraph>Where appropriate, restoration of blood volume with a suitable plasma expander or whole blood should be instituted or completed prior to administration of DOPAMINE.</paragraph>
+						<paragraph>Patients most likely to respond adequately to DOPAMINE are those in whom physiological parameters, such as urine flow, myocardial function, and blood pressure, have not undergone profound deterioration. Multiclinic trials indicate that the shorter the time interval between onset of signs and symptoms and initiation of therapy with volume correction and DOPAMINE, the better the prognosis.</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+					<component>
+						<section ID="s5">
+							<id root="8DB69520-A88A-E9F7-691A-AE7650922F8C"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Poor Perfusion of Vital Organs:</content> Urine flow appears to be one of the better diagnostic signs by which adequacy of vital organ perfusion can be monitored. Nevertheless, the physician should also observe the patient for signs of reversal of confusion of comatose condition. Loss of pallor, increase in toe temperature, and/or adequacy of nail bed capillary filling may also be used as indices of adequate dosage. Clinical studies have shown that when DOPAMINE is administered before urine flow has diminished to levels approximating 0.3 mL/minute, prognosis is more favorable. Nevertheless, in a number of oliguric or anuric patients, administration of DOPAMINE has resulted in an increase in urine flow which in some cases reached normal levels. DOPAMINE may also increase urine flow in patients whose output is within normal limits and thus may be of value in reducing the degree of preexisting fluid accumulation. It should be noted that at doses above those optimal for the individual patient urine flow may decrease, necessitating reduction of dosage. Concurrent administration of DOPAMINE and diuretic agents may produce an additive or potentiating effect.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s6">
+							<id root="123C682C-75C1-D4D8-D17A-4BE27C96A9DB"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Low Cardiac Output:</content> Increased cardiac output is related to the direct inotropic effect of DOPAMINE on the myocardium. Increased cardiac output at low or moderate doses appears to be related to a favorable prognosis. Increase in cardiac output has been associated with either static or decreased systemic vascular resistance (SVR). Static or decreased SVR associated with low or moderate increments in cardiac output is believed to be a reflection of differential effects on specific vascular beds with increased resistance in peripheral beds (e.g., femoral) and concomitant decreases in mesenteric and renal vascular beds. Redistribution of blood flow parallels these changes so that an increase in cardiac output is accompanied by an increase in mesenteric and renal blood flow. In many instances the renal fraction of the total cardiac output has been found to increase. The increase in cardiac output produced by DOPAMINE is not associated with substantial decreases in systemic vascular resistance as may occur with isoproterenol.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s7">
+							<id root="280836F4-0FED-5673-B087-43E401E91C89"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Hypotension:</content> Hypotension due to inadequate cardiac output can be managed by administration of low to moderate doses of DOPAMINE, which have little effect on SVR. At high therapeutic doses, the alpha adrenergic activity of DOPAMINE becomes more prominent and thus may correct hypotension due to diminished SVR. As in the case of other circulatory decompensation states, prognosis is better in patients whose blood pressure and urine flow have not undergone profound deterioration. Therefore, it is suggested that the physician administer DOPAMINE as soon as a definite trend toward decreased systolic and diastolic pressure becomes evident.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="s8">
+					<id root="4F1AFF3A-A8E1-0418-4035-8644EE138A8C"/>
+					<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+					<text>
+						<paragraph>DOPAMINE should not be used in patients with pheochromocytoma.</paragraph>
+						<paragraph>DOPAMINE should not be administered in the presence of uncorrected tachyarrhythmias or ventricular fibrillation.</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+			<component>
+				<section ID="s9">
+					<id root="7AF0669A-E72F-DCE9-8AC4-000D11DFEA35"/>
+					<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+					<text>
+						<paragraph>Do NOT add DOPAMINE to any alkaline diluent solution, since the drug is inactivated in alkaline solution.</paragraph>
+						<paragraph>Patients who have been treated with monoamine oxidase (MAO) inhibitors prior to the administration of DOPAMINE will require substantially reduced dosage. See <content styleCode="bold">
+								<linkHtml href="#s21">Drug Interactions</linkHtml>
+							</content>, below.</paragraph>
+						<paragraph>Contains sodium metabisulfite, a sulfite that may cause allergic-type reactions including anaphylactic symptoms and life-threatening or less severe asthmatic episodes in certain susceptible people. The overall prevalence of sulfite sensitivity in the general population is unknown, and probably low. Sulfite sensitivity is seen more frequently in asthmatic than in nonasthmatic people.</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+			<component>
+				<section ID="s10">
+					<id root="F402F538-6E32-FF96-D832-1D7232AAF693"/>
+					<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+					<effectiveTime value="20060511"/>
+					<component>
+						<section ID="s11">
+							<id root="28BC6E61-56D0-85AA-2E7B-C9616BCEA94E"/>
+							<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">General:</title>
+							<effectiveTime value="20060511"/>
+							<component>
+								<section ID="s12">
+									<id root="AEBE2557-B996-4F66-CFEF-4D6AEF26192B"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Careful monitoring required</content> - Close monitoring of the following indices-urine flow, cardiac output and blood pressure - during DOPAMINE infusion is necessary as in the case of any adrenergic agent.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s13">
+									<id root="46A19A8B-F9E9-5246-4F13-24F1E8F9F20F"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Avoid hypovolemia</content> - Prior to treatment with DOPAMINE, hypovolemia should be fully corrected, if possible with either whole blood or plasma as indicated. Monitoring of central venous pressure of left ventricular filling pressure may be helpful in detecting and treating hypovolemia.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s14">
+									<id root="79DAA1F0-11CC-2FC0-1AE4-8C8A5D5D1B18"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Hypoxia, Hypercapnia, Acidosis</content> - These conditions which may also reduce the effectiveness and/or increase the incidence of adverse effects of dopamine, must be identified and corrected prior to, or concurrently with administration of dopamine HCl.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s15">
+									<id root="39CD9589-4E5D-CB2E-A9C8-741DC6A72464"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Ventricular Arrhythmias</content> - If an increased number of ectopic beats are observed, the dose should be reduced if possible.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s16">
+									<id root="CF93F1CA-5FB2-45F5-4E87-59ABD90871F5"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Decreased Pulse Pressure</content> - If a disproportionate rise in the diastolic pressure (i.e., a marked decrease in the pulse pressure) is observed in patients receiving DOPAMINE, the infusion rate should be decreased and the patient observed carefully for further evidence of predominant vasoconstrictor activity, unless such an effect is desired.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s17">
+									<id root="6D9CA599-7F54-CB9B-D57F-12580D2EA34A"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Hypotension</content> - At lower infusion rates, if hypotension occurs, the infusion rate should be rapidly increased until adequate blood pressure is obtained. If hypotension persists, dopamine HCl should be discontinued and a more potent vasoconstrictor agent such as norepinephrine should be administered.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s18">
+									<id root="5747E52D-0DF5-844B-C70E-69615385293C"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Extravasation</content> - DOPAMINE should be infused into a large vein whenever possible to prevent the possibility of extravasation into tissue adjacent to the infusion site. Extravasation may cause necrosis and sloughing of surrounding tissue. Large veins of the actecubital fossa are preferred to veins in the dorsum of the hand or ankle. Less suitable infusion sites should be used only if the patient's condition requires immediate attention. The physician should switch to more suitable sites as rapidly as possible. The infusion site should be continuously monitored for free flow.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s19">
+									<id root="7456704A-C6C4-0D09-BEC6-D5CCB3823694"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Occlusive vascular disease</content> - Patients with a history of occlusive vascular disease (for example, atheroscierosis, arterial embolism, and Raynaud's disease, cold injury, diabetic endarteritis, and Buergers disease) should be closely monitored for any changes in color or temperature of the skin in the extremities. If a change in skin color or temperature occurs and is thought to be the result of compromised circulation to the extremities, the benefits of continued DOPAMINE infusion should be weighed against the risk of possible necrosis. This condition may be reversed by either decreasing or discontinuing the rate of infusion.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="e19">
+									<id root="570657AF-1D8F-F087-F32D-4088E726832D"/>
+									<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="BOXED WARNING SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">IMPORTANT - Antidote for Peripheral Ischemia - To prevent sloughing and necrosis in ischemic areas, the area should be infiltrated as soon as possible with 10 to 15 mL of saline solution containing 5 to 10 mg of Regitine</content>
+											<sup>&#174;</sup>
+											<content styleCode="bold">(brand of phentolamine), an adrenergic blocking agent. A syringe with a fine hypodermic needle should be used, and the solution liberally infiltrated throughout the ischemic area. Sympathetic blockade with phentolamine causes immediate and conspicuous local hyperemic changes if the area is infiltrated within 12 hours. Therefore, </content>
+											<content styleCode="bold underline">phentolamine should be given as soon as possible</content>
+											<content styleCode="bold"> after the extravasation is noted.</content>
+										</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+							<component>
+								<section ID="s20">
+									<id root="B727BB8E-B303-3DC3-D988-7A597E808702"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Weaning</content> - When discontinuing the infusion, it may be necessary to gradually decrease the dose of dopamine HCl while expanding blood volume with IV fluids, since sudden cessation may result in marked hypotension.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="s21">
+							<id root="F1EB3268-5CBD-080B-6BCF-828832BB3BFE"/>
+							<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">Drug Interactions:</title>
+							<text>
+								<paragraph>Cyclopropane or halogenated hydrocarbon anesthetics increase cardiac autonomic irritability and may sensitize the myocardium to the action of certain intravenously administered catecholamines, such as dopamine. The interaction appears to be related both to pressor activity and to the beta adrenergic stimulating properties of these catecholamines, and may produce ventricular arrhythmias. Therefore, EXTREME CAUTION should be exercised when administering dopamine HCl to patients receiving cyclopropane or halogenated hydrocarbon anesthetics. Results of studies in animals indicate that dopamine induced ventricular arrhythmias during anesthesia can be reversed by propranolol.</paragraph>
+								<paragraph>Because dopamine is metabolized by monoamine oxidase (MAO), inhibition of this enzyme prolongs and potentiates the effect of dopamine. Patients who have been treated with MAO inhibitors within two to three weeks prior to the administration of dopamine should receive initial doses of dopamine HCl not greater than one-tenth (1/10) of the usual dose.</paragraph>
+								<paragraph>Concurrent administration of low-dose dopamine HCl and diuretic agents may produce an additive or potentiating effect on urine flow.</paragraph>
+								<paragraph>Tricyclic antidepressants may potentiate the cardiovascular effects of adrenergic agents.</paragraph>
+								<paragraph>Cardiac effects of dopamine are antagonized by beta-adrenergic blocking agents, such as propranolol and metroprolol. The peripheral vasoconstriction caused by high doses of dopamine HCl is antagonized by alpha-adrenergic blocking agents. Dopamine-induced renal and mesenteric vasodilation is not antagonized by either alpha- or beta-adrenergic blocking agents.</paragraph>
+								<paragraph>Butyrophenones (such as haloperidol) and phenothiazines can suppress the dopaminergic renal and mesenteric vasodilation induced with low-dose dopamine infusion.</paragraph>
+								<paragraph>The concomitant use of vasopressors, vasoconstricting agents (such as ergonovine) and some oxytocic drugs may result in severe hypertension.</paragraph>
+								<paragraph>Administration of phenytoin to patients receiving dopamine HCl has been reported to lead to hypotension and bradycardia. It is suggested that in patients receiving dopamine HCl, alternatives to phenytoin should be considered if anticonvulsant therapy is needed.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s22">
+							<id root="2BFE76F8-39D4-DA8E-AF1B-44173D2E7E53"/>
+							<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Carcinogenesis, Mutagenesis, Impairment of Fertility:</content> Long-term animal studies have not been performed to evaluate carcinogenic potential of dopamine hydrochloride.</paragraph>
+								<paragraph>Dopamine hydrochloride at doses approaching maximal solubility shows no clear genotoxic potential in the Ames test. Although there was a reproducible dose-dependent increase in the number of revertant colonies with strains TA100 and TA98, both with and without metabolic activation, the small increase was considered inconclusive evidence of mutagenicity. In the L5178Y TK<sup>+/&#8211;</sup> mouse lymphoma assay, dopamine hydrochloride at the highest concentrations used of 750 mcg/mL without metabolic activation, and 3000 mcg/mL with activation, was toxic and associated with increases in mutant frequencies when compared to untreated and solvent controls; at the lower concentrations no increases over controls were noted.</paragraph>
+								<paragraph>No clear evidence of clastogenic potential was reported in the <content styleCode="italics">in vivo</content> mouse or male rat bone marrow micronucleus test when the animals were treated intravenously with up to 224 mg/kg and 30 mg/kg of dopamine hydrochloride, respectively.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s23">
+							<id root="FD41D6B0-A55E-91AA-C119-1D4C17B40C13"/>
+							<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY"/>
+							<title mediaType="text/x-hl7-title+xml">Pregnancy: Pregnancy Category C:</title>
+							<effectiveTime value="20060511"/>
+							<component>
+								<section ID="s24">
+									<id root="751BDA2A-5AC7-B0AA-F015-8CA8D2A04770"/>
+									<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" displayName="TERATOGENIC EFFECTS SECTION"/>
+									<text>
+										<paragraph>
+											<content styleCode="bold">Teratogenic Effects:</content> Teratogenicity studies in rats and rabbits at dopamine hydrochloride dosages up to 6 mg/kg/day intravenously during organogenesis produced no detectable teratogenic or embryotoxic effects, although maternal toxicity consisting of mortalities, decrease body weight gain, and pharmacotoxic signs were observed in rats. In a published study, dopamine hydrochloride administered at 10 mg/kg subcutaneously for 30 days, markedly prolonged metestrus and increased mean pituitary and ovary weights in female rats. Similar administration to pregnant rats throughout gestation or for 5 days starting on gestation day 10 or 15 resulted in decreased body weight gains, increased mortalities and slight increases in cataract formation among the offspring. There are no adequate and well-controlled studies in pregnant women, and it is not known if dopamine hydrochloride crosses the placental barrier. Dopamine hydrochloride should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.</paragraph>
+									</text>
+									<effectiveTime value="20060511"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="s25">
+							<id root="9563E109-AFA7-0A69-3037-D53A272FE1A7"/>
+							<code code="34079-4" codeSystem="2.16.840.1.113883.6.1" displayName="LABOR &amp; DELIVERY SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Labor and Delivery:</content> In obstetrics, if vasopressor drugs are used to correct hypotension or are added to a local anesthetic solution the interaction with some oxytocic drugs may cause severe hypertension.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s26">
+							<id root="89C10DB2-2702-EE7C-1329-849A733FBC51"/>
+							<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Nursing Mothers:</content> It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when DOPAMINE is administered to a nursing mother.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s27">
+							<id root="A5F74758-A4FF-4AB6-5101-484234850972"/>
+							<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Pediatric Use:</content> Safety and effectiveness in children have not been established. Dopamine HCl has been used in a limited number of pediatric patients, but such use has been inadequate to fully define proper dosage and limitations for use. Peripheral gangrene has been reported in neonates and children.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="s28">
+					<id root="84E4E143-FECB-2FEF-5F91-40ACF143D6BB"/>
+					<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+					<text>
+						<paragraph>The following adverse reactions have been observed, but there are not enough data to support an estimate of their frequency.</paragraph>
+						<paragraph>
+							<content styleCode="bold">Cardiovascular System</content>
+						</paragraph>
+						<paragraph>ventricular arrhythmia (at very high doses)<br/>ectopic beats<br/>tachycardia<br/>anginal pain<br/>palpitation<br/>cardiac conduction abnormalities<br/>widened QRS complex<br/>bradycardia<br/>hypotension<br/>hypertension<br/>vasoconstriction</paragraph>
+						<paragraph>
+							<content styleCode="bold">Respiratory System</content>
+						</paragraph>
+						<paragraph>dyspnea</paragraph>
+						<paragraph>
+							<content styleCode="bold">Gastrointestinal System</content>
+						</paragraph>
+						<paragraph>nausea<br/>vomiting</paragraph>
+						<paragraph>
+							<content styleCode="bold">Metabolic/Nutritional System</content>
+						</paragraph>
+						<paragraph>azotemia</paragraph>
+						<paragraph>
+							<content styleCode="bold">Central Nervous System</content>
+						</paragraph>
+						<paragraph>headache<br/>anxiety</paragraph>
+						<paragraph>
+							<content styleCode="bold">Dermatological System</content>
+						</paragraph>
+						<paragraph>piloerection</paragraph>
+						<paragraph>
+							<content styleCode="bold">Other</content>
+						</paragraph>
+						<paragraph>Gangrene of the extremities has occurred when moderate to high doses were administered for prolonged periods or in patients with occlusive vascular disease receiving low doses of dopamine HCl.</paragraph>
+						<paragraph>A few cases of peripheral cyanosis have been reported.</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+			<component>
+				<section ID="s29">
+					<id root="F43A1594-247A-E29B-AE4C-646133E54FEA"/>
+					<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+					<text>
+						<paragraph>In case of accidental overdosage, as evidenced by excessive blood pressure elevation, reduce rate of administration or temporarily discontinue DOPAMINE until patient's condition stabilizes. Since the duration of action of DOPAMINE is quite short, no additional remedial measures are usually necessary. If these measures fail to stabilize the patient's condition, use of the short-acting alpha adrenergic blocking agent, phentolamine, should be considered.</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+			<component>
+				<section ID="s30">
+					<id root="11CD01A2-6711-6794-A2C0-383E28B2657D"/>
+					<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+					<effectiveTime value="20060511"/>
+					<component>
+						<section ID="e31">
+							<id root="818A3932-A524-F3C6-A02D-893A169D0AA6"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">WARNING:</content> This is a potent drug: It must be diluted before administration to patient.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s31">
+							<id root="EA743F0F-940E-FB21-E343-CDE17D13E7CA"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Suggested Dilution:</content> Transfer contents of one or more ampuls or vials by aseptic technique to either 250 mL or 500 mL of one of the following sterile intravenous solutions:</paragraph>
+								<list listType="ordered" styleCode="Arabic">
+									<item>Sodium Chloride Injection, USP</item>
+									<item>Dextrose (5%) Injection, USP</item>
+									<item>Dextrose (5%) and Sodium Chloride (0.9%) Injection, USP</item>
+									<item>5% Dextrose in 0.45% Sodium Chloride Solution</item>
+									<item>Dextrose (5%) in Lactated Ringer's Solution</item>
+									<item>Sodium Lactate (&#8537; Molar) Injection, USP</item>
+									<item>Lactated Ringer's Injection, USP</item>
+								</list>
+								<paragraph>DOPAMINE has been found to be stable for a minimum of 24 hours after dilution in the sterile intravenous solutions listed above. However, as with all intravenous admixtures, dilution should be made just prior to administration.</paragraph>
+								<paragraph>Do NOT add DOPAMINE Injection to Sodium Bicarbonate or other alkaline intravenous solutions, since the drug is inactivated in alkaline solution.</paragraph>
+								<paragraph>Mixing of dopamine with alteplase in the same container should be avoided as visible particulate matter has been observed.</paragraph>
+								<paragraph>It is recommended that dopamine not be added to amphotericin B solutions because amphotericin B is physically unstable in dopamine-containing solutions.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s32">
+							<id root="CD0B1848-252B-694E-D937-683AECBC779F"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<text>
+								<paragraph>
+									<content styleCode="bold">Rate of Administration:</content> DOPAMINE, after dilution, is administered intravenously through a suitable intravenous catheter or needle. An i.v. drip chamber or other suitable metering device is essential for controlling the rate of flow in drops/minute. Each patient must be individually titrated to the desired hemodynamic and/or renal response with DOPAMINE. In titrating to the desired increase in systolic blood pressure, the optimum dosage rate for renal response may be exceeded, thus necessitating a reduction in rate after the hemodynamic condition is stabilized.</paragraph>
+								<paragraph>Administration rates greater than 50 mcg/kg/minute have safely been used in advanced circulatory decompensation states. If unnecessary fluid expansion is of concern, adjustment of drug concentration may be preferred over increasing the flow rate of a less concentrated dilution.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+					<component>
+						<section ID="s33">
+							<id root="C5ADF4F3-6389-8EAD-2BAC-F372C483F68C"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+							<title mediaType="text/x-hl7-title+xml">Suggested Regimen:</title>
+							<text>
+								<list listType="ordered" styleCode="Arabic">
+									<item>When appropriate, increase blood volume with whole blood or plasma until central venous pressure is 10 to 15 cm H<sub>2</sub>O or pulmonary wedge pressure is 14-18 mm Hg.</item>
+									<item>Begin administration of diluted solution at doses of 2-5 mcg/kg/minute DOPAMINE in patients who are likely to respond to modest increments of heart force and renal perfusion.<paragraph>In more seriously ill patients, begin administration of diluted solution at doses of 5 mcg/kg/minute DOPAMINE and increase gradually, using 5 to 10 mcg/kg/minute increments, up to 20 to 50 mcg/kg/minute as needed. If doses of DOPAMINE in excess of 50 mcg/kg/minute are required, it is suggested that urine output be checked frequently. Should the urine flow begin to decrease in the absence of hypotension, reduction of DOPAMINE dosage should be considered. Multiclinic trials have shown that more than 50% of the patients were satisfactorily maintained on doses of DOPAMINE less than 20 mcg/kg/minute. In patients who do not respond to these doses with adequate arterial pressures or urine flow, additional increments of DOPAMINE may be employed in an effort to produce an appropriate arterial pressure and central perfusion.</paragraph>
+									</item>
+									<item>Treatment of all patients requires constant evaluation of therapy in terms of the blood volume, augmentation of myocardial contractility, and distribution of peripheral perfusion. Dosage of DOPAMINE should be adjusted according to the patient's response, with particular attention to diminution of established urine flow rate, increasing tachycardia or development of new dysrhythmias as indices for decreasing or temporarily suspending the dosage.</item>
+									<item>As with all potent intravenously administered drugs, care should be taken to control the rate of administration so as to avoid inadvertent administration of a bolus of drug.</item>
+								</list>
+								<paragraph>Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration, whenever solution and container permit.</paragraph>
+							</text>
+							<effectiveTime value="20060511"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="s34">
+					<id root="C5641F14-83DC-6C10-81B4-FF1765111C7A"/>
+					<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+					<text>
+						<paragraph>Dopamine HCl Injection, USP is available as follows:</paragraph>
+						<table ID="t300" width="100%">
+							<caption>Dopamine HCl</caption>
+							<col align="left" width="31.700%"/>
+							<col align="left" width="30.633%"/>
+							<col align="left" width="37.667%"/>
+							<tbody>
+								<tr>
+									<td align="left" styleCode="Toprule" valign="bottom">
+										<content styleCode="bold underline">Product No.</content>
+									</td>
+									<td align="left" styleCode="Toprule" valign="bottom">
+										<content styleCode="bold underline">Mg per volume fill</content>
+									</td>
+									<td align="left" styleCode="Toprule" valign="bottom">
+										<content styleCode="bold underline">How Packaged</content>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top">NDC 0517-1805-25</td>
+									<td align="left" valign="top">200 mg/5 mL Vial <br/>(40 mg/mL)</td>
+									<td align="left" valign="top">Packages of 25 vials <br/>(color-coded WHITE)</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top">NDC 0517-1905-25</td>
+									<td align="left" valign="top">400 mg/5 mL Vial <br/>(80 mg/mL)</td>
+									<td align="left" valign="top">Packages of 25 vials <br/>(color-coded GREEN)</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top">NDC 0517-1305-25</td>
+									<td align="left" valign="top">800 mg/5 mL Vial <br/>(160 mg/mL)</td>
+									<td align="left" valign="top">Packages of 25 vials <br/>(color-coded YELLOW)</td>
+								</tr>
+							</tbody>
+						</table>
+						<paragraph>Store at controlled room temperature 15&#176;-30&#176;C (59&#176;-86&#176;F) (See USP).</paragraph>
+						<paragraph>Avoid contact with alkalis (including sodium bicarbonate), oxidizing agents or iron salts.</paragraph>
+						<paragraph>NOTE - Do not use the injection if it is darker than slightly yellow or discolored in any other way.</paragraph>
+						<paragraph>WARNING: NOT FOR DIRECT INTRAVENOUS INJECTION, MUST BE DILUTED BEFORE USE.</paragraph>
+						<paragraph>IV INFUSION ONLY.</paragraph>
+						<paragraph>IN1805<br/>Rev. 4/01<br/>MG #8090</paragraph>
+						<paragraph>AMERICAN<br/>REGENT<br/>LABORATORIES, INC.<br/>SHIRLEY, NY 11967</paragraph>
+					</text>
+					<effectiveTime value="20060511"/>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</document>

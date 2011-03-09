@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="7D6C5DB8-57CF-41B7-BBCD-28BDA2F26118" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Human prescription drug label" />
+<title mediaType="text/x-hl7-title+xml">HYDROCODONE BITARTRATE AND ACETAMINOPHEN TABLETS USP<br />5 mg/500 mg</title>
+<effectiveTime value="20060407" />
+<setId root="7D6C5DB8-57CF-41B7-BBCD-28BDA2F26118" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Mikart Inc.</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="D6ADF1E1-B204-B201-EEE0-66BA7C9F7639" />
+<effectiveTime value="20060407" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="46672-070" codeSystem="2.16.840.1.113883.6.69" />
+<name>Hydrocodone Bitartrate and Acetaminophen </name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="5">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="5" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="NO70W886KK" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>hydrocodone bitartrate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="6YKS4Y3WQ7" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>hydrocodone</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="500">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="500" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>acetaminophen</name>
+<activeMoiety>
+<activeMoiety>
+<code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>acetaminophen</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Hydrocodone Bitartrate and Acetaminophen</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>colloidal silicon dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>croscarmellose sodium</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>crospovidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>F D&amp; C blue #1 lake</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>microcrystalline cellulose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>pregelatinized starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>stearic acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="500">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="500" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="46672-070-50" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" />
+<formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="46672-070-10" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" />
+<formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="20">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="20" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="46672-070-82" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" />
+<formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<policy classCode="DEADrugSchedule">
+<code code="C48675" codeSystem="2.16.840.1.112883.3.26.1.1" displayName="CII" />
+</policy>
+</subjectOf>
+<subjectOf>
+<policy classCode="DEADrugSchedule">
+<code code="C48675" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CII" />
+</policy>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48333" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLUE" xsi:type="CE"><originalText>BLUE</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"><originalText>OVAL</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="14" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">MIA;113</value>
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="i4i_section_ID_94F3C4D2-17E0-4F2C-AD55-87449EA20854">
+<id root="FA756200-6B4F-431B-9EDF-A5BF937B5876" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<text><paragraph><content styleCode="bold">Rx only</content></paragraph><paragraph>Code 543Z00&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Rev.3/00</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_description_ID_2FB35147-FFDC-48C9-A709-A6B278FE9BD9">
+<id root="8EF670BA-400B-72F2-62CD-41546C0F04E1" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Description section" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Hydrocodone bitartrate and acetaminophen are supplied in tablet form for oral administration.</paragraph><paragraph>Hydrocodone bitartrate is an opioid analgesic and antitussive and occurs as fine, white crystals or as a crystalline powder.  It is affected by light. The chemical name is:  4,5&#945;-epoxy-3-methoxy-17-methylmorphinan-6-one tartrate (1:1) hydrate (2:5). It has the following structural formula:</paragraph><renderMultiMedia referencedObject="ID_B5FA2427-D218-4598-B0A9-E27AB67174FF" /><paragraph>C<sub>18</sub>H<sub>21</sub>NO<sub>3</sub>&#8226;C<sub>4</sub>H<sub>6</sub>O<sub>6</sub>&#8226;2&#189;H<sub>2</sub>O&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;MW = 494.50</paragraph><paragraph>Acetaminophen, 4&#180;-hydroxyacetanilide, a slightly bitter, white, odorless, crystalline powder, is a non-opiate, non-salicylate analgesic and antipyretic.  It has the following structural formula:</paragraph><renderMultiMedia referencedObject="ID_AD52CEE5-C2EA-4A51-8AAF-A9A92CDA85D1" /><paragraph>C<sub>8</sub>H<sub>9</sub>NO<sub>2</sub>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;MW = 151.17</paragraph><paragraph>Each tablet contains:</paragraph><paragraph>Hydrocodone* Bitartrate................5 mg</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;*Warning: May be habit forming</paragraph><paragraph>Acetaminophen............&#8230;&#8230;&#8230;&#8230;...500 mg</paragraph><paragraph>In addition, each tablet contains the following inactive ingredients: colloidal silicon dioxide, croscarmellose sodium, crospovidone, microcrystalline cellulose, povidone, pregelatinized starch, stearic acid and FD&amp;C Blue #1 Lake.</paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<observationMedia ID="ID_B5FA2427-D218-4598-B0A9-E27AB67174FF">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="hydrocodone_bitartrate_and_acetaminophen_-01.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<observationMedia ID="ID_AD52CEE5-C2EA-4A51-8AAF-A9A92CDA85D1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="hydrocodone_bitartrate_and_acetaminophen_-02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_clinical_pharmacology_ID_85CC4B27-74D7-4693-A5E8-72A751679FEB">
+<id root="65640B54-F660-8A79-5C77-A73AD0E5B320" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Pharmacology section" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>Hydrocodone is a semisynthetic narcotic analgesic and antitussive with multiple actions qualitatively similar to those of codeine. Most of these involve the central nervous system and smooth muscle. The precise mechanism of action of hydrocodone and other opiates is not known, although it is believed to relate to the existence of opiate receptors in the central nervous system. In addition to analgesia, narcotics may produce drowsiness, changes in mood and mental clouding.  </paragraph><paragraph>The analgesic action of acetaminophen involves peripheral influences, but the specific mechanism is as yet undetermined. Antipyretic activity is mediated through hypothalamic heat regulating centers.  Acetaminophen inhibits prostaglandin synthetase. Therapeutic doses of acetaminophen have negligible effects on the cardiovascular or respiratory systems; however, toxic doses may cause circulatory failure and rapid, shallow breathing.</paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_section_ID_719BCE19-790B-4355-A9C2-5E4E454A8B57">
+<id root="7276F540-872F-12BA-CC94-559025E07E5F" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Pharmacokinetics</title>
+<text><paragraph>The behavior of the individual components is described below.</paragraph><paragraph><content styleCode="underline">Hydrocodone</content>: Following a 10 mg oral dose of hydrocodone administered to five adult male subjects, the mean peak concentration was 23.6 &#177; 5.3 ng/mL. Maximum serum levels were achieved at 1.3 &#177; 0.3 hours and the half-life was determined to be 3.8 &#177; 0.3 hours. Hydrocodone exhibits a complex pattern of metabolism including O-demethylation, N-demethylation and 6-keto reduction to the corresponding 6-&#945;- and 6-&#946;-hydroxymetabolites.</paragraph><paragraph>See <linkHtml href="#i4i_overdosage_ID_901B54AB-0157-43A9-8E85-7719319D4EA6">OVERDOSAGE</linkHtml> for toxicity information.</paragraph><paragraph><content styleCode="underline">Acetaminophen</content>: Acetaminophen is rapidly absorbed from the gastrointestinal tract and is distributed throughout most body tissues. The plasma half-life is 1.25 to 3 hours, but may be increased by liver damage and following overdosage. Elimination of acetaminophen is principally by liver metabolism (conjugation) and subsequent renal excretion of metabolites. Approximately 85% of an oral dose appears in the urine within 24 hours of administration, most as the glucuronide conjugate, with small amounts of other conjugates and unchanged drug.</paragraph><paragraph>See <linkHtml href="#i4i_overdosage_ID_901B54AB-0157-43A9-8E85-7719319D4EA6">OVERDOSAGE</linkHtml> for toxicity information.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_indications_ID_D2FBB2AE-C53E-4DF9-8A91-FF783416EE01">
+<id root="54731E68-D5E2-498B-E3B9-F282C5FC19D5" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Indications section" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>Hydrocodone and Acetaminophen Tablets are indicated for the relief of moderate to moderately severe pain.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_contraindications_ID_27AC852B-1B8C-422D-AE3A-69FB026DB0F8">
+<id root="FD35661B-D70B-BF31-E363-91AB633AD9CD" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Contraindications section" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>This product should not be administered to patients who have previously exhibited hypersensitivity to hydrocodone or acetaminophen.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_warnings_ID_59083DBE-2E86-482D-B924-71DE75A04CF9">
+<id root="9FDDB113-0C08-24D9-479F-98DD19E8A24D" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Warnings section" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_section_ID_55EEC633-9C4A-46BC-8AF5-C49C0C01603F">
+<id root="B80415D1-8021-F2DE-D3E4-03E171307096" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Respiratory Depression </title>
+<text><paragraph>At high doses or in sensitive patients, hydrocodone may produce dose-related respiratory depression by acting directly on the brain stem respiratory center.  Hydrocodone also affects the center that controls respiratory rhythm, and may produce irregular and periodic breathing.  </paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_section_ID_8D3EEBFF-0187-4CBC-B760-5047E3FC3EF4">
+<id root="020E87D3-1085-0E21-5330-EB01C1B1BDB8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Head Injury and Increased Intracranial Pressure</title>
+<text><paragraph>The respiratory depressant effects of narcotics and their capacity to elevate cerebrospinal fluid pressure may be markedly exaggerated in the presence of head injury, other intracranial lesions or a preexisting increase in intracranial pressure. Furthermore, narcotics produce adverse reactions which may obscure the clinical course of patients with head injuries.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_section_ID_71B2A350-EC7B-4047-A3AD-9B2C852D0FB5">
+<id root="EC2EC131-1D6A-4523-C67B-5AC87F6C11DB" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Acute Abdominal Conditions</title>
+<text><paragraph>The administration of narcotics may obscure the diagnosis or clinical course of patients with acute abdominal conditions.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_precautions_ID_E6D175BD-575B-4A4A-B821-92E83F04EB7D">
+<id root="54A1D686-508E-BD0A-5FC1-1385EC0D7531" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Precautions Section" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_precautions_general_ID_6E766B81-A41A-41F3-BE49-A2A7ADB570F7">
+<id root="004ED5E6-BC54-3638-D6FB-C243FD7FE72A" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="General Precautions section" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_section_ID_ACA01124-F9A4-4AE5-8848-B17509E0B4BC">
+<id root="56914F34-F560-38AC-AB5A-52918858A7DE" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Special Risk Patients</title>
+<text><paragraph>As with any narcotic analgesic agent, Hydrocodone Bitartrate and Acetaminophen Tablets should be used with caution in elderly or debilitated patients, and those with severe impairment of hepatic or renal function, hypothyroidism, Addison&#8217;s disease, prostatic hypertrophy or urethral stricture. The usual precautions should be observed and the possibility of respiratory depression should be kept in mind.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_section_ID_134B181F-3057-48E7-B61A-A5E3AAD378D1">
+<id root="8BD8531A-B504-742F-5DE1-9354B8838C16" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Cough Reflex</title>
+<text><paragraph>Hydrocodone suppresses the cough reflex; as with all narcotics, caution should be exercised when Hydrocodone Bitartrate and Acetaminophen Tablets are used postoperatively in patients with pulmonary disease.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_info_patients_ID_152063B3-5AEA-43B7-BC76-A67141049CBB">
+<id root="9F01EAE2-626B-44FF-CE0A-65EFD386F900" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information for Patients section" />
+<title mediaType="text/x-hl7-title+xml">Information for Patients</title>
+<text><paragraph>Hydrocodone, like all narcotics, may impair mental and/or physical abilities required for the performance of potentially hazardous tasks such as driving a car or operating machinery; patients should be cautioned accordingly.</paragraph><paragraph>Alcohol and other CNS depressants may produce an additive CNS depression, when taken with this combination product, and should be avoided.  </paragraph><paragraph>Hydrocodone may be habit-forming. Patients should take the drug only for as long as it is prescribed, in the amounts prescribed, and no more frequently than prescribed.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_lab_tests_ID_1F181005-7D6E-4CC2-9C2B-1E69D785CBE8">
+<id root="482FEF86-1427-BF05-7266-58814E373A85" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Laboratory Tests section" />
+<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text><paragraph>In patients with severe hepatic or renal disease, effects of therapy should be monitored with serial liver and/or renal function tests.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_drug_interaction_ID_350E4494-A7C6-483F-BAB8-462B83D1AAB6">
+<id root="8C780EC5-AA67-EB28-2615-664E0BCF4B10" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug Interactions section" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph>Patients receiving narcotics, antihistamines, antipsychotics, antianxiety agents, or other CNS depressants (including alcohol) concomitantly with Hydrocodone Bitartrate and Acetaminophen Tablets may exhibit an additive CNS depression. When combined therapy is contemplated, the dose of one or both agents should be reduced.  The use of MAO inhibitors or tricyclic antidepressants with hydrocodone preparations may increase the effect of either the antidepressant or hydrocodone.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_drug_lab_interaction_ID_3FAD3F4E-CA95-4D96-8DBD-113E467D86EA">
+<id root="59FAF4A3-81BD-D62D-73A0-FC3D6E4FE6A4" />
+<code code="34074-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug/Laboratory Test Interactions section" />
+<title mediaType="text/x-hl7-title+xml">Drug/Laboratory Test Interactions</title>
+<text><paragraph>Acetaminophen may produce false-positive test results for urinary 5-hydroxyindoleacetic acid.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_carcinogenesis_mutagenesis_fertility_ID_69F40832-EB27-4A96-9691-0524F2ADAE3B">
+<id root="6FA0D319-5F60-5F50-39E9-F4D2E0992719" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carcinogenesis, Mutagenesis, Impairment of Fertility section" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+<text><paragraph>No adequate studies have been conducted in animals to determine whether hydrocodone or acetaminophen have a potential for carcinogenesis, mutagenesis, or impairment of fertility.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_pregnancy_ID_9564DD0F-4482-4379-A673-F83FDEF2FD8D">
+<id root="FAC8CAEC-D697-5D36-C29D-18832C082AC6" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_teratogenic_ID_63FF5B31-8D1D-4411-B0B6-F6CF5B51EF47">
+<id root="A04F168C-5C9B-9D5C-B02E-81CDFB86E52D" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Teratogenic Effects section" />
+<title mediaType="text/x-hl7-title+xml">Teratogenic Effects: Pregnancy Category C </title>
+<text><paragraph>There are no adequate and well-controlled studies in pregnant women. Hydrocodone Bitartrate and Acetaminophen Tablets should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_non_teratogenic_ID_30A5CC51-57A9-4C1F-B218-5A31F3BB7221">
+<id root="2470968C-D487-5BB8-AA18-A76586957A4E" />
+<code code="34078-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nonteratogenic Effects section" />
+<title mediaType="text/x-hl7-title+xml">Nonteratogenic Effects </title>
+<text><paragraph>Babies born to mothers who have been taking opioids regularly prior to delivery will be physically dependent. The withdrawal signs include irritability and excessive crying, tremors, hyperactive reflexes, increased respiratory rate, increased stools, sneezing, yawning, vomiting, and fever. The intensity of the syndrome does not always correlate with the duration of maternal opioid use or dose. There is no consensus on the best method of managing withdrawal.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_labour_delivery_ID_33B0ABB9-BBB0-4C4A-8FAD-6CB41E45438E">
+<id root="44512D29-915A-17B5-E574-6D8F8A8C6BF8" />
+<code code="34079-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Labor and Delivery section" />
+<title mediaType="text/x-hl7-title+xml">Labor and Delivery</title>
+<text><paragraph>As with all narcotics, administration of this product to the mother shortly before delivery may result in some degree of respiratory depression in the newborn, especially if higher doses are used.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_nursing_mothers_ID_6DFEF82D-E328-4ECB-958F-C7D0873EFCA5">
+<id root="6B96AF06-8943-A189-40B7-33ACA48CCE3E" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nursing Mothers section" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>Acetaminophen is excreted in breast milk in small amounts, but the significance of its effects on nursing infants is not known. It is not known whether hydrocodone is excreted in human milk. Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from hydrocodone and acetaminophen, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_pediatric_use_ID_BB8E1D6A-0A3C-43A0-9F88-54A5CB023F1D">
+<id root="CB00C004-BF93-5040-5A43-4AF31CA08B95" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pediatric section" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>Safety and effectiveness in pediatric patients have not been established.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_adverse_effects_ID_B1D5C04A-FC1A-4F4E-9F90-FE2E3FB2FCDF">
+<id root="9C969B95-4AD9-912D-0DED-E824DDF0AAB8" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Adverse Reactions section" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>The most frequently reported adverse reactions are lightheadedness, dizziness, sedation, nausea and vomiting. These effects seem to be more prominent in ambulatory than in nonambulatory patients, and some of these adverse reactions may be alleviated if the patient lies down. </paragraph><paragraph>Other adverse reactions include:</paragraph><paragraph><content styleCode="bold">Central Nervous System:  </content>Drowsiness, mental clouding, lethargy, impairment of mental and physical performance, anxiety, fear, dysphoria, psychic dependence, mood changes.</paragraph><paragraph><content styleCode="bold">Gastrointestinal System:</content>Prolonged administration of Hydrocodone Bitartrate and Acetaminophen Tablets may produce constipation.</paragraph><paragraph><content styleCode="bold">Genitourinary System:  </content>Ureteral spasm, spasm of vesical sphincters and urinary retention have been reported with opiates.  </paragraph><paragraph><content styleCode="bold">Respiratory Depression:  </content>Hydrocodone bitartrate may produce dose-related respiratory depression by acting directly on brain stem respiratory centers (see <linkHtml href="#i4i_overdosage_ID_901B54AB-0157-43A9-8E85-7719319D4EA6">OVERDOSAGE</linkHtml>).</paragraph><paragraph><content styleCode="bold">Dermatological:  </content>Skin rash, pruritus.</paragraph><paragraph>The following adverse drug events may be borne in mind as potential effects of acetaminophen: allergic reactions, rash, thrombocytopenia, agranulocytosis.</paragraph><paragraph>Potential effects of high dosage are listed in the OVERDOSAGE section.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_abuse_dependence_ID_466C5264-C75E-4976-83D4-67FAD1D1C286">
+<id root="BC88143F-6ED4-DE57-D421-B3284DD7D0C1" />
+<code code="42227-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug Abuse and Dependence section" />
+<title mediaType="text/x-hl7-title+xml">DRUG ABUSE AND DEPENDENCE</title>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_controlled_substance_ID_3BBBCD65-89B0-4FF3-8F7D-E43DF7B8372F">
+<id root="6AB9179D-797F-2375-E5B3-6096E652FBDB" />
+<code code="34085-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Controlled Substance section" />
+<title mediaType="text/x-hl7-title+xml">Controlled Substance  </title>
+<text><paragraph>Hydrocodone Bitartrate and Acetaminophen Tablets are classified as a Schedule III controlled substance.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_dependence_ID_DC4DFE39-F30B-4DF3-A30A-62230597EDF1">
+<id root="D7DD64CC-D64E-C3FD-076A-80D8B426FB22" />
+<code code="34087-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dependence section" />
+<title mediaType="text/x-hl7-title+xml">Abuse and Dependence  </title>
+<text><paragraph>&#160;Psychic dependence, physical dependence, and tolerance may develop upon repeated administration of narcotics; therefore, this product should be prescribed and administered with caution.  However, psychic dependence is unlikely to develop when Hydrocodone Bitartrate and Acetaminophen Tablets are used for a short time for the treatment of pain.</paragraph><paragraph>Physical dependence, the condition in which continued administration of the drug is required to prevent the appearance of a withdrawal syndrome, assumes clinically significant proportions only after several weeks of continued narcotic use, although some mild degree of physical dependence may develop after a few days of narcotic therapy. Tolerance, in which increasingly large doses are required in order to produce the same degree of analgesia, is manifested initially by a shortened duration of analgesic effect, and subsequently by decreases in the intensity of analgesia. The rate of development of tolerance varies among patients.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_overdosage_ID_901B54AB-0157-43A9-8E85-7719319D4EA6">
+<id root="452D976D-A984-1801-07B3-7A421DD7D8C2" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Overdosage section" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>Following an acute overdosage, toxicity may result from hydrocodone or acetaminophen.</paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_section_ID_8FF49E8B-B7F1-4048-A7CD-CD352719C19A">
+<id root="4F07DC05-B529-F43D-E793-78E6B2FB8EB5" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Signs and Symptoms  &#160;</title>
+<text><paragraph><content styleCode="underline">Hydrocodone</content>: Serious overdose with hydrocodone is characterized by respiratory depression (a decrease in respiratory rate and/or tidal volume, Cheyne-Stokes respiration, cyanosis), extreme somnolence progressing to stupor or coma, skeletal muscle flaccidity, cold and clammy skin, and sometimes bradycardia and hypotension. In severe overdosage, apnea, circulatory collapse, cardiac arrest and death may occur.</paragraph><paragraph><content styleCode="underline">Acetaminophen</content>: In acetaminophen overdosage, dose-dependent, potentially fatal hepatic necrosis is the most serious adverse effect. Renal tubular necrosis, hypoglycemic coma, and thrombocytopenia may also occur.  </paragraph><paragraph>Early symptoms following a potentially hepatotoxic overdose may include: nausea, vomiting, diaphoresis and general malaise.  Clinical and laboratory evidence of hepatic toxicity may not be apparent until 48 to 72 hours post-ingestion.</paragraph><paragraph>In adults, hepatic toxicity has rarely been reported with acute overdoses of less than 10 grams, or fatalities with less than 15 grams.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_section_ID_FC74A5EA-F2A9-4F8C-9F6C-953FD439A8B1">
+<id root="3B7BD483-C9DC-2CD1-AC7F-1FB096E46E4F" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Treatment  </title>
+<text><paragraph>A single or multiple overdose with hydrocodone and acetaminophen is a potentially lethal polydrug overdose, and consultation with a regional poison control center is recommended.  </paragraph><paragraph>Immediate treatment includes support of cardiorespiratory function and measures to reduce drug absorption. Vomiting should be induced mechanically, or with syrup of ipecac, if the patient is alert (adequate pharyngeal and laryngeal reflexes). Oral activated charcoal (1 g/kg) should follow gastric emptying. The first dose should be accompanied by an appropriate cathartic. If repeated doses are used, the cathartic might be included with alternate doses as required. Hypotension is usually hypovolemic and should respond to fluids.  Vasopressors and other supportive measures should be employed as indicated. A cuffed endotracheal tube should be inserted before gastric lavage of the unconscious patient and, when necessary, to provide assisted respiration.</paragraph><paragraph>Meticulous attention should be given to maintaining adequate pulmonary ventilation. In severe cases of intoxication, peritoneal dialysis, or preferably hemodialysis may be considered. If hypoprothrombinemia occurs due to acetaminophen overdose, vitamin K should be administered intravenously.  </paragraph><paragraph>Naloxone, a narcotic antagonist, can reverse respiratory depression and coma associated with opioid overdose.  Naloxone hydrochloride 0.4 mg to 2 mg is given parenterally. Since the duration of action of hydrocodone may exceed that of the naloxone, the patient should be kept under continuous surveillance and repeated doses of the antagonist should be administered as needed to maintain adequate respiration. A narcotic antagonist should not be administered in the absence of clinically significant respiratory or cardiovascular depression.  </paragraph><paragraph>If the dose of acetaminophen may have exceeded 140 mg/kg, acetylcysteine should be administered as early as possible. Serum acetaminophen levels should be obtained, since levels four or more hours following ingestion help predict acetaminophen toxicity. Do not await acetaminophen assay results before initiating treatment. Hepatic enzymes should be obtained initially, and repeated at 24-hour intervals.</paragraph><paragraph>Methemoglobinemia over 30% should be treated with methylene blue by slow intravenous administration.</paragraph><paragraph>The toxic dose for adults for acetaminophen is 10 g.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="i4i_dosage_admin_ID_0EB552AB-B59E-4DCF-947C-3C7A49C642DB">
+<id root="66D885FA-233D-E89C-42ED-2BFDA7B9E511" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dosage and Administration section" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>Dosage should be adjusted according to the severity of pain and response of the patient.  However, it should be kept in mind that tolerance to hydrocodone can develop with continued use and that the incidence of untoward effects is dose-related.  </paragraph><paragraph>The usual adult dosage is one or two tablets every four to six hours as needed for pain. The total daily dosage should not exceed 8 tablets.</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section ID="i4i_how_supplied_ID_6B343A28-4D10-4E5B-B4C2-7215DD52EE14">
+<id root="0DDDDF8C-F852-877A-E578-DEB8FE2714DD" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="How Supplied section" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>Hydrocodone Bitartrate and Acetaminophen Tablets USP, each tablet of which contains hydrocodone* bitartrate 5 mg (*WARNING: May be  habit forming) and acetaminophen 500 mg, are blue, capsule-shaped, bisected tablets, debossed &#8220;MIA&#8221; single-score &#8220;113&#8221; and are supplied in containers of 20 tablets, NDC 46672-070-82, in containers of 100 tablets, NDC 46672-070-10, and in containers of 500 tablets, NDC 46672-070-50.</paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<section ID="i4i_section_ID_4DBA44F4-0855-45D8-A6E6-C060A07895CD">
+<id root="ACB04C06-EB27-128B-0039-80A82C955039" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL Unclassified section" />
+<title mediaType="text/x-hl7-title+xml">Storage  </title>
+<text><paragraph>Store at controlled room temperature 15&#176;C to 30&#176;C (59&#176;F to 86&#176;F) (see USP).</paragraph><paragraph>Dispense in a tight, light-resistant container with a child-resistant closure.</paragraph><paragraph>&#160;</paragraph><paragraph><content styleCode="bold">Rx only</content></paragraph><paragraph>Manufactured by:</paragraph><paragraph><content styleCode="bold">MIKART, INC.</content></paragraph><paragraph>Atlanta, GA 30318</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

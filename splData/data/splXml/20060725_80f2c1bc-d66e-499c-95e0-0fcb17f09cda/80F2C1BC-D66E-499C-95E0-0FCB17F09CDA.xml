@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="9D602E3E-95C4-A76C-FB57-56C28BDF2A52" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">Nystatin, USP<br />For Extemporaneous Preparation of Oral Suspension</title>
+<effectiveTime value="20060221" />
+<setId root="80F2C1BC-D66E-499C-95E0-0FCB17F09CDA" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Paddock Laboratories, Inc.</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="814A2A37-83A1-C1E2-B5DA-61E683643BC8" />
+<effectiveTime value="20060221" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0574-0404" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<name>Nystatin</name>
+<formCode code="C42975" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER, FOR SUSPENSION" />
+<activeIngredient>
+<quantity>
+<numerator value="5000">
+<translation code="C44278" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="UNITS" value="5000" />
+</numerator>
+<denominator unit="mg" value="1">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="BDF1O1C72E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Nystatin</name>
+<activeMoiety>
+<activeMoiety>
+<code code="BDF1O1C72E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Nystatin</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Nystatin</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<asContent>
+<quantity>
+<numerator unit="g" value="100">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0574-0404-50" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="g" value="10">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="10" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0574-0404-05" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="g" value="30">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="30" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0574-0404-15" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="g" value="400">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="400" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0574-0404-02" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="3CAED5BD-CB49-57DF-331A-A56903B73F6C" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Nystatin USP is an antifungal antibiotic obtained from <content styleCode="italics">Streptomyces noursei</content>. It is known to be a mixture, but the composition has not been completely elucidated. Nystatin A is closely related to amphotericin B. Each is a macrocyclic lactone containing a ketal ring, an all-<content styleCode="italics">trans</content> polyene system, and a mycosamine (3-amino-3-deoxy-rhamnose) moiety. Nystatin A has a molecular formula of C<sub>47</sub>H<sub>75</sub>NO<sub>17</sub> and a molecular weight of 926.11.</paragraph><renderMultiMedia referencedObject="MM1" /><paragraph>Nystatin USP is a ready-to-use, non-sterile powder for oral administration which contains no excipients or preservatives. It is available in containers of 50 million, 150 million, 500 million, and 2 billion units. Each mg contains a minimum of 5,000 units.</paragraph></text>
+<effectiveTime value="20060221" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="nystatin-image01.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="FB457BBE-9D4B-EE62-85C8-1EFA43D81DA7" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>Nystatin probably acts by binding to sterols in the cell membrane of the fungus with a resultant change in membrane permeability allowing leakage of intracellular components. It is absorbed very sparingly following oral administration, with no detectable blood levels when given in the recommended doses. Most of the orally administered nystatin is passed unchanged in the stool.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+<component>
+<section>
+<id root="61F355EF-05C5-6060-5D2E-A512626090EC" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS FOR USAGE</title>
+<text><paragraph>For the treatment of intestinal and oral cavity infections caused by <content styleCode="italics">Candida </content>(Monilia) <content styleCode="italics">albicans.</content></paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+<component>
+<section>
+<id root="8B8ED6E1-5D9F-C2FA-8DEB-D6207578EC28" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>Hypersensitivity to the drug.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+<component>
+<section>
+<id root="8AFB00E6-3D41-40FD-6E3E-7E1A9C28EF94" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>Large oral doses of nystatin have occasionally produced diarrhea, gastrointestinal distress, and possible irritation of the stomach that may result in nausea and vomiting.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+<component>
+<section>
+<id root="AC192E03-A8C3-8A78-F5FA-D37A6EEBD431" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<effectiveTime value="20060221" />
+<component>
+<section>
+<id root="FB610AA8-B5E4-C368-1AEB-0319B7C3C766" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<effectiveTime value="20060221" />
+<component>
+<section>
+<id root="17A900B2-B0E8-202A-DECA-F55EBC8160C3" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Adults and older children: Add approximately 500,000 units of Nystatin USP to about 1/2 cup of water and stir well. 500,000 units of Nystatin USP is equivalent to the recommended dose for adults and children of Nystatin Oral Suspension (4 to 6 mL, or 400,000 to 600,000 units). This product contains no preservatives and therefore should be used immediately after mixing and should not be stored. It is designed for extemporaneous preparation of a single dose at a time.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="C8DA8DA3-3828-A036-2D7A-199BC5B65229" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Infections of the oral cavity caused by <content styleCode="italics">Candida</content> (Monilia) <content styleCode="italics">albicans:</content></title>
+<effectiveTime value="20060221" />
+<component>
+<section>
+<id root="B3C7F8DC-643E-E064-1BC7-04F8EEC504B0" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Infants: 200,000 units four times daily.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+<component>
+<section>
+<id root="253A8615-B89E-1915-6A0F-DAA6F0245ED8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Children and adults: 400,000 to 600,000 units four times daily (one-half dose in each side of mouth).</paragraph><paragraph>NOTE: Limited clinical studies in premature and low birth-weight infants indicate that 100,000 units four times daily is effective.</paragraph><paragraph>Local treatment should be continued at least 48 hours after perioral symptoms have disappeared and cultures returned to normal.</paragraph><paragraph>It is recommended that the drug be retained in the mouth as long as possible before swallowing.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="628494BF-0385-E3CC-F93A-944D83872305" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Intestinal candidiasis (moniliasis)</title>
+<effectiveTime value="20060221" />
+<component>
+<section>
+<id root="24EFD943-2A42-53E0-7CFC-16F29CDBDC2D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Usual dosage: 500,000 to 1 million units three times daily. Treatment should generally be continued for at least 48 hours after clinical cure to prevent relapse.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="63CD34C7-C9A6-85B4-F38C-AD2AF50662C6" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>Nystatin USP is supplied in containers of 50 million, 150 million, 500 million, and 2 billion units.</paragraph><table width="50%"><col align="center" />
+<col align="center" />
+<col align="center" />
+<thead>
+<tr><th>Product Code <br />(NDC)</th><th>Size <br />(Units)</th><th>Approx. Weight <br />(grams)</th></tr>
+</thead>
+<tbody>
+<tr><td>0574-0404-05</td><td>50 million</td><td>8.3 - 10</td></tr>
+<tr><td>0574-0404-15</td><td>150 million</td><td>25 - 30</td></tr>
+<tr><td>0574-0404-50</td><td>500 million</td><td>83 - 100</td></tr>
+<tr><td>0574-0404-02</td><td>2 billion</td><td>333 - 400</td></tr>
+</tbody>
+</table></text>
+<effectiveTime value="20060221" />
+<component>
+<section>
+<id root="BF1700DA-006E-1FCB-FA90-420375720C3E" />
+<code code="44425-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STORAGE AND HANDLING SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold">Storage:</content> Store in a refrigerator, 2&#176;-8&#176;C (36&#176;-46&#176;F). Protect from light. Dispense in a tight, light-resistant container.</paragraph><paragraph>NOTE: The potency of this product cannot be assured for longer than 90 days after the container is first opened.</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="09FAA8CA-3F93-C2B5-9F7F-AC26A5E009A0" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<text><paragraph>Packaged by:<br />Paddock Laboratories, Inc.<br />
+Minneapolis, MN 55427</paragraph><paragraph>(08-05)</paragraph></text>
+<effectiveTime value="20060221" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?>
+<document xmlns:voc="http://www.hl7.org/v3/voc" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+	<id root="D5A211D1-04D8-FB49-07DA-34B97FE10D61"/>
+	<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING"/>
+	<title mediaType="text/x-hl7-title+xml">Hydroxychloroquine<br/>
+Sulfate<br/>
+Tablets USP<br/>
+Rx only<br/>
+	</title>
+	<effectiveTime value="20060217"/>
+	<setId root="ADF36D25-D86E-4D2D-B90C-E29F1394667D"/>
+	<versionNumber value="1"/>
+	<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>Watson Laboratories, Inc.</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<id root="2812D749-6D30-9DB3-EE10-4E893C62BDD9"/>
+					<effectiveTime value="20060217"/>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="0591-0698" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Hydroxychloroquine Sulfate</name>
+								<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="200">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="200"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="8Q2869CNVH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Hydroxychloroquine Sulfate</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="4QWG6N8QKH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Hydroxychloroquine</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Hydroxychloroquine Sulfate</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Colloidal silicon dioxide</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Dextrates</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Hypromellose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Magnesium stearate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Maltodextrin</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Microcrystalline cellulose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Polydextrose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Polyethylene glycol</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Sodium starch glycolate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>Starch (corn)</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Titanium dioxide</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="XHX3C3X673" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Triacetin</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator value="100">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code code="0591-0698-01" codeSystem="2.16.840.1.113883.6.69"/>
+										<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+									</containerPackagedMedicine>
+								</asContent>
+								<asContent>
+									<quantity>
+										<numerator value="500">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="500"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code code="0591-0698-05" codeSystem="2.16.840.1.113883.6.69"/>
+										<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48325" codeSystem="C48556" displayName="WHITE" xsi:type="CE">
+										<originalText>White to off-white</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48345" codeSystem="C48557" displayName="OVAL" xsi:type="CE"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value unit="mm" value="13" xsi:type="PQ"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="true" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="2" xsi:type="INT"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value xsi:type="ST">WATSON;698;200</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="false" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="B9B86E47-3664-CE17-312F-6C83C249BDBE"/>
+					<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="BOXED WARNING SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">WARNING</title>
+					<text>
+						<paragraph>PHYSICIANS SHOULD COMPLETELY FAMILIARIZE THEMSELVES WITH THE COMPLETE CONTENTS OF THIS LEAFLET BEFORE PRESCRIBING HYDROXYCHLOROQUINE.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="1C1269E2-3C8B-7460-DDCD-ACC42918C49A"/>
+					<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+					<text>
+						<paragraph>Hydroxychloroquine sulfate is a colorless crystalline solid, soluble in water to at least 20 percent; chemically the drug is (&#177;)-2-[[4-[(7-Chloro-4-quinolyl)amino]pentyl]-ethylamino] ethanol sulfate (1:1) (salt). It has the following structural formula:</paragraph>
+						<renderMultiMedia referencedObject="MM1">
+							<caption>C<sub>18</sub>H<sub>26</sub>ClN<sub>3</sub>O&#8226;H<sub>2</sub>SO<sub>4</sub>&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;Molecular Weight: 433.96</caption>
+						</renderMultiMedia>
+						<paragraph>Each tablet, for oral administration, contains 200 mg of hydroxychloroquine sulfate. In addition, each tablet contains the following inactive ingredients: colloidal silicon dioxide, dextrates, hypromellose, magnesium stearate, maltodextrin, microcrystalline cellulose, polydextrose, polyethylene glycol, sodium starch glycolate, starch (corn), titanium dioxide, and triacetin.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="73A42E94-4834-BC68-C9A5-F2483D695222"/>
+					<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+					<text>
+						<paragraph>The drug possesses antimalarial actions and also exerts a beneficial effect in lupus erythematosus (chronic discoid or systemic) and acute or chronic rheumatoid arthritis. The precise mechanism of action is not known.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="341672F8-4481-621E-691F-A725E54DDF12"/>
+					<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+					<text>
+						<paragraph>Hydroxychloroquine sulfate tablets are indicated for the suppressive treatment and treatment of acute attacks of malaria due to <content styleCode="italics">Plasmodium vivax, P. malariae, P. ovale</content> and susceptible strains of <content styleCode="italics">P. falciparum</content>. It is also indicated for the treatment of discoid and systemic lupus erythematosus, and rheumatoid arthritis.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="EAE4A610-9ED1-E957-E1E6-09A8E358F68B"/>
+					<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+					<text>
+						<paragraph>Use of this drug is contraindicated (1) in the presence of retinal or visual field changes attributable to any 4-aminoquinoline compound, (2) in patients with known hypersensitivity to 4-aminoquinoline compounds, and (3) for long-term therapy in children.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="9840B375-D37F-07FE-C850-A0CAD4D54F4D"/>
+					<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+					<text>
+						<paragraph>
+							<content styleCode="bold italics">General </content>- Hydroxychloroquine sulfate is not effective against chloroquine-resistant strains of <content styleCode="italics">P. falciparum.</content>
+						</paragraph>
+						<paragraph>Children are especially sensitive to the 4-aminoquinoline compounds. A number of fatalities have been reported following the accidental ingestion of chloroquine, sometimes in relatively small doses (0.75 g or 1 g in one 3-year-old child). Patients should be strongly warned to keep these drugs out of the reach of children.</paragraph>
+						<paragraph>Use of hydroxychloroquine sulfate in patients with psoriasis may precipitate a severe attack of psoriasis. When used in patients with porphyria the condition may be exacerbated. The preparation should not be used in these conditions unless in the judgement of the physician the benefit to the patient outweighs the possible hazard.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Usage in Pregnancy</content> - Usage of this drug during pregnancy should be avoided except in the suppression or treatment of malaria when in the judgement of the physician the benefit outweighs the possible hazard. It should be noted that radioactively-tagged chloroquine administered intravenously to pregnant, pigmented, CBA mice passed rapidly across the placenta. It accumulated selectively in the melanin structures of the fetal eyes and was retained in the ocular tissues for five months after the drug had been eliminated from the rest of the body.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="D31D6C8E-6027-ECD9-037F-672334FF0598"/>
+					<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+					<text>
+						<paragraph>
+							<content styleCode="bold italics">General </content>- Antimalarial compounds should be used with caution in patients with hepatic disease or alcoholism or in conjunction with known hepatotoxic drugs.</paragraph>
+						<paragraph>Periodic blood cell counts should be made if patients are given prolonged therapy. If any severe blood disorder appears which is not attributable to the disease under treatment, discontinuation of the drug should be considered. The drug should be administered with caution in patients having G-6-PD (glucose-6-phosphate dehydrogenase) deficiency.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="21CE3076-2A33-A970-0AFE-735A3AC6C1D7"/>
+					<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+					<text>
+						<paragraph>The 4-aminoquinoline compounds are very rapidly and completely absorbed after ingestion, and in accidental overdosage, or rarely with lower doses in hypersensitive patients, toxic symptoms may occur within 30 minutes. These consist of headache, drowsiness, visual disturbances, cardiovascular collapse, and convulsions, followed by sudden and early respiratory and cardiac arrest. The electrocardiogram may reveal atrial standstill, nodal rhythm, prolonged intraventricular conduction time, and progressive bradycardia leading to ventricular fibrillation and/or arrest. Treatment is symptomatic and must be prompt with immediate evacuation of the stomach by emesis (at home, before transportation to the hospital) or gastric lavage until the stomach is completely emptied. If finely powdered, activated charcoal is introduced by the stomach tube, after lavage, and within 30 minutes after ingestion of the tablets, it may inhibit further intestinal absorption of the drug. To be effective, the dose of activated charcoal should be at least five times the estimated dose of hydroxychloroquine ingested. Convulsions, if present, should be controlled before attempting gastric lavage. If due to cerebral stimulation, cautious administration of an ultrashort-acting barbiturate may be tried but, if due to anoxia, it should be corrected by oxygen administration, artificial respiration or, in shock with hypotension, by vasopressor therapy. Because of the importance of supporting respiration, tracheal intubation or tracheostomy, followed by gastric lavage, may also be necessary. Exchange transfusions have been used to reduce the level of 4-aminoquinoline drug in the blood.</paragraph>
+						<paragraph>A patient who survives the acute phase and is asymptomatic should be closely observed for at least six hours. Fluids may be forced, and sufficient ammonium chloride (8 g daily in divided doses for adults) may be administered for a few days to acidify the urine to help promote urinary excretion in cases of both overdosage and sensitivity.</paragraph>
+						<paragraph>
+							<content styleCode="bold">MALARIA</content>
+						</paragraph>
+						<paragraph>
+							<content styleCode="bold">CLINICAL PHARMACOLOGY</content>
+						</paragraph>
+						<paragraph>Like chloroquine phosphate, hydroxychloroquine sulfate is highly active against the erythrocytic forms of <content styleCode="italics">P. vivax</content> and <content styleCode="italics">malariae </content>and most strains of <content styleCode="italics">P. falciparum</content> (but not the gametocytes of <content styleCode="italics">P. falciparum</content>).</paragraph>
+						<paragraph>Hydroxychloroquine sulfate does not prevent relapses in patients with <content styleCode="italics">vivax </content>or <content styleCode="italics">malariae </content>malaria because it is not effective against exo-erythrocytic forms of the parasite, nor will it prevent <content styleCode="italics">vivax </content>or <content styleCode="italics">malariae </content>infection when administered as a prophylactic. It is highly effective as a suppressive agent in patients with <content styleCode="italics">vivax </content>or <content styleCode="italics">malariae </content>malaria, in terminating acute attacks, and significantly lengthening the interval between treatment and relapse. In patients with <content styleCode="italics">falciparum </content>malaria, it abolishes the acute attack and effects complete cure of the infection, unless due to a resistant strain of <content styleCode="italics">P. falciparum.</content>
+						</paragraph>
+						<paragraph>
+							<content styleCode="bold">INDICATIONS AND USAGE</content>
+						</paragraph>
+						<paragraph>Hydroxychloroquine sulfate tablets are indicated for the treatment of acute attacks and suppression of malaria.</paragraph>
+						<paragraph>
+							<content styleCode="bold">WARNINGS</content>
+						</paragraph>
+						<paragraph>In recent years, it has been found that certain strains of <content styleCode="italics">P. falciparum</content> have become resistant to 4-aminoquinoline compounds (including hydroxychloroquine) as shown by the fact that normally adequate doses have failed to prevent or cure clinical malaria or parasitemia. Treatment with quinine or other specific forms of therapy is therefore advised for patients infected with a resistant strain of parasites.</paragraph>
+						<paragraph>
+							<content styleCode="bold">ADVERSE REACTIONS</content>
+						</paragraph>
+						<paragraph>Following the administration in doses adequate for the treatment of an acute malarial attack, mild and transient headache, dizziness, and gastrointestinal complaints (diarrhea, anorexia, nausea, abdominal cramps and, on rare occasions, vomiting) may occur.</paragraph>
+						<paragraph>Cardiomyopathy has been rarely reported with high daily dosages of hydroxychloroquine.</paragraph>
+						<paragraph>
+							<content styleCode="bold">DOSAGE AND ADMINISTRATION</content>
+						</paragraph>
+						<paragraph>One tablet of 200 mg of Hydroxychloroquine Sulfate is equivalent to 155 mg base.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Malaria: </content>Suppression&#8211;<content styleCode="italics">In adults,</content> 400 mg (=310 mg base) on exactly the same day of each week. <content styleCode="italics">In infants and children,</content> the weekly suppressive dosage is 5 mg, calculated as base, per kg of body weight, but should not exceed the adult dose regardless of weight.</paragraph>
+						<paragraph>If circumstances permit, suppressive therapy should begin two weeks prior to exposure. However, failing this, in adults an initial double (loading) dose of 800 mg (=620 mg base), or in children 10 mg base/kg may be taken in two divided doses, six hours apart. The suppressive therapy should be continued for eight weeks after leaving the endemic area.</paragraph>
+						<paragraph>Treatment of the acute attack&#8211;<content styleCode="italics">In adults,</content> an initial dose of 800 mg (=620 mg base) followed by 400 mg (=310 mg base) in six to eight hours and 400 mg (=310 mg base) on each of two consecutive days (total 2 g hydroxychloroquine sulfate or 1.55 g base). An alternative method, employing a single dose of 800 mg (=620 mg base), has also proved effective.</paragraph>
+						<paragraph>The dosage for adults may also be calculated on the basis of body weight; this method is preferred for infants and children. A total dose representing 25 mg of base per kg of body weight is administered in three days as follows:</paragraph>
+						<paragraph>First dose: 10 mg base per kg (but not exceeding a single dose of 620 mg base).</paragraph>
+						<paragraph>Second dose: 5 mg base per kg (but not exceeding a single dose of 310 mg base) 6 hours after first dose.</paragraph>
+						<paragraph>Third dose: 5 mg base per kg 18 hours after second dose.</paragraph>
+						<paragraph>Fourth dose: 5 mg base per kg 24 hours after third dose.</paragraph>
+						<paragraph>For radical cure of <content styleCode="italics">vivax </content>and <content styleCode="italics">malariae </content>malaria concomitant therapy with an 8-aminoquinoline compound is necessary.</paragraph>
+						<paragraph>
+							<content styleCode="bold">LUPUS ERYTHEMATOSUS AND RHEUMATOID ARTHRITIS</content>
+						</paragraph>
+						<paragraph>
+							<content styleCode="bold">INDICATIONS AND USAGE</content>
+						</paragraph>
+						<paragraph>Hydroxychloroquine sulfate tablets are useful in patients with the following disorders who have not responded satisfactorily to drugs with less potential for serious side effects: lupus erythematosus (chronic discoid and systemic) and acute or chronic rheumatoid arthritis.</paragraph>
+						<paragraph>
+							<content styleCode="bold">WARNINGS</content>
+						</paragraph>
+						<paragraph>PHYSICIANS SHOULD COMPLETELY FAMILIARIZE THEMSELVES WITH THE COMPLETE CONTENTS OF THIS LEAFLET BEFORE PRESCRIBING HYDROXYCHLOROQUINE SULFATE.</paragraph>
+						<paragraph>Irreversible retinal damage has been observed in some patients who had received long-term or high-dosage 4-aminoquinoline therapy for discoid and systemic lupus erythematosus, or rheumatoid arthritis. Retinopathy has been reported to be dose related.</paragraph>
+						<paragraph>When prolonged therapy with any antimalarial compound is contemplated, initial (base line) and periodic (every three months) ophthalmologic examinations (including visual acuity, expert slit-lamp, funduscopic, and visual field tests) should be performed.</paragraph>
+						<paragraph>If there is any indication of abnormality in the visual acuity, visual field, or retinal macular areas (such as pigmentary changes, loss of foveal reflex), or any visual symptoms (such as light flashes and streaks) which are not fully explainable by difficulties of accommodation or corneal opacities, the drug should be discontinued immediately and the patient closely observed for possible progression. Retinal changes (and visual disturbances) may progress even after cessation of therapy.</paragraph>
+						<paragraph>All patients on long-term therapy with this preparation should be questioned and examined periodically, including the testing of knee and ankle reflexes, to detect any evidence of muscular weakness. If weakness occurs, discontinue the drug.</paragraph>
+						<paragraph>In the treatment of rheumatoid arthritis, if objective improvement (such as reduced joint swelling, increased mobility) does not occur within six months, the drug should be discontinued. Safe use of the drug in the treatment of juvenile arthritis has not been established.</paragraph>
+						<paragraph>
+							<content styleCode="bold">PRECAUTIONS</content>
+						</paragraph>
+						<paragraph>Dermatologic reactions to hydroxychloroquine sulfate may occur and, therefore, proper care should be exercised when it is administered to any patient receiving a drug with a significant tendency to produce dermatitis.</paragraph>
+						<paragraph>The methods recommended for early diagnosis of &#8220;chloroquine retinopathy&#8221; consist of (1) funduscopic examination of the macula for fine pigmentary disturbances or loss of foveal reflex and (2) examination of the central visual field with a small red test object for pericentral or paracentral scotoma or determination of retinal thresholds to red. Any unexplained visual symptoms, such as light flashes or streaks should also be regarded with suspicion as possible manifestations of retinopathy.</paragraph>
+						<paragraph>If serious toxic symptoms occur from overdosage or sensitivity, it has been suggested that ammonium chloride (8 g daily in divided doses for adults) be administered orally three or four days a week for several months after therapy has been stopped, as acidification of the urine increases renal excretion of the 4-aminoquinoline compounds by 20 to 90 percent. However, caution must be exercised in patients with impaired renal function and/or metabolic acidosis.</paragraph>
+						<paragraph>
+							<content styleCode="bold">ADVERSE REACTIONS</content>
+						</paragraph>
+						<paragraph>Not all of the following reactions have been observed with every 4-aminoquinoline compound during long-term therapy, but they have been reported with one or more and should be borne in mind when drugs of this class are administered. Adverse effects with different compounds vary in type and frequency.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">CNS Reactions:</content> Irritability, nervousness, emotional changes, nightmares, psychosis, headache, dizziness, vertigo, tinnitus, nystagmus, nerve deafness, convulsions, ataxia.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Neuromuscular Reactions:</content> Skeletal muscle palsies or skeletal muscle myopathy or neuromyopathy leading to progressive weakness and atrophy of proximal muscle groups which may be associated with mild sensory changes, depression of tendon reflexes and abnormal nerve conduction.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Ocular Reactions:</content>
+						</paragraph>
+						<list listType="ordered" styleCode="BigAlpha">
+							<item>
+								<paragraph>
+									<content styleCode="italics">Ciliary body:</content> Disturbance of accommodation with symptoms of blurred vision. This reaction is dose related and reversible with cessation of therapy.</paragraph>
+							</item>
+							<item>
+								<paragraph>
+									<content styleCode="italics">Cornea:</content> Transient edema, punctate to lineal opacities, decreased corneal sensitivity. The corneal changes, with or without accompanying symptoms (blurred vision, halos around lights, photophobia), are fairly common, but reversible. Corneal deposits may appear as early as three weeks following initiation of therapy.<br/>The incidence of corneal changes and visual side effects appears to be considerably lower with hydroxychloroquine than with chloroquine.</paragraph>
+							</item>
+							<item>
+								<paragraph>
+									<content styleCode="italics">Retina: Macula:</content> Edema, atrophy, abnormal pigmentation (mild pigment stippling to a &#8220;bulls-eye&#8221; appearance), loss of foveal reflex, increased macular recovery time following exposure to a bright light (photo-stress test), elevated retinal threshold to red light in macular, paramacular and peripheral retinal areas.<br/>Other fundus changes include optic disc pallor and atrophy, attenuation of retinal arterioles, fine granular pigmentary disturbances in the peripheral retina and prominent choroidal patterns in advanced stage.</paragraph>
+							</item>
+							<item>
+								<paragraph>
+									<content styleCode="italics">Visual field defects:</content> Pericentral or paracentral scotoma, central scotoma with decreased visual acuity, rarely field constriction.</paragraph>
+							</item>
+						</list>
+						<paragraph>The most common visual symptoms attributed to the retinopathy are: reading and seeing difficulties (words, letters, or parts of objects missing), photophobia, blurred distance vision, missing or blacked out areas in the central or peripheral visual field, light flashes and streaks.</paragraph>
+						<paragraph>Retinopathy appears to be dose related and has occurred within several months (rarely) to several years of daily therapy; a small number of cases have been reported several years after antimalarial drug therapy was discontinued. It has not been noted during prolonged use of weekly doses of the 4-aminoquinoline compounds for suppression of malaria.</paragraph>
+						<paragraph>Patients with retinal changes may have visual symptoms or may be asymptomatic (with or without visual field changes). Rarely scotomatous vision field defects may occur without obvious retinal change.</paragraph>
+						<paragraph>Retinopathy may progress even after the drug is discontinued. In a number of patients, early retinopathy (macular pigmentation sometimes with central field defects) diminished or regressed completely after therapy was discontinued. Paracentral scotoma to red targets (sometimes called &#8220;premaculopathy&#8221;) is indicative of early retinal dysfunction which is usually reversible with cessation of therapy.</paragraph>
+						<paragraph>A small number of cases of retinal changes have been reported as occurring in patients who received only hydroxychloroquine. These usually consisted of alteration in retinal pigmentation which was detected on periodic ophthalmologic examination; visual field defects were also present in some instances. A case of delayed retinopathy has been reported with loss of vision starting one year after administration of hydroxychloroquine had been discontinued.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Dermatologic Reactions:</content>  Bleaching of hair, alopecia, pruritus, skin and mucosal pigmentation, photosensitivity, and skin eruptions (urticarial, morbilliform, Iichenoid, maculopapular, purpuric, erythema annulare centrifugum, Stevens-Johnson syndrome, acute generalized exanthematous pustulosis, and exfoliative dermatitis).</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Hematologic Reactions:</content>  Various blood dyscrasias such as aplastic anemia, agranulocytosis, leukopenia, thrombocytopenia (hemolysis in individuals with glucose-6-phosphate dehydrogenase [G6-PD] deficiency).</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Gastrointestinal Reactions:</content>  Anorexia, nausea, vomiting, diarrhea, and abdominal cramps. Isolated cases of abnormal liver function and fulminant hepatic failure.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Miscellaneous Reactions:  </content>Weight loss, lassitude, exacerbation or precipitation of porphyria and nonlight-sensitive psoriasis.</paragraph>
+						<paragraph>Cardiomyopathy has been rarely reported with high daily doses of hydroxychloroquine.</paragraph>
+						<paragraph>
+							<content styleCode="bold">DOSAGE AND ADMINISTRATION</content>
+						</paragraph>
+						<paragraph>One tablet of hydroxychloroquine sulfate, 200 mg, is equivalent to 155 mg base.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Lupus erythematosus</content>&#8211;Initially, the average <content styleCode="italics">adult </content>dose is 400 mg (=310 mg base) once or twice daily. This may be continued for several weeks or months, depending on the response of the patient. For prolonged maintenance therapy, a smaller dose, from 200 mg to 400 mg (=155 mg to 310 mg base) daily will frequently suffice.</paragraph>
+						<paragraph>The incidence of retinopathy has been reported to be higher when this maintenance dose is exceeded.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Rheumatoid arthritis</content>&#8211;The compound is cumulative in action and will require several weeks to exert its beneficial therapeutic effects, whereas minor side effects may occur relatively early. Several months of therapy may be required before maximum effects can be obtained. If objective improvement (such as reduced joint swelling, increased mobility) does not occur within six months, the drug should be discontinued. Safe use of the drug in the treatment of juvenile rheumatoid arthritis has not been established.</paragraph>
+						<paragraph>
+							<content styleCode="italics">Initial dosage</content>&#8211;In <content styleCode="bold">adults</content> from 400 mg to 600 mg (=310 mg to 465 mg base) daily, each dose to be taken with a meal or a glass of milk. In a small percentage of patients, troublesome side effects may require temporary reduction of the initial dosage. Later (usually from five to ten days), the dose may gradually be increased to the optimum response level, often without return of side effects.</paragraph>
+						<paragraph>
+							<content styleCode="italics">Maintenance dosage</content>&#8211;When a good response is obtained (usually in four to twelve weeks), the dosage is reduced by 50 percent and continued at a usual maintenance level of 200 mg to 400 mg (=155 mg to 310 mg base) daily, each dose to be taken with a meal or a glass of milk. The incidence of retinopathy has been reported to be higher when this maintenance dose is exceeded.</paragraph>
+						<paragraph>Should a relapse occur after medication is withdrawn, therapy may be resumed or continued on an intermittent schedule if there are no ocular contraindications.</paragraph>
+						<paragraph>
+							<content styleCode="bold italics">Corticosteroids and salicylates</content> may be used in conjunction with this compound, and they can generally be decreased gradually in dosage or eliminated after the drug has been used for several weeks. When gradual reduction of steroid dosage is indicated, it may be done by reducing every four to five days the dose of cortisone by no more than from 5 mg to 15 mg; of hydrocortisone from 5 mg to 10 mg; of prednisolone and prednisone from 1 mg to 2.5 mg; of methylprednisolone and triamcinolone from 1 mg to 2 mg; and of dexamethasone from 0.25 mg to 0.5 mg.</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="FC89DDAD-9F2B-FFE2-695F-C9751F4B9D3C"/>
+					<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+					<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+					<text>
+						<paragraph>Hydroxychloroquine Sulfate Tablets USP, 200 mg are white to off-white, coated, oval tablets marked <content styleCode="bold">WATSON</content> on one side and a partial score on the reverse side with <content styleCode="bold">698</content> on one side of the score and <content styleCode="bold">200</content> on the other side of the score supplied in bottles of 100 and 500.</paragraph>
+						<paragraph>Store at controlled room temperature 15&#176;-30&#176;C (59&#176;-86&#176;F).</paragraph>
+						<paragraph>Dispense in a tight, light-resistant container as defined by the USP.</paragraph>
+						<paragraph>Certain manufacturing operations may have been performed by other firms.</paragraph>
+						<paragraph>
+							<content styleCode="bold">Watson Laboratories, Inc.</content>
+							<br/>Corona, CA 92880 USA</paragraph>
+						<paragraph>30155-3</paragraph>
+					</text>
+					<effectiveTime value="20060217"/>
+					<component>
+						<observationMedia ID="MM1">
+							<value mediaType="image/jpeg" xsi:type="ED">
+								<reference value="hydroxychloroquine-01.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</document>

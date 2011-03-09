@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="92FE06D1-9AEC-47B4-B7FC-AEA6434CBE10" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">QUADRAMET<sup>&#174;</sup> Prescribing Information <br /><br />QUADRAMET<br /></content>(SAMARIUM SM 153 LEXIDRONAM INJECTION<br /><br />513145-0903 September 2003<br />&#160;<content styleCode="underline">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</content><br /><content styleCode="underline">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Therapeutic - For Intravenous Administration&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</content></title>
+<effectiveTime value="20060601" />
+<setId root="92FE06D1-9AEC-47B4-B7FC-AEA6434CBE10" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Cytogen Corporation</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="944ABB87-6E34-286C-BC7A-0B8B14877E3F" />
+<effectiveTime value="20060601" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="50419-209" codeSystem="2.16.840.1.113883.6.69" />
+<name>Quadramet</name>
+<formCode code="C42995" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SUSPENSION" />
+<activeIngredient>
+<quantity>
+<numerator unit="mCi" value="50">
+<translation code="C48511" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLICURIE" value="50" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="7389YR3OOV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Samarium SM 153 Lexidronam pentasodium</name>
+<activeMoiety>
+<activeMoiety>
+<code code="7389YR3OOV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Samarium SM 153 Lexidronam pentasodium</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Samarium SM 153 Lexidronam</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<quantity>
+<numerator unit="mg" value="35">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="35" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<inactiveIngredientSubstance>
+<name>ETHYLENEDIAMINE TETRA (METHYLENE PHOSPHONIC ACID) MONOHYDRATE</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<quantity>
+<numerator unit="mg" value="5.3">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="5.3" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<inactiveIngredientSubstance>
+<code code="PF5DZW74VN" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Calcium hydroxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<quantity>
+<numerator unit="mg" value="14">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="14" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<inactiveIngredientSubstance>
+<code code="55X04QC32I" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sodium hydroxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="3">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="3" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="50419-209-03" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43215" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, SINGLE-DOSE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="C4A7DFF8-C1FF-4321-BAB9-D54D1298EE89">
+<id root="8B380D4B-1A87-979E-D98A-E79CAD313CD3" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>QUADRAMET<sup>&#174;</sup> is a therapeutic agent consisting of radioactive samarium and a tetraphosphonate chelator, ethylenediaminetetramethylenephosphonic acid (EDTMP). QUADRAMET<sup>&#174;</sup> is formulated as a sterile, non-pyrogenic, clear, colorless to light amber isotonic solution of samarium-153 lexidronam for intravenous administration. QUADRAMET<sup>&#174;</sup> does not contain a preservative.</paragraph><paragraph>Each milliliter contains 35 mg EDTMP&#8226;H<sub>2</sub>O, 5.3 mg Ca [as Ca(OH)<sub>2</sub>], 14.1 mg Na [as NaOH], equivalent to 44 mg Ca/Na EDTMP (anhydrous calc.), 5-46 &#181;g samarium (specific activity of approximately 1.0-11.0 mCi/&#181;g Sm), and 1850 &#177; 185 MBq (50 &#177; 5 mCi) of samarium-153 at calibration.</paragraph><paragraph>The structural formula of samarium lexidronam pentasodium is:</paragraph><paragraph><renderMultiMedia referencedObject="MM00" /></paragraph><br /><paragraph>The ionic formula is <sup>153</sup>Sm<sup>+3</sup> [CH<sub>2</sub>N(CH<sub>2</sub>PO<sub>3</sub><sup>-2</sup>)<sub>2</sub>]<sub>2</sub> and the ionic formula weight is 581.1 daltons (pentasodium form, 696).</paragraph><paragraph>The pH of the solution is 7.0 to 8.5.</paragraph><paragraph>QUADRAMET<sup>&#174;</sup> is supplied frozen in single-dose glass vials containing 3 mL with 5550 MBq (150 mCi) of samarium-153 at calibration.</paragraph></text>
+<effectiveTime value="20060601" />
+<component>
+<observationMedia ID="MM00">
+<value mediaType="image/jpg" xsi:type="ED"><reference value="quadramet-figure-1.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<section ID="DD80DC05-7CC8-4272-BB74-E03C941B2CD3">
+<id root="73E886C1-4D69-E10A-1597-E9A5BFC9BC12" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Physical Characteristics</title>
+<text><paragraph>Samarium-153 is produced in high yield and purity by neutron irradiation of isotopically enriched samarium Sm 152 oxide (<sup>152</sup>Sm<sub>2</sub>O<sub>3</sub>). It emits both medium-energy beta particles and a gamma photon, and has a physical half-life of 46.3 hours (1.93 days). Samarium-153 has average and maximum beta particle ranges in water of 0.5 mm and 3.0 mm, respectively. The primary radiation emissions of samarium-153 are shown in Table 1.</paragraph><table ID="c3d4cc89-6745-4107-9113-6aa4d75f5302"><caption>TABLE 1 - SAMARIUM-153 PRINCIPAL RADIATION EMISSION DATA </caption>
+<tfoot>
+<tr><td colspan="3"><paragraph><caption><sup>*</sup></caption>Maximum energies are listed for the beta emissions, the average beta particle energy is 233 keV.</paragraph></td></tr>
+</tfoot>
+<tbody>
+<tr><td align="center" /><td align="center"><content styleCode="bold">Radiation<br />Energy<br />(keV)<sup>*</sup></content></td><td align="center"><content styleCode="bold">Abundance</content></td></tr>
+<tr><td align="center">Beta</td><td align="center">640</td><td align="center">30%</td></tr>
+<tr><td align="center">Beta</td><td align="center">710</td><td align="center">50%</td></tr>
+<tr><td align="center">Beta</td><td align="center">810</td><td align="center">20%</td></tr>
+<tr><td align="center">Gamma</td><td align="center">103</td><td align="center">29%</td></tr>
+</tbody>
+</table><br /></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="B9E5A396-982E-4722-BB30-2CB12F82C96E">
+<id root="B223CC9B-7540-F61B-493A-25F44D70A569" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">External Radiation</title>
+<text><paragraph>The specific gamma-ray constant for samarium-153 is 0.46 R/mCi-hr at 1 cm (1.24x10<sup>-5</sup> mSv/MBq- hr at 1 Meter). The half-value thickness of lead (Pb) for samarium-153 is approximately 0.10 mm. The use of 1 mm of lead will decrease the external radiation exposure by a factor of approximately 1,000. QUADRAMET<sup>&#174;</sup> should be stored in a lead-shielded container and frozen until use.</paragraph><paragraph>Radioactive decay factors to be applied to the stated value for radioactive concentration at calibration are given in Table 2. All radioactivity is calibrated to the reference date and time on the vial.</paragraph><table ID="c93f3387-a506-45fa-bf45-44ae52a31096"><caption>TABLE 2 - SAMARIUM-153 PHYSICAL DECAY CHART, HALF-LIFE 46.3 HOURS(1.93 DAYS) </caption>
+<tfoot>
+<tr><td colspan="4"><paragraph><caption><sup>*</sup></caption>Time = hours before (-) or after (+) calibration</paragraph></td></tr>
+</tfoot>
+<tbody>
+<tr><td><content styleCode="bold">Time<br />(hour)<sup>*</sup></content></td><td><content styleCode="bold">Factor</content></td><td><content styleCode="bold">Time<br />(hour)<sup>*</sup></content></td><td><content styleCode="bold">Factor</content></td></tr>
+<tr><td>-48.0</td><td>2.05</td><td>+1.0</td><td>0.99</td></tr>
+<tr><td>-36.0</td><td>1.71</td><td>+2.0</td><td>0.97</td></tr>
+<tr><td>-24.0</td><td>1.43</td><td>+3.0</td><td>0.96</td></tr>
+<tr><td>-20.0</td><td>1.35</td><td>+4.0</td><td>0.94</td></tr>
+<tr><td>-16.0</td><td>1.27</td><td>+6.0</td><td>0.91</td></tr>
+<tr><td>-12.0</td><td>1.20</td><td>+8.0</td><td>0.89</td></tr>
+<tr><td>-8.0</td><td>1.13</td><td>+12.0</td><td>0.84</td></tr>
+<tr><td>-6.0</td><td>1.09</td><td>+16.0</td><td>0.80</td></tr>
+<tr><td>-4.0</td><td>1.06</td><td>+20.0</td><td>0.74</td></tr>
+<tr><td>-3.0</td><td>1.05</td><td>+24.0</td><td>0.70</td></tr>
+<tr><td>-2.0</td><td>1.03</td><td>+36.0</td><td>0.58</td></tr>
+<tr><td>-1.0</td><td>1.02</td><td>+48.0</td><td>0.49</td></tr>
+</tbody>
+</table></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="F8E20FEA-6FD8-4C40-8423-97BE906A6AA9">
+<id root="46A14934-5A91-2267-85CA-F401FE0A6CCD" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>QUADRAMET<sup>&#174;</sup> (samarium Sm-153 EDTMP) has an affinity for bone and concentrates in areas of bone turnover in association with hydroxyapatite. In clinical studies employing planar imaging techniques, more QUADRAMET<sup>&#174;</sup> accumulates in osteoblastic lesions than in normal bone with a lesion-to-normal bone ratio of approximately 5. The mechanism of action of QUADRAMET<sup>&#174;</sup> in relieving the pain of bone metastases is not known.</paragraph></text>
+<effectiveTime value="20060601" />
+<component>
+<section ID="C21B4B2D-F5AA-40D9-843F-C7E955E66497">
+<id root="14515981-8E66-BABB-39DE-865CF1E587AC" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Distribution</title>
+<text><paragraph>Human protein binding has not been studied; however, in dog, rat and bovine studies, less than 0.5% of samarium-153 EDTMP is bound to protein. At physiologic pH, &gt;90% of the complex is present as <sup>153</sup>Sm[EDTMP]<sup>-5</sup>, and &lt;10% as <sup>153</sup>SmH[EDTMP]<sup>-4</sup>. The octanol/ water partition coefficient is &lt;10<sup>-5</sup>.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="C60F0376-3CBB-4954-B5C0-3FB73BEAADBE">
+<id root="301B881C-3ADE-EDE3-4263-1936DDFA76BA" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Skeletal Uptake</title>
+<text><paragraph>The greater the number of metastatic lesions, the more skeletal uptake of Sm-153 radioactivity. The relationship between skeletal uptake and the size of the metastatic lesions has not been studied. The total skeletal uptake of radioactivity was 65.5%&#177; 15.5% of the injected dose in 453 patients with metastatic lesions from a variety of primary malignancies. In a study of 22 patients with a wide range in the number of metastatic sites, the % of the injected dose (% ID) taken up by bone ranged from 56.3% in a patient with 5 metastatic lesions to 76.7% in a patient with 52 metastatic lesions. If the number of metastatic lesions is fixed, over the range 0.1 to 3.0 mCi/kg, the % ID taken up by bone is the same regardless of the dose.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="BE5EAC2C-2292-4E25-B1DF-5EF0A17ADC90">
+<id root="0CE02D56-C2A8-8AC5-3253-5C44D4746F39" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Metabolism</title>
+<text><paragraph>The complex formed by samarium and EDTMP is excreted as an intact, single species that consists of one atom of the Sm-153 and one molecule of the EDTMP, as shown by an analysis of urine samples from patients (n=5) administered samarium Sm-153 EDTMP. Metabolic products of samarium Sm-153 EDTMP were not detected in humans.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="F98F7047-C886-4568-9C2D-ACBE1288013B">
+<id root="056826EB-EB26-7150-6694-A69DDD2CD9DA" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Elimination</title>
+<text><paragraph>For QUADRAMET<sup>&#174;</sup>, calculations of the % ID detected in the whole body, urine and blood were corrected for radionuclide decay. The clearance of activity through the urine is expressed as the cumulated activity excreted. The whole body retention is the simple reciprocal of the cumulated urine activity. (See&#160;<linkHtml href="#C60F0376-3CBB-4954-B5C0-3FB73BEAADBE">Skeletal Uptake</linkHtml> Section).</paragraph><paragraph>Blood: Clearance of radioactivity from the blood demonstrated biexponential kinetics after intravenous injection in 19 patients (10 men, 9 women) with a variety of primary cancers that were metastatic to bone. Over the first 30 minutes, the radioactivity (mean &#177; SD) in the blood decreased to 15% (&#177;8%) of the injected dose with a t 1/2 of 5.5 min (&#177;1.1 min). After 30 minutes, the radioactivity cleared from the blood more slowly with a t1/2 of 65.4 min (&#177; 9.6 min). Less than 1% of the dose injected remained in the blood 5 hr after injection.</paragraph><paragraph>Urine: Samarium Sm-153 EDTMP radioactivity was excreted in the urine after intravenous injection. During the first 6 hours, 34.5% (&#177;15.5%) was excreted. Overall, the greater the number of metastatic lesions, the less radioactivity was excreted.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="BC6DD2C2-DD4B-41D2-80A1-23FA488C9AAA">
+<id root="CB2ABC42-04F1-D953-9B57-3B4F44B9974B" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Gender Differences</title>
+<text><paragraph>Gender did not affect the samarium Sm-153 EDTMP blood pharmacokinetics, the cumulative % of radioactivity excreted in urine, or the % radioactivity retained in the skeleton when the number of metastatic lesions is taken into account.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="D97D71C1-683D-43F9-AA74-7E946A5967BE">
+<id root="1008ED02-8A3D-E403-95EC-810DD2DCEEAE" />
+<code code="43684-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="USE IN SPECIFIC POPULATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Special Populations</title>
+<effectiveTime value="20060601" />
+<component>
+<section ID="FE1C0CEC-CCDF-4DE2-92BB-4E83621C8803">
+<id root="B79C1513-70D1-C96A-C523-280998DD2A6C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<text><paragraph>Elderly: The pharmacokinetics of samarium Sm-153 EDTMP did not change with age as seen from comparison of values from people in the age range of 22 to 64 compared to the range 65 to 86 years.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="A9A65702-0AB4-4D2F-9F7B-D590EE6E5170">
+<id root="C8981F41-73E2-D51F-654D-E802A084C12C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<text><paragraph>Hepatic Insufficiency: Samarium Sm-153 EDTMP scintiscans in 5 patients with metastatic bone disease did not reveal accumulation of activity in the liver or the intestine; this suggests that hepatobiliary excretion did not occur.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="FD64FF8E-B3A1-4B1D-83E7-E3BC75D146EB">
+<id root="0A7F6D94-B9B8-FE63-E82A-1601DCF101D2" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<text><paragraph>Renal Insufficiency: Patients with renal insufficiency have not been studied.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="CC3000CC-5DA1-4EBA-A303-2B094273C013">
+<id root="DD0CCA25-90F1-D8D4-7967-C49EB9894045" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Drug/Drug Interaction</title>
+<text><paragraph>Drug-drug interaction studies have not been studied.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="DB74F290-A1F2-4AF2-BAE5-2DC9D415AB39">
+<id root="7B7C5E39-B0E4-BA7B-20EE-ABBDFF01E69A" />
+<code code="43681-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHARMACODYNAMICS" />
+<title mediaType="text/x-hl7-title+xml">Pharmacodynamics</title>
+<text><paragraph>The beta particle of <sup>153</sup>Sm-EDTMP travels an average of 3.1 mm in soft tissue and 1.7 mm in bone. In clinical trials of 78 patients with metastatic bone lesions who had 13 specific bone scan sites evaluated, the presence or absence of <sup>153</sup>Sm-EDTMP uptake is similar to the presence or absence of <sup>99m</sup>Tc diphosphonate uptake (range 67 to 96% agreement depending upon the blinded reader and the site of the body). Whether the amount of <sup>153</sup>Sm-EDTMP uptake varies with the size of the lesion or to the presence of osteolytic components has not been studied. The clinical benefit of Sm-153-EDTMP in patients with osteolytic lesions is not known. The relationship of different tumor cell types to clinical response has not been studied.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="B56BA078-CEE8-4B02-AA6E-44430D592B26">
+<id root="6826A5CA-8832-6FBB-0D33-A800A29ABA45" />
+<code code="34092-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL STUDIES" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL TRIALS</title>
+<text><paragraph>Overall QUADRAMET<sup>&#174;</sup> was evaluated in 580 patients (see&#160;<linkHtml href="#BCF6F000-1355-4ED0-8445-656FCED46877">Adverse Events</linkHtml> Section for demographic description). Of these patients, 270 (244 men, 26 women) were studied in two randomized, blinded, placebo controlled clinical trials. These patients had a mean age of 67, and a range 22 to 87 years. Eligible patients had painful metastatic bone lesions that had failed other treatments, had at least a 6 month expected survival and had a positive radionuclide bone scan. Routine x-rays to evaluate the metastatic lesions were not part of the protocol.</paragraph><paragraph>In study A, 118 patients were randomized to receive 0.5 mCi/kg QUADRAMET<sup>&#174;</sup>, 1.0 mCi/kg QUADRAMET<sup>&#174;</sup>, or a placebo intravenous injection. In study B, 152 patients were randomized to receive either 1.0 mCi/kg QUADRAMET<sup>&#174;</sup> or a placebo intravenous injection. Both studies were double blind over a 4 week period. Patients scored their daily pain intensity on a visual analogue scale rated from 0 (no or low pain) to 10 (excruciating pain). The area under the pain curve (AUPC) was obtained by integrating the daily pain scores by week. Opioid analgesic use was recorded daily and averaged over each week and expressed in oral morphine milligram equivalents.</paragraph><paragraph>Of the 270 patients studied, 232 (86%) had prostate cancer and 38 (14%) had other primary cancers. In study A, 80 (68%) of the patients had prostate cancer and 38 (32%) had a variety of other primary tumors. In study B, all (100%) patients had prostate cancer.</paragraph><paragraph>The results of the patients&#8217; AUPC scores are shown in Table 3. In both trials for each of the 4 weeks of study, the mean AUPC scores decreased in patients who received QUADRAMET<sup>&#174;</sup> (1.0 mCi/kg). In study A, pain (the AUPC) decrease from baseline was significantly different in QUADRAMET<sup>&#174;</sup> 1.0 mCi/kg and placebo groups at weeks 3 and 4. In study B, pain (the AUPC) decrease from baseline was significantly different in QUADRAMET<sup>&#174;</sup> 1.0 mCi/kg and placebo groups at weeks 2, 3 and 4.</paragraph><table ID="a8f3d95b-be27-475b-9192-2c1ed90e672a"><caption>Table 3: COMPARISON OF WEEKLY PAIN SCORES (a)AFTER QUADRAMET<sup>&#174;</sup> 1.0mCi/kg or PLACEBO IV [Intent to Treat]</caption>
+<tbody>
+<tr><td /><td align="center" colspan="2">STUDY A (n = 73) (b)</td><td align="center" colspan="2">STUDY B (n = 150) (c)</td></tr>
+<tr><td>WEEK</td><td><paragraph>&#160;&#160;&#160;&#160;Placebo</paragraph><paragraph>&#160;&#160;&#160;&#160;N=36</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.0 mCi/kg</paragraph><paragraph>&#160;&#160;&#160;&#160;N=37</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;Placebo</paragraph><paragraph>&#160;&#160;&#160;&#160;N=50</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.0 mCi/kg</paragraph><paragraph>&#160;&#160;&#160;&#160;N=100</paragraph></td></tr>
+<tr><td>Baseline</td><td>&#160;&#160;&#160;&#160;26.5 (11.8)</td><td>&#160;&#160;&#160;&#160;28.7 (12.3)</td><td>&#160;&#160;&#160;&#160;28.5 (14.1)</td><td>&#160;&#160;&#160;&#160;28.1 (12.9)</td></tr>
+<tr><td>1</td><td>&#160;&#160;&#160;&#160;26.1 (10.3)</td><td>&#160;&#160;&#160;&#160;27.6 (14.1)</td><td>&#160;&#160;&#160;&#160;27.9 (14.6)</td><td>&#160;&#160;&#160;&#160;25.8 (13.1)</td></tr>
+<tr><td>2</td><td>&#160;&#160;&#160;&#160;24.4 (10.4)</td><td>&#160;&#160;&#160;&#160;23.8 (13.7)</td><td>&#160;&#160;&#160;&#160;28.1 (15.4)</td><td>&#160;&#160;&#160;&#160;20.6 (13.9)*</td></tr>
+<tr><td>3</td><td>&#160;&#160;&#160;&#160;24.3 (11.0)</td><td>&#160;&#160;&#160;&#160;20.5 (11.5)*</td><td>&#160;&#160;&#160;&#160;25.8 (16.1)</td><td>&#160;&#160;&#160;&#160;20.1 (13.3)*</td></tr>
+<tr><td>4</td><td>&#160;&#160;&#160;&#160;24.7 (12.1)</td><td>&#160;&#160;&#160;&#160;18.8 (10.8)*</td><td>&#160;&#160;&#160;&#160;24.7 (15.3)</td><td>&#160;&#160;&#160;&#160;19.9 (13.7)*</td></tr>
+</tbody>
+</table><list listType="unordered"><item>(a) Area Under the Pain Curve (SD).</item><item><paragraph>(b) Excludes 5 patients with missing baseline or extreme values; and all 40 patients who received 0.5 mCi QUADRAMET<sup>&#174;</sup>. QUADRAMET<sup>&#174;</sup> 0.5 mCi/kg can not be distinguished from placebo. </paragraph></item><item><paragraph>(c) Excludes 2 patients with missing baseline values. </paragraph></item><item>(*) Statistically significant difference in change from baseline in comparison to placebo.</item></list><paragraph>In the two clinical trials, the patient use of analgesics differed. In Study A, the patients did not receive specific instructions on analgesic reduction. In Study B, patients were encouraged to adjust their pain medication as needed. As shown in Table 4, the morphine equivalent analgesic use in study A generally increased from baseline in both the QUADRAMET<sup>&#174;</sup> and placebo treatment groups; however, the difference between the QUADRAMET<sup>&#174;</sup> and placebo group change from baseline is not statistically significant. In study B, the placebo treated patients increased their use of opioid analgesics, while the QUADRAMET<sup>&#174;</sup> treated patients decreased their use of opioid analgesics.</paragraph><table><caption>Table 4: COMPARISON OF WEEKLY MEAN ANALGESIC USE (a) BETWEEN QUADRAMET<sup>&#174;</sup> 1.0 mCi/kg AND PLACEBO GROUPS [Intent to Treat]</caption>
+<tbody>
+<tr><td /><td align="center" colspan="2">STUDY A (n = 73) (b)</td><td align="center" colspan="2">STUDY B (n = 150) (c)</td></tr>
+<tr><td>WEEK</td><td><paragraph>&#160;&#160;&#160;&#160;Placebo </paragraph><paragraph>&#160;&#160;&#160;&#160;N=36</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.0 mCi/kg</paragraph><paragraph>&#160;&#160;&#160;&#160;N=37</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;Placebo</paragraph><paragraph>&#160;&#160;&#160;&#160;N=50</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.0 mCi/kg</paragraph><paragraph>&#160;&#160;&#160;&#160;N=100</paragraph></td></tr>
+<tr><td>Baseline</td><td>&#160;&#160;&#160;&#160;93.5 (154.0)(a)</td><td>&#160;&#160;&#160;&#160;127.1 (189.9)</td><td>&#160;&#160;&#160;&#160;78.4 (83.1)</td><td>&#160;&#160;&#160;&#160;96.5 (166.6)</td></tr>
+<tr><td>1</td><td>&#160;&#160;&#160;&#160;106.8 (173.8)</td><td>&#160;&#160;&#160;&#160;125.7 (192.6)</td><td>&#160;&#160;&#160;&#160;84.5 (91.1)</td><td>&#160;&#160;&#160;&#160;93.5 (165.5)</td></tr>
+<tr><td>2</td><td>&#160;&#160;&#160;&#160;127.1 (238.4)</td><td>&#160;&#160;&#160;&#160;144.8 (276.7)</td><td>&#160;&#160;&#160;&#160;85.6 (90.9)</td><td>&#160;&#160;&#160;&#160;82.9 (122.9)</td></tr>
+<tr><td>3</td><td>&#160;&#160;&#160;&#160;133.9 (254.0)</td><td>&#160;&#160;&#160;&#160;146.6 (278.2)</td><td>&#160;&#160;&#160;&#160;100.1 (119.4)</td><td>&#160;&#160;&#160;&#160;79.6 (131.2)*</td></tr>
+<tr><td>4</td><td>&#160;&#160;&#160;&#160;135.6 (222.0)</td><td>&#160;&#160;&#160;&#160;135.1 (274.0)</td><td>&#160;&#160;&#160;&#160;106.3 (161.0)</td><td>&#160;&#160;&#160;&#160;76.8 (132.3)*</td></tr>
+</tbody>
+</table><list listType="unordered"><item>(a) Mean Analgesic Use (SD) is in morphine equivalent units; 0 = none.</item><item>(b) Excludes 5 patients with missing baseline or with extreme values; and all 40 patients who received 0.5 mCi QUADRAMET<sup>&#174;</sup>. QUADRAMET<sup>&#174;</sup> 0.5 mCi/kg can not be distinguished from placebo.</item><item><paragraph>(c) Excludes 2 patients with missing baseline values.</paragraph></item><item><paragraph>(*) Statistically significant difference in change from baseline in comparison to placebo.</paragraph></item></list><paragraph>In both studies, the numbers of patients who experienced any decrease in AUPC score without any increase in analgesic use at weeks 3 and 4 were also evaluated. In study A, this occurred in 20/37 (54%) of the patients who received QUADRAMET<sup>&#174;</sup> 1.0 mCi/kg and 9/36 (25%) of the placebo treated patients. In study B, this occurred in 48/100 (48%) of the QUADRAMET<sup>&#174;</sup> treated patients and 11/51 (22%) of the placebo treated patients.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="DD44724D-0EAD-474D-A6CB-B5EE50D0FD13">
+<id root="BAE64779-7321-B673-5236-E45141B89BF9" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS</title>
+<text><paragraph>QUADRAMET<sup>&#174;</sup> is indicated for relief of pain in patients with confirmed osteoblastic metastatic bone lesions that enhance on radionuclide bone scan.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="A1EA8F35-058A-4CAE-B5B4-62A9CB9F48C8">
+<id root="B8343E8C-F23A-3823-2516-88FC35019850" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>QUADRAMET<sup>&#174;</sup> is contraindicated in patients who have known hypersensitivity to EDTMP or similar phosphonate compounds.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="A856B2A0-663C-4B8F-8ACA-CB0CEF6AB8CC">
+<id root="2680563D-3F91-B502-4D45-06670AAA1755" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>QUADRAMET<sup>&#174;</sup> causes bone marrow suppression. In clinical trials, white blood cell counts and platelet counts decreased to a nadir of approximately 40% to 50% of baseline in 123 (95%) of patients within 3 to 5 weeks after QUADRAMET<sup>&#174;</sup>, and tended to return to pretreatment levels by 8 weeks. The grade of marrow toxicity is shown in Table 5 below.</paragraph><table><caption>Table 5: NUMBER AND PERCENT OF PATIENTS WHO EXPERIENCED MARROW TOXICITY IN CLINICAL TRIALS OF QUADRAMET<sup>&#174;</sup></caption>
+<tbody>
+<tr><td /><td align="center" colspan="2"><content styleCode="bold">Hemoglobin</content></td><td align="center" colspan="2"><content styleCode="bold">Leucocytes</content></td><td align="center" colspan="2"><content styleCode="bold">Platelets</content></td></tr>
+<tr><td><content styleCode="bold">Toxicity Grade*</content></td><td><paragraph>&#160;&#160;&#160;&#160;Placebo</paragraph><paragraph>&#160;&#160;&#160;&#160;N=85</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.0 mCi/kg</paragraph><paragraph>&#160;&#160;&#160;&#160;N=185</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;Placebo</paragraph><paragraph>&#160;&#160;&#160;&#160;N=85</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.0 mCi/kg</paragraph><paragraph>&#160;&#160;&#160;&#160;N=184</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;Placebo</paragraph><paragraph>&#160;&#160;&#160;&#160;N=85</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.0 mCi/kg</paragraph><paragraph>&#160;&#160;&#160;&#160;N=185</paragraph></td></tr>
+<tr><td>0-2</td><td>&#160;&#160;&#160;&#160;78 (92%)</td><td>&#160;&#160;&#160;&#160;162 (88%)</td><td>&#160;&#160;&#160;&#160;85 (100%)</td><td>&#160;&#160;&#160;&#160;169 (92%)</td><td>&#160;&#160;&#160;&#160;85 (100%)</td><td>&#160;&#160;&#160;&#160;173 (94%)</td></tr>
+<tr><td>3</td><td>&#160;&#160;&#160;&#160;6 (7%)</td><td>&#160;&#160;&#160;&#160;20 (11%)</td><td>&#160;&#160;&#160;&#160;0 (0%)</td><td>&#160;&#160;&#160;&#160;15 (8%)</td><td>&#160;&#160;&#160;&#160;0 (0%)</td><td>&#160;&#160;&#160;&#160;10 (5%)</td></tr>
+<tr><td>4</td><td>&#160;&#160;&#160;&#160;1 (1%)</td><td>&#160;&#160;&#160;&#160;3 (2%)</td><td>&#160;&#160;&#160;&#160;0 (0%)</td><td>&#160;&#160;&#160;&#160;0 (0%)</td><td>&#160;&#160;&#160;&#160;0 (0%)</td><td>&#160;&#160;&#160;&#160;2 (1%)</td></tr>
+</tbody>
+</table><br /><list listType="unordered"><item>* Toxicity Grade based upon National Cancer Institute Criteria; normal levels are Hemoglobin &#8805;10g/dL, Leucocyte &#8805;4.0 x 10<sup>3</sup>&#181;L, and Platelets &#8805;150,000/&#181;L.</item></list><paragraph>Before QUADRAMET<sup>&#174;</sup> is administered, consideration should be given to the patient&#8217;s current clinical and hematologic status and bone marrow response history to treatment with myelotoxic agents. Metastatic prostate and other cancers can be associated with disseminated intravascular coagulation (DIC); caution should be exercised in treating cancer patients whose platelet counts are falling or who have other clinical or laboratory findings suggesting DIC. Because of the unknown potential for additive effects on bone marrow, QUADRAMET<sup>&#174;</sup> should not be given concurrently with chemotherapy or external beam radiation therapy unless the clinical benefits outweigh the risks. Use of QUADRAMET<sup>&#174;</sup> in patients with evidence of compromised bone marrow reserve from previous therapy or disease involvement is not recommended unless the potential benefits of the treatment outweigh the risks. Blood counts should be monitored weekly for at least 8 weeks, or until recovery of adequate bone marrow function.</paragraph></text>
+<effectiveTime value="20060601" />
+<component>
+<section ID="DE6A8E20-B46F-4911-83B3-3BAABB8E5D92">
+<id root="EF62A82C-9C2A-780D-EA19-AEA716F08887" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<text><paragraph>As with other radiopharmaceutical drugs, QUADRAMET<sup>&#174;</sup> can cause fetal harm when administered to a pregnant woman. Adequate and well controlled studies have not been conducted in animals or pregnant women. Women of child-bearing age should have a negative pregnancy test before administration of QUADRAMET<sup>&#174;</sup>. If this drug is used during pregnancy, or if a patient becomes pregnant after taking this drug, the patient should be apprised of the potential hazard to the fetus. Women of child-bearing potential should be advised to avoid becoming pregnant soon after receiving QUADRAMET<sup>&#174;</sup>. Men and women patients should be advised to use an effective method of contraception after the administration of QUADRAMET<sup>&#174;</sup>.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="E7DB0A99-5D04-4369-A5F3-00EEF6DB3126">
+<id root="550F56CD-20D4-8F43-43A0-05AA26DDF4D8" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text><paragraph>EDTMP is a chelating agent. Although the chelating effects have not been evaluated thoroughly in humans, dogs that received non-radioactive samarium EDTMP (6 times the human dose based on body weight, 3 times based on surface area) developed a variety of electrocardiographic (ECG) changes (with or without the presence of hypocalcemia). The causal relationship between the hypocalcemia and ECG changes has not been studied. Whether QUADRAMET<sup>&#174;</sup> causes electrocardiographic changes or arrhythmias in humans has not been studied. Caution and appropriate monitoring should be given when administering QUADRAMET<sup>&#174;</sup> to patients (See <linkHtml href="#FE18658F-E5D9-4EBA-9B7B-DFE290213768">Laboratory Tests</linkHtml>).</paragraph><paragraph>Because concomitant hydration is recommended to promote the urinary excretion of QUADRAMET<sup>&#174;</sup>, appropriate monitoring and consideration of additional supportive treatment should be used in patients with a history of congestive heart failure or renal insufficiency.</paragraph><paragraph>This drug should be used with caution in patients with compromised bone marrow reserves. See <linkHtml href="#A856B2A0-663C-4B8F-8ACA-CB0CEF6AB8CC">Warnings</linkHtml>.</paragraph><paragraph>Skeletal: Spinal cord compression frequently occurs in patients with known metastases to the cervical, thoracic or lumbar spine. In clinical studies of QUADRAMET<sup>&#174;</sup>, spinal cord compression was reported in 7% of patients who received placebo and in 8.3% of patients who received 1.0 mCi/kg QUADRAMET<sup>&#174;</sup>. QUADRAMET<sup>&#174;</sup> is not indicated for treatment of spinal cord compression. QUADRAMET<sup>&#174;</sup> administration for pain relief of metastatic bone cancer does not prevent the development of spinal cord compression. When there is a clinical suspicion of spinal cord compression, appropriate diagnostic and therapeutic measures must be taken immediately to avoid permanent disability.</paragraph><paragraph>Radiopharmaceutical agents should be used only by physicians who are qualified by training and experience in the safe use and handling of radionuclides and whose experience and training have been approved by the appropriate government agency authorized to license the use of radionuclides.</paragraph><paragraph>QUADRAMET<sup>&#174;</sup>, like other radioactive drugs, must be handled with care, and appropriate safety measures must be taken to minimize radiation exposure of clinical personnel and others in the patient environment.</paragraph><paragraph>Special precautions, such as bladder catheterization, should be taken with incontinent patients to minimize the risk of radioactive contamination of clothing, bed linen, and the patient's environment. Urinary excretion of radioactivity occurs over about 12 hours (with 35% occurring during the first 6 hours). Studies have not been done on the use of QUADRAMET<sup>&#174;</sup> in patients with renal impairment.</paragraph></text>
+<effectiveTime value="20060601" />
+<component>
+<section ID="F65CB16B-2FFE-4975-845C-68B6DBDEB444">
+<id root="4182FF9B-E9B1-EF05-44CD-DD523C795FDF" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INFORMATION FOR PATIENTS" />
+<title mediaType="text/x-hl7-title+xml">INFORMATION FOR PATIENTS</title>
+<text><paragraph>Patients who receive QUADRAMET<sup>&#174;</sup> should be advised that for several hours following administration, radioactivity will be present in excreted urine. To help protect themselves and others in their environment, precautions need to be taken for 12 hours following administration. Whenever possible, a toilet should be used, rather than a urinal, and the toilet should be flushed several times after each use. Spilled urine should be cleaned up completely and patients should wash their hands thoroughly. If blood or urine gets onto clothing, the clothing should be washed separately, or stored for 1-2 weeks to allow for decay of the Sm-153. </paragraph><paragraph>Some patients have reported a transient increase in bone pain shortly after injection (flare reaction). This is usually mild and self-limiting and occurs within 72 hours of injection. Such reactions are usually responsive to analgesics.</paragraph><paragraph>Patients who respond to QUADRAMET<sup>&#174;</sup> might begin to notice the onset of pain relief one week after QUADRAMET<sup>&#174;</sup>. Maximal pain relief generally occurs at 3-4 weeks after injection of QUADRAMET<sup>&#174;</sup>. Patients who experience a reduction in pain may be encouraged to decrease their use of opioid analgesics.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="FE18658F-E5D9-4EBA-9B7B-DFE290213768">
+<id root="40E445B6-2B6F-0D4C-BF65-93148702C7DC" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LABORATORY TESTS" />
+<title mediaType="text/x-hl7-title+xml">LABORATORY TESTS</title>
+<text><paragraph>Because of the potential for bone marrow suppression, beginning 2 weeks after QUADRAMET<sup>&#174;</sup> administration, blood counts should be monitored weekly for at least 8 weeks, or until recovery of adequate bone marrow function.</paragraph><paragraph>In a subset of 31 patients who had serum calcium monitored during the first 2 hours after QUADRAMET<sup>&#174;</sup> infusion, a clear pattern of calcium change was not identified. However, 10 (32%) patients had at least one serum calcium level that was below normal (7.16 to 8.28). The extent to which samarium-153-EDTMP is related to this hypocalcemia is not known. Caution should be exercised when administering QUADRAMET<sup>&#174;</sup> to patients at risk for developing hypocalcemia.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="CB8A7A6A-5FA9-43C1-A737-2120AD3A30F8">
+<id root="45E45764-A7C0-216A-62C5-2743CAC93560" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS" />
+<title mediaType="text/x-hl7-title+xml">DRUG INTERACTIONS</title>
+<text><paragraph>The potential for additive bone marrow toxicity of QUADRAMET<sup>&#174;</sup> with chemotherapy or external beam radiation has not been studied. QUADRAMET<sup>&#174;</sup> should not be given concurrently with chemotherapy or external beam radiation therapy unless the benefit outweighs the risks. QUADRAMET<sup>&#174;</sup> should not be given after either of these treatments until there has been time for adequate marrow recovery. (See&#160;<linkHtml href="#A856B2A0-663C-4B8F-8ACA-CB0CEF6AB8CC">Warnings</linkHtml> Section).</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="F0596EDC-001E-4082-AD9E-182394F29D20">
+<id root="195D76E8-AE44-7DB8-EDD6-AE31196BE2DA" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY" />
+<title mediaType="text/x-hl7-title+xml">CARCINOGENESIS, MUTAGENESIS, IMPAIRMENT OF FERTILITY</title>
+<text><paragraph>Carcinogenesis in humans given EDTMP, in QUADRAMET<sup>&#174;</sup>, is not likely. Osteosarcomas occurred in a 2-year toxicity/carcinogenicity study of EDTMP administered by gastric intubation to Sprague-Dawley rats, in male rats at 50 mg/kg/day and in male and female rats at 150 mg/kg/day (the dosage was increased to 333 mg/kg/day on day 329 of treatment). Osteosarcomas were not reported in a published chronic dietary study of up to 130 weeks of EDTMP in Fisher 344 rats, at dietary doses up to 100 mg/kg/day (not the maximum tolerated dose). However, at study termination in female Fisher 344 rats, this dose was associated with statistically significantly higher rate of pancreatic islet-cell adenomas and carcinomas.</paragraph><paragraph>The results of the following genotoxicity assays with non-radioactive samarium- EDTMP were negative: Salmonella reverse mutation (AMES) assay, unscheduled DNA synthesis in rat liver primary cell culture, chromosomal aberration assay in rat lymphocytes, CHO/HGPRT forward mutation assay, and mouse bone marrow micronucleus test.</paragraph><paragraph>Studies have not been performed to assess the effect of QUADRAMET<sup>&#174;</sup> on fertility.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="EC675534-B0EB-4BEE-BC68-0F1D39254C2A">
+<id root="09C7B041-CF47-73FD-66F8-B81971AF2901" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title mediaType="text/x-hl7-title+xml">PREGNANCY</title>
+<text><paragraph>Pregnancy Category D. See&#160;<linkHtml href="#A856B2A0-663C-4B8F-8ACA-CB0CEF6AB8CC">Warnings</linkHtml> Section.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="B2EF766A-2194-4E9A-AD58-74B527D4CD16">
+<id root="A6DE37D8-DD76-3579-0CA2-37BFC6F7F970" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS" />
+<title mediaType="text/x-hl7-title+xml">NURSING MOTHERS</title>
+<text><paragraph>It is not known whether QUADRAMET<sup>&#174;</sup> is excreted in human milk. Because of the potential for serious adverse reactions in nursing infants from QUADRAMET<sup>&#174;</sup>, a decision should be made whether to continue nursing or to administer the drug. If QUADRAMET<sup>&#174;</sup> is administered, formula feedings should be substituted for breast feedings.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="C598546F-FC6E-48B0-BDA1-45DE447FC1D4">
+<id root="D0D440B3-0291-3DBE-1C68-A826AC75CEF0" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE" />
+<title mediaType="text/x-hl7-title+xml">PEDIATRIC USE</title>
+<text><paragraph>Safety and effectiveness in pediatric patients below the age of 16 years have not been established.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="BCF6F000-1355-4ED0-8445-656FCED46877">
+<id root="EAA5B1FF-EFE9-6D08-5F91-8E5BD0D5A760" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE EVENTS</title>
+<text><paragraph>Adverse events were evaluated in a total of 580 patients who received QUADRAMET<sup>&#174;</sup> in clinical trials. Of the 580 patients, there were 472 men and 108 women with a mean age of 66 (range 20 to 87).</paragraph><paragraph>Of these patients, 472 (83%) had at least one adverse event. In a subgroup of 399 patients who received QUADRAMET<sup>&#174;</sup> 1.0 mCi/kg, there were 23 deaths and 46 serious adverse events. The deaths occurred an average of 67 days (9 to 130) after QUADRAMET<sup>&#174;</sup>. Serious events occurred an average of 46 days (1 - 118) after QUADRAMET<sup>&#174;</sup>. Although most of the patient deaths and serious adverse events appear to be related to the underlying disease, the relationship of end stage disease, marrow invasion by cancer cells, previous myelotoxic treatment and QUADRAMET<sup>&#174;</sup> toxicity can not be easily distinguished. In clinical studies, two patients with rapidly progressive prostate cancer developed thrombocytopenia and died 4 weeks after receiving QUADRAMET<sup>&#174;</sup>. One of the patients showed evidence of disseminated intravascular coagulation (DIC); the other patient experienced a fatal cerebrovascular accident, with a suspicion of DIC. The relationship of the DIC to the bone marrow suppressive effect of Samarium is not known. Marrow toxicity occurred in 277 (47%) patients (See&#160;<linkHtml href="#A856B2A0-663C-4B8F-8ACA-CB0CEF6AB8CC">Warnings</linkHtml> section).</paragraph><paragraph>In controlled studies, 7% of patients receiving 1.0 mCi/kg QUADRAMET<sup>&#174;</sup> (as compared to 6% of patients receiving placebo) reported a transient increase in bone pain shortly after injection (flare reaction). This was usually mild, self-limiting, and responded to analgesics.</paragraph><paragraph>The most common adverse events observed in controlled clinical studies of QUADRAMET<sup>&#174;</sup>, are given in Table 6.&#160;&#160;&#160;&#160;</paragraph><table><caption>TABLE 6 SELECTED ADVERSE EVENTS REPORTED IN&#160;&#8805; 1.0 % OF PEOPLE WHO RECEIVED QUADRAMET<sup>&#174;</sup> OR PLACEBO IN CONTROLLED CLINICAL TRIALS </caption>
+<tbody>
+<tr><td><paragraph>ADVERSE EVENT</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;Placebo<br /><br />&#160;&#160;&#160;&#160;N = 90</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;QUADRAMET<sup>&#174;</sup><br />&#160;&#160;&#160;&#160;1.0 mCi/kg<br />&#160;&#160;&#160;&#160;N = 199</paragraph></td></tr>
+<tr><td><paragraph># Patients with Any Adverse Event</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;72 (80%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;169 (85%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Body As A Whole</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;56 (62%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;100 (50%)</paragraph></td></tr>
+<tr><td><paragraph>Pain Flare Reaction</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;5 (5.6%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;14 (7.0%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Cardiovascular</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;19 (21%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;32 (16%)</paragraph></td></tr>
+<tr><td><paragraph>Arrhythmias</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (2.2%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;10 (5.0%)</paragraph></td></tr>
+<tr><td><paragraph>Chest Pain</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;4 (4.4%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;8 (4.0%)</paragraph></td></tr>
+<tr><td><paragraph>Hypertension</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;6 (3.0%)</paragraph></td></tr>
+<tr><td><paragraph>Hypotension</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (2.2%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;4 (2.0%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Digestive</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;44 (49%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;82 (41%)</paragraph></td></tr>
+<tr><td><paragraph>Abdominal Pain</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;7 (7.8%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;12 (6.0%)</paragraph></td></tr>
+<tr><td><paragraph>Diarrhea</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;3 (3.3%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;12 (6.0%)</paragraph></td></tr>
+<tr><td><paragraph>Nausea &amp;/or Vomiting</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;37 (41.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;65 (32.7%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Hematologic &amp; Lymphatic</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;12 (13%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;54 (27%)</paragraph></td></tr>
+<tr><td><paragraph>Coagulation Disorder</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;3 (1.5%)</paragraph></td></tr>
+<tr><td><paragraph>Hemoglobin Decreased</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;21 (23.3%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;81 (40.7%)</paragraph></td></tr>
+<tr><td><paragraph>Leukopenia</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;6 (6.7%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;118(59.3%)</paragraph></td></tr>
+<tr><td><paragraph>Lymphadenopathy</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;4 (2.0%)</paragraph></td></tr>
+<tr><td><paragraph>Thrombocytopenia</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;8 (8.9%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;138(69.3%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Any Bleeding Manifestations* </content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;8 (8.9%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;32 (16.1%)</paragraph></td></tr>
+<tr><td><paragraph>Ecchymosis</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1 (1.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;3 (3.0%)</paragraph></td></tr>
+<tr><td><paragraph>Epistaxis</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1 (1.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;4 (2.0%)</paragraph></td></tr>
+<tr><td><paragraph>Hematuria</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;3 (3.3%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;10 (5%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Infection</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;10 (11.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;34 (17.1%)</paragraph></td></tr>
+<tr><td><paragraph>Fever and/or Chills</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;10 (11.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;17 (8.5%)</paragraph></td></tr>
+<tr><td><paragraph>Infection, Not Specified</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;4 (4.4%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;14 (7.0%)</paragraph></td></tr>
+<tr><td><paragraph>Oral Moniliasis</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1 (1.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;4 (2.0%)</paragraph></td></tr>
+<tr><td><paragraph>Pneumonia</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1 (1.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;3 (1.5%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Musculoskeletal</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;28 (31%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;55 (27%)</paragraph></td></tr>
+<tr><td><paragraph>Myasthenia</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;8 (8.9%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;13 (6.5%)</paragraph></td></tr>
+<tr><td><paragraph>Pathologic Fracture</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (2.2%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;5 (2.5%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Nervous</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;39 (43%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;59 (30%)</paragraph></td></tr>
+<tr><td><paragraph>Dizziness</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1 (1.1%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;8 (4.0%)</paragraph></td></tr>
+<tr><td><paragraph>Paresthesia</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;7 (7.8%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;4 (2.0%)</paragraph></td></tr>
+<tr><td><paragraph>Spinal Cord Compression</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;5 (5.5%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;13 (6.5%)</paragraph></td></tr>
+<tr><td><paragraph>Cerebrovascular Accident/Stroke</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (1.0%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Respiratory</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;24 (27%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;35 (18%)</paragraph></td></tr>
+<tr><td><paragraph>Bronchitis/Cough Increased</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (2.2%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;8 (4.0%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Special Senses</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;11 (12%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;11 (6%)</paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Skin &amp; Appendages</content></paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;17 (19%)&#160;&#160;&#160;&#160;</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;13 (7%)</paragraph></td></tr>
+<tr><td><paragraph>Purpura</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (1%)</paragraph></td></tr>
+<tr><td><paragraph>Rash</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (2.2%)</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;2 (1%)</paragraph></td></tr>
+</tbody>
+</table><list listType="unordered" styleCode="disc"><item>*Includes hemorrhage (gastrointestinal, ocular) reported in &lt;1%. </item></list><paragraph>In an additional 200 patients who received QUADRAMET<sup>&#174;</sup> in uncontrolled clinical trials, adverse events that were reported at a rate of&#160;&#8805; 1.0% were similar except for 9 (4.5%) patients who had agranulocytosis. Other selected adverse events that were reported in &lt;1% of the patients who received QUADRAMET<sup>&#174;</sup> 1.0 mCi/kg in any clinical trial include: alopecia, angina, congestive heart failure, sinus bradycardia, and vasodilation.</paragraph><br /></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="D16D01E8-ADDD-470A-B25D-B390D3E2FC72">
+<id root="36E010C5-3361-BE69-3518-881EE8E8FE4E" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>Overdosage with QUADRAMET<sup>&#174;</sup> has not been reported. An antidote for QUADRAMET<sup>&#174;</sup> overdosage is not known. The anticipated complications of overdosage would likely be secondary to bone marrow suppression from the radioactivity of <sup>153</sup>Sm, or secondary to hypocalcemia and cardiac arrhythmias related to the EDTMP.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="C6D13A5B-36DF-4663-81F2-7A3018E48731">
+<id root="0727CA0D-74F6-8EEC-FBD1-36A17AC76EAA" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>The recommended dose of QUADRAMET<sup>&#174;</sup> is 1.0 mCi/kg, administered intravenously over a period of one minute through a secure in-dwelling catheter and followed with a saline flush. Dose adjustment in patients at the extremes of weight have not been studied. Caution should be exercised when determining the dose in very thin or very obese patients.</paragraph><paragraph>The dose should be measured by a suitable radioactivity calibration system, such as a radioisotope dose calibrator, immediately before administration.</paragraph><paragraph>The dose of radioactivity to be administered and the patient should be verified before administering QUADRAMET<sup>&#174;</sup>. Patients should not be released until their radioactivity levels and exposure rates comply with federal and local regulations.</paragraph><paragraph>The patient should ingest (or receive by i.v. administration) a minimum of 500 mL (2 cups) of fluids prior to injection and should void as often as possible after injection to minimize radiation exposure to the bladder.</paragraph><paragraph>Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration whenever solution and container permit. The solution should not be used if it is cloudy or if it contains particulate matter.</paragraph><paragraph>QUADRAMET<sup>&#174;</sup> contains calcium and may be incompatible with solutions that contain molecules that can complex with and form calcium precipitates.</paragraph><paragraph>QUADRAMET<sup>&#174;</sup> should not be diluted or mixed with other solutions.</paragraph><paragraph>Thaw at room temperature before administration and use within 8 hours of thawing.</paragraph></text>
+<effectiveTime value="20060601" />
+<component>
+<section ID="DBD87305-F42F-4234-9851-065E2D3C552F">
+<id root="DF6441A1-8CAD-BDA2-E39C-32152A306EA8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED" />
+<title mediaType="text/x-hl7-title+xml">Radiation Dosimetry</title>
+<text><paragraph>The estimated absorbed radiation doses to an average 70 kg adult patient from an i.v. injection of QUADRAMET<sup>&#174;</sup> are shown in Table 7. The dosimetry estimates were based on clinical biodistribution studies using methods developed for radiation dose calculations by the Medical Internal Radiation Dose (MIRD) Committee of the Society of Nuclear Medicine.</paragraph><paragraph>Radiation exposure is based on a urinary voiding interval of 4.8 hours. Radiation dose estimates for bone and marrow assume that radioactivity is deposited on bone surfaces, as noted in autoradiograms of biopsy bone samples in 7 patients who received QUADRAMET<sup>&#174;</sup>. Although electron emissions from <sup>153</sup>Sm are abundant, with energies up to 810 keV, rapid blood clearance of QUADRAMET<sup>&#174;</sup> and low energy and abundant photon emissions generally result in low radiation doses to those parts of the body where the complex does not localize.</paragraph><paragraph>When blastic osseous lesions are present, significantly enhanced localization of the radiopharmaceutical will occur, with correspondingly higher doses to the lesions compared with normal bones and other organs. (See <linkHtml href="#F8E20FEA-6FD8-4C40-8423-97BE906A6AA9">Clinical Pharmacology</linkHtml>,&#160;<linkHtml href="#C60F0376-3CBB-4954-B5C0-3FB73BEAADBE">Skeletal Uptake</linkHtml> and&#160;<linkHtml href="#DB74F290-A1F2-4AF2-BAE5-2DC9D415AB39">Pharmacodynamics</linkHtml> Sections).</paragraph><table><caption>TABLE 7 RADIATION ABSORBED DOSES </caption>
+<tbody>
+<tr><td align="center" colspan="3"><paragraph><content styleCode="bold">70 kg ADULT</content></paragraph></td></tr>
+<tr><td><paragraph><content styleCode="bold">Target Organ</content></paragraph></td><td><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;Rad/mCi</content></paragraph></td><td><paragraph><content styleCode="bold">mGy/MBq</content></paragraph></td></tr>
+<tr><td><paragraph>Bone Surfaces</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;25.0</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;6.76</paragraph></td></tr>
+<tr><td><paragraph>Red Marrow</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;5.70</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;1.54</paragraph></td></tr>
+<tr><td><paragraph>Urinary Bladder Wall</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;3.60</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.097</paragraph></td></tr>
+<tr><td><paragraph>Kidneys</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.065</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.018</paragraph></td></tr>
+<tr><td><paragraph>Whole Body</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.040</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.011</paragraph></td></tr>
+<tr><td><paragraph>Lower large intestine</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.037</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.010</paragraph></td></tr>
+<tr><td><paragraph>Ovaries</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.032</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0086</paragraph></td></tr>
+<tr><td><paragraph>Muscle</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.028</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0076</paragraph></td></tr>
+<tr><td><paragraph>Small Intestine</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.023</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0062</paragraph></td></tr>
+<tr><td><paragraph>Upper Large Intestine</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.020</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0054</paragraph></td></tr>
+<tr><td><paragraph>Testes</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.020</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0054</paragraph></td></tr>
+<tr><td><paragraph>Liver</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.019</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0051</paragraph></td></tr>
+<tr><td><paragraph>Spleen</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.018</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0049</paragraph></td></tr>
+<tr><td><paragraph>Stomach</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.015</paragraph></td><td><paragraph>&#160;&#160;&#160;&#160;0.0041</paragraph></td></tr>
+</tbody>
+</table></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="E5E5471F-7935-4A3C-8A2C-0F98DD8413EC">
+<id root="2038B799-D668-FE8B-8A2A-C6D7081E8CB1" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>QUADRAMET<sup>&#174;</sup> is supplied frozen in a single-dose 10 mL glass vial containing 1850 &#177; 185 MBq/mL (50 &#177; 5 mCi/mL) of samarium-153, at calibration.</paragraph><paragraph>QUADRAMET<sup>&#174;</sup> is available in the following size:</paragraph><paragraph>NDC# 50419-209-03 3mL fill size with total activity of 5550 MBq (150mCi).</paragraph><paragraph>The vial is shipped in a lead shield; a package insert is included.</paragraph><paragraph>The drug product expires 48 hours after the time of calibration noted on the label, or 8 hours after thawing, whichever is earlier.</paragraph><paragraph><content styleCode="bold">STORAGE:</content> Store frozen at -10&#176; to -20&#176;C in a lead shielded container.</paragraph><paragraph>Storage and disposal of QUADRAMET<sup>&#174;</sup> should be controlled in a manner that complies with the appropriate regulations of the government agency authorized to license the use of this radionuclide. </paragraph><paragraph>This radioactive drug is approved for distribution to persons licensed pursuant to the Code of Massachusetts Regulations 105 CMR 120.500 for the uses listed in 105 CMR 120.537 or under equivalent licenses of the U.S. Nuclear Regulatory Commission, an Agreement State or a Licensing State.</paragraph><paragraph>THIS PRODUCT<br />INFORMATION ISSUED September 2003.</paragraph><paragraph><content styleCode="bold">Mfd by:</content><br /></paragraph><paragraph>Bristol-Meyers Squibb</paragraph><paragraph>Medical Imaging<br /></paragraph><paragraph>N. Billerica, MA 01862</paragraph><paragraph><content styleCode="bold">Mfd for:</content><br />Cytogen Corporation<br />Princeton, New Jersey, USA</paragraph><paragraph>For Product Inquiries, call 1-800-833-3533</paragraph><paragraph>QUADRAMET<sup>&#174;</sup> is a registered trademark of the Dow Chemical Company.</paragraph><paragraph>Printed in U.S.A.</paragraph><paragraph>513145-0903</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

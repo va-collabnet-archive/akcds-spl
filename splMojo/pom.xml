@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- parent -->
+
+	<parent>
+		<artifactId>akcds</artifactId>
+		<groupId>com.apelon.va.akcds.ihtsdo.wb</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<!-- this -->
+
+	<groupId>com.apelon.va.akcds.ihtsdo.wb</groupId>
+	<artifactId>splMojo</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>maven-plugin</packaging>
+	<name>splMojo Maven Mojo</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- dependencies -->
+
+	<dependencies>
+
+		<!-- spl dependencies -->
+
+		<dependency>
+			<groupId>com.apelon.air</groupId>
+			<artifactId>apelonAir</artifactId>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/apelonAir.jar</systemPath>
+			<version>1</version>
+		</dependency>
+
+		<!-- other dependencies -->
+
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ihtsdo</groupId>
+			<artifactId>wb-foundation</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ihtsdo</groupId>
+			<artifactId>wb-api</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml</groupId>
+			<artifactId>jaxp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>

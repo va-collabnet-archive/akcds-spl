@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="a7fa86b5-2154-4b17-9265-8a5411c88d5d" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">Norgesic&#8482; AND Norgesic&#8482; Forte</title>
+<effectiveTime value="20060511" />
+<setId root="a7fa86b5-2154-4b17-9265-8a5411c88d5d" />
+<versionNumber value="2" />
+<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>3M Pharmaceuticals</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section ID="dpl">
+<id root="BEF8D64E-F66D-3391-5AEA-2FE264BEA55D" />
+<effectiveTime value="20060511" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0089-0231" codeSystem="2.16.840.1.113883.6.69" />
+<name>Norgesic</name>
+<formCode code="C42964" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, MULTILAYER" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="25">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="X0A40N8I4S" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>orphenadrine citrate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="AL805O9OG9" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>orphenadrine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="385">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="385" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="R16CO5Y76E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>aspirin</name>
+<activeMoiety>
+<activeMoiety>
+<code code="R16CO5Y76E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>aspirin</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="30">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="30" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="3G6A5W338E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>caffeine</name>
+<activeMoiety>
+<activeMoiety>
+<code code="3G6A5W338E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>caffeine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>orphenadrine citrate, aspirin and caffeine</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polyethylene glycol</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sucrose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="H92E6QA4FV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>zinc stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>D&amp;C yellow #10</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0089-0231-10" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="500">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="500" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0089-0231-50" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE"><originalText>WHITE</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"><originalText>ROUND </originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="11" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="1" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">NORGESIC;3M</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0089-0233" codeSystem="2.16.840.1.113883.6.69" />
+<name>Norgesic Forte</name>
+<formCode code="C42964" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, MULTILAYER" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="50">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="50" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="X0A40N8I4S" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>orphenadrine citrate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="AL805O9OG9" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>orphenadrine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="770">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="770" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="R16CO5Y76E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>aspirin</name>
+<activeMoiety>
+<activeMoiety>
+<code code="R16CO5Y76E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>aspirin</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="60">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="60" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="3G6A5W338E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>caffeine</name>
+<activeMoiety>
+<activeMoiety>
+<code code="3G6A5W338E" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>caffeine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>orphenadrine citrate, aspirin and caffeine</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polyethylene glycol</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sucrose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="H92E6QA4FV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>zinc stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>D&amp;C yellow #10</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0089-0233-10" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="500">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="500" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0089-0233-50" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE"><originalText>WHITE</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"><originalText>CAPSULE </originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="19" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">NORGESIC FORTE;3M</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="s1">
+<id root="BB4D9AC9-3D5E-8517-C0EA-5DE08B712B51" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<text><paragraph>TABLETS</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s2">
+<id root="FF8C2B23-BF0F-6274-30F9-4B126451A3CC" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">ACTIONS</title>
+<text><paragraph>Orphenadrine citrate is a centrally acting (brain stem) compound which in animals selectively blocks facilitatory functions of the reticular formation.  Orphenadrine does not produce myoneural block, nor does it affect crossed extensor reflexes.  Orphenadrine prevents nicotine-induced convulsions but not those produced by strychnine.</paragraph><paragraph>Chronic administration of Norgesic to dogs and rats has revealed no drug-related toxicity.  No blood or urine changes were observed, nor were there any macroscopic or microscopic pathological changes detected.  Extensive experience with combinations containing aspirin and caffeine has established them as safe agents.  The addition of orphenadrine citrate does not alter the toxicity of aspirin and caffeine.</paragraph><paragraph>The mode of therapeutic action of orphenadrine has not been clearly identified, but may be related to its analgesic properties.  Orphenadrine citrate also possesses anticholinergic actions.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s3">
+<id root="81525620-0B32-5889-6AA0-98C061BB53CF" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS</title>
+<text><list listType="ordered" styleCode="Arabic"><item>Symptomatic relief of mild to moderate pain of acute musculoskeletal disorders.</item><item>The orphenadrine component is indicated as an adjunct to rest, physical therapy, and other measures for the relief of discomfort associated with acute painful musculoskeletal conditions.</item></list><paragraph>The mode of action of orphenadrine has not been clearly identified, but may be related to its analgesic properties.  Norgesic and Norgesic Forte do not directly relax tense skeletal muscles in man.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s4">
+<id root="1CE6718C-6C4E-F65E-1587-DB65F0F5F46E" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>Because of the mild anticholinergic effect of orphenadrine, Norgesic or Norgesic Forte should not be used in patients with glaucoma, pyloric or duodenal obstruction, achalasia, prostatic hypertrophy or obstructions at the bladder neck.  Norgesic or Norgesic Forte is also contraindicated in patients with myasthenia gravis and in patients known to be sensitive to aspirin or caffeine.</paragraph><paragraph>The drug is contraindicated in patients who have demonstrated a previous hypersensitivity to the drug.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s5">
+<id root="5B3A6727-7EBB-ED26-5D55-A8D06DECB203" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>Reye's Syndrome may develop in individuals who have chicken pox, influenza, or flu symptoms.  Some studies suggest a possible association between the development of Reye's Syndrome and the use of medicines containing salicylate or aspirin.  Norgesic and Norgesic Forte contain aspirin and therefore are not recommended for use in patients with chicken pox, influenza, or flu symptoms.</paragraph><paragraph>Norgesic and Norgesic Forte may impair the ability of the patient to engage in potentially hazardous activities such as operating machinery or driving a motor vehicle; ambulatory patients should therefore be cautioned accordingly.</paragraph><paragraph>Aspirin should be used with extreme caution in the presence of peptic ulcers and coagulation abnormalities.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s6">
+<id root="61119572-2647-37A7-C029-979B08B7233D" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml">USAGE IN PREGNANCY</title>
+<text><paragraph>Since safety of the use of this preparation in pregnancy, during lactation, or in the childbearing age has not been established, use of the drug in such patients requires that the potential benefits of the drug be weighed against its possible hazard to the mother and child.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s7">
+<id root="F282197D-CFEA-BD9B-683F-0BE540895470" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">PEDIATRIC USE</title>
+<text><paragraph>Safety and effectiveness in pediatric patients have not been established.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s8">
+<id root="F7FA62A9-4F53-ACD7-7033-E95A2E430EF9" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text><paragraph>Confusion, anxiety and tremors have been reported in a few patients receiving propoxyphene and orphenadrine concomitantly.  As these symptoms may be simply due to an additive effect, reduction of dosage and/or discontinuation of one or both agents is recommended in such cases.</paragraph><paragraph>Safety of continuous long term therapy with Norgesic and Norgesic Forte has not been established; therefore, if Norgesic or Norgesic Forte is prescribed for prolonged use, periodic monitoring of blood, urine and liver function values is recommended.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s9">
+<id root="01F25113-FCDC-D585-D0FE-12B37A062B51" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>Side effects of Norgesic or Norgesic Forte are those seen with aspirin and caffeine or those usually associated with mild anticholinergic agents.  These may include tachycardia, palpitation, urinary hesitancy or retention, dry mouth, blurred vision, dilatation of the pupil, increased intraocular tension, weakness, nausea, vomiting, headache, dizziness, constipation, drowsiness, and rarely, urticaria and other dermatoses.  Infrequently, an elderly patient may experience some degree of confusion.  Mild central excitation and occasional hallucinations may be observed.  These mild side effects can usually be eliminated by reduction in dosage.  One case of aplastic anemia associated with the use of Norgesic has been reported.  No causal relationship has been established.  Rare G.I. hemorrhage due to aspirin content may be associated with the administration of Norgesic or Norgesic Forte.  Some patients may experience transient episodes of light-headedness, dizziness or syncope.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s10">
+<id root="4D3A2AE2-76B2-9663-F5C9-FA26BCECAEA7" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>Norgesic:  Adults 1 to 2 tablets 3 to 4 times daily.</paragraph><paragraph>Norgesic Forte:  Adults &#189; to 1 tablet 3 to 4 times daily.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section ID="s11">
+<id root="83757C5F-70E3-AD5D-5666-A621A1E1DF72" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>Norgesic tablets can be identified by their two layers colored white and yellow.  Each round tablet is embossed &#8220;NORGESIC&#8221; on one side and &#8220;3M&#8221; on the other and contains orphenadrine citrate (2-dimethylaminoethyl 2-methylbenzhydryl ether citrate) 25 mg, aspirin 385 mg, and caffeine&#160;30&#160;mg.</paragraph><paragraph>Norgesic Forte tablets are exactly twice the strength of Norgesic.  They are identified by their scored capsule shape and by their two layers colored white and yellow.  Each capsule shaped tablet is embossed &#8220;NORGESIC FORTE&#8221; on one side and &#8220;3M&#8221; on the other and contains orphenadrine citrate 50 mg, aspirin 770 mg, and caffeine 60 mg.</paragraph><paragraph>Norgesic and Norgesic Forte also contain: lactose, polyethylene glycol, povidone, starch, sucrose, zinc stearate, and D&amp;C yellow #10.</paragraph><paragraph>Norgesic: Bottles of 100 tablets (<content styleCode="bold">NDC 0089-0231-10</content>) and 500 tablets (<content styleCode="bold">NDC&#160;0089-0231-50</content>).</paragraph><paragraph>Norgesic Forte: Bottles of 100 tablets (<content styleCode="bold">NDC 0089-0233-10</content>) and 500 tablets (<content styleCode="bold">NDC&#160;0089-0233-50</content>).</paragraph><paragraph>Store below 30&#176;C (86&#176;F).</paragraph><paragraph><content styleCode="bold">Rx only</content></paragraph><paragraph>600600 MAY 1998</paragraph><paragraph><content styleCode="bold">3M Pharmaceuticals</content></paragraph><paragraph>Northridge, CA 91324</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

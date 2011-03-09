@@ -1,0 +1,2634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?>
+<document xmlns:voc="http://www.hl7.org/v3/voc" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+	<id root="CF9BC855-99A4-D3CC-A903-D0B104DC7075"/>
+	<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING"/>
+	<title mediaType="text/x-hl7-title+xml">
+		<content styleCode="bold">CAPTOPRIL AND HYDROCHLOROTHIAZIDE<br/>TABLETS, USP</content>
+	</title>
+	<effectiveTime value="20060216"/>
+	<setId root="0B49725D-6FE6-4D11-BA80-D622FDC054EC"/>
+	<versionNumber value="1"/>
+	<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>Endo Pharmaceuticals Inc.</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<id root="07B3B07B-5DBA-28C3-A99D-8A4BE1C360CA"/>
+					<effectiveTime value="20060216"/>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="60951-733" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Captopril and Hydrochlorothiazide</name>
+								<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="25">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Captopril</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Captopril</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="15">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="15"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Hydrochlorothiazide</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Hydrochlorothiazide</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Captopril and Hydrochlorothiazide</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>lactose monohydrate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>magnesium stearate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>microcrystalline cellulose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>pregelatinized starch</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>stearic acid</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator value="100">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code code="60951-733-70" codeSystem="2.16.840.1.113883.6.69"/>
+										<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE">
+										<originalText>WHITE</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE">
+										<originalText>ROUND</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="true" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="false" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value unit="mm" value="8" xsi:type="PQ"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="4" xsi:type="INT"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value xsi:type="ST">Endo;733</value>
+								</characteristic>
+							</subjectOf>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="60951-741" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Captopril and Hydrochlorothiazide</name>
+								<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="25">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Captopril</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Captopril</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="25">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Hydrochlorothiazide</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Hydrochlorothiazide</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Captopril and Hydrochlorothiazide</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>lactose monohydrate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>magnesium stearate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>microcrystalline cellulose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>pregelatinized starch</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>stearic acid</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator value="100">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code code="60951-741-70" codeSystem="2.16.840.1.113883.6.69"/>
+										<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48331" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORANGE" xsi:type="CE">
+										<originalText>ORANGE</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE">
+										<originalText>ROUND</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="true" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="false" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value unit="mm" value="8" xsi:type="PQ"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="4" xsi:type="INT"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value xsi:type="ST">Endo;741</value>
+								</characteristic>
+							</subjectOf>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="60951-739" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Captopril and Hydrochlorothiazide</name>
+								<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="50">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="50"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Captopril</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Captopril</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="15">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="15"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Hydrochlorothiazide</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Hydrochlorothiazide</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Captopril and Hydrochlorothiazide</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>lactose monohydrate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>magnesium stearate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>microcrystalline cellulose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>pregelatinized starch</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>stearic acid</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator value="100">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code code="60951-739-70" codeSystem="2.16.840.1.113883.6.69"/>
+										<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE">
+										<originalText>WHITE</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE">
+										<originalText>ROUND</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="true" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="false" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value unit="mm" value="9" xsi:type="PQ"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="2" xsi:type="INT"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value xsi:type="ST">Endo;739</value>
+								</characteristic>
+							</subjectOf>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+					<subject>
+						<manufacturedProduct>
+							<manufacturedMedicine>
+								<code code="60951-731" codeSystem="2.16.840.1.113883.6.69"/>
+								<name>Captopril and Hydrochlorothiazide</name>
+								<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="50">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="50"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Captopril</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="9G64RSX1XD" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Captopril</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<activeIngredient>
+									<quantity>
+										<numerator unit="mg" value="25">
+											<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25"/>
+										</numerator>
+										<denominator value="1">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1"/>
+										</denominator>
+									</quantity>
+									<activeIngredientSubstance>
+										<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>Hydrochlorothiazide</name>
+										<activeMoiety>
+											<activeMoiety>
+												<code code="0J48LPH2TH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+												<name>Hydrochlorothiazide</name>
+											</activeMoiety>
+										</activeMoiety>
+									</activeIngredientSubstance>
+								</activeIngredient>
+								<asEntityWithGeneric>
+									<genericMedicine>
+										<name>Captopril and Hydrochlorothiazide</name>
+									</genericMedicine>
+								</asEntityWithGeneric>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>lactose monohydrate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>magnesium stearate</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>microcrystalline cellulose</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<name>pregelatinized starch</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<inactiveIngredient>
+									<inactiveIngredientSubstance>
+										<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS"/>
+										<name>stearic acid</name>
+									</inactiveIngredientSubstance>
+								</inactiveIngredient>
+								<asContent>
+									<quantity>
+										<numerator value="100">
+											<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100"/>
+										</numerator>
+										<denominator value="1">
+											<translation value="1"/>
+										</denominator>
+									</quantity>
+									<containerPackagedMedicine>
+										<code code="60951-731-70" codeSystem="2.16.840.1.113883.6.69"/>
+										<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+									</containerPackagedMedicine>
+								</asContent>
+							</manufacturedMedicine>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48331" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORANGE" xsi:type="CE">
+										<originalText>ORANGE</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE">
+										<originalText>ROUND</originalText>
+									</value>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="true" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="false" xsi:type="BL"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value unit="mm" value="9" xsi:type="PQ"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value value="2" xsi:type="INT"/>
+								</characteristic>
+							</subjectOf>
+							<subjectOf>
+								<characteristic classCode="OBS">
+									<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+									<value xsi:type="ST">Endo;731</value>
+								</characteristic>
+							</subjectOf>
+							<consumedIn>
+								<substanceAdministration>
+									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+								</substanceAdministration>
+							</consumedIn>
+						</manufacturedProduct>
+					</subject>
+				</section>
+			</component>
+			<component>
+				<section ID="SD736C2BB-A38C-4975-A1E3-BD1F0EC9CAC8">
+					<id root="33F9A483-CA3C-5C08-E758-AA9DD35028E6"/>
+					<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BOXED WARNING SECTION"/>
+					<text>
+						<paragraph>
+							<content styleCode="bold">USE IN PREGNANCY</content>
+							<br/>
+							<content styleCode="bold">When used in pregnancy during the second
+                                and third trimesters, ACE inhibitors can cause injury and even death
+                                to the developing fetus. </content>When pregnancy is detected,        Captopril and Hydrochlorothiazide should be discontinued as soon as
+                            possible. <content styleCode="bold">See <linkHtml href="#SCC1D9261-A090-4EED-9B40-B8882FBEDA01">WARNINGS:
+                                    Captopril, Fetal/Neonatal Morbidity and
+                            Mortality</linkHtml>.</content>
+						</paragraph>
+					</text>
+					<effectiveTime value="20060216"/>
+				</section>
+			</component>
+			<component>
+				<section ID="S606D0CEC-6027-49F1-9181-222E90D339D5">
+					<id root="128A2758-A197-D0CF-15AB-9B1C31D736BB"/>
+					<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION"/>
+					<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+					<text>
+						<paragraph>Captopril and hydrochlorothiazide are two oral antihypertensive
+                            agents. Captopril, the first of a new class of antihypertensive agents,
+                            is a specific competitive inhibitor of angiotensin I-converting enzyme
+                            (ACE), the enzyme responsible for the conversion of angiotensin I to
+                            angiotensin II. Hydrochlorothiazide is a benzothiadiazide (thiazide)
+                            diuretic-antihypertensive.</paragraph>
+						<paragraph>Captopril is a white to off-white crystalline powder that may
+                            have a slight sulfurous odor; it is soluble in water (approx. 160
+                            mg/mL), methanol, and ethanol and sparingly soluble in chloroform and
+                            ethyl acetate. </paragraph>
+						<paragraph>Hydrochlorothiazide is a white crystalline powder slightly
+                            soluble in water but freely soluble in sodium hydroxide solution.</paragraph>
+						<paragraph>Captopril is designated chemically as                   1-[(2S)-3-Mercapto-2-methylpropionyl]-L-proline; hydrochlorothiazide is
+                                6-Chloro-3,4-dihydro-2<content styleCode="italics">H</content>-1,2,4-benzothiadiazine-7-sulfonamide 1,1-dioxide. Their
+                            structural formulas are:</paragraph>
+						<paragraph>
+							<renderMultiMedia referencedObject="MM10"/>
+						</paragraph>
+						<paragraph>Each tablet, for oral administration, contains captopril and
+                            hydrochlorothiazide, 25 mg/15 mg, 25 mg/25 mg, 50 mg/15 mg, or 50 mg/25                          mg. In addition, each tablet contains the following inactive
+                            ingredients: lactose monohydrate, magnesium stearate, microcrystalline
+                            cellulose, pregelatinized starch and stearic acid. In addition, colorant
+                            (FD&amp;C Yellow No. 6) is contained in the 25 mg/25 mg and 50 mg/25
+                            mg tablets.</paragraph>
+					</text>
+					<effectiveTime value="20060216"/>
+					<component>
+						<observationMedia ID="MM10">
+							<value mediaType="image/jpg" xsi:type="ED">
+								<reference value="captopril-and-hydrochlorothiazide-figure-1.jpg"/>
+							</value>
+						</observationMedia>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="SCCC5CBEB-854C-43E0-BCC8-DC43163F71D5">
+					<id root="EC6E6352-D059-65AC-F9F5-294E9B2EA6E8"/>
+					<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY"/>
+					<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+					<effectiveTime value="20060216"/>
+					<component>
+						<section ID="SC6385103-0859-4CD9-B66E-3A5590C430FB">
+							<id root="5381761F-BA87-FBE8-517B-6F70D88A44CF"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Captopril</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="S1A01E63A-D99C-4FCA-A165-8592559B78A7">
+									<id root="9A200422-7BF2-35DF-4BBC-7988230C28E7"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Mechanism of Action</title>
+									<text>
+										<paragraph>The mechanism of action of captopril has not yet
+                                            been fully elucidated. Its beneficial effects in
+                                            hypertension and heart failure appear to result
+                                            primarily from suppression of the
+                                            renin-angiotensin-aldosterone system. However, there is
+                                            no consistent correlation between renin levels and
+                                            response to the drug. Renin, an enzyme synthesized by
+                                            the kidneys, is released into the circulation where it
+                                            acts on a plasma globulin substrate to produce
+                                            angiotensin I, a relatively inactive decapeptide.
+                                            Angiotensin I is then converted by angiotensin
+                                            converting enzyme (ACE) to angiotensin II, a potent
+                                            endogenous vasoconstrictor substance. Angiotensin II
+                                            also stimulates aldosterone secretion from the adrenal
+                                            cortex, thereby contributing to sodium and fluid
+                                            retention. </paragraph>
+										<paragraph>Captopril prevents the conversion of angiotensin
+                                            I to angiotensin II by inhibition of ACE, a
+                                            peptidyldipeptide carboxy hydrolase. This inhibition has
+                                            been demonstrated in both healthy human subjects and in
+                                            animals by showing that the elevation of blood pressure
+                                            caused by exogenously administered angiotensin I was
+                                            attenuated or abolished by captopril. In animal studies,
+                                            captopril did not alter the pressor responses to a
+                                            number of other agents, including angiotensin II and
+                                            norepinephrine, indicating specificity of action.</paragraph>
+										<paragraph>ACE is identical to&#8220;bradykininase&#8221;, and captopril may
+                                            also interfere with the degradation of the vasodepressor
+                                            peptide, bradykinin. Increased concentrations of
+                                            bradykinin or prostaglandin E<sub>2</sub> may also have
+                                            a role in the therapeutic effect of captopril.</paragraph>
+										<paragraph>Inhibition of ACE results in decreased plasma
+                                            angiotensin II and increased plasma renin activity
+                                            (PRA), the latter resulting from loss of negative
+                                            feedback on renin release caused by reduction in
+                                            angiotensin II. The reduction of angiotensin II leads to
+                                            decreased aldosterone secretion, and, as a result, small
+                                            increases in serum potassium may occur along with sodium
+                                            and fluid loss.</paragraph>
+										<paragraph>The antihypertensive effects persist for a longer
+                                            period of time than does demonstrable inhibition of
+                                            circulating ACE. It is not known whether the ACE present
+                                            in vascular endothelium is inhibited longer than the ACE
+                                            in circulating blood.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S2DC53154-62DF-428F-B89A-A2C4566F5F43">
+									<id root="49A47719-DE31-7A29-50E1-C517932A843A"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Pharmacokinetics</title>
+									<text>
+										<paragraph>After oral administration of therapeutic doses of
+                                            captopril, rapid absorption occurs with peak blood
+                                            levels at about one hour. The presence of food in the
+                                            gastrointestinal tract reduces absorption by about 30 to                 40 percent; captopril therefore should be given one hour
+                                            before meals. Based on carbon-14 labeling, average
+                                            minimal absorption is approximately 75 percent. In a
+                                            24-hour period, over 95 percent of the absorbed dose is
+                                            eliminated in the urine; 40 to 50 percent is unchanged
+                                            drug; most of the remainder is the disulfide dimer of
+                                            captopril and captopril-cysteine disulfide.</paragraph>
+										<paragraph>Approximately 25 to 30 percent of the circulating
+                                            drug is bound to plasma proteins. The apparent
+                                            elimination half-life for total radioactivity in blood
+                                            is probably less than three hours. An accurate
+                                            determination of half-life of unchanged captopril is
+                                            not, at present, possible, but it is probably less than
+                                            two hours. In patients with renal impairment, however,
+                                            retention of captopril occurs (see <linkHtml href="#S752E7393-5D07-4A52-90E8-958DE89434A6">DOSAGE
+                                                AND ADMINISTRATION</linkHtml>).</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S41098F9A-4269-43E9-9729-B5CDE540A5C8">
+									<id root="3AA122DB-1F7B-8CAD-4DF0-B2D3A9AF8EE5"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Pharmacodynamics</title>
+									<text>
+										<paragraph>Administration of captopril results in a
+                                            reduction of peripheral arterial resistance in
+                                            hypertensive patients with either no change, or an
+                                            increase, in cardiac output. There is an increase in
+                                            renal blood flow following administration of captopril
+                                            and glomerular filtration rate is usually unchanged. In
+                                            patients with heart failure, significantly decreased
+                                            peripheral (systemic vascular) resistance and blood
+                                            pressure (afterload), reduced pulmonary capillary wedge
+                                            pressure (preload) and pulmonary vascular resistance,
+                                            increased cardiac output, and increased exercise
+                                            tolerance time (ETT) have been demonstrated.</paragraph>
+										<paragraph>Reductions of blood pressure are usually maximal
+                                            60 to 90 minutes after oral administration of an
+                                            individual dose of captopril. The duration of effect is             dose related and is extended in the presence of a
+                                            thiazide-type diuretic. The full effect of a given dose
+                                            may not be attained for 6 to 8 weeks (see <linkHtml href="#S752E7393-5D07-4A52-90E8-958DE89434A6">DOSAGE
+                                                AND ADMINISTRATION</linkHtml>). The blood pressure
+                                            lowering effects of captopril and thiazide-type
+                                            diuretics are additive. In contrast, captopril and
+                                            beta-blockers have a less than additive effect.</paragraph>
+										<paragraph>Blood pressure is lowered to about the same
+                                            extent in both standing and supine positions.
+                                            Orthostatic effects and tachycardia are infrequent but
+                                            may occur in volume-depleted patients. Abrupt withdrawal
+                                            of captopril has not been associated with a rapid
+                                            increase in blood pressure.</paragraph>
+										<paragraph>Studies in rats and cats indicate that captopril
+                                            does not cross the blood-brain barrier to any
+                                            significant extent.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S7061AD21-70FE-4D9B-9220-81A5539C080D">
+							<id root="B3948EE5-87C7-DEBF-3C29-284896803557"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+							<text>
+								<paragraph>Thiazides affect the renal tubular mechanism of                electrolyte reabsorption. At maximal therapeutic dosage all
+                                    thiazides are approximately equal in their diuretic potency. </paragraph>
+								<paragraph>Thiazides increase excretion of sodium and chloride in
+                                    approximately equivalent amounts. Natriuresis causes a secondary
+                                    loss of potassium and bicarbonate.</paragraph>
+								<paragraph>The mechanism of the antihypertensive effect of thiazides
+                                    is unknown. Thiazides do not affect normal blood pressure.</paragraph>
+								<paragraph>The mean plasma half-life of hydrochlorothiazide in
+                                    fasted individuals has been reported to be approximately 2.5
+                                    hours.</paragraph>
+								<paragraph>Onset of diuresis occurs in two hours and the peak effect
+                                    at about four hours. Its action persists for approximately six
+                                    to twelve hours. Hydrochlorothiazide is eliminated rapidly by
+                                    the kidney.</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="SD199C695-4AF1-440D-BC52-B22DC19DC3CB">
+					<id root="6B493AA6-C9C9-9DEF-0E30-EE3D0E49312E"/>
+					<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE"/>
+					<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+					<text>
+						<paragraph>Captopril and Hydrochlorothiazide tablets are indicated for the
+                            treatment of hypertension. The blood pressure lowering effects of
+                            captopril and thiazides are approximately additive. </paragraph>
+						<paragraph>This fixed combination drug may be used as initial therapy or
+                            substituted for previously titrated doses of the individual components.</paragraph>
+						<paragraph>When captopril and hydrochlorothiazide are given together it may
+                            not be necessary to administer captopril in divided doses to attain
+                            blood pressure control at trough (before the next dose). Also, with such
+                            a combination, a daily dose of 15 mg of hydrochlorothiazide may be
+                            adequate.</paragraph>
+						<paragraph>Treatment may, therefore, be initiated with Captopril and
+                            Hydrochlorothiazide tablets 25 mg/15 mg once daily. Subsequent titration
+                            should be with additional doses of the components (captopril,
+                            hydrochlorothiazide) as single agents or as Captopril and
+                            Hydrochlorothiazide tablets 50 mg/15 mg, 25 mg/25 mg, or 50 mg/25 mg
+                            (see <linkHtml href="#S752E7393-5D07-4A52-90E8-958DE89434A6">DOSAGE AND
+                                ADMINISTRATION</linkHtml>).</paragraph>
+						<paragraph>In using Captopril and Hydrochlorothiazide tablets, consideration
+                            should be given to the risk of neutropenia/agranulocytosis (see<linkHtml href="#S6D4C403B-F03C-434B-B6B4-FC9218D99E07">WARNINGS</linkHtml>).</paragraph>
+						<paragraph>Captopril and Hydrochlorothiazide tablets may be used for
+                            patients with normal renal function, in whom the risk is relatively low.
+                            In patients with impaired renal function, particularly those with
+                            collagen vascular disease, Captopril and Hydrochlorothiazide tablets                            should be reserved for hypertensives who have either developed
+                            unacceptable side effects on other drugs, or have failed to respond
+                            satisfactorily to other drug combinations.</paragraph>
+						<paragraph>ACE inhibitors (for which adequate data are available) cause a
+                            higher rate of angioedema in black than in non-black patients (see<linkHtml href="#S68DA1A5D-5D69-4CCF-B8B1-2DF58A95B8B0">WARNINGS:
+                                Angioedema</linkHtml>).</paragraph>
+					</text>
+					<effectiveTime value="20060216"/>
+				</section>
+			</component>
+			<component>
+				<section ID="S30AC706B-ECBC-4A3B-9591-22CB4E9BF781">
+					<id root="F8008B18-B4B6-6201-71F2-9BE8CC19E05B"/>
+					<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS"/>
+					<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+					<effectiveTime value="20060216"/>
+					<component>
+						<section ID="SCB62CF19-C8DB-4F1F-8CCF-B28F16D0D5E5">
+							<id root="1BCB86AB-7068-029F-623B-169F234D1F7C"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Captopril</title>
+							<text>
+								<paragraph>This product is contraindicated in patients who are
+                                    hypersensitive to captopril or any other angiotensin-converting
+                                    enzyme inhibitor (e.g., a patient who has experienced angioedema
+                                    during therapy with any other ACE inhibitor).</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+					<component>
+						<section ID="SEE1F9A26-C351-4920-94C2-1C3395FF4753">
+							<id root="79E8A8C8-FF5F-179C-3268-F29A796C4590"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+							<text>
+								<paragraph>Hydrochlorothiazide is contraindicated in anuria. It is
+                                    also contraindicated in patients who have previously                               demonstrated hypersensitivity to hydrochlorothiazide or other
+                                    sulfonamide-derived drugs.</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="S6D4C403B-F03C-434B-B6B4-FC9218D99E07">
+					<id root="F5138179-2219-2A0A-F5C1-ECE774C8CDB8"/>
+					<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS"/>
+					<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+					<effectiveTime value="20060216"/>
+					<component>
+						<section ID="S20F53A3D-67EB-41FB-ACAA-B344FA886A46">
+							<id root="60852394-EE51-AAE5-DEB3-96AAF6A08DA9"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Captopril</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="S8C7DFCE0-2BF7-4BC5-B068-6F9B86C03341">
+									<id root="9067176B-6457-E491-DEDD-159A8F98CDFE"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Anaphylactoid and Possibly Related Reactions</title>
+									<text>
+										<paragraph>Presumably because angiotensin-converting enzyme
+                                            inhibitors affect the metabolism of eicosanoids and
+                                            polypeptides, including endogenous bradykinin, patients
+                                            receiving ACE inhibitors (including Captopril and
+                                            Hydrochlorothiazide tablets) may be subject to a variety
+                                            of adverse reactions, some of them serious.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S68DA1A5D-5D69-4CCF-B8B1-2DF58A95B8B0">
+									<id root="28BDA1F6-5B9B-3EE7-1423-3BF9437BB124"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Angioedema</title>
+									<text>
+										<paragraph>Angioedema involving the extremities, face, lips,
+                                            mucous membranes, tongue, glottis or larynx has been
+                                            seen in patients treated with ACE inhibitors, including
+                                            captopril. If angioedema involves the tongue, glottis or
+                                            larynx, airway obstruction may occur and be fatal.
+                                            Emergency therapy, including but not necessarily limited                        to, subcutaneous administration of a 1:1000 solution of
+                                            epinephrine should be promptly instituted. </paragraph>
+										<paragraph>Swelling confined to the face, mucous membranes
+                                            of the mouth, lips and extremities has usually resolved
+                                            with discontinuation of treatment; some cases required
+                                            medical therapy. (See&#160;<linkHtml href="#S6A71DAC9-C71E-45C3-BC01-87C0B1C3A85C">PRECAUTIONS: Information for
+                                            Patients</linkHtml>&#160;and <linkHtml href="#S29A07741-3494-4F89-B323-16BBE0634907">ADVERSE REACTIONS:
+                                        Captopril</linkHtml>.)</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S99921428-79CF-4D5D-81FF-9549A3A6DD84">
+									<id root="51A9C62E-61AA-C9C1-211F-C824BD48105D"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Anaphylactoid reactions during desensitization</title>
+									<text>
+										<paragraph>Two patients undergoing desensitizing treatment
+                                            with hymenoptera venom while receiving ACE inhibitors
+                                            sustained life-threatening anaphylactoid reactions. In           the same patients, these reactions were avoided when ACE
+                                            inhibitors were temporarily withheld, but they
+                                            reappeared upon inadvertent rechallenge.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S3C3C19E7-BC88-4843-BA1A-40BC42D90435">
+									<id root="2A749E94-E813-8B76-5D15-7CBDCCB2B0A5"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Anaphylactoid reactions during membrane exposure</title>
+									<text>
+										<paragraph>Anaphylactoid reactions have been reported in
+                                            patients dialyzed with high-flux membranes and treated
+                                            concomitantly with an ACE inhibitor. Anaphylactoid
+                                            reactions have also been reported in patients undergoing
+                                            low-density lipoprotein apheresis with dextran sulfate
+                                            absorption.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S099C4A80-1049-4C44-885E-E2E00DDFD8A5">
+									<id root="41108A01-ABED-02D9-3B61-6D33F6C9D3B4"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Neutropenia/Agranulocytosis</title>
+									<text>
+										<paragraph>Neutropenia (&lt;1000/mm<sup>3</sup>) with
+                                            myeloid hypoplasia has resulted from use of captopril.
+                                            About half of the neutropenic patients developed
+                                            systemic or oral cavity infections or other features of
+                                            the syndrome of agranulocytosis.</paragraph>
+										<paragraph>The risk of neutropenia is dependent on the
+                                            clinical status of the patient:</paragraph>
+										<paragraph>In clinical trials in patients with hypertension
+                                            who have normal renal function (serum creatinine less
+                                            than 1.6 mg/dL and no collagen vascular disease),
+                                            neutropenia has been seen in one patient out of over
+                                            8,600 exposed.</paragraph>
+										<paragraph>In patients with some degree of renal failure
+                                            (serum creatinine at least 1.6 mg/dL) but no collagen
+                                            vascular disease, the risk of neutropenia in clinical
+                                            trials was about 1 per 500, a frequency over 15 times
+                                            that for uncomplicated hypertension. Daily doses of
+                                            captopril were relatively high in these patients,
+                                            particularly in view of their diminished renal function.
+                                            In foreign marketing experience in patients with renal
+                                            failure, use of allopurinol concomitantly with captopril                                        has been associated with neutropenia but this
+                                            association has not appeared in U.S. reports.</paragraph>
+										<paragraph>In patients with collagen vascular diseases
+                                            (e.g., systemic lupus erythematosus, scleroderma) and
+                                            impaired renal function, neutropenia occurred in 3.7
+                                            percent of patients in clinical trials.</paragraph>
+										<paragraph>While none of the over 750 patients in formal
+                                            clinical trials of heart failure developed neutropenia,
+                                            it has occurred during the subsequent clinical
+                                            experience. About half of the reported cases had serum
+                                            creatinine &#8805;1.6 mg/dL and more than 75 percent
+                                            were in patients also receiving procainamide. In heart
+                                            failure, it appears that the same risk factors for
+                                            neutropenia are present.</paragraph>
+										<paragraph>The neutropenia has usually been detected within
+                                            three months after captopril was started. Bone marrow
+                                            examinations in patients with neutropenia consistently
+                                            showed myeloid hypoplasia, frequently accompanied by
+                                            erythroid hypoplasia and decreased numbers of
+                                            megakaryocytes (e.g., hypoplastic bone marrow and
+                                            pancytopenia); anemia and thrombocytopenia were                                         sometimes seen.</paragraph>
+										<paragraph>In general, neutrophils returned to normal in
+                                            about two weeks after captopril was discontinued, and
+                                            serous infections were limited to clinical complex
+                                            patients. About 13 percent of the cases of neutropenia
+                                            have ended fatally, but almost all fatalities were in
+                                            patients with serious illness, having collagen vascular
+                                            disease, renal failure, heart failure or
+                                            immunosuppressant therapy, or a combination of these
+                                            complicating factors.</paragraph>
+										<paragraph>
+											<content styleCode="bold">Evacuation of the hypertensive
+                                                or heart failure patient should always include
+                                                assessment of renal function.</content>
+										</paragraph>
+										<paragraph>If captopril is used in patients with impaired
+                                            renal function, white blood cell and differential counts
+                                            should be evaluated prior to starting treatment and at
+                                            approximately two-week intervals for about three months,
+                                            then periodically.</paragraph>
+										<paragraph>In patients with collagen vascular disease or who
+                                            are exposed to other drugs known to affect the white
+                                            cells or immune response, particularly when there is
+                                            impaired renal function, captopril should be used only
+                                            after assessment of benefit and risk, and then with
+                                            caution.</paragraph>
+										<paragraph>All patients treated with captopril should be
+                                            told to report any signs of infection (e.g., sore
+                                            throat, fever). If infection is suspected, white cell
+                                            counts should be performed without delay.</paragraph>
+										<paragraph>Since discontinuation of captopril and other
+                                            drugs has generally led to prompt return of the white
+                                            count to normal, upon confirmation of neutropenia
+                                            (neutrophils count &lt;1000/mm<sup>3</sup>) the
+                                            physician should withdraw captopril and closely follow
+                                            the patient&#8217;s course.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SE47B8EA2-DCF7-4A0E-8837-0D70757B9D02">
+									<id root="4C4057BE-2238-8787-6849-542D9C598598"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Proteinuria</title>
+									<text>
+										<paragraph>Total urinary proteins greater than 1 g per day
+                                            were seen in about 0.7 percent of patients receiving
+                                            captopril. About 90 percent of affected patients had
+                                            evidence of prior renal disease or received relatively
+                                            high doses of captopril (in excess of 150 mg/day), or
+                                            both. The nephrotic syndrome occurred in about one-fifth
+                                            of proteinuric patients. In most cases, proteinuria
+                                            subsided or cleared within six months whether or not
+                                            captopril was continued. Parameters of renal function,
+                                            such as BUN and creatinine, were seldom altered in the
+                                            patients with proteinuria.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SE3090A53-ECC8-4588-AD1C-49B1DC93BE68">
+									<id root="D559452B-0F9D-3316-BC14-2B2C3FFA6C5A"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hypotension</title>
+									<text>
+										<paragraph>Excessive hypotension was rarely seen in
+                                            hypertensive patients but is a possible consequence of
+                                            captopril use in salt/volume depleted persons (such as
+                                            those treated vigorously with diuretics), patients with
+                                            heart failure or those patients undergoing renal
+                                            dialysis. (See <linkHtml href="#S00239F77-7924-42B6-9B10-4C1FD80BD423">PRECAUTIONS: Drug
+                                        Interactions</linkHtml>.)</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SCC1D9261-A090-4EED-9B40-B8882FBEDA01">
+									<id root="F1E084E2-690F-E31A-2D11-44BB22FB1355"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Fetal/Neonatal Morbidity and Mortality</title>
+									<text>
+										<paragraph>ACE inhibitors can cause fetal and neonatal
+                                            morbidity and death when administered to pregnant women.
+                                            Several dozen cases have been reported in the world
+                                            literature. When pregnancy is detected, ACE inhibitors
+                                            should be discontinued as soon as possible.</paragraph>
+										<paragraph>The use of ACE inhibitors during the second and
+                                            third trimesters of pregnancy has been associated with
+                                            fetal and neonatal injury, including hypotension,
+                                            neonatal skull hypoplasia, anuria, reversible or
+                                            irreversible renal failure, and death. Oligohydramnios
+                                            has also been reported, presumably resulting from
+                                            decreased fetal renal function; oligohydramnios in this
+                                            setting has been associated with fetal limb
+                                            contractures, craniofacial deformation, and hypoplastic
+                                            lung development. Prematurity, intrauterine growth
+                                            retardation, and patent ductus arteriosus have also been
+                                            reported, although it is not clear whether these
+                                            occurrences were due to the ACE-inhibitor exposure.</paragraph>
+										<paragraph>These adverse effects do not appear to have
+                                            resulted from intrauterine ACE-inhibitor exposure that
+                                            has been limited to the first trimester. Mothers whose
+                                            embryos and fetuses are exposed to ACE inhibitors only
+                                            during the first trimester should be so informed.           Nonetheless, when patients become pregnant, physicians
+                                            should make every effort to discontinue the use of
+                                            captopril as soon as possible.</paragraph>
+										<paragraph>Rarely (probably less often than once in every
+                                            thousand pregnancies), no alternative to ACE inhibitors
+                                            will be found. In these rare cases, the mothers should
+                                            be apprised of the potential hazards to their fetuses,
+                                            and serial ultrasound examinations should be performed
+                                            to assess the intraamniotic environment.</paragraph>
+										<paragraph>If oligohydramnios is observed, captopril should
+                                            be discontinued unless it is considered life-saving for
+                                            the mother. Contraction stress testing (CST), a
+                                            non-stress test (NST), or biophysical profiling (BPP)
+                                            may be appropriate, depending upon the week of
+                                            pregnancy. Patients and physicians should be aware,
+                                            however, that oligohydramnios may not appear until after
+                                            the fetus has sustained irreversible injury.</paragraph>
+										<paragraph>Infants with histories of <content styleCode="italics">in utero</content> exposure to
+                                            ACE inhibitors should be closely observed for
+                                            hypotension, oliguria, and hyperkalemia. If oliguria
+                                            occurs, attention should be directed toward support of
+                                            blood pressure and renal perfusion. Exchange transfusion
+                                            or dialysis may be required as a means of reversing
+                                            hypotension and/or substituting for disordered renal
+                                            function. While captopril may be removed from the adult
+                                            circulation by hemodialysis, there is inadequate data
+                                            concerning the effectiveness of hemodialysis for
+                                            removing it from the circulation of neonates or
+                                            children. Peritoneal dialysis is not effective for
+                                            removing captopril; there is no information concerning
+                                            exchange transfusion for removing captopril from the
+                                            general circulation.</paragraph>
+										<paragraph>When captopril was given to rabbits at doses
+                                            about 0.8 to 70 times (on a mg/kg basis) the maximum
+                                            recommended human dose, low incidences of craniofacial
+                                            malformations were seen. N0 teratogenic effects of
+                                            captopril were seen in studies of pregnant rats and
+                                            hamsters. On a mg/kg basis, the doses used were up to
+                                            150 times (in hamsters) and 625 times (in rats) the
+                                            maximum recommended human dose.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SDB683824-6837-4B1B-A087-62E4EC2F8D92">
+									<id root="EF7F1ECC-67D5-99AA-E5C9-CCEC198E027D"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hepatic Failure</title>
+									<text>
+										<paragraph>Rarely, ACE inhibitors have been associated with
+                                            a syndrome that starts with cholestatic jaundice and
+                                            progresses to fulminant hepatic necrosis and (sometimes)
+                                            death. The mechanism of this syndrome is not understood.
+                                            Patients receiving ACE inhibitors who develop jaundice
+                                            or marked elevations of hepatic enzymes should
+                                            discontinue the ACE inhibitor and receive appropriate
+                                            medical follow-up.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S48E1893B-ACBF-4F3D-811C-410CA0E15EBC">
+							<id root="97F305C6-2CFD-4979-61D2-3EFC91CE6109"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+							<text>
+								<paragraph>Thiazides should be used with caution in severe renal
+                                    disease. In patients with renal disease, thiazides may
+                                    precipitate azotemia. Cumulative effects of the drug may develop
+                                    in patients with impaired renal function. </paragraph>
+								<paragraph>Thiazides should be used with caution in patients with
+                                    impaired hepatic function or progressive liver disease, since
+                                    minor alterations of fluid and electrolyte balance may
+                                    precipitate hepatic coma. </paragraph>
+								<paragraph>Sensitivity reactions may occur in patients with or
+                                    without a history of allergy or bronchial asthma. </paragraph>
+								<paragraph>The possibility of exacerbation or activation of systemic
+                                    lupus erythematosus has been reported. </paragraph>
+								<paragraph>In general, lithium should not be given with diuretics
+                                    (see <linkHtml href="#S8CB6367F-E1DE-4EFC-8821-E8512B022BC6">PRECAUTIONS: Drug Interactions,
+                                    Hydrochlorothiazide</linkHtml>).</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="S8CDFE52C-D917-4E32-A56C-F235126FA404">
+					<id root="40B7E691-3A5C-1CFF-B647-622FE1EA89C3"/>
+					<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS"/>
+					<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+					<effectiveTime value="20060216"/>
+					<component>
+						<section ID="SD5F90B14-7D72-4E57-A604-656378D2224E">
+							<id root="7CC2F140-4296-D284-F5DA-E3DA8C92D700"/>
+							<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS"/>
+							<title mediaType="text/x-hl7-title+xml">General</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="SCAC058B4-2552-40F0-B123-938718E6484C">
+									<id root="02D2F666-F15C-BB61-FBED-5EE5383C625E"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Captopril</title>
+									<effectiveTime value="20060216"/>
+									<component>
+										<section ID="S7D0A415C-475A-45FA-8C4E-C316315A25CF">
+											<id root="E9B2142C-2E05-B98A-8F2B-7EAC1DC57EC8"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Impaired Renal Function</title>
+											<text>
+												<paragraph>Some patients with renal disease,
+                                                  particularly those with severe renal artery
+                                                  stenosis, have developed increases in BUN and
+                                                  serum creatinine after reduction of blood
+                                                  pressure with captopril. Captopril dosage
+                                                  reduction and/or discontinuation of diuretic may
+                                                  be required. For some of these patients, it may
+                                                  not be possible to normalize blood pressure and
+                                                  maintain adequate renal perfusion (see <linkHtml href="#SCCC5CBEB-854C-43E0-BCC8-DC43163F71D5">CLINICAL PHARMACOLOGY</linkHtml>, <linkHtml href="#S752E7393-5D07-4A52-90E8-958DE89434A6">DOSAGE AND ADMINISTRATION</linkHtml>,<linkHtml href="#S61981536-EE69-4696-BBCE-56508AC9E9A2">ADVERSE REACTIONS: Altered Laboratory
+                                                  Findings</linkHtml>).</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S18089810-C4FA-4CBC-AB0D-8159E9B0516B">
+											<id root="E2735EED-C4E6-1436-91AF-5AF05A6A86CF"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Hyperkalemia</title>
+											<text>
+												<paragraph>Elevations in serum potassium have been
+                                                  observed in some patients treated with ACE                                           inhibitors, including captopril. When treated
+                                                  with ACE inhibitors, patients at risk for the
+                                                  development of hyperkalemia include those with:
+                                                  renal insufficiency; diabetes mellitus; and
+                                                  those using concomitant potassium-sparing
+                                                  diuretics, potassium supplements or
+                                                  potassium-containing salt substitutes; or other
+                                                  drugs associated with increases in serum
+                                                  potassium. (See&#160;<linkHtml href="#S6A71DAC9-C71E-45C3-BC01-87C0B1C3A85C">PRECAUTIONS: Information for
+                                                  Patients</linkHtml> and <linkHtml href="#S4B7DC53A-B563-47FC-909E-94CF4E248AB5">Drug Interactions, Captopril</linkHtml>;<linkHtml href="#S61981536-EE69-4696-BBCE-56508AC9E9A2">ADVERSE REACTIONS: Altered Laboratory
+                                                  Findings</linkHtml>.)</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S5C30395E-04BA-4CA9-9CD7-5B1E1EB3EEAA">
+											<id root="A6D201A3-63CF-9CE3-011D-3FF383B65C1F"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Cough</title>
+											<text>
+												<paragraph>Presumably due to the inhibition of the
+                                                  degradation of endogenous bradykinin, persistent
+                                                  nonproductive cough has been reported with all                          ACE inhibitors, always resolving after
+                                                  discontinuation of therapy. ACE
+                                                  inhibitor-induced cough should be considered in
+                                                  the differential diagnosis of cough.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S30471A56-25FD-4CB4-BADD-ECCE8E977C4D">
+											<id root="A7446E2C-518D-BC1F-7C47-99A419518CE1"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Surgery/Anesthesia</title>
+											<text>
+												<paragraph>In patients undergoing major surgery or
+                                                  during anesthesia with agents that produce
+                                                  hypotension, captopril will block angiotensin II
+                                                  formation secondary to compensatory renin
+                                                  release. If hypotension occurs and is considered
+                                                  to be due to this mechanism, it can be corrected
+                                                  by volume exposure.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S896196D0-C248-48EF-9135-7938B0805E28">
+											<id root="B2EB63CA-8504-5704-7031-AACEDD80960E"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Hemodialysis</title>
+											<text>
+												<paragraph>Recent clinical observations have shown                                         an association of hypersensitivity-like
+                                                  (anaphylactoid) reactions during hemodialysis
+                                                  with high-flux dialysis membranes (e.g., AN69)
+                                                  in patients receiving ACE inhibitors as
+                                                  medication. In these patients, consideration
+                                                  should be given to using a different type of
+                                                  dialysis membrane or a different class of
+                                                  medication. (See <linkHtml href="#S3C3C19E7-BC88-4843-BA1A-40BC42D90435">WARNINGS: Captopril: Anaphylactoid
+                                                  reactions during membrane
+                                                  exposure</linkHtml>.)</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component>
+								<section ID="S4494C826-7321-4A35-B732-8853013419FC">
+									<id root="B93933BA-87F0-2DA6-487D-8F4B56121EA7"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+									<text>
+										<paragraph>Periodic determination of serum electrolytes to
+                                            detect possible electrolyte imbalance should be performed at appropriate intervals.</paragraph>
+										<paragraph>All patients receiving thiazide therapy should be
+                                            observed for clinical signs of fluid or electrolyte
+                                            imbalance, namely: hyponatremia, hypochloremic
+                                            alkalosis, and hypokalemia. Serum and urine electrolyte
+                                            determinations are particularly important when the
+                                            patient is vomiting excessively or receiving parenteral
+                                            fluids. Warning signs or symptoms of fluid and
+                                            electrolyte imbalance may include: dryness of mouth,
+                                            thirst, weakness, lethargy, drowsiness, restlessness,
+                                            muscle pains or cramps, muscular fatigue, hypotension,
+                                            oliguria, tachycardia, and gastrointestinal disturbances
+                                            such as nausea and vomiting.</paragraph>
+										<paragraph>Hypokalemia may develop, especially with brisk
+                                            diuresis, or when severe cirrhosis is present.
+                                            Interference with adequate oral electrolyte intake will
+                                            also contribute to hypokalemia. Hypokalemia can
+                                            sensitize or exaggerate the response of the heart to the
+                                            toxic effects of digitalis (e.g., increased ventricular
+                                            irritability). Because captopril reduces the production
+                                            of aldosterone, concomitant therapy with captopril
+                                            reduces the diuretic-induced hypokalemia. Fewer patients
+                                            may require potassium supplements and/or foods with a
+                                            high potassium content (see <linkHtml href="#S433ACD18-EC11-475D-A328-51113E443742">Drug
+                                                Interactions, Agents Increasing Serum
+                                            Potassium</linkHtml>).</paragraph>
+										<paragraph>Any chloride deficit is generally mild and
+                                            usually does not require specific treatment except under
+                                            extraordinary circumstances (as in liver disease or
+                                            renal disease). Dilutional hyponatremia may occur in
+                                            edematous patients in hot weather; appropriate therapy
+                                            is water restriction, rather than administration of salt
+                                            except in rare instances when the hyponatremia is
+                                            life-threatening. In actual salt depletion, appropriate
+                                            replacement is the therapy of choice. </paragraph>
+										<paragraph>Hyperuricemia may occur or frank gout may be
+                                            precipitated in certain patients receiving thiazide
+                                            therapy.</paragraph>
+										<paragraph>Latent diabetes mellitus may become manifest
+                                            during thiazide administration. </paragraph>
+										<paragraph>The antihypertensive effect of thiazide diuretics
+                                            may be enhanced in the postsympathectomy patient.</paragraph>
+										<paragraph>If progressive renal impairment becomes evident,
+                                            as indicated by a rising nonprotein nitrogen or blood
+                                            urea nitrogen (BUN), a careful reappraisal of therapy is
+                                            necessary with consideration given to withholding or
+                                            discontinuing diuretic therapy. </paragraph>
+										<paragraph>Thiazides may decrease serum PBI levels without
+                                            signs of thyroid disturbance. </paragraph>
+										<paragraph>Calcium excretion is decreased by thiazides.
+                                            Pathological changes in the parathyroid gland with
+                                            hypercalcemia and hypophosphatemia have been observed in
+                                            a few patients on prolonged thiazide therapy. The common
+                                            complications of hyperparathyroidism such as renal
+                                            lithiasis, bone resorption, and peptic ulceration have
+                                            not been seen. Thiazides should be discontinued before
+                                            carrying out tests for parathyroid function. </paragraph>
+										<paragraph>Thiazides have been shown to increase the urinary
+                                            excretion of magnesium; this may result in
+                                            hypomagnesemia.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S6A71DAC9-C71E-45C3-BC01-87C0B1C3A85C">
+							<id root="D052813C-25EC-2D5C-55DD-CFCFF5843523"/>
+							<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INFORMATION FOR PATIENTS"/>
+							<title mediaType="text/x-hl7-title+xml">Information for Patients</title>
+							<text>
+								<paragraph>Patients should be advised to immediately report to their
+                                    physician any signs or symptoms suggesting angioedema (e.g.,
+                                    swelling of face, eyes, lips, tongue, larynx and extremities;
+                                    difficulty in swallowing or breathing; hoarseness) and to
+                                    discontinue therapy. (See <linkHtml href="#S68DA1A5D-5D69-4CCF-B8B1-2DF58A95B8B0">WARNINGS:
+                                        Captopril: Angioedema</linkHtml>.)</paragraph>
+								<paragraph>Patients should be told to report promptly any indication
+                                    of infection (e.g., sore throat, fever), which may be a sign of
+                                    neutropenia, or of progressive edema which might be related to
+                                    proteinuria and nephrotic syndrome.</paragraph>
+								<paragraph>All patients should be cautioned that excessive
+                                    perspiration and dehydration may lead to an excessive fall in
+                                    blood pressure because of reduction in fluid volume. Other
+                                    causes of volume depletion such as vomiting or diarrhea may also
+                                    lead to a fall in blood pressure; patients should be advised to
+                                    consult with the physician.</paragraph>
+								<paragraph>Patients should be advised not to use potassium-sparing
+                                    diuretics, potassium supplements or potassium-containing salt
+                                    substitutes without consulting their physicians.
+                                        (See&#160;<linkHtml href="#SD5F90B14-7D72-4E57-A604-656378D2224E">PRECAUTIONS:
+                                        General</linkHtml> and <linkHtml href="#S4B7DC53A-B563-47FC-909E-94CF4E248AB5">Drug
+                                        Interactions, Captopril</linkHtml>; <linkHtml href="#S29A07741-3494-4F89-B323-16BBE0634907">ADVERSE
+                                        REACTIONS: Captopril</linkHtml>.)</paragraph>
+								<paragraph>Patients should be warned against interruption or
+                                    discontinuation of medication unless instructed by the
+                                    physician. </paragraph>
+								<paragraph>Heart failure patients on captopril therapy should be
+                                    cautioned against rapid increases in physical activity.</paragraph>
+								<paragraph>Patients should be informed that Captopril and
+                                    Hydrochlorothiazide tablets should be taken one hour before
+                                    meals (see <linkHtml href="#S752E7393-5D07-4A52-90E8-958DE89434A6">DOSAGE AND
+                                        ADMINISTRATION</linkHtml>).</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+					<component>
+						<section ID="S477BB88A-BD5F-454B-BA4A-C87112EBC167">
+							<id root="AB4ACF2B-B1CB-B95C-8E43-71CBE4A98880"/>
+							<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY"/>
+							<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+							<text>
+								<paragraph>Female patients of childbearing age should be told about
+                                    the consequences of second- and third-trimester exposure to ACE
+                                    inhibitors, and they should also be told that these consequences
+                                    do not appear to have resulted from intrauterine ACE-inhibitor
+                                    exposure that has been limited to the first trimester. These
+                                    patients should be asked to report pregnancies to their
+                                    physicians as soon as possible.</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+					<component>
+						<section ID="SDF64FCB5-FC5E-49CB-82D7-5DFDDB81CA73">
+							<id root="78E9FE2A-F580-A213-EBDD-7EE905BB9CD2"/>
+							<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LABORATORY TESTS"/>
+							<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+							<text>
+								<paragraph>Serum electrolyte levels should be regularly monitored
+                                        (see&#160;<linkHtml href="#S20F53A3D-67EB-41FB-ACAA-B344FA886A46">WARNINGS:                         Captopril</linkHtml> and <linkHtml href="#S48E1893B-ACBF-4F3D-811C-410CA0E15EBC">Hydrochlorothiazide</linkHtml>; <linkHtml href="#S4494C826-7321-4A35-B732-8853013419FC">PRECAUTIONS:
+                                        General, Hydrochlorothiazide</linkHtml>).</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+					<component>
+						<section ID="S00239F77-7924-42B6-9B10-4C1FD80BD423">
+							<id root="A33CBF17-7546-23FF-AC8A-7343F3A295FF"/>
+							<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS"/>
+							<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="S4B7DC53A-B563-47FC-909E-94CF4E248AB5">
+									<id root="1CB645C0-FFED-B9CD-214F-92496F8BE009"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Captopril</title>
+									<effectiveTime value="20060216"/>
+									<component>
+										<section ID="S25ED4773-E310-4260-9E7F-D8741EB68127">
+											<id root="42A0A9EE-170F-78E4-5EF9-BDB9B989446A"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Hypotension &#8211; Patients on Diuretic
+                                                Therapy</title>
+											<text>
+												<paragraph>Patients on diuretics and especially
+                                                  those in whom diuretic therapy was recently
+                                                  instituted, as well as those on severe dietary
+                                                  salt restriction or dialysis, may occasionally     experience a precipitous reduction of blood                                        pressure usually within the first hour after
+                                                  receiving the initial dose of captopril.</paragraph>
+												<paragraph>The possibility of hypotensive effects
+                                                  with captopril can be minimized by either
+                                                  discontinuing the diuretic or increasing the
+                                                  salt intake approximately one week prior to
+                                                  initiation of treatment with captopril or
+                                                  initiating therapy with small doses (6.25 or
+                                                  12.5 mg). Alternatively, provide medical
+                                                  supervision for at least one hour after the
+                                                  initial dose. If hypotension occurs, the patient
+                                                  should be placed in a supine position and, if
+                                                  necessary, receive an intravenous infusion of
+                                                  normal saline. This transient hypotensive
+                                                  response is not a contraindication to further
+                                                  doses which can be given without difficulty once
+                                                  the blood pressure has increased after volume
+                                                  expansion.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S2F5E5476-01C6-440D-AE11-EA004FEBABFA">
+											<id root="9B7539D3-D77E-AE35-3A85-764A1ADD48E5"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Agents Having Vasodilator Activity</title>
+											<text>
+												<paragraph>Data on the effect of concomitant use of
+                                                  other vasodilators in patients receiving
+                                                  captopril for heart failure are not available;
+                                                  therefore, nitroglycerin or other nitrates (as
+                                                  used for management of angina) or other drugs
+                                                  having vasodilator activity should, if possible,
+                                                  be discontinued before starting captopril. If
+                                                  resumed during captopril therapy, such agents
+                                                  should be administered cautiously, and perhaps
+                                                  at lower dosage.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SD1587694-BE1F-46A5-8509-01ABFAD378A7">
+											<id root="DFF7FE60-A7AE-E485-20E4-0605CC316751"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Agents Causing Renin Release</title>
+											<text>
+												<paragraph>Captopril&#8217;s effect will be
+                                                  augmented by antihypertensive agents that cause
+                                                  renin release. For example, diuretics (e.g.,
+                                                  thiazides) may activate the
+                                                  renin-angiotensin-aldosterone        system.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S83843F15-0FD8-44E2-B71C-3C11183A589D">
+											<id root="3A1E7908-25BE-7A73-878C-F1001A51E64F"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Agents Affecting Sympathetic Activity</title>
+											<text>
+												<paragraph>The sympathetic nervous system may be
+                                                  especially important in supporting blood
+                                                  pressure in patients receiving captopril alone
+                                                  or with diuretics. Therefore, agents affecting
+                                                  sympathetic activity (e.g., ganglionic blocking
+                                                  agents or adrenergic neuron blocking agents)                                  should be used with caution. Beta-adrenergic
+                                                  blocking drugs add some further antihypertensive
+                                                  effect to captopril, but the overall response is
+                                                  less than additive.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S433ACD18-EC11-475D-A328-51113E443742">
+											<id root="983C6244-BB01-2152-E5E9-A3A66B377F07"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Agents Increasing Serum Potassium</title>
+											<text>
+												<paragraph>Since captopril decreases aldosterone
+                                                  production, elevation of serum potassium may
+                                                  occur. Potassium-sparing diuretics such as
+                                                  spironolactone, triamterene, or amiloride, or
+                                                  potassium supplements, should be given only for
+                                                  documented hypokalemia, and then with caution,
+                                                  since they may lead to a significant increase of
+                                                  serum potassium. Salt substitutes containing
+                                                  potassium should also be used with
+                                                caution.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SD9E63EA8-7834-4967-8E33-40291AB968B3">
+											<id root="298EB71A-2598-166E-A7DD-8EAAB073AD5A"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Inhibitors Of Endogenous Prostaglandin Synthesis</title>
+											<text>
+												<paragraph>It has been reported that indomethacin
+                                                  may reduce the antihypertensive effect of
+                                                  captopril, especially in cases of low renin
+                                                  hypertension. Other nonsteroidal
+                                                  anti-inflammatory agents (e.g., aspirin) may
+                                                  also have this effect.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S0A5A15EA-3074-4C72-B4BE-25D55634A5E0">
+											<id root="24445654-6C0E-0F7C-1F4B-E08CD3608DD8"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Lithium</title>
+											<text>
+												<paragraph>Increased serum lithium levels and
+                                                  symptoms of lithium toxicity have been reported
+                                                  in patients receiving concomitant lithium and
+                                                  ACE inhibitor therapy. These drugs should be
+                                                  coadministered with caution and frequent
+                                                  monitoring of serum lithium levels is
+                                                  recommended. If a diuretic is also used, it may
+                                                  increase the risk of lithium toxicity (see<linkHtml href="#SC8521EA8-5ED2-49EE-84FF-566451956645">PRECAUTIONS: Drug Interactions,
+                                                  Hydrochlorothiazide,
+                                                Lithium</linkHtml>).</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component>
+								<section ID="S8CB6367F-E1DE-4EFC-8821-E8512B022BC6">
+									<id root="B51D3115-DC12-6531-6B65-D6178E215ED9"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+									<text>
+										<paragraph>When administered concurrently the following
+                                            drugs may interact with thiazide diuretics:</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+									<component>
+										<section ID="S4741B21A-8D08-4CE0-B099-300E79251E4F">
+											<id root="89520FB6-5557-324A-F84E-C7C3629C1B48"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Alcohol, barbiturates, or narcotics &#8211;</title>
+											<text>
+												<paragraph>potentiation of orthostatic hypotension
+                                                  may occur.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S3CDB7813-FF9E-4E2C-9C54-A1D93A815B02">
+											<id root="A1193BEF-5738-BD16-6C3E-B9D77FF95720"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Amphotericin B, corticosteroids, or
+                                                corticotrophin (ACTH) &#8211;</title>
+											<text>
+												<paragraph>may intensify electrolyte imbalance,
+                                                  particularly hypokalemia. Monitor potassium                          levels; use potassium replacements if
+                                                necessary.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S3997B63C-D76C-4FFD-9226-75F495EA5739">
+											<id root="2D0AED8F-29E1-9640-DB10-391AAD2AF8DC"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Anticoagulants (oral) &#8211;</title>
+											<text>
+												<paragraph>dosage adjustments of anticoagulant
+                                                  medication may be necessary since
+                                                  hydrochlorothiazide may decrease their
+                                                effects.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S442F03BB-3235-41C0-B458-67889F9FD5E9">
+											<id root="69C1915D-6189-DEA0-8D24-4A8D858062E2"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Antigout medications &#8211;</title>
+											<text>
+												<paragraph>dosage adjustments of antigout medication
+                                                  may be necessary since hydrochlorothiazide may
+                                                  raise the level of blood uric acid.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S628C0127-1834-4640-8E2D-35B86BF9C1F1">
+											<id root="A129C0E8-AD91-9F7C-31D7-9C215DC09BA7"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Other antihypertensive medications (e.g.,
+                                                ganglionic or peripheral adrenergic blocking agents)&#8211;</title>
+											<text>
+												<paragraph>dosage adjustments may be necessary since
+                                                  hydrochlorothiazide may potentiate their
+                                                  effects.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S47AF602F-99AD-4B81-B381-E003AA77C53E">
+											<id root="ABDCCBAC-15D7-F4EA-6D9F-5511EB07CA99"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Antidiabetic drugs (oral agents and insulin)&#8211;</title>
+											<text>
+												<paragraph>since thiazides may elevate blood glucose
+                                                  levels, dosage adjustments of antidiabetic
+                                                  agents may be necessary.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S78D7CB64-4C9D-40AA-B1AE-098367006D02">
+											<id root="D53C4A9A-B7B0-A553-8BDD-610ED4F5EA93"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Calcium salts &#8211;</title>
+											<text>
+												<paragraph>increased serum calcium levels due to
+                                                  decreased excretion may occur. If calcium must
+                                                  be prescribed monitor serum calcium levels and
+                                                  adjust calcium dosage accordingly.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SA279C044-A2B4-437A-B99B-BC4A3F85281E">
+											<id root="15CEE17A-DC1A-B67A-2FBE-65CBB2EDE08D"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Cardiac glycosides &#8211;</title>
+											<text>
+												<paragraph>enhanced possibility of digitalis
+                                                  toxicity associated with hypokalemia. Monitor
+                                                  potassium levels (see <linkHtml href="#S4B7DC53A-B563-47FC-909E-94CF4E248AB5">PRECAUTIONS: Drug Interactions,
+                                                  Captopril</linkHtml>).</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S89400EC7-BC7D-4189-96EB-2190D5334F51">
+											<id root="567B1E28-F0BC-2D10-2603-2C517DB038A1"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Cholestyramine and colestipol resins &#8211;</title>
+											<text>
+												<paragraph>absorption of hydrochlorothiazide is
+                                                  impaired in the presence of anionic exchange
+                                                  resins. Single doses of either cholestyramine or
+                                                  colestipol resins bind the hydrochlorothiazide
+                                                  and reduce its absorption from the
+                                                  gastrointestinal tract by up to 85 and 43
+                                                  percent, respectively.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SF57994E3-4969-4E2D-96F0-BE5E4C43D2AA">
+											<id root="943689C0-B51B-1795-0EE3-B0551F54867F"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Diazoxide &#8211;</title>
+											<text>
+												<paragraph>enhanced hyperglycemic, hyperuricemic,
+                                                  and antihypertensive effects. Be cognizant of
+                                                  possible interaction; monitor blood glucose and
+                                                  serum uric acid levels.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SC8521EA8-5ED2-49EE-84FF-566451956645">
+											<id root="25F29A98-EFBD-66A5-8634-6C1D4BA93814"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Lithium &#8211;</title>
+											<text>
+												<paragraph>diuretic agents reduce the renal
+                                                  clearance of lithium and increase the risk of
+                                                  lithium toxicity. These drugs should be
+                                                  coadministered with caution and frequent
+                                                  monitoring of serum lithium levels is
+                                                  recommended (see <linkHtml href="#S0A5A15EA-3074-4C72-B4BE-25D55634A5E0">PRECAUTIONS: Drug Interactions, Captopril,
+                                                  Lithium</linkHtml>).</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S410C4B3B-902B-4B63-B495-25208FA12379">
+											<id root="BD332A38-718C-3925-AE85-8DA87A40285F"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">MAO inhibitors &#8211;</title>
+											<text>
+												<paragraph>dosage adjustments of one or both agents
+                                                  may be necessary since hypotensive effects are                              enhanced.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SE9E358CB-E2DD-4E3A-8612-B43E6C496AFD">
+											<id root="D344F007-73F3-C959-3315-A955CAFEB2B0"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Nondepolarizing muscle relaxants, preanesthetics
+                                                and anesthetics used in surgery (e.g., tubocurarine
+                                                chloride and gallamine triethiodide) &#8211;</title>
+											<text>
+												<paragraph>effects of these agents may be
+                                                  potentiated; dosage adjustments may be required.
+                                                  Monitor and correct any fluid and electrolyte
+                                                  imbalances prior to surgery if
+                                                feasible.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S6CAAE07B-B588-4494-94C7-5E5B8277AD52">
+											<id root="7C05145D-DB5C-87DC-5319-B96878646E0E"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Nonsteroidal anti-inflammatory agents &#8211;</title>
+											<text>
+												<paragraph>in some patients, the administration of a
+                                                  nonsteroidal anti-inflammatory agent can reduce
+                                                  the diuretic, natriuretic, and antihypertensive
+                                                  effect of loop, potassium-sparing or thiazide
+                                                  diuretics. Therefore, when hydrochlorothiazide
+                                                  and nonsteroidal anti-inflammatory agents are
+                                                  used concomitantly, the patient should be
+                                                  observed closely to determine if the desired
+                                                  effect of the diuretic is obtained.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="S5EC390F9-58A8-492D-AF9F-EDE11EF4DB1C">
+											<id root="D773D822-FC0E-762E-BDC2-8A6EA7BE4214"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Methenamine &#8211;</title>
+											<text>
+												<paragraph>possible decreased effectiveness due to
+                                                  alkalinization of the urine.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SE640DEE5-8979-4140-8D56-6197A0C1A1AB">
+											<id root="2C4497FD-5C32-1848-03FF-6D8DB8C5F0E9"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Pressor amines (e.g., norepinephrine) &#8211;</title>
+											<text>
+												<paragraph>decreased arterial responsiveness, but
+                                                  not sufficient to preclude effectiveness of the
+                                                  pressor agent for therapeutic use. Use caution
+                                                  in patients taking both medications who undergo
+                                                  surgery. Administer preanesthetic and anesthetic
+                                                  agents in reduced dosage, and if possible,
+                                                  discontinue hydrochlorothiazide therapy one week
+                                                  prior to surgery.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+									<component>
+										<section ID="SAA3E6EC7-ADF2-4471-830C-CDE21A37368C">
+											<id root="1F27D84B-097F-4DD4-7BCA-29D30E741DA5"/>
+											<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL                                                 UNCLASSIFIED"/>
+											<title mediaType="text/x-hl7-title+xml">Probenecid or sulfinpyrazone &#8211;</title>
+											<text>
+												<paragraph>increased dosage of these agents may be
+                                                  necessary since hydrochlorothiazide may have
+                                                  hyperuricemic effects.</paragraph>
+											</text>
+											<effectiveTime value="20060216"/>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S9A684D87-883E-4F9D-A444-DD1C85A61B6C">
+							<id root="0F73267C-1BB6-BC92-0B4D-117117C9592A"/>
+							<code code="34074-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG &amp;OR LABORATORY TEST                                 INTERACTIONS"/>
+							<title mediaType="text/x-hl7-title+xml">Drug/Laboratory Test Interactions</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="SBC82BEDC-9950-4809-88BC-73F5AC006BDF">
+									<id root="17B6415F-ED7E-9A7A-0C41-107D5EA0C458"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Captopril</title>
+									<text>
+										<paragraph>Captopril may cause a false-positive urine test
+                                            for acetone.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SC4136D9C-C6A5-42B5-8F5A-7D8980A679CC">
+									<id root="C9FBC735-3F1B-AD20-585D-1257BFDAAE68"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+									<text>
+										<paragraph>Hydrochlorothiazide may cause diagnostic
+                                            interference of the bentiromide test.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S7F25E450-0AAC-4F41-8FB4-B5B1DE8CF27D">
+							<id root="F6CA80CA-B9F4-BEA4-8557-33502E34C9ED"/>
+							<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp;                                 MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY"/>
+							<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="SFE946390-D79C-4AC4-941E-115FA0EDEEC0">
+									<id root="278D5D68-6247-EC1A-E621-618103C7D345"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Captopril</title>
+									<text>
+										<paragraph>Two-year studies with doses of 50 to 1350
+                                            mg/kg/day in mice and rats failed to show any evidence
+                                            of carcinogenic potential.</paragraph>
+										<paragraph>Studies in rats have revealed no impairment of
+                                            fertility.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S58251108-7F5C-4EA2-9521-BE9CEA6079A7">
+									<id root="7CCF383B-7650-E77F-3D71-FC42AF82A92A"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+									<text>
+										<paragraph>Two-year feeding studies in mice and rats
+                                            conducted under the auspices of the National Toxicology
+                                            Program (NTP) uncovered no evidence of a carcinogenic
+                                            potential of hydrochlorothiazide in female mice (at
+                                            doses of up to approximately 600 mg/kg/day) or in male
+                                            and female rats (at doses of up to approximately 100
+                                            mg/kg/day). The NTP, however, found equivocal evidence
+                                            for hepatocarcinogenicity in male mice.</paragraph>
+										<paragraph>Hydrochlorothiazide was not genotoxic in <content styleCode="italics">in vitro</content> assays using
+                                            strains TA 98, TA 100, TA 1535, TA 1537 and TA 1538 of<content styleCode="italics">Salmonella
+                                            typhimurium</content> (Ames assay) and in the Chinese
+                                            Hamster Ovary (CHO) test for chromosomal aberrations, or<content styleCode="italics">in vivo assays using
+                                                mouse germinal cell chromosomes, Chinese hamster
+                                                bone marrow chromosomes, and the
+                                            Drosophila</content> sex linked recessive lethal trait
+                                            gene. Positive test results were obtained only in the<content styleCode="italics">in vitro</content> CHO
+                                            Sister Chromatid Exchange (clastogenicity) and in the
+                                            Mouse Lymphoma Cell (mutagenicity) assays, using
+                                            concentrations of hydrochlorothiazide from 43 to 13&#956;g/mL, and in the <content styleCode="italics">Aspergillus nidulans</content> non-disjunction
+                                            assay at an unspecified concentration.</paragraph>
+										<paragraph>Hydrochlorothiazide had no adverse effects on the
+                                            fertility of mice and rats of either sex in studies
+                                            wherein these species were exposed, via their diet, to
+                                            doses of up to 100 and 4 mg/kg, respectively, prior to
+                                            conception and throughout gestation.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S7CDB204B-D3B9-4B33-BA29-34E31094004B">
+							<id root="1924B5D8-5E21-C792-8E5F-C41F132F6A19"/>
+							<code code="34091-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ANIMAL PHARMACOLOGY                                 &amp;OR TOXICOLOGY"/>
+							<title mediaType="text/x-hl7-title+xml">Animal Toxicology</title>
+							<text>
+								<paragraph>Captopril <br/>Chronic oral toxicity studies were
+                                    conducted in rats (2 years), dogs (47 weeks; 1 year), mice (2
+                                    years), and monkeys (1 year). Significant drug-related toxicity
+                                    included effects on hematopoiesis, renal toxicity,
+                                    erosion/ulceration of the stomach, and variation of retinal
+                                    blood vessels.</paragraph>
+								<paragraph>Reductions in hemoglobin and/or hematocrit values were
+                                    seen in mice, rats, and monkeys at doses 50 to 150 times the
+                                    maximum recommended human dose (MRHD). Anemia, leukopenia,
+                                    thrombocytopenia, and bone marrow suppression occurred in dogs
+                                    at doses 8 to 30 times MRHD. The reductions in hemoglobin and
+                                    hematocrit values in rats and mice were only significant at 1
+                                    year and returned to normal with continued dosing by the end of
+                                    the study. Marked anemia was seen at all dose levels (8 to 30                        times MRHD) in dogs, whereas moderate to marked leukopenia was
+                                    noted only at 15 and 30 times MRHD and thrombocytopenia at 30
+                                    times MRHD. The anemia could be reversed upon discontinuation of
+                                    dosing. Bone marrow suppression occurred to a varying degree,
+                                    being associated only with dogs that died or were sacrificed in
+                                    a moribund condition in the 1 year study. However, in the
+                                    47-week study at a dose 30 times MRHD, bone marrow suppression
+                                    was found to be reversible upon continued drug administration.</paragraph>
+								<paragraph>Captopril caused hyperplasia of the juxtaglomerular
+                                    apparatus of the kidneys at doses 7 to 200 times the MRDH in
+                                    rats and mice, at 20 to 60 times MRHD in monkeys, and at 30
+                                    times the MRHD in dogs. </paragraph>
+								<paragraph>Gastric erosions/ulcerations were increased in incidence
+                                    at 20 and 200 times MRHD in male rats and at 30 and 65 times
+                                    MRHD in dogs and monkeys, respectively. Rabbits developed
+                                    gastric and intestinal ulcers when given oral doses
+                                    approximately 30 times MRHD for only five to seven days. </paragraph>
+								<paragraph>In the two-year rat study, irreversible and progressive
+                                    variations in the caliber of retinal vessels (focal sacculations
+                                    and constrictions) occurred at all dose levels (7 to 200 times
+                                    MRHD) in a dose-related fashion. The effect was first observed                    in the 88<sup>th</sup> week of dosing, with a progressively
+                                    increased incidence thereafter, even after cessation of
+                                dosing.</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+					<component>
+						<section ID="SA3921D20-4E24-4C77-9EE1-F01CCFC31FBA">
+							<id root="6C09DA6A-FDC9-7312-C444-4E43E8F408CB"/>
+							<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERATOGENIC EFFECTS"/>
+							<title mediaType="text/x-hl7-title+xml">Pregnancy Categories C (first trimester) and D (second and third
+                                trimesters)</title>
+							<text>
+								<paragraph>
+									<content styleCode="bold">See <linkHtml href="#S29A07741-3494-4F89-B323-16BBE0634907">WARNINGS:
+                                            Captopril</linkHtml>, <linkHtml href="#SCC1D9261-A090-4EED-9B40-B8882FBEDA01">Fetal/Neonatal Morbidity and
+                                    Mortality</linkHtml>.</content>
+								</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="S4405A1E4-E2C0-4B6C-92BC-41FBEF30DA8D">
+									<id root="3F5029AD-637D-E6F1-B9E6-4A003E6CFA4F"/>
+									<code code="34078-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NONTERATOGENIC EFFECTS"/>
+									<title mediaType="text/x-hl7-title+xml">Pregnancy &#8211; Nonteratogenic Effects</title>
+									<text>
+										<paragraph>Hydrochlorothiazide<br/>Thiazides cross the
+                                            placental barrier and appear in cord blood. The use of
+                                            thiazides in pregnant women requires that the
+                                            anticipated benefit be weighed against possible hazards
+                                            to the fetus. These hazards include fetal or neonatal
+                                            jaundice, thrombocytopenia, and possibly other adverse
+                                            reactions which have occurred in the adult.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S4A73B2B0-A62B-45F3-96B8-A5B39CCAC5EF">
+							<id root="C72B3EC7-7B03-9379-8B54-180EB68D2B57"/>
+							<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS"/>
+							<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+							<text>
+								<paragraph>Both captopril and hydrochlorothiazide are excreted in
+                                    human milk. Because of the potential for serious adverse
+                                    reactions in nursing infants from both drugs, a decision should
+                                    be made whether to discontinue nursing or to discontinue therapy
+                                    taking into account the importance of Captopril and
+                                    Hydrochlorothiazide to the mother. (See <linkHtml href="#SAE6703C2-202D-453A-A9B8-00928657904D">PRECAUTIONS:
+                                        Pediatric Use</linkHtml>.)</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+					<component>
+						<section ID="SAE6703C2-202D-453A-A9B8-00928657904D">
+							<id root="550C6104-076E-B1AC-C6A2-D4708B397E55"/>
+							<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE"/>
+							<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+							<text>
+								<paragraph>Safety and effectiveness in pediatric patients have not
+                                    been established. There is limited experience reported in the
+                                    literature with the use of captopril in the pediatric
+                                    population; dosage, on a weight basis, was generally reported to
+                                    be comparable to or less than that used in adults. </paragraph>
+								<paragraph>Infants, especially newborns, may be more susceptible to
+                                    the adverse hemodynamic effects of captopril. Excessive,
+                                    prolonged and unpredictable decreases in blood pressure and
+                                    associated complications, including oliguria and seizures, have
+                                    been reported. </paragraph>
+								<paragraph>Captopril and Hydrochlorothiazide should be used in
+                                    pediatric patients only if other measures for controlling blood
+                                    pressure have not been effective.</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="SEBCF9AC6-4CF1-439B-8C4F-9EAA56E1E3BC">
+					<id root="A4A30BA2-5F50-DCB9-8CD7-727AC70DE891"/>
+					<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS"/>
+					<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+					<effectiveTime value="20060216"/>
+					<component>
+						<section ID="S29A07741-3494-4F89-B323-16BBE0634907">
+							<id root="ED2FBA44-F93A-3D7C-CE17-518F04BBCF72"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Captopril</title>
+							<text>
+								<paragraph>Reported incidences are based on clinical trials
+                                    involving approximately 7000 patients.</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="S8262A5D5-097B-4AE4-B41B-1BEFA9280BB4">
+									<id root="8A996BD6-5439-684B-7071-A1612638482B"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Renal</title>
+									<text>
+										<paragraph>About one of 100 patients developed proteinuria
+                                            (see <linkHtml href="#S6D4C403B-F03C-434B-B6B4-FC9218D99E07">WARNINGS</linkHtml>).</paragraph>
+										<paragraph>Each of the following has been reported in
+                                            approximately 1 to 2 of 1000 patients and are of
+                                            uncertain relationship to drug use: renal insufficiency,                                          renal failure, nephrotic syndrome, polyuria, oliguria,
+                                            and urinary frequency.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S9B83F306-0AD6-4481-9DB9-3E3E3FFAB9A5">
+									<id root="18FDAA61-54FC-F331-EADE-25A3B47FA521"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hematologic</title>
+									<text>
+										<paragraph>Neutropenia/agranulocytosis has occurred (see<linkHtml href="#S6D4C403B-F03C-434B-B6B4-FC9218D99E07">WARNINGS</linkHtml>). Cases of anemia,
+                                            thrombocytopenia, and pancytopenia have been
+                                        reported.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S31B9385A-B7CB-4E6E-A972-30877D9C451B">
+									<id root="F80D5114-3A28-6297-02BE-7B060B0019AB"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Dermatologic</title>
+									<text>
+										<paragraph>Rash, often with pruritus, and sometimes with                        fever, arthralgia, and eosinophilia, occurred in about 4
+                                            to 7 (depending on renal status and dose) of 100
+                                            patients, usually during the first four weeks of
+                                            therapy. It is usually maculopapular, and rarely
+                                            urticarial. The rash is usually mild and disappears
+                                            within a few days of dosage reduction, short-term                        treatment with an antihistaminic agent, and/or
+                                            discontinuing therapy; remission may occur even if
+                                            captopril is continued. Pruritus, without rash, occurs
+                                            in about 2 of 100 patients. Between 7 and 10 percent of
+                                            patients with skin rash have shown eosinophilia and/or
+                                            positive ANA titers. A reversible associated
+                                            pemphigoid-like lesion, and photosensitivity, have also
+                                            been reported. </paragraph>
+										<paragraph>Flushing or pallor has been reported in 2 to 5 of
+                                            1000 patients.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S237821BB-E2EC-4268-AA32-F4B68DCBED01">
+									<id root="6E01EDEF-F4ED-8A23-1867-0599BFCB1192"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Cardiovascular</title>
+									<text>
+										<paragraph>Hypotension may occur; see <linkHtml href="#S6D4C403B-F03C-434B-B6B4-FC9218D99E07">WARNINGS </linkHtml>and&#160;<linkHtml href="#S00239F77-7924-42B6-9B10-4C1FD80BD423">PRECAUTIONS (Drug Interactions)</linkHtml> for
+                                            discussion of hypotension with captopril therapy. </paragraph>
+										<paragraph>Tachycardia, chest pain, and palpitations have
+                                            each been observed in approximately 1 of 100 patients. </paragraph>
+										<paragraph>Angina pectoris, myocardial infarction,
+                                            Raynaud&#8217;s syndrome, and congestive heart
+                                            failure have each occurred in 2 to 3 of 1000
+                                        patients.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S7122F992-52D4-41D0-AC3B-09F989413CB8">
+									<id root="69D4D6BA-C5E6-22AC-89A9-E3834FA13825"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Dysgeusia</title>
+									<text>
+										<paragraph>Approximately 2 to 4 (depending on renal status
+                                            and dose) of 100 patients developed a diminution or loss
+                                            of taste perception. Taste impairment is reversible and
+                                            usually self-limited (2 to 3 months) even with continued
+                                            drug administration. Weight loss may be associated with
+                                            the loss of taste.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SFA7D85AE-ACF6-4D95-BB12-32BD27D88AA7">
+									<id root="FEA588D7-21CF-7031-6031-9DDD8F101C28"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Angioedema</title>
+									<text>
+										<paragraph>Angioedema involving the extremities, face, lips,
+                                            mucous membranes, tongue, glottis or larynx has been
+                                            reported in approximately one in 1000 patients.
+                                            Angioedema involving the upper airways has caused fatal
+                                            airway obstruction. (See&#160;<linkHtml href="#S68DA1A5D-5D69-4CCF-B8B1-2DF58A95B8B0">WARNINGS: Captopril: Angioedema</linkHtml> and<linkHtml href="#S6A71DAC9-C71E-45C3-BC01-87C0B1C3A85C">PRECAUTIONS: Information for
+                                        Patients</linkHtml>).</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SFC2C7ABA-9C19-440B-9EB7-E78F5FB5783E">
+									<id root="9755A876-B927-73CA-3595-019E550804B3"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Cough</title>
+									<text>
+										<paragraph>Cough has been reported in 0.5 to 2 percent of
+                                            patients treated with captopril in clinical trials (see<linkHtml href="#S5C30395E-04BA-4CA9-9CD7-5B1E1EB3EEAA">PRECAUTIONS: General, Captopril, Cough</linkHtml>).</paragraph>
+										<paragraph>The following have been reported in about 0.5 to
+                                            2 percent of patients but did not appear at increased
+                                            frequency compared to placebo or other treatments used
+                                            in controlled trials: gastric irritation, abdominal
+                                            pain, nausea, vomiting, diarrhea, anorexia,
+                                            constipation, aphthous ulcers, peptic ulcer, dizziness,
+                                            headache, malaise, fatigue, insomnia, dry mouth,
+                                            dyspnea, alopecia, paresthesias.</paragraph>
+										<paragraph>Other clinical adverse effects reported since the
+                                            drug was marketed are listed below by body system. In
+                                            this setting, an incidence or causal relationship cannot                                be accurately determined.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S17AE7B55-8933-4341-8169-4D5C10879720">
+									<id root="9E08BBA4-2721-72B3-D77D-D7E49C6E9182"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Body as a whole</title>
+									<text>
+										<paragraph>anaphylactoid reactions (see&#160;<linkHtml href="#S8C7DFCE0-2BF7-4BC5-B068-6F9B86C03341">WARNINGS: Captopril: Anaphylactoid and possibly
+                                                related reactions</linkHtml> and <linkHtml href="#S896196D0-C248-48EF-9135-7938B0805E28">PRECAUTIONS: Hemodialysis</linkHtml>).</paragraph>
+										<paragraph>General<br/>asthenia, gynecomastia.</paragraph>
+										<paragraph>Cardiovascular<br/>cardiac arrest,
+                                            cerebrovascular accident/insufficiency, rhythm
+                                            disturbances, orthostatic hypotension, syncope. </paragraph>
+										<paragraph>Dermatologic<br/>bullous pemphigus, erythema
+                                            multiforme (including Stevens-Johnson syndrome),
+                                            exfoliative dermatitis.</paragraph>
+										<paragraph>Gastrointestinal</paragraph>
+										<paragraph>pancreatitis, glossitis, dyspepsia.</paragraph>
+										<paragraph>Hematologic</paragraph>
+										<paragraph>anemia, including aplastic and hemolytic. </paragraph>
+										<paragraph>Hepatobilliary</paragraph>
+										<paragraph>jaundice, hepatitis, including rare cases of
+                                            necrosis, cholestasis. </paragraph>
+										<paragraph>Metabolic</paragraph>
+										<paragraph>symptomatic hyponatremia. </paragraph>
+										<paragraph>Musculoskeletal</paragraph>
+										<paragraph>myalgia, myasthenia.</paragraph>
+										<paragraph>Nervous/Psychiatric</paragraph>
+										<paragraph>ataxia, confusion, depression, nervousness,
+                                            somnolence. </paragraph>
+										<paragraph>Respiratory</paragraph>
+										<paragraph>bronchospasm, eosinophilic pneumonitis, rhinitis. </paragraph>
+										<paragraph>Special Senses</paragraph>
+										<paragraph>blurred vision. </paragraph>
+										<paragraph>Urogenital</paragraph>
+										<paragraph>impotence. </paragraph>
+										<paragraph>As with other ACE inhibitors, a syndrome has been
+                                            reported which may include: fever, myalgia, arthralgia,
+                                            interstitial nephritis, vasculitis, rash or other
+                                            dermatologic manifestations, eosinophilia and an
+                                            elevated ESR.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SFA348F17-E6C5-4A40-8E26-AE1910DE5275">
+									<id root="192C87EC-FC7F-CECE-6D00-5F08024EE101"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Fetal/Neonatal Morbidity and Mortality</title>
+									<text>
+										<paragraph>
+											<content styleCode="bold">See <linkHtml href="#SCC1D9261-A090-4EED-9B40-B8882FBEDA01">WARNINGS: Captopril, Fetal/Neonatal Morbidity
+                                                  and Mortality</linkHtml>.</content>
+										</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S2FF2DF24-186B-458B-991D-B60361D60FC1">
+							<id root="16CE38A5-A7C6-5B8A-BC08-6E1A17194578"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="SF8E79D78-9350-4A19-8E03-11ECEFAAB9B8">
+									<id root="9A61383C-3501-7DD5-6423-BAFADB40A071"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Gastrointestinal System</title>
+									<text>
+										<paragraph>anorexia, gastric irritation, nausea, vomiting,
+                                            cramping, diarrhea, constipation, jaundice (intrahepatic
+                                            cholestatic jaundice), pancreatitis, and
+                                        sialadenitis.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S97806E26-2528-460C-8C82-3AD815B2F5A7">
+									<id root="438FE209-03BA-E3AC-F26C-D385DDBE713C"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Central Nervous System</title>
+									<text>
+										<paragraph>dizziness, vertigo, paresthesias, headache, and
+                                            xanthopsia.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S3D84ABB5-AB41-4542-8299-8631B830A8A5">
+									<id root="9787F8FD-91C1-07D6-545C-07D6E30A5FDC"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hematologic</title>
+									<text>
+										<paragraph>leukopenia, agranulocytosis, thrombocytopenia,
+                                            aplastic anemia, and hemolytic anemia.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S87F858B0-19B7-47ED-8AF2-E62203BE1B4A">
+									<id root="D1221EB5-0B58-A5D4-ED3F-79167B833ADA"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Cardiovascular</title>
+									<text>
+										<paragraph>orthostatic hypotension.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S39D4EC87-7238-43F0-9E1A-0039CB0AE26E">
+									<id root="2865BBF1-4483-5F89-0119-0C1D0017E012"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hypersensitivity</title>
+									<text>
+										<paragraph>purpura, photosensitivity, rash, urticaria,
+                                            necrotizing angiitis (vasculitis; cutaneous vasculitis),
+                                            fever, respiratory distress including pneumonitis, and
+                                            anaphylactic reactions.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="SE7C10672-5C41-453B-B50B-69637CF9AF0E">
+									<id root="F636AB73-88EA-D908-3697-4B6748673121"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Other</title>
+									<text>
+										<paragraph>hyperglycemia, glycosuria, hyperuricemia, muscle
+                                            spasm, weakness, restlessness, and transient blurred
+                                            vision.</paragraph>
+										<paragraph>Whenever adverse reactions are moderate or                                 severe, thiazide dosage should be reduced or therapy
+                                            withdrawn.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component>
+						<section ID="S61981536-EE69-4696-BBCE-56508AC9E9A2">
+							<id root="2845F205-2B76-18C4-EB9F-4D3DB3CDAF50"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Altered Laboratory Findings</title>
+							<effectiveTime value="20060216"/>
+							<component>
+								<section ID="S1924AD33-445F-4D3F-A765-33A21CC84196">
+									<id root="7FB00321-A089-5385-F9B8-CFEA1FF50CDC"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Serum Electrolytes</title>
+									<text>
+										<paragraph>Hyperkalemia: small increases in serum potassium,
+                                            especially in patients with renal impairment (see<linkHtml href="#SCAC058B4-2552-40F0-B123-938718E6484C">PRECAUTIONS: Captopril</linkHtml>).</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S150C3AE2-E4B6-4440-9CA6-33A77A302D8A">
+									<id root="83C73A34-A70D-A4C0-EDCD-F8E15426CB8C"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hyponatremia</title>
+									<text>
+										<paragraph>particularly in patients receiving a low sodium
+                                            diet or concomitant diuretics.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S8E79E5FE-3D44-4E13-8425-AF0C650225CA">
+									<id root="00ED583B-06D3-6B2D-EEBC-27B8D5927081"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">BUN/Serum Creatinine</title>
+									<text>
+										<paragraph>Transient elevations of BUN or serum creatinine
+                                            especially in volume or salt depleted patients or those
+                                            with renovascular hypertension may occur. Rapid
+                                            reduction of longstanding or markedly elevated blood
+                                            pressure can result in decreases in the glomerular
+                                            filtration rate and, in turn, lead to increases in BUN
+                                            or serum creatinine.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S40310EE0-5031-46C9-92A5-FFB2BB63A2C4">
+									<id root="26CBAD68-B321-5D46-30FA-4942A7452045"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Hematologic</title>
+									<text>
+										<paragraph>A positive ANA has been reported.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+							<component>
+								<section ID="S924D69CE-8629-4F89-81E5-11972B7BDE1A">
+									<id root="B0CD8155-A6B5-1E18-20BC-992B7EB0F6BC"/>
+									<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+									<title mediaType="text/x-hl7-title+xml">Liver Function Tests</title>
+									<text>
+										<paragraph>Elevations of liver transaminases, alkaline                                 phosphatase, and serum bilirubin have
+                                        occurred.</paragraph>
+									</text>
+									<effectiveTime value="20060216"/>
+								</section>
+							</component>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="SEA8B61E2-23C1-475C-AA05-020E5082A6BF">
+					<id root="3A438973-238D-6ED6-D036-21B5C34932CA"/>
+					<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE"/>
+					<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+					<effectiveTime value="20060216"/>
+					<component>
+						<section ID="S1693548E-5ACF-4BA6-B94A-652A4BE62B04">
+							<id root="51878C5C-BDBE-48C7-01ED-49970D06C532"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Captopril</title>
+							<text>
+								<paragraph>Correction of hypotension would be of primary concern.
+                                    Volume expansion with an intravenous infusion of normal saline
+                                    is the treatment of choice for restoration of blood pressure. </paragraph>
+								<paragraph>While captopril may be removed from the adult circulation
+                                    by hemodialysis, there is inadequate data concerning the
+                                    effectiveness of hemodialysis for removing it from the
+                                    circulation of neonates or children. Peritoneal dialysis is not
+                                    effective for removing captopril; there is no information
+                                    concerning exchange transfusion for removing captopril from the
+                                    general circulation.</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+					<component>
+						<section ID="S6C6CFA14-A41B-4E1A-9A56-8AF0EFD81184">
+							<id root="5327DFB1-AB60-DC16-2B5A-D950027B0624"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Hydrochlorothiazide</title>
+							<text>
+								<paragraph>In addition to the expected diuresis, overdosage of
+                                    thiazides may produce varying degrees of lethargy which may
+                                    progress to coma within a few hours, with minimal depression of
+                                    respiration and cardiovascular function and without evidence of
+                                    serum electrolyte changes or dehydration. The mechanism of
+                                    thiazide-induced CNS depression is unknown. Gastrointestinal
+                                    irritation and hypermotility may occur. Transitory increase in
+                                    BUN has been reported, and serum electrolyte changes may occur,
+                                    especially in patients with impaired renal function. </paragraph>
+								<paragraph>In addition to gastric lavage and supportive therapy for
+                                    stupor or coma, symptomatic treatment of gastrointestinal
+                                    effects may be needed. The degree to which hydrochlorothiazide
+                                    is removed by hemodialysis has not been clearly established.
+                                    Measures as required to maintain hydration, electrolyte balance,                   respiration, and cardiovascular and renal function should be
+                                    instituted. </paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="S752E7393-5D07-4A52-90E8-958DE89434A6">
+					<id root="7D06879C-FA64-DC52-91C0-EECDD3A5B4AD"/>
+					<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION"/>
+					<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+					<text>
+						<paragraph>DOSAGE MUST BE INDIVIDUALIZED ACCORDING TO PATIENT&#8217;S
+                            RESPONSE.</paragraph>
+						<paragraph>Captopril and Hydrochlorothiazide tablets may be substituted for
+                            the previously titrated individual components. </paragraph>
+						<paragraph>Alternatively, therapy may be instituted with a single tablet of
+                            Captopril and Hydrochlorothiazide 25 mg/15 mg taken once daily. For
+                            patients insufficiently responsive to the initial dose, additional
+                            captopril or hydrochlorothiazide may be added as individual components
+                            or by using Captopril and Hydrochlorothiazide tablets 50 mg/15 mg, 25
+                            mg/25 mg or 50 mg/25 mg, or divided doses may be used. </paragraph>
+						<paragraph>Because the full effect of a given dose may not be attained for 6
+                            to 8 weeks, dosage adjustments should generally be made at 6 week
+                            intervals, unless the clinical situation demands more rapid adjustment.</paragraph>
+						<paragraph>In general, daily doses of captopril should not exceed 150 mg and                   of hydrochlorothiazide should not exceed 50 mg. </paragraph>
+						<paragraph>Captopril and Hydrochlorothiazide tablets should be taken one
+                            hour before meals.</paragraph>
+					</text>
+					<effectiveTime value="20060216"/>
+					<component>
+						<section ID="S9145DACC-7633-4EF3-876A-21708694D22F">
+							<id root="FD0D03BD-C213-24B3-D7CF-67A8727E2D41"/>
+							<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED"/>
+							<title mediaType="text/x-hl7-title+xml">Dosage Adjustment in Renal Impairment</title>
+							<text>
+								<paragraph>Because captopril and hydrochlorothiazide are excreted
+                                    primarily by the kidneys, excretion rates are reduced in
+                                    patients with impaired renal function. These patients will take
+                                    longer to reach steady-state captopril levels and will reach
+                                    higher steady-state levels for a given daily dose than patients
+                                    with normal renal function. Therefore, these patients may
+                                    respond to smaller or less frequent doses of Captopril and
+                                    Hydrochlorothiazide tablets. </paragraph>
+								<paragraph>After the desired therapeutic effect has been achieved,
+                                    the dose intervals should be increased or the total daily dose
+                                    reduced until the minimal effective dose is achieved. When
+                                    concomitant diuretic therapy is required in patients with severe
+                                    renal impairment, a loop diuretic (e.g., furosemide), rather
+                                    than a thiazide diuretic is preferred for use with captopril;
+                                    therefore, for patients with severe renal dysfunction the
+                                    captopril-hydrochlorothiazide combination tablet is not usually
+                                    recommended (See&#160;<linkHtml href="#S3C3C19E7-BC88-4843-BA1A-40BC42D90435">WARNINGS:
+                                        Captopril: Anaphylactoid reactions during membrane
+                                    exposure</linkHtml> and <linkHtml href="#S896196D0-C248-48EF-9135-7938B0805E28">PRECAUTIONS:
+                                        Hemodialysis</linkHtml>).</paragraph>
+							</text>
+							<effectiveTime value="20060216"/>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section ID="S1A7841E7-3C12-4E91-9E1A-FD96CD80C000">
+					<id root="1804D495-BD4B-6878-925A-8BF06D997E91"/>
+					<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED"/>
+					<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+					<text>
+						<paragraph>Captopril and Hydrochlorothiazide Tablets, USP are supplied as
+                            follows:</paragraph>
+						<paragraph>25 mg/15 mg &#8211; white, round tablets, debossed with&#8220;Endo&#8221; and &#8220;733&#8221; on one side and
+                            quadrisected on the other.<br/>Bottles of
+                            100&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC
+                            60951-733-70<br/>25 mg/25 mg &#8211; peach, round tablets, debossed
+                            with &#8220;Endo&#8221; and &#8220;741&#8221; on one
+                            side and quadrisected on the other.<br/>Bottles of
+                            100&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC
+                            60951-741-70<br/>50 mg/15 mg &#8211; white, round tablets, debossed
+                            with &#8220;Endo&#8221; and &#8220;739&#8221; on one
+                            side and bisected on the other.<br/>Bottles of
+                            100&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC
+                            60951-739-70<br/>50 mg/25 mg &#8211; peach round tablets, debossed
+                            with &#8220;Endo&#8221; and &#8220;731&#8221; on one
+                            side and bisected on the other.<br/>Bottles of
+                            100&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NDC
+                            60951-731-70</paragraph>
+						<paragraph>Store at controlled room temperature, 15&#176;-30&#176;C
+                            (59&#176;-86&#176;F). Dispense in a tight container as defined
+                            in the USP. Protect from moisture. Keep bottles tightly closed.</paragraph>
+						<paragraph>
+							<content styleCode="bold">Caution:</content> Federal (USA) law
+                            prohibits dispensing without prescription.</paragraph>
+						<paragraph>Manufactured for: <br/>
+							<content styleCode="bold">Endo Pharmaceuticals Inc.</content>
+							<br/>Chadds Ford, Pennsylvania 19317</paragraph>
+						<paragraph>Manufactured by:<br/>DuPont Pharma<br/>Wilmington, Delaware 19880 </paragraph>
+						<paragraph>6449-00/September, 1997</paragraph>
+					</text>
+					<effectiveTime value="20060216"/>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</document>

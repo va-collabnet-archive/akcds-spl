@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="324a8674-c4a6-4afb-b504-aa2f67f5793e" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title ID="INV-acf4e3fe-7656-4671-9e18-10bbc1497454" mediaType="text/x-hl7-title+xml">Sodium Lactate Injection, USP (M/6 Sodium
+        Lactate)<br />in VIAFLEX Plastic Container</title>
+<effectiveTime value="20060526" />
+<setId root="324a8674-c4a6-4afb-b504-aa2f67f5793e" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Baxter Healthcare Corporation</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="39FC7C8A-FEB1-0EB1-7DF1-64B47D8C8CEB" />
+<effectiveTime value="20060526" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0129" codeSystem="2.16.840.1.113883.6.69" />
+<name>Sodium Lactate</name>
+<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION" />
+<activeIngredient>
+<quantity>
+<numerator unit="g" value="1.87">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="1.87" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="TU7HW0W0QT" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sodium Lactate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="TU7HW0W0QT" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium lactate</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Sodium Lactate</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="500">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="500" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0129-03" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="mL" value="1000">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1000" />
+</numerator>
+<denominator value="1">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0129-04" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="INV-6ea97f66-9cb0-4acb-adbd-c413c06bcf24">
+<id root="47F53551-2CEA-01A1-5108-10C971DED8A4" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title ID="INV-e58b2fea-d11d-4a75-ac4d-ae0fbce38d33" mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text ID="INV-dbb14f96-eb75-4cb7-b335-59977aadc450"><paragraph ID="INV-2297fae8-7111-4f4e-bf31-ad5a6fdd4923">Sodium Lactate
+                            Injection, USP (M/6 Sodium Lactate) is a sterile, nonpyrogenic solution
+                            for fluid and electrolyte replenishment and caloric supply in a single
+                            dose container for intravenous administration. It contains no
+                            antimicrobial agents. The pH may have been adjusted with lactic acid.
+                            Composition, osmolarity, pH, ionic concentration and caloric content are
+                            shown in Table 1.</paragraph><table><col align="left" width="125pt" />
+<col align="left" width="75pt" />
+<col align="left" width="100pt" />
+<col align="left" width="100pt" />
+<col align="left" width="100pt" />
+<col align="left" width="100pt" />
+<col align="left" width="100ptt" />
+<col align="left" width="100pt" />
+<tbody valign="top">
+<tr valign="top"><td align="center" colspan="8" styleCode="Botrule                                         Lrule Rrule" valign="top"><content styleCode="bold">Table 1</content></td></tr>
+<tr valign="top"><td align="center" rowspan="2" styleCode="Botrule Lrule Rrule" valign="middle">&#160;</td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> Size (mL) </td><td align="center" styleCode="Botrule Rrule" valign="middle">
+                                        Composition (g/L) </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"><footnote ID="INV-180b6638-8eb5-4f58-b953-27baf4820dfc">Normal
+                                            physiologic osmolarity range is approximately 280 to 310
+                                            mOsmol/L. Administration of substantially hypertonic
+                                            solutions (&#8805; 600 mOsmol/L) may cause vein
+                                        damage.</footnote>Osmolarity (mOsmol/L) (calc)</td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> pH </td><td align="center" colspan="2" styleCode="Botrule Rrule" valign="middle"> Ionic Concentration (mEq/L) </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> Caloric Content (kcal/L) </td></tr>
+<tr valign="top"><td align="center" styleCode="Botrule Lrule                                         Rrule" valign="middle"> Sodium Lactate(C<sub>3</sub>H<sub>5</sub>NaO<sub>3</sub>) </td><td align="center" styleCode="Botrule Rrule" valign="middle">Sodium</td><td align="center" styleCode="Botrule Rrule" valign="middle">Lactate</td></tr>
+<tr valign="top"><td align="left" rowspan="2" styleCode="Botrule Lrule Rrule" valign="middle">Sodium Lactate Injection,
+                                        USP (M/6 Sodium Lactate) </td><td align="center" styleCode="Botrule Rrule" valign="middle"> 500 </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> 18.7 </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> 334 </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> 6.5<br /> (6.0 to 7.3) </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> 167 </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> 167 </td><td align="center" rowspan="2" styleCode="Botrule Rrule" valign="middle"> 54 </td></tr>
+<tr valign="top"><td align="center" styleCode="Botrule Lrule                                         Rrule" valign="middle">1000</td></tr>
+</tbody>
+</table><paragraph ID="INV-2941b7d4-4c17-405f-a690-c14b30b3485c">The VIAFLEX plastic
+                            container is fabricated from a specially formulated polyvinyl chloride
+                            (PL 146 Plastic). The amount of water that can permeate from inside the
+                            container into the overwrap is insufficient to affect the solution
+                            significantly. Solutions in contact with the plastic container can leach
+                            out certain of its chemical components in very small amounts within the
+                            expiration period, e.g., di-2-ethylhexyl phthalate (DEHP), up to 5 parts
+                            per million. However, the safety of the plastic has been confirmed in
+                            tests in animals according to USP biological tests for plastic
+                            containers as well as by tissue culture toxicity studies.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-5b8193b7-10ed-4e3e-81fd-603b28056e2f">
+<id root="3DED728E-E95B-C4EB-B90F-23032DDC1EC1" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title ID="INV-d0ede16e-09fc-4789-967d-2efe000d921a" mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text ID="INV-2b6198b9-ffa6-4d6f-87e6-668804a5313a"><paragraph ID="INV-9cf436ff-edd3-44ab-b1df-08c2c6d72ce3">Sodium Lactate
+                            Injection, USP has value as a source of water, electrolytes, and
+                            calories. It is capable of inducing diuresis depending on the clinical
+                            condition of the patient. </paragraph><paragraph ID="INV-57989973-eea9-48ea-b25e-79fdb58ab2ec">Sodium Lactate
+                            Injection, USP produces a metabolic alkalinizing effect. Lactate ions
+                            are metabolized ultimately to carbon dioxide and water, which requires
+                            the consumption of hydrogen cations.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-829344f1-4759-4016-a256-f0dd2b4a12d1">
+<id root="6653C957-33C8-8F9C-8D2E-EC820F190972" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS AND USAGE SECTION" />
+<title ID="INV-c70ca0fd-7487-489c-9563-1eaae8244c06" mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text ID="INV-385b17a7-40c3-4291-9f58-59008145f2a4"><paragraph ID="INV-6ea9db6f-0460-41ca-8d93-1663d55b04b5">Sodium Lactate
+                            Injection, USP is indicated as a source of water, electrolytes, and
+                            calories or as an alkalinizing agent.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-7197e1ca-a813-4cc3-84b5-bdc26f41b9f4">
+<id root="EFC97976-702E-43DA-9700-7AE5358667DB" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title ID="INV-67ad25fe-34f2-489d-8712-0478644bd2fc" mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text ID="INV-aaf1ddce-251e-4c86-b236-0a107c0dc1a5"><paragraph ID="INV-1d979b67-a678-4bb2-8013-21258cf9704a">None             known</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-ce43feac-0146-4dea-9a53-b2250a1b670f">
+<id root="DE25AF7D-1A9E-BAA5-8084-2D7C84765274" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title ID="INV-35d562ab-e51f-4067-8df4-a6a070968df0" mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text ID="INV-94b7111a-816c-4ca3-a432-3f6fc36d6d03"><paragraph ID="INV-33e11851-1990-488e-9037-5ebf28f75a41">Sodium Lactate
+                            Injection, USP should be used with great care, if at all, in patients
+                            with congestive heart failure, severe renal insufficiency, and in
+                            clinical states in which there exists edema with sodium retention.</paragraph><paragraph ID="INV-b14b5b7a-7913-4396-bd52-08187e61c086">Sodium Lactate
+                            Injection, USP should be used with great care in patients with metabolic
+                            or respiratory alkalosis. The administration of lactate ions should be
+                            done with great care in those conditions in which there is an increased
+                            level or an impaired utilization of these ions, such as severe hepatic
+                            insufficiency. </paragraph><paragraph ID="INV-b4cacc09-d109-48ae-b34c-ddd43c26a978">The intravenous
+                            administration of these injections can cause fluid and/or solute
+                            overloading resulting in dilution of serum electrolyte concentrations,
+                            overhydration, congested states, or pulmonary edema. The risk of
+                            dilutional states is inversely proportional to the electrolyte                     concentrations of the injection. The risk of solute overload causing
+                            congested states with peripheral and pulmonary edema is directly
+                            proportional to the electrolyte concentrations of the injection. </paragraph><paragraph ID="INV-7ee72ee8-ce07-4b95-b081-aeaaa4f9111b">Excessive
+                            administration of Sodium Lactate Injection, USP may result in
+                            significant hypokalemia. </paragraph><paragraph ID="INV-03376507-422a-4792-bbd5-50e10ca6db57">In patients with
+                            diminished renal function, administration of Sodium Lactate Injection,
+                            USP may result in sodium retention. </paragraph><paragraph ID="INV-01a105c4-fa49-4d16-9158-ce18de41741a">Sodium Lactate
+                            Injection, USP is not for use in the treatment of lactic
+                        acidosis.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-2e6cda67-7571-4574-a0b1-6b2a5038720b">
+<id root="A2352E12-29CF-9E1C-F19B-64B56947663C" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title ID="INV-7bcd28cf-b9b7-4985-a633-5ae037fcaa15" mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text ID="INV-d1c556a1-fbba-477d-ad36-606360cf300f"><paragraph ID="INV-92a0440f-df61-4292-a57d-bd5f762aa661">Clinical evaluation
+                            and periodic laboratory determinations are necessary to monitor changes
+                            in fluid balance, electrolyte concentrations, and acid base balance
+                            during prolonged parenteral therapy or whenever the condition of the        patient warrants such evaluation. </paragraph><paragraph ID="INV-694cbdbe-9dd0-4f92-902e-f145da9a962f">Caution must be
+                            exercised in the administration of these injections to patients
+                            receiving corticosteroids or corticotropin.</paragraph></text>
+<effectiveTime value="20060526" />
+<component>
+<section ID="INV-d062a252-ec7a-43ad-9d12-0c60d7155acc">
+<id root="0BE2D7B1-C54E-8432-C4CA-1DFB62529978" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title ID="INV-5ad1ada6-85bd-49c3-a302-00f5b4ea41ff" mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20060526" />
+<component>
+<section ID="INV-f7714af6-9bc0-4e48-b5c1-b5486b769171">
+<id root="E3375DFD-1FF6-3F80-D504-BB34291CC4A7" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERATOGENIC EFFECTS SECTION" />
+<title ID="INV-6efa8f12-e37d-4383-b1f8-9e1038b28e24" mediaType="text/x-hl7-title+xml">Teratogenic
+                                        Effects</title>
+<effectiveTime value="20060526" />
+<component>
+<section>
+<id root="F376D06C-1C8C-73ED-79CE-5B6FD9F6380C" />
+<title ID="INV-671bd5d8-adf3-450e-a98c-d38b46905b4b" mediaType="text/x-hl7-title+xml">Pregnancy Category C</title>
+<text ID="INV-d37652a9-b375-4fb3-8a5b-0b336569cffc"><paragraph ID="INV-4e75898b-896b-4f98-949b-9f4fa6be56d6">Animal reproduction studies have not been
+                                                  conducted with Sodium Lactate Injection, USP. It
+                                                  is also not known whether Sodium Lactate
+                                                  Injection, USP can cause fetal harm when
+                                                  administered to a pregnant woman or can affect
+                                                  reproduction capacity. Sodium Lactate Injection,
+                                                  USP should be given to a pregnant woman only if
+                                                  clearly needed.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-61c20fa7-7132-4d62-a076-4eae08ad7de6">
+<id root="4ECBBFD7-C43A-A5DC-6873-D2C01F244660" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title ID="INV-93b317b8-369f-4ec1-96c7-92397206f316" mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text ID="INV-0657d442-6636-4aa5-a456-776d35e3475f"><paragraph ID="INV-a06f6491-f038-41cc-bd9f-69e54b9fa1dc">Safety and
+                                    effectiveness of Sodium Lactate Injection, USP in pediatric
+                                    patients have not been established by adequate and well
+                                    controlled trials, however, the use of sodium lactate solutions
+                                    in the pediatric population is referenced in the medical
+                                    literature. The warnings, precautions and adverse reactions
+                                    identified in the label copy should be observed in the pediatric
+                                    population.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-03ce3937-2c5a-4594-9ba1-449b4330ece0">
+<id root="E9431FC0-5296-1820-5764-14F8BEEFD9A4" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS AND MUTAGENESIS                                 AND IMPAIRMENT OF FERTILITY SECTION" />
+<title ID="INV-3c77f1f3-2a66-4d4d-a1cb-7f21d96b48b5" mediaType="text/x-hl7-title+xml">Carcinogenesis,
+                                Mutagenesis, Impairment of Fertility</title>
+<text ID="INV-cd8e92ce-0de2-406b-889c-4625093c37db"><paragraph ID="INV-397ac290-52ca-4641-8480-2b30c3fefb08">Studies
+                                    with Sodium Lactate Injection, USP have not been performed to
+                                    evaluate carcinogenic potential, mutagenic potential, or effects
+                                    on fertility.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-f2443e5d-3243-40b2-beb7-51670b62555b">
+<id root="BFC70C36-E5E6-BBD5-6DDF-88161EB8AB5F" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS SECTION" />
+<title ID="INV-2122becc-ba1e-4f8a-8fa5-67c6c8e7b9a7" mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text ID="INV-da7c5b75-7264-4b9f-9506-78f919f7ba2d"><paragraph ID="INV-ac9f94e5-f4ff-4d35-a180-5e5ee6164d1a">It is not
+                                    known whether this drug is excreted in human milk. Because many
+                                    drugs are excreted in human milk, caution should be exercised
+                                    when Sodium Lactate Injection, USP is administered to a nursing
+                                    mother.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-bac7b109-d549-4de4-8a20-78c87c98429c">
+<id root="2A70F656-9554-8ED7-9405-DF8E6C0CC8C6" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GERIATRIC USE SECTION" />
+<title ID="INV-17ebfe31-5721-4fa1-8777-3e86b976e767" mediaType="text/x-hl7-title+xml">Geriatric Use</title>
+<text ID="INV-ae5473c2-5899-4fbb-9e13-a3cab9001c68"><paragraph ID="INV-5b9c58ef-356f-465f-b941-40ee5521aa9a">Clinical
+                                    studies of Sodium Lactate Injection, USP did not include
+                                    sufficient numbers of subjects aged 65 and over to determine
+                                    whether they respond differently from younger subjects. Other
+                                    reported clinical experience has not identified differences in
+                                    responses between the elderly and younger patients. In general,
+                                    dose selection for an elderly patient should be cautious,
+                                    usually starting at the low end of the dosing range, reflecting
+                                    the greater frequency of decreased hepatic, renal, or cardiac
+                                    function, and of concomitant disease or drug therapy. </paragraph><paragraph ID="INV-ab1af7ee-5704-4852-9489-5bb1ad727f26">Do not
+                                    administer unless solution is clear and seal is
+                                intact.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-bbe5f203-0a89-4a05-94c0-08361baa25a5">
+<id root="889254ED-7EF8-772B-45B4-F38F448CBE27" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title ID="INV-1ed92089-a2a0-4577-8b03-3e29e105316c" mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text ID="INV-8c1aeb45-0814-4af3-803c-7bfe54cb4a39"><paragraph ID="INV-fc748510-a020-4ee7-92e6-2c4003dd0d3a">Reactions which may
+                            occur because of the solution or the technique of administration include
+                            febrile response, infection at the site of injection, venous thrombosis
+                            or phlebitis extending from the site of injection, extravasation and
+                            hypervolemia. </paragraph><paragraph ID="INV-a4d3cb10-8c3d-4c2c-850d-919d99c07451">If an adverse
+                            reaction does occur, discontinue the infusion, evaluate the patient,
+                            institute appropriate therapeutic countermeasures, and save the
+                            remainder of the fluid for examination if deemed necessary.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-4ffcc598-9bce-472a-b79b-81fb2eafb1e5">
+<id root="BA5810A8-B455-1B50-BA8A-482681F0DE07" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title ID="INV-38280042-e01a-46a5-8d3c-3747c0ddb5f7" mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text ID="INV-f2f59fe5-a3f8-45c9-a003-61338680e770"><paragraph ID="INV-ff5b1eb6-e5a9-425f-a4f0-7d399a5a2ddb">As directed by a
+                            physician. Dosage is dependent upon the age, weight and clinical
+                            condition of the patient as well as laboratory determinations. </paragraph><paragraph ID="INV-e4233d3c-aad5-4c2f-8b68-5357cdcd2443">Parenteral drug
+                            products should be inspected visually for particulate matter and
+                            discoloration prior to administration whenever solution and container
+                            permit. Use of a final filter is recommended during administration of
+                            all parenteral solutions, where possible. </paragraph><paragraph ID="INV-37a37f1e-9b2b-4843-9dd1-b0bbc8ef984d">All injections in
+                            VIAFLEX plastic containers are intended for intravenous administration
+                            using sterile equipment. </paragraph><paragraph ID="INV-e742a7cd-a238-4594-b4a1-bbea5c8d758d">Additives may be
+                            incompatible. Complete information is not available. Those additives
+                            known to be incompatible should not be used. Consult with pharmacist, if
+                            available. If, in the informed judgment of the physician, it is deemed
+                            advisable to introduce additives, use aseptic technique. Mix thoroughly
+                            when additives have been introduced. Do not store solutions containing
+                            additives.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-087695a4-eb7a-48dc-b0f1-a1fd0e705845">
+<id root="AE2DDCA0-561E-7D35-EAEA-7090BA457729" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title ID="INV-6d33e27b-98a5-4639-9e4d-89ed60e1033d" mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text ID="INV-5b55ad6c-ae29-45de-9cb2-7e53b900d25b"><paragraph ID="INV-12ebbf36-51d0-4dfb-a073-d5f59155e36f">Sodium Lactate
+                            Injection, USP (M/6 Sodium Lactate) in VIAFLEX plastic container is
+                            available as follows:</paragraph><table frame="void"><col align="left" width="125pt" />
+<col align="left" width="125pt" />
+<col align="left" width="125pt" />
+<tbody valign="top">
+<tr valign="top"><td align="left" valign="middle"> Code </td><td align="left" valign="middle"> Size
+                                        (mL) </td><td align="left" valign="middle"> NDC </td></tr>
+<tr valign="top"><td align="left" valign="middle">
+                                        2B1803 </td><td align="left" valign="middle"> 500 </td><td align="left" valign="middle">
+                                        0338-0129-03 </td></tr>
+<tr valign="top"><td align="left" valign="middle"> 2B1804 </td><td align="left" valign="middle"> 1000 </td><td align="left" valign="middle"> 0338-0129-04 </td></tr>
+</tbody>
+</table><paragraph ID="INV-0ebf7efe-6ca1-41a1-b42b-b8f487e35187">Exposure of
+                            pharmaceutical products to heat should be minimized. Avoid excessive
+                            heat. It is recommended the product be stored at room temperature
+                            (25&#186;C); brief exposure up to 40&#186;C does not adversely affect the
+                        product.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-c0921c48-c0dc-4244-818c-4c713d0cd03f">
+<id root="0CF44EB3-3480-238E-EDF5-E97BA766C0D5" />
+<title ID="INV-ad80994b-c9c4-4631-81a0-96a5de428ed1" mediaType="text/x-hl7-title+xml">DIRECTIONS FOR USE OF
+                        VIAFLEX PLASTIC CONTAINER</title>
+<text ID="INV-e55e0101-c87c-40a0-8b93-39c38e7b9b94"><paragraph ID="INV-089b51e3-5b2a-444c-8573-3f62890730d4"><content styleCode="bold">Warning:</content> Do not use plastic containers in
+                            series connections. Such use could result in air embolism due to
+                            residual air being drawn from the primary container before
+                            administration of the fluid from the secondary container is
+                        completed.</paragraph></text>
+<effectiveTime value="20060526" />
+<component>
+<section ID="INV-18d1520c-ce38-47d1-9d91-21e2a7d1e923">
+<id root="5F25A5A1-BE00-F115-84B2-586DC4CEDB6C" />
+<title ID="INV-ba138587-fe11-4aa0-8537-6485cd6e849a" mediaType="text/x-hl7-title+xml">To Open </title>
+<text ID="INV-6d5f8d5b-9d59-4c6f-ba8b-4ef664b5d642"><paragraph ID="INV-e3db19a3-cd32-4b85-8445-e0453a23468a">Tear
+                                    overwrap down side at slit and remove solution container. Some
+                                    opacity of the plastic due to moisture absorption during the
+                                    sterilization process may be observed. This is normal and does
+                                    not affect the solution quality or safety. The opacity will
+                                    diminish gradually. Check for minute leaks by squeezing inner
+                                    bag firmly. If leaks are found, discard solution as sterility
+                                    may be impaired. If supplemental medication is desired, follow
+                                    directions below.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-2b094c69-5f12-4761-bb60-4cacf8dd8d9f">
+<id root="AC7F5642-CF05-F46B-4261-375D491189F3" />
+<title ID="INV-b34b9449-3954-4f4f-993e-e559a19b00e9" mediaType="text/x-hl7-title+xml">Preparation for
+                                Administration </title>
+<text ID="INV-4065c920-da73-433a-b9a0-6a842597bc53"><list listType="ordered" styleCode="Arabic"><item>Suspend container from eyelet support. </item><item>Remove plastic protector from outlet port at bottom of
+                                        container. </item><item>Attach administration set. Refer to complete directions               accompanying set.</item></list></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-b740568a-70de-43ec-888f-f595b4e6d857">
+<id root="E0D6B39D-F4C3-9A01-8E32-C1D031523F14" />
+<title ID="INV-b184a94c-8bcf-4cd5-93b6-ac0ee80fb130" mediaType="text/x-hl7-title+xml">To Add Medication</title>
+<text ID="INV-f2cf2334-1151-4af5-929d-a80290250013"><paragraph ID="INV-2a858230-d007-4775-97a0-b659bcee6e68"><content styleCode="bold">Warning:</content> Additives may be
+                                    incompatible.</paragraph></text>
+<effectiveTime value="20060526" />
+<component>
+<section ID="INV-cee203c1-8abb-4a7f-a71f-884ec6a451a5">
+<id root="7891400B-506A-6A94-78BD-CE2BDA6F9A1B" />
+<title ID="INV-0bcb26b7-a049-49d3-abda-d459ae8c94e7" mediaType="text/x-hl7-title+xml">To add
+                                        medication before solution administration </title>
+<text ID="INV-057b7330-14d5-4877-8750-02389fffde2e"><list listType="ordered" styleCode="Arabic"><item>Prepare medication site. </item><item>Using syringe with 19 to 22 gauge needle, puncture
+                                                resealable medication port and inject. </item><item>Mix solution and medication thoroughly. For high
+                                                density medication such as potassium chloride,
+                                                squeeze ports while ports are upright and mix                    thoroughly.</item></list></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+<component>
+<section ID="INV-68b80d21-8820-431b-8239-de9b39b63887">
+<id root="5A1D8DE4-7C0E-16D6-BAA7-2BACBC282E04" />
+<title ID="INV-0dba7487-b269-4d49-b28c-9d4751cda5e1" mediaType="text/x-hl7-title+xml">To add
+                                        medication during solution administration </title>
+<text ID="INV-ddcb23df-f558-42a6-a20a-0aa0bdd661c5"><list listType="ordered" styleCode="Arabic"><item>Close clamp on the set. </item><item>Prepare medication site. </item><item>Using syringe with 19 to 22 gauge needle, puncture
+                                                resealable medication port and inject. </item><item>Remove container from IV pole and/or turn to an
+                                                upright position. </item><item>Evacuate both ports by squeezing them while
+                                                container is in the upright position. </item><item>Mix solution and medication thoroughly. </item><item>Return container to in use position and continue
+                                                administration.</item></list><paragraph ID="INV-87490005-2d00-48dc-9ca8-d9930052155f" /><paragraph ID="INV-4b6ffa8a-00b4-4541-a3bb-72dcb51bd0cc"><content styleCode="bold">Baxter Healthcare
+                                            Corporation</content></paragraph><paragraph ID="INV-1b0af95a-bdf5-41bf-82ff-6abfc4408670">Deerfield, IL 60015 USA</paragraph><paragraph ID="INV-3ab73aea-a936-4569-8932-f617d2127ca4">Printed in USA</paragraph><paragraph ID="INV-454ba6c9-39dd-45a7-9a6c-1fdaa01d106f">*Bar Code Position Only</paragraph><paragraph ID="INV-6aa50070-9eb5-44bf-a40c-9f136044bb74">071939581</paragraph><paragraph ID="INV-def89011-039d-4325-9792-256d9a244eb0">&#169;Copyright 1982, 1983, 1989, 1995, Baxter Healthcare       Corporation. </paragraph><paragraph ID="INV-0456bd1f-0406-4232-839c-f6b3ff66d105">All
+                                            rights reserved.</paragraph><paragraph ID="INV-e08c1ef6-45bc-4f1e-b799-02e313cad99d"><content styleCode="bold">7-19-39-581</content></paragraph><paragraph ID="INV-b704dbfd-0f5d-4f2c-83d8-dc3e8c09732c">BAXTER, VIAFLEX, and PL 146 are trademarks of </paragraph><paragraph ID="INV-0b5bf048-d877-4376-850c-8a6add2cdcd8">Baxter International Inc.</paragraph></text>
+<effectiveTime value="20060526" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

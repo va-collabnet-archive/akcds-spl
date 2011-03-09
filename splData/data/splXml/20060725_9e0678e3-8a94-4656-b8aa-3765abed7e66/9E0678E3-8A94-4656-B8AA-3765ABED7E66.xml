@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="9E0678E3-8A94-4656-B8AA-3765ABED7E66" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">DaunoXome<sup>&#174;</sup><br />(daunorubicin citrate liposome injection)</title>
+<effectiveTime value="20060614" />
+<setId root="9E0678E3-8A94-4656-B8AA-3765ABED7E66" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Gilead Sciences, Inc.</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="4C217B3B-3E1B-A55D-EF1F-22295910186A" />
+<effectiveTime value="20060614" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="61958-0301" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<name>Daunoxome</name>
+<formCode code="C42950" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, LIPID COMPLEX" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="2">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="2" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="5L84T2Z6NP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>daunorubicin citrate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="ZS7284E0ZP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>daunorubicin</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>daunorubicin citrate</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sucrose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="TE7660XO1C" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name> glycine</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="M4I0D6VV5M" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>calcium chloride dihydrate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="25">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="25" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="61958-0301-1" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<formCode code="C43216" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, SINGLE-USE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="ECF48EC6-DF3F-2C17-CED8-D8FC9AAAD09B" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold">R<sub>x</sub></content> only</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="5F272660-5343-0862-EDD0-7BB38D326FD3" />
+<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BOXED WARNING SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><list listType="ordered"><item>Cardiac function should be monitored regularly in patients receiving DaunoXome (daunorubicin citrate liposome injection) because of the potential risk for cardiac toxicity and congestive heart failure. Cardiac monitoring is advised especially in those patients who have received prior anthracyclines or who have pre-existing cardiac disease or who have had prior radiotherapy encompassing the heart.</item><item>Severe myelosuppression may occur.</item><item>DaunoXome should be administered only under the supervision of a physician who is experienced in the use of cancer chemotherapeutic agents.</item><item>Dosage should be reduced in patients with impaired hepatic function. <content styleCode="bold">(See <linkHtml href="#DOSAGE">DOSAGE AND ADMINISTRATION</linkHtml>)</content></item><item>A triad of back pain, flushing, and chest tightness has been reported in 13.8% of the patients (16/116) treated with DaunoXome in the Phase III clinical trial, and in 2.7% of treatment cycles (27/994). This triad generally occurs during the first five minutes of the infusion, subsides with interruption of the infusion, and generally does not recur if the infusion is then resumed at a slower rate.</item></list></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="E0F3AA7B-4C29-814C-DF64-E9BF7C1A1E7C" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>DaunoXome (daunorubicin citrate liposome injection) is a sterile, pyrogen-free, preservative-free product in a single use vial for intravenous infusion.</paragraph><paragraph>DaunoXome contains an aqueous solution of the citrate salt of daunorubicin encapsulated within lipid vesicles (liposomes) composed of a lipid bilayer of distearoylphosphatidylcholine and cholesterol (2:1 molar ratio), with a mean diameter of about 45 nm. The lipid to drug weight ratio is 18.7:1 (total lipid:daunorubicin base), equivalent to a 10:5:1 molar ratio of distearoylphosphatidylcholine:cholesterol:daunorubicin. Daunorubicin is an anthracycline antibiotic with antineoplastic activity, originally obtained from <content styleCode="italics">Streptomyces peucetius</content>. Daunorubicin has a 4-ring anthracycline moiety linked by a glycosidic bond to daunosamine, an amino sugar. Daunorubicin may also be isolated from <content styleCode="italics">Streptomyces coeruleorubidus</content> and has the following chemical name: (8<content styleCode="italics">S-cis</content>)-8-acetyl-10-[(3-amino-2,3,6-trideoxy-&#945;-L-<content styleCode="italics">lyxo</content>-hexopyranosyl)oxy]-7,8,9,10-tetrahydro-6,8,11-trihydroxy-1-methoxy-5,12-naphthacenedione hydrochloride.</paragraph><paragraph>Daunorubicin citrate has the following chemical structure:</paragraph><renderMultiMedia referencedObject="MM1" /><paragraph>DSPC (distearoylphosphatidylcholine) has the following chemical structure:</paragraph><renderMultiMedia referencedObject="MM2" /><paragraph>The following represents the idealized, spherical morphology of a liposome:</paragraph><renderMultiMedia referencedObject="MM3" /><paragraph><content styleCode="bold">Note: Liposomal encapsulation can substantially affect a drug's functional properties relative to those of the unencapsulated drug.</content></paragraph><paragraph><content styleCode="bold">In addition, different liposomal drug products may vary from one another in the chemical composition and physical form of the liposomes. Such differences can substantially affect the functional properties of liposomal drug products.</content></paragraph><paragraph>Each vial contains daunorubicin citrate equivalent to 50 mg of daunorubicin base, encapsulated in liposomes consisting of 704 mg distearoylphosphatidylcholine and 168 mg cholesterol. The liposomes encapsulating daunorubicin are dispersed in an aqueous medium containing 2,125 mg sucrose, 94 mg glycine, and 7 mg calcium chloride dihydrate in a total volume of 25 mL/vial. The pH of the dispersion is between 4.9 and 6.0. The liposome dispersion should appear red and translucent.</paragraph></text>
+<effectiveTime value="20060614" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="daunoxome-image01.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<observationMedia ID="MM2">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="daunoxome-image02.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<observationMedia ID="MM3">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="daunoxome-image03.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="CB894125-37AC-FA03-532C-2A8B6845395F" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<effectiveTime value="20060614" />
+<component>
+<section>
+<id root="9401FEB1-9B41-6F3D-2CBD-6548317008A3" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Mechanism of Action</title>
+<text><paragraph>DaunoXome is a liposomal preparation of daunorubicin formulated to maximize the selectivity of daunorubicin for solid tumors <content styleCode="italics">in situ</content>. While in the circulation, the DaunoXome formulation helps to protect the entrapped daunorubicin from chemical and enzymatic degradation, minimizes protein binding, and generally decreases uptake by normal (non-reticuloendothelial system) tissues. The specific mechanism by which DaunoXome is able to deliver daunorubicin to solid tumors <content styleCode="italics">in situ</content> is not known. However, it is believed to be a function of increased permeability of the tumor neovasculature to some particles in the size range of DaunoXome. In animal studies, daunorubicin has been shown to accumulate in tumors to a greater extent when administered as DaunoXome than when administered as daunorubicin. Once within the tumor environment, daunorubicin is released over time enabling it to exert its antineoplastic activity.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="BC3884C3-FA56-D45C-10B9-5ADE6F556C01" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pharmacokinetics</title>
+<text><paragraph>Following intravenous injection of DaunoXome, plasma clearance of daunorubicin shows monoexponential decline. The pharmacokinetic parameter values for total daunorubicin following a single 40 mg/m<sup>2</sup> dose of DaunoXome administered over a 30 &#8211; 60 minute period to patients with AIDS-related Kaposi's sarcoma and following a single rapid intravenous, 80 mg/m<sup>2</sup> dose of conventional daunorubicin to patients with disseminated solid malignancies are shown in Table I.</paragraph><table width="75%"><caption>TABLE I</caption>
+<col align="left" valign="top" width="40%" />
+<col align="center" valign="top" width="30%" />
+<col align="center" valign="top" width="30%" />
+<thead>
+<tr><th align="center" colspan="3" styleCode="Lrule Botrule Rrule">PHARMACOKINETIC PARAMETERS OF DAUNOXOME IN AIDS PATIENTS WITH KAPOSI'S SARCOMA AND REPORTED PARAMETERS FOR CONVENTIONAL DAUNORUBICIN</th></tr>
+<tr><th styleCode="Lrule">Parameter (units)</th><th styleCode="Lrule"><footnote>N=30;</footnote>DaunoXome</th><th styleCode="Lrule Rrule"><footnote>N=4;</footnote>Conventional Daunorubicin</th></tr>
+</thead>
+<tbody>
+<tr styleCode="Botrule"><td styleCode="Lrule">Plasma Clearance (mL/min)</td><td styleCode="Lrule">17.3 &#177; 6.1</td><td styleCode="Lrule Rrule"><footnote>Calculated</footnote> 236 &#177; 181</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Volume of Distribution (L)</td><td styleCode="Lrule">6.4 &#177; 1.5</td><td styleCode="Lrule Rrule">1006 &#177; 622</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Distribution Half-Life (h)</td><td styleCode="Lrule">4.41 &#177; 2.33</td><td styleCode="Lrule Rrule">0.77 &#177; 0.3</td></tr>
+<tr><td styleCode="Lrule">Elimination Half-Life (h)</td><td styleCode="Lrule">&#8212;&#8212;&#8212;</td><td styleCode="Lrule Rrule">55.4 &#177; 13.7</td></tr>
+</tbody>
+</table><paragraph>The plasma pharmacokinetics of DaunoXome differ significantly from the results reported for conventional daunorubicin hydrochloride. DaunoXome has a small steady-state volume of distribution of 6.4 L, (probably because it is confined to vascular fluid volume), and clearance of 17 mL/min. These differences in the volume of distribution and clearance result in a higher daunorubicin exposure (in terms of plasma AUC) from DaunoXome than with conventional daunorubicin hydrochloride. The apparent elimination half-life of DaunoXome (daunorubicin citrate liposome injection) is 4.4 hours, far shorter than that of daunorubicin, and probably represents a distribution half-life. Although preclinical biodistribution data in animals suggest that DaunoXome crosses the normal blood-brain barrier, it is unknown whether DaunoXome crosses the blood-brain barrier in humans.</paragraph></text>
+<effectiveTime value="20060614" />
+<component>
+<section>
+<id root="764756D8-BEE5-7CF3-9CF7-C544AA8F37C7" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Metabolism</title>
+<text><paragraph>Daunorubicinol, the major active metabolite of daunorubicin, was detected at low levels in the plasma following intravenous administration of DaunoXome.</paragraph><paragraph>No formal assessments of pharmacokinetic drug&#8211;drug interactions between DaunoXome and other agents have been conducted.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="244D8699-599A-0C69-87AA-D3DE2AD887F3" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Special Populations</title>
+<text><paragraph>The pharmacokinetics of DaunoXome have not been evaluated in women, in different ethnic groups, or in subjects with renal and hepatic insufficiency.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="8ABAA090-6701-2CE7-D899-D1B96EB39F6F" />
+<code code="34092-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL STUDIES SECTION" />
+<title mediaType="text/x-hl7-title+xml">Clinical Study</title>
+<text><paragraph>In an open-label, randomized, controlled clinical study conducted at 13 centers in the U.S.A. and Canada in advanced (25 or more mucocutaneous lesions; the development of 10 or more lesions in a one month period of time; symptomatic visceral involvement; or tumor-associated edema) HIV-related Kaposi's sarcoma, two treatment regimens were compared as first line cytotoxic therapy: DaunoXome 40 mg/m<sup>2</sup> and ABV (doxorubicin (Adriamycin<sup>&#174;</sup><footnote>Adriamycin is a registered trademark of Pharmacia &amp; Upjohn Co., Kalamazoo, MI.</footnote>) 10 mg/m<sup>2</sup>, bleomycin 15 U, and vincristine 1.0 mg). All drugs were administered intravenously every 2 weeks. Responses were assessed using the AIDS Clinical Trials Group Oncology Committee of the National Institute of Allergy and Infectious Diseases (ACTG) criteria (a response required at least one of any of the following for at least 28 days: a. &#8805; 50% reduction in the number; b. &#8805; 50% reduction in the sums of the products of the largest perpendicular diameters of bidimensionally measurable marker lesions; or c. complete flattening of &#8805; 50% of all previously raised lesions). Table II summarizes the efficacy results.</paragraph><table width="75%"><caption>TABLE II</caption>
+<col align="left" valign="top" width="50%" />
+<col align="center" valign="top" width="25%" />
+<col align="center" valign="top" width="25%" />
+<thead>
+<tr><th align="center" colspan="3" styleCode="Botrule Lrule Rrule">EFFICACY DATA<br />FIRST LINE CYTOTOXIC THERAPY FOR ADVANCED KAPOSI'S SARCOMA</th></tr>
+<tr><th styleCode="Lrule" /><th styleCode="Lrule">DaunoXome<br />n=116</th><th styleCode="Lrule Rrule">ABV<br />n=111</th></tr>
+</thead>
+<tbody>
+<tr styleCode="Botrule"><td styleCode="Lrule">Response Rate</td><td styleCode="Lrule">23%<footnote>The 95% confidence interval for difference in the response rates (ABV - DaunoXome) was (-5%, 18%).</footnote></td><td styleCode="Lrule Rrule">30%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Duration of Response, Median</td><td styleCode="Lrule">110 days<footnote>The hazard ratio (ABV/DaunoXome) for duration of response was 0.80, and the 95% confidence intervals were (0.44, 1.46).</footnote></td><td styleCode="Lrule Rrule">113 days</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Time to Progression, Median</td><td styleCode="Lrule">92 days<footnote>The hazard ratio (ABV/DaunoXome) for time to progression was 0.78, and the 95% confidence intervals were (0.57, 1.07).</footnote></td><td styleCode="Lrule Rrule">105 days</td></tr>
+<tr><td styleCode="Lrule">Survival</td><td styleCode="Lrule">342 days<footnote>The hazard ratio for mortality (ABV/DaunoXome) was 1.29, and 95% confidence intervals were (0.92, 1.79).</footnote></td><td styleCode="Lrule Rrule">291 days</td></tr>
+</tbody>
+</table><paragraph>Twenty of the 33 ABV responders responded to therapy by criteria more stringent than flattening of lesions (i.e., shrinkage of lesions and/or reduction in the number of lesions). Eleven of the 27 DaunoXome responders responded to therapy by criteria other than flattening of lesions. Photographic evidence of tumor response to DaunoXome and ABV was comparable across all anatomic sites (e.g., face, oral cavity, trunk, legs, and feet).</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="E2F11BE8-7C22-87F0-1C2C-5D6F1296AB63" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>DaunoXome is indicated as a first line cytotoxic therapy for advanced HIV-associated Kaposi's sarcoma. DaunoXome is not recommended in patients with less than advanced HIV-related Kaposi's sarcoma.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="176E8225-A9EC-512E-00F3-7A8A67FEB987" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>Therapy with DaunoXome is contraindicated in patients who have experienced a serious hypersensitivity reaction to previous doses of DaunoXome or to any of its constituents.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section ID="WARNINGS">
+<id root="39FB308D-B268-F1EB-24F6-2C5198E41DF1" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>DaunoXome is intended for administration under the supervision of a physician who is experienced in the use of cancer chemotherapeutic agents.</paragraph><paragraph>The primary toxicity of DaunoXome is myelosuppression, especially of the granulocytic series, which may be severe, and associated with fever and may result in infection. Effects on the platelets and erythroid series are much less marked. Careful hematologic monitoring is required and since patients with HIV infection are immunocompromised, patients must be observed carefully for evidence of intercurrent or opportunistic infections.</paragraph><paragraph>Special attention must be given to the potential cardiac toxicity of DaunoXome. Although there is no reliable means of predicting congestive heart failure, cardiomyopathy induced by anthracyclines is usually associated with a decrease of the left ventricular ejection fraction (LVEF). Cardiac function should be evaluated in each patient by means of a history and physical examination before each course of DaunoXome and determination of LVEF should be performed at total cumulative doses of DaunoXome of 320 mg/m<sup>2</sup>, and every 160 mg/m<sup>2</sup> thereafter.</paragraph><paragraph>Patients who have received prior therapy with anthracyclines (doxorubicin &gt; 300 mg/m<sup>2</sup> or equivalent), have pre-existing cardiac disease, or have received previous radiotherapy encompassing the heart may be less "cardiac" tolerant to treatment with DaunoXome. Therefore, monitoring of LVEF at cumulative DaunoXome doses should occur prior to therapy and every 160 mg/m<sup>2</sup> of DaunoXome.</paragraph><paragraph>In patients with Kaposi's sarcoma, congestive heart failure has been reported in one patient at a cumulative dose of 340 mg/m<sup>2</sup> of DaunoXome. In eight Kaposi's sarcoma patients, LVEF decreases were reported at cumulative doses ranging from 200 mg/m<sup>2</sup> to 2100 mg/m<sup>2</sup> (median dose 320 mg/m<sup>2</sup>) of DaunoXome. In clinical studies in malignancies other than Kaposi's sarcoma and treated with doses of DaunoXome greater than the recommended dose of 40 mg/m<sup>2</sup>, congestive heart failure has been reported at a cumulative dose as low as 200 mg/m<sup>2</sup> of DaunoXome; seven patients have been reported with LVEF decreases. The proportion of patients at risk for cardiotoxicity is unknown because the denominator is uncertain since there were several instances of missing repeat cardiac evaluations.</paragraph><paragraph>A triad of back pain, flushing, and chest tightness has been reported in 13.8% of the patients (16/116) treated with DaunoXome in the randomized clinical trial and in 2.7% of treatment cycles (27/994). This triad generally occurs during the first five minutes of the infusion, subsides with interruption of the infusion, and generally does not recur if the infusion is then resumed at a slower rate. This combination of symptoms appears to be related to the lipid component of DaunoXome, as a similar set of signs and symptoms has been observed with other liposomal products not containing daunorubicin.</paragraph><paragraph>Daunorubicin has been associated with local tissue necrosis at the site of drug extravasation. Although no such local tissue necrosis has been observed with DaunoXome, care should be taken to ensure that there is no extravasation of drug when DaunoXome is administered.</paragraph><paragraph>Dosage should be reduced in patients with impaired hepatic function. <content styleCode="bold">(See <linkHtml href="#DOSAGE">DOSAGE AND ADMINISTRATION</linkHtml>)</content></paragraph></text>
+<effectiveTime value="20060614" />
+<component>
+<section>
+<id root="B720DEE1-88D6-D013-0F07-5484D5449AA4" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy Category D</title>
+<text><paragraph>DaunoXome can cause fetal harm when administered to a pregnant woman. DaunoXome was administered to rats on gestation days 6 through 15 at 0.3, 1.0 or 2.0 mg/kg/day, (about 1/20th, 1/6th, or 1/3rd the recommended human dose on a mg/m<sup>2</sup> basis). DaunoXome produced severe maternal toxicity and embryolethality at 2.0 mg/kg/day and was embryotoxic and caused fetal malformations (anophthalmia, microphthalmia, incomplete ossification) at 0.3 mg/kg/day. Embryotoxicity was characterized by increased embryo-fetal deaths, reduced numbers of litters, and reduced litter sizes.</paragraph><paragraph>There are no studies of DaunoXome in pregnant women. If DaunoXome is used during pregnancy, or if the patient becomes pregnant while taking DaunoXome, the patient must be warned of the potential hazard to the fetus. Patients should be advised to avoid becoming pregnant while taking DaunoXome.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="FB29A776-E8AA-17E1-F7B0-D57CEBF512EF" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060614" />
+<component>
+<section>
+<id root="44C59D33-3F33-0E5E-A414-519361DDF570" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph>In the patient population studied, DaunoXome has been administered to patients receiving a variety of concomitant medications (e.g., antiretroviral agents, antiviral agents, anti-infective agents). Although interactions of DaunoXome (daunorubicin citrate liposome injection) with other drugs have not been observed, no systematic studies of interactions have been conducted.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="309474D2-D545-A138-179B-65EFE34F3E02" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, and Impairment of Fertility</title>
+<text><paragraph>No carcinogenesis, mutagenesis, or impairment of fertility studies were conducted with DaunoXome.</paragraph><paragraph>Carcinogenesis: Carcinogenicity and mutagenicity studies have been conducted with daunorubicin, the active component of DaunoXome. A high incidence of mammary tumors was observed about 120 days after a single intravenous dose of 12.5 mg/kg daunorubicin in rats (about 2 times the human dose on a mg/m<sup>2</sup> basis). Mutagenesis: Daunorubicin was mutagenic in <content styleCode="italics">in vitro</content> tests (Ames assay, V79 hamster cell assay), and clastogenic in <content styleCode="italics">in vitro</content> (CCRF-CEM human lymphoblasts) and in <content styleCode="italics">in vivo</content> (SCE assay in mouse bone marrow) tests. Impairment of Fertility: Daunorubicin intravenous doses of 0.25 mg/kg/day (about 8 times the human dose on a mg/m<sup>2</sup> basis) in male dogs caused testicular atrophy and total aplasia of spermatocytes in the seminiferous tubules.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="9DDA5706-E43D-5334-0E6A-E88287F39488" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<text><paragraph>Pregnancy "Category D". See <linkHtml href="#WARNINGS">WARNINGS</linkHtml> Section.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="498145C8-1E55-0E03-32B4-01AC84C6503E" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>Safety and effectiveness in pediatric patients have not been established.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="07E17E84-1AC6-6438-0254-9C44309A9CCE" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GERIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Use in the Elderly</title>
+<text><paragraph>Safety and effectiveness in the elderly have not been established.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="AEA8200F-2DB5-31C5-9E9B-FA0929F2BBB8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Special Populations</title>
+<text><paragraph>Safety has not been established in patients with pre-existing hepatic or renal dysfunction.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="1148E3C4-9F87-5A3A-AE8C-4378B6FB3EC0" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>DaunoXome contains daunorubicin, encapsulated within a liposome. Conventional daunorubicin has acute myelosuppression as its dose limiting side effect, with the greatest effect on the granulocytic series. In addition, daunorubicin causes alopecia, and nausea and vomiting in a significant number of patients treated. Extravasation of conventional daunorubicin can cause severe local tissue necrosis. Chronic therapy at total doses above 300 mg/m<sup>2</sup> causes a cumulative-dose-related cardiomyopathy with congestive heart failure.</paragraph><paragraph>Administered as DaunoXome, daunorubicin has substantially altered pharmacokinetics and some differences in toxicity. The most important acute toxicity of DaunoXome remains myelosuppression, principally of the granulocytic series, with much less marked effects on the platelets and erythroid series.</paragraph><paragraph>In an open-label, randomized, controlled clinical trial conducted in 13 centers in the U.S.A. and Canada in advanced HIV-related Kaposi's sarcoma, two treatment regimens were compared as first line cytotoxic therapy: DaunoXome and ABV (doxorubicin (Adriamycin<sup>&#174;</sup>), bleomycin, and vincristine). All drugs were administered intravenously every 2 weeks. The safety data presented below include all reported or observed adverse experiences, including those not considered to be drug related. Patients with advanced HIV-associated Kaposi's sarcoma are seriously ill due to their underlying infection and are receiving several concomitant medications including potentially toxic antiviral and antiretroviral agents. The contribution of the study drugs to the adverse experience profile is therefore difficult to establish.</paragraph><paragraph>Table III summarizes the important safety data.</paragraph><table width="75%"><caption>TABLE III</caption>
+<col align="left" valign="top" width="40%" />
+<col align="center" valign="top" width="30%" />
+<col align="center" valign="top" width="30%" />
+<thead>
+<tr><th align="center" colspan="3" styleCode="Botrule Lrule Rrule">SUMMARY OF IMPORTANT SAFETY DATA</th></tr>
+<tr><th styleCode="Lrule" /><th styleCode="Lrule">DaunoXome<br />(N = 116)<br />% of patients</th><th styleCode="Lrule Rrule">ABV<br />(N = 111)<br />% of patients</th></tr>
+</thead>
+<tbody>
+<tr><td styleCode="Lrule">Neutropenia (&lt; 1000 cells/mm<sup>3</sup>)</td><td styleCode="Lrule">36%</td><td styleCode="Lrule Rrule">35%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Neutropenia (&lt; 500 cells/mm<sup>3</sup>)</td><td styleCode="Lrule">15%</td><td styleCode="Lrule Rrule">5%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Opportunistic Infections/Illnesses,% of patients</td><td styleCode="Lrule">40%</td><td styleCode="Lrule Rrule">27%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Median time to first Opportunistic Infections/Illnesses</td><td styleCode="Lrule">214 days</td><td styleCode="Lrule Rrule">412 days<footnote>p = 0.21</footnote></td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Number of cases with absolute reduction in ejection fraction of 20 &#8211; 25%<footnote ID="t3f1">The denominator is uncertain since there were several instances of missing repeat cardiac evaluations.</footnote></td><td styleCode="Lrule">3</td><td styleCode="Lrule Rrule">1</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Number of cases removed from therapy due to cardiac causes<footnoteRef IDREF="t3f1" /></td><td styleCode="Lrule">2</td><td styleCode="Lrule Rrule">0</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Alopecia<br />All grades % of patients</td><td styleCode="Lrule">8%</td><td styleCode="Lrule Rrule">36%<footnote ID="t3f2">p &lt; 0.001</footnote></td></tr>
+<tr><td styleCode="Lrule">Neuropathy<br />All grades % of patients</td><td styleCode="Lrule">13%</td><td styleCode="Lrule Rrule">41%<footnoteRef IDREF="t3f2" /></td></tr>
+</tbody>
+</table><paragraph>A triad of back pain, flushing and chest tightness was reported in 13.8% of the patients (16/116) treated with DaunoXome in the Phase III clinical trial and in 2.7% of treatment cycles (27/994). Most of the episodes were mild to moderate in severity (12% of patients and 2.5% of treatment cycles).</paragraph><paragraph>Mild alopecia was reported in 6% of patients treated with DaunoXome and moderate alopecia in 2% of patients. Mild nausea was reported in 35% of DaunoXome patients, moderate nausea in 16% of patients and severe nausea in 3% of patients. For patients treated with DaunoXome, mild vomiting was reported in 10%, moderate in 10%, and severe in 3% of patients. Although grade 3 &#8211; 4 injection site inflammation was reported in 2 patients treated with DaunoXome, no instances of local tissue necrosis were observed with extravasation.</paragraph><paragraph>Table IV is a listing of all the mild-moderate and severe adverse events reported on both treatment arms in Protocol 103-09 in &#8805; 5% of DaunoXome patients.</paragraph><table width="100%"><caption>TABLE IV</caption>
+<col align="left" valign="top" width="24%" />
+<col align="center" valign="middle" width="19%" />
+<col align="center" valign="middle" width="19%" />
+<col align="center" valign="middle" width="19%" />
+<col align="center" valign="middle" width="19%" />
+<thead>
+<tr><th align="center" colspan="5" styleCode="Botrule Lrule Rrule">ADVERSE EXPERIENCES: PROTOCOL 103-09</th></tr>
+<tr><th styleCode="Lrule" /><th colspan="2" styleCode="Lrule Botrule">DaunoXome<br />(N = 116)</th><th colspan="2" styleCode="Lrule Rrule Botrule">ABV<br />(N = 111)</th></tr>
+<tr><th styleCode="Lrule" /><th styleCode="Lrule">Mild<br />Moderate</th><th styleCode="Lrule">Severe</th><th styleCode="Lrule">Mild<br />Moderate</th><th styleCode="Lrule Rrule">Severe</th></tr>
+</thead>
+<tbody>
+<tr styleCode="Botrule"><td styleCode="Lrule">Nausea</td><td styleCode="Lrule">51%</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">45%</td><td styleCode="Lrule Rrule">5%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Fatigue</td><td styleCode="Lrule">43%</td><td styleCode="Lrule">6%</td><td styleCode="Lrule">44%</td><td styleCode="Lrule Rrule">7%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Fever</td><td styleCode="Lrule">42%</td><td styleCode="Lrule">5%</td><td styleCode="Lrule">49%</td><td styleCode="Lrule Rrule">5%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Diarrhea</td><td styleCode="Lrule">34%</td><td styleCode="Lrule">4%</td><td styleCode="Lrule">29%</td><td styleCode="Lrule Rrule">6%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Cough</td><td styleCode="Lrule">26%</td><td styleCode="Lrule">2%</td><td styleCode="Lrule">19%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Dyspnea</td><td styleCode="Lrule">23%</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">17%</td><td styleCode="Lrule Rrule">3%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Headache</td><td styleCode="Lrule">22%</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">23%</td><td styleCode="Lrule Rrule">2%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Allergic Reactions</td><td styleCode="Lrule">21%</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">19%</td><td styleCode="Lrule Rrule">2%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Abdominal Pain</td><td styleCode="Lrule">20%</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">23%</td><td styleCode="Lrule Rrule">4%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Anorexia</td><td styleCode="Lrule">21%</td><td styleCode="Lrule">2%</td><td styleCode="Lrule">26%</td><td styleCode="Lrule Rrule">2%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Vomiting</td><td styleCode="Lrule">20%</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">26%</td><td styleCode="Lrule Rrule">2%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Rigors</td><td styleCode="Lrule">19%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">23%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Back Pain</td><td styleCode="Lrule">16%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">8%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Increased Sweating</td><td styleCode="Lrule">12%</td><td styleCode="Lrule">2%</td><td styleCode="Lrule">12%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Neuropathy</td><td styleCode="Lrule">12%</td><td styleCode="Lrule">1%</td><td styleCode="Lrule">38%</td><td styleCode="Lrule Rrule">3%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Rhinitis</td><td styleCode="Lrule">12%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">6%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Edema</td><td styleCode="Lrule">9%</td><td styleCode="Lrule">2%</td><td styleCode="Lrule"> 8%</td><td styleCode="Lrule Rrule">1%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Chest Pain</td><td styleCode="Lrule">9%</td><td styleCode="Lrule">1%</td><td styleCode="Lrule">7%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Depression</td><td styleCode="Lrule">7%</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">6%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Malaise</td><td styleCode="Lrule">9%</td><td styleCode="Lrule">1%</td><td styleCode="Lrule">11%</td><td styleCode="Lrule Rrule">1%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Stomatitis</td><td styleCode="Lrule">9%</td><td styleCode="Lrule">1%</td><td styleCode="Lrule">8%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Alopecia</td><td styleCode="Lrule">8%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">36%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Dizziness</td><td styleCode="Lrule">8%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">9%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Sinusitis</td><td styleCode="Lrule">8%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">5%</td><td styleCode="Lrule Rrule">1%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Arthralgia</td><td styleCode="Lrule">7%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">6%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Constipation</td><td styleCode="Lrule">7%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">18%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Myalgia</td><td styleCode="Lrule">7%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">12%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Pruritus</td><td styleCode="Lrule">7%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">14%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Insomnia</td><td styleCode="Lrule">6%</td><td styleCode="Lrule">0%</td><td styleCode="Lrule">14%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Influenza-like symptoms</td><td styleCode="Lrule" valign="top">5%</td><td styleCode="Lrule" valign="top">0%</td><td styleCode="Lrule" valign="top">5%</td><td styleCode="Lrule Rrule" valign="top">0%</td></tr>
+<tr styleCode="Botrule"><td styleCode="Lrule">Tenesmus</td><td styleCode="Lrule">4%</td><td styleCode="Lrule">1%</td><td styleCode="Lrule">1%</td><td styleCode="Lrule Rrule">0%</td></tr>
+<tr><td styleCode="Lrule">Abnormal vision</td><td styleCode="Lrule">3%</td><td styleCode="Lrule">2%</td><td styleCode="Lrule"> 3%</td><td styleCode="Lrule Rrule">0%</td></tr>
+</tbody>
+</table><paragraph>The following adverse events were reported in &#8804; 5% of patients treated with DaunoXome, tabulated by body system.</paragraph><paragraph><content styleCode="bold">Body As A Whole:</content> Injection site inflammation</paragraph><paragraph><content styleCode="bold">Cardiovascular:</content> Hot flushes, hypertension, palpitation, syncope, tachycardia. In other follow-up clinical trials of DaunoXome (daunorubicin citrate liposome injection) use in treatment of Kaposi's sarcoma or other malignancies, the following serious cardiac events were reported: Pericardial effusion, pericardial tamponade, ventricular extrasystoles, cardiac arrest, sinus tachycardia, atrial fibrillation, pulmonary hypertension, myocardial infarction, supraventricular tachycardia, angina pectoris (see <linkHtml href="#WARNINGS">WARNINGS</linkHtml> section).</paragraph><paragraph><content styleCode="bold">Digestive:</content> Increased appetite, dysphagia, GI hemorrhage, gastritis, gingival bleeding, hemorrhoids, hepatomegaly, melena, dry mouth, tooth caries</paragraph><paragraph><content styleCode="bold">Hemic and Lymphatic:</content> Lymphadenopathy, splenomegaly</paragraph><paragraph><content styleCode="bold">Metabolic and Nutritional:</content> Dehydration, thirst</paragraph><paragraph><content styleCode="bold">Nervous:</content> Amnesia, anxiety, ataxia, confusion, convulsions, emotional lability, abnormal gait, hallucination, hyperkinesia, hypertonia, meningitis, somnolence, abnormal thinking, tremor</paragraph><paragraph><content styleCode="bold">Respiratory:</content> Hemoptysis, hiccups, pulmonary infiltration, increased sputum</paragraph><paragraph><content styleCode="bold">Skin:</content> Folliculitis, seborrhea, dry skin</paragraph><paragraph><content styleCode="bold">Special Senses:</content> Conjunctivitis, deafness, earache, eye pain, taste perversion, tinnitus</paragraph><paragraph><content styleCode="bold">Urogenital:</content> Dysuria, nocturia, polyuria</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="C3537760-0A17-FF97-85D6-51257B8F1E8A" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>The symptoms of acute overdosage are increased severities of the observed dose-limiting toxicities of therapeutic doses of DaunoXome, myelosuppression (especially granulocytopenia), fatigue, and nausea and vomiting.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section ID="DOSAGE">
+<id root="0FEFF40A-0C5B-FE38-1D8D-9AE75A385D5B" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>DaunoXome should be administered intravenously over a 60 minute period at a dose of 40 mg/m<sup>2</sup>, with doses repeated every two weeks. Blood counts should be repeated prior to each dose, and therapy withheld if the absolute granulocyte count is less than 750 cells/mm<sup>3</sup>. Treatment should be continued until there is evidence of progressive disease (e.g., based on best response achieved: new visceral sites of involvement, or progression of visceral disease; development of 10 or more new, cutaneous lesions or a 25% increase in the number of lesions compared to baseline; a change in the character of 25% or more of all previously counted flat lesions to raised; increase in surface area of the indicator lesions), or until other intercurrent complications of HIV disease preclude continuation of therapy.</paragraph></text>
+<effectiveTime value="20060614" />
+<component>
+<section>
+<id root="C05A3F2C-63A4-C79D-94AE-625E9D15982D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Patients with Impaired Hepatic and Renal Function</title>
+<text><paragraph>Limited clinical experience exists in treating hepatically and renally impaired patients with DaunoXome.</paragraph><paragraph>Therefore, based on experience with daunorubicin HCl, it is recommended that the dosage of DaunoXome be reduced if the bilirubin or creatinine is elevated as follows: Serum bilirubin 1.2 to 3 mg/dL, give &#190; the normal dose; serum bilirubin or creatinine &gt; 3 mg/dL, give &#189; the normal dose.</paragraph><paragraph>Do not mix DaunoXome with other drugs.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="BC861C2F-1B78-10B8-34D4-F1E3C4969D91" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Preparation Of Solution</title>
+<text><paragraph>DaunoXome should be diluted 1:1 with 5% Dextrose Injection (D5W) before administration. Each vial of DaunoXome contains daunorubicin citrate equivalent to 50 mg daunorubicin base, at a concentration of 2 mg/mL. The recommended concentration after dilution is 1 mg daunorubicin/mL of solution.</paragraph></text>
+<effectiveTime value="20060614" />
+<component>
+<section>
+<id root="AC26B1EF-8012-53C1-D2A0-C41F875E137F" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Use aseptic technique</title>
+<text><paragraph>Aseptic technique must be strictly observed in all handling, since no preservative or bacteriostatic agent is present in DaunoXome or in the materials recommended for dilution.</paragraph><paragraph>Withdraw the calculated volume of DaunoXome from the vial into a sterile syringe, and transfer it into a sterile infusion bag containing an equivalent amount of D5W. Administer diluted DaunoXome immediately. If not used immediately, diluted DaunoXome should be refrigerated at 2&#176;&#8211; 8 &#176;C (36&#176;&#8211; 46&#176;F) for a maximum of 6 hours.</paragraph><paragraph><content styleCode="bold">Caution: The <content styleCode="underline">only</content> fluid which may be mixed with DaunoXome is D5W; DaunoXome must not be mixed with saline, bacteriostatic agents such as benzyl alcohol, or any other solution.</content></paragraph><paragraph>Do not use an in-line filter for the intravenous infusion of DaunoXome.</paragraph><paragraph><content styleCode="bold">All parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration, whenever solution and container permit. DaunoXome is a translucent dispersion of liposomes that scatters light to some degree. Do not use DaunoXome if it appears opaque, or has precipitate or foreign matter present.</content></paragraph><paragraph>Procedures for proper handling and disposal of anticancer drugs should be followed.<sup>1&#8211;7</sup></paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="4A93E04E-C71C-019E-A21C-07B6EBD92D2A" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>DaunoXome is a translucent, red, liposomal dispersion supplied in single use vials, each sealed with a synthetic rubber stopper and aluminum sealing ring with a plastic cap. DaunoXome provides daunorubicin citrate equivalent to 50 mg of daunorubicin base, at a concentration of 2 mg/mL.</paragraph><paragraph>DaunoXome is supplied under NDC 61958-0301-1 for a single unit pack.</paragraph><paragraph /><paragraph /></text>
+<effectiveTime value="20060614" />
+<component>
+<section>
+<id root="05F8B61A-F122-C4CB-1AAF-69F51A7706BF" />
+<code code="44425-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STORAGE AND HANDLING SECTION" />
+<title mediaType="text/x-hl7-title+xml">Storage</title>
+<text><paragraph>Store DaunoXome in a refrigerator, 2&#176;&#8211;8&#176;C (36&#176;&#8211;46&#176;F). Do not freeze. Protect from light.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="3FAD5910-ADCF-464A-A7E0-24963D522A14" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">U.S. PATENT NUMBERS</title>
+<text><paragraph>The United States Patent Numbers applicable to DaunoXome are: 5,441,745; 5,435,989; 5,019,369; 4,946,683; 4,753,788; and additional patents pending.</paragraph></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="671445F3-CFBB-53BF-6E4C-A8CD879F28E1" />
+<code code="34093-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REFERENCES SECTION" />
+<title mediaType="text/x-hl7-title+xml">REFERENCES</title>
+<text><list listType="ordered"><item>ONS Clinical Practice Committee. Cancer Chemotherapy Guidelines and Recommendations for Practice. Pittsburg, Pa: Oncology Nursing Society; 1999:32&#8211;41.</item><item>Recommendations for the Safe Handling of Parenteral Antineoplastic Drugs. Washington, DC: Division of Safety, Clinical Center Pharmacy Department and Cancer Nursing Services, National Institutes of Health; 1992. US Dept of Health and Human Services, Public Health Service Publication NIH 92-2621.</item><item>AMA Council on Scientific Affairs. Guidelines for Handling Parenteral Antineoplastics. <content styleCode="italics">JAMA</content>. 1985;253:1590&#8211;1591.</item><item>National Study Commission on Cytotoxic Exposure - Recommendations for Handling Cytotoxic Agents. 1987. Available from Louis P. Jeffrey, Sc.D., Chairman, National Study Commission on Cytotoxic Exposure. Massachusetts College of Pharmacy and Allied Health Sciences, 179 Longwood Avenue, Boston, MA 02115.</item><item>Clinical Oncological Society of Australia. Guidelines and Recommendations for Safe Handling of Antineoplastic Agents. <content styleCode="italics">Med J Australia.</content> 1983;1:426&#8211;428.</item><item>Jones RB, Frank R, Mass T. Safe Handling of Chemotherapeutic Agents: A Report from the Mount Sinai Medical Center. CA-<content styleCode="italics">A Cancer J for Clin</content>. 1983;33:258&#8211;263.</item><item>American Society of Hospital Pharmacists. ASHP Technical Assistance Bulletin on Handling Cytotoxic and Hazardous Drugs. <content styleCode="italics">Am J Hosp Pharm</content>. 1990;47:1033&#8211;1049.</item><item>Controlling Occupational Exposure to Hazardous Drugs. (OSHA Work-Practice Guidelines). <content styleCode="italics">Am J Health-Syst Pharm</content>. 1996;53:1669&#8211;1685.</item></list></text>
+<effectiveTime value="20060614" />
+</section>
+</component>
+<component>
+<section>
+<id root="8088899E-F35E-4427-9151-505FFD4B97FD" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><renderMultiMedia referencedObject="MM4" /></paragraph><paragraph>Gilead Sciences, Inc.<br />650 Cliffside Drive &#8226; San Dimas, CA 91773 USA</paragraph><paragraph><content styleCode="bold">For medical information about DaunoXome (daw-nuh-zome), call 800-GILEAD-5 (800-445-3235).</content></paragraph><paragraph>DaunoXome is a registered trademark of Gilead Sciences, Inc.<br />Copyright 1996, Gilead Sciences, Inc.</paragraph><paragraph>All rights reserved.</paragraph><paragraph>Rev.7/02</paragraph><paragraph>83030119906</paragraph></text>
+<effectiveTime value="20060614" />
+<component>
+<observationMedia ID="MM4">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="daunoxome-image04.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

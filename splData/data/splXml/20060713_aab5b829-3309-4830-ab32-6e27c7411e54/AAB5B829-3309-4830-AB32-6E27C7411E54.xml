@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="AAB5B829-3309-4830-AB32-6E27C7411E54" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">200280-02<br />For the Physician<br />
+Cordran<sup>&#174;</sup> Tape<br />
+Flurandrenolide Tape, USP<br /></title>
+<effectiveTime value="20060601" />
+<setId root="AAB5B829-3309-4830-AB32-6E27C7411E54" />
+<versionNumber value="2" />
+<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>OCLASSEN Dermatologics</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="4215D043-1915-48A4-BEBB-13312B369815" />
+<effectiveTime value="20060601" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="55515-014" codeSystem="2.16.840.1.113883.6.69" />
+<name>Cordran</name>
+<formCode code="C47897" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TAPE" />
+<activeIngredient>
+<quantity>
+<numerator unit="ug" value="4">
+<translation code="C48152" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MICROGRAM" value="4" />
+</numerator>
+<denominator value="1">
+<translation code="C48460" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SQUARE CENTIMETER" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="8EUL29XUQT" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>flurandrenolide</name>
+<activeMoiety>
+<activeMoiety>
+<code code="8EUL29XUQT" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>flurandrenolide</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Flurandrenolide</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polyethylene film</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>acrylate ester</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>acrylic acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="450">
+<translation code="C48460" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SQUARE CENTIMETER" value="450" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="55515-014-24" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43178" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="1500">
+<translation code="C48460" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SQUARE CENTIMETER" value="1500" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="55515-014-80" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43178" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="38.25">
+<translation code="C48460" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SQUARE CENTIMETER" value="38.25" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="55515-014-12" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43178" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="7A8A590F-0EC7-65BC-5D8F-A2498288428B" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Cordran<sup>&#174;</sup> Tape (Flurandrenolide Tape, USP) is a transparent, inconspicuous, plastic surgical tape, impervious to moisture. It contains Cordran<sup>&#174;</sup> (Flurandrenolide, USP), a potent corticosteroid for topical use. Flurandrenolide occurs as white to off-white, fluffy crystalline powder and is odorless. Flurandrenolide is practically insoluble in water and in ether. One g dissolves in 72 mL of alcohol and in 10 mL of chloroform. The molecular weight of flurandrenolide is 436.52.</paragraph><paragraph>The chemical name of flurandrenolide is Pregn-4-ene-3,20-dione, 6-fluoro-11,21 dihydroxy-16,17-[(1- methylethylidene)bis (oxy)]-, (6&#945;, 11&#946;, 16&#945;)-; its empirical formula is C<sub>24</sub>H<sub>33</sub>FO<sub>6</sub>. The structural formula is as follows:</paragraph><renderMultiMedia referencedObject="MM1" /><paragraph>Each square centimeter contains 4 &#956;g (0.00916 &#956;mol) flurandrenolide uniformly distributed in the adhesive layer. The tape is made of a thin, matte-finish polyethylene film that is slightly elastic and highly flexible.</paragraph><paragraph>The adhesive is a synthetic copolymer of acrylate ester and acrylic acid that is free from substances of plant origin. The pressure-sensitive adhesive surface is covered with a protective paper liner to permit handling and trimming before application.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="53ACED63-D4C9-D6F8-524C-3650174E72E0" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>Cordran is primarily effective because of its anti-inflammatory, antipruritic, and vasoconstrictive actions.</paragraph><paragraph>The mechanism of the anti-inflammatory effect of topical corticosteroids is not completely understood. Various laboratory methods, including vasoconstrictor assays, are used to compare and predict potencies and/or clinical efficacies of the topical corticosteroids. There is some evidence to suggest that a recognizable correlation exists between vasoconstrictor potency and therapeutic efficacy in man. Corticosteroids with anti-inflammatory activity may stabilize cellular and lysosomal membranes. There is also the suggestion that the effect on the membranes of lysosomes prevents the release of proteolytic enzymes and, thus, plays a part in reducing inflammation.</paragraph><paragraph>The tape serves as both a vehicle and an occlusive dressing. Retention of insensible perspiration by the tape results in hydration of the stratum corneum and improved diffusion of the medication. The skin is protected from scratching, rubbing, desiccation, and chemical irritation. The tape acts as a mechanical splint to fissured skin. Since it prevents removal of the medication by washing or the rubbing action of clothing, the tape formulation provides a sustained action.</paragraph><paragraph><content styleCode="italics">Pharmacokinetics&#8212;</content>The extent of percutaneous absorption of topical corticosteroids is determined by many factors, including the vehicle, the integrity of the epidermal barrier, and the use of occlusive dressings.</paragraph><paragraph>Topical corticosteroids can be absorbed from normal intact skin. Inflammation and/or other disease processes in the skin increase percutaneous absorption. Occlusive dressings substantially increase the percutaneous absorption of topical corticosteroids. Thus, occlusive dressings may be a valuable therapeutic adjunct for treatment of resistant dermatoses (see <linkHtml href="#A026B87B-36C4-4B29-84B6-8D4F4D4C8C33">DOSAGE AND ADMINISTRATION</linkHtml>).</paragraph><paragraph>Once absorbed through the skin, topical corticosteroids are handled through pharmacokinetic pathways similar to those of systemically administered corticosteroids. Corticosteroids are bound to plasma proteins in varying degrees. They are metabolized primarily in the liver and then excreted in the kidneys. Some of the topical corticosteroids and their metabolites are also excreted into the bile.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="6269AE7B-9507-60AC-939F-D7711D8473A7" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>For relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses, particularly dry, scaling localized lesions.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="4AF3B208-C2AF-B105-8FA2-0B7B4FDEDBC6" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>Topical corticosteroids are contraindicated in patients with a history of hypersensitivity to any of the components of these preparations.</paragraph><paragraph>Use of Cordran Tape is not recommended for lesions exuding serum or in intertriginous areas.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="A40106E3-08FD-4C8E-B19B-0B7276F08DC5">
+<id root="3798D1F2-96AE-8AB3-E80A-11DE5AAE4EA4" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<effectiveTime value="20060601" />
+<component>
+<section>
+<id root="5E0BB90D-29B2-0B0C-97EE-56CCD3DB8F71" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>Systemic absorption of topical corticosteroids has produced reversible hypothalamic-pituitary-adrenal (HPA) axis suppression, manifestations of Cushing&#8217;s syndrome, hyperglycemia, and glucosuria in some patients.</paragraph><paragraph>Conditions that augment systemic absorption include application of the more potent steroids, use over large surface areas, prolonged use, and the addition of occlusive dressings.</paragraph><paragraph>Therefore, patients receiving a large dose of a potent topical steroid applied to a large surface area or under an occlusive dressing should be evaluated periodically for evidence of HPA axis suppression by using urinary-free cortisol and ACTH stimulation tests. If HPA axis suppression is noted, an attempt should be made to withdraw the drug, to reduce the frequency of application, or to substitute a less potent steroid.</paragraph><paragraph>Recovery of HPA axis function is generally prompt and complete on discontinuation of the drug. Infrequently, signs and symptoms of steroid withdrawal may occur, so that supplemental systemic corticosteroids are required.</paragraph><paragraph>Pediatric patients may absorb proportionately larger amounts of topical corticosteroids and thus be more susceptible to systemic toxicity (see <linkHtml href="#A7F0B367-0C36-4737-9BD9-E465314E8499">Pediatric Use</linkHtml> under <content styleCode="bold">PRECAUTIONS</content>).</paragraph><paragraph>If irritation develops, topical corticosteroids should be discontinued and appropriate therapy instituted.</paragraph><paragraph>In the presence of dermatologic infections, the use of an appropriate antifungal or antibacterial agent should be instituted. If a favorable response does not occur promptly, Cordran should be discontinued until the infection has been adequately controlled.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="3205CBCD-5062-63E6-8816-DDE7E6ADA869" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Information for the Patient</title>
+<text><paragraph>Patients using topical corticosteroids should receive the following information and instructions:</paragraph><list listType="ordered" styleCode="Arabic"><item><paragraph>This medication is to be used as directed by the physician. It is for external use only. Avoid contact with the eyes.</paragraph></item><item><paragraph>Patients should be advised not to use this medication for any disorder other than that for which it was prescribed.</paragraph></item><item><paragraph>The treated skin area should not be bandaged or otherwise covered or wrapped in order to be occlusive unless the patient is directed to do so by the physician.</paragraph></item><item><paragraph>Patients should report any signs of local adverse reactions, especially under occlusive dressing.</paragraph></item><item><paragraph>Parents of pediatric patients should be advised not to use tight-fitting diapers or plastic pants on a patient being treated in the diaper area, because these garments may constitute occlusive dressings.</paragraph></item></list></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="4ED7FC15-634F-CC14-CBC4-0AB535119DB1" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" displayName="LABORATORY TESTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text><paragraph>The following tests may be helpful in evaluating the HPA axis suppression:<br />Urinary-free cortisol test<br />ACTH stimulation test<br /></paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="9B760CAB-B43B-54EF-49BC-9769D2A91E58" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, and Impairment of Fertility</title>
+<text><paragraph>Long-term animal studies have not been performed to evaluate the carcinogenic potential or the effect on fertility of topical corticosteroids.</paragraph><paragraph>Studies to determine mutagenicity with prednisolone and hydrocortisone have revealed negative results.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="6DEA234D-1ECD-D8F2-CB40-FAD9A5C7E459" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Usage in Pregnancy</title>
+<text><paragraph><content styleCode="italics">Pregnancy Category C</content>&#8212;Corticosteroids are generally teratogenic in laboratory animals when administered systemically at relatively low dosage levels. The more potent corticosteroids have been shown to be teratogenic after dermal application in laboratory animals. There are no adequate and well-controlled studies in pregnant women on teratogenic effects from topically applied corticosteroids. Therefore, topical corticosteroids should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. Drugs of this class should not be used extensively for pregnant patients or in large amounts or for prolonged periods of time.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="A2B67775-0666-0AEB-0187-E3FC9896D7A2" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>It is not known whether topical administration of corticosteroids could result in sufficient systemic absorption to produce detectable quantities in breast milk. Systemically administered corticosteroids are secreted into breast milk in quantities <content styleCode="italics">not </content>likely to have a deleterious effect on the infant. Nevertheless, caution should be exercised when topical corticosteroids are administered to a nursing woman.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="A7F0B367-0C36-4737-9BD9-E465314E8499">
+<id root="4A4205D8-7D3D-F09A-E82D-67B1F22A1BB7" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>Pediatric patients may demonstrate greater susceptibility to topical-corticosteroid-induced HPA axis suppression and Cushing&#8217;s syndrome than do mature patients because of a larger skin surface area to body weight ratio.</paragraph><paragraph>Hypothalamic-pituitary-adrenal (HPA) axis suppression, Cushing&#8217;s syndrome, and intracranial hypertension have been reported in pediatric patients receiving topical corticosteroids. Manifestations of adrenal suppression in pediatric patients include linear growth retardation, delayed weight gain, low plasma-cortisol levels, and absence of response to ACTH stimulation. Manifestations of intracranial hypertension include bulging fontanelles, headaches, and bilateral papilledema.</paragraph><paragraph>Administration of topical corticosteroids to pediatric patients should be limited to the least amount compatible with an effective therapeutic regimen. Chronic corticosteroid therapy may interfere with the growth and development of pediatric patients.</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="0781817D-48BF-628D-C99F-4B22E7544BD9" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>The following local adverse reactions are reported infrequently with topical corticosteroids but may occur more frequently with the use of occlusive dressings. These reactions are listed in an approximate decreasing order of occurrence:<br />Burning<br />Itching<br />Irritation<br />Dryness<br />Folliculitis<br />Hypertrichosis<br />Acneform eruptions<br />Hypopigmentation<br />Perioral dermatitis<br />Allergic contact dermatitis</paragraph><paragraph>The following may occur more frequently with occlusive dressings:<br />Maceration of the skin<br />Secondary infection<br />Skin atrophy<br />Striae<br />Miliaria</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="05C6BAD0-1E61-E19E-D985-71E2FD222F27" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>Topically applied corticosteroids can be absorbed in sufficient amounts to produce systemic effects (see <linkHtml href="#A40106E3-08FD-4C8E-B19B-0B7276F08DC5">PRECAUTIONS</linkHtml>).</paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section ID="A026B87B-36C4-4B29-84B6-8D4F4D4C8C33">
+<id root="97729D24-B3E7-A29C-F864-17AEA4D55DE5" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>Occlusive dressings may be used for the management of psoriasis or recalcitrant conditions.</paragraph><paragraph>If an infection develops, the use of Cordran Tape and other occlusive dressings should be discontinued and appropriate antimicrobial therapy instituted.</paragraph><paragraph>Replacement of the tape every 12 hours produces the lowest incidence of adverse reactions, but it may be left in place for 24 hours if it is well tolerated and adheres satisfactorily. When necessary, the tape may be used at night only and removed during the day.</paragraph><paragraph>If ends of the tape loosen prematurely, they may be trimmed off and replaced with fresh tape.</paragraph><paragraph>The directions given below are included on a separate package insert for the patient to follow unless otherwise instructed by the physician.</paragraph><paragraph><content styleCode="bold"><renderMultiMedia referencedObject="MM2" /></content></paragraph><paragraph><content styleCode="bold">APPLICATION OF CORDRAN TAPE </content></paragraph><table width="75%"><col align="left" width="75%" />
+<thead>
+<tr><td styleCode="Lrule Rrule" /></tr>
+</thead>
+<tbody>
+<tr><td styleCode="Lrule Rrule" valign="top">IMPORTANT: Skin should be clean and <content styleCode="italics">dry</content> before tape is applied. Tape should always be cut, never torn.</td></tr>
+</tbody>
+</table><paragraph>DIRECTIONS FOR USE:</paragraph><list listType="ordered" styleCode="Arabic"><item><paragraph>Prepare skin as directed by your physician or as follows: Gently clean the area to be covered to remove scales, crusts, dried exudates, and any previously used ointments or creams. A germicidal soap or cleanser should be used to prevent the development of odor under the tape. Shave or clip the hair in the treatment area to allow good contact with the skin and comfortable removal. If shower or tub bath is to be taken, it should be completed before the tape is applied. The skin should be dry before application of the tape.</paragraph></item><item><paragraph>Remove tape from package and cut a piece slightly larger than area to be covered. Round off corners.</paragraph></item><item><paragraph>Pull white paper from transparent tape. Be careful that tape does not stick to itself.</paragraph></item><item><paragraph>Apply tape, keeping skin smooth; press tape into place.</paragraph></item></list><paragraph>REPLACEMENT OF TAPE:</paragraph><paragraph>Unless instructed otherwise by your physician, replace tape after 12 hours. Cleanse skin and allow it to dry for 1 hour before applying new tape.</paragraph><paragraph>IF IRRITATION OR INFECTION DEVELOPS, REMOVE TAPE AND CONSULT PHYSICIAN.</paragraph><paragraph><content styleCode="bold"><renderMultiMedia referencedObject="MM3" /></content></paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="CEF2D386-C5CC-64BD-995D-0DD975126C40" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>Tape:</paragraph><paragraph>4 mcg/sq cm&#8212;small roll, 24 in x 3 in (60 cm x 7.5 cm)<br />NDC 55515-014-24</paragraph><paragraph>4 mcg/sq cm&#8212;large roll, 80 in x 3 in (200 cm x 7.5 cm)<br />NDC 55515-014-80</paragraph><paragraph>4 mcg/sq cm&#8212;12 patches, each 2 in x 3 in (5.1 cm x<br />7.5 cm) NDC 55515-014-12</paragraph><paragraph>Directions for the patient are included in each package.</paragraph><paragraph>Store at 25&#176;C (77&#176;F); excursions permitted to 15-30&#176;C (59-86&#176;F).</paragraph><paragraph><content styleCode="bold">Rx only</content></paragraph></text>
+<effectiveTime value="20060601" />
+</section>
+</component>
+<component>
+<section>
+<id root="2EF77D6A-0AC5-E6E6-6384-604B1D77C500" />
+<code code="34093-5" codeSystem="2.16.840.1.113883.6.1" displayName="REFERENCES SECTION" />
+<title mediaType="text/x-hl7-title+xml">REFERENCES</title>
+<text><paragraph>Bard JW: Flurandrenolide tape in the treatment of lichen simplex chronicus. <content styleCode="italics">J Ky Med Assoc</content> 1969;67:668.</paragraph><paragraph>Baxter DL, Stoughton RB: Mitotic index of psoriatic lesions treated with anthralin, glucocorticosteroid and occlusion only. <content styleCode="italics">J Invest Dermatol</content> 1970;54:410.</paragraph><paragraph>Compilation of clinical reports on Cordran Tape received by Eli Lilly and Company.</paragraph><paragraph>Halprin KM, Fukui K, Ohkawara A: Flurandrenolone (Cordran) tape and carbohydrate metabolizing enzymes. <content styleCode="italics">Arch Dermatol</content> 1969;100:336.</paragraph><paragraph>Labow TA, Eisert J, Sanders SL: Flurandrenolide tape in treatment of psoriasis. <content styleCode="italics">NY State J Med</content> 1969;69:3138.</paragraph><paragraph>Ronchese F: Flurandrenolone tape therapy. <content styleCode="italics">RI Med J</content> 1969;52:389.</paragraph><paragraph>Sellers FM: Investigative study of flurandrenolone tape in a series of ambulatory outpatients. <content styleCode="italics">J Indiana State Med Assoc</content> 1970;63:34.</paragraph><paragraph>Weiner MA: Flurandrenolone tape, a new preparation for occlusive therapy, <content styleCode="italics">J Invest Dermatol</content> 1966;47:63.</paragraph><paragraph>Revised MARCH 2003</paragraph><paragraph>Mfd. by Minnesota Mining and<br />Manufacturing Company<br />St. Paul, MN 55101</paragraph><paragraph>Mfd. For</paragraph><paragraph>OCLASSEN Dermatologics</paragraph><paragraph>A Divison of Watson Pharma, Inc.</paragraph><paragraph>Corona, CA 92880</paragraph></text>
+<effectiveTime value="20060601" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="cordran-figure-01.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<observationMedia ID="MM2">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="cordran-figure-02.jpg" /></value>
+</observationMedia>
+</component>
+<component>
+<observationMedia ID="MM3">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="cordran-figure-03.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

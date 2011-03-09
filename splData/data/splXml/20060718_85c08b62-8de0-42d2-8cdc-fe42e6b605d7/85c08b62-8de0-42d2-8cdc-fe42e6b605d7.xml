@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="85c08b62-8de0-42d2-8cdc-fe42e6b605d7" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title ID="INV-72906e0a-bd9f-4e2b-9b7a-9983ee77c779" mediaType="text/x-hl7-title+xml">Plasma-Lyte&#174; 56 and 5% Dextrose Injection
+        (Multiple Electrolytes and Dextrose Injection, Type 1, USP) <br />in Viaflex&#174; Plastic
+        Container</title>
+<effectiveTime value="20060510" />
+<setId root="85c08b62-8de0-42d2-8cdc-fe42e6b605d7" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Baxter Healthcare Corporation</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="23866E11-00D6-4310-72E5-2D83888A4066" />
+<effectiveTime value="20060510" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0338-0147" codeSystem="2.16.840.1.113883.6.69" />
+<name>Plasma-Lyte 56 and Dextrose</name>
+<formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION" />
+<activeIngredient>
+<quantity>
+<numerator unit="g" value="5.00">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="5.00" />
+</numerator>
+<denominator unit="mL" value="100.00">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100.00" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="LX22YL083G" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Dextrose hydrous</name>
+<activeMoiety>
+<activeMoiety>
+<code code="IY9XDZ35W2" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>dextrose</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="234.00">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="234.00" />
+</numerator>
+<denominator unit="mL" value="100.00">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100.00" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sodium Chloride</name>
+<activeMoiety>
+<activeMoiety>
+<code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Sodium Chloride</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="128.00">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="128.00" />
+</numerator>
+<denominator unit="mL" value="100.00">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100.00" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="M911911U02" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Acetate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="M911911U02" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Potassium Acetate</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="32.00">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="32.00" />
+</numerator>
+<denominator unit="mL" value="100.00">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100.00" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="I01G0EJC3B" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Magnesium Acetate Tetrahydrate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="I01G0EJC3B" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Magnesium Acetate Tetrahydrate</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Sodium chloride, potassium acetate, magnesium acetate and dextrose</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="QTT17582CB" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Hydrochloric acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="1000.00">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1000.00" />
+</numerator>
+<denominator value="1.00">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1.00" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0147-04" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator unit="mL" value="500.00">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="500.00" />
+</numerator>
+<denominator value="1.00">
+<translation codeSystem="2.16.840.1.113883.3.26.1.1" value="1.00" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0338-0147-03" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section ID="INV-a40c337f-e0be-4bcc-b2ef-a1c3ecbdb2b0">
+<id root="ED2B2ECD-AC27-4C12-8F81-3B3ECC2FFF3C" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title ID="INV-95c29e52-ab66-4428-8440-dc77aa5e714d" mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text ID="INV-6b565cc1-9e6b-468a-b538-7c258e93997a"><paragraph ID="INV-22933b3f-e93b-418f-b0ca-309901b6f099">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) is a sterile, nonpyrogenic solution for fluid and
+                            electrolyte replenishment and caloric supply in a single dose container
+                            for intravenous administration. Each 100 mL contains 5 g Dextrose
+                            Hydrous, USP*, 234 mg Sodium Chloride, USP (NaCl); 128 mg Potassium
+                            Acetate, USP (C<sub>2</sub>H<sub>3</sub>KO<sub>2</sub>); and 32 mg
+                            Magnesium Acetate, Tetrahydrate
+                                (C<sub>4</sub>H<sub>6</sub>MgO<sub>4</sub>&#8226;4H<sub>2</sub>O). It
+                            contains no antimicrobial agents. pH 5.0 (4.0 to 6.5). The pH is
+                            adjusted with hydrochloric acid.</paragraph><renderMultiMedia referencedObject="MM-6baf6590-b558-400d-a569-2e8a0aac01ac" /><paragraph ID="INV-d7caf8f4-2405-43ed-a53c-bfb10e423cb4">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) administered intravenously has value as a source of water,
+                            electrolytes, and calories. One liter has an ionic concentration of 40
+                            mEq sodium, 13 mEq potassium, 3 mEq magnesium, 40 mEq chloride, and 16
+                            mEq acetate. The osmolarity is 363 mOsmol/L (calc). Normal physiologic
+                            osmolarity range is approximately 280 to 310 mOsmol/L. Administration of
+                            substantially hypertonic solutions (&#8805; 600 mOsmol/L) may cause vein
+                            damage. The caloric content is 170 kcal/L. </paragraph><paragraph ID="INV-da925e48-c97e-4ef8-818a-86e695b8286d">The Viaflex&#174;
+                            plastic container is fabricated from a specially formulated polyvinyl
+                            chloride (PL 146&#174; Plastic). The amount of water that can permeate from
+                            inside the container into the overwrap is insufficient to affect the
+                            solution significantly. Solutions in contact with the plastic container
+                            may leach out certain chemical components from the plastic in very small        amounts; however, biological testing was supportive of the safety of the
+                            plastic container materials.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<observationMedia ID="MM-6baf6590-b558-400d-a569-2e8a0aac01ac">
+<value mediaType="image/jpeg"><reference value="Plasma-017385.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-31c11dca-8913-4580-a1d2-ffe9bd5c118a">
+<id root="1BAB9D70-21EC-AF8E-9488-85687656D5A1" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title ID="INV-3176c539-71e3-47f8-9af1-2d6885fa4140" mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text ID="INV-65fa9bb1-7468-449f-aedb-1b16399e62de"><paragraph ID="INV-b909404f-267a-40a1-ba74-6fce79c40f6b">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) has value as a source of water, electrolytes, and calories.
+                            It is capable of inducing diuresis depending on the clinical condition
+                            of the patient. </paragraph><paragraph ID="INV-ecc3d126-cdb8-42a5-8a73-c3193fa18f57">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,             Type 1, USP) produces a metabolic alkalinizing effect. Acetate ions are
+                            metabolized ultimately to carbon dioxide and water, which requires the
+                            consumption of hydrogen cations.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-16e62d5d-5c5f-4bc3-89a9-ae6a2fe19069">
+<id root="AE4DF7A8-2B67-A28D-E0AC-E0065D92D200" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS AND USAGE SECTION" />
+<title ID="INV-fefcb267-b8f6-44f2-ae74-3b2dfb4f22d0" mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text ID="INV-c74adbd5-e536-4590-b1db-618874071883"><paragraph ID="INV-391228dc-ca79-4b63-b6db-e3cff657709e">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) is indicated as a source of water, electrolytes, and
+                            calories or as an alkalinizing agent.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-8bfaa949-d090-4b46-9de4-5f3f4dc84a68">
+<id root="EA8E2A30-1E64-56ED-FE03-164A85248DEC" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title ID="INV-71ea56e5-7a1a-402c-97cc-1142e37ba9ef" mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text ID="INV-8919f307-c0d3-482a-9978-0565fdeacafa"><paragraph ID="INV-e5885046-9253-4988-9571-3c539d57cd4d">Solutions
+                            containing dextrose may be contraindicated in patients with known
+                            allergy to corn or corn products.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-9780582c-9657-4750-b3e3-3d4b3b85f016">
+<id root="E26E4390-1A3C-DB4C-3BE4-E7EB3D5DAA43" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title ID="INV-6d69cf92-f326-4937-89c9-d4b0af58e887" mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text ID="INV-2cebabdc-3085-4425-885c-114f1a46efee"><paragraph ID="INV-52c588db-0dbe-4090-bea7-ff902d6223e6">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) should be used with great care, if at all, in patients with
+                            congestive heart failure, severe renal insufficiency, and in clinical
+                            states in which there exists edema with sodium retention. </paragraph><paragraph ID="INV-48aedbd4-bb5b-476d-997e-ab83526fe3fb">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) should be used with great care, if at all, in patients with
+                            hyperkalemia, severe renal failure, and in conditions in which potassium
+                            retention is present. </paragraph><paragraph ID="INV-4f0397e8-3d03-4536-924c-229797069f57">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) should be used with great care in patients with metabolic
+                            or respiratory alkalosis. The administration of acetate ions should be
+                            done with great care in those conditions in which there is an increased
+                            level or an impaired utilization of these ions, such as severe hepatic
+                            insufficiency. </paragraph><paragraph ID="INV-1284c4e1-263a-44f8-ad97-51c25f3eb7fd">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) should not be administered simultaneously with blood
+                            through the same administration set because of the possibility of
+                            pseudoagglutination or hemolysis. </paragraph><paragraph ID="INV-353448bc-7954-4378-9699-c2df69c45a9b">The intravenous
+                            administration of Plasma-Lyte&#174; 56 and 5% Dextrose Injection (Multiple
+                            Electrolytes and Dextrose Injection, Type 1, USP) can cause fluid and/or
+                            solute overloading resulting in dilution of serum electrolyte
+                            concentrations, overhydration, congested states, or pulmonary edema. The
+                            risk of dilutional states is inversely proportional to the electrolyte
+                            concentrations of the injection. The risk of solute overload causing
+                            congested states with peripheral and pulmonary edema is directly
+                            proportional to the electrolyte concentrations of the injection. </paragraph><paragraph ID="INV-5f552abf-681e-4f56-8e0c-afa6a3605dcd">In patients with
+                            diminished renal function, administration of Plasma-Lyte&#174; 56 and 5%
+                            Dextrose Injection (Multiple Electrolytes and Dextrose Injection, Type
+                            1, USP) may result in sodium or potassium retention.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-d5b96c14-c926-43bc-bc3c-e84a456bb455">
+<id root="0141E71B-A324-3100-7426-9266E1982C8E" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS SECTION" />
+<title ID="INV-ec4927b9-c654-479e-a049-e81891f75289" mediaType="text/x-hl7-title+xml">GENERAL PRECAUTIONS</title>
+<text ID="INV-5839bd3f-1b32-4fd0-b546-7017e178defd"><paragraph ID="INV-24a564d9-e63a-48ed-88ee-3e426c1ef43e">Clinical evaluation
+                            and periodic laboratory determinations are necessary to monitor changes
+                            in fluid balance, electrolyte concentrations, and acid base balance
+                            during prolonged parenteral therapy or whenever the condition of the
+                            patient warrants such evaluation. </paragraph><paragraph ID="INV-d4a7eb18-bade-454c-9a03-ac323c3f8c6f">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) should be used with caution. Excess administration may
+                            result in metabolic alkalosis. </paragraph><paragraph ID="INV-f1d11633-de4a-40d8-b3d1-e75ee7e3e8ea">Caution must be
+                            exercised in the administration of Plasma-Lyte&#174; 56 and 5% Dextrose
+                            Injection (Multiple Electrolytes and Dextrose Injection, Type 1, USP) to
+                            patients receiving corticosteroids or corticotropin. </paragraph><paragraph ID="INV-4cd5ca7f-d408-4b7c-889e-654d160116b8">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) should be used with caution in patients with overt or
+                            subclinical diabetes mellitus.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section ID="INV-16029f44-58a3-44bc-aa47-fde6a13bad80">
+<id root="57F89D93-B316-09F7-DAD5-63470AF8DE33" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title ID="INV-3ba9b38d-5cb9-41b4-9402-9ce828731635" mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<effectiveTime value="20060510" />
+<component>
+<section ID="INV-bf2f6960-07fd-42d9-8729-9cf8661dca16">
+<id root="83C9AD40-A1E7-AAA8-124A-2AEBE33AAFED" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERATOGENIC EFFECTS SECTION" />
+<title ID="INV-f796b976-1dcd-4fe0-af3c-0d982a9e0c23" mediaType="text/x-hl7-title+xml">Teratogenic
+                                        Effects </title>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="784FC71B-3A89-11FA-2042-D6CD1F9B0829" />
+<title ID="INV-00ca92dc-0302-4368-bf96-3d0b7aae03e5" mediaType="text/x-hl7-title+xml">Pregnancy Category C</title>
+<text ID="INV-4d16c544-d954-4092-ad50-b227e96c1dad"><paragraph ID="INV-5cc7c260-0a2a-4daa-9d2b-656b034c9c0a">Animal reproduction studies have not been
+                                                  conducted with Plasma-Lyte&#174; 56 and 5% Dextrose
+                                                  Injection (Multiple Electrolytes and Dextrose
+                                                  Injection, Type 1, USP). It is also not known                whether Plasma-Lyte&#174; 56 and 5% Dextrose
+                                                  Injection (Multiple Electrolytes and Dextrose
+                                                  Injection, Type 1, USP) can cause fetal harm        when administered to a pregnant woman or can
+                                                  affect reproduction capacity. Plasma-Lyte&#174; 56
+                                                  and 5% Dextrose Injection (Multiple Electrolytes
+                                                  and Dextrose Injection, Type 1, USP) should be
+                                                  given to a pregnant woman only if clearly
+                                                  needed.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-573105a7-550e-4eb3-a73d-dfc79163afe9">
+<id root="9164C032-528B-E105-448C-21EE0C7B09CC" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title ID="INV-9109cffe-9650-427f-8f3f-238148765d60" mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text ID="INV-680baaf2-f1c3-47fa-b0c6-1ccd8840e59f"><paragraph ID="INV-09a91516-241a-4b1c-b5ca-3a964dccdf79">Safety and
+                                    effectiveness of Plasma-Lyte&#174; 56 and 5% Dextrose Injection
+                                    (Multiple Electrolytes and Dextrose Injection, Type 1, USP) in
+                                    pediatric patients have not been established by adequate and
+                                    well controlled trials, however, the use of plasmalyte and
+                                    dextrose solutions in the pediatric population is referenced in
+                                    the medical literature. The warnings, precautions and adverse
+                                    reactions identified in the label copy should be observed in the
+                                    pediatric population. </paragraph><paragraph ID="INV-075e8861-b1eb-4e51-b412-b734c1cbd174">In very low              birth weight infants, excessive or rapid administration of
+                                    dextrose injection may result in increased serum osmolality and
+                                    possible hemorrhage.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-5b92ad10-2bba-4cd5-b083-b27bdc9da636">
+<id root="76492EA3-88E9-5B9E-7C3F-F54F92FE5126" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS AND MUTAGENESIS AND IMPAIRMENT OF FERTILITY SECTION" />
+<title ID="INV-86f19c17-8edd-4ad6-8636-ce80a7e56156" mediaType="text/x-hl7-title+xml">Carcinogenesis and
+                                Mutagenesis and Impairment of Fertility</title>
+<text ID="INV-f89ca954-77c4-4e9c-88e9-d73abb0062a0"><paragraph ID="INV-b1056a41-0da6-4221-b29a-e5feb8924deb">Studies
+                                    with Plasma-Lyte&#174; 56 and 5% Dextrose Injection (Multiple
+                                    Electrolytes and Dextrose Injection, Type 1, USP) have not been
+                                    performed to evaluate carcinogenic potential, mutagenic
+                                    potential, or effects on fertility.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-0a8cd260-3cf2-49ae-89e9-c9f83456a5bc">
+<id root="700F3F78-E69E-371F-80FE-C302B1640A4F" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS SECTION" />
+<title ID="INV-85ef8d0b-722f-423e-942b-b8f0a342781c" mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text ID="INV-bfd393f2-12a3-4ec6-a4f2-ad1b774ed841"><paragraph ID="INV-9befe140-0c3c-49f4-a820-7a23aef3bedc">It is not
+                                    known whether this drug is excreted in human milk. Because many
+                                    drugs are excreted in human milk, caution should be exercised
+                                    when Plasma-Lyte&#174; 56 and 5% Dextrose Injection (Multiple
+                                    Electrolytes and Dextrose Injection, Type 1, USP) is
+                                    administered to a nursing mother.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-564db8a3-41f8-41a5-b88c-bea852143c72">
+<id root="FC43B800-C216-2EBD-00CE-6B7EB2BC9D26" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GERIATRIC USE SECTION" />
+<title ID="INV-b2d33d73-4f10-4b10-9357-afd3bb144f94" mediaType="text/x-hl7-title+xml">Geriatric Use</title>
+<text ID="INV-bdd30ac4-26ec-4496-a76a-ea20e32c6c2e"><paragraph ID="INV-2717be25-e0ec-4985-9860-fcbdb962be2e">Clinical
+                                    studies of Plasma-Lyte&#174; 56 and 5% Dextrose Injection (Multiple
+                                    Electrolytes and Dextrose Injection, Type 1, USP) did not
+                                    include sufficient numbers of subjects aged 65 and over to
+                                    determine whether they respond differently from younger
+                                    subjects. Other reported clinical experience has not identified
+                                    differences in responses between the elderly and younger
+                                    patients. In general, dose selection for an elderly patient
+                                    should be cautious, usually starting at the low end of the
+                                    dosing range, reflecting the greater frequency of decreased
+                                    hepatic, renal, or cardiac function, and of concomitant disease
+                                    or drug therapy. </paragraph><paragraph ID="INV-19e8a2fb-e081-4014-b17f-b2c0911deecd">Do not
+                                    administer unless solution is clear and seal is
+                                intact.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="INV-4f17a9ee-f755-4b49-ad4a-03b9f0b45161">
+<id root="B8195C68-E5B0-415E-8B57-6C90434A3722" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title ID="INV-5ae017a3-b6fc-4fb9-9146-8a8cb1c44786" mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text ID="INV-a8e40a90-304b-4307-ac43-aabdb78493a2"><paragraph ID="INV-2ada791d-30a2-4a88-a735-746e4ff94583">Reactions which may
+                            occur because of the solution or the technique of administration include
+                            febrile response, infection at the site of injection, venous thrombosis
+                            or phlebitis extending from the site of injection, extravasation, and
+                            hypervolemia. </paragraph><paragraph ID="INV-a8ec0243-f094-4c07-a3cd-71aff015eac2">If an adverse
+                            reaction does occur, discontinue the infusion, evaluate the patient,
+                            institute appropriate therapeutic countermeasures, and save the
+                            remainder of the fluid for examination if deemed necessary.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-5a19c18c-3f39-48fd-9ad0-cdbd3507e154">
+<id root="296CB757-8A35-8FCF-D9A0-17F239B912E5" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title ID="INV-f81bb7d5-eb7c-4df9-8e20-70f3ccc4b62a" mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text ID="INV-8d10895b-281a-4db9-ae3f-602ab1b3b5d6"><paragraph ID="INV-1fb0f433-71ce-4b92-8400-b8f686f52597">As directed by a
+                            physician. Dosage is dependent upon the age, weight and clinical
+                            condition of the patient as well as laboratory determinations. </paragraph><paragraph ID="INV-00a8f223-631f-4a0b-a77e-45349687c023">Parenteral drug
+                            products should be inspected visually for particulate matter and
+                            discoloration prior to administration whenever solution and container
+                            permit. </paragraph><paragraph ID="INV-0b2b5de3-34d2-4ccc-b0a2-02bb644eef08">All injections in
+                            Viaflex&#174; plastic containers are intended for intravenous administration
+                            using sterile equipment. </paragraph><paragraph ID="INV-62d823a9-b67f-469f-8bcd-790d30922537">As reported in the
+                            literature, the dosage and constant infusion rate of intravenous
+                            dextrose must be selected with caution in pediatric patients,
+                            particularly neonates and low weight infants, because of the increased
+                            risk of hyperglycemia/hypoglycemia. </paragraph><paragraph ID="INV-ba6e3d57-8d59-4d64-acd5-059b6f59aefc">Additives may be
+                            incompatible. Complete information is not available. Those additives
+                            known to be incompatible should not be used. Consult with pharmacist, if
+                            available. If, in the informed judgment of the physician, it is deemed
+                            advisable to introduce additives, use aseptic technique. Mix thoroughly
+                            when additives have been introduced. Do not store solutions containing
+                            additives.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-6e7d1ae6-d82e-4495-a083-eb31f38db87d">
+<id root="F2887024-0CBE-7B46-4379-1FBB4207DEBA" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title ID="INV-81177b70-ac8a-495e-b19d-25ac4c310928" mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text ID="INV-eedb1bd5-30bf-4180-8958-4e8b848ca8a0"><paragraph ID="INV-001bd917-c337-43e2-ae4f-6a02cf63903f">Plasma-Lyte&#174; 56 and
+                            5% Dextrose Injection (Multiple Electrolytes and Dextrose Injection,
+                            Type 1, USP) in Viaflex&#174; plastic containers is available as shown below:</paragraph><table frame="void"><col align="left" width="147.75pt" />
+<col align="left" width="147.75pt" />
+<col align="left" width="147.75pt" />
+<tbody valign="top">
+<tr valign="top"><td align="center" valign="top">Code</td><td align="center" valign="top">Size
+                                        (mL)</td><td align="center" valign="top">NDC</td></tr>
+<tr valign="top"><td align="center" valign="middle">2B2573</td><td align="center" valign="middle">500</td><td align="center" valign="middle">NDC
+                                        0338-0147-03</td></tr>
+<tr valign="top"><td align="center" valign="middle">2B2574</td><td align="center" valign="middle">1000</td><td align="center" valign="middle">NDC
+                                        0338-0147-04</td></tr>
+</tbody>
+</table><paragraph ID="INV-643fe9b0-0372-418b-aee2-7f3b4a5b9120">Exposure of
+                            pharmaceutical products to heat should be minimized. Avoid excessive
+                            heat. It is recommended the product be stored at room temperature
+                            (25&#176;C); brief exposure up to 40&#176;C does not adversely affect the
+                        product.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-0bc58718-fdff-4fff-843d-5d2c4ba31575">
+<id root="A21542EE-F4F8-58E1-2A7D-75AE3A5ABF81" />
+<title ID="INV-dd31f42a-784c-415e-8303-61fcd3ec9116" mediaType="text/x-hl7-title+xml">DIRECTIONS FOR USE OF                  VIAFLEX&#174; PLASTIC CONTAINER</title>
+<text ID="INV-249f7a4e-1b95-4dda-a4e9-06f24b6263b8"><paragraph ID="INV-842996c8-a6ac-4560-9952-df93d1bfab7e"><content styleCode="bold">Warning:</content> Do not use plastic containers in
+                            series connections. Such use could result in air embolism due to
+                            residual air being drawn from the primary container before
+                            administration of the fluid from the secondary container is
+                        completed.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section ID="INV-ad11925c-9d1b-42e3-8032-577f19b4bd1c">
+<id root="888DACCD-C76F-BDF2-CB50-E668DB044D07" />
+<title ID="INV-db05c8a6-c720-4e77-92cc-394f3195c2e0" mediaType="text/x-hl7-title+xml">To Open</title>
+<text ID="INV-8536d080-d211-4699-836f-b4a07075d4d4"><paragraph ID="INV-ce836b71-83d4-45aa-90de-2724ece95ab1">Tear
+                                    overwrap down side at slit and remove solution container. Some
+                                    opacity of the plastic due to moisture absorption during the
+                                    sterilization process may be observed. This is normal and does
+                                    not affect the solution quality or safety. The opacity will                      diminish gradually. Check for minute leaks by squeezing inner
+                                    bag firmly. If leaks are found, discard solution as sterility
+                                    may be impaired. If supplemental medication is desired, follow
+                                    directions below.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-3209f917-9168-4a23-a830-ae3e6ec10c72">
+<id root="8D878DED-BF88-0AEB-5AC2-EB0049F2F74A" />
+<title ID="INV-c3a92a6e-723d-426d-be43-b93cf800581d" mediaType="text/x-hl7-title+xml">Preparation for
+                                Administration</title>
+<text ID="INV-ffc08d32-ddec-4df4-bec3-ed4c977f3eae"><paragraph ID="INV-86bcc071-0f2e-4543-803c-2f55d0f075f5">1. Suspend
+                                    container from eyelet support. </paragraph><paragraph ID="INV-aacf5d32-8da6-4cd7-9aaa-88a42b9e81a3">2. Remove
+                                    plastic protector from outlet port at bottom of container. </paragraph><paragraph ID="INV-8ceb0449-de52-4287-b3c1-bfdc23b128ad">3. Attach
+                                    administration set. Refer to complete directions accompanying
+                                    set.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-3468874e-d3d4-4af7-ab23-dc2764d18d16">
+<id root="142C397E-20F1-2AC9-4B5D-DD166770D69D" />
+<title ID="INV-3a911a10-1159-48dc-a21f-97b462085ffb" mediaType="text/x-hl7-title+xml">To Add Medication </title>
+<text ID="INV-ef481ace-de7c-4079-9510-6cee3d0edc56"><paragraph ID="INV-dc2499df-2e13-4e13-8e37-1b8a85355fb5"><content styleCode="bold">Warning:</content> Additives may be
+                                    incompatible. </paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section ID="INV-c986ee03-b3c8-44cd-8ed5-e7458ff9e76d">
+<id root="77FBD178-2EBC-6E4F-E291-B2CA502F284F" />
+<title ID="INV-de42ef35-5998-4221-81e5-a3e69105699c" mediaType="text/x-hl7-title+xml">To add
+                                        medication before solution administration</title>
+<text ID="INV-5c0df630-baa7-4c50-9c02-05d6101ba7d9"><paragraph ID="INV-1d713d8b-3918-47b5-b4fd-5bc1ff9fc8e8">1.
+                                            Prepare medication site. </paragraph><paragraph ID="INV-9d0b61ce-83e6-484a-bb3c-4c4bb095216b">2.
+                                            Using syringe with 19 to 22 gauge needle, puncture
+                                            medication port and inject. </paragraph><paragraph ID="INV-6c06fa8f-489f-4454-9b2b-fc05a826db4c">3.
+                                            Mix solution and medication thoroughly. For high density
+                                            medication such as potassium chloride, squeeze ports
+                                            while ports are upright and mix thoroughly.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section ID="INV-9a76e4d4-cf58-4438-97e5-f27d105ba402">
+<id root="E8248C27-3491-306A-6315-EFE5EB11943A" />
+<title ID="INV-2f4dddd9-8f19-464b-af72-70b22faacbb9" mediaType="text/x-hl7-title+xml">To add
+                                        medication during solution administration</title>
+<text ID="INV-379dccd5-f361-4b54-bc63-b37941cc65cb"><paragraph ID="INV-5f9eda28-50fe-4302-a1d5-f2f9c65509e9">1.
+                                            Close clamp on the set. </paragraph><paragraph ID="INV-2bf6f866-37aa-4c2f-9d2f-b67624cfc219">2.
+                                            Prepare medication site. </paragraph><paragraph ID="INV-5f505e11-8f6f-43cc-91b2-20c4bac0b4b1">3.
+                                            Using syringe with 19 to 22 gauge needle, puncture
+                                            resealable medication port and inject. </paragraph><paragraph ID="INV-ac68719c-53e4-4dc0-bf5c-249fda316252">4.
+                                            Remove container from IV pole and/or turn to an upright
+                                            position. </paragraph><paragraph ID="INV-546bab53-8fff-49db-ae6a-b7ff62ab515d">5.
+                                            Evacuate both ports by squeezing them while container is                                         in the upright position. </paragraph><paragraph ID="INV-cd2cd0d7-f535-4de0-aa57-c060c18ec23d">6.
+                                            Mix solution and medication thoroughly. </paragraph><paragraph ID="INV-b6011001-6ea2-46ac-8de5-5352b9011bb1">7.
+                                            Return container to in use position and continue
+                                            administration.</paragraph><paragraph ID="INV-1ddfaa8c-2213-437a-a650-eda8063b22b3"><content styleCode="bold">Baxter Healthcare
+                                            Corporation</content></paragraph><paragraph ID="INV-5b4ba657-20ad-4f2c-bf8f-28f30da816a0">Deerfield, IL 60015 USA </paragraph><paragraph ID="INV-9a464838-178f-466e-8844-eb5963fac5b6">Printed in USA </paragraph><paragraph ID="INV-ce2e7394-64a9-4485-b6ef-419197ebd14e">&#169;Copyright 1982, 1983, 1984, 1989, 1994, Baxter
+                                            Healthcare Corporation. </paragraph><paragraph ID="INV-85ed8ba7-043e-4270-b0ae-4e583ac21e59">All
+                                            rights reserved. </paragraph><paragraph ID="INV-d8958e8b-3a4d-45d3-b1a5-63e776e9b4b2"><content styleCode="bold">7-19-22-966</content></paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

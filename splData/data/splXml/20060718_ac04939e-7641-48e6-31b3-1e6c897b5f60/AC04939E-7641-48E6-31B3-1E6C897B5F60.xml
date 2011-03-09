@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="AC04939E-7641-48E6-31B3-1E6C897B5F60" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Human prescription drug label" />
+<title mediaType="text/x-hl7-title+xml">1.5% GLYCINE IRRIGATION, USP</title>
+<effectiveTime value="20060510" />
+<setId root="AC04939E-7641-48E6-31B3-1E6C897B5F60" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<id root="1203031A-11E2-4664-948F-3C70EE0C7F83" />
+<representedOrganization>
+<name>Hospira</name>
+<addr />
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="BD2E39AE-99C7-B621-7DF9-B4516336DF0D" />
+<effectiveTime value="20060510" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0409-7974" codeSystem="2.16.840.1.113883.6.69" />
+<name>Glycine</name>
+<formCode code="C42947" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="IRRIGANT" />
+<activeIngredient>
+<quantity>
+<numerator unit="g" value="1.5">
+<translation code="C48155" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAM" value="1.5" />
+</numerator>
+<denominator unit="mL" value="100">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="100" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="TE7660XO1C" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Glycine</name>
+<activeMoiety>
+<activeMoiety>
+<code code="TE7660XO1C" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>Glycine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>Glycine</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>Water</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="3000">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="3000" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code />
+<formCode code="C43167" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" />
+<asContent>
+<quantity>
+<numerator value="4">
+<translation code="C48474" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BAG" value="4" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0409-7974-08" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE" />
+</containerPackagedMedicine>
+</asContent>
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38271" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="URETHRAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="D8A87F8B-E1CB-B454-48C0-3E73127831BC" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold italics">NONELECTROLYTE IRRIGATING
+FLUID FOR TRANSURETHRAL SURGICAL PROCEDURES.</content></paragraph><paragraph><content styleCode="bold">For Urologic Irrigation Only; Not For Injection By Usual
+Parenteral Routes</content></paragraph><paragraph><content styleCode="bold">Flexible
+Irrigation Container</content></paragraph><paragraph>Rx only</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="A2D7204F-6C6E-8544-E03E-E4FF9C0A6B78" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>1.5% Glycine Irrigation, USP is a sterile, nonpyrogenic,
+hypotonic, aqueous solution of glycine intended only for urologic irrigation
+during transurethral surgical procedures.</paragraph><paragraph>Each 100 mL
+contains 1.5 g of glycine in water for injection. The solution is nonelectrolytic,
+hypotonic and has an osmolarity of 200 mOsmol/liter (calc.); pH 6.0 (4.5 to
+6.5).</paragraph><paragraph>The solution contains no bacteriostat, antimicrobial
+agent or added buffer and is intended only for use as a single-dose irrigation.
+When smaller volumes are required, the unused portion should be discarded.</paragraph><paragraph>1.5%
+Glycine Irrigation is a urologic nonelectrolyte irrigant.</paragraph><paragraph>Glycine,
+USP is chemically designated aminoacetic acid (C<sub>2</sub>H<sub>5</sub>NO<sub>2</sub>),
+a white crystalline powder freely soluble in water. It has the following structural
+formula:</paragraph><paragraph>NH<sub>2</sub>CH<sub>2</sub>COOH</paragraph><paragraph>Water
+for Injection, USP is chemically designated H<sub>2</sub>0.</paragraph><paragraph>The
+flexible plastic container is fabricated from a specially formulated polyvinylchloride.
+Water can permeate from inside the container into the overwrap but not in
+amounts sufficient to affect the solution significantly.</paragraph><paragraph>The
+semi-rigid container is fabricated from a specially formulated polyolefin.
+It is a copolymer of ethylene and propylene. The container requires no vapor
+barrier to maintain the proper drug concentration.</paragraph><paragraph>The
+flexible plastic container is fabricated from a specially formulated polyvinylchloride.
+Water can permeate from inside the container into the overwrap but not in
+amounts sufficient to affect the solution significantly. Solutions in contact
+with the plastic container may leach out certain chemical components from
+the plastic in very small amounts; however, biological testing was supportive
+of the safety of the plastic container materials. Exposure to temperatures
+above 25&#176;C/77&#176;F during transport and storage will lead to minor
+losses in moisture content. Higher temperatures lead to greater losses. It
+is unlikely that these minor losses will lead to clinically significant changes
+within the expiration period. </paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="3080E73B-4CAA-D6B7-BF6F-A92925A57F85" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>Glycine is an amino acid and a nonelectrolyte. A solution
+of glycine in water is therefore nonconductive and suitable for urologic irrigation
+during electrosurgical procedures. A 1.5%&#160;concentration of glycine in
+water (200 mOsmol/liter calc.) is sufficient to minimize the risk of intravascular
+hemolysis which can occur from absorption of plain water through open prostatic
+veins during transurethral resection (TUR). It is hypotonic in relation to
+the extracellular fluid (280&#160;mOsmol/liter). Any solution absorbed intravascularly
+during transurethral prostatic or bladder surgery, although variable in amount
+depending primarily on the extent of surgery, will be excreted by the kidney.
+Studies have shown that the absorption of glycine does not cause significant
+hemolysis (increase of free hemoglobin) or release significant amounts of
+free ammonia in the blood. Glycine is rapidly degraded in the liver by glycine
+oxidase.</paragraph><paragraph>Water is an essential constituent of all body
+tissues and accounts for approximately 70% of total body weight. Average normal
+adult daily requirement ranges from two to three liters (1.0 to 1.5&#160;liters
+each for insensible water loss by perspiration and urine production).</paragraph><paragraph>Water
+balance is maintained by various regulatory mechanisms. Water distribution
+depends primarily on the concentration of electrolytes in the body compartments
+and sodium (Na<sup>+</sup>) plays a major role in maintaining physiologic
+equilibrium.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="5E5F68A1-6A5B-ED04-555B-2FE712CF9792" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>1.5% Glycine Irrigation, USP is indicated for use as irrigating
+fluid during transurethral prostatic resection and other transurethral surgical
+procedures.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="2EA5B73B-1523-D5B7-0B29-6FCC445D19AA" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>NOT FOR INJECTION BY USUAL PARENTERAL ROUTES.</paragraph><paragraph>Do
+not use in patients with anuria.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="759ABBF9-1698-CD00-74A6-6B81A0E75B6E" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>FOR UROLOGIC IRRIGATION ONLY.</paragraph><paragraph>Solutions
+for urologic irrigation must be used with caution in patients with severe
+cardiopulmonary or renal dysfunction. Irrigating fluids used during transurethral
+prostatectomy have been demonstrated to enter the systemic circulation in
+relatively large volumes. Thus, glycine irrigating solution must be regarded
+as a systemic drug. Absorption of large amounts of fluids containing glycine
+may significantly alter cardiopulmonary and renal dynamics.</paragraph><paragraph>Do
+not heat container over 66&#176;C (150&#176;F).</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="5C9F9027-8E1F-E07B-3C5E-16084179554B" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text><paragraph>Cardiovascular status, especially of the patient with cardiac
+disease, should be carefully observed before and during transurethral resection
+of the prostate when using glycine irrigating solution, because the quantity
+of fluid absorbed into the systemic circulation by opened prostatic veins
+may produce significant expansion of the extracellular fluid and lead to fulminating
+congestive heart failure. Shift of sodium free intracellular fluid into the
+extracellular compartment following systemic absorption of solution may lower
+serum sodium concentration and aggravate pre-existing hyponatremia.</paragraph><paragraph>Care
+should be exercised if impaired liver function is known or suspected. Under
+such conditions, ammonia resulting from metabolism of glycine may accumulate
+in the blood.</paragraph><paragraph>Aseptic technique is essential with the
+use of sterile solutions for irrigation. The administration set should be
+attached promptly. Unused portions should be discarded and a fresh container
+of appropriate size used for the start-up of each cycle or repeat procedure.</paragraph><paragraph>Do
+not administer unless solution is clear, seal is intact and container is undamaged.
+Discard unused portion.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="DD3E84DC-7E61-6ED9-12B6-8ABEB81A0406" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility:</title>
+<text><paragraph>Studies with Glycine Irrigation, USP have not been performed
+to evaluate carcinogenic potential, mutagenic potential, or effects on fertility.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="B476A0E2-5027-F4D0-CC8C-87ECD6749111" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers:</title>
+<text><paragraph>Caution should be exercised when Glycine Irrigation, USP
+is administered to a nursing woman.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="259CB480-9F25-521A-1A1D-8CC543B998B4" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy:</title>
+<text><paragraph><content styleCode="italics">Teratogenic Effects.</content></paragraph><paragraph><content styleCode="italics">Pregnancy Category C.</content> Animal reproduction studies
+have not been conducted with Glycine Irrigation, USP. It is also not known
+whether Glycine Irrigation, USP can cause fetal harm when administered to
+a pregnant woman or can affect reproduction capacity. Glycine Irrigation,
+USP should be given to a pregnant woman only if clearly needed.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="9575A6BB-6792-2BB0-9CDB-B9E3D0F1AD18" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use:</title>
+<text><paragraph>The safety and effectiveness of Glycine Irrigation have not
+been established. Its limited use in pediatric patients has been inadequate
+to fully define proper dosage and limitations for use.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="47999912-E519-2C7C-F3F2-A1AF33254826" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>Adverse reactions may result from intravascular absorption
+of glycine. Large intravenous doses of glycine are known to cause salivation,
+nausea and lightheadedness. Other consequences of absorption of urologic irrigating
+solutions include fluid and electrolyte disturbances such as acidosis, electrolyte
+loss, marked diuresis, urinary retention, edema, dryness of mouth, thirst,
+dehydration, coma from hyponatremia, secondary hyponatremia due to fluid overload,
+and hyper- ammonemia with resultant coma and/or encephalopathy; cardiovascular
+disorders such as hypotension, tachycardia, angina-like pains; pulmonary disorders
+such as pulmonary congestion; and other general reactions such as blurred
+vision, convulsions, nausea, vomiting, rhinitis, chills, vertigo, backache,
+transient blindness and urticaria. Allergic reactions from glycine are unknown
+or exceedingly rare.</paragraph><paragraph>Should any adverse reaction occur,
+discontinue the irrigant, evaluate the patient, institute appropriate therapeutic
+countermeasures and save the remainder of the fluid for examination if deemed
+necessary.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="5C6D7688-6156-D3F6-94A8-5C87CD2A2218" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>In the event of overhydration or solute overload, re-evaluate
+the patient and institute appropriate corrective measures. See WARNINGS, PRECAUTIONS
+and ADVERSE REACTIONS.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="6AEA8C29-F1F4-12C9-1483-D35B3CAF0AE9" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>1.5% Glycine Irrigation, USP should be administered only
+by transurethral instillation with appropriate urologic instrumentation. A
+disposable irrigation set should be used. The total volume of solution used
+for irrigation is solely at the discretion of the surgeon.</paragraph><paragraph>Height
+of container(s) above the operating table in excess of 60 cm (approx. 2 ft.)
+has been reported to increase intravascular absorption of the irrigating fluid.</paragraph><paragraph><content styleCode="bold">Drug Interactions</content></paragraph><paragraph>Additives
+may be incompatible. Consult with pharmacist, if available. When introducing
+additives, use aseptic technique, mix thoroughly and do not store.</paragraph><paragraph>Parenteral
+drug products should be inspected visually for particulate matter and discoloration
+prior to administration, whenever solution container permits. See PRECAUTIONS.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="0A9F4333-65ED-4244-8C42-76DC786CB1E4" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>1.5% Glycine Irrigation, USP is supplied in single-dose 3000
+mL flexible irrigation container  (&#160;List No.&#160;7974).</paragraph><paragraph>Exposure
+of pharmaceutical products to heat should be minimized. Avoid excessive heat.
+Protect from freezing. Store at 20 to 25&#176;C (68 to 77&#176;F). [See USP
+Controlled Room Temperature.]</paragraph><table frame="void"><caption />
+<colgroup>
+<col />
+<col />
+<col />
+</colgroup>
+<tbody>
+<tr><td valign="top" /><td valign="top" /><td align="right" valign="top" /></tr>
+<tr><td valign="top"><paragraph>&#169;Hospira 2004</paragraph></td><td align="center" valign="top"><paragraph>EN-0577</paragraph></td><td align="right" valign="top"><paragraph>Printed in USA</paragraph></td></tr>
+</tbody>
+</table><paragraph><content styleCode="italics">HOSPIRA, INC., LAKE FOREST,
+IL 60045 USA</content></paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="05613E85-CC86-47FC-8FF9-15FAB38AC9FA" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">PERMAPEN&#174; ISOJECT&#174;<br />(Penicillin G Benzathine)<br />Injectable Suspension<br />1,200,000 units<br />For lntramuscular Use Only</title>
+<effectiveTime value="20060413" />
+<setId root="05613E85-CC86-47FC-8FF9-15FAB38AC9FA" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Roerig</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="CAE3927C-BC22-9944-55A7-46742BE72658" />
+<effectiveTime value="20060413" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0049-0210" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<name>Permapen</name>
+<formCode code="C42995" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SUSPENSION" />
+<activeIngredient>
+<quantity>
+<numerator value="600000">
+<translation code="C44278" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="UNITS" value="600000" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="RIT82F58GK" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>penicillin G benzathine</name>
+<activeMoiety>
+<activeMoiety>
+<name>penicillin</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>penicillin G benzathine</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="1Q73Q2JULR" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium citrate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>polyvinylpyrrolidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lecithin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>sodium carboxymethylcellulose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>methylparaben</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="Z8IX2SC1OH" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>propylparaben</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="2">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="2" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code nullFlavor="NA" />
+<formCode code="C43202" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SYRINGE" />
+<asContent>
+<quantity>
+<numerator value="10">
+<translation code="C48540" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SYRINGE" value="10" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0049-0210-35" codeSystem="2.16.840.1.113883.6.69" codeSystemName="FDA" displayName="NDC" />
+<formCode code="C43233" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKAGE" />
+</containerPackagedMedicine>
+</asContent>
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAMUSCULAR" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="013AEBAF-2091-C8C6-E40A-EEE4A012E74B" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="Bold">STORE BETWEEN 2&#176;&#8211;8&#176;C (36&#176;&#8211;46&#176;F)</content></paragraph><paragraph><content styleCode="Bold">SHAKE WELL BEFORE USING</content></paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="3B62F28F-DF6B-375F-2EB7-09D08CE5E5F5" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Permapen&#174; (Penicillin G Benzathine) Injectable Suspension, a sterile antibacterial agent, is a repository penicillin compound which provides blood levels for long periods following its intramuscular injection. This property is the result of its extremely low solubility in water. Each milliliter contains 600,000 units of penicillin G benzathine; 0.006 grams sodium citrate; 0.003 grams polyvinylpyrrolidone; 0.010 grams lecithin, and 0.003 grams sodium carboxymethylcellulose in an aqueous suspension. Permapen also contains methylparaben 0.09% and propylparaben 0.01% as preservatives.</paragraph><paragraph>Chemically, Permapen is 3,3-dimethyl-7-oxo-6-(2-phenylacetamido)-4 thia-l azabicyclo [3.2.0] heptane-2-carboxylic acid compound with N,N'-dibenzylethylenediamine (2:1) tetrahydrate. It is prepared by the reaction of dibenzyl-tetrahydrate-ethylenediamine with 2 molecules of penicillin G.</paragraph><paragraph>It has a molecular weight of 981.19 and the following chemical structure:</paragraph><renderMultiMedia referencedObject="MM1" /><paragraph>Formula</paragraph><paragraph>C<sub>16</sub>H<sub>20</sub>N<sub>2</sub>&#8226;2C<sub>16</sub>H<sub>l8</sub>N<sub>2</sub>O<sub>4</sub>S&#8226;4H<sub>2</sub>O</paragraph><paragraph>Penicillin G benzathine occurs as a white crystalline powder and is very slightly soluble in water.</paragraph><paragraph>The pH of the injectable suspension is between 5.0&#8211;7.5.</paragraph></text>
+<effectiveTime value="20060413" />
+<component>
+<observationMedia ID="MM1">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="permapen-image01.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="F576B762-BD5A-50B4-FDAB-D39FE80B14AC" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>Intramuscular penicillin G benzathine is absorbed very slowly into the blood stream from the intramuscular site and converted by hydrolysis to penicillin G. This combination of hydrolysis and slow absorption results in blood serum levels much lower than those of other parenteral penicillins.</paragraph><paragraph>Approximately 60% of penicillin G is bound to serum protein. The drug is distributed throughout the body tissues in widely varying amounts. Highest levels are found in the kidneys with lesser amounts in the liver, skin, and intestines. Penicillin G penetrates into all other tissues and the spinal fluid to a lesser degree. With normal kidney function the drug is excreted rapidly by tubular excretion. A small amount is secreted into the bile. In neonates and young infants, and in individuals with impaired kidney function, excretion is considerably delayed.</paragraph></text>
+<effectiveTime value="20060413" />
+<component>
+<section>
+<id root="72C8EDA9-03F7-1C52-2471-207D580DB55E" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Microbiology</title>
+<text><paragraph>Penicillin G exerts a bactericidal action against penicillin-susceptible microorganisms during the stage of active multiplication. It acts through the inhibition of biosynthesis of cell wall mucopeptide. It is not active against the penicillinase-producing bacteria, which includes many strains of staphylococci.</paragraph><paragraph>While <content styleCode="italics">in vitro</content> studies have demonstrated the susceptibility of most strains of the following organisms, clinical efficacy for infections other than those included in the <linkHtml href="#Indications">INDICATIONS AND USAGE</linkHtml> section has not been documented. Penicillin G exerts high <content styleCode="italics">in vitro</content> activity against staphylococci (except penicillinase-producing strains), streptococci (groups A, C, G, H, L, and M), and pneumococci. Other organisms sensitive to penicillin G are: <content styleCode="italics">Corynebacterium diphtheriae, Bacillus anthracis</content>, Clostridia, <content styleCode="italics">Actinomyces bovis, Streptobacillus moniliformis, Listeria monocytogenes</content>, and Leptospira. <content styleCode="italics">Treponema pallidum</content> is extremely sensitive to the bactericidal action of penicillin G.</paragraph><paragraph>Penicillin acts synergistically with gentamicin or tobramycin against many strains of enterococci.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section ID="Indications">
+<id root="E34C70AE-F651-79C6-C4A2-88D69F412B73" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS &amp; USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>Intramuscular penicillin G benzathine is indicated in the treatment of infections in both children and adults due to penicillin G-susceptible microorganisms that are susceptible to the low and very prolonged serum levels common to this particular dosage form in the indications listed below. Therapy should be guided by clinical response.</paragraph><paragraph>Note: When high sustained serum levels are required, injectable penicillin G either IM or IV should be used.</paragraph><paragraph>The following infections will usually respond to adequate dosages of intramuscular penicillin G benzathine:</paragraph><paragraph><content styleCode="italics">Upper Respiratory Tract</content> (pharyngitis): streptococci (group A &#8211; without bacteremia).</paragraph><paragraph><content styleCode="italics">Venereal Infections:</content> Syphilis</paragraph><paragraph>Yaws, bejel, and pinta.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="B0457E66-C20E-098F-477A-A9E3EE4BDDBC" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Medical Conditions in Which Penicillin G Benzathine Therapy is Indicated As Prophylaxis</title>
+<text><paragraph><content styleCode="italics">Rheumatic fever and/or chorea:</content> Prophylaxis with penicillin G benzathine has proven effective in preventing recurrence of these conditions. It has also been used as follow-up prophylactic therapy for rheumatic heart disease and acute glomerulonephritis.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="7E0A3178-09DE-416C-0CE8-43F40CA8528A" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>A history of a previous hypersensitivity reaction to any penicillin is a contraindication.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="338A0512-0595-495C-0956-47B0E4B2108C" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>Serious and occasionally fatal hypersensitivity (anaphylactoid) reactions have been reported in patients on penicillin therapy. These reactions are more likely to occur in individuals with a history of penicillin hypersensitivity and/or a history of sensitivity to multiple allergens. There have been reports of individuals with a history of penicillin hypersensitivity who have experienced severe reactions when treated with cephalosporins. Before initiating therapy with any penicillin, careful inquiry should be made concerning previous hypersensitivity reactions to penicillin, cephalosporins, and other allergens. If an allergic reaction occurs, the drug should be discontinued and the appropriate therapy instituted. Serious anaphylactoid reactions require immediate emergency treatment with epinephrine. Oxygen, intravenous steroids, and airway management&#8211;including intubation, should be administered as indicated.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section ID="Precautions">
+<id root="1E46CCAD-F14F-5C59-E971-D77635506D29" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text />
+<effectiveTime value="20060413" />
+<component>
+<section>
+<id root="CA53F4FC-0121-B9F3-77AF-F6010C6F23CE" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>Penicillin should be used with caution in individuals with histories of significant allergies and/or asthma.</paragraph><paragraph>Intramuscular therapy: Care should be taken to avoid intravenous administration, accidental intraarterial administration, or injection into or near major peripheral nerves or blood vessels, since many injections may produce neurovascular damage.</paragraph><paragraph>As with all intramuscular preparations, penicillin G benzathine should be injected well within the body of a relatively large muscle.</paragraph><paragraph>ADULTS: The preferred site is the upper outer quadrant of the buttock (i.e., gluteus maximus), or the mid-lateral thigh.</paragraph><paragraph>CHILDREN: It is recommended that intramuscular injections be given preferably in the mid-lateral muscles of the thigh. In infants and small children the periphery of the upper outer quadrant of the gluteal region should be used only when necessary, such as in burn patients, in order to minimize the possibility of damage to the sciatic nerve.</paragraph><paragraph>The deltoid area should be used only if well developed such as in certain adults and older children, and then only with caution to avoid radial nerve injury. Intramuscular injections should not be made into the lower and mid-third of the upper arm. As with all intramuscular injections, aspiration is necessary to help avoid inadvertent injection into a blood vessel.</paragraph><paragraph>Irritation at the site of injection may occur. In addition, subcutaneous and fat&#8211;layer injections should be avoided since they may cause pain and induration. If these occur, they may be relieved by the application of an ice pack.</paragraph><paragraph>In streptococcal infections, therapy must be sufficient to eliminate the organism (10 days minimum), otherwise the sequelae of streptococcal disease may occur. Cultures should be taken following completion of treatment to determine whether streptococci have been eradicated.</paragraph><paragraph>The use of antibiotics may result in overgrowth of nonsusceptible organisms. Constant observation of the patient is essential. If new infections due to bacteria or fungi appear during therapy, the drug should be discontinued and appropriate measures taken. Whenever allergic reactions occur, penicillin should be withdrawn unless, in the opinion of the physician, the condition being treated is life threatening and amenable only to penicillin therapy.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="D0696BD5-BFE0-9EAB-6532-7985D249DDD5" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LABORATORY TESTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text><paragraph>In prolonged therapy with penicillin, periodic evaluation of the renal, hepatic and hematopoietic systems for organ dysfunction is recommended. This is particularly important in prematures, neonates and other infants, and when high doses are used.</paragraph><paragraph>When treating gonococcal infections in which primary and secondary syphilis are suspected, proper diagnostic procedures, including dark field examinations, should be done before receiving penicillin and monthly serological tests made for at least four months. All cases of penicillin-treated syphilis should receive clinical and serological examinations every six months for two to three years.</paragraph><paragraph>In streptococcal infections, cultures should be taken following completion of treatment to determine whether streptococci have been eradicated.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="59CFAC35-46A3-AA49-7078-DD60F1EB92B6" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph>Concurrent administration of bacteriostatic antibiotics (e.g., erythromycin, tetracycline) may diminish the bactericidal effects of penicillins by slowing the rate of bacterial growth. Bactericidal agents work most effectively against the immature cell wall of rapidly proliferating microorganisms. This has been demonstrated <content styleCode="italics">in vitro</content>; however, the clinical significance of this interaction is not well documented. There are few clinical situations in which the concurrent use of "static" and "cidal" antibiotics are indicated. However, in selected circumstances in which such therapy is appropriate, using adequate doses of antibacterial agents and beginning penicillin therapy first, should minimize the potential for interaction.</paragraph><paragraph>Penicillin blood levels may be prolonged by concurrent administration of probenecid which blocks the renal tubular secretion of penicillins.</paragraph><paragraph>Displacement of penicillins from plasma protein binding sites will elevate the level of free penicillin in the serum.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="8D0808CC-818E-CE4B-7CFC-A0866566F02B" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+<text><paragraph>No information or long term studies are available on the carcinogenesis, mutagenesis, or impairment of fertility with the use of penicillins.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="55276970-9469-1921-95F4-E087AF228ED0" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PREGNANCY" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<text><paragraph /></text>
+<effectiveTime value="20060413" />
+<component>
+<section>
+<id root="17E41D61-1CA1-335C-5841-87D68C5AE156" />
+<code code="34077-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERATOGENIC EFFECTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy Category B &#8211; Teratogenic Effects</title>
+<text><paragraph>Reproduction studies in the mouse, rat and rabbit have revealed no evidence of impaired fertility or harm to the fetus due to penicillin G. Human experience with the penicillins during pregnancy has not shown any positive evidence of adverse effects on the fetus. There are, however, no adequate and well controlled studies in pregnant women showing conclusively that harmful effects of these drugs on the fetus can be excluded. Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="08B13AB4-4340-EDC9-DB58-9CF26755B08B" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>Pencillin G benzathine has been reported in milk. Caution should be exercised when penicillin G benzathine is administered to a nursing woman.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="82C44945-3D1A-6CEB-A7FD-EFC72111F053" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>Pencillins are excreted largely unchanged by the kidney. Because of incompletely developed renal function in infants, the rate of elimination will be slow. Use caution in administering to newborns and evaluate organ system function frequently.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="8820D799-D564-18AA-D243-6E53C65A2911" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>The hypersensitivity reactions reported are skin eruptions (maculopapular to exfoliative dermatitis), urticaria and other serum sickness reactions, laryngeal edema and anaphylaxis. Fever and eosinophilia may frequently be the only reaction observed. Hemolytic anemia, leucopenia, thrombocytopenia, neuropathy, and nephropathy are infrequent reactions and usually associated with high doses of parenteral penicillin.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="FAFE904D-0E61-F441-BBFD-38002DEB59A6" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>Penicillin in overdosage has the potential to cause neuromuscular hyperirritability. In case of overdosage discontinue medication, treat symptomatically, and institute supportive measures as required.</paragraph><paragraph>Penicillin G is hemodialyzable.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="8C9326A9-B3A9-42ED-55AE-58860751FCEF" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE &amp; ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>Administer by deep IM injection in the upper outer quadrant of the buttock. In infants and small children, the mid-lateral aspect of the thigh may be preferable. When doses are repeated, vary the injection site (see <linkHtml href="#Precautions">PRECAUTIONS</linkHtml>).</paragraph></text>
+<effectiveTime value="20060413" />
+<component>
+<section>
+<id root="6E37B9D7-8551-C650-AC20-A8D9D6B430E8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Dosage Schedule</title>
+<text><paragraph>In children under 12 years of age, dosage should be adjusted in accordance with the age and weight of the child and the severity of the infection. Under 2 years of age, the dose may be divided between the two buttocks if necessary.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="16F2C0BD-242C-B0D4-2B58-173357A52CD7" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Streptococcal Infections (group A) pharyngitis</title>
+<text><paragraph>A single injection of 900,000 units for older children; l,200,000 units for adults.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="2C3FCE6D-EB59-B4AF-99E6-DC1A1B74CF2D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Venereal Infections</title>
+<text />
+<effectiveTime value="20060413" />
+<component>
+<section>
+<id root="51177C64-163C-1110-88B5-BDC768A3946D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Syphilis</title>
+<text><paragraph>Primary, secondary, and latent: 2.4 million units (1 dose).</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="5366ED77-F252-0AB2-139B-3209FA0988E1" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Late Syphilis (tertiary and neurosyphilis)</title>
+<text><paragraph>3 million units at 7 day intervals for a total of 6&#8211;9 million units.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="EB3CB185-F248-B43D-C146-3BF2D0765E90" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Congenital Syphilis (asymptomatic with normal cerebrospinal fluid)</title>
+<text><paragraph> Under 2 years of age&#8211;50,000 units/kg body weight in a single dose; ages 2&#8211;12 years&#8211;adjust dosage based on adult dosage schedule.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="ED242E8C-DF75-BAD7-19E6-5CE469AB4EDA" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Yaws, Bejel, and Pinta</title>
+<text><paragraph>1.2 million units (1 injection).</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="4C809098-09C9-1C04-AB01-A70C62D00FA8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Prophylaxis</title>
+<text><paragraph>For rheumatic fever and glomerulonephritis.</paragraph><paragraph>Following an acute attack, penicillin G benzathine (parenteral) may be given in doses of 1,200,000 units once a month or 600,000 units every 2 weeks.</paragraph><paragraph>Parenteral drug products should be visually inspected for particulate matter and discoloration prior to administration, whenever solution and container permit.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="D6E301CD-5DAF-6E8D-2177-BDC364AEF988" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph>Permapen (Penicillin G Benzathine) Injectable Suspension is supplied in an ISOJECT syringe: 1,200,000 units in packages of 10 (NDC 0049-0210-35). ISOJECT is a pre-filled disposable syringe unit with a 20-gauge, 1&#188; inch needle. Each 2 mL contains 1,200,000 units penicillin G benzathine; 0.0l2 g sodium citrate; 0.006 g polyvinylpyrrolidone; 0.020 g lecithin, and 0.006 g sodium carboxymethylcellulose. Preservatives: methylparaben 0.09%, propylparaben 0.01%.</paragraph><paragraph>The product should be stored between 2&#176;&#8211;8&#176;C (36&#176;&#8211;46&#176;F). Keep from freezing.</paragraph></text>
+<effectiveTime value="20060413" />
+</section>
+</component>
+<component>
+<section>
+<id root="90E471C5-0A3F-B849-577B-C55C2D51D136" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold">Rx only</content></paragraph><renderMultiMedia referencedObject="MM2" /><paragraph>23-1173-00-3</paragraph></text>
+<effectiveTime value="20060413" />
+<component>
+<observationMedia ID="MM2">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="permapen-image02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

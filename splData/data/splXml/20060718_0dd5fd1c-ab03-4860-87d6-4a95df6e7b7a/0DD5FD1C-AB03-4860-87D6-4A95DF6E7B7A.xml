@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="420FC028-BFE3-D52A-0F6B-76B6FA70FF12" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">Diovan<sup>&#174;</sup></title>
+<effectiveTime value="20060511" />
+<setId root="0DD5FD1C-AB03-4860-87D6-4A95DF6E7B7A" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Novartis Pharmaceuticals Corporation</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="B8714195-B71A-FDF9-439F-B63B23F76BE1" />
+<effectiveTime value="20060511" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0083-4000" codeSystem="2.16.840.1.113883.6.69" />
+<name>Diovan</name>
+<formCode code="C25158" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="80">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="80" />
+</numerator>
+<denominator value="1">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="80M03YXJ7I" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>valsartan</name>
+<activeMoiety>
+<activeMoiety>
+<code code="80M03YXJ7I" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>valsartan</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>valsartan</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>cellulose compounds</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>crospovidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>gelatin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>iron oxides</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="368GB5141J" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium lauryl sulfate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>titanium dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0083-4000-61" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43168" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLISTER PACK" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0083-4000-01" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="18" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48336" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">CG;FZF</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48324" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAY" xsi:type="CE"><originalText>Light grey</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48328" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PINK" xsi:type="CE"><originalText>Light pink opaque</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="1" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0083-4001" codeSystem="2.16.840.1.113883.6.69" />
+<name>Diovan</name>
+<formCode code="C25158" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="160">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="160" />
+</numerator>
+<denominator value="1">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="80M03YXJ7I" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>valsartan</name>
+<activeMoiety>
+<activeMoiety>
+<code code="80M03YXJ7I" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>valsartan</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>valsartan</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>cellulose compounds</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>crospovidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>gelatin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>iron oxides</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>magnesium stearate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="368GB5141J" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sodium lauryl sulfate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>titanium dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0083-4001-61" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43168" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLISTER PACK" />
+</containerPackagedMedicine>
+</asContent>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48480" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0083-4001-01" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="20" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48336" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">CG;GOG</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48324" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAY" xsi:type="CE"><originalText>Dark grey</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48328" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PINK" xsi:type="CE"><originalText>Light pink opaque</originalText></value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="1" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="65F0267C-82E6-0784-4307-D8D1A2A680BD" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>T2000-31</paragraph><paragraph>89004202</paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Diovan</content><content styleCode="bold"><sup>&#174;</sup></content></paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;<content styleCode="bold">valsartan</content><content styleCode="bold">&#160;</content></paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Capsules</content></paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Rx only</content></paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Prescribing Information</content></paragraph><paragraph /></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="E4E2CDAB-CD51-3977-1063-5D565DE0E000" />
+<code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="BOXED WARNING SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">USE IN PREGNANCY</content></title>
+<text><paragraph><content styleCode="bold">When used in pregnancy during the second and third trimesters, drugs that act directly on the renin</content><content styleCode="bold">-angiotensin system can cause injury and even death to the developing fetus</content>. When pregnancy is detected, Diovan should be discontinued as soon as possible.  See <content styleCode="bold">WARNINGS: Fetal/Neonatal Morbidity and Mortality</content>.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="BD623CD2-B5A0-F1D9-5A72-3CDC3678C026" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">DESCRIPTION</content></title>
+<text><paragraph>Diovan (valsartan) is a nonpeptide, orally active, and specific angiotensin II antagonist acting on the AT<sub>1</sub> receptor subtype.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Valsartan is chemically described as <content styleCode="italics">N</content>-(1-oxopentyl)-<content styleCode="italics">N</content>-[[2&#8242;-(1<content styleCode="italics">H</content>-tetrazol-5-yl) [1,1&#8242;-biphenyl]-4-yl]methyl]-L-valine.  Its empirical formula is C<sub>24</sub>H<sub>29</sub>N<sub>5</sub>O<sub>3</sub>,its molecular weight is 435.5, and its structural formula is</paragraph><paragraph><renderMultiMedia referencedObject="MM02000002" /></paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Valsartan is a white to practically white fine powder.  It is soluble in ethanol and methanol and slightly soluble in water.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Diovan is available as capsules for oral administration, containing either 80 mg or 160 mg of valsartan.  The inactive ingredients of the capsules are cellulose compounds, crospovidone, gelatin, iron oxides, magnesium stearate, povidone, sodium lauryl sulfate, and titanium dioxide. </paragraph></text>
+<effectiveTime value="20060511" />
+<component>
+<observationMedia ID="MM02000002">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="diovan-figure-02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="6CEFE4FD-8922-295A-B295-35C542848915" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">CLINICAL PHARMACOLOGY</content></title>
+<text />
+<effectiveTime value="20060511" />
+<component>
+<section>
+<id root="F0A92E05-CDBC-20A2-2FEB-9BC38DA74B4D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Mechanism of Action</content></title>
+<text><paragraph>Angiotensin II is formed from angiotensin I in a reaction catalyzed by angiotensin-converting enzyme (ACE, kininase II).  Angiotensin II is the principal pressor agent of the renin-angiotensin system, with effects that include vasoconstriction, stimulation of synthesis and release of aldosterone, cardiac stimulation, and renal reabsorption of sodium.  Valsartan blocks the vasoconstrictor and aldosterone-secreting effects of angiotensin II by selectively blocking the binding of angiotensin II to the AT<sub>1</sub> receptor in many tissues, such as vascular smooth muscle and the adrenal gland.  Its action is therefore independent of the pathways for angiotensin II synthesis.  </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	There is also an AT<sub>2</sub> receptor found in many tissues, but AT<sub>2</sub> is not known to be associated with cardiovascular homeostasis.  Valsartan has much greater affinity (about 20,000-fold) for the AT<sub>1</sub> receptor than for the AT<sub>2</sub> receptor.  The primary metabolite of valsartan is essentially inactive with an affinity for the AT<sub>1</sub> receptor about one 200th that of valsartan itself.  </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Blockade of the renin-angiotensin system with ACE inhibitors, which inhibit the biosynthesis of angiotensin II from angiotensin I, is widely used in the treatment of hypertension.  ACE inhibitors also inhibit the degradation of bradykinin, a reaction also catalyzed by ACE.  Because valsartan does not inhibit ACE (kininase II), it does not affect the response to bradykinin.  Whether this difference has clinical relevance is not yet known.  Valsartan does not bind to or block other hormone receptors or ion channels known to be important in cardiovascular regulation.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Blockade of the angiotensin II receptor inhibits the negative regulatory feedback of angiotensin II on renin secretion, but the resulting increased plasma renin activity and angiotensin II circulating levels do not overcome the effect of valsartan on blood pressure.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="D1F5620D-7F56-563C-4450-9B46F9200047" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Pharmacokinetics</content></title>
+<text><paragraph>Valsartan peak plasma concentration is reached 2 to 4 hours after dosing. Valsartan shows bi-exponential decay kinetics following intravenous administration, with an average elimination half-life of about 6 hours.  Absolute bioavailability for the capsule formulation is about 25% (range 10%-35%).  Food decreases the exposure (as measured by AUC) to valsartan by about 40% and peak plasma concentration (C<sub>max</sub>) by about 50%.  AUC and C<sub>max</sub>&#160;values of valsartan increase approximately linearly with increasing dose over the clinical dosing range.  Valsartan does not accumulate appreciably in plasma following repeated administration.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="AC3FF9C5-11C8-1B7E-A796-1441928E6715" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Metabolism and Elimination</content></title>
+<text><paragraph>Valsartan, when administered as an oral solution, is primarily recovered in feces (about 83% of dose) and urine (about 13% of dose).  The recovery is mainly as unchanged drug, with only about 20% of dose recovered as metabolites.  The primary metabolite, accounting for about 9% of dose, is valeryl 4-hydroxy valsartan.  The enzyme(s) responsible for valsartan metabolism have not been identified but do not seem to be CYP 450 isozymes.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Following intravenous administration, plasma clearance of valsartan is about 2 L/h and its renal clearance is 0.62 L/h (about 30% of total clearance).</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="30C8BD39-586F-3BCC-6CA0-083C4C504FCC" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Distribution</content></title>
+<text><paragraph>The steady state volume of distribution of valsartan after intravenous administration is small (17 L), indicating that valsartan does not distribute into tissues extensively.  Valsartan is highly bound to serum proteins (95%), mainly serum albumin.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="A3084C6A-E275-3ED2-87C2-F6768B1C10CF" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Special Populations</content></title>
+<text><paragraph><content styleCode="italics">Pediatric:</content>  The pharmacokinetics of valsartan have not been investigated in patients &lt;18 years of age.</paragraph><paragraph><content styleCode="italics">Geriatric:</content>  Exposure (measured by AUC) to valsartan is higher by 70% and the half-life is longer by 35% in the elderly than in the young.  No dosage adjustment is necessary (see DOSAGE AND ADMINISTRATION).</paragraph><paragraph><content styleCode="italics">Gender:</content>  Pharmacokinetics of valsartan does not differ significantly between males and females.</paragraph><paragraph><content styleCode="italics">Renal Insufficiency:  </content>There is no apparent correlation between renal function (measured by creatinine clearance) and exposure (measured by AUC) to valsartan in patients with different degrees of renal impairment.  Consequently, dose adjustment is not required in patients with mild-to-moderate renal dysfunction.  No studies have been performed in patients with severe impairment of renal function (creatinine clearance &lt; 10 mL/min).  Valsartan is not removed from the plasma by hemodialysis.  In the case of severe renal disease, exercise care with dosing of valsartan (see DOSAGE AND ADMINISTRATION).</paragraph><paragraph><content styleCode="italics">Hepatic Insufficiency: </content> On average, patients with mild-to-moderate chronic liver disease have twice the exposure (measured by AUC values) to valsartan of healthy volunteers (matched by age, sex and weight).  In general, no dosage adjustment is needed in patients with mild-to-moderate liver disease.  Care should be exercised in patients with liver disease (see DOSAGE AND ADMINISTRATION).</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="0014D6C3-AA8C-F408-C2F8-4C86372F729C" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Pharmacodynamics and Clinical Effects</content></title>
+<text><paragraph>Valsartan  inhibits the pressor effect of angiotensin II infusions.  An oral dose of 80 mg inhibits the pressor effect by about 80% at peak with approximately 30% inhibition persisting for 24 hours.  No information on the effect of larger doses is available.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Removal of the negative feedback of angiotensin II causes a 2- to 3-fold rise in plasma renin and consequent rise in angiotensin II plasma concentration in hypertensive patients.  Minimal decreases in plasma aldosterone were observed after administration of valsartan; very little effect on serum potassium was observed.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	In multiple-dose studies in hypertensive patients with stable renal insufficiency and patients with renovascular hypertension, valsartan had no clinically significant effects on glomerular filtration rate, filtration fraction, creatinine clearance, or renal plasma flow.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	In multiple-dose studies in hypertensive patients, valsartan had no notable effects on total cholesterol, fasting triglycerides, fasting serum glucose, or uric acid.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	The antihypertensive effects of Diovan were demonstrated principally in 7 placebo-controlled, 4- to 12-week trials (one in patients over 65) of dosages from 10 to 320 mg/day in patients with baseline diastolic blood pressures of 95-115.  The studies allowed comparison of once-daily and twice-daily regimens of 160 mg/day; comparison of peak and trough effects; comparison (in pooled data) of response by gender, age, and race; and evaluation of incremental effects of hydrochlorothiazide.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Administration of valsartan to patients with essential hypertension results in a significant reduction of sitting, supine, and standing systolic and diastolic blood pressure, usually with little or no orthostatic change.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	In most patients, after administration of a single oral dose, onset of antihypertensive activity occurs at approximately 2 hours, and maximum reduction of blood pressure is achieved within 6 hours.  The antihypertensive effect persists for 24 hours after dosing, but there is a decrease from peak effect at lower doses (40 mg) presumably reflecting loss of inhibition of angiotensin II.  At higher doses, however (160 mg), there is little difference in peak and trough effect. During repeated dosing, the reduction in blood pressure with any dose is substantially present within 2 weeks, and maximal reduction is generally attained after 4&#160;weeks.  In long-term follow-up studies (without placebo control), the effect of valsartan appeared to be maintained for up to two years.  The antihypertensive effect is independent of age, gender or race.  The latter finding regarding race is based on pooled data and should be viewed with caution, because antihypertensive drugs that affect the renin-angiotensin system (that is, ACE inhibitors and angiotensin-II blockers) have generally been found to be less effective in low-renin hypertensives (frequently blacks) than in high-renin hypertensives (frequently whites).  In pooled, randomized, controlled trials of Diovan that included a total of 140 blacks and 830 whites, valsartan and an ACE-inhibitor control were generally at least as effective in blacks as whites.  The explanation for this difference from previous findings is unclear.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Abrupt withdrawal of valsartan has not been associated with a rapid increase in blood pressure.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	The blood pressure lowering effect of valsartan and thiazide-type diuretics are approximately additive.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	The 7 studies of valsartan monotherapy included over 2000 patients randomized to various doses of valsartan and about 800 patients randomized to placebo.  Doses below 80 mg were not consistently distinguished from those of placebo at trough, but doses of 80, 160 and 320&#160;mg produced dose-related decreases in systolic and diastolic blood pressure, with the difference from placebo of approximately 6-9/3-5 mmHg at 80-160 mg and 9/6 mmHg at 320&#160;mg.  In a controlled trial the addition of HCTZ to valsartan 80 mg resulted in additional lowering of systolic and diastolic blood pressure by approximately 6/3 and 12/5 mmHg for 12.5 and 25 mg of HCTZ, respectively, compared to valsartan 80 mg alone.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Patients with an inadequate response to 80 mg once daily were titrated to either 160 mg once daily or 80 mg twice daily, which resulted in a comparable response in both groups. </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	In controlled trials, the antihypertensive effect of once-daily valsartan 80 mg was similar to that of once-daily enalapril 20 mg or once-daily lisinopril 10 mg.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	There was essentially no change in heart rate in valsartan-treated patients in controlled trials.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="7AE43E84-C16F-E024-D69C-73EFBAA537B8" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS AND USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">INDICATIONS AND USAGE</content></title>
+<text><paragraph>Diovan is indicated for the treatment of hypertension.  It may be used alone or in combination with other antihypertensive agents.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="7E9DDAE9-7AFB-1429-C6E0-657D16FB0092" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">CONTRAINDICATIONS</content></title>
+<text><paragraph>Diovan is contraindicated in patients who are hypersensitive to any component of this product.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="C008DC4C-F98D-055C-2B40-6C11F289179C" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">WARNINGS</content></title>
+<text />
+<effectiveTime value="20060511" />
+<component>
+<section>
+<id root="368D3957-3630-FB83-F71E-3EDDFB82B3CD" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Fetal/Neonatal Morbidity and Mortality</content></title>
+<text><paragraph>Drugs that act directly on the renin-angiotensin system can cause fetal and neonatal morbidity and death when administered to pregnant women.  Several dozen cases have been reported in the world literature in patients who were taking angiotensin-converting enzyme inhibitors.  When pregnancy is detected, Diovan should be discontinued as soon as possible.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	The use of drugs that act directly on the renin-angiotensin system during the second and third trimesters of pregnancy has been associated with fetal and neonatal injury, including hypotension, neonatal skull hypoplasia, anuria, reversible or irreversible renal failure, and death.  Oligohydramnios has also been reported, presumably resulting from decreased fetal renal function;  oligohydramnios in this setting has been associated with fetal limb contractures, craniofacial deformation, and hypoplastic lung development.  Prematurity, intrauterine growth retardation, and patent ductus arteriosus have also been reported, although it is not clear whether these occurrences were due to exposure to the drug.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	These adverse effects do not appear to have resulted from intrauterine drug exposure that has been limited to the first trimester.  Mothers whose embryos and fetuses are exposed to an angiotensin II receptor antagonist only during the first trimester should be so informed.  Nonetheless, when patients become pregnant, physicians should advise the patient to discontinue the use of valsartan as soon as possible.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Rarely (probably less often than once in every thousand pregnancies), no alternative to a drug acting on the renin-angiotensin system will be found.  In these rare cases, the mothers should be apprised of the potential hazards to their fetuses, and serial ultrasound examinations should be performed to assess the intra-amniotic environment.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	If oligohydramnios is observed, valsartan should be discontinued unless it is considered life-saving for the mother.  Contraction stress testing (CST), a nonstress test (NST), or biophysical profiling (BPP) may be appropriate, depending upon the week of pregnancy.  Patients and physicians should be aware, however, that oligohydramnios may not appear until after the fetus has sustained irreversible injury.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Infants with histories of in utero exposure to an angiotensin II receptor antagonist should be closely observed for hypotension, oliguria, and hyperkalemia.  If oliguria occurs, attention should be directed toward support of blood pressure and renal perfusion.  Exchange transfusion or dialysis may be required as means of reversing hypotension and/or substituting for disordered renal function.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	No teratogenic effects were observed when valsartan was administered to pregnant mice and rats at oral doses up to 600 mg/kg/day and to pregnant rabbits at oral doses up to 10&#160;mg/kg/day.  However, significant decreases in fetal weight, pup birth weight, pup survival rate, and slight delays in developmental milestones were observed in studies in which parental rats were treated with valsartan at oral, maternally toxic  (reduction in body weight gain and food consumption) doses of 600 mg/kg/day during organogenesis or late gestation and lactation.  In rabbits, fetotoxicity (i.e., resorptions, litter loss, abortions, and low body weight) associated with maternal toxicity (mortality) was observed at doses of 5 and 10 mg/kg/day.  The no observed adverse effect doses of 600, 200 and 2 mg/kg/day in mice, rats and rabbits represent 9, 6, and 0.1 times, respectively, the maximum recommended human dose on a&#160;mg/m<sup>2</sup> basis. (Calculations assume an oral dose of 320 mg/day and a 60-kg patient.)</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="C1DDB7F0-E918-F630-BBFB-1D03DF1C0FBF" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Hypotension in Volume</content><content styleCode="bold">- and/or Salt</content><content styleCode="bold">-Depleted Patients</content></title>
+<text><paragraph>Excessive reduction of blood pressure was rarely seen (0.1%) in patients with uncomplicated hypertension.  In patients with an activated renin-angiotensin system, such as volume- and/or salt-depleted patients receiving high doses of diuretics, symptomatic hypotension may occur.  This condition should be corrected prior to administration of Diovan, or the treatment should start under close medical supervision.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	If hypotension occurs, the patient should be placed in the supine position and, if necessary, given an intravenous infusion of normal saline.  A transient hypotensive response is not a contraindication to further treatment, which usually can be continued without difficulty once the blood pressure has stabilized.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="430709EE-6598-7975-36FE-B07F9C4A4468" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">PRECAUTIONS</content></title>
+<text />
+<effectiveTime value="20060511" />
+<component>
+<section>
+<id root="66AD699D-0086-631D-3B30-59913C72EAE4" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">General</content></title>
+<text><paragraph><content styleCode="bold italics">Impaired Hepatic Function</content><content styleCode="italics">:</content>  As the majority of valsartan is eliminated in the bile, patients with mild-to-moderate hepatic impairment, including patients with biliary obstructive disorders, showed lower valsartan clearance (higher AUCs). Care should be exercised in administering Diovan to these patients.</paragraph><paragraph><content styleCode="bold italics">Impaired Renal Function</content><content styleCode="italics">:</content>  As a consequence of inhibiting the renin-angiotensin-aldosterone system, changes in renal function may be anticipated in susceptible individuals.  In patients whose renal function may depend on the activity of the renin-angiotensin-aldosterone system (e.g., patients with severe congestive heart failure), treatment with angiotensin-converting enzyme inhibitors and angiotensin receptor antagonists has been associated with oliguria and/or progressive azotemia and (rarely) with acute renal failure and/or death.  Similar outcomes have been reported with Diovan.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	In studies of ACE inhibitors in patients with unilateral or bilateral renal artery stenosis, increases in serum creatinine or blood urea nitrogen have been reported.  In a 4-day trial of valsartan in 12 patients with unilateral renal artery stenosis, no significant increases in serum creatinine or blood urea nitrogen were observed.  There has been no long-term use of Diovan in patients with unilateral or bilateral renal artery stenosis, but an effect similar to that seen with ACE inhibitors should be anticipated.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="AF216CF5-4864-5319-B433-8D40458CFEC1" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Information for Patients</content></title>
+<text><paragraph><content styleCode="bold italics">Pregnancy</content><content styleCode="italics">:  </content>Female patients of childbearing age should be told about the consequences of second- and third-trimester exposure to drugs that act on the renin-angiotensin system, and they should also be told that these consequences do not appear to have resulted from intrauterine drug exposure that has been limited to the first trimester.  These patients should be asked to report pregnancies to their physicians as soon as possible.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="A689015E-2CE9-1C42-83B6-C64E072AAD73" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Drug Interactions</content></title>
+<text><paragraph>No clinically significant pharmacokinetic interactions were observed when valsartan was coadministered with amlodipine, atenolol, cimetidine, digoxin, furosemide, glyburide, hydrochlorothiazide, or indomethacin.  The valsartan-atenolol combination was more antihypertensive than either component, but it did not lower the heart rate more than atenolol alone.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Coadministration of valsartan and warfarin did not change the pharmacokinetics of valsartan or the time-course of the anticoagulant properties of warfarin.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;<content styleCode="italics">CYP 450 Interactions: </content> The enzyme(s) responsible for valsartan metabolism have not been identified but do not seem to be CYP 450 isozymes.  The inhibitory or induction potential of valsartan on CYP 450 is also unknown.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="5B23B60E-3CFA-DC73-519F-0FED2A25B35A" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS AND MUTAGENESIS AND IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Carcinogenesis, Mutagenesis, Impairment of Fertility</content></title>
+<text><paragraph>There was no evidence of carcinogenicity when valsartan was administered in the diet to mice and rats for up to 2 years at doses up to 160 and 200 mg/kg/day, respectively.  These doses in mice and rats are about 2.6 and 6 times, respectively, the maximum recommended human dose on a mg/m<sup>2 </sup>basis. (Calculations assume an oral dose of 320 mg/day and a 60-kg patient.)</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Mutagenicity assays did not reveal any valsartan-related effects at either the gene or chromosome level.  These assays included bacterial mutagenicity tests with <content styleCode="italics">Salmonella</content> (Ames) and <content styleCode="italics">E coli;</content> a gene mutation test with Chinese hamster V79 cells; a cytogenetic test with Chinese hamster ovary cells; and a rat micronucleus test.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Valsartan had no adverse effects on the reproductive performance of male or female rats at oral doses up to 200 mg/kg/day.  This dose is 6 times the maximum recommended human dose on a mg/m<sup>2</sup> basis.  (Calculations assume an oral dose of 320 mg/day and a 60-kg patient.)</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="EAA4C9F6-297F-5407-5141-DAFBB5CAD6AD" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Pregnancy Categories C (first trimester) and D (second and third trimesters) </content></title>
+<text><paragraph>See WARNINGS, Fetal/Neonatal Morbidity and Mortality.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="AA47F3EE-A4D2-BB17-665A-5CB6C8B13E52" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Nursing Mothers</content></title>
+<text><paragraph>It is not known whether valsartan is excreted in human milk, but valsartan was excreted in the milk of lactating rats.  Because of the potential for adverse effects on the nursing infant, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="EDBE49ED-62DC-FB42-05C0-9A5D38665522" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Pediatric Use</content></title>
+<text><paragraph>Safety and effectiveness in pediatric patients have not been established.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="240AE0BF-AE77-6BB7-F3D8-65BBEF2CF34F" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Geriatric Use</content></title>
+<text><paragraph>In the controlled clinical trials of valsartan, 1214 (36.2%) of patients treated with valsartan were &#8805; 65 years and 265 (7.9%) were &#8805; 75 years.  No overall difference in the efficacy or safety of valsartan was observed in this patient population, but greater sensitivity of some older individuals cannot be ruled out.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="90CCC137-054E-3939-0F69-932366BD300E" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">ADVERSE REACTIONS</content></title>
+<text><paragraph>Diovan has been evaluated for safety in more than 4000 patients, including over 400 treated for over 6 months, and more than 160 for over 1 year.  Adverse experiences have generally been mild and transient in nature and have only infrequently required discontinuation of therapy.  The overall incidence of adverse experiences with Diovan was similar to placebo.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	The overall frequency of adverse experiences was neither dose-related nor related to gender, age, race, or regimen.  Discontinuation of therapy due to side effects was required in 2.3% of valsartan patients and 2.0% of placebo patients.  The most common reasons for discontinuation of therapy with Diovan were headache and dizziness.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	The adverse experiences that occurred in placebo-controlled clinical trials in at least 1% of patients treated with Diovan and at a higher incidence in valsartan (n=2316) than placebo (n=888) patients included viral infection (3% vs. 2%), fatigue (2% vs. 1%), and abdominal pain (2% vs. 1%). </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Headache, dizziness, upper respiratory infection, cough, diarrhea, rhinitis, sinusitis, nausea, pharyngitis, edema, and arthralgia occurred at a more than 1% rate but at about the same incidence in placebo and valsartan patients.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	In trials in which valsartan was compared to an ACE inhibitor with or without placebo, the incidence of dry cough was significantly greater in the ACE-inhibitor group (7.9%) than in the groups who received valsartan (2.6%) or placebo (1.5%).  In a 129-patient trial limited to patients who had had dry cough when they had previously received ACE inhibitors, the incidences of cough in patients who received valsartan, HCTZ, or lisinopril were 20%, 19%, and 69% respectively (p&lt;0.001).</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Dose-related orthostatic effects were seen in less than 1% of patients.  An increase in the incidence of dizziness was observed in patients treated with Diovan 320 mg (8%) compared to 10 to 160 mg (2% to 4%).  </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Diovan has been used concomitantly with hydrochlorothiazide without evidence of clinically important adverse interactions.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Other adverse experiences that occurred in controlled clinical trials of patients treated with Diovan (&gt; 0.2% of valsartan patients) are listed below.  It cannot be determined whether these events were causally related to Diovan.</paragraph><paragraph><content styleCode="bold italics">Body as a Whole:</content>  Allergic reaction and asthenia</paragraph><paragraph><content styleCode="bold italics">Cardiovascular:</content>  Palpitations</paragraph><paragraph><content styleCode="bold italics">Dermatologic:</content>  Pruritus and rash</paragraph><paragraph><content styleCode="bold italics">Digestive:</content>  Constipation, dry mouth, dyspepsia, and flatulence</paragraph><paragraph><content styleCode="bold italics">Musculoskeletal:</content>  Back pain, muscle cramps, and myalgia</paragraph><paragraph><content styleCode="bold italics">Neurologic and Psychiatric:</content>  Anxiety, insomnia, paresthesia, and somnolence</paragraph><paragraph><content styleCode="bold italics">Respiratory:  </content>Dyspnea</paragraph><paragraph><content styleCode="bold italics">Special Senses:  </content>Vertigo</paragraph><paragraph><content styleCode="bold italics">Urogenital:</content>  Impotence</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Other reported events seen less frequently in clinical trials included chest pain, syncope, anorexia, vomiting, and angioedema.</paragraph></text>
+<effectiveTime value="20060511" />
+<component>
+<section>
+<id root="8969692E-6275-BA0E-B79F-2666F7C04880" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Post-Marketing Experience </content></title>
+<text><paragraph>The following additional adverse reactions have been reported in post-marketing experience:</paragraph><paragraph><content styleCode="bold italics">Hypersensitivity:</content>  There are rare reports of angioedema.</paragraph><paragraph><content styleCode="bold italics">Digestive:</content>  Elevated liver enzymes and very rare reports of hepatitis.</paragraph><paragraph><content styleCode="bold italics">Renal:</content>  Impaired renal function.</paragraph><paragraph><content styleCode="bold italics">Clinical Laboratory tests:</content>  Hyperkalemia</paragraph><paragraph><content styleCode="bold italics">Dermatologic:</content>  Alopecia</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="F9AE93E6-53FD-49E0-6FB1-D210CEE9E8F8" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Clinical Laboratory Test Findings</content></title>
+<text><paragraph>In controlled clinical trials, clinically important changes in standard laboratory parameters were rarely associated with administration of Diovan.</paragraph><paragraph><content styleCode="italics">Creatinine: </content> Minor elevations in creatinine occurred in 0.8% of patients taking Diovan and 0.6% given placebo in controlled clinical trials. </paragraph><paragraph><content styleCode="italics">Hemoglobin and Hematocrit: </content> Greater than 20% decreases in hemoglobin and hematocrit were observed in 0.4% and 0.8%, respectively, of Diovan patients, compared with 0.1% and 0.1% in placebo-treated patients.  One valsartan patient discontinued treatment for microcytic anemia.</paragraph><paragraph><content styleCode="italics">Liver function tests:</content>  Occasional elevations (greater than 150%) of liver chemistries occurred in Diovan-treated patients.  Three patients (&lt; 0.1%) treated with valsartan discontinued treatment for elevated liver chemistries.</paragraph><paragraph><content styleCode="italics">Neutropenia:</content>  Neutropenia was observed in 1.9% of patients treated with Diovan and 0.8% of patients treated with placebo.</paragraph><paragraph><content styleCode="italics">Serum Potassium:</content>  Greater than 20% increases in serum potassium were observed in 4.4% of Diovan-treated patients compared to 2.9% of placebo-treated patients.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="E99BF55B-E201-40AC-4329-E8366369ECF6" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">OVERDOSAGE</content></title>
+<text><paragraph>Limited data are available related to overdosage in humans.  The most likely manifestations of overdosage would be hypotension and tachycardia; bradycardia could occur from parasympathetic (vagal) stimulation. If symptomatic hypotension should occur, supportive treatment should be instituted. </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Valsartan is not removed from the plasma by hemodialysis.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Valsartan was without grossly observable adverse effects at single oral doses up to 2000&#160;mg/kg in rats and up to 1000 mg/kg in marmosets, except for salivation and diarrhea in the rat and vomiting in the marmoset at the highest dose  (60 and 37 times, respectively, the maximum recommended human dose on a mg/m<sup>2</sup> basis).  (Calculations assume an oral dose of 320 mg/day and a 60-kg patient.)</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="5306CE60-DD5A-553C-F004-35F6198F0755" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">DOSAGE AND ADMINISTRATION</content></title>
+<text><paragraph>The recommended starting dose of Diovan is 80 mg once daily when used as monotherapy in patients who are not volume-depleted.  Diovan may be used over a dose range of 80 mg to 320&#160;mg daily, administered once-a-day.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	The antihypertensive effect is substantially present within 2 weeks and maximal reduction is generally attained after 4 weeks.  If additional antihypertensive effect is required, the dosage may be increased to 160 mg or 320 mg or a diuretic may be added.  Addition of a diuretic has a greater effect than dose increases beyond 80 mg. </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	No initial dosage adjustment is required for elderly patients, for patients with mild or moderate renal impairment, or for patients with mild or moderate liver insufficiency.  Care should be exercised with dosing of Diovan in patients with hepatic or severe renal impairment. </paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Diovan may be administered with other antihypertensive agents.</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Diovan may be administered with or without food.</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+<component>
+<section>
+<id root="BA0D6D34-810D-C828-C41F-A100E89262B1" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">HOW SUPPLIED</content></title>
+<text><paragraph>Diovan is available as capsules containing valsartan 80 mg or 160 mg.  Both strengths are packaged in bottles of 100 capsules and unit dose blister packages.  Capsules are imprinted as follows:</paragraph><paragraph /><paragraph>80 mg Capsule - Light grey/light pink opaque, imprinted CG FZF</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Bottles of 100&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;NDC 0083-4000-01</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Unit Dose (blister pack)&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;.NDC 0083-4000-61</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	      Box of 100 (strips of 10)</paragraph><paragraph /><paragraph>160 mg Capsule - Dark grey/light pink opaque, imprinted CG GOG</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Bottles of 100 &#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;...NDC 0083-4001-01</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	Unit Dose (blister pack)&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;.NDC 0083-4001-61</paragraph><paragraph>&#160;&#160;&#160;&#160;&#160;
+	      Box of 100 (strips of 10) </paragraph><paragraph /><paragraph>Store at 25&#186;C (77&#186;F); excursions permitted to 15&#186;C-30&#186;C (59&#186;F-86&#186;F).  Protect from moisture.</paragraph><paragraph>Dispense in tight container (USP).</paragraph><paragraph /><paragraph /><paragraph /><paragraph>T2000-31</paragraph><paragraph>89004202</paragraph><paragraph /><paragraph /><paragraph>Distributed by<br />Novartis Pharmaceuticals Corporation<br />East Hanover, New Jersey 07936</paragraph><paragraph /><paragraph>&#169; 2000 Novartis</paragraph></text>
+<effectiveTime value="20060511" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

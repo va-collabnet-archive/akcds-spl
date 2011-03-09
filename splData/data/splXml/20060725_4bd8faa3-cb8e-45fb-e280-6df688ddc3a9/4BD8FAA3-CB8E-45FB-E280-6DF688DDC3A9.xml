@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="4BD8FAA3-CB8E-45FB-E280-6DF688DDC3A9" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Human Prescription Drug Label" />
+<title mediaType="text/x-hl7-title+xml">PROSOM&#8482;<br /> 	(estazolam tablets)<br />CS-IV</title>
+<effectiveTime value="20060616" />
+<setId root="4BD8FAA3-CB8E-45FB-E280-6DF688DDC3A9" />
+<versionNumber value="1" />
+<author>
+<time />
+<assignedEntity>
+<representedOrganization>
+<name>Abbott Laboratories</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="5F2426AC-AB01-C116-AE5D-FA0B95B293FA" />
+<effectiveTime value="20060616" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0074-3735" codeSystem="2.16.840.1.113883.6.69" />
+<name>PROSOM</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="FDA DRG 201" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="1">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="1" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="36S3EQV54C" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>estazolam</name>
+<activeMoiety>
+<activeMoiety>
+<code code="36S3EQV54C" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>estazolam</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>estazolam</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>Colloidal silicon dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>stearic acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>sodium starch glycolate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0074-3735-13" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<policy classCode="DEADrugSchedule">
+<code code="C48677" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CIV">
+<originalText>IV</originalText>
+</code>
+</policy>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">UC</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="true" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="7" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48347" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="RECTANGLE" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0074-3736" codeSystem="2.16.840.1.113883.6.69" />
+<name>PROSOM</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="FDA DRG 201" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="2">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="2" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="36S3EQV54C" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>estazolam</name>
+<activeMoiety>
+<activeMoiety>
+<code code="36S3EQV54C" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>estazolam</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>estazolam</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>Colloidal silicon dioxide</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>povidone</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>stearic acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>sodium starch glycolate</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>FD&amp;C Red No. 40</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0074-3736-13" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" />
+<formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48328" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PINK" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">UD</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="7" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48347" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="RECTANGLE" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="true" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="5D9FC855-9767-B9E5-F3A5-82C784A662D1" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DESCRIPTION section" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>ProSom (estazolam), a triazolobenzodiazepine derivative,
+is an oral hypnotic agent.  Estazolam occurs as a fine, white, odorless powder
+that is soluble in alcohol and practically insoluble in water.  The chemical
+name for estazolam is 8&#8722;chloro&#8722;6&#8722;phenyl&#8722;4H&#8722;s&#8722;triazolo[4,3-&#945;]&#160;[1,4]benzodiazepine.
+ The empirical formula is C<sub>16</sub>H<sub>11</sub>ClN<sub>4</sub>.  The
+structural formula is represented as follows:</paragraph><paragraph><renderMultiMedia referencedObject="MM1131659841-1" /></paragraph><paragraph>ProSom tablets are scored and contain either
+1 mg or 2 mg of estazolam.</paragraph></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="B10DB8EE-9BF9-5A78-4B84-D36C5F822866" />
+<title mediaType="text/x-hl7-title+xml">Inactive Ingredients</title>
+<text><paragraph>Colloidal silicon dioxide, lactose, povidone, stearic
+acid, and sodium starch glycolate.</paragraph><paragraph>In addition,
+the 2 mg tablets contain FD&amp;C Red No. 40.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<observationMedia ID="MM1131659841-1">
+<id root="B73763C6-54A2-4FA0-E4B1-966930BCF1C1" />
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="prosom-structure.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="AD743D2A-9778-949C-F093-9FC0C43319BC" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL PHARMACOLOGY section" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text />
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="6AAF1699-50B8-FB78-B4A8-88DF4A7D0C17" />
+<title mediaType="text/x-hl7-title+xml">Pharmacokinetics</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="B584FCD2-7293-1331-2AB9-2BFF023F4547" />
+<title mediaType="text/x-hl7-title+xml">Absorption</title>
+<text><paragraph>ProSom tablets have been found to be equivalent
+in absorption to an orally administered solution of estazolam.  In healthy
+subjects who received up to three times the recommended dose of ProSom, peak
+estazolam plasma concentrations occurred within two hours after dosing (range
+0.5 to 6.0 hours) and were proportional to the administered dose, suggesting
+linear pharmacokinetics over the dosage range tested.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="EA6DF483-CD29-F625-FB4B-634F48101D70" />
+<title mediaType="text/x-hl7-title+xml">Distribution</title>
+<text><paragraph>Independent of concentration, estazolam in plasma
+is 93% protein bound.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="2419DD46-7BC6-31FA-3B9F-35C4C5CA66FA" />
+<title mediaType="text/x-hl7-title+xml">Metabolism</title>
+<text><paragraph>Estazolam is extensively metabolized.  Only two
+metabolites (1-oxo-estazolam &amp; 4&#160;&#8722;&#160;hydroxy&#160;&#8722;&#160;estazolam)
+were detected in human plasma up to 18 hrs.</paragraph><paragraph>The
+pharmacologic activity of estazolam is primarily from the parent drug.  The
+elimination of the parent drug takes place via hepatic metabolism of estazolam
+to hydroxylated and other metabolites that are eliminated largely in the urine
+both free and conjugated.  In humans, greater than 70% of a single dose of
+estazolam was recovered in the urine as metabolites.  Less than 5% of a 2
+mg dose of estazolam was excreted unchanged in the urine, with only 4% of
+the dose appearing in the feces.  The principal urinary excretion product
+is an unidentified metabolite, presumed to be a metabolic product of 4-hydroxy-estazolam,
+accounting for at least 27% of the administered dose. 4&#160;&#8722;&#160;hydroxy-estazolam
+is the major metabolite in plasma, with concentrations approaching 12% of
+those of the parent eight hours after administration.  Urinary 4&#160;&#8722;&#160;hydroxy&#160;&#8722;&#160;estazolam
+and 1-oxo-estazolam account for 11.9% and 4.4% of the dose respectively.  <content styleCode="italics">In&#160;vitro</content> studies with human liver microsomes
+indicate that the biotransformation of estazolam to the major circulating
+metabolite 4&#160;&#8722;&#160;hydroxy&#160;&#8722;&#160;estazolam is mediated
+by cytochrome P450&#160;3A (CYP3A).  While 4-hydroxy-estazolam and the lesser
+metabolite, 1-oxo-estazolam, have some pharmacologic activity, their low potencies
+and low concentrations preclude any significant contribution to the hypnotic
+effect of ProSom.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="A49CBF60-461B-1E31-2E53-71246443592F" />
+<title mediaType="text/x-hl7-title+xml">Elimination</title>
+<text><paragraph>The range of estimates for the mean elimination
+half-life of estazolam varied from 10 to 24 hours.  Radiolabel mass balance
+studies indicate that the main route of excretion is via the kidneys.  After
+5 days, 87% of the administered radioactivity was excreted in human urine.
+ Less than 4% of the dose was excreted unchanged.  Eleven metabolites were
+found in urine.  Four metabolites were identified as 1-oxo-estazolam, 4'&#160;&#8722;&#160;hydroxy&#160;&#8722;&#160;estazolam,
+4-hydroxy-estazolam, and benzophenone, as free metabolites and glucuronides.
+ The predominant metabolite in urine (17% of the administered dose) has not
+been identified, but is likely to be a metabolite of 4-hydroxy-estazolam.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="E2F6877C-703F-5A0D-8D52-30D9919E33F8" />
+<title mediaType="text/x-hl7-title+xml">Special Populations</title>
+<text><paragraph>In a small study (N=8) using various doses in
+older subjects (59 to 68 years), peak estazolam concentrations were found
+to be similar to those observed in younger subjects with a mean elimination
+half-life of 18.4 hours (range 13.5 to 34.6 hours).  The influence of hepatic
+or renal impairment on the pharmacokinetics of estazolam has not been studied.</paragraph></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="FD8BDE1A-6DD6-BA49-9533-865198C5C06A" />
+<title mediaType="text/x-hl7-title+xml">Pediatrics</title>
+<text><paragraph>The pharmacokinetics of estazolam have not been
+studied in pediatric patients.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="58ECABD6-38D9-FC37-2573-04D536F17146" />
+<title mediaType="text/x-hl7-title+xml">Race</title>
+<text><paragraph>The influence of race on the pharmacokinetics
+of estazolam has not been studied.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="38EB965F-DA79-FA0C-8AAC-778547AFC54F" />
+<title mediaType="text/x-hl7-title+xml">Gender</title>
+<text><paragraph>The gender-effect on the pharmacokinetics of
+estazolam has not been investigated.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="F354B349-8FF8-9BE0-A958-5330CB7652B3" />
+<title mediaType="text/x-hl7-title+xml">Cigarette Smoking</title>
+<text><paragraph>The clearance of benzodiazepines is accelerated
+in smokers compared to nonsmokers, and there is evidence that this occurs
+with estazolam.  This decrease in half-life, presumably due to enzyme induction
+by smoking, is consistent with other drugs with similar hepatic clearance
+characteristics.  In all subjects and at all doses, the mean elimination half-life
+appeared to be independent of the dose.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="2EA2A7FF-C129-E3F8-CA55-003787E5A1F7" />
+<title mediaType="text/x-hl7-title+xml">Drug-Drug Interaction</title>
+<text><paragraph>The metabolism of estazolam to the major circulating
+metabolite 4-hydroxy-estazolam is catalyzed by CYP3A.  While no <content styleCode="italics">in&#160;vivo </content> drug-drug interaction studies were conducted between estazolam
+and inhibitors/inducers of CYP3A, compounds that are potent CYP3A inhibitors
+(such as ketoconazole, itraconazole, nefazodone, fluvoxamine, and erythromycin)
+would be expected to increase plasma estazolam concentrations and CYP3A inducers
+(such as carbamazepine, phenytoin, rifampin and barbiturates) would be expected
+to decrease estazolam concentrations.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="105D794D-2922-0ABD-A949-B6D4472C44DD" />
+<title mediaType="text/x-hl7-title+xml">Drug Interaction with Fluoxetine</title>
+<text><paragraph>A multiple-dose study was conducted to assess
+the effect of fluoxetine 20 mg BID on the pharmacokinetics of estazolam 2
+mg QHS after seven days.  The pharmacokinetics of estazolam (C<sub>max</sub> and
+AUC) were not affected during multiple-dose fluoxetine, suggesting no clinically
+significant pharmacokinetic interaction.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="7DA54EE6-9D18-E490-32B9-D8F264649A60" />
+<title mediaType="text/x-hl7-title+xml">The Ability of Estazolam to Induce or Inhibit Human Enzyme Systems</title>
+<text><paragraph>The results from <content styleCode="italics">in&#160;vitro </content> human liver microsomal studies suggest that at therapeutic concentrations,
+estazolam has no significant inhibitory effect on the major human cytochrome
+P450 enzyme activities (i.e., CYP1A2, CYP2A6, CYP2C9, CYP2C19, CYP2D6, CYP2E1,
+and CYP3A).  The ability of estazolam to induce human hepatic enzyme systems
+has not been determined.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="63EF1432-67C8-6D38-7E20-26E115293409" />
+<title mediaType="text/x-hl7-title+xml">Pharmacodynamics</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="7BDEE5D7-860D-3E7D-41B7-0C9FCC4FE179" />
+<title mediaType="text/x-hl7-title+xml">Postulated relationship between elimination rate of benzodiazepine
+hypnotics and their profile of common untoward effects</title>
+<text><paragraph>The type and duration of hypnotic effects and
+the profile of unwanted effects during administration of benzodiazepine drugs
+may be influenced by the biologic half-life of administered drug and any active
+metabolites formed.  If half-lives are long, drug or metabolites may accumulate
+during periods of nightly administration and may be associated with impairments
+of cognitive and/or motor performance during waking hours; the possibility
+of interaction with other psychoactive drugs or alcohol will be increased.
+ In contrast, if half-lives are short, drug and metabolites will be cleared
+before the next dose is ingested, and carry-over effects related to excessive
+sedation or CNS depression should be minimal or absent.  However, during nightly
+use for an extended period, pharmacodynamic tolerance or adaptation to some
+effects of benzodiazepine hypnotics may develop.  If the drug has a short
+elimination half-life, it is possible that a relative deficiency of the drug
+or its active metabolites (i.e.,&#160;in relationship to the receptor site)
+may occur at some point in the interval between each night's use.  This
+sequence of events may account for two clinical findings reported to occur
+after several weeks of nightly use of rapidly eliminated benzodiazepine hypnotics,
+namely, increased wakefulness during the last third of the night and increased
+daytime anxiety in selected patients.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="54678A78-1A81-E98D-C0F9-D2F392926377" />
+<code code="34092-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CLINICAL STUDIES section" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL STUDIES</title>
+<text />
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="04E9B2B8-B69F-0795-2242-9417FEF3DD88" />
+<title mediaType="text/x-hl7-title+xml">Controlled Trials Supporting Efficacy</title>
+<text><paragraph>In three 7-night, double-blind, parallel-group trials
+comparing estazolam 1 mg and/or 2&#160;mg with placebo in adult outpatients
+with chronic insomnia, estazolam 2 mg was consistently superior to placebo
+in subjective measures of sleep induction (latency) and sleep maintenance
+(duration, number of awakenings, depth and quality of sleep); estazolam 1
+mg was similarly superior to placebo on all measures of sleep maintenance,
+however, it significantly improved sleep induction in only one of two studies.
+ In a similarly designed trial comparing estazolam 0.5 mg and 1 mg with placebo
+in geriatric outpatients with chronic insomnia, only the 1 mg estazolam dose
+was consistently superior to placebo in sleep induction (latency) and in only
+one measure of sleep maintenance (i.e., duration of sleep).</paragraph><paragraph>In a single-night, double-blind, parallel-group trial comparing
+estazolam 2&#160;mg and placebo in patients admitted for elective surgery
+and requiring sleep medications, estazolam was superior to placebo in subjective
+measures of sleep induction and maintenance.</paragraph><paragraph>In
+a 12-week, double-blind, parallel-group trial including a comparison of estazolam
+2&#160;mg and placebo in adult outpatients with chronic insomnia, estazolam
+was superior to placebo in subjective measures of sleep induction (latency)
+and maintenance (duration, number of awakenings, total wake time during sleep)
+at Week 2, but produced consistent improvement over 12 weeks only for sleep
+duration and total wake time during sleep.  Following withdrawal at Week 12,
+rebound insomnia was seen at the first withdrawal week, but there was no difference
+between drug and placebo by the second withdrawal week in all parameters except
+latency, for which normalization did not occur until the fourth withdrawal
+week.</paragraph><paragraph>Adult outpatients with chronic insomnia
+were evaluated in a sleep laboratory trial comparing four doses of estazolam
+(0.25, 0.50, 1.0 and 2.0 mg) and placebo, each administered for 2 nights in
+a crossover design.  The higher estazolam doses were superior to placebo in
+most EEG measures of sleep induction and maintenance, especially at the 2
+mg dose, but only for sleep duration in subjective measures of sleep.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="C8EC5AEC-FB18-A1AE-09E4-334DD3B4466C" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INDICATIONS AND USAGE section" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>ProSom (estazolam) is indicated for the short-term
+management of insomnia characterized by difficulty in falling asleep, frequent
+nocturnal awakenings, and/or early morning awakenings.  Both outpatient studies
+and a sleep laboratory study have shown that ProSom administered at bedtime
+improved sleep induction and sleep maintenance (see <content styleCode="bold">CLINICAL
+PHARMACOLOGY</content>).</paragraph><paragraph>Because insomnia is
+often transient and intermittent, the prolonged administration of ProSom is
+generally neither necessary nor recommended.  Since insomnia may be a symptom
+of several other disorders, the possibility that the complaint may be related
+to a condition for which there is a more specific treatment should be considered.</paragraph><paragraph>There is evidence to support the ability of ProSom to enhance
+the duration and quality of sleep for intervals up to 12 weeks (see <content styleCode="bold">CLINICAL PHARMACOLOGY</content>).</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="A71AEAE7-EF58-F1FE-277B-FDD8746AC8E5" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CONTRAINDICATIONS section" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>Benzodiazepines may cause fetal damage when administered
+during pregnancy.  An increased risk of congenital malformations associated
+with the use of diazepam and chlordiazepoxide during the first trimester of
+pregnancy has been suggested in several studies.  Transplacental distribution
+has resulted in neonatal CNS depression and also withdrawal phenomena following
+the ingestion of therapeutic doses of a benzodiazepine hypnotic during the
+last weeks of pregnancy.</paragraph><paragraph>ProSom is contraindicated
+in pregnant women.  If there is a likelihood of the patient becoming pregnant
+while receiving ProSom she should be warned of the potential risk to the fetus
+and instructed to discontinue the drug prior to becoming pregnant.  The possibility
+that a woman of childbearing potential is pregnant at the time of institution
+of therapy should be considered.</paragraph><paragraph>Estazolam is
+contraindicated with ketoconazole and itraconazole, since these medications
+significantly impair oxidative metabolism mediated by CYP3A (see <content styleCode="bold">WARNINGS</content> and <content styleCode="bold">PRECAUTIONS
+- Drug Interactions</content>).</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="FAF0FE01-9934-FB60-1A60-6A7C34A632D8" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WARNINGS section" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>ProSom, like other benzodiazepines, has CNS depressant
+effects.  For this reason, patients should be cautioned against engaging in
+hazardous occupations requiring complete mental alertness, such as operating
+machinery or driving a motor vehicle, after ingesting the drug, including
+potential impairment of the performance of such activities that may occur
+the day following ingestion of ProSom.  Patients should also be cautioned
+about possible combined effects with alcohol and other CNS depressant drugs.</paragraph><paragraph>As with all benzodiazepines, amnesia, paradoxical reactions
+(e.g,, excitement, agitation, etc.), and other adverse behavioral effects
+may occur unpredictably.</paragraph><paragraph>There have been reports
+of withdrawal signs and symptoms of the type associated with withdrawal from
+CNS depressant drugs following the rapid decrease or the abrupt discontinuation
+of benzodiazepines (see <content styleCode="bold">DRUG ABUSE AND DEPENDENCE </content>).</paragraph></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="9F7F6D6E-0168-5984-4C5B-6F30664396F8" />
+<title mediaType="text/x-hl7-title+xml">Estazolam Interaction with Drugs that Inhibit Metabolism via Cytochrome
+P450 3A (CYP3A)</title>
+<text><paragraph>The metabolism of estazolam to the major circulating
+metabolite 4-hydroxy-estazolam and the metabolism of other triazolobenzodiazepines
+is catalyzed by CYP3A.  Consequently, estazolam should be avoided in patients
+receiving ketoconazole and itraconazole, which are very potent inhibitors
+of CYP3A (see C<content styleCode="bold">ONTRAINDICATIONS</content>).  With
+drugs inhibiting CYP3A to a lesser, but still significant degree, estazolam
+should be used only with caution and consideration of appropriate dosage reduction.
+ The following are examples of drugs known to inhibit the metabolism of other
+related benzodiazepines, presumably through inhibition of CYP3A:  nefazodone,
+fluvoxamine, cimetidine, diltiazem, isoniazide, and some macrolide antibiotics.</paragraph><paragraph>While no <content styleCode="italics">in&#160;vivo</content> drug-drug
+interaction studies were conducted between estazolam and inducers of CYP3A,
+compounds that are potent CYP3A inducers (such as carbamazepine, phenytoin,
+rifampin, and barbiturates) would be expected to decrease estazolam concentrations.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="BB17BA4D-A746-F637-CAD4-0FEA1B3B4B1A" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Precautions" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text />
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="308F9A87-D958-C470-5040-0182B486C410" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL PRECAUTIONS section" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>Impaired motor and/or cognitive performance attributable
+to the accumulation of benzodiazepines and their active metabolites following
+several days of repeated use at their recommended doses is a concern in certain
+vulnerable patients (e.g., those especially sensitive to the effects of benzodiazepines
+or those with a reduced capacity to metabolize and eliminate them) (see <content styleCode="bold">DOSAGE AND ADMINISTRATION</content>).</paragraph><paragraph>Elderly or debilitated patients and those with impaired renal
+or hepatic function should be cautioned about these risks and advised to monitor
+themselves for signs of excessive sedation or impaired conditions.</paragraph><paragraph>ProSom appears to cause dose-related respiratory depression
+that is ordinarily not clinically relevant at recommended doses in patients
+with normal respiratory function.  However, patients with compromised respiratory
+function may be at risk and should be monitored appropriately.  As a class,
+benzodiazepines have the capacity to depress respiratory drive; there are
+insufficient data available, however, to characterize their relative potency
+in depressing respiratory drive at clinically recommended doses.</paragraph><paragraph>As with other benzodiazepines, ProSom should be administered
+with caution to patients exhibiting signs or symptoms of depression.  Suicidal
+tendencies may be present in such patients and protective measures may be
+required.  Intentional overdosage is more common in this group of patients;
+therefore, the least amount of drug that is feasible should be prescribed
+for the patient at any one time.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="7E621995-9F0D-5DB1-250C-DA995F49D690" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information for Patients section" />
+<title mediaType="text/x-hl7-title+xml">Information for Patients</title>
+<text><paragraph>To assure the safe and effective use of ProSom,
+the following information and instructions should be given to patients:</paragraph><list listType="ordered" styleCode="Arabic"><item>Inform your physician about any alcohol consumption and medicine you
+are taking now, including drugs you may buy without a prescription.  Alcohol
+should not be used during treatment with hypnotics.</item><item>Inform your physician if you are planning to become pregnant, if you
+are pregnant, or if you become pregnant while you are taking this medicine.</item><item>You should not take this medicine if you are nursing, as the drug may
+be excreted in breast milk.</item><item>Until you experience the way this medicine affects you, do not drive
+a car, operate potentially dangerous machinery, or engage in hazardous occupations
+requiring complete mental alertness after taking this medicine.</item><item>Since benzodiazepines may produce psychological and physical dependence,
+you should not increase the dose before consulting your physician.  In addition,
+since the abrupt discontinuation of ProSom may be associated with temporary
+sleep disturbances, you should consult your physician before abruptly discontinuing
+doses of 2 mg per night or more.</item></list></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="F124049A-0E62-E567-EC7C-ED57558B43F1" />
+<code code="34075-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Laboratory Tests section" />
+<title mediaType="text/x-hl7-title+xml">Laboratory Tests</title>
+<text><paragraph>Laboratory tests are not ordinarily required in
+otherwise healthy patients.  When treatment with ProSom is protracted, periodic
+blood counts, urinalyses, and blood chemistry analyses are advisable.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="1D14EC8F-2D42-08AD-FD49-82F3DE382A91" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug Interactions section" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph>If ProSom is given concomitantly with other drugs
+acting on the central nervous system, careful consideration should be given
+to the pharmacology of all agents.  The action of the benzodiazepines may
+be potentiated by anticonvulsants, antihistamines, alcohol, barbiturates,
+monoamine oxidase inhibitors, narcotics, phenothiazines, psychotropic medications,
+or other drugs that produce CNS depression.  Smokers have an increased clearance
+of benzodiazepines as compared to nonsmokers; this was seen in studies with
+estazolam (see <content styleCode="bold">CLINICAL PHARMACOLOGY</content>).</paragraph><paragraph>While no <content styleCode="italics">in&#160;vivo</content> drug-drug
+interaction studies were conducted between estazolam and inducers of CYP3A,
+compounds that are potent CYP3A inducers (such as carbamazepine, phenytoin,
+rifampin, and barbiturates) would be expected to decrease estazolam concentrations.</paragraph></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="076CCC90-EBFD-7B63-B773-B33FBB67F133" />
+<title mediaType="text/x-hl7-title+xml">Estazolam Interaction with Drugs that Inhibit Metabolism via Cytochrome
+P450 3A (CYP3A)</title>
+<text><paragraph>The metabolism of estazolam to the major circulating
+metabolite 4-hydroxy-estazolam and the metabolism of other triazolobenzodiazepines
+is catalyzed by CYP3A.  Consequently, estazolam should be avoided in patients
+receiving ketoconazole and itraconazole, which are very potent inhibitors
+of CYP3A (see <content styleCode="bold">CONTRAINDICATIONS</content>).  With
+drugs inhibiting CYP3A to a lesser, but still significant degree, estazolam
+should be used only with caution and consideration of appropriate dosage reduction.
+ The following are examples of drugs known to inhibit the metabolism of other
+related benzodiazepines, presumably through inhibition of CYP3A:  nefazodone,
+fluvoxamine, cimetidine, diltiazem, isoniazide, and some macrolide antibiotics.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="749FADCC-546D-47CB-ACE3-986909CE3572" />
+<title mediaType="text/x-hl7-title+xml">Drug Interaction with Fluoxetine</title>
+<text><paragraph>A multiple-dose study was conducted to assess
+the effect of fluoxetine 20 mg BID on the pharmacokinetics of estazolam 2
+mg QHS after seven days.  The pharmacokinetics of estazolam (C<sub>max</sub> and
+AUC) were not affected during multiple-dose fluoxetine, suggesting no clinically
+significant pharmacokinetic interaction.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="18ECF77D-FEC8-5F17-97EF-55306B868A57" />
+<title mediaType="text/x-hl7-title+xml">Estazolam Interaction with Other Drugs that are Metabolized by Cytochrome
+P450 (CYP)</title>
+<text><paragraph>At clinically relevant concentrations, <content styleCode="italics">in&#160;vitro</content> studies indicate that estazolam
+(0.6 &#181;M) was not inhibitory towards the major cytochrome P450 isoforms
+CYP1A2, CYP2A6, CYP2C9, CYP2C19, CYP2D6, CYP2E1, and CYP3A.  Therefore, based
+on these <content styleCode="italics">in&#160;vitro</content> data, estazolam
+is very unlikely to inhibit the biotransformation of other drugs metabolized
+by these CYP isoforms.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="83CCBEBD-BAC0-7CD9-3962-68D81675FA2A" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carcinogenesis, Mutagenesis, Impairment of Fertility section" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+<text><paragraph>Two-year carcinogenicity studies were conducted
+in mice and rats at dietary doses of 0.8, 3, and 10 mg/kg/day and 0.5, 2,
+and 10 mg/kg/day, respectively.  Evidence of tumorigenicity was not observed
+in either study.  Incidence of hyperplastic liver nodules increased in female
+mice given the mid- and high-dose levels.  The significance of such nodules
+in mice is not known at this time.</paragraph><paragraph><content styleCode="italics">In&#160;vitro</content> and <content styleCode="italics">in&#160;vivo</content> mutagenicity tests including the Ames test, DNA repair in <content styleCode="italics">B.&#160;subtilis</content>, <content styleCode="italics">in&#160;vivo</content> cytogenetics in mice and rats, and the dominant lethal test in
+mice did not show a mutagenic potential for estazolam.</paragraph><paragraph>Fertility in male and female rats was not affected by doses up
+to 30 times the usual recommended human dose.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="683A1526-972D-BA56-6152-B32731151D02" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<text><list listType="ordered" styleCode="Arabic"><item>Teratogenic Effects:  Pregnancy Category X (see <content styleCode="bold">CONTRAINDICATIONS</content>).</item><item>Nonteratogenic Effects:  The child born of a mother taking benzodiazepines
+may be at some risk for withdrawal symptoms during the postnatal period. 
+Neonatal flaccidity has been reported in an infant born of a mother who received
+benzodiazepines during pregnancy.</item></list></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="0F654E09-DE53-D935-D8A8-D9F586EA1CDB" />
+<code code="34079-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Labor and Delivery section" />
+<title mediaType="text/x-hl7-title+xml">Labor and Delivery</title>
+<text><paragraph>ProSom has no established use in labor or delivery.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="193F1135-48FA-FA37-594C-EB89C58EB84F" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nursing Mothers section" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>Human studies have not been conducted; however,
+studies in lactating rats indicate that estazolam and/or its metabolites are
+secreted in the milk.  The use of ProSom in nursing mothers is not recommended.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="0D62E079-227F-4C1A-BD67-BB6F287611A2" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pediatric Use section" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph>Safety and effectiveness in pediatric patients below
+the age of 18 have not been established.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="A46AF04F-B6B6-4EBB-23E0-3D42F960F6C4" />
+<code code="34082-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Geriatric Use section" />
+<title mediaType="text/x-hl7-title+xml">Geriatric Use</title>
+<text><paragraph>Approximately 18% of individuals participating in
+the premarketing clinical trials of ProSom were 60 years of age or older.
+ Overall, the adverse event profile did not differ substantively from that
+observed in younger individuals.  Care should be exercised when prescribing
+benzodiazepines to small or debilitated elderly patients (see <content styleCode="bold">DOSAGE
+AND ADMINISTRATION</content>).</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="92763879-C8ED-25C8-BDBF-157950B093A1" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ADVERSE REACTIONS section" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text />
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="1CEFFB72-19B8-1EAF-7F92-3741A4E0FA6D" />
+<title mediaType="text/x-hl7-title+xml">Commonly Observed</title>
+<text><paragraph>The most commonly observed adverse events associated
+with the use of ProSom, not seen at an equivalent incidence among placebo-treated
+patients were somnolence, hypokinesia, dizziness, and abnormal coordination.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="EFA7EF43-3F06-A7D9-B8D8-E2343AFC9676" />
+<title mediaType="text/x-hl7-title+xml">Associated with Discontinuation of Treatment</title>
+<text><paragraph>Approximately 3% of 1277 patients who received ProSom
+in US premarketing clinical trials discontinued treatment because of an adverse
+clinical event.  The only event commonly associated with discontinuation,
+accounting for 1.3% of the total, was somnolence.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="6760A19E-2252-D1A0-4BA2-D26FA43B8B25" />
+<title mediaType="text/x-hl7-title+xml">Incidence in Controlled Clinical Trials</title>
+<text><paragraph>The table below enumerates adverse events that occurred
+at an incidence of 1% or greater among patients with insomnia who received
+ProSom in 7-night, placebo-controlled trials.  Events reported by investigators
+were classified into standard dictionary (COSTART) terms to establish event
+frequencies.  Event frequencies reported were not corrected for the occurrence
+of these events at baseline.  The frequencies were obtained from data pooled
+across six studies:  ProSom, N=685; placebo, N=433.  The prescriber should
+be aware that these figures cannot be used to predict the incidence of side
+effects in the course of usual medical practice in which patient characteristics
+and other factors differ from those that prevailed in these six clinical trials.
+ Similarly, the cited frequencies cannot be compared with figures obtained
+from other clinical investigators involving related drug products and uses,
+since each group of drug trials was conducted under a different set of conditions.
+ However, the cited figures provide the physician with a basis of estimating
+the relative contribution of drug and nondrug factors to the incidence of
+side effects in the population studied.</paragraph><table ID="table_1" width="100%"><caption>Incidence of Adverse Experiences in Placebo-Controlled
+Clinical Trials (Percentage of Patients Reporting)</caption>
+<colgroup>
+<col width="40%" />
+<col width="29%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr><td><content styleCode="bold">Body System/    <br />Adverse Event*</content></td><td align="center"><content styleCode="bold">ProSom    <br />(N=685)</content></td><td align="center"><content styleCode="bold">Placebo    <br />(N=433)</content></td></tr>
+</thead>
+<tfoot>
+<tr><td colspan="3"><paragraph styleCode="Footnote">*&#160;&#160;
+Events reported by at least 1% of ProSom patients.</paragraph></td></tr>
+</tfoot>
+<tbody>
+<tr><td>Body as a Whole</td><td align="center" /><td align="center" /></tr>
+<tr><td>&#160;&#160;&#160;Headache</td><td align="center">16</td><td align="center">27</td></tr>
+<tr><td>&#160;&#160;&#160;Asthenia</td><td align="center">11</td><td align="center">8</td></tr>
+<tr><td>&#160;&#160;&#160;Malaise</td><td align="center">5</td><td align="center">5</td></tr>
+<tr><td>&#160;&#160;&#160;Lower extremity&#160;pain</td><td align="center">3</td><td align="center">2</td></tr>
+<tr><td>&#160;&#160;&#160;Back pain</td><td align="center">2</td><td align="center">2</td></tr>
+<tr><td>&#160;&#160;&#160;Body pain</td><td align="center">2</td><td align="center">2</td></tr>
+<tr><td>&#160;&#160;&#160;Abdominal pain</td><td align="center">1</td><td align="center">2</td></tr>
+<tr><td>&#160;&#160;&#160;Chest pain</td><td align="center">1</td><td align="center">1</td></tr>
+<tr><td>&#160;&#160;&#160;Digestive System</td><td align="center" /><td align="center" /></tr>
+<tr><td>&#160;&#160;&#160;Nausea</td><td align="center">4</td><td align="center">5</td></tr>
+<tr><td>&#160;&#160;&#160;Dyspepsia</td><td align="center">2</td><td align="center">2</td></tr>
+<tr><td>Musculoskeletal System</td><td align="center" /><td align="center" /></tr>
+<tr><td>&#160;&#160;&#160;Stiffness</td><td align="center">1</td><td align="center">-</td></tr>
+<tr><td>Nervous System</td><td align="center" /><td align="center" /></tr>
+<tr><td>&#160;&#160;&#160;Somnolence</td><td align="center">42</td><td align="center">27</td></tr>
+<tr><td>&#160;&#160;&#160;Hypokinesia</td><td align="center">8</td><td align="center">4</td></tr>
+<tr><td>&#160;&#160;&#160;Nervousness</td><td align="center">8</td><td align="center">11</td></tr>
+<tr><td>&#160;&#160;&#160;Dizziness</td><td align="center">7</td><td align="center">3</td></tr>
+<tr><td>&#160;&#160;&#160;Coordination abnormal</td><td align="center">4</td><td align="center">1</td></tr>
+<tr><td>&#160;&#160;&#160;Hangover</td><td align="center">3</td><td align="center">2</td></tr>
+<tr><td>&#160;&#160;&#160;Confusion</td><td align="center">2</td><td align="center">-</td></tr>
+<tr><td>&#160;&#160;&#160;Depression</td><td align="center">2</td><td align="center">3</td></tr>
+<tr><td>&#160;&#160;&#160;Dream abnormal</td><td align="center">2</td><td align="center">2</td></tr>
+<tr><td>&#160;&#160;&#160;Thinking abnormal</td><td align="center">2</td><td align="center">1</td></tr>
+<tr><td>Respiratory System</td><td align="center" /><td align="center" /></tr>
+<tr><td>&#160;&#160;&#160;Cold symptoms</td><td align="center">3</td><td align="center">5</td></tr>
+<tr><td>&#160;&#160;&#160;Pharyngitis</td><td align="center">1</td><td align="center">2</td></tr>
+<tr><td>Skin and Appendages</td><td align="center" /><td align="center" /></tr>
+<tr><td>&#160;&#160;&#160;Pruritus</td><td align="center">1</td><td align="center">-</td></tr>
+</tbody>
+</table></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="2B8C0AD6-7191-CE2D-0735-39C176B47C79" />
+<title mediaType="text/x-hl7-title+xml">Other Adverse Events</title>
+<text><paragraph>During clinical trials conducted by Abbott, some
+of which were not placebo&#160;&#8722;&#160;controlled, ProSom was administered
+to approximately 1300 patients.  Untoward events associated with this exposure
+were recorded by clinical investigators using terminology of their own choosing.
+ To provide a meaningful estimate of the proportion of individuals experiencing
+adverse events, similar types of untoward events must be grouped into a smaller
+number of standardized event categories.  In the tabulations that follow,
+a standard COSTART dictionary terminology has been used to classify reported
+adverse events.  The frequencies presented, therefore, represent the proportion
+of the 1277 individuals exposed to ProSom who experienced an event of the
+type cited on at least one occasion while receiving ProSom.  All reported
+events are included except those already listed in the previous table, those
+COSTART terms too general to be informative, and those events where a drug
+cause was remote.  Events are further classified within body system categories
+and enumerated in order of decreasing frequency using the following definitions:
+ frequent adverse events are defined as those occurring on one or more occasions
+in at least 1/100 patients; infrequent adverse events are those occurring
+in 1/100 to 1/1000 patients; rare events are those occurring in less than
+1/1000 patients.  It is important to emphasize that, although the events reported
+did occur during treatment with ProSom, they were not necessarily caused by
+it.</paragraph></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="59FFAEBD-552D-B0F0-A7F4-95B1970480BC" />
+<title mediaType="text/x-hl7-title+xml">Body as a Whole</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="A9061E57-21D5-E59F-6E20-4E93E69D9F29" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>allergic reaction, chills, fever, neck pain,
+upper extremity pain</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="5864262C-FFA5-6E03-1222-8E2FF80D7AA4" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>edema, jaw pain, swollen breast.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="30150452-AD89-2E05-9D1A-C8475BF62589" />
+<title mediaType="text/x-hl7-title+xml">Cardiovascular System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="7AE51B2F-2F8D-6FDC-1B62-9870D79849CD" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>flushing, palpitation</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="9BC31C1C-108F-9DDC-B41B-2BA242FFC0A7" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>arrhythmia, syncope.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="CE4084A4-CC97-3A25-DB5F-A382E44F9B62" />
+<title mediaType="text/x-hl7-title+xml">Digestive System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="B4C5AA72-4EE1-4E19-B807-E214ED80B099" />
+<title mediaType="text/x-hl7-title+xml">Frequent</title>
+<text><paragraph>constipation, dry mouth</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="A0CD4E63-724C-7DFF-77CC-57D2546080EB" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>decreased appetite, flatulence, gastritis, increased
+appetite, vomiting</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="C5E83EB4-D6CA-9C3A-EF7B-9F5C5464EB8E" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>enterocolitis, melena, ulceration of the mouth.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="88C8396A-9098-EFC2-E521-DF6024B99C10" />
+<title mediaType="text/x-hl7-title+xml">Endocrine System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="1ACA1FCB-FD76-E0F4-2308-88730D1599B3" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>thyroid nodule.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="3E7F1A6C-E90E-0DEC-F28A-3423240DB208" />
+<title mediaType="text/x-hl7-title+xml">Hematologic and Lymphatic System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="54F4592E-0858-6FBA-E9A1-E32531B7A53A" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>leukopenia, purpura, swollen lymph nodes.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="AA535CDB-FF1D-748C-E91A-8C8569CC0F9D" />
+<title mediaType="text/x-hl7-title+xml">Metabolic/Nutritional Disorders</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="97CD31EC-2455-C10A-DF3C-584FD72F95D0" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>thirst</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="F5C6CCE6-329B-0207-AF35-19E51679ACA6" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>increased SGOT, weight gain, weight loss.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="B6E16FC1-2DCB-50C7-C930-18A6B2C1DADB" />
+<title mediaType="text/x-hl7-title+xml">Musculoskeletal System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="16829EA9-A98A-45F2-E33B-89D3D487FFF0" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>arthritis, muscle spasm, myalgia</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="2BD2E68B-AEFF-984B-4405-E7B71493B9D0" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>arthralgia.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="CC9C26F9-6383-37F8-0308-398804C047A6" />
+<title mediaType="text/x-hl7-title+xml">Nervous System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="11B20797-D10D-8551-38F0-7A7B2F3D4854" />
+<title mediaType="text/x-hl7-title+xml">Frequent</title>
+<text><paragraph>anxiety</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="FC9209A7-7C33-D920-87D1-F69D29E4FC87" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>agitation, amnesia, apathy, emotional lability,
+euphoria, hostility, paresthesia, seizure, sleep disorder, stupor, twitch</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="C59D18D7-962B-CF7F-E69E-DED585C91C08" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>ataxia, circumoral paresthesia, decreased libido,
+decreased reflexes, hallucinations, neuritis, nystagmus, tremor.</paragraph><paragraph>Minor changes in EEG patterns, usually low-voltage fast
+activity, have been observed in patients during ProSom therapy or withdrawal
+and are of no known clinical significance.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="4FA70C5F-B018-A1D9-284A-EAACA23EC57E" />
+<title mediaType="text/x-hl7-title+xml">Respiratory System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="EDDB5085-0E6E-23C2-A3A4-26B91382644B" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>asthma, cough, dyspnea, rhinitis, sinusitis</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="BF35D372-FEA4-3ECB-C669-279FE62477F1" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>epistaxis, hyperventilation, laryngitis.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="4CE7C63D-7587-42BE-05BC-C84402C85352" />
+<title mediaType="text/x-hl7-title+xml">Skin and Appendages</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="5C39C1FA-0149-9DCB-E78F-53A81469B3F8" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>rash, sweating, urticaria</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="C22A0CAC-5C80-91FA-81B6-46A08A8AB3B5" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>acne, dry skin.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="7CC4A82B-4117-D992-794D-A821B08F7010" />
+<title mediaType="text/x-hl7-title+xml">Special Senses</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="022CE2D7-3C70-AAB3-222A-FACBCD59F620" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>abnormal vision, ear pain, eye irritation, eye
+pain, eye swelling, perverse taste, photophobia, tinnitus</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="2805AFD2-3A4A-4741-EDF0-14669AB08621" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>decreased hearing, diplopia, scotomata.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="EDFB96E7-BD0F-EB95-B4DF-70AB426C12E2" />
+<title mediaType="text/x-hl7-title+xml">Urogenital System</title>
+<text><paragraph /></text>
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="A728B507-0152-7ABB-C518-9B59B1C91E14" />
+<title mediaType="text/x-hl7-title+xml">Infrequent</title>
+<text><paragraph>frequent urination, menstrual cramps, urinary
+hesitancy, urinary urgency, vaginal discharge/itching</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="FE08183E-E062-256A-6702-FA86B7B2E105" />
+<title mediaType="text/x-hl7-title+xml">Rare</title>
+<text><paragraph>hematuria, nocturia, oliguria, penile discharge,
+urinary incontinence.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="CFF8DEA7-82C1-5F66-831C-54A9059A9A29" />
+<title mediaType="text/x-hl7-title+xml">Postintroduction Reports</title>
+<text><paragraph>Voluntary reports of non-US postmarketing experience
+with estazolam have included rare occurrences of photosensitivity, Stevens-Johnson
+syndrome, and agranulocytosis.  Because of the uncontrolled nature of these
+spontaneous reports, a causal relationship to estazolam treatment has not
+been determined.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="FA5C7D5D-344E-9E1C-421C-38DF76B0916C" />
+<code code="42227-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug Abuse and Dependence" />
+<title mediaType="text/x-hl7-title+xml">DRUG ABUSE AND DEPENDENCE</title>
+<text />
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="12BF32A4-2014-E1A7-7A35-9EC9CC41E341" />
+<code code="34085-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Controlled Substance section" />
+<title mediaType="text/x-hl7-title+xml">Controlled Substance</title>
+<text><paragraph>ProSom tablets are a controlled substance in Schedule
+IV.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="463D39FB-F87F-7797-7FB5-C03473E3BBCD" />
+<title mediaType="text/x-hl7-title+xml">Abuse and Dependence</title>
+<text><paragraph>Withdrawal symptoms similar to those noted with
+sedatives/hypnotics and alcohol have occurred following the abrupt discontinuation
+of drugs in the benzodiazepine class.  The symptoms can range from mild dysphoria
+and insomnia to a major syndrome that may include abdominal and muscle cramps,
+vomiting, sweating, tremors, and convulsions.</paragraph><paragraph>Although
+withdrawal symptoms are more commonly noted after the discontinuation of higher
+than therapeutic doses of benzodiazepines, a proportion of patients taking
+benzodiazepines chronically at therapeutic doses may become physically dependent
+on them.  Available data, however, cannot provide a reliable estimate of the
+incidence of dependency or the relationship of the dependency to dose and
+duration of treatment.  There is some evidence to suggest that gradual reduction
+of dosage will attenuate or eliminate some withdrawal phenomena.  In most
+instances, withdrawal phenomena are relatively mild and transient; however,
+life-threatening events (e.g., seizures, delirium, etc.) have been reported.</paragraph><paragraph>Gradual withdrawal is the preferred course for any patient
+taking benzodiazepines for a prolonged period.  Patients with a history of
+seizures, regardless of their concomitant antiseizure drug therapy, should
+not be withdrawn abruptly from benzodiazepines.</paragraph><paragraph>Individuals
+with a history of addiction to or abuse of drugs or alcohol should be under
+careful surveillance when receiving benzodiazepines because of the risk of
+habituation and dependence to such patients.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="C5F3EFC5-8E3B-FC09-5CA3-792BDD5B9E37" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OVERDOSAGE section" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text><paragraph>As with other benzodiazepines, experience with ProSom
+indicates that manifestations of overdosage include somnolence, respiratory
+depression, confusion, impaired coordination, slurred speech, and ultimately,
+coma.  Patients have recovered from overdosage as high as 40 mg.  As in the
+management of intentional overdose with any drug, the possibility should be
+considered that multiple agents may have been taken.</paragraph><paragraph>Gastric
+evacuation, either by the induction of emesis, lavage, or both, should be
+performed immediately.  Maintenance of adequate ventilation is essential.
+ General supportive care, including frequent monitoring of the vital signs
+and close observation of the patient, is indicated.  Fluids should be administered
+intravenously to maintain blood pressure and encourage diuresis.  The value
+of dialysis in treatment of benzodiazepine overdose has not been determined.
+ The physician may wish to consider contacting a Poison Control Center for
+up-to-date information on the management of hypnotic drug product overdose.</paragraph><paragraph>Flumazenil, a specific benzodiazepine receptor antagonist,
+is indicated for the complete or partial reversal of the sedative effects
+of benzodiazepines and may be used in situations when an overdose with a benzodiazepine
+is known or suspected.  Prior to the administration of flumazenil, necessary
+measures should be instituted to secure airway, ventilation, and intravenous
+access.  Flumazenil is intended as an adjunct to, not as a substitute for,
+proper management of benzodiazepine overdose.  Patients treated with flumazenil
+should be monitored for resedation, respiratory depression, and other residual
+benzodiazepine effects for an appropriate period after treatment.  <content styleCode="bold">The prescriber should be aware of a risk of seizure in association
+with flumazenil treatment, particularly in long&#160;&#8722;&#160;term benzodiazepine
+users and in cyclic antidepressant overdose.</content>  The complete flumazenil
+package insert including <content styleCode="bold">CONTRAINDICATIONS</content>, <content styleCode="bold">WARNINGS</content>, and <content styleCode="bold">PRECAUTIONS </content> should be consulted prior to use.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="74F40C87-B547-5238-9317-9321BF353ABD" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DOSAGE AND ADMINISTRATION section" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>The recommended initial dose for adults is 1 mg at
+bedtime; however, some patients may need a 2 mg dose.  In healthy elderly
+patients, 1 mg is also the appropriate starting dose, but increases should
+be initiated with particular care.  In small or debilitated older patients,
+a starting dose of 0.5 mg, while only marginally effective in the overall
+elderly population, should be considered.</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="364082AD-3508-9D91-7313-CFF75905BF06" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOW SUPPLIED section" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text />
+<effectiveTime value="20060616" />
+<component>
+<section>
+<id root="BC7C1EE5-76B9-54C5-F946-35EC1A9E83F0" />
+<title mediaType="text/x-hl7-title+xml">ProSom tablets are scored tablets supplied as</title>
+<text><paragraph>ProSom Tablets 1 mg white tablets bearing the Abbott
+logo and UC (Abbo-Code).  Bottles of 100 (<content styleCode="bold">NDC</content> 0074-3735-13)</paragraph><paragraph>ProSom Tablets 2 mg pink tablets bearing the Abbott logo
+and UD (Abbo-Code).  Bottles of 100 (<content styleCode="bold">NDC</content> 0074-3736-13).</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+<component>
+<section>
+<id root="5D44B76A-BFBE-2F2F-1C32-524011F19F07" />
+<title mediaType="text/x-hl7-title+xml">Recommended Storage</title>
+<text><paragraph>Store below 86&#176;F (30&#176;C).</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="36F9C614-AFD4-E6EC-686A-D63711D7B18C" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>Mfd. by Abbott Pharmaceuticals PR Ltd.<br />Barceloneta, PR
+00617</paragraph><paragraph>for</paragraph><paragraph>Abbott Laboratories, North Chicago, IL, 60064, USA							</paragraph></text>
+<effectiveTime value="20060616" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

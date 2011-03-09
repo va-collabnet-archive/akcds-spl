@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?>
+<document xmlns:voc="http://www.hl7.org/v3/voc" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="9370D8E6-7DB4-452D-9792-9093E7B4F4BD" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">Mesantoin<sup>&#174;</sup></title>
+<effectiveTime value="20060407" />
+<setId root="9370D8E6-7DB4-452D-9792-9093E7B4F4BD" />
+<versionNumber value="1" />
+<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>Novartis Pharmaceuticals Corporation</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="8BE91099-D8D2-C692-2F74-FD279B0E203E" />
+<effectiveTime value="20060407" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0078-0052" codeSystem="2.16.840.1.113883.6.69" />
+<name>Mesantoin</name>
+<formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="100">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="100" />
+</numerator>
+<denominator value="1">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="R420KW629U" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>mephenytoin</name>
+<activeMoiety>
+<activeMoiety>
+<code code="R420KW629U" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>mephenytoin</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>mephenytoin</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>D&amp;C Red #7 Calcium Lake</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>gelatin</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>lactose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<name>starch</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>stearic acid</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<inactiveIngredient>
+<inactiveIngredientSubstance>
+<code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>sucrose</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator value="100">
+<translation code="C48542" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET" value="100" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0078-0052-05" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43233" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKAGE" />
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="2" xsi:type="INT" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value unit="mm" value="8" xsi:type="PQ" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value xsi:type="ST">78/52</value>
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOATING" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="false" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48328" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PINK" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE" />
+</characteristic>
+</subjectOf>
+<subjectOf>
+<characteristic classCode="OBS">
+<code code="SPLSYMBOL" codeSystem="2.16.840.1.113883.1.11.19255" />
+<value value="true" xsi:type="BL" />
+</characteristic>
+</subjectOf>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="7B0AE231-2B19-1AC1-7703-543C6B023B90" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph><content styleCode="bold">30163904</content></paragraph><paragraph><br /></paragraph><paragraph><content styleCode="bold">Mesantoin&#174;*</content></paragraph><paragraph><content styleCode="italics">(</content><content styleCode="italics">mephenytoin</content><content styleCode="italics">)</content></paragraph><paragraph><content styleCode="italics">tablets</content><content styleCode="italics">, USP</content></paragraph><paragraph><br /></paragraph><paragraph><content styleCode="bold">Caution</content>: Federal law prohibits dispensing without&#160;prescription. </paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="C426F5D9-641A-0393-1DC0-82894F6F2DC3" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DESCRIPTION</title>
+<text><paragraph>Mesantoin<sup>&#174;</sup> (mephenytoin) is 3-methyl 5,5-phenyl-ethyl-hydantoin. It may be considered to be the hydantoin homolog of the barbiturate mephobarbital. Mesantoin<sup>&#174;</sup> (mephenytoin) has the following structure:</paragraph><paragraph><br /><renderMultiMedia referencedObject="MM03000002" /></paragraph><paragraph><br /></paragraph><paragraph><content styleCode="italics">Active Ingredient:</content> mephenytoin, USP</paragraph><paragraph><br /></paragraph><paragraph><content styleCode="italics">Inactive Ingredients: </content>D&amp;C Red #7 Calcium Lake, gelatin, lactose, starch, stearic acid, and sucrose.</paragraph><paragraph><br /></paragraph><paragraph>Mesantoin<sup>&#174;</sup> (mephenytoin) is available in speckled, pale pink 100 mg tablets for oral administration.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<observationMedia ID="MM03000002">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="mesantoin-figure-02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="E5697D1F-FC66-E627-6546-0C0BE0B10F2D" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml">CLINICAL PHARMACOLOGY</title>
+<text><paragraph>Mephenytoin exhibits pharmacologic effects similar to both phenytoin and the barbiturates in antagonizing experimental seizures in laboratory animals. Mephenytoin produces behavioral and electroencephalographic effects in people which are similar to those produced by barbiturates.</paragraph><paragraph><br /></paragraph><paragraph>The absorption of mephenytoin given orally as a solution of&#160;the racemic drug is rapid. Mephenytoin is metabolized stereoselectively. The S-enantiomer is preferentially hydroxylated to give 5-ethyl-3-methyl-5-(4-hydroxyphenyl)-2,4-imidazolidinedione (S-4&#180;-hydroxymephenytoin). The R-enantiomer is primarily N-demethylated to give 5-ethyl-5-phenyl-2,4-imidazolidinedione (R-phenylethylhydantoin) [R-PEH], the active metabolite. Following simultaneous administration of <sup>14</sup>C-S-mephenytoin and <sup>3</sup>H-R-mephenytoin, 95&#177;3% of the administered <sup>14</sup>C radioactivity was recovered in the urine 24 hours after dosing in the form of&#160;S-4&#180;-hydroxymephenytoin, while in the same period, only 3% of the administered <sup>3</sup>H radioactivity was found in&#160;the urine.</paragraph><paragraph><br /></paragraph><paragraph>R-mephenytoin reaches peak concentration in about 1.5&#160;hours. Both R-mephenytoin and its active metabolite R-PEH displayed linear kinetics in the dose range of 50-200 mg. The steady state volume of distribution for R-mephenytoin is about 1.4 L/kg. The mean elimination half-life of R-mephenytoin is 73&#177;30 hours and for the metabolite R-PEH is 127&#177;31 hours. The relative bioavailability of R-mephenytoin (Tablet/Solution) is 104%.</paragraph><paragraph><br /></paragraph><paragraph>In several populations, a genetic impairment which decreases the efficiency of aromatic hydroxylation of S-mephenytoin, but not the N-demethylation of R-mephenytoin, has been established. Poor metabolizers occur with a frequency of 2%-5% in the Caucasian population and 18%-23% in Japanese subjects.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="7CFF423C-9B8F-98CC-E8BC-643023807D86" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS AND USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">INDICATIONS AND USAGE</title>
+<text><paragraph>For the control of grand mal, focal, Jacksonian, and psychomotor seizures in those patients who have been refractory to less toxic anticonvulsants.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="C296D6C9-9DA3-F324-3624-9C2462F41B38" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">CONTRAINDICATIONS</title>
+<text><paragraph>Mesantoin<sup>&#174;</sup> (mephenytoin) is contraindicated in patients who have previously shown hypersensitivity to hydantoin products.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="18EF6217-AEEF-A494-6765-D8122C114AEA" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml">WARNINGS</title>
+<text><paragraph>Mesantoin<sup>&#174;</sup> (mephenytoin) should be used only after safer anticonvulsants have been given an adequate trial and have failed.</paragraph><paragraph><br /></paragraph><paragraph>As with all anticonvulsants, dose reduction must be gradual so as to minimize the risk of precipitating seizures.</paragraph><paragraph><br /></paragraph><paragraph>Patients should be cautioned about possible additive effects of alcohol and other central nervous system depressants. Acute alcohol intoxication may increase the anticonvulsant effect due to decreased metabolic breakdown. Chronic alcohol abuse may result in decreased anticonvulsant effect due to enzyme induction.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<section>
+<id root="2E345383-95A1-A2C7-ABDB-30211E64AECF" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Usage in Pregnancy</title>
+<text><paragraph>The effects of Mesantoin<sup>&#174;</sup> (mephenytoin)  in human pregnancy and <content styleCode="underline">on</content> nursing infants have not been systematically investigated.</paragraph><paragraph><br /></paragraph><paragraph>Reports suggest an association between the use of anticonvulsant drugs by women with epilepsy and an elevated incidence of birth defects in children born to these women. Data are more extensive with respect to diphenylhydantoin and phenobarbital, but these are also the most commonly prescribed anticonvulsants; less systematic or anecdotal reports suggest a possible similar association with the use of all known anticonvulsant drugs.</paragraph><paragraph><br /></paragraph><paragraph>The reports suggesting an elevated incidence of birth defects in children of drug-treated epileptic women cannot be regarded as adequate to prove a definite cause and effect relationship. There are intrinsic methodological problems in obtaining adequate data on drug teratogenicity in humans; the possibility also exists that other factors, e.g., genetic factors or the epileptic condition itself, may be more important than drug therapy in leading to birth defects. The great majority of mothers on anticonvulsant medication deliver normal infants. It is important to note that anticonvulsant drugs should not be discontinued abruptly in patients in whom the drug is administered to prevent major seizures because of the strong possibility of precipitating status epilepticus with attendant hypoxia and threat to life. In individual cases where the severity and frequency of the seizure disorder are such that the removal of medication does not pose a serious threat to the patient, discontinuation of the drug may be considered prior to and during pregnancy, although it cannot be said with any confidence that even minor seizures do not pose some hazards to the developing embryo or fetus.</paragraph><paragraph><br /></paragraph><paragraph>Hydantoins can cause fetal harm when administered to a pregnant woman.  There have been two cases in which the following have been associated with the use of Mesantoin<sup>&#174;</sup> (mephenytoin):  neonatal patent ductus arteriosus, coarctation of the aorta, ventricular septal defect, atrial septal defect, downslanting palpebral fissures, hypoplastic maxilla, big nose, and facial hemangiomas.  In both these cases concomitant drugs (i.e. alcohol and primidone) were used.</paragraph><paragraph><br /></paragraph><paragraph>The prescribing physician will wish to weigh these considerations in treating or counseling epileptic women of child-bearing potential.  If Mesantoin<sup>&#174;</sup> (mephenytoin)  is used during pregnancy, or if the patient becomes pregnant while taking Mesantoin<sup>&#174;</sup> (mephenytoin), the patient should be apprised of the potential hazard to the fetus.&#160;</paragraph><paragraph>&#160;</paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="9EBA6BDA-1EDE-9892-AD1F-DF9ED7AFE7B4" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">PRECAUTIONS</title>
+<text><paragraph><content styleCode="bold">The patient taking Mesantoin</content><content styleCode="bold"><sup>&#174;</sup></content><content styleCode="bold"><sup>&#160;</sup></content><content styleCode="bold">(mephenytoin) must be kept under close medical supervision at all times since serious adverse reactions may emerge.</content></paragraph><paragraph><br /></paragraph><paragraph>Because the primary site of degradation is the liver, it is recommended that screening tests of liver function precede introduction of the drug.</paragraph><paragraph><br /></paragraph><paragraph>Some patients may show side reactions as the result of individual sensitivity. These reactions can be broken down into three types respectively according to severity: 1)&#160;blood dyscrasias; 2) skin and mucous membrane manifestations; and 3) central effects. The blood, skin and mucous membrane manifestations are the more important since they can be more serious in nature. Since mephenytoin has been reported to produce blood dyscrasia in certain instances, the patient must be instructed that in the event any unusual symptoms develop (e.g., sore throat, fever, mucous membrane bleeding, glandular swelling, cutaneous reaction), he/she must discontinue the drug and report for examination immediately. It is&#160;recommended that blood examinations be made (total white cell count and differential count) during the initial phase of administration. Such tests are best made: a)&#160;before&#160;starting medication; b) after 2 weeks on a low dosage; c)&#160;again after 2 weeks when full dosage is reached; d)&#160;thereafter, monthly for a year; e) from then on, every 3&#160;months. If the neutrophils drop to between 2500 and 1600/cu.mm., counts are made every 2 weeks. Stop medication if the count drops to 1600/cu.mm.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<section>
+<id root="74227D2A-C6B0-5BE7-A15E-282707EAB728" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">General</title>
+<text><paragraph>Mesantoin<sup>&#174;</sup> (mephenytoin)  should not be discontinued abrubtly in patients in whom the drug is used to prevent major seizures because of the strong possibility of precipitating status epilepticus with attendant hypoxia and a threat to life.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="1A0F52B5-E404-EB91-5F00-6944FDEC281E" />
+<code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Information for Patients</title>
+<text><paragraph>Mesantoin<sup>&#174;</sup> (mephenytoin) may impair the mental and/or physical abilities required for the performance of potentially hazardous tasks, such as driving a car or operating machinery.  The patient should be cautioned accordingly.  Due to a possible additive sedative effect, Mesantoin<sup>&#174;</sup> (mephenytoin) should be used with caution in combination with alcohol and other CNS depressant agents.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="07277741-CF56-217F-B71F-79AACEDAA3F1" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug Interactions</title>
+<text><paragraph>There have been no reports of drug interactions associated with the use of Mesantoin<sup>&#174;</sup> (mephenytoin), however, caution should be used when Mesantoin<sup>&#174;</sup> (mephenytoin)  is coadministered with products known to interact with phenytoin.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="B5530EF1-87C5-8547-DEB0-DAAC1970CF6D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Drug/Laboratory Test Interactions</title>
+<text><paragraph>Mephenytoin may cause decreased serum levels of protein-bound iodine.  It may also produce lower than normal values for dexamethasone or metyrapone tests.  Mephenytoin may cause increased serum levels of glucose, alkaline phosphatase, and gamma glutamyl transpeptidase.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="07CB07DD-4A40-3A83-C6BC-F966ADC8AF42" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Carcinogenesis</title>
+<text><paragraph>Carcinogenesis has not been evaluated in animals</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="387D1F14-BDF3-822E-ED7A-C793AB93F505" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pregnancy</title>
+<text><paragraph>Pregnancy Category D.  See WARNINGS.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="C2E16628-05DD-AED1-E46D-18E58062C2BB" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml">Nursing Mothers</title>
+<text><paragraph>Caution should be used when mephenytoin is administered to a nursing woman, since mephenytoin may appear in small quantities in the milk.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="F0D09F0B-B4CC-2DCE-CE26-35B8FD21BDDE" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Newborn Infant</title>
+<text><paragraph>Since mephenytoin may cross the placenta and appear in the blood of the newborn infant, the possibility of withdrawal symptoms should be considered.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="5DF3516F-A53D-1FD0-6EEC-B11C03AF0DFD" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Pediatric Use</title>
+<text><paragraph><content styleCode="italics">See DOSAGE </content><content styleCode="italics">AND </content><content styleCode="italics">ADMINISTRATION.</content></paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="A96BD4B6-F683-B1CC-4FB1-54A92DF60D35" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml">ADVERSE REACTIONS</title>
+<text><paragraph>A number of side effects and toxic reactions have been reported with Mesantoin<sup>&#174;</sup> (mephenytoin) as well as with other hydantoin compounds. Many of these appear to be dose related while others seem to be a manifestation of a hypersensitivity reaction to these drugs.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<section>
+<id root="2BF4F505-CA51-8666-3EA2-0D97FB30FD02" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Blood Dyscrasias</title>
+<text><paragraph>Leukopenia, neutropenia, agranulocytosis, thrombocytopenia and pancytopenia have occurred. Eosinophilia, monocytosis, and leukocytosis have been described. Simple anemia, hemolytic anemia, megaloblastic anemia and aplastic anemia have occurred but are uncommon. There has been an isolated report of lymphoma in the literature in a patient treated with mephenytoin for 17 years; a drug relationship has not been defined.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="49A3A39E-EB81-33BF-4772-160BAD88AD0E" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Skin and Mucous Membrane Manifestations</title>
+<text><paragraph>Maculopapular, morbilliform, scarlatiniform, urticarial, purpuric (associated with thrombocytopenia) and non-specific skin rashes have been reported. Exfoliative dermatitis, erythema multiforme (Stevens-Johnson Syndrome), toxic epidermal necrolysis and fatal dermatitides have been described on rare occasions. Skin pigmentation and rashes associated with a lupus erythematosus syndrome have also been reported.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="4C138CB2-31FA-6751-3529-4942F7DB0342" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Central Effects</title>
+<text><paragraph>Drowsiness is dose-related and may be reduced by a reduction in dose. Ataxia, diplopia, nystagmus, dysarthria, fatigue, irritability, choreiform movements, depression, and tremor have been encountered.</paragraph><paragraph><br /></paragraph><paragraph>Nervousness, nausea, vomiting, sleeplessness and dizziness may occur during the initial stages of therapy. Generally, these symptoms are transient, often disappearing with continued treatment.</paragraph><paragraph><br /></paragraph><paragraph>Mental confusion and psychotic disturbances and increased seizures have been reported, but a definite causal relationship with the drug is uncertain.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="6D8FAD12-9283-A6E3-25EE-E13D37CEBD59" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Miscellaneous</title>
+<text><paragraph>Hepatitis, jaundice and nephrosis have been reported but a definite cause and effect relationship between the drug and these effects has not been established.</paragraph><paragraph><br /></paragraph><paragraph>Alopecia, weight gain, edema, photophobia, conjunctivitis, and gum hyperplasia have been encountered.</paragraph><paragraph><br /></paragraph><paragraph>Polyarthropathy, pulmonary fibrosis, lupus erythematosus syndrome, lymphoma and lymphadenopathy which simulates Hodgkin&#8217;s Disease have also been observed.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="D239A877-144B-AE88-BDC5-9785643091A6" />
+<code code="42227-9" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG ABUSE AND DEPENDENCE SECTION" />
+<title mediaType="text/x-hl7-title+xml">DRUG ABUSE AND DEPENDENCE</title>
+<text />
+<effectiveTime value="20060407" />
+<component>
+<section>
+<id root="2F6BD759-1039-D965-6FEE-5D2DA20FBC74" />
+<code code="34086-9" codeSystem="2.16.840.1.113883.6.1" displayName="ABUSE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Abuse</title>
+<text><paragraph>To date, there have been no reports of abuse with the use of Mesantoin<sup>&#174;</sup> (mephenytoin).</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="816CB8CD-E297-3FF1-479D-46274DD2DF1B" />
+<code code="34087-7" codeSystem="2.16.840.1.113883.6.1" displayName="DEPENDENCE SECTION" />
+<title mediaType="text/x-hl7-title+xml">Dependence</title>
+<text><paragraph>To date, there have been no reports of dependence (psychological or physical) with the use of Mesantoin<sup>&#174;</sup> (mephenytoin).</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="099B2989-2D94-230E-EE4E-32B143E783EC" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml">OVERDOSAGE</title>
+<text />
+<effectiveTime value="20060407" />
+<component>
+<section>
+<id root="037A7B38-59F6-3A26-6A0F-9FA85F003AE7" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Lethal Dose</title>
+<text><paragraph>While the fatal dose of Mesantoin<sup>&#174;</sup> (mephenytoin) has not been established, the minimum lethal dose for adults is probably in the region of 3 to 5 gm.</paragraph><paragraph><br /></paragraph><paragraph><content styleCode="bold">Symptoms and signs of overdosage include</content>:  ataxia, dysarthria, nystagmus, drowsiness, confusion and coma with areflexia.</paragraph><paragraph><br /></paragraph><paragraph>Hypotension, which may proceed to a shock-like state, can also occur.</paragraph><paragraph><br /></paragraph><paragraph>Tachycardia and arrhythmias of ventricular origin have also been reported.</paragraph><paragraph><br /></paragraph><paragraph>Terminal hyperpyrexia was reported in one fatal case.</paragraph><paragraph><br /></paragraph><paragraph>Transient thrombocytopenia, hemorrhagic bullae and petechal rash have been reported following a single overdose.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="9F13C0CA-7A7D-F8A3-9D0E-DB00359EEEF7" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">Treatment</title>
+<text><paragraph>There is no specific antidote for an overdosage of Mesantoin<sup>&#174;</sup> (mephenytoin).</paragraph><paragraph><br /></paragraph><paragraph><content styleCode="bold">General measures include:</content></paragraph><paragraph><br /></paragraph><list><item>Elimination of offending drug by induction of emesis, gastric lavage, catharsis, or activated charcoal.</item><item>Maintenance of pulmonary ventilation with suction or endotracheal intubation.</item></list><paragraph><br /></paragraph><paragraph>Correction of hypotension, using a pressor agent.</paragraph><paragraph><br /></paragraph><list><item>Maintenance of normal body temperature.</item></list><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="798D3118-BA50-7F56-5F91-4AD2E60AD9AA" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">EKG Monitoring </title>
+<text><paragraph>The hydantoins as a group are known to have a depressive effect on the heart, particularly in high doses.  If arrhythmias occur, regular EKG monitoring should begin at once.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="0BAB4AC4-09A2-6383-2C56-C3A50C148DCF" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml">DOSAGE AND ADMINISTRATION</title>
+<text><paragraph>Dosage of antiepileptic therapy should be adjusted to the needs of the individual patient. Maintenance dosage is that smallest amount of antiepileptic necessary to suppress seizures completely or reduce their frequency. Optimum dosage is attained by starting with &#189; or 1 tablet of Mesantoin<sup>&#174;</sup> (mephenytoin) per day during the first week and thereafter increasing the daily dose by &#189; or 1 tablet at weekly intervals. No dose should be increased until it has been taken for at least 1 week.</paragraph><paragraph><br /></paragraph><paragraph>The average dose of Mesantoin<sup>&#174;</sup> (mephenytoin) for adults ranges from 2-6 tablets (0.2-0.6 Gm.) daily. In some instances it may be necessary to administer as much as 8&#160;tablets or more daily in order to obtain full seizure control. Pediatric patients usually require from 1-4 tablets (0.1-0.4 Gm.) according to nature of seizures and age.</paragraph><paragraph><br /></paragraph><paragraph>When the physician wishes to replace the anticonvulsant now being employed with Mesantoin<sup>&#174;</sup> (mephenytoin), he/she should give &#189;-1 tablet of Mesantoin<sup>&#174;</sup> (mephenytoin) daily during the first week and gradually increase the daily dose at weekly intervals while gradually reducing that of the drug being discontinued. The transition can be made smoothly over a period of 3-6 weeks. If seizures are not completely controlled with the dose so attained, the daily dose should then be increased by a one-tablet increment at weekly intervals to the point of maximum effect. If the patient had also been receiving phenobarbital, it is well to continue it until the transition is completed, at which time gradual withdrawal of the phenobarbital may be tried.</paragraph><paragraph><br /></paragraph></text>
+<effectiveTime value="20060407" />
+</section>
+</component>
+<component>
+<section>
+<id root="CA7F06D9-6966-4B1B-913C-1E13F593E806" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml">HOW SUPPLIED</title>
+<text><paragraph><content styleCode="bold">Mesantoin</content><content styleCode="bold"><sup>&#174;</sup></content><content styleCode="bold"> (mephenytoin) Tablets, USP</content></paragraph><paragraph>100 mg, speckled, pale pink, round, uncoated tablets engraved &#8220;78/52&#8221; and scored on one side, &#8220;<br /><renderMultiMedia referencedObject="MM02000003" />&#8221; on the other side. Tablets are scored to permit half-dosage.</paragraph><paragraph><br /></paragraph><paragraph>Packages of 100 (NDC 0078-0052-05)</paragraph><paragraph><br /></paragraph><paragraph><content styleCode="bold italics">Store and Dispense</content></paragraph><paragraph>Below 86&#176;F (30&#176;C); tight container.</paragraph><paragraph><br /></paragraph><paragraph>*Also known as Sedantoinal</paragraph><paragraph>&#169; 1997 Novartis</paragraph><paragraph><br /></paragraph><paragraph><br /></paragraph><paragraph>Novartis Pharmaceuticals Corporation<br />East Hanover, New Jersey 07936</paragraph><paragraph><br /></paragraph><paragraph>REV:  DECEMBER 1997    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;30163904        </paragraph></text>
+<effectiveTime value="20060407" />
+<component>
+<observationMedia ID="MM02000003">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="mesantoin-figure-03.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</document>

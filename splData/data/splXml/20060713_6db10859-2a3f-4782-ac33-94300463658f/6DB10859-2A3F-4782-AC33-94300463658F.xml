@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.fda.gov/oc/datacouncil/stylesheets/spl/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:voc="http://www.hl7.org/v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.fda.gov/oc/datacouncil/schemas/spl/spl.xsd">
+<id root="6DB10859-2A3F-4782-AC33-94300463658F" />
+<code code="34391-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HUMAN PRESCRIPTION DRUG LABELING" />
+<title mediaType="text/x-hl7-title+xml">Regitine<sup>&#174;</sup></title>
+<effectiveTime value="20060510" />
+<setId root="6DB10859-2A3F-4782-AC33-94300463658F" />
+<versionNumber value="2" />
+<author>
+  <time/>
+  <assignedEntity>
+   <representedOrganization>
+    <name>Novartis Pharmaceuticals Corporation</name>
+   </representedOrganization>
+  </assignedEntity>
+</author>
+<component>
+<structuredBody>
+<component>
+<section>
+<id root="68CC6F26-9145-24C4-F96F-6FE30096D2A6" />
+<effectiveTime value="20060510" />
+<subject>
+<manufacturedProduct>
+<manufacturedMedicine>
+<code code="0083-6830" codeSystem="2.16.840.1.113883.6.69" />
+<name>Regitine</name>
+<formCode code="C42958" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION" />
+<activeIngredient>
+<quantity>
+<numerator unit="mg" value="5">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="5" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<activeIngredientSubstance>
+<code code="Y7543E5K9T" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>phentolamine mesylate</name>
+<activeMoiety>
+<activeMoiety>
+<code code="Z468598HBV" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>phentolamine</name>
+</activeMoiety>
+</activeMoiety>
+</activeIngredientSubstance>
+</activeIngredient>
+<asEntityWithGeneric>
+<genericMedicine>
+<name>phentolamine mesylate</name>
+</genericMedicine>
+</asEntityWithGeneric>
+<inactiveIngredient>
+<quantity>
+<numerator unit="mg" value="25">
+<translation code="C28253" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLIGRAM" value="25" />
+</numerator>
+<denominator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</denominator>
+</quantity>
+<inactiveIngredientSubstance>
+<code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9" codeSystemName="FDA SRS" />
+<name>mannitol</name>
+</inactiveIngredientSubstance>
+</inactiveIngredient>
+<asContent>
+<quantity>
+<numerator unit="mL" value="1">
+<translation code="C28254" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MILLILITER" value="1" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code />
+<formCode code="C43226" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" />
+<asContent>
+<quantity>
+<numerator value="2">
+<translation code="C48551" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL" value="2" />
+</numerator>
+<denominator value="1">
+<translation value="1" />
+</denominator>
+</quantity>
+<containerPackagedMedicine>
+<code code="0083-6830-02" codeSystem="2.16.840.1.113883.6.69" />
+<formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON" />
+</containerPackagedMedicine>
+</asContent>
+</containerPackagedMedicine>
+</asContent>
+</manufacturedMedicine>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAMUSCULAR" />
+</substanceAdministration>
+</consumedIn>
+<consumedIn>
+<substanceAdministration>
+<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS" />
+</substanceAdministration>
+</consumedIn>
+</manufacturedProduct>
+</subject>
+</section>
+</component>
+<component>
+<section>
+<id root="9BA34BE4-761E-EBB2-C46C-D77C9BFE7B2D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml" />
+<text><paragraph>C98-25<br />665490</paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Regitine</content><content styleCode="bold"><sup>&#174;</sup></content><content styleCode="bold" /></paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	phentolamine mesylate for injection, USP</content></paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Vials</content></paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Rx only</content></paragraph><paragraph><content styleCode="bold">&#160;&#160;&#160;&#160;&#160;
+	Prescribing Information</content></paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="0824962B-D845-9597-9594-C322FE51B810" />
+<code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">DESCRIPTION</content></title>
+<text><paragraph>Regitine, phentolamine mesylate for injection, USP, is an antihypertensive, available in vials for intravenous and intramuscular administration.  Each vial contains phentolamine mesylate USP, 5 mg, and mannitol USP, 25 mg, in sterile, lyophilized form.</paragraph><paragraph>Phentolamine mesylate is 4,5-dihydro-2-[N-(<content styleCode="italics">m</content>-hydroxyphenyl)-N-(<content styleCode="italics">p</content>-methylphenyl) aminomethyl]-1<content styleCode="italics">H</content>-imidazole 1:1 methanesulfonate, and its structural formula is</paragraph><paragraph><renderMultiMedia referencedObject="MM03000002" /></paragraph><paragraph>Phentolamine mesylate for injection, USP, is a white or off-white, odorless crystalline powder with a molecular weight of 377.46. Its solutions are acid to litmus. It is freely soluble in water and in alcohol, and slightly soluble in chloroform. It melts at about 178&#186;C.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<observationMedia ID="MM03000002">
+<value mediaType="image/jpeg" xsi:type="ED"><reference value="regitine-figure-02.jpg" /></value>
+</observationMedia>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="43DA3DCD-25D2-7375-56FA-CF0B4E8BBBD3" />
+<code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">CLINICAL PHARMACOLOGY </content></title>
+<text><paragraph>Regitine produces an alpha-adrenergic block of relatively short duration. It also has direct, but less marked, positive inotropic and chronotropic effects on cardiac muscle and vasodilator effects on vascular smooth muscle.</paragraph><paragraph>Regitine has a half-life in the blood of 19 minutes following intravenous administration. Approximately 13% of a single intravenous dose appears in the urine as unchanged drug.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="43A12811-0F52-9EC3-B80D-0936EE950C63" />
+<code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS AND USAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">INDICATIONS AND USAGE</content></title>
+<text><paragraph>Regitine is indicated for the prevention or control of hypertensive episodes that may occur in a patient with pheochromocytoma as a result of stress or manipulation during preoperative preparation and surgical excision.</paragraph><paragraph>Regitine is indicated for the prevention or treatment of dermal necrosis and sloughing following intravenous administration or extravasation of norepinephrine.</paragraph><paragraph>Regitine is also indicated for the diagnosis of pheochromocytoma by the Regitine blocking test.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="723BC3EE-41E0-31FF-06AA-DD258249DAFA" />
+<code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">CONTRAINDICATIONS</content></title>
+<text><paragraph>Myocardial infarction, history of myocardial infarction, coronary insufficiency, angina, or other evidence suggestive of coronary artery disease; hypersensitivity to phentolamine or related compounds.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="A811A8C0-5FDE-0F22-B361-A1940822AD3E" />
+<code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">WARNINGS</content></title>
+<text><paragraph>Myocardial infarction, cerebrovascular spasm, and cerebrovascular occlusion have been reported to occur following the administration of Regitine, usually in association with marked hypotensive episodes.</paragraph><paragraph>For screening tests in patients with hypertension, the generally available urinary assay of catecholamines or other biochemical assays have largely replaced the Regitine and other pharmacological tests for reasons of accuracy and safety. None of the chemical or pharmacological tests is infallible in the diagnosis of pheochromocytoma. The Regitine blocking test is not the procedure of choice and should be reserved for cases in which additional confirmatory evidence is necessary and the relative risks involved in conducting the test have been considered.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="4A159EAE-E81F-B776-F8EF-EA8297ACC5D3" />
+<code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">PRECAUTIONS</content></title>
+<text />
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="9157675D-4E63-ED9D-B5BD-ED9D83EC3117" />
+<code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">General</content></title>
+<text><paragraph>Tachycardia and cardiac arrhythmias may occur with the use of Regitine or other alpha-adrenergic blocking agents. When possible, administration of cardiac glycosides should be deferred until cardiac rhythm returns to normal.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="581A13A8-3E1A-DF5B-C0FC-948FAA41A6F2" />
+<code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Drug Interactions</content></title>
+<text><paragraph>See DOSAGE AND ADMINISTRATION, Diagnosis of pheochromocytoma,<content styleCode="italics"> Preparation</content>.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="7822B199-0C49-AF38-A636-B838444C49F0" />
+<code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS AND MUTAGENESIS AND IMPAIRMENT OF FERTILITY SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Carcinogenesis, Mutagenesis, Impairment of Fertility</content></title>
+<text><paragraph>Long-term carcinogenicity studies, mutagenicity studies, and fertility studies have not been conducted with Regitine.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="ED71099E-75F7-2B10-8FDB-58B79F958CE9" />
+<code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Pregnancy Category C</content></title>
+<text><paragraph>Administration of Regitine to pregnant rats and mice at oral doses 24-30 times the usual daily human dose (based on a 60-kg human) resulted in slightly decreased growth and slight skeletal immaturity of the fetuses. Immaturity was manifested by increased incidence of incomplete or unossified calcanei and phalangeal nuclei of the hind limb and of incompletely ossified sternebrae. At oral doses 60 times the usual daily human dose (based on a 60-kg human), a slightly lower rate of implantation was found in the rat. Regitine did not affect embryonic or fetal development in the rabbit at oral doses 20 times the usual daily human dose (based on a 60-kg human). No teratogenic or embryotoxic effects were observed in the rat, mouse, or rabbit studies.</paragraph><paragraph>There are no adequate and well-controlled studies in pregnant women. Regitine should be used during pregnancy only if the potential benefit  justifies the potential risk to the fetus.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="C6087E5A-A80E-8484-5807-BDBF40750027" />
+<code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Nursing Mothers</content></title>
+<text><paragraph>It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from Regitine, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="ED1CA01D-23D3-8776-0949-01E42CDA4726" />
+<code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Pediatric Use</content></title>
+<text><paragraph>See DOSAGE AND ADMINISTRATION.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="521327BF-BD36-B620-957B-A8636F524A20" />
+<code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">ADVERSE REACTIONS</content></title>
+<text><paragraph>Acute and prolonged hypotensive episodes, tachycardia, and cardiac arrhythmias have been reported. In addition, weakness, dizziness, flushing, orthostatic hypotension, nasal stuffiness, nausea, vomiting, and diarrhea may occur.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="29296C03-B9AD-0977-86E9-B2883314757E" />
+<code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">OVERDOSAGE</content></title>
+<text />
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="740782A2-3ED5-F617-10E8-54A6DEC47A6A" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Acute Toxicity</content></title>
+<text><paragraph>No deaths due to acute poisoning with Regitine have been reported.</paragraph><paragraph>Oral LD<sub>50</sub>&#8217;s (mg/kg): mice, 1000; rats, 1250.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="F71FB5E6-5E52-B6A8-9029-54BF7EF43161" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Signs and Symptoms</content></title>
+<text><paragraph>Overdosage with Regitine is characterized chiefly by cardiovascular disturbances, such as arrhythmias, tachycardia, hypotension, and possibly shock. In addition, the following might occur: excitation, headache, sweating, pupillary contraction, visual disturbances; nausea, vomiting, diarrhea; hypoglycemia.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="550EA0F7-EA30-B135-0354-D0C457AFD946" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">Treatment</content></title>
+<text><paragraph>There is no specific antidote.</paragraph><paragraph>A decrease in blood pressure to dangerous levels or other evidence of shocklike conditions should be treated vigorously and promptly. The patient&#8217;s legs should be kept raised and a plasma expander should be administered. If necessary, intravenous infusion of norepinephrine, titrated to maintain blood pressure at  the normotensive level, and all available supportive measures should be included. Epinephrine should not be used, since it may cause a paradoxical reduction in blood pressure.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="0ACEE9C2-9102-97CD-7D56-57D4FA88E36C" />
+<code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE AND ADMINISTRATION SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">DOSAGE AND ADMINISTRATION</content></title>
+<text><paragraph><content styleCode="italics">The reconstituted solution should be used upon preparation and should not be stored.</content></paragraph><paragraph><content styleCode="italics">Note:</content>  Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration, whenever solution and container permit.</paragraph><paragraph><content styleCode="bold">1. Prevention or control of hypertensive episodes in the patient with pheochromocytoma.</content></paragraph><paragraph>For preoperative reduction of elevated blood pressure, 5 mg of Regitine (1 mg for children) is injected intravenously or intramuscularly 1 or 2 hours before surgery, and repeated if necessary.</paragraph><paragraph>During surgery, Regitine (5 mg for adults, 1 mg for children) is administered intravenously as indicated, to help prevent or control paroxysms of hypertension, tachycardia, respiratory depression, convulsions, or other effects of epinephrine intoxication. (Postoperatively, norepinephrine may be given to control the hypotension that commonly follows complete removal of a pheochromocytoma.)</paragraph><paragraph><content styleCode="bold">2. Prevention or treatment of dermal necrosis and sloughing following intravenous administration or extravasation of  norepinephrine.</content></paragraph><paragraph><content styleCode="italics">For Prevention:  </content>10 mg of Regitine is added to each liter of solution containing norepinephrine. The pressor effect of norepinephrine is not affected.</paragraph><paragraph><content styleCode="italics">For Treatment:</content>  5-10 mg of Regitine in 10 mL of saline is injected into the area of extravasation within 12 hours.</paragraph><paragraph><content styleCode="bold">3. Diagnosis of pheochromocytoma &#8212; Regitine blocking test.</content></paragraph><paragraph>The test is most reliable in detecting pheochromocytoma in patients with sustained hypertension and least reliable in those with paroxysmal hypertension. False-positive tests may occur in patients with hypertension without pheochromocytoma.</paragraph></text>
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="7D98A7AC-98D5-449F-FA1A-81837FDC93C9" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">a. Intravenous</content></title>
+<text />
+<effectiveTime value="20060510" />
+<component>
+<section>
+<id root="F4AEAA9B-8507-8F31-ECD5-A3C099EEF262" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold italics">Preparation</content></title>
+<text><paragraph>The CONTRAINDICATIONS, WARNINGS, and PRECAUTIONS sections should be reviewed. Sedatives, analgesics, and all other medications except those that might be deemed essential (such as digitalis and insulin) are withheld for at least 24 hours, and preferably 48-72&#160;hours, prior to the test. Antihypertensive drugs are withheld until blood pressure returns to the untreated, hypertensive level. This test is not performed on a patient who is normotensive.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="8BB1C0AF-2E2D-8978-537F-34285505525D" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold italics">Procedure</content></title>
+<text><paragraph>The patient is kept at rest in the supine position throughout the test, preferably in a quiet, darkened room. Injection of Regitine is delayed until blood pressure is stabilized, as evidenced by blood pressure readings taken every 10 minutes for at least 30 minutes.</paragraph><paragraph>Five milligrams of Regitine is dissolved in 1 mL of Sterile Water for Injection. The dose for adults is 5 mg; for children, 1 mg.</paragraph><paragraph>The syringe needle is inserted into the vein, and injection is delayed until pressor response to venipuncture has subsided.</paragraph><paragraph>Regitine is injected rapidly. Blood pressure is recorded immediately after injection, at 30-second intervals for the first 3 minutes, and at 60-second intervals for the next 7 minutes.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+<component>
+<section>
+<id root="E21A5C67-BA17-6796-384B-FE98029A5A33" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold italics">Interpretation</content></title>
+<text><paragraph>A positive response, suggestive of pheochromocytoma, is indicated when the blood pressure is reduced more than 35 mmHg systolic and 25 mmHg diastolic. A typical positive response is a reduction in pressure of 60 mmHg systolic and 25 mmHg diastolic. Usually, maximal effect is evident within 2 minutes after injection. A return to preinjection pressure commonly occurs within 15-30 minutes but may occur more rapidly.</paragraph><paragraph>If blood pressure decreases to a dangerous level, the patient should be treated as outlined under OVERDOSAGE.</paragraph><paragraph>A positive response should always  be confirmed by other diagnostic procedures, preferably by measurement of urinary catecholamines or their metabolites.</paragraph><paragraph>A negative response is indicated when the blood pressure is elevated, unchanged, or reduced less than 35 mmHg systolic and 25 mmHg diastolic after injection of Regitine. A negative response to this test does not exclude the diagnosis of pheochromocytoma, especially in patients with paroxysmal hypertension in whom the incidence of false-negative responses is high.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="47DF7358-6892-9C3E-523B-ACD9356F7AE7" />
+<code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">b. Intramuscular</content></title>
+<text><paragraph>If the intramuscular test for pheochromocytoma is preferred, preparation is the same as for the intravenous test. Five milligrams of Regitine is then dissolved in 1 mL of Sterile Water for Injection. The dose for adults is 5 mg intramuscularly; for children, 3 mg. Blood pressure is recorded every 5 minutes for 30-45 minutes following injection. A positive response is indicated when the blood pressure is reduced 35 mmHg systolic and 25 mmHg diastolic, or more, within 20 minutes following injection.</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</section>
+</component>
+<component>
+<section>
+<id root="5C7D5E4B-14A7-680D-11F2-BCFE6C058BB9" />
+<code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION" />
+<title mediaType="text/x-hl7-title+xml"><content styleCode="bold">HOW SUPPLIED</content></title>
+<text><paragraph><content styleCode="italics">Vials</content>&#8212;  each containing 5 mg of phentolamine mesylate for injection, USP, and 25 mg of mannitol, USP, in lyophilized form.<br />   Cartons of 2&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;.NDC 0083-6830-02</paragraph><paragraph>The reconstituted solution should be used upon preparation and should not be stored.</paragraph><paragraph>Store between 15&#186;C and 30&#186;C (59&#186;F-86&#186;F).</paragraph><paragraph>665490                              &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+	C98-25 (Rev. 6/98)</paragraph><paragraph /><paragraph /><paragraph>Distributed by<br />Novartis Pharmaceuticals Corporation<br />East Hanover, New Jersey  07936</paragraph><paragraph /><paragraph>&#169;1998 Novartis</paragraph></text>
+<effectiveTime value="20060510" />
+</section>
+</component>
+</structuredBody>
+</component>
+</document>
