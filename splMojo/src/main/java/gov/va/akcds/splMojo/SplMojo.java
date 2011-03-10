@@ -76,6 +76,8 @@ public class SplMojo extends AbstractMojo {
 
 			// extract the zip of zips
 			System.out.println("Extracting zip file...");
+			System.out.println("     dataDir: " + dataDir);
+			System.out.println("dataFileName: " + dataFileName);
 			File xmlRoot = SplFileExtractor.extractSplFiles(dataDir,
 					dataFileName);
 
@@ -89,6 +91,10 @@ public class SplMojo extends AbstractMojo {
 			File[] splFiles = xmlRoot.listFiles();
 			for (int i = 0; i < splFiles.length; i++) {
 				File rootDir = splFiles[i];
+				if(rootDir.getName().toLowerCase().endsWith(".svn")) {
+					// skip .svn directories
+					continue;
+				}
 				String msg = "";
 				msg += i + " of " + splFiles.length + ": ";
 				msg += "Writing eConcept for: " + rootDir;

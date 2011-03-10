@@ -20,6 +20,10 @@ public class SplFileExtractor {
 		for (int i = 0; i < files.length; i++) {
 			File file = files[i];
 			String srcFileName = file.getName().toLowerCase();
+			if(srcFileName.endsWith(".zip") == false) {
+				// skip anything that is not a zip file (e.g. .svn files)
+				continue;
+			}
 			String dstFileName = srcFileName.substring(0, srcFileName
 					.lastIndexOf(".zip"));
 			File finalDstDir = new File(dir, "splXml/" + dstFileName);
