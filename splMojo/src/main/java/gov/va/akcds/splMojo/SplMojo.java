@@ -34,7 +34,10 @@ import org.dwfa.cement.ArchitectonicAuxiliary;
 import org.dwfa.tapi.TerminologyException;
 import org.ihtsdo.etypes.EConcept;
 import org.ihtsdo.etypes.EConceptAttributes;
+import org.ihtsdo.tk.dto.concept.component.TkComponent;
 import org.ihtsdo.tk.dto.concept.component.description.TkDescription;
+import org.ihtsdo.tk.dto.concept.component.refset.TkRefsetAbstractMember;
+import org.ihtsdo.tk.dto.concept.component.refset.str.TkRefsetStrMember;
 import org.ihtsdo.tk.dto.concept.component.relationship.TkRelationship;
 
 /**
@@ -47,6 +50,10 @@ import org.ihtsdo.tk.dto.concept.component.relationship.TkRelationship;
 
 public class SplMojo extends AbstractMojo {
 
+	public static final String SEED = "gov.va.spl.root";
+
+	private static int annotationCnt = 0;
+
 	/**
 	 * Location of the file.
 	 * 
@@ -56,9 +63,16 @@ public class SplMojo extends AbstractMojo {
 
 	private File outputDirectory;
 
+	private int relCnt;
+
 	private UUID rootUuid;
 
-	private int relCnt;
+	private UUID preferredDescriptionType;
+
+	public SplMojo() throws Exception {
+		this.preferredDescriptionType = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
+				.getPrimoridalUid();
+	}
 
 	public void execute() throws MojoExecutionException {
 
@@ -91,7 +105,7 @@ public class SplMojo extends AbstractMojo {
 			File[] splFiles = xmlRoot.listFiles();
 			for (int i = 0; i < splFiles.length; i++) {
 				File rootDir = splFiles[i];
-				if(rootDir.getName().toLowerCase().endsWith(".svn")) {
+				if (rootDir.getName().toLowerCase().endsWith(".svn")) {
 					// skip .svn directories
 					continue;
 				}
@@ -125,14 +139,12 @@ public class SplMojo extends AbstractMojo {
 				.getPrimoridalUid();
 		UUID path = ArchitectonicAuxiliary.Concept.SNOMED_CORE
 				.getPrimoridalUid();
-		UUID preferredTerm = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
-				.getPrimoridalUid();
 		UUID isA = ArchitectonicAuxiliary.Concept.IS_TERM_OF.getPrimoridalUid();
 		UUID author = ArchitectonicAuxiliary.Concept.USER.getPrimoridalUid();
-		UUID primordial = UUID.nameUUIDFromBytes("gov.va.spl.root".getBytes());
+		UUID primordial = UUID.nameUUIDFromBytes(SEED.getBytes());
 
 		this.rootUuid = primordial;
-		
+
 		// create the concept
 		EConcept concept = new EConcept();
 		concept.setPrimordialUuid(primordial);
@@ -156,7 +168,7 @@ public class SplMojo extends AbstractMojo {
 		description.setLang("en");
 		description.setPrimordialComponentUuid(UUID.randomUUID());
 		description.setPathUuid(path);
-		description.setTypeUuid(preferredTerm);
+		description.setTypeUuid(preferredDescriptionType);
 		description.text = "SPL";
 		description.setAuthorUuid(author);
 		description.setStatusUuid(currentUuid);
@@ -189,8 +201,8 @@ public class SplMojo extends AbstractMojo {
 				.getPrimoridalUid();
 		UUID isA = ArchitectonicAuxiliary.Concept.IS_TERM_OF.getPrimoridalUid();
 		UUID author = ArchitectonicAuxiliary.Concept.USER.getPrimoridalUid();
-		UUID primordial = UUID.nameUUIDFromBytes(("gov.va.spl." + spl
-				.getSplId()).getBytes());
+		UUID primordial = UUID.nameUUIDFromBytes((SEED + "." + spl.getSplId())
+				.getBytes());
 
 		// create the concept
 		EConcept concept = new EConcept();
@@ -205,10 +217,14 @@ public class SplMojo extends AbstractMojo {
 		conceptAttributes.setPathUuid(path);
 		conceptAttributes.setTime(time);
 
+		// add an annotation to the conceptAttributes
+		addAnnotation(conceptAttributes);
+
 		// associate the attributes with the concept
 		concept.setConceptAttributes(conceptAttributes);
 
-		// create the concept descriptions
+		// create the concept descriptions (this is where the spl_set_id is
+		// added to the concept
 		List<TkDescription> descriptions = new ArrayList<TkDescription>();
 		TkDescription description = new TkDescription();
 		description.setConceptUuid(primordial);
@@ -233,6 +249,30 @@ public class SplMojo extends AbstractMojo {
 		concept.writeExternal(dos);
 		dos.flush();
 
+	}
+
+	private void addAnnotation(TkComponent<?> component) throws Exception {
+		annotationCnt++;
+		long time = System.currentTimeMillis();
+		List<TkRefsetAbstractMember<?>> annotations = new ArrayList<TkRefsetAbstractMember<?>>();
+		TkRefsetStrMember strRefexMember = new TkRefsetStrMember();
+		strRefexMember.setComponentUuid(component.getPrimordialComponentUuid());
+		strRefexMember.setStrValue("THIS IS TEST ANNOTATION " + annotationCnt);
+
+		strRefexMember.setPrimordialComponentUuid(UUID.nameUUIDFromBytes(((SEED
+				+ "." + annotationCnt).getBytes())));
+
+		strRefexMember.setRefsetUuid(preferredDescriptionType);
+
+		strRefexMember.setStatusUuid(ArchitectonicAuxiliary.Concept.CURRENT
+				.getPrimoridalUid());
+		strRefexMember.setAuthorUuid(ArchitectonicAuxiliary.Concept.USER
+				.getPrimoridalUid());
+		strRefexMember.setPathUuid(ArchitectonicAuxiliary.Concept.SNOMED_CORE
+				.getPrimoridalUid());
+		strRefexMember.setTime(time);
+		annotations.add(strRefexMember);
+		component.setAnnotations(annotations);
 	}
 
 	private Spl getSpl(File rootDir) throws Exception {
