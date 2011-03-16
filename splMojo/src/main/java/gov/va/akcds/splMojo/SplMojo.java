@@ -297,27 +297,32 @@ public class SplMojo extends AbstractMojo {
 		relationships.add(heirRel);
 		concept.setRelationships(relationships);
 
+		System.out.println("ERROR OCCURS HERE:");
 		concept.writeExternal(dos);
+		System.out.println("...and we never get to here");
 		dos.flush();
 
 	}
 
 	private void addAnnotation(TkComponent<?> component, File xmlFile)
 			throws Exception {
-		
-		String xmlTxt = FileUtil.getAsString(xmlFile);
-		
+
+		System.out.println("Creating xml string...");
 		annotationCnt++;
+		String xmlTxt = FileUtil.getAsString(xmlFile);
+		System.out.println("XML STRING CREATED");
+		
 		long time = System.currentTimeMillis();
 		List<TkRefsetAbstractMember<?>> annotations = new ArrayList<TkRefsetAbstractMember<?>>();
 		TkRefsetStrMember strRefexMember = new TkRefsetStrMember();
 		strRefexMember.setComponentUuid(component.getPrimordialComponentUuid());
+		System.out.println("Adding string");
 		strRefexMember.setStrValue(xmlTxt);
+		System.out.println("string added");
 		
 		strRefexMember.setPrimordialComponentUuid(UUID.nameUUIDFromBytes(((SEED
 				+ "." + annotationCnt).getBytes())));
 
-		// strRefexMember.setRefsetUuid(preferredDescriptionType);
 		strRefexMember.setRefsetUuid(this.splXmlTextUuid);
 
 		strRefexMember.setStatusUuid(ArchitectonicAuxiliary.Concept.CURRENT
@@ -329,6 +334,7 @@ public class SplMojo extends AbstractMojo {
 		strRefexMember.setTime(time);
 		annotations.add(strRefexMember);
 		component.setAnnotations(annotations);
+		
 	}
 
 	private TkRelationship createRelationships(EConcept eConcept,
