@@ -31,9 +31,28 @@ public class SplFactory {
 
 	public static Spl buildSpl(File file, Spl spl) throws Exception {
 		new SplFactory(file, spl).buildSpl();
+		spl.setXmlFile(file);
 		return spl;
 	}
 
+	//
+	// static method to get the xml file for a given root directory
+	//
+	
+	public static Spl getSplFromRootDir(File rootDir) throws Exception {
+		File[] files = rootDir.listFiles();
+		Spl spl = null;
+		for (int i = 0; i < files.length; i++) {
+			File file = files[i];
+			if (file.getCanonicalPath().toLowerCase().endsWith((".xml"))) {
+				System.out.println("FILE NAME: " + file.getName());
+				spl = new Spl(file);
+				return spl;
+			}
+		}
+		return spl;
+	}
+	
 	//
 	// constructor
 	//

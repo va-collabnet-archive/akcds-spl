@@ -8,6 +8,8 @@ public class Spl {
 	// instance variables
 	//
 
+	private File xmlFile;
+	
 	private String splSetId;
 
 	private String splId;
@@ -92,6 +94,14 @@ public class Spl {
 
 	public void setFirstApprovedDate(String firstApprovedDate) {
 		this.firstApprovedDate = firstApprovedDate;
+	}
+
+	public File getXmlFile() {
+		return xmlFile;
+	}
+
+	public void setXmlFile(File xmlFile) {
+		this.xmlFile = xmlFile;
 	}
 
 }

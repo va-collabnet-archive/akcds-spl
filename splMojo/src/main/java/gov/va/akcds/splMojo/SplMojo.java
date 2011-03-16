@@ -17,6 +17,8 @@ package gov.va.akcds.splMojo;
  */
 
 import gov.va.akcds.spl.Spl;
+import gov.va.akcds.spl.SplFactory;
+import gov.va.akcds.util.fileUtil.FileUtil;
 import gov.va.akcds.wbSplFileExtractor.SplFileExtractor;
 
 import java.io.BufferedOutputStream;
@@ -50,7 +52,13 @@ import org.ihtsdo.tk.dto.concept.component.relationship.TkRelationship;
 
 public class SplMojo extends AbstractMojo {
 
-	public static final String SEED = "gov.va.spl.root";
+	//
+	// class variables
+	//
+
+	public static final String SEED = "gov.va.spl";
+
+	private static int relCnt;
 
 	private static int annotationCnt = 0;
 
@@ -63,15 +71,34 @@ public class SplMojo extends AbstractMojo {
 
 	private File outputDirectory;
 
-	private int relCnt;
+	private UUID preferredDescriptionType = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
+			.getPrimoridalUid();
 
-	private UUID rootUuid;
+	// constant uuids
 
-	private UUID preferredDescriptionType;
+	private UUID path = ArchitectonicAuxiliary.Concept.SNOMED_CORE
+			.getPrimoridalUid();
+
+	private UUID author = ArchitectonicAuxiliary.Concept.USER
+			.getPrimoridalUid();
+
+	private UUID preferredTerm = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
+			.getPrimoridalUid();
+
+	private UUID isA = ArchitectonicAuxiliary.Concept.IS_TERM_OF
+			.getPrimoridalUid();
+
+	// uuids populated when the concepts for them are created
+
+	private UUID ndaUuid;
+
+	private UUID splXmlTextUuid;
+
+	private UUID splSetIdUuid;
+
+	private UUID splRootUuid;
 
 	public SplMojo() throws Exception {
-		this.preferredDescriptionType = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
-				.getPrimoridalUid();
 	}
 
 	public void execute() throws MojoExecutionException {
@@ -84,6 +111,17 @@ public class SplMojo extends AbstractMojo {
 				file.mkdirs();
 			}
 
+			// jbin (output) file
+			File jbinFile = new File(file, "ExampleConcepts.jbin");
+			DataOutputStream dos = new DataOutputStream(
+					new BufferedOutputStream(new FileOutputStream(jbinFile)));
+
+			// write the rel concepts
+			this.ndaUuid = writeRelEConcept("NDA", dos);
+			this.splSetIdUuid = writeRelEConcept("SPL_SET_ID", dos);
+			this.splXmlTextUuid = writeRelEConcept("SPL XML Text", dos);
+			this.splRootUuid = writeSplRootConcept(dos);
+
 			// source file (splSrcData.zip is a zip of zips)
 			File dataDir = new File(file.getParentFile(), "data");
 			String dataFileName = "splSrcData.zip";
@@ -95,13 +133,7 @@ public class SplMojo extends AbstractMojo {
 			File xmlRoot = SplFileExtractor.extractSplFiles(dataDir,
 					dataFileName);
 
-			// jbin (output) file
-			File jbinFile = new File(file, "ExampleConcepts.jbin");
-			DataOutputStream dos = new DataOutputStream(
-					new BufferedOutputStream(new FileOutputStream(jbinFile)));
-
 			// write the eConcepts for each spl directory
-			writeSplRootConcept(dos);
 			File[] splFiles = xmlRoot.listFiles();
 			for (int i = 0; i < splFiles.length; i++) {
 				File rootDir = splFiles[i];
@@ -113,7 +145,7 @@ public class SplMojo extends AbstractMojo {
 				msg += i + " of " + splFiles.length + ": ";
 				msg += "Writing eConcept for: " + rootDir;
 				System.out.println(msg);
-				Spl spl = getSpl(rootDir);
+				Spl spl = SplFactory.getSplFromRootDir(rootDir);
 				writeEConcepts(dos, spl);
 			}
 
@@ -126,7 +158,7 @@ public class SplMojo extends AbstractMojo {
 
 	}
 
-	private void writeSplRootConcept(DataOutputStream dos) throws Exception {
+	private UUID writeSplRootConcept(DataOutputStream dos) throws Exception {
 
 		// echo status
 		System.out.println("Writing SPL ROOT CONCEPT:");
@@ -137,13 +169,7 @@ public class SplMojo extends AbstractMojo {
 		// get the uuids
 		UUID currentUuid = ArchitectonicAuxiliary.Concept.CURRENT
 				.getPrimoridalUid();
-		UUID path = ArchitectonicAuxiliary.Concept.SNOMED_CORE
-				.getPrimoridalUid();
-		UUID isA = ArchitectonicAuxiliary.Concept.IS_TERM_OF.getPrimoridalUid();
-		UUID author = ArchitectonicAuxiliary.Concept.USER.getPrimoridalUid();
-		UUID primordial = UUID.nameUUIDFromBytes(SEED.getBytes());
-
-		this.rootUuid = primordial;
+		UUID primordial = UUID.nameUUIDFromBytes((SEED + ".spl").getBytes());
 
 		// create the concept
 		EConcept concept = new EConcept();
@@ -180,14 +206,16 @@ public class SplMojo extends AbstractMojo {
 		concept.writeExternal(dos);
 		dos.flush();
 
+		return primordial;
+
 	}
 
 	private void writeEConcepts(DataOutputStream dos, Spl spl) throws Exception {
 
 		// echo status
 		System.out.println("Writing SPL:");
-		System.out.println("  SET_ID: " + spl.getSplSetId());
-		System.out.println("  SPL_ID: " + spl.getSplId());
+		System.out.println("SET_ID: " + spl.getSplSetId());
+		System.out.println("SPL_ID: " + spl.getSplId());
 
 		// get the time
 		long time = System.currentTimeMillis();
@@ -195,12 +223,6 @@ public class SplMojo extends AbstractMojo {
 		// get the uuids
 		UUID currentUuid = ArchitectonicAuxiliary.Concept.CURRENT
 				.getPrimoridalUid();
-		UUID path = ArchitectonicAuxiliary.Concept.SNOMED_CORE
-				.getPrimoridalUid();
-		UUID preferredTerm = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
-				.getPrimoridalUid();
-		UUID isA = ArchitectonicAuxiliary.Concept.IS_TERM_OF.getPrimoridalUid();
-		UUID author = ArchitectonicAuxiliary.Concept.USER.getPrimoridalUid();
 		UUID primordial = UUID.nameUUIDFromBytes((SEED + "." + spl.getSplId())
 				.getBytes());
 
@@ -218,31 +240,60 @@ public class SplMojo extends AbstractMojo {
 		conceptAttributes.setTime(time);
 
 		// add an annotation to the conceptAttributes
-		addAnnotation(conceptAttributes);
+		addAnnotation(conceptAttributes, spl.getXmlFile());
 
 		// associate the attributes with the concept
 		concept.setConceptAttributes(conceptAttributes);
 
-		// create the concept descriptions (this is where the spl_set_id is
-		// added to the concept
+		// descriptions
 		List<TkDescription> descriptions = new ArrayList<TkDescription>();
-		TkDescription description = new TkDescription();
-		description.setConceptUuid(primordial);
-		description.setLang("en");
-		description.setPrimordialComponentUuid(UUID.randomUUID());
-		description.setPathUuid(path);
-		description.setTypeUuid(preferredTerm);
-		description.text = spl.getSplId();
-		description.setAuthorUuid(author);
-		description.setStatusUuid(currentUuid);
-		description.setTime(time);
-		descriptions.add(description);
+		// splSetId (preferredTerm)
+		TkDescription splSetId = new TkDescription();
+		descriptions.add(splSetId);
+		splSetId.setLang("en");
+		splSetId.setStatusUuid(currentUuid);
+		splSetId.setPrimordialComponentUuid(UUID.randomUUID());
+		splSetId.setConceptUuid(primordial);
+		splSetId.setPathUuid(path);
+		splSetId.setAuthorUuid(author);
+		splSetId.setTime(time);
+		splSetId.setTypeUuid(preferredTerm);
+		splSetId.text = spl.getSplId();
+		// splSetId (splSetId)
+		TkDescription splPreferredTerm = new TkDescription();
+		descriptions.add(splPreferredTerm);
+		splPreferredTerm.setLang("en");
+		splPreferredTerm.setStatusUuid(currentUuid);
+		splPreferredTerm.setPrimordialComponentUuid(UUID.randomUUID());
+		splPreferredTerm.setConceptUuid(primordial);
+		splPreferredTerm.setPathUuid(path);
+		splPreferredTerm.setAuthorUuid(author);
+		splPreferredTerm.setTime(time);
+		splPreferredTerm.setTypeUuid(this.splSetIdUuid);
+		splPreferredTerm.text = spl.getSplId();
+		// nda
+		TkDescription nda = new TkDescription();
+		descriptions.add(nda);
+		nda.setLang("en");
+		nda.setStatusUuid(currentUuid);
+		nda.setPrimordialComponentUuid(UUID.randomUUID());
+		nda.setConceptUuid(primordial);
+		nda.setPathUuid(path);
+		nda.setAuthorUuid(author);
+		nda.setTime(time);
+		nda.setTypeUuid(this.ndaUuid);
+		nda.text = "THIS IS WHERE THE NDA GOES";
+
+		//
+		// add the descriptions to the concept
+		//
+
 		concept.setDescriptions(descriptions);
 
 		// create the concept relationships
 
 		List<TkRelationship> relationships = new ArrayList<TkRelationship>();
-		TkRelationship heirRel = createRelationships(concept, rootUuid);
+		TkRelationship heirRel = createRelationships(concept, splRootUuid);
 		relationships.add(heirRel);
 		concept.setRelationships(relationships);
 
@@ -251,18 +302,23 @@ public class SplMojo extends AbstractMojo {
 
 	}
 
-	private void addAnnotation(TkComponent<?> component) throws Exception {
+	private void addAnnotation(TkComponent<?> component, File xmlFile)
+			throws Exception {
+		
+		String xmlTxt = FileUtil.getAsString(xmlFile);
+		
 		annotationCnt++;
 		long time = System.currentTimeMillis();
 		List<TkRefsetAbstractMember<?>> annotations = new ArrayList<TkRefsetAbstractMember<?>>();
 		TkRefsetStrMember strRefexMember = new TkRefsetStrMember();
 		strRefexMember.setComponentUuid(component.getPrimordialComponentUuid());
-		strRefexMember.setStrValue("THIS IS TEST ANNOTATION " + annotationCnt);
-
+		strRefexMember.setStrValue(xmlTxt);
+		
 		strRefexMember.setPrimordialComponentUuid(UUID.nameUUIDFromBytes(((SEED
 				+ "." + annotationCnt).getBytes())));
 
-		strRefexMember.setRefsetUuid(preferredDescriptionType);
+		// strRefexMember.setRefsetUuid(preferredDescriptionType);
+		strRefexMember.setRefsetUuid(this.splXmlTextUuid);
 
 		strRefexMember.setStatusUuid(ArchitectonicAuxiliary.Concept.CURRENT
 				.getPrimoridalUid());
@@ -275,35 +331,22 @@ public class SplMojo extends AbstractMojo {
 		component.setAnnotations(annotations);
 	}
 
-	private Spl getSpl(File rootDir) throws Exception {
-		File[] files = rootDir.listFiles();
-		Spl spl = null;
-		for (int i = 0; i < files.length; i++) {
-			File file = files[i];
-			if (file.getCanonicalPath().toLowerCase().endsWith((".xml"))) {
-				System.out.println("FILE NAME: " + file.getName());
-				spl = new Spl(file);
-				return spl;
-			}
-		}
-		return spl;
-	}
-
 	private TkRelationship createRelationships(EConcept eConcept,
 			UUID targetPrimordial) throws IOException, TerminologyException {
+
 		relCnt++;
+		long time = System.currentTimeMillis();
+
+		// uuids
 		UUID relPrimordial = ArchitectonicAuxiliary.Concept.IS_A_REL
 				.getPrimoridalUid();
-		long time = System.currentTimeMillis();
 		UUID currentUuid = ArchitectonicAuxiliary.Concept.CURRENT
 				.getPrimoridalUid();
-		UUID path = ArchitectonicAuxiliary.Concept.SNOMED_CORE
-				.getPrimoridalUid();
-		UUID author = ArchitectonicAuxiliary.Concept.USER.getPrimoridalUid();
 
+		// create the relationship object
 		TkRelationship rel = new TkRelationship();
-		rel.setPrimordialComponentUuid(UUID
-				.nameUUIDFromBytes(("gov.va.spl." + relCnt).getBytes()));
+		rel.setPrimordialComponentUuid(UUID.nameUUIDFromBytes((SEED + relCnt)
+				.getBytes()));
 		rel.setC1Uuid(eConcept.getPrimordialUuid());
 		rel.setTypeUuid(relPrimordial);
 		rel.setC2Uuid(targetPrimordial);
@@ -319,6 +362,61 @@ public class SplMojo extends AbstractMojo {
 		rel.setRelGroup(0);
 
 		return rel;
+
+	}
+
+	public UUID writeRelEConcept(String relName, DataOutputStream dos)
+			throws Exception {
+		long time = System.currentTimeMillis();
+
+		UUID currentUuid = ArchitectonicAuxiliary.Concept.CURRENT
+				.getPrimoridalUid();
+		UUID preferredTerm = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
+				.getPrimoridalUid();
+		UUID relPrimordial = ArchitectonicAuxiliary.Concept.IS_A_REL
+				.getPrimoridalUid();
+		UUID archRoot = ArchitectonicAuxiliary.Concept.ARCHITECTONIC_ROOT_CONCEPT
+				.getPrimoridalUid();
+
+		EConcept concept = new EConcept();
+		UUID primordial = UUID.nameUUIDFromBytes((SEED + relName).getBytes());
+		concept.setPrimordialUuid(primordial);
+		EConceptAttributes conceptAttributes = new EConceptAttributes();
+		conceptAttributes.setAuthorUuid(author);
+
+		conceptAttributes = new EConceptAttributes();
+		conceptAttributes.defined = false;
+		conceptAttributes.primordialUuid = primordial;
+		conceptAttributes.statusUuid = currentUuid;
+		conceptAttributes.setPathUuid(path);
+		conceptAttributes.setTime(time);
+		concept.setConceptAttributes(conceptAttributes);
+
+		List<TkDescription> descriptions = new ArrayList<TkDescription>();
+		TkDescription description = new TkDescription();
+		description.setConceptUuid(primordial);
+		description.setLang("en");
+		description.setPrimordialComponentUuid(UUID.randomUUID());
+
+		description.setTypeUuid(preferredTerm);
+		description.text = relName;
+		description.setStatusUuid(currentUuid);
+		description.setAuthorUuid(author);
+		description.setPathUuid(path);
+		description.setTime(time);
+		descriptions.add(description);
+		concept.setDescriptions(descriptions);
+
+		List<TkRelationship> relationships = new ArrayList<TkRelationship>();
+		TkRelationship heirRel = createRelationships(concept, archRoot);
+		relationships.add(heirRel);
+		concept.setRelationships(relationships);
+
+		System.out.println("Wrote: " + concept);
+		concept.writeExternal(dos);
+
+		return primordial;
+
 	}
 
 }
