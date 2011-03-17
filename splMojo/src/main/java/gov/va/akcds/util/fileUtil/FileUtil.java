@@ -13,7 +13,8 @@ public class FileUtil {
 			sb.append(str);
 			sb.append("\n");
 		}
-		return new String(sb);
+		String rtn = new String(sb);
+		return rtn;
 	}
 	
 }
