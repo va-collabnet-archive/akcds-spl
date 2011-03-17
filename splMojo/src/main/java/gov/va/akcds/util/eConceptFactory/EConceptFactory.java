@@ -21,7 +21,7 @@ public class EConceptFactory {
 	//
 	// instance variables
 	//
-	
+
 	private String uuidSeed;
 
 	private static int relCnt = 0;
@@ -56,7 +56,7 @@ public class EConceptFactory {
 	//
 	// methods to create an eConcept
 	//
-	
+
 	/**
 	 * 
 	 * Method to get a new initialized instance of an eConcept
@@ -129,7 +129,7 @@ public class EConceptFactory {
 	//
 	// annotations
 	//
-	
+
 	/**
 	 * 
 	 * Method to add an annotation to a component
@@ -181,7 +181,7 @@ public class EConceptFactory {
 	//
 	// descriptions
 	//
-	
+
 	/**
 	 * 
 	 * Method to add a description to a concept.
@@ -219,7 +219,7 @@ public class EConceptFactory {
 	//
 	// relationships
 	//
-	
+
 	/**
 	 * 
 	 * Method to create a relationship.
@@ -267,14 +267,14 @@ public class EConceptFactory {
 
 	/**
 	 * 
-	 * Method to add a relationship to a concept.  
+	 * Method to add a relationship to a concept.
 	 * 
 	 * @param concept
 	 * @param targetPrimordial
 	 * @return
 	 * @throws Exception
 	 */
-	
+
 	public TkRelationship addRelationship(EConcept concept,
 			UUID targetPrimordial) throws Exception {
 		List<TkRelationship> relationships = concept.getRelationships();
@@ -297,20 +297,17 @@ public class EConceptFactory {
 	 */
 
 	public EConcept createTerminologyAuxConcept(String name) throws Exception {
-		long time = System.currentTimeMillis();
 
-		UUID currentUuid = ArchitectonicAuxiliary.Concept.CURRENT
-				.getPrimoridalUid();
-		UUID preferredTerm = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
-				.getPrimoridalUid();
-		UUID relPrimordial = ArchitectonicAuxiliary.Concept.IS_A_REL
-				.getPrimoridalUid();
+		long time = System.currentTimeMillis();
+		UUID primordial = UUID.nameUUIDFromBytes((this.uuidSeed + "." + name)
+				.getBytes());
+
 		UUID archRoot = ArchitectonicAuxiliary.Concept.ARCHITECTONIC_ROOT_CONCEPT
 				.getPrimoridalUid();
 
-		EConcept concept = new EConcept();
-		UUID primordial = UUID.nameUUIDFromBytes((this.uuidSeed + "." + name).getBytes());
-		concept.setPrimordialUuid(primordial);
+		EConcept concept = this.createNamedEConcept(name);
+		System.out.println("CREATING AUX CON: " + name);
+
 		EConceptAttributes conceptAttributes = new EConceptAttributes();
 		conceptAttributes.setAuthorUuid(this.autherUuid);
 
@@ -328,7 +325,7 @@ public class EConceptFactory {
 		description.setLang("en");
 		description.setPrimordialComponentUuid(UUID.randomUUID());
 
-		description.setTypeUuid(preferredTerm);
+		description.setTypeUuid(this.preferredTermUuid);
 		description.text = name;
 		description.setStatusUuid(currentUuid);
 		description.setAuthorUuid(this.autherUuid);
