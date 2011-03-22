@@ -10,11 +10,23 @@ import org.dwfa.cement.ArchitectonicAuxiliary;
 import org.dwfa.tapi.TerminologyException;
 import org.ihtsdo.etypes.EConcept;
 import org.ihtsdo.etypes.EConceptAttributes;
+import org.ihtsdo.etypes.EIdentifierString;
 import org.ihtsdo.tk.dto.concept.component.TkComponent;
+import org.ihtsdo.tk.dto.concept.component.attribute.TkConceptAttributes;
 import org.ihtsdo.tk.dto.concept.component.description.TkDescription;
+import org.ihtsdo.tk.dto.concept.component.identifier.TkIdentifier;
 import org.ihtsdo.tk.dto.concept.component.refset.TkRefsetAbstractMember;
 import org.ihtsdo.tk.dto.concept.component.refset.str.TkRefsetStrMember;
 import org.ihtsdo.tk.dto.concept.component.relationship.TkRelationship;
+
+/**
+ * Methods starting in write (e.g. writeConcept) write a concept to the given
+ * DataOutputStream. Methods starting in create (e.g. createConcept) creates a
+ * concept but does not write that concept to the .jbin file.
+ * 
+ * @author jgresh
+ * 
+ */
 
 public class EConceptFactory {
 
@@ -89,22 +101,25 @@ public class EConceptFactory {
 		conceptAttributes.setTime(System.currentTimeMillis());
 	}
 
+	//
+	// create/write a named concept with no parent
+	//
+
 	/**
 	 * 
-	 * Method to create a named concept.
+	 * Method to create a named concept with no parent/child relationship.
 	 * 
 	 * @param name
 	 * @return
 	 * 
 	 */
 
-	public EConcept createNamedEConcept(String name) {
+	public EConcept createNamedConcept(String name) {
 		// create the concept
-		System.out.println("Writing SPL ROOT CONCEPT:");
 		UUID primordial = UUID.nameUUIDFromBytes((this.uuidSeed + "." + name)
 				.getBytes());
 		EConcept concept = newInstance(primordial);
-		addDescription(concept, this.preferredTermUuid, "SPL");
+		addDescription(concept, this.preferredTermUuid, name);
 		return concept;
 	}
 
@@ -118,12 +133,118 @@ public class EConceptFactory {
 	 * @throws Exception
 	 */
 
-	public EConcept writeNamedEConcept(String name, DataOutputStream dos)
+	public EConcept writeNamedConcept(String name, DataOutputStream dos)
 			throws Exception {
-		EConcept concept = createNamedEConcept(name);
+		EConcept concept = createNamedConcept(name);
 		concept.writeExternal(dos);
 		dos.flush();
 		return concept;
+	}
+
+	//
+	// create/write a named concept with a given parent
+	//
+
+	/**
+	 * 
+	 * Method to create a concept as a child of the parent identified by the
+	 * given UUID.
+	 * 
+	 * @param parent
+	 * @param name
+	 * @return
+	 * @throws Exception
+	 */
+
+	public EConcept createNamedConcept(UUID parent, String name)
+			throws Exception {
+		EConcept concept = this.createNamedConcept(name);
+		this.addRelationship(concept, parent);
+		return concept;
+	}
+
+	/**
+	 * 
+	 * Method to create and write a concept as a child of the parent identified
+	 * by the given UUID.
+	 * 
+	 * @param parent
+	 * @param name
+	 * @param dos
+	 * @return
+	 * @throws Exception
+	 * 
+	 */
+
+	public EConcept writeNamedConcept(UUID parent, String name,
+			DataOutputStream dos) throws Exception {
+		EConcept concept = this.createNamedConcept(parent, name);
+		concept.writeExternal(dos);
+		return concept;
+	}
+
+	/**
+	 * 
+	 * Creates the hierarchy defined by the given path starting with the given
+	 * UUID as the root of the path. For example, if the UUID for a concept
+	 * called "root" is given and "node1/node2/node3" is given a concept called
+	 * node1 will be made as a child of "root" and node2 will be made as a child
+	 * of node1, etc.
+	 * 
+	 * @param parent
+	 * @param path
+	 * @param dos
+	 * @return
+	 * @throws Exception
+	 */
+
+	public EConcept writePath(UUID parent, String path, DataOutputStream dos)
+			throws Exception {
+		String[] nodes = path.split("/");
+		EConcept concept = null;
+		for (int i = 0; i < nodes.length; i++) {
+			String conceptName = nodes[i];
+			concept = createNamedConcept(conceptName);
+			this.addRelationship(concept, parent);
+			System.out.println("WRITING: " + conceptName);
+			concept.writeExternal(dos);
+			parent = concept.primordialUuid;
+		}
+		return concept;
+	}
+
+	//
+	// attribute
+	//
+
+	public void addIdentifier(EConcept concept, UUID authorityUuid,
+			String identifier) {
+
+		// get the concept attributes
+		TkConceptAttributes attributes = concept.getConceptAttributes();
+		if (attributes == null) {
+			attributes = new TkConceptAttributes();
+			concept.setConceptAttributes(attributes);
+		}
+
+		// get the additional ids list of the attributes
+		List<TkIdentifier> additionalIds = attributes.additionalIds;
+		if (additionalIds == null) {
+			additionalIds = new ArrayList<TkIdentifier>();
+			attributes.additionalIds = additionalIds;
+		}
+
+		// create the identifier and add it to the additional ids list
+		EIdentifierString cid = new EIdentifierString();
+		additionalIds.add(cid);
+
+		// populate the identifier with the usual suspects
+		cid.setAuthorityUuid(authorityUuid);
+		cid.setPathUuid(this.pathUuid);
+		cid.setStatusUuid(this.currentUuid);
+		cid.setTime(System.currentTimeMillis());
+		// populate the actual value of the identifier
+		cid.setDenotation(identifier);
 	}
 
 	//
@@ -216,21 +337,42 @@ public class EConceptFactory {
 		description.text = descriptionStr;
 	}
 
+	public void addPreferredTerm(EConcept concept, String preferredTerm)
+			throws Exception {
+		UUID preferredTermUuid = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
+				.getPrimoridalUid();
+		addDescription(concept, preferredTermUuid, preferredTerm);
+	}
+
 	//
 	// relationships
 	//
 
 	/**
 	 * 
-	 * Method to create a relationship.
+	 * Method to add a relationship to a concept.
 	 * 
-	 * @param eConcept
+	 * @param concept
 	 * @param targetPrimordial
 	 * @return
-	 * @throws IOException
-	 * @throws TerminologyException
-	 * 
+	 * @throws Exception
 	 */
+
+	public TkRelationship addRelationship(EConcept concept,
+			UUID targetPrimordial) throws Exception {
+		List<TkRelationship> relationships = concept.getRelationships();
+		if (concept.getRelationships() == null) {
+			relationships = new ArrayList<TkRelationship>();
+			concept.setRelationships(relationships);
+		}
+		TkRelationship rel = this.createRelationship(concept, targetPrimordial);
+		relationships.add(rel);
+		return rel;
+	}
+
+	//
+	// method to create the relationship
+	//
 
 	private TkRelationship createRelationship(EConcept eConcept,
 			UUID targetPrimordial) throws IOException, TerminologyException {
@@ -267,28 +409,6 @@ public class EConceptFactory {
 
 	/**
 	 * 
-	 * Method to add a relationship to a concept.
-	 * 
-	 * @param concept
-	 * @param targetPrimordial
-	 * @return
-	 * @throws Exception
-	 */
-
-	public TkRelationship addRelationship(EConcept concept,
-			UUID targetPrimordial) throws Exception {
-		List<TkRelationship> relationships = concept.getRelationships();
-		if (concept.getRelationships() == null) {
-			relationships = new ArrayList<TkRelationship>();
-			concept.setRelationships(relationships);
-		}
-		TkRelationship rel = this.createRelationship(concept, targetPrimordial);
-		relationships.add(rel);
-		return rel;
-	}
-
-	/**
-	 * 
 	 * Method to create a terminology auxiliary concept.
 	 * 
 	 * @param name
@@ -296,51 +416,12 @@ public class EConceptFactory {
 	 * @throws Exception
 	 */
 
-	public EConcept createTerminologyAuxConcept(String name) throws Exception {
-
-		long time = System.currentTimeMillis();
-		UUID primordial = UUID.nameUUIDFromBytes((this.uuidSeed + "." + name)
-				.getBytes());
-
+	public EConcept writeTerminologyAuxConcept(String name, DataOutputStream dos)
+			throws Exception {
+		System.out.println("CREATING AUX CON: " + name);
 		UUID archRoot = ArchitectonicAuxiliary.Concept.ARCHITECTONIC_ROOT_CONCEPT
 				.getPrimoridalUid();
-
-		EConcept concept = this.createNamedEConcept(name);
-		System.out.println("CREATING AUX CON: " + name);
-
-		EConceptAttributes conceptAttributes = new EConceptAttributes();
-		conceptAttributes.setAuthorUuid(this.autherUuid);
-
-		conceptAttributes = new EConceptAttributes();
-		conceptAttributes.defined = false;
-		conceptAttributes.primordialUuid = primordial;
-		conceptAttributes.statusUuid = currentUuid;
-		conceptAttributes.setPathUuid(this.pathUuid);
-		conceptAttributes.setTime(time);
-		concept.setConceptAttributes(conceptAttributes);
-
-		List<TkDescription> descriptions = new ArrayList<TkDescription>();
-		TkDescription description = new TkDescription();
-		description.setConceptUuid(primordial);
-		description.setLang("en");
-		description.setPrimordialComponentUuid(UUID.randomUUID());
-
-		description.setTypeUuid(this.preferredTermUuid);
-		description.text = name;
-		description.setStatusUuid(currentUuid);
-		description.setAuthorUuid(this.autherUuid);
-		description.setPathUuid(this.pathUuid);
-		description.setTime(time);
-		descriptions.add(description);
-		concept.setDescriptions(descriptions);
-
-		List<TkRelationship> relationships = new ArrayList<TkRelationship>();
-		TkRelationship heirRel = createRelationship(concept, archRoot);
-		relationships.add(heirRel);
-		concept.setRelationships(relationships);
-
-		System.out.println("Wrote: " + concept);
-		return concept;
+		return writeNamedConcept(archRoot, name, dos);
 	}
 
 }

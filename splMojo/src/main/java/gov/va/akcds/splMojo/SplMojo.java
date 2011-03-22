@@ -29,7 +29,6 @@ import java.util.UUID;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
-import org.dwfa.cement.ArchitectonicAuxiliary;
 import org.ihtsdo.etypes.EConcept;
 
 /**
@@ -56,11 +55,6 @@ public class SplMojo extends AbstractMojo {
 	 */
 
 	private File outputDirectory;
-
-	// constant uuids
-
-	private UUID preferredTermUuid = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
-			.getPrimoridalUid();
 
 	// uuids populated when the concepts for them are created
 
@@ -94,11 +88,16 @@ public class SplMojo extends AbstractMojo {
 			DataOutputStream dos = new DataOutputStream(
 					new BufferedOutputStream(new FileOutputStream(jbinFile)));
 
-			// write the rel concepts
-			this.ndaUuid = writeTerminologyAuxConcept("NDA", dos).primordialUuid;
-			this.splSetIdUuid = writeTerminologyAuxConcept("SPL_SET_ID", dos).primordialUuid;
-			this.splXmlTextUuid = writeTerminologyAuxConcept("SPL XML Text",
-					dos).primordialUuid;
+			// create the path for the meta data concepts
+			String terminologyAuxPath = "VA Meta Data/AKCDS";
+
+			// create the meta data concepts
+			this.ndaUuid = writeTerminologyAuxConcept(terminologyAuxPath,
+					"NDA", dos).primordialUuid;
+			this.splSetIdUuid = writeTerminologyAuxConcept(terminologyAuxPath,
+					"SPL_SET_ID", dos).primordialUuid;
+			this.splXmlTextUuid = writeTerminologyAuxConcept(
+					terminologyAuxPath, "SPL XML Text", dos).primordialUuid;
 			this.splRootUuid = writeSplRootConcept(dos).primordialUuid;
 
 			// source file (splSrcData.zip is a zip of zips)
@@ -125,7 +124,7 @@ public class SplMojo extends AbstractMojo {
 				msg += "Writing eConcept for: " + rootDir;
 				System.out.println(msg);
 				Spl spl = SplFactory.getSplFromRootDir(rootDir);
-				writeEConcepts(dos, spl);
+				writeEConcept(dos, spl);
 			}
 
 			dos.flush();
@@ -137,12 +136,17 @@ public class SplMojo extends AbstractMojo {
 
 	}
 
+	private EConcept writeTerminologyAuxConcept(String path, String name,
+			DataOutputStream dos) throws Exception {
+		return this.eConceptFactory.writeTerminologyAuxConcept(name, dos);
+	}
+
 	private EConcept writeSplRootConcept(DataOutputStream dos) throws Exception {
-		EConcept concept = this.eConceptFactory.writeNamedEConcept("SPL", dos);
+		EConcept concept = this.eConceptFactory.writeNamedConcept("SPL", dos);
 		return concept;
 	}
 
-	private void writeEConcepts(DataOutputStream dos, Spl spl) throws Exception {
+	private void writeEConcept(DataOutputStream dos, Spl spl) throws Exception {
 
 		// echo status
 		System.out.println("Writing SPL:");
@@ -156,15 +160,21 @@ public class SplMojo extends AbstractMojo {
 		// create the concept
 		EConcept concept = this.eConceptFactory.newInstance(primordial);
 
+		// add the splSetId as an id
+		this.eConceptFactory.addIdentifier(concept, this.splSetIdUuid, spl
+				.getSplSetId());
+
+		// add the preferred term to the concept
+		this.eConceptFactory.addPreferredTerm(concept, spl.getSplId());
+		
 		// add an annotation to the conceptAttributes
 		String annotationString = "<xml>this is where the xml should go</xml>";
 		this.eConceptFactory.addAnnotation(concept.conceptAttributes,
 				this.splXmlTextUuid, annotationString);
 
+		// add descriptions to the concept
 		this.eConceptFactory.addDescription(concept, this.splSetIdUuid, spl
 				.getSplId());
-		this.eConceptFactory.addDescription(concept, this.preferredTermUuid,
-				spl.getSplId());
 		this.eConceptFactory.addDescription(concept, this.splXmlTextUuid,
 				"<xml>This is some xml</xml>");
 		this.eConceptFactory.addDescription(concept, this.ndaUuid,
@@ -179,15 +189,6 @@ public class SplMojo extends AbstractMojo {
 		System.out.println("...and we never get to here");
 		dos.flush();
 
-	}
-
-	private EConcept writeTerminologyAuxConcept(String name,
-			DataOutputStream dos) throws Exception {
-		EConcept concept = this.eConceptFactory
-				.createTerminologyAuxConcept(name);
-		concept.writeExternal(dos);
-		dos.flush();
-		return concept;
 	}
 
 }
