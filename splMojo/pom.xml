@@ -9,13 +9,13 @@
 
 	<parent>
 		<artifactId>akcds</artifactId>
-		<groupId>com.apelon.va.akcds.ihtsdo.wb</groupId>
+		<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
 	<!-- this -->
 
-	<groupId>com.apelon.va.akcds.ihtsdo.wb</groupId>
+	<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
 	<artifactId>splMojo</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
