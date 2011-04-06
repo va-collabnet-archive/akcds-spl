@@ -45,7 +45,6 @@ public class SplFactory {
 		for (int i = 0; i < files.length; i++) {
 			File file = files[i];
 			if (file.getCanonicalPath().toLowerCase().endsWith((".xml"))) {
-				System.out.println("FILE NAME: " + file.getName());
 				spl = new Spl(file);
 				return spl;
 			}
