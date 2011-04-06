@@ -24,9 +24,16 @@ public class ZipUtil {
 			FileInputStream fis = new FileInputStream(zipFile);
 			zis = new ZipInputStream(new BufferedInputStream(fis));
 			ZipEntry entry;
+			int cnt = 0;
 			while ((entry = zis.getNextEntry()) != null) {
+				cnt++;
 				if (echo == true) {
-					System.out.println("Writing " + entry.getName());
+					if(cnt % 10 == 0) {
+						System.out.print(".");
+					}
+					if(cnt % 500 == 0) {
+						System.out.println("");
+					}
 				}
 				int count;
 				byte data[] = new byte[BUFFER];
