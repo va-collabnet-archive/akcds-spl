@@ -57,6 +57,9 @@ public class EConceptFactory {
 	private UUID preferredTermUuid = ArchitectonicAuxiliary.Concept.PREFERRED_DESCRIPTION_TYPE
 			.getPrimoridalUid();
 
+	private UUID archRoot = ArchitectonicAuxiliary.Concept.ARCHITECTONIC_ROOT_CONCEPT
+			.getPrimoridalUid();
+
 	//
 	// constructor
 	//
@@ -206,11 +209,26 @@ public class EConceptFactory {
 			String conceptName = nodes[i];
 			concept = createNamedConcept(conceptName);
 			this.addRelationship(concept, parent);
-			System.out.println("WRITING: " + conceptName);
 			concept.writeExternal(dos);
 			parent = concept.primordialUuid;
 		}
 		return concept;
+	}
+
+	/**
+	 * 
+	 * Creates the hierarchy defined by the given path starting with the
+	 * terminology aux concept UUID as the root of the path. 
+	 * 
+	 * @param path
+	 * @param dos
+	 * @return
+	 * @throws Exception
+	 */
+
+	public EConcept writeTerminologyAuxPath(String path, DataOutputStream dos)
+			throws Exception {
+		return writePath(this.archRoot, path, dos);
 	}
 
 	//
@@ -250,6 +268,22 @@ public class EConceptFactory {
 	//
 	// annotations
 	//
+
+	/**
+	 * 
+	 * Method to add an annotation to a concept
+	 * 
+	 */
+
+	public void addAnnotation(EConcept concept, UUID type,
+			String annotationString) throws Exception {
+		TkConceptAttributes attributes = concept.getConceptAttributes();
+		if (attributes == null) {
+			attributes = new TkConceptAttributes();
+			concept.setConceptAttributes(attributes);
+		}
+		addAnnotation(attributes, type, annotationString);
+	}
 
 	/**
 	 * 
@@ -418,9 +452,6 @@ public class EConceptFactory {
 
 	public EConcept writeTerminologyAuxConcept(String name, DataOutputStream dos)
 			throws Exception {
-		System.out.println("CREATING AUX CON: " + name);
-		UUID archRoot = ArchitectonicAuxiliary.Concept.ARCHITECTONIC_ROOT_CONCEPT
-				.getPrimoridalUid();
 		return writeNamedConcept(archRoot, name, dos);
 	}
 
