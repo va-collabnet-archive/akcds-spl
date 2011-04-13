@@ -15,6 +15,7 @@ import org.ihtsdo.tk.dto.concept.component.TkComponent;
 import org.ihtsdo.tk.dto.concept.component.attribute.TkConceptAttributes;
 import org.ihtsdo.tk.dto.concept.component.description.TkDescription;
 import org.ihtsdo.tk.dto.concept.component.identifier.TkIdentifier;
+import org.ihtsdo.tk.dto.concept.component.media.TkMedia;
 import org.ihtsdo.tk.dto.concept.component.refset.TkRefsetAbstractMember;
 import org.ihtsdo.tk.dto.concept.component.refset.str.TkRefsetStrMember;
 import org.ihtsdo.tk.dto.concept.component.relationship.TkRelationship;
@@ -37,6 +38,8 @@ public class EConceptFactory {
 	private String uuidSeed;
 
 	private static int relCnt = 0;
+	
+	private static int mediaCnt_;
 
 	private static int annotationCnt = 0;
 
@@ -317,7 +320,7 @@ public class EConceptFactory {
 
 		// set the primordial and time for the strRefexMember
 		strRefexMember.setPrimordialComponentUuid(UUID
-				.nameUUIDFromBytes(((this.uuidSeed + "." + annotationCnt)
+				.nameUUIDFromBytes(((this.uuidSeed + ".annotation." + annotationCnt)
 						.getBytes())));
 		strRefexMember.setTime(time);
 
@@ -423,7 +426,7 @@ public class EConceptFactory {
 		rel.setTime(time);
 		rel.setRelGroup(0);
 		rel.setPrimordialComponentUuid(UUID
-				.nameUUIDFromBytes((this.uuidSeed + relCnt).getBytes()));
+				.nameUUIDFromBytes((this.uuidSeed + ".relation." + relCnt).getBytes()));
 		rel.setC1Uuid(eConcept.getPrimordialUuid());
 		rel.setTypeUuid(relPrimordial);
 		rel.setC2Uuid(targetPrimordial);
@@ -454,5 +457,39 @@ public class EConceptFactory {
 			throws Exception {
 		return writeNamedConcept(archRoot, name, dos);
 	}
+	
+	//Images
+	/**
+	 * Attach an image... format is a rather mysterious concept in this data model... try sending in just the extension
+	 * that would typically be part of the file name which stores the image.
+	 */
+	public void addMedia(EConcept concept, UUID type, byte[] imageData, String format, String description) throws Exception
+	{
+		mediaCnt_++;
+		
+		TkMedia newMedia = new TkMedia();
+		newMedia.setDataBytes(imageData);
+		
+		// set the primordial and time
+		newMedia.setPrimordialComponentUuid(UUID.nameUUIDFromBytes(((this.uuidSeed + ".media." + mediaCnt_).getBytes())));
+		newMedia.setTime(System.currentTimeMillis());
 
+		// set the constant uuids 
+		newMedia.setStatusUuid(this.currentUuid);
+		newMedia.setAuthorUuid(this.autherUuid);
+		newMedia.setPathUuid(this.pathUuid);
+
+		newMedia.setTypeUuid(ArchitectonicAuxiliary.Concept.AUXILLARY_IMAGE.getPrimoridalUid());
+		newMedia.setConceptUuid(concept.getPrimordialUuid());
+		newMedia.setFormat(format);
+		newMedia.setTextDescription(description);
+		
+		List<TkMedia> images = concept.getImages();
+		if (images == null)
+		{
+			images = new ArrayList<TkMedia>();
+		}
+		images.add(newMedia);
+		concept.setImages(images);
+	}
 }

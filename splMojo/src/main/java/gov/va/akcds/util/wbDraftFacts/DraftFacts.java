@@ -19,19 +19,27 @@ public class DraftFacts {
 	// instance variables
 	//
 
-	private File dataFile;
+	private File draftFactsRoot_;
 
-	private File draftFactsRoot;
-
-	//
-	// init method
-	//
+	public DraftFacts(File dataFile, File expansionFolder) throws Exception
+	{
+		draftFactsRoot_ = expansionFolder;
+		draftFactsRoot_.mkdirs();
+		
+		if (draftFactsRoot_.list().length > 50)  //arbitrary size
+		{
+			System.out.println("Draft facts already organized.  Using existing cache: " + draftFactsRoot_.getAbsolutePath());
+			return;
+		}
+		else
+		{
+			init(dataFile);
+		}
+	}
 
 	public void init(File dataFile) throws Exception {
-		System.out.println("Parsing draft facts.");
-		this.dataFile = dataFile;
-		this.draftFactsRoot = new File(dataFile.getParentFile(), "draftFacts");
-		draftFactsRoot.mkdir();
+		System.out.println("Reorganizing draft facts by set id");
+
 		BufferedReader in = new BufferedReader(new FileReader(dataFile));
 		String prevSplSetId = "";
 		File outFile = null;
@@ -46,7 +54,7 @@ public class DraftFacts {
 					if (out != null) {
 						out.close();
 					}
-					outFile = new File(draftFactsRoot, splSetId + ".txt");
+					outFile = new File(draftFactsRoot_, splSetId + ".txt");
 					out = new BufferedWriter(new FileWriter(outFile));
 					prevSplSetId = splSetId;
 				}
@@ -59,7 +67,7 @@ public class DraftFacts {
 				System.out.println("");
 			}
 		}
-		System.out.println("\nDone parsing draft facts.");
+		System.out.println("\nDone organizing draft facts.");
 	}
 
 	/**
@@ -73,7 +81,7 @@ public class DraftFacts {
 
 	public ArrayList<DraftFact> getFacts(String splSetId) throws Exception {
 		ArrayList<DraftFact> rtn = new ArrayList<DraftFact>();
-		File file = new File(this.draftFactsRoot, splSetId + ".txt");
+		File file = new File(draftFactsRoot_, splSetId + ".txt");
 		if (file != null && file.exists()) {
 			BufferedReader in = new BufferedReader(new FileReader(file));
 			for (String str = in.readLine(); str != null; str = in.readLine()) {

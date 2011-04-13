@@ -6,7 +6,7 @@
 		<fileSet>
 			<directory>${project.build.directory}</directory>
 			<includes>
-				<include>ExampleConcepts.jbin</include>
+				<include>splData.jbin</include>
 			</includes>
 			<outputDirectory>/</outputDirectory>
 		</fileSet>
