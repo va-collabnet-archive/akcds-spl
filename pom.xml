@@ -16,7 +16,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<wb-toolkit.version>2.6.0-trek-13</wb-toolkit.version>
+		<wb-toolkit.version>2.6.0-trek-14-SNAPSHOT</wb-toolkit.version>
 		<maven-release-plugin.version>2.0</maven-release-plugin.version>
 		<maven-jxr-plugin.version>2.2</maven-jxr-plugin.version>
 		<maven-compiler-plugin.version>2.0.2</maven-compiler-plugin.version>
