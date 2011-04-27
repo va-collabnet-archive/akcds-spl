@@ -21,47 +21,29 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<dependencies>
-		<!-- spl dependencies -->
-
-		<dependency>
-			<groupId>com.apelon.air</groupId>
-			<artifactId>apelonAir</artifactId>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/apelonAir.jar</systemPath>
-			<version>1</version>
-		</dependency>
-
-		<!-- other dependencies -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<executions>
+		    <plugin>
+		    	<groupId>org.apache.maven.plugins</groupId>
+		    	<artifactId>maven-install-plugin</artifactId>
+		    	<executions>
 					<execution>
-						<id>attach-data</id>
-						<configuration>
-							<descriptors>
-								<descriptor>resources/assembly/generated-artifact.xml</descriptor>
-							</descriptors>
-						</configuration>
+						<id>install-jbin-file</id>
+						<phase>install</phase>
 						<goals>
-							<goal>single</goal>
+							<goal>install-file</goal>
 						</goals>
-						<phase>package</phase>
+						<configuration>
+							<file>${project.build.directory}/splData.jbin</file>
+							<generatePom>true</generatePom>
+							<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
+							<artifactId>spl-data-test</artifactId>
+							<packaging>jbin</packaging>
+							<version>1</version>
+						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+		    </plugin>
 			<plugin>
 				<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
 				<artifactId>splMojo</artifactId>
@@ -70,14 +52,12 @@
 					<execution>
 						<id>genereate-jbin</id>
 						<goals>
-							<goal>generate-example-data</goal>
+							<goal>convert-spl-to-jbin</goal>
 						</goals>
 						<phase>generate-resources</phase>
 					</execution>
 				</executions>
 			</plugin>
 		</plugins>
-
 	</build>
-
 </project>

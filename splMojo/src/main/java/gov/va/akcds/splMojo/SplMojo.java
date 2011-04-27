@@ -38,7 +38,7 @@ import org.ihtsdo.etypes.EConcept;
 /**
  * Goal to generate spl data file
  * 
- * @goal generate-example-data
+ * @goal convert-spl-to-jbin
  * 
  * @phase process-sources
  */
