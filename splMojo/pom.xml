@@ -29,11 +29,8 @@
 		<!-- spl dependencies -->
 
 		<dependency>
-			<groupId>com.apelon.air</groupId>
-			<artifactId>apelonAir</artifactId>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/apelonAir.jar</systemPath>
-			<version>1</version>
+   			<groupId>org.jdom</groupId>
+    		<artifactId>jdom</artifactId>
 		</dependency>
 
 		<!-- other dependencies -->

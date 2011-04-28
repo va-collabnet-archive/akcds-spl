@@ -1,23 +1,9 @@
 package gov.va.akcds.splMojo;
 
-/*
- * Copyright 2001-2005 The Apache Software Foundation.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 import gov.va.akcds.spl.Spl;
-import gov.va.akcds.util.eConceptFactory.EConceptFactory;
+import gov.va.akcds.splMojo.dataTypes.DynamicDataType;
+import gov.va.akcds.splMojo.dataTypes.StaticDataType;
+import gov.va.akcds.util.EConceptUtility;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
 import gov.va.akcds.util.zipUtil.ZipContentsIterator;
@@ -27,12 +13,15 @@ import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Hashtable;
 import java.util.UUID;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
+import org.dwfa.cement.ArchitectonicAuxiliary;
 import org.ihtsdo.etypes.EConcept;
 
 /**
@@ -43,13 +32,10 @@ import org.ihtsdo.etypes.EConcept;
  * @phase process-sources
  */
 
-public class SplMojo extends AbstractMojo {
+public class SplMojo extends AbstractMojo
+{
 
-	//
-	// class variables
-	//
-
-	public static final String SEED = "gov.va.spl";
+	public static final String uuidRoot_ = "gov.va.spl";
 
 	/**
 	 * Location of the file.
@@ -60,85 +46,58 @@ public class SplMojo extends AbstractMojo {
 
 	private File outputDirectory;
 
-	// uuids populated when the concepts for them are created
-
-	private UUID splXmlTextUuid;
-
-	private UUID splSetIdUuid;
-
-	private UUID drugNameUuid;
-
-	private UUID splRootUuid;
-
-	private UUID draftFactUuid;
-
-	private UUID splTerminologyAuxConceptRootUuid;
-	
-	private UUID mediaUuid;
-
-	// other instance variables
-
-	private long xmlFileCnt = 0;
-
-	private long xmlFileTooBigCnt = 0;
-
-	// EConceptFactory
-
-	private EConceptFactory eConceptFactory = new EConceptFactory(SEED);
-
-	// DraftFacts
+	private EConceptUtility conceptUtility_ = new EConceptUtility(uuidRoot_);
 
 	private DraftFacts draftFacts;
+	
+	private Hashtable<String, DynamicDataType> dynamicDataTypes_ = new Hashtable<String, DynamicDataType>();
+	private UUID ndaTypeRoot_;
 
-	//
-	// constructor
-	//
+	private DataOutputStream dos_;
+	private long conceptCounter_ = 0;
+	private long xmlFileCnt_ = 0;
 
-	public SplMojo() throws Exception {
+	public SplMojo() throws Exception
+	{
 	}
 
 	/**
-	 * 
 	 * Method used by maven to create the .jbin data file.
-	 * 
 	 */
 
-	public void execute() throws MojoExecutionException {
+	public void execute() throws MojoExecutionException
+	{
 
-		try {
-
+		try
+		{
 			// echo status
 			System.out.println("TPS report completed 04/05/2011.");
 			System.out.println("Starting creation of .jbin file for Structured Product Labels (SPLs)");
 			System.out.println(new Date().toString());
-			
+
 			// output directory
-			if (outputDirectory.exists() == false) {
+			if (outputDirectory.exists() == false)
+			{
 				outputDirectory.mkdirs();
 			}
 
 			// jbin (output) file
 			File jbinFile = new File(outputDirectory, "splData.jbin");
-			DataOutputStream dos = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(jbinFile)));
+			dos_ = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(jbinFile)));
 
-			// create the root concept for the spl terminology types
-			this.splTerminologyAuxConceptRootUuid = this.eConceptFactory
-					.writeTerminologyAuxPath("VA AKCDS/Types", dos).primordialUuid;
+			createMetaData();
 
-			// create the terminology aux concepts (types, essentially)
-			this.splSetIdUuid = this.eConceptFactory.writeNamedConcept(
-					this.splTerminologyAuxConceptRootUuid, "SPL_SET_ID", dos).primordialUuid;
-			this.draftFactUuid = this.eConceptFactory.writeNamedConcept(
-					this.splTerminologyAuxConceptRootUuid, "Draft Fact", dos).primordialUuid;
-			this.drugNameUuid = this.eConceptFactory.writeNamedConcept(
-					this.splTerminologyAuxConceptRootUuid, "Drug Name", dos).primordialUuid;
-			this.splXmlTextUuid = this.eConceptFactory.writeNamedConcept(
-					this.splTerminologyAuxConceptRootUuid, "SPL XML Text", dos).primordialUuid;
-			this.mediaUuid = this.eConceptFactory.writeNamedConcept(
-					this.splTerminologyAuxConceptRootUuid, "Image", dos).primordialUuid;
+			// Create the root concept (named SPL)
+			EConcept rootConcept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root").getBytes()), "SPL",
+					System.currentTimeMillis());
+			conceptUtility_.addDescription(rootConcept, "put version here",  StaticDataType.VERSION.getUuid()); // TODO add version
 
-			// create the spl root concept (the concept named "SPL")
-			this.splRootUuid = writeSplRootConcept(dos).primordialUuid;
+			storeConcept(rootConcept);
+
+			// TODO break up by letter?
+
+			System.out.println("Created " + conceptCounter_ + "metadata concepts");
+			conceptCounter_ = 0;
 
 			// get the data directory
 			File dataDir = new File(outputDirectory.getParentFile(), "data");
@@ -155,29 +114,29 @@ public class SplMojo extends AbstractMojo {
 			System.out.println("Reading spl zip file");
 			// process the zip of zips
 			ZipContentsIterator outerZCI = new ZipContentsIterator(new File(dataDir, dataFileName));
-			
+
 			while (outerZCI.hasMoreElements())
 			{
-				//Each of these should be a zip file
+				// Each of these should be a zip file
 				ZipFileContent nestedZipFile = outerZCI.nextElement();
-				
+
 				if (nestedZipFile.getName().toLowerCase().endsWith(".zip"))
 				{
-					//open up the nested zip file
+					// open up the nested zip file
 					ZipContentsIterator nestedZipFileContents = new ZipContentsIterator(nestedZipFile.getFileBytes());
-					
+
 					ArrayList<ZipFileContent> filesInNestedZipFile = new ArrayList<ZipFileContent>();
-					
+
 					while (nestedZipFileContents.hasMoreElements())
 					{
 						filesInNestedZipFile.add(nestedZipFileContents.nextElement());
 					}
-					
+
 					if (filesInNestedZipFile.size() > 0)
 					{
-						//Pass the elements in to the spl factory
+						// Pass the elements in to the spl factory
 						Spl spl = new Spl(filesInNestedZipFile, nestedZipFile.getName());
-						writeEConcept(dos, spl);
+						writeEConcept(spl, rootConcept.getPrimordialUuid());
 					}
 					else
 					{
@@ -188,94 +147,83 @@ public class SplMojo extends AbstractMojo {
 				{
 					System.err.println("Skipping unexpected file in outer zip file: " + nestedZipFile.getName());
 				}
-				
-				xmlFileCnt++;
-				System.out.print(".");
-				if(xmlFileCnt % 50 == 0) 
-				{
-					System.out.println("");
-				}
+
+				xmlFileCnt_++;
 			}
-			
+
 			System.out.println();
 
 			// write the meta data concepts
-			System.out.println("TOTAL SPL FILES:   " + xmlFileCnt);
-			System.out.println("FILE TOO BIG FILES: " + xmlFileTooBigCnt);
+			System.out.println("TOTAL SPL FILES:   " + xmlFileCnt_);
+			System.out.println("TOTAL concepts created: " + conceptCounter_);
 
-			dos.flush();
-			dos.close();
+			dos_.flush();
+			dos_.close();
 
-		} catch (Exception ex) {
+		}
+		catch (Exception ex)
+		{
 			throw new MojoExecutionException(ex.getLocalizedMessage(), ex);
 		}
 
 	}
 
-	private EConcept writeTerminologyAuxConcept(String name,
-			DataOutputStream dos) throws Exception {
-		return this.eConceptFactory.writeTerminologyAuxConcept(name, dos);
+	private void createMetaData() throws Exception
+	{
+		// Set up a meta-data root concept
+		UUID archRoot = ArchitectonicAuxiliary.Concept.ARCHITECTONIC_ROOT_CONCEPT.getPrimoridalUid();
+		UUID metaDataRoot = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata").getBytes());
+		writeAuxEConcept(metaDataRoot, "VA AKCDS Metadata", "", archRoot);
+
+		UUID typesRoot = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types").getBytes());
+		writeAuxEConcept(typesRoot, "Types", "", metaDataRoot);
+		
+		ndaTypeRoot_ = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types:ndaTypes").getBytes());
+		writeAuxEConcept(ndaTypeRoot_, "NDA Types", "", typesRoot);
+
+		for (StaticDataType dt : StaticDataType.values())
+		{
+			writeAuxEConcept(dt.getUuid(), dt.getNiceName(), dt.getDescription(), typesRoot);
+		}
 	}
 
-	private EConcept writeSplRootConcept(DataOutputStream dos) throws Exception {
-		EConcept concept = this.eConceptFactory.writeNamedConcept("SPL", dos);
-		return concept;
-	}
-
-	private void writeEConcept(DataOutputStream dos, Spl spl) throws Exception {
-
+	private void writeEConcept(Spl spl, UUID parentConceptUUID) throws Exception
+	{
 		// get the facts
-		ArrayList<DraftFact> splDraftFacts = draftFacts.getFacts(spl.getSplSetId());
+		ArrayList<DraftFact> splDraftFacts = draftFacts.getFacts(spl.getSetId());
 
 		// if there are no facts don't add the spl (it complicates things)
-		if (splDraftFacts.size() > 0) {
+		if (splDraftFacts.size() > 0)
+		{
+			//For drug name and drug code, we just use the values from the first draft fact.  all draft facts should have the same value for these fields.
+			EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":" + spl.getSetId()).getBytes()),
+					splDraftFacts.get(0).getDrugName(), System.currentTimeMillis());
 
-			// get the primordial uuid
-			UUID primordial = UUID.nameUUIDFromBytes((SEED + "." + spl.getSplSetId()).getBytes());
-
-			// create the concept
-			EConcept concept = this.eConceptFactory.newInstance(primordial);
-
-			// add the splSetId as an id
-			this.eConceptFactory.addIdentifier(concept, this.splSetIdUuid, spl.getSplSetId());
-
-			// add the preferred term to the concept
-			String drugName = splDraftFacts.get(0).getDrugName();
-			String preferredTerm = drugName;
-
-			this.eConceptFactory.addPreferredTerm(concept, preferredTerm);
+			conceptUtility_.addAdditionalId(concept, spl.getSetId(), StaticDataType.SET_ID.getUuid());
+			conceptUtility_.addAdditionalId(concept, splDraftFacts.get(0).getDrugCode(), StaticDataType.DRUG_CODE.getUuid());
+			
+			conceptUtility_.addDescription(concept, splDraftFacts.get(0).getDrugName(), StaticDataType.DRUG_NAME.getUuid());
 
 			// add an annotation to the conceptAttributes for each draft fact
-			if (splDraftFacts != null) {
-				for (int i = 0; i < splDraftFacts.size(); i++) {
+			if (splDraftFacts != null)
+			{
+				for (int i = 0; i < splDraftFacts.size(); i++)
+				{
 					DraftFact fact = splDraftFacts.get(i);
 					String annotationString = "";
-					annotationString += fact.getDrugName() + "|";
-					annotationString += fact.getDrugCode() + "|";
 					annotationString += fact.getRoleName() + "|";
 					annotationString += fact.getRoleId() + "|";
 					annotationString += fact.getConceptName() + "|";
 					annotationString += fact.getConceptCode() + "|";
-					this.eConceptFactory.addAnnotation(
-							concept.conceptAttributes, this.draftFactUuid,
-							annotationString);
+					conceptUtility_.addAnnotation(concept, annotationString, StaticDataType.DRAFT_FACT.getUuid());
 				}
 			}
 
-			// add drug name as a description to the concept
-			this.eConceptFactory.addDescription(concept, this.drugNameUuid, drugName);
-
-			// add xml text as a description to the concept
-			String xmlTxt;
-			if (spl.getXMLFileLength() > 64000) {
-				xmlTxt = "XML SIZE > 64K BYTES. COULD NOT BE IMPORTED.";
-				this.xmlFileTooBigCnt++;
-			}
-			else
-			{
-				xmlTxt = spl.getXMLFileAsString();
-			}
-			this.eConceptFactory.addAnnotation(concept, this.splXmlTextUuid, xmlTxt);
+			conceptUtility_.addAnnotation(concept, spl.getXMLFileAsString(), StaticDataType.SPL_XML_TEXT.getUuid());
+//			if (spl.getXMLFileLength() > 64000)
+//			{
+//				System.out.println("long value: " + splDraftFacts.get(0).getDrugName());
+//			}
 
 			ArrayList<ZipFileContent> media = spl.getSupportingFiles();
 			for (ZipFileContent zfc : media)
@@ -283,18 +231,82 @@ public class SplMojo extends AbstractMojo {
 				String fileName = zfc.getName();
 				int splitPos = fileName.lastIndexOf('.');
 				String extension = ((splitPos + 1 <= fileName.length() ? fileName.substring(splitPos + 1) : ""));
-				this.eConceptFactory.addMedia(concept, this.mediaUuid, zfc.getFileBytes(), extension, fileName);
+				conceptUtility_.addMedia(concept, StaticDataType.IMAGE.getUuid(), zfc.getFileBytes(), extension, fileName);
 			}
+			
+			for (String nda : spl.getUniqueNDAs())
+			{
+				int split = 0;
+				for (int i = 0; i < nda.length(); i++)
+				{
+					if (Character.isDigit(nda.charAt(i)))
+					{
+						split = i;
+						break;
+					}
+				}
+				String type = nda.substring(0, split);
+				String value = nda.substring(split, nda.length());
+				DynamicDataType ddt = getType(type);
+				conceptUtility_.addAnnotation(concept, value, ddt.getIdentifier());
+			}
+			
 
-			// create the concept relationships
-			this.eConceptFactory.addRelationship(concept, splRootUuid);
+			conceptUtility_.addRelationship(concept, parentConceptUUID, null);
 
-			// write the concept to the .jbin file
-			concept.writeExternal(dos);
-			dos.flush();
+			storeConcept(concept);
 		}
 	}
 	
+	private DynamicDataType getType(String type) throws Exception
+	{
+		DynamicDataType ddt = dynamicDataTypes_.get(type);
+		if (ddt == null)
+		{
+			UUID typeId = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types:ndaTypes:" + type).getBytes());
+			writeAuxEConcept(typeId, type, "", ndaTypeRoot_);
+			ddt = new DynamicDataType(type, typeId);
+			dynamicDataTypes_.put(type, ddt);
+		}
+		return ddt;
+	}
+
+	/**
+	 * Utility method to build and store a metadata concept.  description is optional.
+	 */
+	private void writeAuxEConcept(UUID primordial, String name, String description, UUID relParentPrimordial) throws Exception
+	{
+		EConcept concept = conceptUtility_.createConcept(primordial, name, System.currentTimeMillis());
+		conceptUtility_.addRelationship(concept, relParentPrimordial, null);
+		if (description != null && description.length() > 0)
+		{
+			conceptUtility_.addDescription(concept, description, ArchitectonicAuxiliary.Concept.TEXT_DEFINITION_TYPE.getPrimoridalUid());
+		}
+		storeConcept(concept);
+	}
+
+	/**
+	 * Write an EConcept out to the jbin file. Updates counters, prints status tics.
+	 */
+	private void storeConcept(EConcept concept) throws IOException
+	{
+		concept.writeExternal(dos_);
+		conceptCounter_++;
+
+		if (conceptCounter_ % 10 == 0)
+		{
+			System.out.print(".");
+		}
+		if (conceptCounter_ % 500 == 0)
+		{
+			System.out.println("");
+		}
+		if ((conceptCounter_ % 1000) == 0)
+		{
+			System.out.println("Processed: " + conceptCounter_ + " - just completed " + concept.getDescriptions().get(0).getText());
+		}
+	}
+
 	public static void main(String[] args) throws MojoExecutionException, Exception
 	{
 		SplMojo sm = new SplMojo();
