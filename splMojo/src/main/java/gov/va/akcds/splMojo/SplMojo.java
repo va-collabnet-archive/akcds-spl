@@ -108,6 +108,7 @@ public class SplMojo extends AbstractMojo
 				storeConcept(concept);
 			}			
 			
+			System.out.println();
 			System.out.println("Created " + conceptCounter_ + "metadata concepts");
 			conceptCounter_ = 0;
 
