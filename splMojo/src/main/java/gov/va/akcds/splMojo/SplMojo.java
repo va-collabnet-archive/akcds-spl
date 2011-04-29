@@ -22,7 +22,9 @@ import java.util.UUID;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.dwfa.cement.ArchitectonicAuxiliary;
+import org.dwfa.util.id.Type3UuidFactory;
 import org.ihtsdo.etypes.EConcept;
+import org.ihtsdo.tk.dto.concept.component.refset.cidcidcid.TkRefsetCidCidCidMember;
 
 /**
  * Goal to generate spl data file
@@ -51,7 +53,8 @@ public class SplMojo extends AbstractMojo
 	private DraftFacts draftFacts;
 	
 	private Hashtable<String, DynamicDataType> dynamicDataTypes_ = new Hashtable<String, DynamicDataType>();
-	private UUID ndaTypeRoot_;
+	private Hashtable<Integer, UUID> letterRoots_ = new Hashtable<Integer, UUID>();
+	private UUID ndaTypeRoot_, draftFactsRoot_;
 
 	private DataOutputStream dos_;
 	private long conceptCounter_ = 0;
@@ -90,12 +93,21 @@ public class SplMojo extends AbstractMojo
 			// Create the root concept (named SPL)
 			EConcept rootConcept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root").getBytes()), "SPL",
 					System.currentTimeMillis());
-			conceptUtility_.addDescription(rootConcept, "put version here",  StaticDataType.VERSION.getUuid()); // TODO add version
+			conceptUtility_.addDescription(rootConcept, "1.0",  StaticDataType.VERSION.getUuid());
 
 			storeConcept(rootConcept);
-
-			// TODO break up by letter?
-
+			
+			//Set up letter roots to organize the labels
+			for (int i = 65; i <= 90; i++)
+			{
+				String s = new String(Character.toChars(i));
+				
+				EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root:" + s).getBytes()), s, System.currentTimeMillis());
+				letterRoots_.put(i, concept.getPrimordialUuid());
+				conceptUtility_.addRelationship(concept, rootConcept.getPrimordialUuid(), null);
+				storeConcept(concept);
+			}			
+			
 			System.out.println("Created " + conceptCounter_ + "metadata concepts");
 			conceptCounter_ = 0;
 
@@ -180,6 +192,9 @@ public class SplMojo extends AbstractMojo
 		
 		ndaTypeRoot_ = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types:ndaTypes").getBytes());
 		writeAuxEConcept(ndaTypeRoot_, "NDA Types", "", typesRoot);
+		
+		draftFactsRoot_ = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types:draftFactsRelationships").getBytes());
+		writeAuxEConcept(draftFactsRoot_, "Draft Fact Relationships", "", typesRoot);
 
 		for (StaticDataType dt : StaticDataType.values())
 		{
@@ -187,7 +202,7 @@ public class SplMojo extends AbstractMojo
 		}
 	}
 
-	private void writeEConcept(Spl spl, UUID parentConceptUUID) throws Exception
+	private void writeEConcept(Spl spl, UUID rootConceptUUID) throws Exception
 	{
 		// get the facts
 		ArrayList<DraftFact> splDraftFacts = draftFacts.getFacts(spl.getSetId());
@@ -196,13 +211,14 @@ public class SplMojo extends AbstractMojo
 		if (splDraftFacts.size() > 0)
 		{
 			//For drug name and drug code, we just use the values from the first draft fact.  all draft facts should have the same value for these fields.
+			String drugName = splDraftFacts.get(0).getDrugName();
 			EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":" + spl.getSetId()).getBytes()),
-					splDraftFacts.get(0).getDrugName(), System.currentTimeMillis());
+					drugName, System.currentTimeMillis());
 
 			conceptUtility_.addAdditionalId(concept, spl.getSetId(), StaticDataType.SET_ID.getUuid());
-			conceptUtility_.addAdditionalId(concept, splDraftFacts.get(0).getDrugCode(), StaticDataType.DRUG_CODE.getUuid());
+			conceptUtility_.addAdditionalId(concept, splDraftFacts.get(0).getDrugCode(), StaticDataType.DRAFT_FACT_DRUG_CODE.getUuid());
 			
-			conceptUtility_.addDescription(concept, splDraftFacts.get(0).getDrugName(), StaticDataType.DRUG_NAME.getUuid());
+			conceptUtility_.addDescription(concept, drugName, StaticDataType.DRAFT_FACT_DRUG_NAME.getUuid());
 
 			// add an annotation to the conceptAttributes for each draft fact
 			if (splDraftFacts != null)
@@ -210,20 +226,19 @@ public class SplMojo extends AbstractMojo
 				for (int i = 0; i < splDraftFacts.size(); i++)
 				{
 					DraftFact fact = splDraftFacts.get(i);
-					String annotationString = "";
-					annotationString += fact.getRoleName() + "|";
-					annotationString += fact.getRoleId() + "|";
-					annotationString += fact.getConceptName() + "|";
-					annotationString += fact.getConceptCode() + "|";
-					conceptUtility_.addAnnotation(concept, annotationString, StaticDataType.DRAFT_FACT.getUuid());
+					
+					UUID draftFact = getDraftFactType(fact.getRoleName()).getIdentifier();
+					
+					TkRefsetCidCidCidMember triple = conceptUtility_.addCIDTriple(concept, concept.getPrimordialUuid(), draftFact, 
+							Type3UuidFactory.fromSNOMED(fact.getConceptCode()), StaticDataType.DRAFT_FACT_TRIPLE.getUuid());
+					
+					conceptUtility_.addAnnotation(triple, fact.getConceptName(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_NAME.getUuid());
+					conceptUtility_.addAnnotation(triple, fact.getConceptCode(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_CODE.getUuid());
+					conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.DRAFT_FACT_SENTENCE.getUuid());
 				}
 			}
 
 			conceptUtility_.addAnnotation(concept, spl.getXMLFileAsString(), StaticDataType.SPL_XML_TEXT.getUuid());
-//			if (spl.getXMLFileLength() > 64000)
-//			{
-//				System.out.println("long value: " + splDraftFacts.get(0).getDrugName());
-//			}
 
 			ArrayList<ZipFileContent> media = spl.getSupportingFiles();
 			for (ZipFileContent zfc : media)
@@ -247,24 +262,52 @@ public class SplMojo extends AbstractMojo
 				}
 				String type = nda.substring(0, split);
 				String value = nda.substring(split, nda.length());
-				DynamicDataType ddt = getType(type);
+				DynamicDataType ddt = getNDAType(type);
 				conceptUtility_.addAnnotation(concept, value, ddt.getIdentifier());
 			}
 			
+			//Find the right letter parent to to place it under.
+			UUID parentUUID = null;
+			for (int i = 0; i < drugName.length(); i++)
+			{
+				if (parentUUID != null)
+				{
+					break;
+				}
+				parentUUID = letterRoots_.get(drugName.codePointAt(i));
+			}
 
-			conceptUtility_.addRelationship(concept, parentConceptUUID, null);
+			if (parentUUID == null)
+			{
+				//Still null?  No letters in the name?
+				parentUUID = rootConceptUUID;
+			}
+			conceptUtility_.addRelationship(concept, parentUUID, null);
 
 			storeConcept(concept);
 		}
 	}
 	
-	private DynamicDataType getType(String type) throws Exception
+	private DynamicDataType getNDAType(String type) throws Exception
 	{
 		DynamicDataType ddt = dynamicDataTypes_.get(type);
 		if (ddt == null)
 		{
 			UUID typeId = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types:ndaTypes:" + type).getBytes());
 			writeAuxEConcept(typeId, type, "", ndaTypeRoot_);
+			ddt = new DynamicDataType(type, typeId);
+			dynamicDataTypes_.put(type, ddt);
+		}
+		return ddt;
+	}
+	
+	private DynamicDataType getDraftFactType(String type) throws Exception
+	{
+		DynamicDataType ddt = dynamicDataTypes_.get(type);
+		if (ddt == null)
+		{
+			UUID typeId = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types:draftFacts:" + type).getBytes());
+			writeAuxEConcept(typeId, type, "", draftFactsRoot_);
 			ddt = new DynamicDataType(type, typeId);
 			dynamicDataTypes_.put(type, ddt);
 		}

@@ -14,6 +14,7 @@ import org.ihtsdo.tk.dto.concept.component.description.TkDescription;
 import org.ihtsdo.tk.dto.concept.component.identifier.TkIdentifier;
 import org.ihtsdo.tk.dto.concept.component.media.TkMedia;
 import org.ihtsdo.tk.dto.concept.component.refset.TkRefsetAbstractMember;
+import org.ihtsdo.tk.dto.concept.component.refset.cidcidcid.TkRefsetCidCidCidMember;
 import org.ihtsdo.tk.dto.concept.component.refset.str.TkRefsetStrMember;
 import org.ihtsdo.tk.dto.concept.component.relationship.TkRelationship;
 /**
@@ -39,6 +40,7 @@ public class EConceptUtility
 	private int annotationCounter_ = 0;
 	private int descCounter_ = 0;
 	private int mediaCounter_ = 0;
+	private int tripleCounter_ = 0;
 	
 	private String uuidRoot_;
 
@@ -148,6 +150,34 @@ public class EConceptUtility
 	{
 		TkConceptAttributes conceptAttributes = concept.getConceptAttributes();
 		return addAnnotation(conceptAttributes, value, refsetUUID);
+	}
+	
+	public TkRefsetCidCidCidMember addCIDTriple(EConcept concept, UUID c1, UUID c2, UUID c3, UUID refsetUUID)
+	{
+		TkConceptAttributes attributes = concept.getConceptAttributes();
+		List<TkRefsetAbstractMember<?>> annotations = attributes.getAnnotations();
+
+		if (annotations == null)
+		{
+			annotations = new ArrayList<TkRefsetAbstractMember<?>>();
+			attributes.setAnnotations(annotations);
+		}
+		
+		TkRefsetCidCidCidMember triple = new TkRefsetCidCidCidMember();
+		triple.setRefsetUuid(refsetUUID);
+		triple.setTime(System.currentTimeMillis());
+		triple.setStatusUuid(currentUuid_);
+		triple.setComponentUuid(attributes.getPrimordialComponentUuid());
+		triple.setPathUuid(path_);
+		triple.setPrimordialComponentUuid(UUID.nameUUIDFromBytes((uuidRoot_ + "triple:" + tripleCounter_++).getBytes()));
+		triple.setAuthorUuid(author_);
+		triple.setC1Uuid(c1);
+		triple.setC2Uuid(c2);
+		triple.setC3Uuid(c3);
+		
+		annotations.add(triple);
+		
+		return triple;
 	}
 	
 	/**
