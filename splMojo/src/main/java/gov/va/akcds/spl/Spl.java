@@ -51,8 +51,7 @@ public class Spl
 
 		setId_ = getValue(rootElement, "setId", "root");
 		version_ = getValue(rootElement, "versionNumber", "value");
-		uniqueNdas_.addAll(findAllValues(rootElement, Arrays.asList(new String[] {"subjectOf", "approval", "id"}), "extension"));
-		
+		uniqueNdas_.addAll(findAllValues(rootElement, Arrays.asList(new String[] {"subjectOf", "approval", "id"}), "extension", 0));
 		firstApprovedDate_ = getValue(rootElement, new String[] { "verifier", "time" }, "value");
 	}
 	
@@ -60,22 +59,40 @@ public class Spl
 	 * Find all instances of the specified hierarchy under any parent path.
 	 * 
 	 */
+	//TODO retest this updated version
 	@SuppressWarnings("unchecked")
-	private ArrayList<String> findAllValues(Element lookUnder, List<String> childPath, String attributeName)
+	private ArrayList<String> findAllValues(Element lookUnder, List<String> childPath, String attributeName, int childPathPos)
 	{
 		ArrayList<String> result = new ArrayList<String>();
-		
-		for (Element e : (List<Element>)lookUnder.getChildren())
+
+		for (Element e : (List<Element>) lookUnder.getChildren())
 		{
-			if (e.getName().equals(childPath.get(0)))
+			int localChildpathPos = childPathPos;
+			if (!e.getName().equals(childPath.get(localChildpathPos)))
 			{
-				if (childPath.size() > 1)
+				//each level of the child path must match as we recurse, otherwise, we start over looking for a match.
+				localChildpathPos = 0;
+			}
+			
+			if (e.getName().equals(childPath.get(localChildpathPos)))
+			{
+				if (childPath.size() > localChildpathPos + 1)
 				{
-					result.addAll(findAllValues(e, childPath.subList(1, childPath.size()), attributeName));
+					//Check for a match on the next level of the child path.
+					result.addAll(findAllValues(e, childPath, attributeName, localChildpathPos + 1));
 				}
 				else
 				{
-					String temp = e.getAttributeValue(attributeName);
+					//Matched all the way to the the end of the child path.  Store the value.
+					String temp;
+					if (attributeName == null)
+					{
+						temp = e.getText();
+					}
+					else
+					{
+						temp = e.getAttributeValue(attributeName);
+					}
 					if (temp != null)
 					{
 						result.add(temp);
@@ -83,8 +100,8 @@ public class Spl
 				}
 			}
 
-			//recurse down
-			result.addAll(findAllValues(e, childPath, attributeName));
+			// recurse down
+			result.addAll(findAllValues(e, childPath, attributeName, localChildpathPos));
 
 		}
 		return result;

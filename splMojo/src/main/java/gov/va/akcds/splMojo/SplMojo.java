@@ -109,7 +109,7 @@ public class SplMojo extends AbstractMojo
 			}			
 			
 			System.out.println();
-			System.out.println("Created " + conceptCounter_ + "metadata concepts");
+			System.out.println("Created " + conceptCounter_ + " metadata concepts");
 			conceptCounter_ = 0;
 
 			// get the data directory
