@@ -59,7 +59,6 @@ public class Spl
 	 * Find all instances of the specified hierarchy under any parent path.
 	 * 
 	 */
-	//TODO retest this updated version
 	@SuppressWarnings("unchecked")
 	private ArrayList<String> findAllValues(Element lookUnder, List<String> childPath, String attributeName, int childPathPos)
 	{
