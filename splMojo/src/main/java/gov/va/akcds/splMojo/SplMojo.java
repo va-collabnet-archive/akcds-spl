@@ -59,6 +59,8 @@ public class SplMojo extends AbstractMojo
 	private DataOutputStream dos_;
 	private long conceptCounter_ = 0;
 	private long xmlFileCnt_ = 0;
+	
+	private boolean createLetterRoots_ = true;  //switch this to false to generate a flat structure under the spl root concept
 
 	public SplMojo() throws Exception
 	{
@@ -97,16 +99,19 @@ public class SplMojo extends AbstractMojo
 
 			storeConcept(rootConcept);
 			
-			//Set up letter roots to organize the labels
-			for (int i = 65; i <= 90; i++)
+			if (createLetterRoots_)
 			{
-				String s = new String(Character.toChars(i));
-				
-				EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root:" + s).getBytes()), s, System.currentTimeMillis());
-				letterRoots_.put(i, concept.getPrimordialUuid());
-				conceptUtility_.addRelationship(concept, rootConcept.getPrimordialUuid(), null);
-				storeConcept(concept);
-			}			
+				//Set up letter roots to organize the labels
+				for (int i = 65; i <= 90; i++)
+				{
+					String s = new String(Character.toChars(i));
+					
+					EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root:" + s).getBytes()), s, System.currentTimeMillis());
+					letterRoots_.put(i, concept.getPrimordialUuid());
+					conceptUtility_.addRelationship(concept, rootConcept.getPrimordialUuid(), null);
+					storeConcept(concept);
+				}	
+			}
 			
 			System.out.println();
 			System.out.println("Created " + conceptCounter_ + " metadata concepts");
@@ -269,20 +274,30 @@ public class SplMojo extends AbstractMojo
 			
 			//Find the right letter parent to to place it under.
 			UUID parentUUID = null;
-			for (int i = 0; i < drugName.length(); i++)
+			
+			if (createLetterRoots_)
 			{
-				if (parentUUID != null)
+			
+				for (int i = 0; i < drugName.length(); i++)
 				{
-					break;
+					if (parentUUID != null)
+					{
+						break;
+					}
+					parentUUID = letterRoots_.get(drugName.codePointAt(i));
 				}
-				parentUUID = letterRoots_.get(drugName.codePointAt(i));
+	
+				if (parentUUID == null)
+				{
+					//Still null?  No letters in the name?
+					parentUUID = rootConceptUUID;
+				}
 			}
-
-			if (parentUUID == null)
+			else
 			{
-				//Still null?  No letters in the name?
 				parentUUID = rootConceptUUID;
 			}
+			
 			conceptUtility_.addRelationship(concept, parentUUID, null);
 
 			storeConcept(concept);
