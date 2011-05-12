@@ -11,7 +11,7 @@ public enum StaticDataType
 	DRAFT_FACT_TRIPLE("Draft Fact Triple", "Draft Fact Triple"),
 	DRAFT_FACT_SENTENCE("Draft Fact Sentence", "The source of the draft fact"),
 	DRAFT_FACT_DRUG_NAME("Drug Name", "The drug name from the NDC"), 
-	DRAFT_FACT_DRUG_CODE("Drug Code", "The NDC drug code"),
+	DRAFT_FACT_DRUG_CODE("NDC", "The New Drug Code"),
 	DRAFT_FACT_SNOMED_CONCEPT_NAME("Snomed Concept Name", "The name of the snomed concept code"),
 	DRAFT_FACT_SNOMED_CONCEPT_CODE("Snomed Concept Code", "The snomed concept code"),
 	SPL_XML_TEXT("SPL XML Text", "The entire SPL XML document."), 
