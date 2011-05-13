@@ -1,11 +1,15 @@
 package gov.va.akcds.util.wbDraftFacts;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.zip.ZipInputStream;
 
 public class DraftFacts {
 
@@ -21,6 +25,9 @@ public class DraftFacts {
 
 	private File draftFactsRoot_;
 
+	/**
+	 * Data file should be a zip file containing only the draft facts text file
+	 */
 	public DraftFacts(File dataFile, File expansionFolder) throws Exception
 	{
 		draftFactsRoot_ = expansionFolder;
@@ -40,7 +47,11 @@ public class DraftFacts {
 	public void init(File dataFile) throws Exception {
 		System.out.println("Reorganizing draft facts by set id");
 
-		BufferedReader in = new BufferedReader(new FileReader(dataFile));
+		ZipInputStream zis = new ZipInputStream(new BufferedInputStream(new FileInputStream(dataFile)));
+		//Point to the first (and only) expected file in this zip file
+		zis.getNextEntry();
+		
+		BufferedReader in =  new BufferedReader(new InputStreamReader(zis));
 		String prevSplSetId = "";
 		File outFile = null;
 		BufferedWriter out = null;

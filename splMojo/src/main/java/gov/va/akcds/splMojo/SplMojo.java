@@ -122,7 +122,7 @@ public class SplMojo extends AbstractMojo
 
 			// load the draft facts
 			System.out.println("Loading draft facts:");
-			File draftFactsFile = new File(dataDir, "splDraftFacts.txt");
+			File draftFactsFile = new File(dataDir, "splDraftFacts.txt.zip");
 			draftFacts = new DraftFacts(draftFactsFile, new File(outputDirectory, "draftFactsByID"));
 
 			// source file (splSrcData.zip is a zip of zips)
