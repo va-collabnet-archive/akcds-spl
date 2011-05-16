@@ -1,5 +1,17 @@
 package gov.va.akcds.splMojo;
 
+/**
+ * In general, this tool simply loads the SPL documents provided in the zip file - combining them with draft facts.
+ * 
+ * However, there are a couple of additional filter steps:
+ * 
+ * We toss any document where we don't have any draft facts.
+ * We toss any NDAs that start with 'ANADA', 'NADA', or 'part'
+ * If there are no remaining NDAs left on the SPL document at that point, we toss the entire document, 
+ * even if we have draft facts for that document.
+ */
+
+import gov.va.akcds.spl.NDA;
 import gov.va.akcds.spl.Spl;
 import gov.va.akcds.splMojo.dataTypes.DynamicDataType;
 import gov.va.akcds.splMojo.dataTypes.StaticDataType;
@@ -57,8 +69,11 @@ public class SplMojo extends AbstractMojo
 	private UUID ndaTypeRoot_, draftFactsRoot_;
 
 	private DataOutputStream dos_;
+	private long metadataConceptCounter_ = 0;
 	private long conceptCounter_ = 0;
 	private long xmlFileCnt_ = 0;
+	private ArrayList<String> dropForNoFacts_ = new ArrayList<String>();
+	private ArrayList<String> dropForNoNDAs_ = new ArrayList<String>();
 	
 	private boolean createLetterRoots_ = true;  //switch this to false to generate a flat structure under the spl root concept
 
@@ -98,6 +113,7 @@ public class SplMojo extends AbstractMojo
 			conceptUtility_.addDescription(rootConcept, "1.0",  StaticDataType.VERSION.getUuid());
 
 			storeConcept(rootConcept);
+			metadataConceptCounter_++;
 			
 			if (createLetterRoots_)
 			{
@@ -110,12 +126,12 @@ public class SplMojo extends AbstractMojo
 					letterRoots_.put(i, concept.getPrimordialUuid());
 					conceptUtility_.addRelationship(concept, rootConcept.getPrimordialUuid(), null);
 					storeConcept(concept);
+					metadataConceptCounter_++;
 				}	
 			}
 			
 			System.out.println();
-			System.out.println("Created " + conceptCounter_ + " metadata concepts");
-			conceptCounter_ = 0;
+			System.out.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
 
 			// get the data directory
 			File dataDir = new File(outputDirectory.getParentFile(), "data");
@@ -126,12 +142,14 @@ public class SplMojo extends AbstractMojo
 			draftFacts = new DraftFacts(draftFactsFile, new File(outputDirectory, "draftFactsByID"));
 
 			// source file (splSrcData.zip is a zip of zips)
-			String dataFileName = "splSrcData.zip";
+			File dataFile = new File(dataDir, "splSrcData.zip");
+			//File dataFile = new File("/media/truecrypt2/Source Data/SPL 2010_11_02/dm_spl_release_20101102-filtered - blackbox or aers top 100.zip");
+			
 
 			System.out.println(new Date().toString());
 			System.out.println("Reading spl zip file");
 			// process the zip of zips
-			ZipContentsIterator outerZCI = new ZipContentsIterator(new File(dataDir, dataFileName));
+			ZipContentsIterator outerZCI = new ZipContentsIterator(dataFile);
 
 			while (outerZCI.hasMoreElements())
 			{
@@ -174,6 +192,15 @@ public class SplMojo extends AbstractMojo
 			// write the meta data concepts
 			System.out.println("TOTAL SPL FILES:   " + xmlFileCnt_);
 			System.out.println("TOTAL concepts created: " + conceptCounter_);
+			System.out.println("Metadata concepts created: " + metadataConceptCounter_);
+			System.out.println("SPL concepts created: " + (conceptCounter_ - metadataConceptCounter_));
+			System.out.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
+			System.out.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");
+//			System.out.println("No NDAs:");
+//			for (String s : dropForNoNDAs_)
+//			{
+//				System.out.println(s);
+//			}
 
 			dos_.flush();
 			dos_.close();
@@ -191,7 +218,7 @@ public class SplMojo extends AbstractMojo
 		// Set up a meta-data root concept
 		UUID archRoot = ArchitectonicAuxiliary.Concept.ARCHITECTONIC_ROOT_CONCEPT.getPrimoridalUid();
 		UUID metaDataRoot = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata").getBytes());
-		writeAuxEConcept(metaDataRoot, "VA AKCDS Metadata", "", archRoot);
+		writeAuxEConcept(metaDataRoot, "SPL Metadata", "", archRoot);
 
 		UUID typesRoot = UUID.nameUUIDFromBytes((uuidRoot_ + ":metadata:types").getBytes());
 		writeAuxEConcept(typesRoot, "Types", "", metaDataRoot);
@@ -212,96 +239,113 @@ public class SplMojo extends AbstractMojo
 	{
 		// get the facts
 		ArrayList<DraftFact> splDraftFacts = draftFacts.getFacts(spl.getSetId());
-
-		// if there are no facts don't add the spl (it complicates things)
-		if (splDraftFacts.size() > 0)
+		
+		if (splDraftFacts.size() == 0 || !spl.hasAtLeastOneNDA())
 		{
-			//For drug name and drug code, we just use the values from the first draft fact.  all draft facts should have the same value for these fields.
-			String drugName = splDraftFacts.get(0).getDrugName();
-			EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":" + spl.getSetId()).getBytes()),
-					drugName, System.currentTimeMillis());
-
-			conceptUtility_.addAdditionalId(concept, spl.getSetId(), StaticDataType.SET_ID.getUuid());
-			conceptUtility_.addAdditionalId(concept, splDraftFacts.get(0).getDrugCode(), StaticDataType.DRAFT_FACT_DRUG_CODE.getUuid());
-			
-			conceptUtility_.addDescription(concept, drugName, StaticDataType.DRAFT_FACT_DRUG_NAME.getUuid());
-
-			// add an annotation to the conceptAttributes for each draft fact
-			if (splDraftFacts != null)
+			// if there are no facts don't add the spl (it complicates things)
+			// also drop anything with no nda values
+			if (splDraftFacts.size() == 0)
 			{
-				for (int i = 0; i < splDraftFacts.size(); i++)
-				{
-					DraftFact fact = splDraftFacts.get(i);
-					
-					UUID draftFact = getDraftFactType(fact.getRoleName()).getIdentifier();
-					
-					TkRefsetCidCidCidMember triple = conceptUtility_.addCIDTriple(concept, concept.getPrimordialUuid(), draftFact, 
-							Type3UuidFactory.fromSNOMED(fact.getConceptCode()), StaticDataType.DRAFT_FACT_TRIPLE.getUuid());
-					
-					conceptUtility_.addAnnotation(triple, fact.getConceptName(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_NAME.getUuid());
-					conceptUtility_.addAnnotation(triple, fact.getConceptCode(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_CODE.getUuid());
-					conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.DRAFT_FACT_SENTENCE.getUuid());
-				}
-			}
-
-			conceptUtility_.addAnnotation(concept, spl.getXMLFileAsString(), StaticDataType.SPL_XML_TEXT.getUuid());
-
-			ArrayList<ZipFileContent> media = spl.getSupportingFiles();
-			for (ZipFileContent zfc : media)
-			{
-				String fileName = zfc.getName();
-				int splitPos = fileName.lastIndexOf('.');
-				String extension = ((splitPos + 1 <= fileName.length() ? fileName.substring(splitPos + 1) : ""));
-				conceptUtility_.addMedia(concept, StaticDataType.IMAGE.getUuid(), zfc.getFileBytes(), extension, fileName);
-			}
-			
-			for (String nda : spl.getUniqueNDAs())
-			{
-				int split = 0;
-				for (int i = 0; i < nda.length(); i++)
-				{
-					if (Character.isDigit(nda.charAt(i)))
-					{
-						split = i;
-						break;
-					}
-				}
-				String type = nda.substring(0, split);
-				String value = nda.substring(split, nda.length());
-				DynamicDataType ddt = getNDAType(type);
-				conceptUtility_.addAnnotation(concept, value, ddt.getIdentifier());
-			}
-			
-			//Find the right letter parent to to place it under.
-			UUID parentUUID = null;
-			
-			if (createLetterRoots_)
-			{
-			
-				for (int i = 0; i < drugName.length(); i++)
-				{
-					if (parentUUID != null)
-					{
-						break;
-					}
-					parentUUID = letterRoots_.get(drugName.codePointAt(i));
-				}
-	
-				if (parentUUID == null)
-				{
-					//Still null?  No letters in the name?
-					parentUUID = rootConceptUUID;
-				}
+				dropForNoFacts_.add(spl.getSetId());
 			}
 			else
 			{
+				dropForNoNDAs_.add(spl.getSetId());
+			}
+			return;
+		}
+
+		//For drug name and drug code, we just use the values from the first draft fact.  all draft facts should have the same value for these fields.
+		String drugName = splDraftFacts.get(0).getDrugName();
+		EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":" + spl.getSetId()).getBytes()),
+				drugName, System.currentTimeMillis());
+
+		conceptUtility_.addAdditionalId(concept, spl.getSetId(), StaticDataType.SET_ID.getUuid());
+		conceptUtility_.addAdditionalId(concept, splDraftFacts.get(0).getDrugCode(), StaticDataType.DRAFT_FACT_DRUG_CODE.getUuid());
+		
+		conceptUtility_.addDescription(concept, drugName, StaticDataType.DRAFT_FACT_DRUG_NAME.getUuid());
+
+		// add an annotation to the conceptAttributes for each draft fact
+		if (splDraftFacts != null)
+		{
+			for (int i = 0; i < splDraftFacts.size(); i++)
+			{
+				DraftFact fact = splDraftFacts.get(i);
+				
+				UUID draftFactRoleUUID = getDraftFactType(fact.getRoleName()).getIdentifier();
+				UUID draftFactTargetUUID = null;
+				
+				//This is an oddity discovered later in the draft facts... which wasn't documented.  Not sure what the correct solution is, 
+				//but will do this for now....
+				if (fact.getConceptCode().equals("1"))
+				{
+					draftFactTargetUUID = StaticDataType.DRAFT_FACT_TRUE.getUuid();
+				}
+				else if (fact.getConceptCode().equals("0"))
+				{
+					draftFactTargetUUID = StaticDataType.DRAFT_FACT_FALSE.getUuid();
+				}
+				else
+				{
+					draftFactTargetUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
+				}
+				
+				TkRefsetCidCidCidMember triple = conceptUtility_.addCIDTriple(concept, concept.getPrimordialUuid(), draftFactRoleUUID, 
+						draftFactTargetUUID, StaticDataType.DRAFT_FACT_TRIPLE.getUuid());
+				
+				conceptUtility_.addAnnotation(triple, fact.getConceptName(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_NAME.getUuid());
+				conceptUtility_.addAnnotation(triple, fact.getConceptCode(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_CODE.getUuid());
+				conceptUtility_.addAnnotation(triple, fact.getSecName(), StaticDataType.DRAFT_FACT_SEC_NAME.getUuid());
+				conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.DRAFT_FACT_SENTENCE.getUuid());
+			}
+		}
+
+		conceptUtility_.addAnnotation(concept, spl.getXMLFileAsString(), StaticDataType.SPL_XML_TEXT.getUuid());
+
+		ArrayList<ZipFileContent> media = spl.getSupportingFiles();
+		for (ZipFileContent zfc : media)
+		{
+			String fileName = zfc.getName();
+			int splitPos = fileName.lastIndexOf('.');
+			String extension = ((splitPos + 1 <= fileName.length() ? fileName.substring(splitPos + 1) : ""));
+			conceptUtility_.addMedia(concept, StaticDataType.IMAGE.getUuid(), zfc.getFileBytes(), extension, fileName);
+		}
+		
+		for (NDA nda : spl.getUniqueNDAs())
+		{
+			DynamicDataType ddt = getNDAType(nda.getType());
+			conceptUtility_.addAnnotation(concept, nda.getValue(), ddt.getIdentifier());
+		}
+		
+		//Find the right letter parent to to place it under.
+		UUID parentUUID = null;
+		
+		if (createLetterRoots_)
+		{
+		
+			for (int i = 0; i < drugName.length(); i++)
+			{
+				if (parentUUID != null)
+				{
+					break;
+				}
+				parentUUID = letterRoots_.get(drugName.codePointAt(i));
+			}
+
+			if (parentUUID == null)
+			{
+				//Still null?  No letters in the name?
 				parentUUID = rootConceptUUID;
 			}
-			
-			conceptUtility_.addRelationship(concept, parentUUID, null);
-
-			storeConcept(concept);
 		}
+		else
+		{
+			parentUUID = rootConceptUUID;
+		}
+		
+		conceptUtility_.addRelationship(concept, parentUUID, null);
+
+		storeConcept(concept);
 	}
 	
 	private DynamicDataType getNDAType(String type) throws Exception
@@ -342,6 +386,7 @@ public class SplMojo extends AbstractMojo
 			conceptUtility_.addDescription(concept, description, ArchitectonicAuxiliary.Concept.TEXT_DEFINITION_TYPE.getPrimoridalUid());
 		}
 		storeConcept(concept);
+		metadataConceptCounter_++;
 	}
 
 	/**

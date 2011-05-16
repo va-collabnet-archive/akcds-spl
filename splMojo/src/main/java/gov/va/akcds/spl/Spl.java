@@ -20,7 +20,9 @@ public class Spl
 	private ArrayList<ZipFileContent> supportingFiles_;
 
 	private String setId_, version_, firstApprovedDate_;
-	private HashSet<String> uniqueNdas_ = new HashSet<String>();
+	private HashSet<NDA> uniqueNdas_ = new HashSet<NDA>();
+	
+	private HashSet<String> ndaTypesToDrop_ = new HashSet<String>(Arrays.asList(new String[] {"ANADA", "NADA", "part"}));
 
 	public Spl(ArrayList<ZipFileContent> files, String sourceZipFileName) throws Exception
 	{
@@ -51,7 +53,15 @@ public class Spl
 
 		setId_ = getValue(rootElement, "setId", "root");
 		version_ = getValue(rootElement, "versionNumber", "value");
-		uniqueNdas_.addAll(findAllValues(rootElement, Arrays.asList(new String[] {"subjectOf", "approval", "id"}), "extension", 0));
+		ArrayList<String> rawNDAs = findAllValues(rootElement, Arrays.asList(new String[] {"subjectOf", "approval", "id"}), "extension", 0);
+		for (String s : rawNDAs)
+		{
+			NDA nda = new NDA(s);
+			if (!ndaTypesToDrop_.contains(nda.getType())) 
+			{
+				uniqueNdas_.add(new NDA(s));
+			}
+		}
 		firstApprovedDate_ = getValue(rootElement, new String[] { "verifier", "time" }, "value");
 	}
 	
@@ -187,8 +197,17 @@ public class Spl
 		return xmlFile_.getFileBytes().length;
 	}
 	
-	public HashSet<String> getUniqueNDAs()
+	public HashSet<NDA> getUniqueNDAs()
 	{
 		return uniqueNdas_;
+	}
+	
+	public boolean hasAtLeastOneNDA()
+	{
+		if (uniqueNdas_ != null && uniqueNdas_.size() > 0)
+		{
+			return true;
+		}
+		return false;
 	}
 }
