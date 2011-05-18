@@ -143,6 +143,7 @@ public class SplMojo extends AbstractMojo
 
 			// source file (splSrcData.zip is a zip of zips)
 			File dataFile = new File(dataDir, "splSrcData.zip");
+			//File dataFile = new File("/media/truecrypt2/Source Data/SPL 2010_11_02", "dm_spl_release_20101102-filtered - blackbox or aers top 100.zip");
 
 			System.out.println(new Date().toString());
 			System.out.println("Reading spl zip file");
@@ -196,6 +197,12 @@ public class SplMojo extends AbstractMojo
 			System.out.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");
 //			System.out.println("No NDAs:");
 //			for (String s : dropForNoNDAs_)
+//			{
+//				System.out.println(s);
+//			}
+//			
+//			System.out.println("No Draft Facts:");
+//			for (String s : dropForNoFacts_)
 //			{
 //				System.out.println(s);
 //			}
