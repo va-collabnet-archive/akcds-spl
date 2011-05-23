@@ -17,6 +17,7 @@ public enum StaticDataType
 	DRAFT_FACT_SNOMED_CONCEPT_CODE("Snomed Concept Code", "The snomed concept code"),
 	DRAFT_FACT_TRUE("True", "Draft facts somtimes contain true/false instead of snomed concept code / name"),
 	DRAFT_FACT_FALSE("False", "Draft facts somtimes contain true/false instead of snomed concept code / name"),
+	DRAFT_FACT_REVIEW_RESULT("Draft Fact Review Result", "Annotation type used to store the result of the manual review"),
 	SPL_XML_TEXT("SPL XML Text", "The entire SPL XML document."), 
 	IMAGE("Image", "An image that is referenced from the SPL XML document"), 
 	VERSION("Version","Version number of the SPL data load"), 
