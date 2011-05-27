@@ -302,6 +302,7 @@ public class SplMojo extends AbstractMojo
 				conceptUtility_.addAnnotation(triple, fact.getConceptCode(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_CODE.getUuid());
 				conceptUtility_.addAnnotation(triple, fact.getSecName(), StaticDataType.DRAFT_FACT_SEC_NAME.getUuid());
 				conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.DRAFT_FACT_SENTENCE.getUuid());
+				conceptUtility_.addAnnotation(triple, fact.getRowId(), StaticDataType.DRAFT_FACT_UNIQUE_ID.getUuid());
 			}
 		}
 

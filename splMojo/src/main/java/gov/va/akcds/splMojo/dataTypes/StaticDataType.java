@@ -11,6 +11,7 @@ public enum StaticDataType
 	DRAFT_FACT_TRIPLE("Draft Fact Triple", "Draft Fact Triple"),
 	DRAFT_FACT_SENTENCE("Draft Fact Sentence", "The source of the draft fact"),
 	DRAFT_FACT_SEC_NAME("Draft Fact Section Name", "The section source of the draft fact"),
+	DRAFT_FACT_UNIQUE_ID("Draft Fact Unique ID", "A unique value we have assigned to this draft fact"),
 	DRAFT_FACT_DRUG_NAME("Drug Name", "The drug name from the NDC"), 
 	DRAFT_FACT_DRUG_CODE("NDC", "The New Drug Code"),
 	DRAFT_FACT_SNOMED_CONCEPT_NAME("Snomed Concept Name", "The name of the snomed concept code"),
