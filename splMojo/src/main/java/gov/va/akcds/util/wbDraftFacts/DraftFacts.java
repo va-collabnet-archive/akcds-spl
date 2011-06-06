@@ -33,15 +33,12 @@ public class DraftFacts {
 		draftFactsRoot_ = expansionFolder;
 		draftFactsRoot_.mkdirs();
 		
-		if (draftFactsRoot_.list().length > 50)  //arbitrary size
+		for (File f : draftFactsRoot_.listFiles())
 		{
-			System.out.println("Draft facts already organized.  Using existing cache: " + draftFactsRoot_.getAbsolutePath());
-			return;
+			f.delete();
 		}
-		else
-		{
-			init(dataFile);
-		}
+		
+		init(dataFile);
 	}
 
 	public void init(File dataFile) throws Exception {

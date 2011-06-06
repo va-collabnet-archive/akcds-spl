@@ -29,6 +29,16 @@ public class DraftFact {
 		this.newFileName = tokens[21];
 		this.sentence = tokens[22];
 		this.sentenceNumber = tokens[23];
+		
+		if (tokens.length > 24)
+		{
+			this.curationState = tokens[24];
+		}
+		
+		if (tokens.length > 25)
+		{
+			this.comment = tokens[25];
+		}
 	}
 	
 	private String rowId;
@@ -78,6 +88,9 @@ public class DraftFact {
 	private String sentence;
 	
 	private String sentenceNumber;
+	
+	private String curationState;
+	private String comment;
 
 	public String getRowId() {
 		return rowId;
@@ -271,4 +284,21 @@ public class DraftFact {
 		this.sentenceNumber = sentenceNumber;
 	}
 
+	public String getCurationState() {
+		return curationState;
+	}
+
+	public void setCurationState(String curationState) {
+		this.curationState = curationState;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	
 }

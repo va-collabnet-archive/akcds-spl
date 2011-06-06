@@ -52,6 +52,23 @@
 							<goal>convert-spl-to-jbin</goal>
 						</goals>
 						<phase>generate-resources</phase>
+						<configuration>
+							<facts>data/splDraftFacts.txt.zip</facts>
+							<zips>data/splSrcData.zip</zips>
+							<output>${project.build.directory}/splData.jbin</output>
+						</configuration>
+					</execution>
+					<execution>
+						<id>genereate-bw-jbin</id>
+						<goals>
+							<goal>convert-spl-to-jbin</goal>
+						</goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<facts>data/bwData.txt.zip</facts>
+							<zips>data/bwSrcData.zip</zips>
+							<output>${project.build.directory}/bwData.jbin</output>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>

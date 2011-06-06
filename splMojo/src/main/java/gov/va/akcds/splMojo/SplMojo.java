@@ -28,7 +28,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.UUID;
 
 import org.apache.maven.plugin.AbstractMojo;
@@ -52,13 +54,37 @@ public class SplMojo extends AbstractMojo
 	public static final String uuidRoot_ = "gov.va.spl";
 
 	/**
-	 * Location of the file.
+	 * Draft facts parent dir.
 	 * 
 	 * @parameter expression="${project.build.directory}"
 	 * @required
 	 */
-
 	private File outputDirectory;
+	
+	/**
+	 * Location of the file.
+	 * 
+	 * @parameter
+	 * @required
+	 */
+	private File output;
+	
+	/**
+	 * Location of the data.
+	 * 
+	 * @parameter
+	 * @required
+	 */
+	private File facts;
+	
+	
+	/**
+	 * Location of the source.
+	 * 
+	 * @parameter
+	 * @required
+	 */
+	private File zips;
 
 	private EConceptUtility conceptUtility_ = new EConceptUtility(uuidRoot_);
 
@@ -84,7 +110,6 @@ public class SplMojo extends AbstractMojo
 	/**
 	 * Method used by maven to create the .jbin data file.
 	 */
-
 	public void execute() throws MojoExecutionException
 	{
 
@@ -96,13 +121,14 @@ public class SplMojo extends AbstractMojo
 			System.out.println(new Date().toString());
 
 			// output directory
-			if (outputDirectory.exists() == false)
+			System.out.println(getOutput());
+			if (getOutput().getParentFile().exists() == false)
 			{
-				outputDirectory.mkdirs();
+				getOutput().getParentFile().mkdirs();
 			}
 
 			// jbin (output) file
-			File jbinFile = new File(outputDirectory, "splData.jbin");
+			File jbinFile = getOutput();
 			dos_ = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(jbinFile)));
 
 			createMetaData();
@@ -133,17 +159,13 @@ public class SplMojo extends AbstractMojo
 			System.out.println();
 			System.out.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
 
-			// get the data directory
-			File dataDir = new File(outputDirectory.getParentFile(), "data");
-
 			// load the draft facts
 			System.out.println("Loading draft facts:");
-			File draftFactsFile = new File(dataDir, "splDraftFacts.txt.zip");
+			File draftFactsFile = getFacts();
 			draftFacts = new DraftFacts(draftFactsFile, new File(outputDirectory, "draftFactsByID"));
 
 			// source file (splSrcData.zip is a zip of zips)
-			File dataFile = new File(dataDir, "splSrcData.zip");
-			//File dataFile = new File("/media/truecrypt2/Source Data/SPL 2010_11_02", "dm_spl_release_20101102-filtered - blackbox or aers top 100.zip");
+			File dataFile = getZips();
 
 			System.out.println(new Date().toString());
 			System.out.println("Reading spl zip file");
@@ -195,17 +217,6 @@ public class SplMojo extends AbstractMojo
 			System.out.println("SPL concepts created: " + (conceptCounter_ - metadataConceptCounter_));
 			System.out.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
 			System.out.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");
-//			System.out.println("No NDAs:");
-//			for (String s : dropForNoNDAs_)
-//			{
-//				System.out.println(s);
-//			}
-//			
-//			System.out.println("No Draft Facts:");
-//			for (String s : dropForNoFacts_)
-//			{
-//				System.out.println(s);
-//			}
 
 			dos_.flush();
 			dos_.close();
@@ -292,7 +303,7 @@ public class SplMojo extends AbstractMojo
 				}
 				else
 				{
-					draftFactTargetUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
+					draftFactTargetUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());				
 				}
 				
 				TkRefsetCidCidCidMember triple = conceptUtility_.addCIDTriple(concept, concept.getPrimordialUuid(), draftFactRoleUUID, 
@@ -302,7 +313,16 @@ public class SplMojo extends AbstractMojo
 				conceptUtility_.addAnnotation(triple, fact.getConceptCode(), StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_CODE.getUuid());
 				conceptUtility_.addAnnotation(triple, fact.getSecName(), StaticDataType.DRAFT_FACT_SEC_NAME.getUuid());
 				conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.DRAFT_FACT_SENTENCE.getUuid());
-				conceptUtility_.addAnnotation(triple, fact.getRowId(), StaticDataType.DRAFT_FACT_UNIQUE_ID.getUuid());
+				
+				if (fact.getCurationState() != null)
+				{
+					conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.CURATION_STATE.getUuid());
+				}
+				
+				if (fact.getComment() != null)
+				{
+					conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.COMMENT.getUuid());
+				}
 			}
 		}
 
@@ -335,7 +355,7 @@ public class SplMojo extends AbstractMojo
 				{
 					break;
 				}
-				parentUUID = letterRoots_.get(drugName.codePointAt(i));
+				parentUUID = letterRoots_.get(drugName.toUpperCase().codePointAt(i));
 			}
 
 			if (parentUUID == null)
@@ -417,10 +437,39 @@ public class SplMojo extends AbstractMojo
 		}
 	}
 
-	public static void main(String[] args) throws MojoExecutionException, Exception
-	{
-		SplMojo sm = new SplMojo();
-		sm.outputDirectory = new File("../splData/target/");
-		sm.execute();
+	public File getFacts() {
+		return facts;
 	}
+
+	public void setFacts(File facts) {
+		this.facts = facts;
+	}
+
+	public File getZips() {
+		return zips;
+	}
+
+	public void setZips(File zips) {
+		this.zips = zips;
+	}
+
+	public File getOutput() {
+		return output;
+	}
+
+	public void setOutput(File output) {
+		this.output = output;
+	}
+
+	public File getOutputDirectory() {
+		return outputDirectory;
+	}
+
+	public void setOutputDirectory(File outputDirectory) {
+		this.outputDirectory = outputDirectory;
+	}
+
+
+	
+	
 }
