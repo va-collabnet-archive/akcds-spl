@@ -58,6 +58,7 @@
 							<output>${project.build.directory}/splData.jbin</output>
 						</configuration>
 					</execution>
+					<!--  
 					<execution>
 						<id>genereate-bw-jbin</id>
 						<goals>
@@ -70,6 +71,7 @@
 							<output>${project.build.directory}/bwData.jbin</output>
 						</configuration>
 					</execution>
+					-->
 				</executions>
 			</plugin>
 		</plugins>
