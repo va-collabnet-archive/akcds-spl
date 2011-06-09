@@ -307,8 +307,7 @@ public class SplMojo extends AbstractMojo
 			conceptUtility_.addAdditionalId(concept, spl.getSetId(), StaticDataType.SET_ID.getUuid());
 			conceptUtility_.addAdditionalId(concept, fact.getDrugCode(), StaticDataType.DRAFT_FACT_DRUG_CODE.getUuid());		
 			conceptUtility_.addDescription(concept, drugName, StaticDataType.DRAFT_FACT_DRUG_NAME.getUuid());
-			conceptUtility_.addAnnotation(concept, spl.getVersion(), StaticDataType.SPL_VERSION.getUuid());			
-			conceptUtility_.addAnnotation(concept, spl.getVersion(), StaticDataType.SPL_VERSION.getUuid());			
+			conceptUtility_.addAnnotation(concept, spl.getVersion(), StaticDataType.SPL_VERSION.getUuid());						
 			
 			//Find the right letter parent to to place it under.
 			UUID parentUUID = null;
