@@ -39,6 +39,11 @@ public class DraftFact {
 		{
 			this.comment = tokens[25];
 		}
+		
+		if (tokens.length > 26)
+		{
+			this.splVersion = tokens[26];
+		}
 	}
 	
 	private String rowId;
@@ -91,6 +96,7 @@ public class DraftFact {
 	
 	private String curationState;
 	private String comment;
+	private String splVersion;
 
 	public String getRowId() {
 		return rowId;
@@ -300,5 +306,15 @@ public class DraftFact {
 		this.comment = comment;
 	}
 
-	
+	public String getSplVersion() {
+		if (splVersion == null)
+		{
+			splVersion = "-";
+		}
+		return splVersion;
+	}
+
+	public void setSplVersion(String version) {
+		this.splVersion = version;
+	}
 }

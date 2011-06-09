@@ -8,27 +8,23 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.zip.ZipInputStream;
 
+import org.apache.maven.plugin.MojoExecutionException;
+
 public class DraftFacts {
 
-	//
-	// N.B.
-	// Draft facts are written out to files because pulling all 1.5 million into
-	// memory caused heap overflow errors.
-	//
-
-	//
-	// instance variables
-	//
-
 	private File draftFactsRoot_;
+	
+	private Connection con;
 
 	/**
 	 * Data file should be a zip file containing only the draft facts text file
 	 */
-	public DraftFacts(File dataFile, File expansionFolder) throws Exception
+	public DraftFacts(File[] dataFiles, File expansionFolder) throws Exception
 	{
 		draftFactsRoot_ = expansionFolder;
 		draftFactsRoot_.mkdirs();
@@ -38,33 +34,38 @@ public class DraftFacts {
 			f.delete();
 		}
 		
-		init(dataFile);
+		for (File dataFile : dataFiles)
+		{
+			init(dataFile);
+		}
 	}
-
+	
 	public void init(File dataFile) throws Exception {
-		System.out.println("Reorganizing draft facts by set id");
+		System.out.println("Reorganizing draft facts by set id : "+dataFile);
 
 		ZipInputStream zis = new ZipInputStream(new BufferedInputStream(new FileInputStream(dataFile)));
 		//Point to the first (and only) expected file in this zip file
 		zis.getNextEntry();
-		
+						
 		BufferedReader in =  new BufferedReader(new InputStreamReader(zis));
-		String prevSplSetId = "";
+		String prevSetId = "";
 		File outFile = null;
 		BufferedWriter out = null;
 		int cnt = 0;
+		
 		for (String str = in.readLine(); str != null; str = in.readLine()) {
 			cnt++;
 			if (str.trim().length() > 0) {
-				DraftFact fact = new DraftFact(str);
-				String splSetId = fact.getSplSetId();
-				if (splSetId != null && splSetId.equals(prevSplSetId) == false) {
+				DraftFact fact = new DraftFact(str);				
+				String setId = fact.getSplSetId();
+				
+				if (setId != null && !setId.equals(prevSetId)) {
 					if (out != null) {
 						out.close();
 					}
-					outFile = new File(draftFactsRoot_, splSetId + ".txt");
-					out = new BufferedWriter(new FileWriter(outFile));
-					prevSplSetId = splSetId;
+					outFile = new File(draftFactsRoot_, setId + ".txt");
+					out = new BufferedWriter(new FileWriter(outFile, true));
+					prevSetId = setId;
 				}
 				out.write(str + "\n");
 			}
@@ -75,21 +76,21 @@ public class DraftFacts {
 				System.out.println("");
 			}
 		}
-		System.out.println("\nDone organizing draft facts.");
+		System.out.println("\nDone organizing draft facts:"+cnt);
 	}
 
 	/**
 	 * 
-	 * Method to get the facts for a given splSetId.
+	 * Method to get the facts for a given spl dir name.
 	 * 
 	 * @param splSetId
 	 * @return
 	 * 
 	 */
 
-	public ArrayList<DraftFact> getFacts(String splSetId) throws Exception {
+	public ArrayList<DraftFact> getFacts(String setId) throws Exception {
 		ArrayList<DraftFact> rtn = new ArrayList<DraftFact>();
-		File file = new File(draftFactsRoot_, splSetId + ".txt");
+		File file = new File(draftFactsRoot_, setId + ".txt");
 		if (file != null && file.exists()) {
 			BufferedReader in = new BufferedReader(new FileReader(file));
 			for (String str = in.readLine(); str != null; str = in.readLine()) {
