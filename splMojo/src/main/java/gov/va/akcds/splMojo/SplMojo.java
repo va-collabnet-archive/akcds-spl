@@ -102,6 +102,7 @@ public class SplMojo extends AbstractMojo
 	
 	private Hashtable<String, DynamicDataType> dynamicDataTypes_ = new Hashtable<String, DynamicDataType>();
 	private Hashtable<Integer, UUID> letterRoots_ = new Hashtable<Integer, UUID>();
+	private Hashtable<Integer, UUID> nsLetterRoots_ = new Hashtable<Integer, UUID>();
 	private UUID nonSnomed;
 	private UUID ndaTypeRoot_, draftFactsRoot_;
 
@@ -173,11 +174,8 @@ public class SplMojo extends AbstractMojo
 			metadataConceptCounter_++;			
 			
 			// Create the root concept (named non-snomed)
-			EConcept nonSnoConcept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed").getBytes()), "~non-SNOMED CT", System.currentTimeMillis());
-			nonSnomed = nonSnoConcept.getPrimordialUuid();
+			EConcept nonSnoConcept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed").getBytes()), "Non-SNOMED CT", System.currentTimeMillis());
 			conceptUtility_.addDescription(nonSnoConcept, "1.0",  StaticDataType.VERSION.getUuid());
-			// adding as child as it doesn'e seem to show up as a root concept?
-			conceptUtility_.addRelationship(nonSnoConcept, rootConcept.getPrimordialUuid(), null);
 			storeConcept(nonSnoConcept);
 			metadataConceptCounter_++;			
 
@@ -191,6 +189,12 @@ public class SplMojo extends AbstractMojo
 					EConcept concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root:" + s).getBytes()), s, System.currentTimeMillis());
 					letterRoots_.put(i, concept.getPrimordialUuid());
 					conceptUtility_.addRelationship(concept, rootConcept.getPrimordialUuid(), null);
+					storeConcept(concept);
+					metadataConceptCounter_++;
+					
+					concept = conceptUtility_.createConcept(UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed" + s).getBytes()), s, System.currentTimeMillis());
+					nsLetterRoots_.put(i, concept.getPrimordialUuid());
+					conceptUtility_.addRelationship(concept, nonSnoConcept.getPrimordialUuid(), null);
 					storeConcept(concept);
 					metadataConceptCounter_++;
 				}	
@@ -441,9 +445,23 @@ public class SplMojo extends AbstractMojo
 						nonSnomedTerms.add(draftFactTargetUUID);
 						EConcept newObject = conceptUtility_.createConcept(draftFactTargetUUID,
 								fact.getConceptName(), System.currentTimeMillis());
-						conceptUtility_.addRelationship(newObject, nonSnomed, null);
+						
+												
+						String name = fact.getConceptName();
+						for (int pos = 0; pos < name.length(); pos++)
+						{
+
+							UUID  parentUUID = nsLetterRoots_.get(name.codePointAt(pos));
+							if (parentUUID != null)
+							{
+								conceptUtility_.addRelationship(newObject, parentUUID, null);
+								break;
+							}
+						}
+						
+						
 						draftFactTargetUUID = newObject.getPrimordialUuid();
-						storeConcept(newObject);						
+						storeConcept(newObject);			
 					}
 				}
 				else
