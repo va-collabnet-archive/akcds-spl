@@ -64,7 +64,7 @@ public class SplMojo extends AbstractMojo
 	private File outputDirectory;
 	
 	/**
-	 * Location of the file.
+	 * Location of the output file.
 	 * 
 	 * @parameter
 	 * @required
@@ -80,7 +80,7 @@ public class SplMojo extends AbstractMojo
 	private File[] facts;
 	
 	/**
-	 * Location of the data.
+	 * The NDA filter flag.
 	 * 
 	 * @parameter
 	 * @required
@@ -89,7 +89,7 @@ public class SplMojo extends AbstractMojo
 	
 	
 	/**
-	 * Location of the source.
+	 * Location of the SPL source.
 	 * 
 	 * @parameter
 	 * @required
@@ -103,7 +103,6 @@ public class SplMojo extends AbstractMojo
 	private Hashtable<String, DynamicDataType> dynamicDataTypes_ = new Hashtable<String, DynamicDataType>();
 	private Hashtable<Integer, UUID> letterRoots_ = new Hashtable<Integer, UUID>();
 	private Hashtable<Integer, UUID> nsLetterRoots_ = new Hashtable<Integer, UUID>();
-	private UUID nonSnomed;
 	private UUID ndaTypeRoot_, draftFactsRoot_;
 
 	private DataOutputStream dos_;
@@ -115,10 +114,15 @@ public class SplMojo extends AbstractMojo
 	
 	private boolean createLetterRoots_ = true;  //switch this to false to generate a flat structure under the spl root concept
 	
-	private Map<UUID, ConceptData> conMap = new HashMap<UUID, ConceptData>();
 	
-	private Set<UUID> nonSnomedTerms =new HashSet<UUID>();
 	
+	private Set<UUID> nonSnomedTerms = new HashSet<UUID>();
+	
+	/**
+	 * Class to store local information about new concepts
+	 * @author blueneil
+	 *
+	 */
 	class ConceptData 
 	{
 		EConcept con;
@@ -297,7 +301,7 @@ public class SplMojo extends AbstractMojo
 		}
 	}
 	
-	private EConcept initialiseConcept(DraftFact fact, Spl spl, UUID rootConceptUUID) throws Exception
+	private EConcept initialiseConcept(DraftFact fact, Spl spl, UUID rootConceptUUID, Map<UUID, ConceptData> conMap) throws Exception
 	{
 		String drugName = fact.getDrugName().toUpperCase();
 		UUID key = UUID.nameUUIDFromBytes((uuidRoot_ + ":" + drugName+":"+spl.getSetId()+":"+spl.getVersion()).getBytes());
@@ -307,11 +311,12 @@ public class SplMojo extends AbstractMojo
 		{			
 			EConcept concept = conceptUtility_.createConcept(key,drugName, System.currentTimeMillis());
 			conceptData = new ConceptData(concept, drugName);
-			conMap.put(key, conceptData);
-			conceptUtility_.addAdditionalId(concept, spl.getSetId(), StaticDataType.SET_ID.getUuid());
+			conMap.put(key, conceptData);			
 			conceptUtility_.addAdditionalId(concept, fact.getDrugCode(), StaticDataType.DRAFT_FACT_DRUG_CODE.getUuid());		
 			conceptUtility_.addDescription(concept, drugName, StaticDataType.DRAFT_FACT_DRUG_NAME.getUuid());
-			conceptUtility_.addAnnotation(concept, spl.getVersion(), StaticDataType.SPL_VERSION.getUuid());						
+			// vesion and set id for the document id
+			conceptUtility_.addAnnotation(concept, spl.getVersion(), StaticDataType.SPL_VERSION.getUuid());
+			conceptUtility_.addAdditionalId(concept, spl.getSetId(), StaticDataType.SET_ID.getUuid());
 			
 			//Find the right letter parent to to place it under.
 			UUID parentUUID = null;
@@ -379,7 +384,8 @@ public class SplMojo extends AbstractMojo
 	
 	private void writeEConcept(Spl spl, UUID rootConceptUUID, String nestedZipFile) throws Exception
 	{
-		conMap.clear();
+		// the map of concepts for this document
+		Map<UUID, ConceptData> conMap = new HashMap<UUID, ConceptData>();
 		
 		// get the facts
 		ArrayList<DraftFact> splDraftFacts = draftFacts.getFacts(spl.getSetId());
@@ -407,28 +413,24 @@ public class SplMojo extends AbstractMojo
 				
 				DraftFact fact = splDraftFacts.get(i);
 
-				if (fact.getDrugName().equalsIgnoreCase("ALCOHOL"))
-				{
-					System.out.println(fact.getDrugName());
-				}
-				
+				// default version to that of current doc, for npl data as we don't know what it is
 				if (fact.getSplVersion().equals("-"))
 				{
 					fact.setSplVersion(spl.getVersion());
 				}
 				
+				// check the fact version matches that of this doc
 				if (!fact.getSplVersion().equals(spl.getVersion()))
 				{
 					continue;
 				}
 				
-				EConcept concept = initialiseConcept(fact, spl, rootConceptUUID);
+				EConcept concept = initialiseConcept(fact, spl, rootConceptUUID, conMap);
 				UUID draftFactRoleUUID = getDraftFactType(fact.getRoleName()).getIdentifier();
 				UUID draftFactTargetUUID = null;
 				
 				//This is an oddity discovered later in the draft facts... which wasn't documented.  Not sure what the correct solution is, 
-				//but will do this for now....
-								
+				//but will do this for now....								
 				if (fact.getConceptCode().equals("1"))
 				{
 					draftFactTargetUUID = StaticDataType.DRAFT_FACT_TRUE.getUuid();
@@ -439,6 +441,7 @@ public class SplMojo extends AbstractMojo
 				}				
 				else if (fact.getConceptCode().equals("-"))
 				{
+					// if the code is not set then we have a non-snomed concept
 					draftFactTargetUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":"+ spl.getSetId() + ":object:" + fact.getConceptName()).getBytes()); 
 					if (!nonSnomedTerms.contains(draftFactTargetUUID))
 					{
@@ -450,7 +453,6 @@ public class SplMojo extends AbstractMojo
 						String name = fact.getConceptName();
 						for (int pos = 0; pos < name.length(); pos++)
 						{
-
 							UUID  parentUUID = nsLetterRoots_.get(name.codePointAt(pos));
 							if (parentUUID != null)
 							{
@@ -458,13 +460,12 @@ public class SplMojo extends AbstractMojo
 								break;
 							}
 						}
-						
-						
+												
 						draftFactTargetUUID = newObject.getPrimordialUuid();
 						storeConcept(newObject);			
 					}
 				}
-				else
+				else // get the snomed concept
 				{
 					draftFactTargetUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
 				}
@@ -477,17 +478,13 @@ public class SplMojo extends AbstractMojo
 				conceptUtility_.addAnnotation(triple, fact.getSecName(), StaticDataType.DRAFT_FACT_SEC_NAME.getUuid());
 				conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.DRAFT_FACT_SENTENCE.getUuid());
 				conceptUtility_.addAnnotation(triple, fact.getRowId(), StaticDataType.DRAFT_FACT_UNIQUE_ID.getUuid());
-				conceptUtility_.addAnnotation(triple, fact.getCurationState(), StaticDataType.DRAFT_FACT_CURATION_STATE.getUuid());
-				conceptUtility_.addAnnotation(triple, fact.getComment(), StaticDataType.DRAFT_FACT_COMMENT.getUuid());
-				
-				if (fact.getCurationState() != null)
+				if (fact.getCurationState()!=null)
 				{
-					conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.CURATION_STATE.getUuid());
+					conceptUtility_.addAnnotation(triple, fact.getCurationState(), StaticDataType.DRAFT_FACT_CURATION_STATE.getUuid());
 				}
-				
-				if (fact.getComment() != null)
+				if(fact.getComment()!=null)
 				{
-					conceptUtility_.addAnnotation(triple, fact.getSentence(), StaticDataType.COMMENT.getUuid());
+					conceptUtility_.addAnnotation(triple, fact.getComment(), StaticDataType.DRAFT_FACT_COMMENT.getUuid());
 				}
 			}
 		}

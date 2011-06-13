@@ -29,6 +29,7 @@ public class DraftFacts {
 		draftFactsRoot_ = expansionFolder;
 		draftFactsRoot_.mkdirs();
 		
+		// deleting the temp files to allow safe appending.
 		for (File f : draftFactsRoot_.listFiles())
 		{
 			f.delete();
@@ -44,39 +45,40 @@ public class DraftFacts {
 		System.out.println("Reorganizing draft facts by set id : "+dataFile);
 
 		ZipInputStream zis = new ZipInputStream(new BufferedInputStream(new FileInputStream(dataFile)));
-		//Point to the first (and only) expected file in this zip file
-		zis.getNextEntry();
-						
-		BufferedReader in =  new BufferedReader(new InputStreamReader(zis));
+
 		String prevSetId = "";
 		File outFile = null;
 		BufferedWriter out = null;
 		int cnt = 0;
+		while (zis.getNextEntry() != null)
+		{						
+			BufferedReader in =  new BufferedReader(new InputStreamReader(zis));
 		
-		for (String str = in.readLine(); str != null; str = in.readLine()) {
-			cnt++;
-			if (str.trim().length() > 0) {
-				DraftFact fact = new DraftFact(str);				
-				String setId = fact.getSplSetId();
-				
-				if (setId != null && !setId.equals(prevSetId)) {
-					if (out != null) {
-						out.close();
+			for (String str = in.readLine(); str != null; str = in.readLine()) {
+				cnt++;
+				if (str.trim().length() > 0) {
+					DraftFact fact = new DraftFact(str);				
+					String setId = fact.getSplSetId();
+					
+					if (setId != null && !setId.equals(prevSetId)) {
+						if (out != null) {
+							out.close();
+						}
+						outFile = new File(draftFactsRoot_, setId + ".txt");
+						out = new BufferedWriter(new FileWriter(outFile, true));
+						prevSetId = setId;
 					}
-					outFile = new File(draftFactsRoot_, setId + ".txt");
-					out = new BufferedWriter(new FileWriter(outFile, true));
-					prevSetId = setId;
+					out.write(str + "\n");
 				}
-				out.write(str + "\n");
+				if (cnt % 1000 == 0) {
+					System.out.print(".");
+				}
+				if (cnt % 50000 == 0) {
+					System.out.println("");
+				}
 			}
-			if (cnt % 1000 == 0) {
-				System.out.print(".");
-			}
-			if (cnt % 50000 == 0) {
-				System.out.println("");
-			}
+			System.out.println("\nDone organizing draft facts:"+cnt);
 		}
-		System.out.println("\nDone organizing draft facts:"+cnt);
 	}
 
 	/**
@@ -91,10 +93,13 @@ public class DraftFacts {
 	public ArrayList<DraftFact> getFacts(String setId) throws Exception {
 		ArrayList<DraftFact> rtn = new ArrayList<DraftFact>();
 		File file = new File(draftFactsRoot_, setId + ".txt");
-		if (file != null && file.exists()) {
+		if (file != null && file.exists()) 
+		{
 			BufferedReader in = new BufferedReader(new FileReader(file));
-			for (String str = in.readLine(); str != null; str = in.readLine()) {
-				if (str.trim().length() > 0) {
+			for (String str = in.readLine(); str != null; str = in.readLine()) 
+			{
+				if (str.trim().length() > 0) 
+				{
 					DraftFact fact = new DraftFact(str);
 					rtn.add(fact);
 				}

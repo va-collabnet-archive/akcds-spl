@@ -24,9 +24,7 @@ public enum StaticDataType
 	SPL_XML_TEXT("SPL XML Text", "The entire SPL XML document."), 
 	IMAGE("Image", "An image that is referenced from the SPL XML document"), 
 	VERSION("Version","Version number of the SPL data load"), 
-	APPROVAL_NUMBER("Approval Number", "Approval number (which in the U.S. is the New Drug Application (NDA) number)"),
-	CURATION_STATE("Curation State","Pre curated data state"),
-	COMMENT("Comment","Data curation comment");
+	APPROVAL_NUMBER("Approval Number", "Approval number (which in the U.S. is the New Drug Application (NDA) number)");
 	
 
 	private String name_;
