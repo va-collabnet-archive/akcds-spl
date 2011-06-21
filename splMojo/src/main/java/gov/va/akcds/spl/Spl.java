@@ -1,16 +1,12 @@
 package gov.va.akcds.spl;
 
-import gov.va.akcds.util.zipUtil.ZipContentsIterator;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
 
 import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 import org.jdom.Document;
 import org.jdom.Element;
