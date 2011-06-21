@@ -13,7 +13,7 @@ public enum StaticDataType
 	DRAFT_FACT_SENTENCE("Draft Fact Sentence", "The source of the draft fact"),
 	DRAFT_FACT_SEC_NAME("Draft Fact Section Name", "The section source of the draft fact"),
 	DRAFT_FACT_SET_ID("Draft Fact Set ID", "The set id for the fact"),
-	DRAFT_FACT_SET_DATA("Draft Fact Set ID", "The set id data for the fact"),
+	DRAFT_FACT_SET_DATA("Draft Fact Set Data", "The set id data for the fact"),
 	DRAFT_FACT_UNIQUE_ID("Draft Fact Unique ID", "A unique value we have assigned to this draft fact"),
 	DRAFT_FACT_DRUG_NAME("Drug Name", "The drug name from the NDC"), 
 	DRAFT_FACT_DRUG_CODE("NDC", "The New Drug Code"),
