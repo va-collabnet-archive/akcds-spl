@@ -8,19 +8,13 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.zip.ZipInputStream;
-
-import org.apache.maven.plugin.MojoExecutionException;
 
 public class DraftFacts {
 
 	private File draftFactsRoot_;
 	
-	private Connection con;
-
 	/**
 	 * Data file should be a zip file containing only the draft facts text file
 	 */
@@ -41,8 +35,9 @@ public class DraftFacts {
 		}
 	}
 	
-	public void init(File dataFile) throws Exception {
-		System.out.println("Reorganizing draft facts by set id : "+dataFile);
+	public void init(File dataFile) throws Exception
+	{
+		System.out.println("Reorganizing draft facts by set id : " + dataFile);
 
 		ZipInputStream zis = new ZipInputStream(new BufferedInputStream(new FileInputStream(dataFile)));
 
@@ -51,17 +46,21 @@ public class DraftFacts {
 		BufferedWriter out = null;
 		int cnt = 0;
 		while (zis.getNextEntry() != null)
-		{						
-			BufferedReader in =  new BufferedReader(new InputStreamReader(zis));
-		
-			for (String str = in.readLine(); str != null; str = in.readLine()) {
+		{
+			BufferedReader in = new BufferedReader(new InputStreamReader(zis));
+
+			for (String str = in.readLine(); str != null; str = in.readLine())
+			{
 				cnt++;
-				if (str.trim().length() > 0) {
-					DraftFact fact = new DraftFact(str);				
+				if (str.trim().length() > 0)
+				{
+					DraftFact fact = new DraftFact(str);
 					String setId = fact.getSplSetId();
-					
-					if (setId != null && !setId.equals(prevSetId)) {
-						if (out != null) {
+
+					if (setId != null && !setId.equals(prevSetId))
+					{
+						if (out != null)
+						{
 							out.close();
 						}
 						outFile = new File(draftFactsRoot_, setId + ".txt");
@@ -70,14 +69,16 @@ public class DraftFacts {
 					}
 					out.write(str + "\n");
 				}
-				if (cnt % 1000 == 0) {
+				if (cnt % 1000 == 0)
+				{
 					System.out.print(".");
 				}
-				if (cnt % 50000 == 0) {
+				if (cnt % 50000 == 0)
+				{
 					System.out.println("");
 				}
 			}
-			System.out.println("\nDone organizing draft facts:"+cnt);
+			System.out.println("\nDone organizing draft facts:" + cnt);
 		}
 	}
 
@@ -90,15 +91,16 @@ public class DraftFacts {
 	 * 
 	 */
 
-	public ArrayList<DraftFact> getFacts(String setId) throws Exception {
+	public ArrayList<DraftFact> getFacts(String setId) throws Exception
+	{
 		ArrayList<DraftFact> rtn = new ArrayList<DraftFact>();
 		File file = new File(draftFactsRoot_, setId + ".txt");
-		if (file != null && file.exists()) 
+		if (file != null && file.exists())
 		{
 			BufferedReader in = new BufferedReader(new FileReader(file));
-			for (String str = in.readLine(); str != null; str = in.readLine()) 
+			for (String str = in.readLine(); str != null; str = in.readLine())
 			{
-				if (str.trim().length() > 0) 
+				if (str.trim().length() > 0)
 				{
 					DraftFact fact = new DraftFact(str);
 					rtn.add(fact);
@@ -107,5 +109,4 @@ public class DraftFacts {
 		}
 		return rtn;
 	}
-
 }
