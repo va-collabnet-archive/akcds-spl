@@ -1,7 +1,5 @@
 package gov.va.akcds.util;
 
-import gov.va.akcds.splMojo.dataTypes.StaticDataType;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
