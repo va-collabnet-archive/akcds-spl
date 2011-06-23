@@ -54,11 +54,11 @@
 						<phase>generate-resources</phase>
 						<configuration>
 							<facts>
-								<param>data/splDraftFacts.txt.zip</param>
-								<param>data/bwData.txt.zip</param>
+								<!-- param>data/splDraftFacts.txt.zip</param-->
+								<param>data/bwDraftFacts.txt.zip</param>
 							</facts>
-							<zips>data/srcData.zip</zips>
-							<output>${project.build.directory}/splData.jbin</output>
+							<splZipFile>data/splSrcFiles.zip</splZipFile>
+							<outputFileName>splData.jbin</outputFileName>
 							<filterNda>true</filterNda>
 						</configuration>
 					</execution>

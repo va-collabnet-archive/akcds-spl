@@ -6,16 +6,15 @@ import java.util.UUID;
 
 public enum StaticDataType
 {
-	SET_ID("Set ID", "An optional globally-unique identifier, that remains constant across all document revisions that derive"
+	SPL_SET_ID("Set ID", "An optional globally-unique identifier, that remains constant across all document revisions that derive"
 			+ " from a common original document."),
 	SPL_VERSION("SPL version", "The SPL version number"),
 	DRAFT_FACT_TRIPLE("Draft Fact Triple", "Draft Fact Triple"),
 	DRAFT_FACT_SENTENCE("Draft Fact Sentence", "The source of the draft fact"),
 	DRAFT_FACT_SEC_NAME("Draft Fact Section Name", "The section source of the draft fact"),
 	DRAFT_FACT_SET_ID("Draft Fact Set ID", "The set id for the fact"),
-	DRAFT_FACT_SET_DATA("Draft Fact Set Data", "The set id data for the fact"),
 	DRAFT_FACT_UNIQUE_ID("Draft Fact Unique ID", "A unique value we have assigned to this draft fact"),
-	DRAFT_FACT_DRUG_NAME("Drug Name", "The drug name from the NDC"), 
+	SUPER_DRAFT_FACT_UNIQUE_ID("Super Draft Fact Unique ID", "A unique value we have assigned to this draft fact (which is a merger of one or more draft facts)"),
 	DRAFT_FACT_DRUG_CODE("NDC", "The New Drug Code"),
 	DRAFT_FACT_SNOMED_CONCEPT_NAME("Snomed Concept Name", "The name of the snomed concept code"),
 	DRAFT_FACT_SNOMED_CONCEPT_CODE("Snomed Concept Code", "The snomed concept code"),
@@ -24,9 +23,8 @@ public enum StaticDataType
 	DRAFT_FACT_CURATION_STATE("Curation state", "Draft fact curation state"),
 	DRAFT_FACT_COMMENT("Curation comment", "Draft fact curation comment"),
 	SPL_XML_TEXT("SPL XML Text", "The entire SPL XML document."), 
-	IMAGE("Image", "An image that is referenced from the SPL XML document"), 
-	VERSION("Version","Version number of the SPL data load"), 
-	APPROVAL_NUMBER("Approval Number", "Approval number (which in the U.S. is the New Drug Application (NDA) number)");
+	SPL_IMAGE("Image", "An image that is referenced from the SPL XML document"), 
+	VERSION("Version","Version number of the SPL data load");
 	
 
 	private String name_;
