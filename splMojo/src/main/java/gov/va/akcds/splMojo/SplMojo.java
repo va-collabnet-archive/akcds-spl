@@ -199,7 +199,7 @@ public class SplMojo extends AbstractMojo
 			draftFacts = new DraftFacts(draftFactsFile, new File(outputDirectory, "draftFactsByID"));
 
 			// source file (splSrcData.zip is a zip of zips)
-			File dataFile= getZip();
+			File dataFile= getSplZipFile();
 			
 			System.out.println(new Date().toString());
 			System.out.println("Reading spl zip file : "+dataFile);
@@ -632,11 +632,11 @@ public class SplMojo extends AbstractMojo
 		this.facts = facts;
 	}
 
-	public File getZip() {
+	public File getSplZipFile() {
 		return splZipFile;
 	}
 
-	public void setZip(File zip) {
+	public void setSplZipFile(File zip) {
 		this.splZipFile = zip;
 	}
 
