@@ -1,15 +1,11 @@
 package gov.va.akcds.util.wbDraftFacts;
 
-import java.util.concurrent.atomic.AtomicLong;
 
 public class DraftFact {
-	//TODO the BW data is broken... they don't have unique row ids.
-	static AtomicLong al = new AtomicLong(2000000);
-
 	public DraftFact(String initString) {
 		String[] tokens = initString.split("\t");
 
-		this.rowId = al.getAndIncrement() + ""; //tokens[0];
+		this.rowId = tokens[0];
 		this.splSetId = tokens[1];
 		this.splDirName = tokens[2];
 		this.splFileName = tokens[3];
