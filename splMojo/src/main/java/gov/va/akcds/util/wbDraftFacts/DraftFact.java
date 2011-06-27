@@ -32,16 +32,9 @@ public class DraftFact {
 		
 		if (tokens.length > 24)
 		{
+			//BW data has these extras, we should have all 3.
 			this.curationState = tokens[24];
-		}
-		
-		if (tokens.length > 25)
-		{
 			this.comment = tokens[25];
-		}
-		
-		if (tokens.length > 26)
-		{
 			this.splVersion = tokens[26];
 		}
 	}
@@ -316,5 +309,71 @@ public class DraftFact {
 
 	public void setSplVersion(String version) {
 		this.splVersion = version;
+	}
+	
+	/**
+	 * Dump it back out in the format we read it in.
+	 * @return
+	 */
+	public String format()
+	{
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.rowId);
+		sb.append("\t");
+		sb.append(this.splSetId);
+		sb.append("\t");
+	
+		sb.append(this.splDirName);
+		sb.append("\t");
+		sb.append(this.splFileName);
+		sb.append("\t");
+		sb.append(this.drugRoleConceptId);
+		sb.append("\t");
+		sb.append(this.docId);
+		sb.append("\t");
+		sb.append(this.secId);
+		sb.append("\t");
+		sb.append(this.secName);
+		sb.append("\t");
+		sb.append(this.drugCode);
+		sb.append("\t");
+		sb.append(this.roleId);
+		sb.append("\t");
+		sb.append(this.conceptCode);
+		sb.append("\t");
+		sb.append(this.drugName);
+		sb.append("\t");
+		sb.append(this.roleName);
+		sb.append("\t");
+		sb.append(this.conceptName);
+		sb.append("\t");
+		sb.append(this.sentenceId);
+		sb.append("\t");
+		sb.append(this.phraseId);
+		sb.append("\t");
+		sb.append(this.ceId);
+		sb.append("\t");
+		sb.append(this.sequenceId);
+		sb.append("\t");
+		sb.append(this.distinction);
+		sb.append("\t");
+		sb.append(this.aggregateionConceptId);
+		sb.append("\t");
+		sb.append(this.aggregationConceptName);
+		sb.append("\t");
+		sb.append(this.newFileName);
+		sb.append("\t");
+		sb.append(this.sentence);
+		sb.append("\t");
+		sb.append(this.sentenceNumber);
+		sb.append("\t");
+		sb.append(this.curationState);
+		sb.append("\t");
+		sb.append(this.comment);
+		sb.append("\t");
+		sb.append(this.splVersion);
+		sb.append("\t");
+
+		return sb.toString();
 	}
 }

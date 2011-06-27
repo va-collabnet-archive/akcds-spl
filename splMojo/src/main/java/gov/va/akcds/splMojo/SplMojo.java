@@ -18,6 +18,7 @@ import gov.va.akcds.splMojo.dataTypes.StaticDataType;
 import gov.va.akcds.splMojo.model.Drug;
 import gov.va.akcds.splMojo.model.SimpleDraftFact;
 import gov.va.akcds.splMojo.model.SimpleDraftFactSource;
+import gov.va.akcds.util.ConsoleUtil;
 import gov.va.akcds.util.EConceptUtility;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
@@ -111,6 +112,8 @@ public class SplMojo extends AbstractMojo
 	private long metadataConceptCounter_ = 0;
 	private long conceptCounter_ = 0;
 	private long xmlFileCnt_ = 0;
+	private long dupeSetIdDrop_ = 0;
+	private long skipSplForWrongVersion_ = 0;
 	private ArrayList<String> dropForNoFacts_ = new ArrayList<String>();
 	private ArrayList<String> dropForNoNDAs_ = new ArrayList<String>();
 	private int dropCurationDataForConflict_ = 0;
@@ -137,12 +140,12 @@ public class SplMojo extends AbstractMojo
 		try
 		{
 			// echo status
-			System.out.println("TPS report completed 04/05/2011.");
-			System.out.println("Starting creation of .jbin file for Structured Product Labels (SPLs)");
-			System.out.println(new Date().toString());
+			ConsoleUtil.println("TPS report completed 04/05/2011.");
+			ConsoleUtil.println("Starting creation of .jbin file for Structured Product Labels (SPLs)");
+			ConsoleUtil.println(new Date().toString());
 
 			// output directory
-			System.out.println("Writing output to " + getOutputDirectory());
+			ConsoleUtil.println("Writing output to " + getOutputDirectory());
 			if (getOutputDirectory().exists() == false)
 			{
 				getOutputDirectory().mkdirs();
@@ -190,19 +193,19 @@ public class SplMojo extends AbstractMojo
 				}	
 			}
 			
-			System.out.println();
-			System.out.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
+			ConsoleUtil.println("");
+			ConsoleUtil.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
 			
 			// load the draft facts
-			System.out.println("Loading draft facts:");
+			ConsoleUtil.println("Loading draft facts:");
 			File[] draftFactsFile = getFacts();			
 			draftFacts = new DraftFacts(draftFactsFile, new File(outputDirectory, "draftFactsByID"));
 
 			// source file (splSrcData.zip is a zip of zips)
 			File dataFile= getSplZipFile();
 			
-			System.out.println(new Date().toString());
-			System.out.println("Reading spl zip file : "+dataFile);
+			ConsoleUtil.println(new Date().toString());
+			ConsoleUtil.println("Reading spl zip file : "+dataFile);
 			// process the zip of zips
 			ZipContentsIterator outerZCI = new ZipContentsIterator(dataFile);
 
@@ -228,22 +231,21 @@ public class SplMojo extends AbstractMojo
 						// Pass the elements in to the spl factory
 						Spl spl = new Spl(filesInNestedZipFile, nestedZipFile.getName());
 						loadIntoModel(spl);
+						xmlFileCnt_++;
 					}
 					else
 					{
-						System.err.println("Empty inner zip file? " + nestedZipFile.getName());
+						ConsoleUtil.printErrorln("Empty inner zip file? " + nestedZipFile.getName());
 					}
 				}
 				else
 				{
-					System.err.println("Skipping unexpected file in outer zip file: " + nestedZipFile.getName());
+					ConsoleUtil.printErrorln("Skipping unexpected file in outer zip file: " + nestedZipFile.getName());
 				}
-
-				xmlFileCnt_++;
 			}
 			
-			System.out.println();
-			System.out.println("Data loaded, filtered and normalized.  Found " + splDrugConcepts_.size() + " unique drugs.  Converting results to workbench format");
+			ConsoleUtil.println("");
+			ConsoleUtil.println("Data loaded, filtered and normalized.  Found " + splDrugConcepts_.size() + " unique drugs.  Converting results to workbench format");
 			
 			for (Drug d : splDrugConcepts_.values())
 			{
@@ -333,21 +335,23 @@ public class SplMojo extends AbstractMojo
 				storeConcept(concept);
 			}
 
-			System.out.println();
+			ConsoleUtil.println("");
 			
 			dos_.flush();
 			dos_.close();						
 			
 			// Summarize
-			System.out.println("TOTAL SPL FILES:   " + xmlFileCnt_);
-			System.out.println("TOTAL concepts created: " + conceptCounter_);
-			System.out.println("Metadata concepts created: " + metadataConceptCounter_);
-			System.out.println("Created " + nonSnomedTerms_.size() + " non-snomed concepts");
-			System.out.println("SPL Drug Concepts created: " + splDrugConcepts_.size());
-			System.out.println("SPL Set ID concepts created: " + (conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()));
-			System.out.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
-			System.out.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");		
-			System.out.println("Dropped " + dropCurationDataForConflict_ + " draft fact curation data for conflicts");
+			ConsoleUtil.println("TOTAL SPL FILES:   " + xmlFileCnt_);
+			ConsoleUtil.println("TOTAL workbench concepts created: " + conceptCounter_);
+			ConsoleUtil.println("Metadata concepts created: " + metadataConceptCounter_);
+			ConsoleUtil.println("Created " + nonSnomedTerms_.size() + " non-snomed concepts");
+			ConsoleUtil.println("SPL Drug Concepts created: " + splDrugConcepts_.size());
+			ConsoleUtil.println("SPL Set ID concepts created: " + (conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()));
+			ConsoleUtil.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
+			ConsoleUtil.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");	
+			ConsoleUtil.println("Ignored " + skipSplForWrongVersion_ + " files for not matching the draft fact version number");	
+			ConsoleUtil.println("Ignored the curation data on " + dropCurationDataForConflict_ + " draft facts for conflicts");
+			ConsoleUtil.println("Data errors loading " + dupeSetIdDrop_ + " SPL files because of non-unique set id");	
 		}
 		catch (Exception ex)
 		{
@@ -397,104 +401,110 @@ public class SplMojo extends AbstractMojo
 			}
 			return;
 		}
+
+		//Create the spl Set id object which will be attached to one (or more) drug concepts
+		UUID setIdUUID = null;
+
 		
-		if (splDraftFacts != null)
+		for (int i = 0; i < splDraftFacts.size(); i++)
 		{
-			//Create the spl Set id object which will be attached to one (or more) drug concepts
-			UUID setIdUUID = loadSetId(spl);
+			DraftFact fact = splDraftFacts.get(i);
 
-			
-			for (int i = 0; i < splDraftFacts.size(); i++)
+			// default version to that of current doc, for npl data as we don't know what it is
+			if (fact.getSplVersion().equals("-"))
 			{
-				DraftFact fact = splDraftFacts.get(i);
+				fact.setSplVersion(spl.getVersion());
+			}
+			
+			// check the fact version matches that of this doc
+			if (i == 0 && !fact.getSplVersion().equals(spl.getVersion()))
+			{
+				//we make the assumption that all draft facts will be for the same version.
+				//TODO - note - if we ever go back to loading the old draft fact data - this loader is broken... because it didn't specify the version, but the full xml set has multiple versions of the same doc - we would end up loading an arbitrary doc, instead of the correct one.
+				skipSplForWrongVersion_++;
+				return;
+			}
+			
+			//Ok, we want to load this one.  See if we have already started it.
+			String drugName = fact.getDrugName().toUpperCase();
+			
+			Drug drug = splDrugConcepts_.get(drugName);
+			
+			if (drug == null)
+			{
+				drug = new Drug(drugName);
+				splDrugConcepts_.put(drugName, drug);
+			}
+			
+			//Do this in the loop, so that the version check has already occurred. 
+			if (setIdUUID == null)
+			{
+				setIdUUID = loadSetId(spl);
+			}
+			
+			drug.setIds.add(setIdUUID);
+			
+			//Now, set up this draft fact
+			SimpleDraftFact newSdf = new SimpleDraftFact(drugName, fact.getRoleName(), (fact.getConceptCode().equals("-") ? fact.getConceptName() : fact.getConceptCode()));
+			SimpleDraftFact existingSdf = drug.draftFacts.get(newSdf.getUniqueKey());
+			if (existingSdf == null)
+			{
+				//Use our new one... finish populating the standard data...
+				drug.draftFacts.put(newSdf.getUniqueKey(), newSdf);
+				existingSdf = newSdf;
+				existingSdf.targetCodeName = fact.getConceptName();
+				
+				//Need to do some work to generate the target UUID
+				
+				//This is an oddity discovered later in the draft facts... which wasn't documented.  Not sure what the correct solution is, 
+				//but will do this for now....								
+				if (fact.getConceptCode().equals("1"))
+				{
+					existingSdf.targetCodeUUID = StaticDataType.DRAFT_FACT_TRUE.getUuid();
+				}
+				else if (fact.getConceptCode().equals("0"))
+				{
+					existingSdf.targetCodeUUID = StaticDataType.DRAFT_FACT_FALSE.getUuid();
+				}				
+				else if (fact.getConceptCode().equals("-"))
+				{
+					// if the code is not set then we have a non-snomed concept
+					existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName()).getBytes());
+					createMissingConceptIfNecessary(existingSdf.targetCodeUUID, fact.getConceptName());
+				}
+				else // get the snomed concept
+				{
+					existingSdf.targetCodeUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
+				}
+			}
+			
+			//Add on the unique draft fact data for this instance of the draft fact
+			SimpleDraftFactSource sdfs = new SimpleDraftFactSource(fact.getRowId(), fact.getSplSetId(), fact.getSecName(), fact.getSentence(), fact.getDrugCode());
+			if (fact.getComment() != null && !fact.getComment().equals("-"))
+			{
+				sdfs.curationComment = fact.getComment();
+			}
+			existingSdf.sources.add(sdfs);
 
-				// default version to that of current doc, for npl data as we don't know what it is
-				if (fact.getSplVersion().equals("-"))
+			if (existingSdf.curationState == null)
+			{
+				if (fact.getCurationState() != null && !fact.getCurationState().equals("-"))
 				{
-					fact.setSplVersion(spl.getVersion());
+					existingSdf.curationState = fact.getCurationState();
 				}
-				
-				// check the fact version matches that of this doc
-				if (!fact.getSplVersion().equals(spl.getVersion()))
+			}
+			else
+			{
+				//sanity check - they should be identical, yes?
+				if (fact.getCurationState() != null)
 				{
-					continue;
-				}
-				
-				//Ok, we want to load this one.  See if we have already started it.
-				String drugName = fact.getDrugName().toUpperCase();
-				
-				Drug drug = splDrugConcepts_.get(drugName);
-				
-				if (drug == null)
-				{
-					drug = new Drug(drugName);
-					splDrugConcepts_.put(drugName, drug);
-				}
-				
-				drug.setIds.add(setIdUUID);
-				
-				//Now, set up this draft fact
-				SimpleDraftFact newSdf = new SimpleDraftFact(drugName, fact.getRoleName(), (fact.getConceptCode().equals("-") ? fact.getConceptName() : fact.getConceptCode()));
-				SimpleDraftFact existingSdf = drug.draftFacts.get(newSdf.getUniqueKey());
-				if (existingSdf == null)
-				{
-					//Use our new one... finish populating the standard data...
-					drug.draftFacts.put(newSdf.getUniqueKey(), newSdf);
-					existingSdf = newSdf;
-					existingSdf.targetCodeName = fact.getConceptName();
-					
-					//Need to do some work to generate the target UUID
-					
-					//This is an oddity discovered later in the draft facts... which wasn't documented.  Not sure what the correct solution is, 
-					//but will do this for now....								
-					if (fact.getConceptCode().equals("1"))
+					if (!fact.getCurationState().equals(existingSdf.curationState))
 					{
-						existingSdf.targetCodeUUID = StaticDataType.DRAFT_FACT_TRUE.getUuid();
-					}
-					else if (fact.getConceptCode().equals("0"))
-					{
-						existingSdf.targetCodeUUID = StaticDataType.DRAFT_FACT_FALSE.getUuid();
-					}				
-					else if (fact.getConceptCode().equals("-"))
-					{
-						// if the code is not set then we have a non-snomed concept
-						existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName()).getBytes());
-						createMissingConceptIfNecessary(existingSdf.targetCodeUUID, fact.getConceptName());
-					}
-					else // get the snomed concept
-					{
-						existingSdf.targetCodeUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
-					}
-				}
-				
-				//Add on the unique draft fact data for this instance of the draft fact
-				SimpleDraftFactSource sdfs = new SimpleDraftFactSource(fact.getRowId(), fact.getSplSetId(), fact.getSecName(), fact.getSentence(), fact.getDrugCode());
-				if (fact.getComment() != null && !fact.getComment().equals("-"))
-				{
-					sdfs.curationComment = fact.getComment();
-				}
-				existingSdf.sources.add(sdfs);
-	
-				if (existingSdf.curationState == null)
-				{
-					if (fact.getCurationState() != null && !fact.getCurationState().equals("-"))
-					{
-						existingSdf.curationState = fact.getCurationState();
-					}
-				}
-				else
-				{
-					//sanity check - they should be identical, yes?
-					if (fact.getCurationState() != null)
-					{
-						if (!fact.getCurationState().equals(existingSdf.curationState))
+						if (!existingSdf.curationState.equals("-CONFLICT-"))
 						{
-							if (!existingSdf.curationState.equals("-CONFLICT-"))
-							{
-								System.err.println("Different curations states listed for same fact: " + existingSdf.getUniqueKey()  + " " + existingSdf.curationState + " " + fact.getCurationState());
-								dropCurationDataForConflict_++;
-								existingSdf.curationState = "-CONFLICT-";
-							}
+							ConsoleUtil.printErrorln("Different curations states listed for same fact: " + existingSdf.getUniqueKey()  + " " + existingSdf.curationState + " " + fact.getCurationState());
+							dropCurationDataForConflict_++;
+							existingSdf.curationState = "-CONFLICT-";
 						}
 					}
 				}
@@ -527,7 +537,12 @@ public class SplMojo extends AbstractMojo
 		}
 		
 		//Can't store these yet, because we need to add all the tree links first (which we don't know yet)
-		splSetIdConcepts_.put(setIdUUID, concept);
+		EConcept c = splSetIdConcepts_.put(setIdUUID, concept);
+		if (c != null)
+		{
+			ConsoleUtil.printErrorln("DATA ERROR - Attempting to load a set id that was already loaded - this means draft facts were provided for multiple versions of the same set id!  Set ID: " + spl.getSetId() + " Current file: " + spl.getZipFileName());
+			dupeSetIdDrop_++;
+		}
 		return setIdUUID;
 	}
 	
@@ -612,17 +627,11 @@ public class SplMojo extends AbstractMojo
 
 		if (conceptCounter_ % 10 == 0)
 		{
-			System.out.print(".");
-		}
-		if (conceptCounter_ % 500 == 0)
-		{
-			System.out.println("");
-		}
-		if ((conceptCounter_ % 1000) == 0)
-		{
-			System.out.println("Processed: " + conceptCounter_ + " - just completed " + concept.getDescriptions().get(0).getText());
+			ConsoleUtil.showProgress();
 		}
 	}
+	
+	
 
 	public File[] getFacts() {
 		return facts;
@@ -667,10 +676,11 @@ public class SplMojo extends AbstractMojo
 
 	public static void main(String[] args) throws Exception
 	{
+		ConsoleUtil.disableFancy = true;
 		SplMojo mojo = new SplMojo();
 		//new File("../splData/data/splDraftFacts.txt.zip")
-		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts.txt.zip")};
-		mojo.splZipFile = new File("../splData/data/splSrcFiles.zip");
+		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-export-20110627-2-fixed.txt.zip")};
+		mojo.splZipFile = new File("/media/truecrypt2/Source Data/SPL from BW/srcdata.zip");
 		mojo.outputFileName = "splData.jbin";
 		mojo.filterNda = true;
 		mojo.outputDirectory = new File("../splData/target");

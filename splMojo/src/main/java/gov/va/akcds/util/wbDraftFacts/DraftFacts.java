@@ -1,5 +1,7 @@
 package gov.va.akcds.util.wbDraftFacts;
 
+import gov.va.akcds.util.ConsoleUtil;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -37,7 +39,7 @@ public class DraftFacts {
 	
 	public void init(File dataFile) throws Exception
 	{
-		System.out.println("Reorganizing draft facts by set id : " + dataFile);
+		ConsoleUtil.println("Reorganizing draft facts by set id : " + dataFile);
 
 		ZipInputStream zis = new ZipInputStream(new BufferedInputStream(new FileInputStream(dataFile)));
 
@@ -71,14 +73,14 @@ public class DraftFacts {
 				}
 				if (cnt % 1000 == 0)
 				{
-					System.out.print(".");
-				}
-				if (cnt % 50000 == 0)
-				{
-					System.out.println("");
+					ConsoleUtil.showProgress();
 				}
 			}
-			System.out.println("\nDone organizing draft facts:" + cnt);
+			if (out != null)
+			{
+				out.close();
+			}
+			ConsoleUtil.println("Done organizing draft facts:" + cnt);
 		}
 	}
 
