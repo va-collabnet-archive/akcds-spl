@@ -11,11 +11,14 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.zip.ZipInputStream;
 
 public class DraftFacts {
 
 	private File draftFactsRoot_;
+	
+	public HashSet<String> setIds_ = new HashSet<String>();  //Just used to figure out what SetIds didn't get loaded.
 	
 	/**
 	 * Data file should be a zip file containing only the draft facts text file
@@ -58,6 +61,7 @@ public class DraftFacts {
 				{
 					DraftFact fact = new DraftFact(str);
 					String setId = fact.getSplSetId();
+					setIds_.add(setId);
 
 					if (setId != null && !setId.equals(prevSetId))
 					{
@@ -95,6 +99,7 @@ public class DraftFacts {
 
 	public ArrayList<DraftFact> getFacts(String setId) throws Exception
 	{
+		setIds_.remove(setId);
 		ArrayList<DraftFact> rtn = new ArrayList<DraftFact>();
 		File file = new File(draftFactsRoot_, setId + ".txt");
 		if (file != null && file.exists())
@@ -110,5 +115,10 @@ public class DraftFacts {
 			}
 		}
 		return rtn;
+	}
+	
+	public String[] getUnusedSetIds()
+	{
+		return setIds_.toArray(new String[setIds_.size()]);
 	}
 }

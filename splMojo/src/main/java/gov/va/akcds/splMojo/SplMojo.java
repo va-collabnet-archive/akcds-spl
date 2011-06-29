@@ -356,6 +356,15 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Ignored " + skipSplForWrongVersion_ + " files for not matching the draft fact version number");	
 			ConsoleUtil.println("Ignored the curation data on " + dropCurationDataForConflict_ + " draft facts for conflicts");
 			ConsoleUtil.println("Data errors loading " + dupeSetIdDrop_ + " SPL files because of non-unique set id");	
+			ConsoleUtil.println("The following setIds were not loaded:");
+			int unloaded = 0;
+			for (String s : draftFacts.getUnusedSetIds())
+			{
+				int factCount = draftFacts.getFacts(s).size();
+				unloaded += factCount;
+				ConsoleUtil.println(s + " - facts: " + factCount);
+			}
+			ConsoleUtil.println("Total missed facts: " + unloaded);
 		}
 		catch (Exception ex)
 		{
