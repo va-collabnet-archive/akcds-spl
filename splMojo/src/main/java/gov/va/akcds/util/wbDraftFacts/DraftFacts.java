@@ -80,7 +80,7 @@ public class DraftFacts {
 			{
 				out.close();
 			}
-			ConsoleUtil.println("Done organizing draft facts:" + cnt);
+			ConsoleUtil.println("Done organizing draft facts - found:" + cnt);
 		}
 	}
 

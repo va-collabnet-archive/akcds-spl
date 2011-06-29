@@ -114,6 +114,8 @@ public class SplMojo extends AbstractMojo
 	private long xmlFileCnt_ = 0;
 	private long dupeSetIdDrop_ = 0;
 	private long skipSplForWrongVersion_ = 0;
+	private long duplicateDraftFactMerged_ = 0;
+	private long uniqueDraftFactCount_ = 0;
 	private ArrayList<String> dropForNoFacts_ = new ArrayList<String>();
 	private ArrayList<String> dropForNoNDAs_ = new ArrayList<String>();
 	private int dropCurationDataForConflict_ = 0;
@@ -347,6 +349,8 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Created " + nonSnomedTerms_.size() + " non-snomed concepts");
 			ConsoleUtil.println("SPL Drug Concepts created: " + splDrugConcepts_.size());
 			ConsoleUtil.println("SPL Set ID concepts created: " + (conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()));
+			ConsoleUtil.println("Merged " + duplicateDraftFactMerged_ + " duplicate draft facts onto an existing draft fact.");
+			ConsoleUtil.println("Loaded " + uniqueDraftFactCount_ + " draft facts");
 			ConsoleUtil.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
 			ConsoleUtil.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");	
 			ConsoleUtil.println("Ignored " + skipSplForWrongVersion_ + " files for not matching the draft fact version number");	
@@ -449,6 +453,7 @@ public class SplMojo extends AbstractMojo
 			SimpleDraftFact existingSdf = drug.draftFacts.get(newSdf.getUniqueKey());
 			if (existingSdf == null)
 			{
+				uniqueDraftFactCount_++;
 				//Use our new one... finish populating the standard data...
 				drug.draftFacts.put(newSdf.getUniqueKey(), newSdf);
 				existingSdf = newSdf;
@@ -476,6 +481,10 @@ public class SplMojo extends AbstractMojo
 				{
 					existingSdf.targetCodeUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
 				}
+			}
+			else
+			{
+				duplicateDraftFactMerged_++;
 			}
 			
 			//Add on the unique draft fact data for this instance of the draft fact
