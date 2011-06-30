@@ -118,7 +118,7 @@ public class SplMojo extends AbstractMojo
 	private long uniqueDraftFactCount_ = 0;
 	private ArrayList<String> dropForNoFacts_ = new ArrayList<String>();
 	private ArrayList<String> dropForNoNDAs_ = new ArrayList<String>();
-	private int dropCurationDataForConflict_ = 0;
+	private int flagCurationDataForConflict_ = 0;
 	
 	private boolean createLetterRoots_ = true;  //switch this to false to generate a flat structure under the spl root concept
 	
@@ -354,7 +354,7 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
 			ConsoleUtil.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");	
 			ConsoleUtil.println("Ignored " + skipSplForWrongVersion_ + " files for not matching the draft fact version number");	
-			ConsoleUtil.println("Ignored the curation data on " + dropCurationDataForConflict_ + " draft facts for conflicts");
+			ConsoleUtil.println("Changed the curation data on " + flagCurationDataForConflict_ + " draft facts for conflicts");
 			ConsoleUtil.println("Data errors loading " + dupeSetIdDrop_ + " SPL files because of non-unique set id");	
 			ConsoleUtil.println("The following setIds were not loaded:");
 			int unloaded = 0;
@@ -518,11 +518,11 @@ public class SplMojo extends AbstractMojo
 				{
 					if (!fact.getCurationState().equals(existingSdf.curationState))
 					{
-						if (!existingSdf.curationState.equals("-CONFLICT-"))
+						if (!existingSdf.curationState.equals("flag"))
 						{
 							ConsoleUtil.printErrorln("Different curations states listed for same fact: " + existingSdf.getUniqueKey()  + " " + existingSdf.curationState + " " + fact.getCurationState());
-							dropCurationDataForConflict_++;
-							existingSdf.curationState = "-CONFLICT-";
+							flagCurationDataForConflict_++;
+							existingSdf.curationState = "flag";
 						}
 					}
 				}
