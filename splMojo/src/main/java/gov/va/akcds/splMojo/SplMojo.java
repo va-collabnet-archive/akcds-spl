@@ -116,9 +116,12 @@ public class SplMojo extends AbstractMojo
 	private long skipSplForWrongVersion_ = 0;
 	private long duplicateDraftFactMerged_ = 0;
 	private long uniqueDraftFactCount_ = 0;
+	private long accept_ = 0;
+	private long reject_ = 0;
 	private ArrayList<String> dropForNoFacts_ = new ArrayList<String>();
 	private ArrayList<String> dropForNoNDAs_ = new ArrayList<String>();
 	private int flagCurationDataForConflict_ = 0;
+	private HashSet<String> uniqueTargetConcepts_ = new HashSet<String>();
 	
 	private boolean createLetterRoots_ = true;  //switch this to false to generate a flat structure under the spl root concept
 	
@@ -290,6 +293,8 @@ public class SplMojo extends AbstractMojo
 							getDraftFactType(sdf.relName).getIdentifier(), 
 							sdf.targetCodeUUID, StaticDataType.DRAFT_FACT_TRIPLE.getUuid());
 					
+					uniqueTargetConcepts_.add(sdf.targetCodeUUID.toString());  //Just for counting purposes.
+					
 					conceptUtility_.addAnnotation(triple, sdf.targetCodeName, StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_NAME.getUuid());
 					conceptUtility_.addAnnotation(triple, sdf.targetCode, StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_CODE.getUuid());
 					
@@ -354,7 +359,6 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
 			ConsoleUtil.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");	
 			ConsoleUtil.println("Ignored " + skipSplForWrongVersion_ + " files for not matching the draft fact version number");	
-			ConsoleUtil.println("Changed the curation data on " + flagCurationDataForConflict_ + " draft facts for conflicts");
 			ConsoleUtil.println("Data errors loading " + dupeSetIdDrop_ + " SPL files because of non-unique set id");	
 			ConsoleUtil.println("The following setIds were not loaded:");
 			int unloaded = 0;
@@ -365,6 +369,10 @@ public class SplMojo extends AbstractMojo
 				ConsoleUtil.println(s + " - facts: " + factCount);
 			}
 			ConsoleUtil.println("Total missed facts: " + unloaded);
+			ConsoleUtil.println("Facts Accepted: " + accept_);
+			ConsoleUtil.println("Facts Rejected: " + reject_);
+			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
+			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
 		}
 		catch (Exception ex)
 		{
@@ -509,6 +517,22 @@ public class SplMojo extends AbstractMojo
 				if (fact.getCurationState() != null && !fact.getCurationState().equals("-"))
 				{
 					existingSdf.curationState = fact.getCurationState();
+					if (fact.getCurationState().equalsIgnoreCase("Accept"))
+					{
+						accept_++;
+					}
+					else if (fact.getCurationState().equalsIgnoreCase("Reject"))
+					{
+						reject_++;
+					}
+					else if (fact.getCurationState().equalsIgnoreCase("flag"))
+					{
+						flagCurationDataForConflict_++;
+					}
+					else
+					{
+						ConsoleUtil.printErrorln("Unexpected curation state: " + fact.getCurationState());
+					}
 				}
 			}
 			else
@@ -521,6 +545,18 @@ public class SplMojo extends AbstractMojo
 						if (!existingSdf.curationState.equals("flag"))
 						{
 							ConsoleUtil.printErrorln("Different curations states listed for same fact: " + existingSdf.getUniqueKey()  + " " + existingSdf.curationState + " " + fact.getCurationState());
+							if (existingSdf.curationState.equalsIgnoreCase("Accept"))
+							{
+								accept_--;
+							}
+							else if (existingSdf.curationState.equalsIgnoreCase("Reject"))
+							{
+								reject_--;
+							}
+							else
+							{
+								ConsoleUtil.printErrorln("Unexpected curation state: " + fact.getCurationState());
+							}
 							flagCurationDataForConflict_++;
 							existingSdf.curationState = "flag";
 						}
