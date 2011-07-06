@@ -34,6 +34,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
@@ -122,6 +123,9 @@ public class SplMojo extends AbstractMojo
 	private ArrayList<String> dropForNoNDAs_ = new ArrayList<String>();
 	private int flagCurationDataForConflict_ = 0;
 	private HashSet<String> uniqueTargetConcepts_ = new HashSet<String>();
+	
+	//An uber mapping of unique SCT codes (real codes only) to (a set of) unique draft facts to a count of the number of labels.
+	private Hashtable<String, Hashtable<String, Integer>> sctFactLabelCounts = new Hashtable<String, Hashtable<String, Integer>>();
 	
 	private boolean createLetterRoots_ = true;  //switch this to false to generate a flat structure under the spl root concept
 	
@@ -373,6 +377,20 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Facts Rejected: " + reject_);
 			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
 			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
+			
+			ConsoleUtil.println("Unique real SCT concepts " + sctFactLabelCounts.size());
+			
+			for (Map.Entry<String, Hashtable<String, Integer>> x : sctFactLabelCounts.entrySet())
+			{
+				int labelTotal = 0;
+				Hashtable<String, Integer> factAndLabel = x.getValue();
+				for (Integer i : factAndLabel.values())
+				{
+					labelTotal = labelTotal + i;
+				}
+				
+				ConsoleUtil.println("Code: " + x.getKey() + " - Unique Draft Facts: " + factAndLabel.size() + " Label Count: " + labelTotal);
+			}
 		}
 		catch (Exception ex)
 		{
@@ -502,6 +520,30 @@ public class SplMojo extends AbstractMojo
 			else
 			{
 				duplicateDraftFactMerged_++;
+			}
+			
+			//Store some other stats....
+			
+			if (fact.getConceptCode().length() > 1)
+			{
+				//A real SCT code.
+				Hashtable<String, Integer> stats = sctFactLabelCounts.get(fact.getConceptCode());
+				if (stats == null)
+				{
+					stats = new Hashtable<String, Integer>();
+					sctFactLabelCounts.put(fact.getConceptCode(), stats);
+				}
+				Integer labelCount = stats.get(existingSdf.getUniqueKey());
+				if (labelCount == null)
+				{
+					labelCount = 1;
+				}
+				else
+				{
+					labelCount = labelCount.intValue() + 1;
+					
+				}
+				stats.put(existingSdf.getUniqueKey(), labelCount);
 			}
 			
 			//Add on the unique draft fact data for this instance of the draft fact
