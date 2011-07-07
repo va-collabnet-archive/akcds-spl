@@ -29,6 +29,7 @@ import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -124,8 +125,11 @@ public class SplMojo extends AbstractMojo
 	private int flagCurationDataForConflict_ = 0;
 	private HashSet<String> uniqueTargetConcepts_ = new HashSet<String>();
 	
-	//An uber mapping of unique SCT codes (real codes only) to (a set of) unique draft facts to a count of the number of labels.
-	private Hashtable<String, Hashtable<String, Integer>> sctFactLabelCounts = new Hashtable<String, Hashtable<String, Integer>>();
+	//An uber mapping of unique SCT codes (real codes only) to (a set of) unique draft facts to the set of unique SPL Set IDs
+	private Hashtable<String, Hashtable<String, HashSet<String>>> sctFactLabelCounts = new Hashtable<String, Hashtable<String, HashSet<String>>>();
+	
+	//A mapping of splSetIds -> drug names
+	Hashtable <String, String> reverseDrugMap = new Hashtable<String, String>();
 	
 	private boolean createLetterRoots_ = true;  //switch this to false to generate a flat structure under the spl root concept
 	
@@ -357,6 +361,7 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Metadata concepts created: " + metadataConceptCounter_);
 			ConsoleUtil.println("Created " + nonSnomedTerms_.size() + " non-snomed concepts");
 			ConsoleUtil.println("SPL Drug Concepts created: " + splDrugConcepts_.size());
+			ConsoleUtil.println("SPL Set ID concepts created: " + splSetIdConcepts_.size());
 			ConsoleUtil.println("SPL Set ID concepts created: " + (conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()));
 			ConsoleUtil.println("Merged " + duplicateDraftFactMerged_ + " duplicate draft facts onto an existing draft fact.");
 			ConsoleUtil.println("Loaded " + uniqueDraftFactCount_ + " draft facts");
@@ -379,18 +384,34 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
 			
 			ConsoleUtil.println("Unique real SCT concepts " + sctFactLabelCounts.size());
+			ConsoleUtil.println("Also see: " + new File(getOutputDirectory(), "stats.csv") + " for more stats");
 			
-			for (Map.Entry<String, Hashtable<String, Integer>> x : sctFactLabelCounts.entrySet())
+			FileWriter statsFile = new FileWriter(new File(getOutputDirectory(), "stats.csv"));
+			statsFile.write("code,unique draft facts,unique label count,unique drug count\r\n");
+			
+			for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : sctFactLabelCounts.entrySet())
 			{
+				HashSet<String> uniqueDrugs = new HashSet<String>();
 				int labelTotal = 0;
-				Hashtable<String, Integer> factAndLabel = x.getValue();
-				for (Integer i : factAndLabel.values())
+				Hashtable<String, HashSet<String>> factAndLabel = x.getValue();
+				for (HashSet<String> i : factAndLabel.values())
 				{
-					labelTotal = labelTotal + i;
+					labelTotal = labelTotal + i.size();
+					for (String setId : i)
+					{
+						String drug = reverseDrugMap.get(setId);
+						if (drug != null)
+						{
+							uniqueDrugs.add(drug);
+						}
+					}
 				}
 				
-				ConsoleUtil.println("Code: " + x.getKey() + " - Unique Draft Facts: " + factAndLabel.size() + " Label Count: " + labelTotal);
+				//Find all of the unique drugs that any involved setId points to.
+				
+				statsFile.write(x.getKey() + "," + factAndLabel.size() + "," + labelTotal + "," + uniqueDrugs.size() + "\r\n");
 			}
+			statsFile.close();
 		}
 		catch (Exception ex)
 		{
@@ -475,6 +496,9 @@ public class SplMojo extends AbstractMojo
 				splDrugConcepts_.put(drugName, drug);
 			}
 			
+			//Also load this mapping hashtable (used for stats)
+			reverseDrugMap.put(fact.getSplSetId(), drugName);
+			
 			//Do this in the loop, so that the version check has already occurred. 
 			if (setIdUUID == null)
 			{
@@ -527,23 +551,19 @@ public class SplMojo extends AbstractMojo
 			if (fact.getConceptCode().length() > 1)
 			{
 				//A real SCT code.
-				Hashtable<String, Integer> stats = sctFactLabelCounts.get(fact.getConceptCode());
+				Hashtable<String, HashSet<String>> stats = sctFactLabelCounts.get(fact.getConceptCode());
 				if (stats == null)
 				{
-					stats = new Hashtable<String, Integer>();
+					stats = new Hashtable<String, HashSet<String>>();
 					sctFactLabelCounts.put(fact.getConceptCode(), stats);
 				}
-				Integer labelCount = stats.get(existingSdf.getUniqueKey());
-				if (labelCount == null)
+				HashSet<String> labels = stats.get(existingSdf.getUniqueKey());
+				if (labels == null)
 				{
-					labelCount = 1;
+					labels = new HashSet<String>();
+					stats.put(existingSdf.getUniqueKey(), labels);
 				}
-				else
-				{
-					labelCount = labelCount.intValue() + 1;
-					
-				}
-				stats.put(existingSdf.getUniqueKey(), labelCount);
+				labels.add(fact.getSplSetId());
 			}
 			
 			//Add on the unique draft fact data for this instance of the draft fact

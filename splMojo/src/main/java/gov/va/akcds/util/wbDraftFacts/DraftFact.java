@@ -6,7 +6,7 @@ public class DraftFact {
 		String[] tokens = initString.split("\t");
 
 		this.rowId = tokens[0];
-		this.splSetId = tokens[1];
+		this.splSetId = tokens[1].toUpperCase();
 		this.splDirName = tokens[2];
 		this.splFileName = tokens[3];
 		this.drugRoleConceptId = tokens[4];

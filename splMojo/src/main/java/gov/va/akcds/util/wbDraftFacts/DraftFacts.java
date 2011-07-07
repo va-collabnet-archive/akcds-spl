@@ -99,9 +99,10 @@ public class DraftFacts {
 
 	public ArrayList<DraftFact> getFacts(String setId) throws Exception
 	{
-		setIds_.remove(setId);
+		String normalizedSetId = setId.toUpperCase();
+		setIds_.remove(normalizedSetId);
 		ArrayList<DraftFact> rtn = new ArrayList<DraftFact>();
-		File file = new File(draftFactsRoot_, setId + ".txt");
+		File file = new File(draftFactsRoot_, normalizedSetId + ".txt");
 		if (file != null && file.exists())
 		{
 			BufferedReader in = new BufferedReader(new FileReader(file));
