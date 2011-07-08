@@ -32,6 +32,12 @@
 			<groupId>org.jdom</groupId>
 			<artifactId>jdom</artifactId>
 		</dependency>
+		
+		<dependency>
+	       	<groupId>com.apelon.va.ihtsdo.wb.spl</groupId>
+	       	<artifactId>splRxNormMap</artifactId>
+	       	<version>1.0-SNAPSHOT</version>
+     	</dependency>
 
 		<!-- other dependencies -->
 

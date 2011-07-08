@@ -28,6 +28,7 @@ import gov.va.akcds.util.zipUtil.ZipFileContent;
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -46,6 +47,13 @@ import org.dwfa.util.id.Type3UuidFactory;
 import org.ihtsdo.etypes.EConcept;
 import org.ihtsdo.tk.dto.concept.component.refset.cidcidcid.TkRefsetCidCidCidMember;
 import org.ihtsdo.tk.dto.concept.component.refset.str.TkRefsetStrMember;
+
+import com.apelon.splRxNormMap.data.DataMaps;
+import com.apelon.splRxNormMap.data.NdcAsKey;
+import com.apelon.splRxNormMap.data.NdcAsKeyData;
+import com.apelon.splRxNormMap.data.SplAsKey;
+import com.apelon.splRxNormMap.data.SplAsKeyData;
+import com.apelon.splRxNormMap.data.ViewDataFile;
 
 /**
  * Goal to generate spl data file
@@ -100,6 +108,14 @@ public class SplMojo extends AbstractMojo
 	 * @required
 	 */
 	private File splZipFile;
+	
+	/**
+	 * Location of the RXNorm mapping data.
+	 * 
+	 * @parameter
+	 * @required
+	 */
+	private File rxNormMapFile;
 
 	private EConceptUtility conceptUtility_ = new EConceptUtility(uuidRoot_);
 
@@ -258,7 +274,12 @@ public class SplMojo extends AbstractMojo
 			}
 			
 			ConsoleUtil.println("");
-			ConsoleUtil.println("Data loaded, filtered and normalized.  Found " + splDrugConcepts_.size() + " unique drugs.  Converting results to workbench format");
+			ConsoleUtil.println("Data loaded, filtered and normalized.  Found " + splDrugConcepts_.size() + " unique drugs.  Searching for RxNorm VUIDs");
+			
+			addVUIDMappings();
+			
+			ConsoleUtil.println("Converting results to workbench format");
+			
 			
 			for (Drug d : splDrugConcepts_.values())
 			{
@@ -288,7 +309,7 @@ public class SplMojo extends AbstractMojo
 				conceptUtility_.addRelationship(concept, parentUUID, null);
 
 				//Link to the SPL Set ID item
-				for (UUID setId : d.setIds)
+				for (UUID setId : d.setIdUUIDs)
 				{
 					conceptUtility_.addRelationship(splSetIdConcepts_.get(setId), concept.getPrimordialUuid(), null);
 				}
@@ -505,7 +526,8 @@ public class SplMojo extends AbstractMojo
 				setIdUUID = loadSetId(spl);
 			}
 			
-			drug.setIds.add(setIdUUID);
+			drug.setIdUUIDs.add(setIdUUID);
+			drug.setIds.add(fact.getSplSetId());
 			
 			//Now, set up this draft fact
 			SimpleDraftFact newSdf = new SimpleDraftFact(drugName, fact.getRoleName(), (fact.getConceptCode().equals("-") ? fact.getConceptName() : fact.getConceptCode()));
@@ -692,6 +714,78 @@ public class SplMojo extends AbstractMojo
 		}
 	}
 	
+	private void addVUIDMappings() throws FileNotFoundException, IOException, ClassNotFoundException
+	{
+		ConsoleUtil.println("Loading RXNorm Map Data");
+		DataMaps rxNormMaps = ViewDataFile.readData(rxNormMapFile);
+		ConsoleUtil.println(new Date(rxNormMaps.getBuildDate()) + "");
+		ConsoleUtil.println(rxNormMaps.getSourceDescription());
+		ConsoleUtil.println("NDC as key: " + rxNormMaps.getNdcAsKey().size());
+		ConsoleUtil.println("SPL as key: " + rxNormMaps.getSplAsKey().size());
+		
+		File f = new File(getOutputDirectory(), "mappingStats.csv");
+		ConsoleUtil.println("Also see: " + f + " for more stats");
+		
+		FileWriter statsFile = new FileWriter(f);
+		statsFile.write("Drug Name,SPL -> VUID,NDC->VUID,Unique VUIDs\r\n");
+		
+		//We only have 8 or 9 digits of the drug code.  RXNorm has more.  Create new maps from rxNorm that have 8 and 9 digits, respectively.
+		Hashtable<String, NdcAsKey> rxNormDrugCodeEightMatch = new Hashtable<String, NdcAsKey>();
+		Hashtable<String, NdcAsKey> rxNormDrugCodeNineMatch = new Hashtable<String, NdcAsKey>();
+		
+		for (String s : rxNormMaps.getNdcAsKey().keySet())
+		{
+			if (s.length() >= 8)
+			{
+				rxNormDrugCodeEightMatch.put(s.substring(0, 8), rxNormMaps.getNdcAsKey().get(s));
+			}
+			if (s.length() >= 8)
+			{
+				rxNormDrugCodeNineMatch.put(s.substring(0, 9), rxNormMaps.getNdcAsKey().get(s));
+			}
+		}
+		
+		for (Drug d : splDrugConcepts_.values())
+		{
+			int foundBySpl = 0;
+			int foundByNDC = 0;
+			for (String setId : d.setIds)
+			{
+				SplAsKey sak = rxNormMaps.getSplAsKey().get(setId);
+				if (sak != null)
+				{
+					for (SplAsKeyData sakd : sak.getCodes())
+					{
+						d.rxNormVuids.addAll(sakd.getVuid());
+						foundBySpl += sakd.getVuid().size();
+					}
+				}
+			}
+			
+			for (SimpleDraftFact sdf : d.draftFacts.values())
+			{
+				for (SimpleDraftFactSource sdfs : sdf.sources)
+				{
+					NdcAsKey nak = rxNormDrugCodeEightMatch.get(sdfs.ndc.toUpperCase());
+					if (nak == null)
+					{
+						nak = rxNormDrugCodeNineMatch.get(sdfs.ndc.toUpperCase());
+					}
+					if (nak != null)
+					{
+						for (NdcAsKeyData nakd : nak.getCodes())
+						{
+							d.rxNormVuids.addAll(nakd.getVuid());
+							foundByNDC += nakd.getVuid().size();
+						}
+					}
+				}
+			}
+			statsFile.write(d.drugName + "," + foundBySpl + "," + foundByNDC + "," + d.rxNormVuids.size() + "\r\n");
+		}
+		statsFile.close();
+	}
+	
 	private DynamicDataType getNDAType(String type) throws Exception
 	{
 		DynamicDataType ddt = dynamicDataTypes_.get(type);
@@ -796,6 +890,7 @@ public class SplMojo extends AbstractMojo
 		SplMojo mojo = new SplMojo();
 		//new File("../splData/data/splDraftFacts.txt.zip")
 		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-export-20110627-2-fixed.txt.zip")};
+		mojo.rxNormMapFile = new File("../splData/data/splRxNormMapData");
 		mojo.splZipFile = new File("/media/truecrypt2/Source Data/SPL from BW/srcdata.zip");
 		mojo.outputFileName = "splData.jbin";
 		mojo.filterNda = true;

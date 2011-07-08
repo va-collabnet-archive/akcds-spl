@@ -7,7 +7,9 @@ import java.util.UUID;
 public class Drug
 {
 	public String drugName;
-	public HashSet<UUID> setIds = new HashSet<UUID>();
+	public HashSet<UUID> setIdUUIDs = new HashSet<UUID>();
+	public HashSet<String> setIds = new HashSet<String>();
+	public HashSet<String> rxNormVuids = new HashSet<String>();
 	
 	public Hashtable<String, SimpleDraftFact> draftFacts = new Hashtable<String, SimpleDraftFact>();
 	
