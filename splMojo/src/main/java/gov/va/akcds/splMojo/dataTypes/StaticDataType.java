@@ -23,7 +23,8 @@ public enum StaticDataType
 	DRAFT_FACT_CURATION_STATE("Curation state", "Draft fact curation state"),
 	DRAFT_FACT_COMMENT("Curation comment", "Draft fact curation comment"),
 	SPL_XML_TEXT("SPL XML Text", "The entire SPL XML document."), 
-	SPL_IMAGE("Image", "An image that is referenced from the SPL XML document"), 
+	SPL_IMAGE("Image", "An image that is referenced from the SPL XML document"),
+	RXNorm_VUID("rxNorm VUID", "A VUID from rxNorm for this drug concept"), 
 	VERSION("Version","Version number of the SPL data load");
 	
 

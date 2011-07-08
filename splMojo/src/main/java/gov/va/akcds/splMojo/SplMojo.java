@@ -362,6 +362,12 @@ public class SplMojo extends AbstractMojo
 					conceptUtility_.addAnnotation(triple, superDraftFactId.toString(), StaticDataType.SUPER_DRAFT_FACT_UNIQUE_ID.getUuid());
 				}
 				
+				//Add the VUID identifiers that we found in in the rxNorm mapping
+				for (String vuid : d.rxNormVuids)
+				{
+					conceptUtility_.addAnnotation(concept, vuid, StaticDataType.RXNorm_VUID.getUuid());
+				}
+				
 				storeConcept(concept);
 			}
 			
