@@ -6,6 +6,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Enumeration;
 import java.util.NoSuchElementException;
 import java.util.zip.ZipEntry;
@@ -21,6 +22,12 @@ public class ZipContentsIterator implements Enumeration<ZipFileContent>
 	private ZipInputStream zis_ = null;
 	private ZipFileContent currentEntry_ = null;
 
+	public ZipContentsIterator(InputStream is) throws IOException
+	{
+		zis_ = new ZipInputStream(is);
+		readEntry();
+	}
+	
 	public ZipContentsIterator(byte[] zipFile) throws IOException
 	{
 		zis_ = new ZipInputStream(new ByteArrayInputStream(zipFile));

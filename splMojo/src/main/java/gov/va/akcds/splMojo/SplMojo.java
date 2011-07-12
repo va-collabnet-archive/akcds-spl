@@ -144,10 +144,12 @@ public class SplMojo extends AbstractMojo
 	private long uniqueDraftFactCount_ = 0;
 	private long accept_ = 0;
 	private long reject_ = 0;
+	private long new_ = 0;
 	private long droppedFactsForNoNDAs_ = 0;
 	private long droppedFactsForMissingSpl_ = 0;
 	private int flagCurationDataForConflict_ = 0;
 	private HashSet<String> uniqueTargetConcepts_ = new HashSet<String>();
+	private ArrayList<String> mismatchedCurationStateErrors_ = new ArrayList<String>();
 	
 	//An uber mapping of unique SCT codes (real codes only) to (a set of) unique draft facts to the set of unique SPL Set IDs
 	private Hashtable<String, Hashtable<String, HashSet<String>>> sctFactLabelCounts = new Hashtable<String, Hashtable<String, HashSet<String>>>();
@@ -235,7 +237,7 @@ public class SplMojo extends AbstractMojo
 			
 			//Index / prepare the SPL zip files
 			ConsoleUtil.println("Preparing SPL source files:");
-			SplDataHolder sdh = new SplDataHolder(splZipFilesFolder.listFiles(), new File(outputDirectory, "splZipFiles"));
+			SplDataHolder sdh = new SplDataHolder(splZipFilesFolder.listFiles());
 			
 			// Start iterating the draft facts
 			ConsoleUtil.println("Processing draft facts:");
@@ -393,6 +395,7 @@ public class SplMojo extends AbstractMojo
 			}
 			ConsoleUtil.println("Facts Accepted: " + accept_);
 			ConsoleUtil.println("Facts Rejected: " + reject_);
+			ConsoleUtil.println("Facts NEW?: " + new_);
 			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
 			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
 			
@@ -425,6 +428,20 @@ public class SplMojo extends AbstractMojo
 				statsFile.write(x.getKey() + "," + factAndLabel.size() + "," + labelTotal + "," + uniqueDrugs.size() + "\r\n");
 			}
 			statsFile.close();
+			
+			if (mismatchedCurationStateErrors_.size() > 0)
+			{
+				ConsoleUtil.println("Curation state mismatches on " + mismatchedCurationStateErrors_.size() + " draft facts.  See: " 
+						+ new File(getOutputDirectory(), "curationsErrors.csv") + ".");
+				
+				FileWriter curationErrorFile = new FileWriter(new File(getOutputDirectory(), "curationsErrors.csv"));
+				curationErrorFile.write("unique key,previously found state,newly found state\r\n");
+				for (String s : mismatchedCurationStateErrors_)
+				{
+					curationErrorFile.write(s + "\r\n");
+				}
+				curationErrorFile.close();
+			}
 		}
 		catch (Exception ex)
 		{
@@ -623,9 +640,14 @@ public class SplMojo extends AbstractMojo
 					{
 						flagCurationDataForConflict_++;
 					}
+					else if (fact.getCurationState().equalsIgnoreCase("NEW"))
+					{
+						//TODO deal with this how?
+						new_++;
+					}
 					else
 					{
-						ConsoleUtil.printErrorln("Unexpected curation state: " + fact.getCurationState());
+						ConsoleUtil.printErrorln("Unexpected curation state: '" + fact.getCurationState() + "'");
 					}
 				}
 			}
@@ -634,11 +656,11 @@ public class SplMojo extends AbstractMojo
 				//sanity check - they should be identical, yes?
 				if (fact.getCurationState() != null)
 				{
-					if (!fact.getCurationState().equals(existingSdf.curationState))
+					if (!fact.getCurationState().equalsIgnoreCase(existingSdf.curationState))
 					{
-						if (!existingSdf.curationState.equals("flag"))
+						if (!existingSdf.curationState.equalsIgnoreCase("flag"))
 						{
-							ConsoleUtil.printErrorln("Different curations states listed for same fact: " + existingSdf.getUniqueKey()  + " " + existingSdf.curationState + " " + fact.getCurationState());
+							mismatchedCurationStateErrors_.add(existingSdf.getUniqueKey()  + "," + existingSdf.curationState + "," + fact.getCurationState());
 							if (existingSdf.curationState.equalsIgnoreCase("Accept"))
 							{
 								accept_--;
@@ -647,9 +669,13 @@ public class SplMojo extends AbstractMojo
 							{
 								reject_--;
 							}
+							else if (existingSdf.curationState.equalsIgnoreCase("New"))
+							{
+								new_--;
+							}
 							else
 							{
-								ConsoleUtil.printErrorln("Unexpected curation state: " + fact.getCurationState());
+								//Unexpected state, but we already wrote an error about this when we put it in.
 							}
 							flagCurationDataForConflict_++;
 							existingSdf.curationState = "flag";
