@@ -13,6 +13,7 @@ package gov.va.akcds.splMojo;
 
 import gov.va.akcds.spl.NDA;
 import gov.va.akcds.spl.Spl;
+import gov.va.akcds.spl.SplDataHolder;
 import gov.va.akcds.splMojo.dataTypes.DynamicDataType;
 import gov.va.akcds.splMojo.dataTypes.StaticDataType;
 import gov.va.akcds.splMojo.model.Drug;
@@ -22,7 +23,6 @@ import gov.va.akcds.util.ConsoleUtil;
 import gov.va.akcds.util.EConceptUtility;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
-import gov.va.akcds.util.zipUtil.ZipContentsIterator;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
 
 import java.io.BufferedOutputStream;
@@ -45,6 +45,8 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.dwfa.cement.ArchitectonicAuxiliary;
 import org.dwfa.util.id.Type3UuidFactory;
 import org.ihtsdo.etypes.EConcept;
+import org.ihtsdo.tk.dto.concept.component.attribute.TkConceptAttributes;
+import org.ihtsdo.tk.dto.concept.component.refset.TkRefsetAbstractMember;
 import org.ihtsdo.tk.dto.concept.component.refset.cidcidcid.TkRefsetCidCidCidMember;
 import org.ihtsdo.tk.dto.concept.component.refset.str.TkRefsetStrMember;
 
@@ -100,6 +102,14 @@ public class SplMojo extends AbstractMojo
 	 */
 	private boolean filterNda;
 	
+	/**
+	 * The missing SPL filter flag.
+	 * 
+	 * @parameter
+	 * @required
+	 */
+	private boolean loadFactsWithMissingSPL;
+	
 	
 	/**
 	 * Location of the SPL source data.
@@ -107,7 +117,7 @@ public class SplMojo extends AbstractMojo
 	 * @parameter
 	 * @required
 	 */
-	private File splZipFile;
+	private File splZipFilesFolder;
 	
 	/**
 	 * Location of the RXNorm mapping data.
@@ -129,15 +139,13 @@ public class SplMojo extends AbstractMojo
 	private DataOutputStream dos_;
 	private long metadataConceptCounter_ = 0;
 	private long conceptCounter_ = 0;
-	private long xmlFileCnt_ = 0;
-	private long dupeSetIdDrop_ = 0;
-	private long skipSplForWrongVersion_ = 0;
+	private long skipDraftFactForWrongVersion_ = 0;
 	private long duplicateDraftFactMerged_ = 0;
 	private long uniqueDraftFactCount_ = 0;
 	private long accept_ = 0;
 	private long reject_ = 0;
-	private ArrayList<String> dropForNoFacts_ = new ArrayList<String>();
-	private ArrayList<String> dropForNoNDAs_ = new ArrayList<String>();
+	private long droppedFactsForNoNDAs_ = 0;
+	private long droppedFactsForMissingSpl_ = 0;
 	private int flagCurationDataForConflict_ = 0;
 	private HashSet<String> uniqueTargetConcepts_ = new HashSet<String>();
 	
@@ -225,51 +233,33 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("");
 			ConsoleUtil.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
 			
-			// load the draft facts
-			ConsoleUtil.println("Loading draft facts:");
-			File[] draftFactsFile = getFacts();			
-			draftFacts = new DraftFacts(draftFactsFile, new File(outputDirectory, "draftFactsByID"));
-
-			// source file (splSrcData.zip is a zip of zips)
-			File dataFile= getSplZipFile();
+			//Index / prepare the SPL zip files
+			ConsoleUtil.println("Preparing SPL source files:");
+			SplDataHolder sdh = new SplDataHolder(splZipFilesFolder.listFiles(), new File(outputDirectory, "splZipFiles"));
 			
+			// Start iterating the draft facts
+			ConsoleUtil.println("Processing draft facts:");
+			draftFacts = new DraftFacts(getFacts());
+
+		
 			ConsoleUtil.println(new Date().toString());
-			ConsoleUtil.println("Reading spl zip file : "+dataFile);
 			// process the zip of zips
-			ZipContentsIterator outerZCI = new ZipContentsIterator(dataFile);
+			
 
-			while (outerZCI.hasMoreElements())
+			while (draftFacts.hasMoreElements())
 			{
-				// Each of these should be a zip file
-				ZipFileContent nestedZipFile = outerZCI.nextElement();
-
-				if (nestedZipFile.getName().toLowerCase().endsWith(".zip"))
+				ArrayList<DraftFact> currentDraftFacts = draftFacts.nextElement();
+				//Each draftFact returned in a batch will have the same set id.
+				//Each draftFact returned should have the same setId version.  If not, we catch the error later.
+				
+				if (currentDraftFacts.size() > 0)
 				{
-					// open up the nested zip file
-					ZipContentsIterator nestedZipFileContents = new ZipContentsIterator(nestedZipFile.getFileBytes());
-
-					ArrayList<ZipFileContent> filesInNestedZipFile = new ArrayList<ZipFileContent>();
-
-					while (nestedZipFileContents.hasMoreElements())
-					{
-						filesInNestedZipFile.add(nestedZipFileContents.nextElement());
-					}
-
-					if (filesInNestedZipFile.size() > 0)
-					{
-						// Pass the elements in to the spl factory
-						Spl spl = new Spl(filesInNestedZipFile, nestedZipFile.getName());
-						loadIntoModel(spl);
-						xmlFileCnt_++;
-					}
-					else
-					{
-						ConsoleUtil.printErrorln("Empty inner zip file? " + nestedZipFile.getName());
-					}
+					Spl spl = sdh.getSpl(currentDraftFacts.get(0).getSplSetId(), currentDraftFacts.get(0).getSplVersion());
+					loadIntoModel(spl, currentDraftFacts);
 				}
 				else
 				{
-					ConsoleUtil.printErrorln("Skipping unexpected file in outer zip file: " + nestedZipFile.getName());
+					ConsoleUtil.printErrorln("Empty Draft fact set?");
 				}
 			}
 			
@@ -383,28 +373,24 @@ public class SplMojo extends AbstractMojo
 			dos_.close();						
 			
 			// Summarize
-			ConsoleUtil.println("TOTAL SPL FILES:   " + xmlFileCnt_);
-			ConsoleUtil.println("TOTAL workbench concepts created: " + conceptCounter_);
+			ConsoleUtil.println("Total workbench concepts created: " + conceptCounter_);
 			ConsoleUtil.println("Metadata concepts created: " + metadataConceptCounter_);
 			ConsoleUtil.println("Created " + nonSnomedTerms_.size() + " non-snomed concepts");
 			ConsoleUtil.println("SPL Drug Concepts created: " + splDrugConcepts_.size());
-			ConsoleUtil.println("SPL Set ID concepts created: " + splSetIdConcepts_.size());
-			ConsoleUtil.println("SPL Set ID concepts created: " + (conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()));
+			ConsoleUtil.println("Unique set IDs processed / SPL Set ID concepts created: " + splSetIdConcepts_.size());
+			if ((conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()) != splSetIdConcepts_.size())
+			{
+				ConsoleUtil.printErrorln("Math error in counters!");
+			}
+			ConsoleUtil.println("Processed " + draftFacts.getTotalDraftFactCount() + " draft facts");
 			ConsoleUtil.println("Merged " + duplicateDraftFactMerged_ + " duplicate draft facts onto an existing draft fact.");
 			ConsoleUtil.println("Loaded " + uniqueDraftFactCount_ + " draft facts");
-			ConsoleUtil.println("Ignored " + dropForNoFacts_.size() + " files for not having any draft facts");
-			ConsoleUtil.println("Ignored " + dropForNoNDAs_.size() + " files for not having any NDAs");	
-			ConsoleUtil.println("Ignored " + skipSplForWrongVersion_ + " files for not matching the draft fact version number");	
-			ConsoleUtil.println("Data errors loading " + dupeSetIdDrop_ + " SPL files because of non-unique set id");	
-			ConsoleUtil.println("The following setIds were not loaded:");
-			int unloaded = 0;
-			for (String s : draftFacts.getUnusedSetIds())
+			ConsoleUtil.println("Ignored " + droppedFactsForNoNDAs_ + " facts because the corresponding SPL did not have any NDAs");	
+			ConsoleUtil.println("Ignored " + skipDraftFactForWrongVersion_ + " draft facts for not matching the draft fact version number of a previously loaded draft fact on the same set id");
+			if (loadFactsWithMissingSPL)
 			{
-				int factCount = draftFacts.getFacts(s).size();
-				unloaded += factCount;
-				ConsoleUtil.println(s + " - facts: " + factCount);
+				ConsoleUtil.println("Ignored " + droppedFactsForMissingSpl_+ " draft facts for not having an spl file available");
 			}
-			ConsoleUtil.println("Total missed facts: " + unloaded);
 			ConsoleUtil.println("Facts Accepted: " + accept_);
 			ConsoleUtil.println("Facts Rejected: " + reject_);
 			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
@@ -469,28 +455,35 @@ public class SplMojo extends AbstractMojo
 		}
 	}
 	
-	private void loadIntoModel(Spl spl) throws Exception
+	private void loadIntoModel(Spl spl, ArrayList<DraftFact> splDraftFacts) throws Exception
 	{
-		// get the facts
-		ArrayList<DraftFact> splDraftFacts = draftFacts.getFacts(spl.getSetId());
-				
-		if (splDraftFacts.size() == 0 || (isFilterNda() && !spl.hasAtLeastOneNDA()))
+		if (spl == null)
 		{
-			// if there are no facts don't add the spl (it complicates things)
-			// also drop anything with no nda values
-			if (splDraftFacts.size() == 0)
+			ConsoleUtil.printErrorln("Missing SPL document for set id: " + splDraftFacts.get(0).getSplSetId());
+			if (loadFactsWithMissingSPL)
 			{
-				dropForNoFacts_.add(spl.getSetId());
+				//Make up a "missing" placeholder.
+				spl = new Spl(splDraftFacts.get(0).getSplSetId());
 			}
 			else
 			{
-				dropForNoNDAs_.add(spl.getSetId());
+				droppedFactsForMissingSpl_ += splDraftFacts.size();
+				return;
 			}
+		}
+		if (isFilterNda() && !spl.hasAtLeastOneNDA())
+		{
+			// if there are no facts don't add the spl (it complicates things) (but in the revised loader, this wont happen, 
+			//since we process from the draft facts file.
+			// So just drop anything with no nda values
+			ConsoleUtil.printErrorln("Spl " + spl.getZipFileName() + " has no NDAs.  Skipping all draft facts for this set id: " + spl.getSetId());
+			droppedFactsForNoNDAs_ += splDraftFacts.size();
 			return;
 		}
 
 		//Create the spl Set id object which will be attached to one (or more) drug concepts
 		UUID setIdUUID = null;
+		String splVersion = null;
 
 		
 		for (int i = 0; i < splDraftFacts.size(); i++)
@@ -503,15 +496,32 @@ public class SplMojo extends AbstractMojo
 				fact.setSplVersion(spl.getVersion());
 			}
 			
-			// check the fact version matches that of this doc
-			if (i == 0 && !fact.getSplVersion().equals(spl.getVersion()))
+			//This will ensure that all setIds in this batch have the same version
+			if (splVersion == null)
 			{
-				//we make the assumption that all draft facts will be for the same version.
-				//TODO - note - if we ever go back to loading the old draft fact data - this loader is broken... because it didn't specify the version, but the full xml set has multiple versions of the same doc - we would end up loading an arbitrary doc, instead of the correct one.
-				skipSplForWrongVersion_++;
-				return;
+				splVersion = fact.getSplVersion();
+			}
+			if (!fact.getSplVersion().equals(splVersion))
+			{
+				skipDraftFactForWrongVersion_++;
+				continue;
 			}
 			
+			//This will ensure that we haven't already loaded this setId with a different version
+			if (setIdUUID == null)
+			{
+				setIdUUID = loadSetId(spl);
+			}
+			if (setIdUUID == null)
+			{
+				//skip this entire set.
+				skipDraftFactForWrongVersion_ += splDraftFacts.size();
+				ConsoleUtil.printErrorln("Skipping draft facts for set id " + spl.getSetId() 
+						+ " because we have already loaded draft facts for this set id with a different version number.  Skipped version number: " + spl.getVersion());
+				break;
+			}
+			
+						
 			//Ok, we want to load this one.  See if we have already started it.
 			String drugName = fact.getDrugName().toUpperCase();
 			
@@ -525,12 +535,6 @@ public class SplMojo extends AbstractMojo
 			
 			//Also load this mapping hashtable (used for stats)
 			reverseDrugMap.put(fact.getSplSetId(), drugName);
-			
-			//Do this in the loop, so that the version check has already occurred. 
-			if (setIdUUID == null)
-			{
-				setIdUUID = loadSetId(spl);
-			}
 			
 			drug.setIdUUIDs.add(setIdUUID);
 			drug.setIds.add(fact.getSplSetId());
@@ -659,7 +663,34 @@ public class SplMojo extends AbstractMojo
 	private UUID loadSetId(Spl spl) throws Exception
 	{
 		UUID setIdUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:setIds:" + spl.getSetId()).getBytes());
-		EConcept concept = conceptUtility_.createConcept(setIdUUID, "SPL Source", System.currentTimeMillis());
+		
+		EConcept concept = splSetIdConcepts_.get(setIdUUID);
+		if (concept != null)
+		{
+			//It has to have the same version.  If it has the same version, nothing to do here.
+			//If it doesn't, we need to report back that this draft fact should be skipped, because it came from the wrong spl document.
+			TkConceptAttributes attribs = concept.getConceptAttributes();
+			String version = "";
+			for (TkRefsetAbstractMember<?> x : attribs.getAnnotations())
+			{
+				if (x.getRefsetUuid().equals(StaticDataType.SPL_VERSION))
+				{
+					version = ((TkRefsetStrMember)x).getStrValue();
+					break;
+				}
+			}
+			
+			if (spl.getVersion().equals(version))
+			{
+				return setIdUUID;
+			}
+			else
+			{
+				return null;
+			}
+		}
+		
+		concept = conceptUtility_.createConcept(setIdUUID, "SPL Source", System.currentTimeMillis());
 		
 		conceptUtility_.addAnnotation(concept, spl.getSetId(), StaticDataType.SPL_SET_ID.getUuid());
 		for (NDA nda : spl.getUniqueNDAs())
@@ -681,12 +712,7 @@ public class SplMojo extends AbstractMojo
 		}
 		
 		//Can't store these yet, because we need to add all the tree links first (which we don't know yet)
-		EConcept c = splSetIdConcepts_.put(setIdUUID, concept);
-		if (c != null)
-		{
-			ConsoleUtil.printErrorln("DATA ERROR - Attempting to load a set id that was already loaded - this means draft facts were provided for multiple versions of the same set id!  Set ID: " + spl.getSetId() + " Current file: " + spl.getZipFileName());
-			dupeSetIdDrop_++;
-		}
+		splSetIdConcepts_.put(setIdUUID, concept);
 		return setIdUUID;
 	}
 	
@@ -857,12 +883,12 @@ public class SplMojo extends AbstractMojo
 		this.facts = facts;
 	}
 
-	public File getSplZipFile() {
-		return splZipFile;
+	public File getSplZipFilesFolder() {
+		return splZipFilesFolder;
 	}
 
-	public void setSplZipFile(File zip) {
-		this.splZipFile = zip;
+	public void setSplZipFilesFolder(File zip) {
+		this.splZipFilesFolder = zip;
 	}
 
 	public String getOutputFileName() {
@@ -888,6 +914,14 @@ public class SplMojo extends AbstractMojo
 	public void setFilterNda(boolean filterNda) {
 		this.filterNda = filterNda;
 	}
+	
+	public boolean isLoadFactsWithMissingSpl() {
+		return loadFactsWithMissingSPL;
+	}
+
+	public void setLoadFactsWithMissingSPL(boolean loadFactsWithMissingSPL) {
+		this.loadFactsWithMissingSPL = loadFactsWithMissingSPL;
+	}
 
 
 	public static void main(String[] args) throws Exception
@@ -897,9 +931,10 @@ public class SplMojo extends AbstractMojo
 		//new File("../splData/data/splDraftFacts.txt.zip")
 		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-export-20110627-2-fixed.txt.zip")};
 		mojo.rxNormMapFile = new File("../splData/data/splRxNormMapData");
-		mojo.splZipFile = new File("/media/truecrypt2/Source Data/SPL from BW/srcdata.zip");
+		mojo.splZipFilesFolder = new File("/media/truecrypt2/Source Data/SPL from BW/temp/");
 		mojo.outputFileName = "splData.jbin";
-		mojo.filterNda = true;
+		mojo.filterNda = false;
+		mojo.loadFactsWithMissingSPL = true;
 		mojo.outputDirectory = new File("../splData/target");
 		
 		mojo.execute();

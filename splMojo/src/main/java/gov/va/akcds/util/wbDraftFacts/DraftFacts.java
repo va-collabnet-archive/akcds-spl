@@ -1,125 +1,164 @@
 package gov.va.akcds.util.wbDraftFacts;
 
-import gov.va.akcds.util.ConsoleUtil;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Enumeration;
+import java.util.NoSuchElementException;
 import java.util.zip.ZipInputStream;
 
-public class DraftFacts {
+/**
+ * read in the draft facts, return groups of them with the same setId.  Prefers that the source data be sorted by setId, 
+ * but it is ok if it isn't... just less efficient.
+ * @author Daniel Armbrust
+ */
+public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 
-	private File draftFactsRoot_;
+	private File[] sourceFiles_;
+	private ArrayList<DraftFact> next_ = null;
+	private int sourceFile_ = 0;
+	private ZipInputStream zis_ = null;
+	BufferedReader in_ = null;
+	private DraftFact carryOver_ = null;
 	
-	public HashSet<String> setIds_ = new HashSet<String>();  //Just used to figure out what SetIds didn't get loaded.
+	private int draftFactCounter = 0;
 	
 	/**
 	 * Data file should be a zip file containing only the draft facts text file
 	 */
-	public DraftFacts(File[] dataFiles, File expansionFolder) throws Exception
+	public DraftFacts(File[] dataFiles) throws Exception
 	{
-		draftFactsRoot_ = expansionFolder;
-		draftFactsRoot_.mkdirs();
-		
-		// deleting the temp files to allow safe appending.
-		for (File f : draftFactsRoot_.listFiles())
-		{
-			f.delete();
-		}
-		
-		for (File dataFile : dataFiles)
-		{
-			init(dataFile);
-		}
+		sourceFiles_ = dataFiles;
 	}
 	
-	public void init(File dataFile) throws Exception
+	private void getNext() throws Exception
 	{
-		ConsoleUtil.println("Reorganizing draft facts by set id : " + dataFile);
-
-		ZipInputStream zis = new ZipInputStream(new BufferedInputStream(new FileInputStream(dataFile)));
-
-		String prevSetId = "";
-		File outFile = null;
-		BufferedWriter out = null;
-		int cnt = 0;
-		while (zis.getNextEntry() != null)
+		ArrayList<DraftFact> draftFacts = new ArrayList<DraftFact>();
+		
+		while (next_ == null)
 		{
-			BufferedReader in = new BufferedReader(new InputStreamReader(zis));
-
-			for (String str = in.readLine(); str != null; str = in.readLine())
+			if (sourceFiles_.length > sourceFile_)
 			{
-				cnt++;
-				if (str.trim().length() > 0)
+				if (zis_ == null)
 				{
-					DraftFact fact = new DraftFact(str);
-					String setId = fact.getSplSetId();
-					setIds_.add(setId);
-
-					if (setId != null && !setId.equals(prevSetId))
+					zis_ = new ZipInputStream(new BufferedInputStream(new FileInputStream(sourceFiles_[sourceFile_])));
+				}
+			}
+			else
+			{
+				if (draftFacts.size() > 0)
+				{
+					next_ = draftFacts;
+				}
+				return;
+			}
+	
+			String currentSetId = null;
+			
+			if (carryOver_ != null)
+			{
+				currentSetId = carryOver_.getSplSetId();
+				draftFacts.add(carryOver_);
+				carryOver_ = null;
+			}
+	
+			if (in_ == null)
+			{
+				if (zis_.getNextEntry() != null)
+				{
+					in_ = new BufferedReader(new InputStreamReader(zis_));
+				}
+				else
+				{
+					zis_.close();
+					zis_ = null;
+					sourceFile_++;
+				}
+			}
+			
+			while (in_ != null)
+			{
+				for (String str = in_.readLine(); str != null; str = in_.readLine())
+				{
+					if (str.trim().length() > 0)
 					{
-						if (out != null)
+						DraftFact fact = new DraftFact(str);
+						String setId = fact.getSplSetId();
+						if (setId.equals("SPL_SET_ID"))
 						{
-							out.close();
+							//Our header line from the file...
+							continue;
 						}
-						outFile = new File(draftFactsRoot_, setId + ".txt");
-						out = new BufferedWriter(new FileWriter(outFile, true));
-						prevSetId = setId;
+						
+						draftFactCounter++;
+						
+						if (currentSetId == null)
+						{
+							currentSetId = setId;
+						}
+						if (!setId.equals(currentSetId))
+						{
+							carryOver_ = fact;
+							next_ = draftFacts;
+							return;
+						}
+						draftFacts.add(fact);
 					}
-					out.write(str + "\n");
 				}
-				if (cnt % 1000 == 0)
-				{
-					ConsoleUtil.showProgress();
-				}
+				in_ = null;
 			}
-			if (out != null)
-			{
-				out.close();
-			}
-			ConsoleUtil.println("Done organizing draft facts - found:" + cnt);
 		}
 	}
 
-	/**
-	 * 
-	 * Method to get the facts for a given spl dir name.
-	 * 
-	 * @param splSetId
-	 * @return
-	 * 
-	 */
-
-	public ArrayList<DraftFact> getFacts(String setId) throws Exception
+	@Override
+	public boolean hasMoreElements()
 	{
-		String normalizedSetId = setId.toUpperCase();
-		setIds_.remove(normalizedSetId);
-		ArrayList<DraftFact> rtn = new ArrayList<DraftFact>();
-		File file = new File(draftFactsRoot_, normalizedSetId + ".txt");
-		if (file != null && file.exists())
+		if (next_ == null)
 		{
-			BufferedReader in = new BufferedReader(new FileReader(file));
-			for (String str = in.readLine(); str != null; str = in.readLine())
+			try
 			{
-				if (str.trim().length() > 0)
-				{
-					DraftFact fact = new DraftFact(str);
-					rtn.add(fact);
-				}
+				getNext();
+			}
+			catch (Exception e)
+			{
+				throw new RuntimeException(e);
 			}
 		}
-		return rtn;
+		if (next_ == null)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public ArrayList<DraftFact> nextElement()
+	{
+		if (next_ == null)
+		{
+			try
+			{
+				getNext();
+			}
+			catch (Exception e)
+			{
+				throw new RuntimeException(e);
+			}
+		}
+		if (next_ == null)
+		{
+			throw new NoSuchElementException();
+		}
+		ArrayList<DraftFact> temp = next_;
+		next_ = null;
+		return temp;
 	}
 	
-	public String[] getUnusedSetIds()
+	public int getTotalDraftFactCount()
 	{
-		return setIds_.toArray(new String[setIds_.size()]);
+		return draftFactCounter;
 	}
 }

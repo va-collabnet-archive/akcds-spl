@@ -22,9 +22,23 @@ public class Spl
 	private String setId_, version_, firstApprovedDate_;
 	private HashSet<NDA> uniqueNdas_ = new HashSet<NDA>();
 	
-	private HashSet<String> ndaTypesToDrop_ = new HashSet<String>(Arrays.asList(new String[] {"ANADA", "NADA", "part"}));
+	private static final HashSet<String> ndaTypesToDrop_ = new HashSet<String>(Arrays.asList(new String[] {"ANADA", "NADA", "part"}));
 
-	
+	/**
+	 * Hack constructor for inventing an SPL when the real one can't be found.
+	 * @param files
+	 * @param sourceZipFileName
+	 * @throws Exception
+	 */
+	public Spl(String setId)
+	{
+		zipFileName_ = "MISSING";
+		xmlFile_ = null;
+		supportingFiles_ = new ArrayList<ZipFileContent>();
+		setId_ = setId.toUpperCase();
+		version_ = "-";
+	}
+
 	public Spl(ArrayList<ZipFileContent> files, String sourceZipFileName) throws Exception
 	{
 		supportingFiles_ = new ArrayList<ZipFileContent>();
@@ -52,7 +66,7 @@ public class Spl
 
 		Element rootElement = xmlDoc.getRootElement();
 
-		setId_ = getValue(rootElement, "setId", "root");
+		setId_ = getValue(rootElement, "setId", "root").toUpperCase();
 		version_ = getValue(rootElement, "versionNumber", "value");
 		ArrayList<String> rawNDAs = findAllValues(rootElement, Arrays.asList(new String[] {"subjectOf", "approval", "id"}), "extension", 0);
 		for (String s : rawNDAs)
@@ -190,14 +204,13 @@ public class Spl
 
 	public String getXMLFileAsString()
 	{
+		if (xmlFile_ == null)
+		{
+			return "MISSING";
+		}
 		return new String(xmlFile_.getFileBytes());
 	}
 
-	public int getXMLFileLength()
-	{
-		return xmlFile_.getFileBytes().length;
-	}
-	
 	public HashSet<NDA> getUniqueNDAs()
 	{
 		return uniqueNdas_;
@@ -206,6 +219,10 @@ public class Spl
 	public boolean hasAtLeastOneNDA()
 	{
 		if (uniqueNdas_ != null && uniqueNdas_.size() > 0)
+		{
+			return true;
+		}
+		if (setId_.equals("MISSING"))
 		{
 			return true;
 		}

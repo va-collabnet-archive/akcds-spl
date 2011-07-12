@@ -104,7 +104,7 @@ public class DraftFact {
 	}
 
 	public void setSplSetId(String splSetId) {
-		this.splSetId = splSetId;
+		this.splSetId = splSetId.toUpperCase();
 	}
 
 	public String getSplDirName() {
