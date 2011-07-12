@@ -21,6 +21,7 @@ import gov.va.akcds.splMojo.model.SimpleDraftFact;
 import gov.va.akcds.splMojo.model.SimpleDraftFactSource;
 import gov.va.akcds.util.ConsoleUtil;
 import gov.va.akcds.util.EConceptUtility;
+import gov.va.akcds.util.fileUtil.StatsFilePrinter;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
@@ -30,12 +31,12 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
@@ -149,7 +150,7 @@ public class SplMojo extends AbstractMojo
 	private long droppedFactsForMissingSpl_ = 0;
 	private int flagCurationDataForConflict_ = 0;
 	private HashSet<String> uniqueTargetConcepts_ = new HashSet<String>();
-	private ArrayList<String> mismatchedCurationStateErrors_ = new ArrayList<String>();
+	private ArrayList<String[]> mismatchedCurationStateErrors_ = new ArrayList<String[]>();
 	
 	//An uber mapping of unique SCT codes (real codes only) to (a set of) unique draft facts to the set of unique SPL Set IDs
 	private Hashtable<String, Hashtable<String, HashSet<String>>> sctFactLabelCounts = new Hashtable<String, Hashtable<String, HashSet<String>>>();
@@ -252,7 +253,7 @@ public class SplMojo extends AbstractMojo
 			{
 				ArrayList<DraftFact> currentDraftFacts = draftFacts.nextElement();
 				//Each draftFact returned in a batch will have the same set id.
-				//Each draftFact returned should have the same setId version.  If not, we catch the error later.
+				//Each draftFact returned will have the same setId version.
 				
 				if (currentDraftFacts.size() > 0)
 				{
@@ -319,8 +320,14 @@ public class SplMojo extends AbstractMojo
 					conceptUtility_.addAnnotation(triple, sdf.targetCodeName, StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_NAME.getUuid());
 					conceptUtility_.addAnnotation(triple, sdf.targetCode, StaticDataType.DRAFT_FACT_SNOMED_CONCEPT_CODE.getUuid());
 					
-					if (sdf.curationState != null && !sdf.curationState.equals("-CONFLICT-"))
+					if (sdf.curationState != null)
 					{
+						if (sdf.curationState.equalsIgnoreCase("NEW"))
+						{
+							//If it still said NEW after all duplicates were added in, change it to reject.
+							reject_++;
+							sdf.curationState = "Reject";
+						}
 						conceptUtility_.addAnnotation(triple, sdf.curationState, StaticDataType.DRAFT_FACT_CURATION_STATE.getUuid());
 					}
 					
@@ -402,15 +409,14 @@ public class SplMojo extends AbstractMojo
 			}
 			ConsoleUtil.println("Facts Accepted: " + accept_);
 			ConsoleUtil.println("Facts Rejected: " + reject_);
-			ConsoleUtil.println("Facts NEW?: " + new_);
+			ConsoleUtil.println("Facts marked as NEW which were remapped into reject: " + new_);
 			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
 			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
 			
 			ConsoleUtil.println("Unique real SCT concepts " + sctFactLabelCounts.size());
-			ConsoleUtil.println("Also see: " + new File(getOutputDirectory(), "stats.csv") + " for more stats");
 			
-			FileWriter statsFile = new FileWriter(new File(getOutputDirectory(), "stats.csv"));
-			statsFile.write("code,unique draft facts,unique label count,unique drug count\r\n");
+			StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"code", "unique draft facts", "unique label count", "unique drug count"},
+					"\t", "\r\n", new File(getOutputDirectory(), "stats.csv"), "Load stats");
 			
 			for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : sctFactLabelCounts.entrySet())
 			{
@@ -432,23 +438,22 @@ public class SplMojo extends AbstractMojo
 				
 				//Find all of the unique drugs that any involved setId points to.
 				
-				statsFile.write(x.getKey() + "," + factAndLabel.size() + "," + labelTotal + "," + uniqueDrugs.size() + "\r\n");
+				sfp.addLine(new String[] {x.getKey(), factAndLabel.size() + "", labelTotal + "", uniqueDrugs.size() + ""});
 			}
-			statsFile.close();
+			sfp.close();
 			
 			if (mismatchedCurationStateErrors_.size() > 0)
 			{
-				ConsoleUtil.println("Curation state mismatches on " + mismatchedCurationStateErrors_.size() + " draft facts.  See: " 
-						+ new File(getOutputDirectory(), "curationsErrors.csv") + ".");
+				sfp = new StatsFilePrinter(new String[] {"unique key", "previously found state", "newly found state"},
+						"\t", "\r\n", new File(getOutputDirectory(), "curationErrors.csv"), "curation state mismatches");
 				
-				FileWriter curationErrorFile = new FileWriter(new File(getOutputDirectory(), "curationsErrors.csv"));
-				curationErrorFile.write("unique key,previously found state,newly found state\r\n");
-				for (String s : mismatchedCurationStateErrors_)
+				for (String[] s : mismatchedCurationStateErrors_)
 				{
-					curationErrorFile.write(s + "\r\n");
+					sfp.addLine(s);
 				}
-				curationErrorFile.close();
+				sfp.close();
 			}
+			sdh.dumpIndex(getOutputDirectory());
 		}
 		catch (Exception ex)
 		{
@@ -508,46 +513,151 @@ public class SplMojo extends AbstractMojo
 			}
 		}
 
-		//Create the spl Set id object which will be attached to one (or more) drug concepts
-		UUID setIdUUID = null;
-		String splVersion = null;
-
 		
-		for (int i = 0; i < splDraftFacts.size(); i++)
+		UUID setIdUUID = getUUIDForSpl(spl);
+		String version = null;
+		
+		//Lots of version checking validation...
+		if (splDraftFacts.size() > 0)
 		{
-			DraftFact fact = splDraftFacts.get(i);
+			//All draft facts in a set will have the same version number.
+			DraftFact fact = splDraftFacts.get(0);
 
 			// default version to that of current doc, for npl data as we don't know what it is
 			if (fact.getSplVersion().equals("-"))
 			{
-				fact.setSplVersion(spl.getVersion());
+				version = spl.getVersion();
 			}
+			else
+			{
+				version = fact.getSplVersion();
+			}
+			
+			//Check and see if we have already loaded a different version of this SPL
+			//We have some bad data coming in which causes this to happen.  We only want to keep
+			//the newest version.  This actually adds quite a bit of complexity, to handle removing
+			//ones that we already added (but shouldn't have)
+			
+			EConcept concept = splSetIdConcepts_.get(setIdUUID);
+			if (concept != null)
+			{
+				//We already created this concept.  Version check...
+				TkConceptAttributes attribs = concept.getConceptAttributes();
+				String loadedVersion = "";
+				for (TkRefsetAbstractMember<?> x : attribs.getAnnotations())
+				{
+					if (x.getRefsetUuid().equals(StaticDataType.SPL_VERSION.getUuid()))
+					{
+						loadedVersion = ((TkRefsetStrMember)x).getStrValue();
+						break;
+					}
+				}
+				
+				int newVersion = Integer.parseInt(version);
+				int oldVersion = Integer.parseInt(loadedVersion);
+				
+				if (newVersion > oldVersion)
+				{
+					int clearedCount = 0;
+					//We need to clear the old one (and all of the corresponding draft fact) and store this new one.
+					concept = null;
+					
+					splSetIdConcepts_.remove(setIdUUID);
+					
+					//Need to get all of the "drugs" that this splSet Id was involved with, and go through each of them, 
+					//removing bad facts.
+					String drugName = reverseDrugMap.get(spl.getSetId());
+					Drug drug = splDrugConcepts_.get(drugName);
+					
+					Iterator<SimpleDraftFact> sdfi = drug.draftFacts.values().iterator();
+					
+					while (sdfi.hasNext())
+					{
+						SimpleDraftFact sdf = sdfi.next();
+						Iterator<SimpleDraftFactSource> sdfsi = sdf.sources.iterator();
+						while (sdfsi.hasNext())
+						{
+							SimpleDraftFactSource sdfs = sdfsi.next();
+							if (sdfs.setId.equals(spl.getSetId()) && !sdfs.version.equals(version))
+							{
+								sdfsi.remove();
+								clearedCount++;
+								if (sdf.sources.size() >= 1)
+								{
+									//don't decrement if we went from 1 to 0...
+									duplicateDraftFactMerged_--;
+								}
+							}
+						}
+						//If there are no sources left... then this entire draft fact shouldn't have been created.  Need to un-create it.
+						if (sdf.sources.size() == 0)
+						{
+							uniqueDraftFactCount_--;
+							if (sdf.curationState.equalsIgnoreCase("New"))
+							{
+								new_--;
+							}
+							else if (sdf.curationState.equalsIgnoreCase("Accept"))
+							{
+								accept_--;
+							}
+							else if (sdf.curationState.equalsIgnoreCase("Reject"))
+							{
+								reject_--;
+							}
+							else if (sdf.curationState.equalsIgnoreCase("flag"))
+							{
+								flagCurationDataForConflict_--;
+								int remove = -1;
+								for (int i = 0; i < mismatchedCurationStateErrors_.size(); i++)
+								{
+									if (mismatchedCurationStateErrors_.get(i)[0].equals(sdf.getUniqueKey()))
+									{
+										remove = i;
+										break;
+									}
+								}
+								if (remove >= 0)
+								{
+									mismatchedCurationStateErrors_.remove(remove);
+								}
+							}
+							sdfi.remove();
+						}
+					}
+					
+					//Seems highly unlikely that this drug would end up with no draft facts at all, 
+					//so I'm not implementing that cleanup logic.
+					ConsoleUtil.printErrorln("Removing " + clearedCount + " facts for " + spl.getSetId() 
+							+ " from version " + oldVersion + " because we found " + newVersion);
+						skipDraftFactForWrongVersion_ += clearedCount;
+				}
+				else if (newVersion < oldVersion)
+				{
+					ConsoleUtil.printErrorln("Ignoring " + splDraftFacts.size() + " facts for " + spl.getSetId() 
+							+ " from version " + newVersion + " because we already have " + oldVersion);
+					skipDraftFactForWrongVersion_ += splDraftFacts.size();
+					return;  //dont add this batch
+				}
+			}
+			
+			//Create the SPL concept in workbench format
+			if (concept == null)
+			{
+				concept = createSetId(spl);
+			}
+		}
+		
+		for (int i = 0; i < splDraftFacts.size(); i++)
+		{
+			DraftFact fact = splDraftFacts.get(i);
 			
 			//This will ensure that all setIds in this batch have the same version
-			if (splVersion == null)
+			if (!fact.getSplVersion().equals("-") && !fact.getSplVersion().equals(version))
 			{
-				splVersion = fact.getSplVersion();
+				//This should be impossible the way that they are batched coming into this method.
+				throw new Exception("Programming error - different version in one batch of draft facts");
 			}
-			if (!fact.getSplVersion().equals(splVersion))
-			{
-				skipDraftFactForWrongVersion_++;
-				continue;
-			}
-			
-			//This will ensure that we haven't already loaded this setId with a different version
-			if (setIdUUID == null)
-			{
-				setIdUUID = loadSetId(spl);
-			}
-			if (setIdUUID == null)
-			{
-				//skip this entire set.
-				skipDraftFactForWrongVersion_ += splDraftFacts.size();
-				ConsoleUtil.printErrorln("Skipping draft facts for set id " + spl.getSetId() 
-						+ " because we have already loaded draft facts for this set id with a different version number.  Skipped version number: " + spl.getVersion());
-				break;
-			}
-			
 						
 			//Ok, we want to load this one.  See if we have already started it.
 			String drugName = fact.getDrugName().toUpperCase();
@@ -560,7 +670,7 @@ public class SplMojo extends AbstractMojo
 				splDrugConcepts_.put(drugName, drug);
 			}
 			
-			//Also load this mapping hashtable (used for stats)
+			//Also load this mapping hashtable (used for stats, also used for "undos")
 			reverseDrugMap.put(fact.getSplSetId(), drugName);
 			
 			drug.setIdUUIDs.add(setIdUUID);
@@ -569,6 +679,7 @@ public class SplMojo extends AbstractMojo
 			//Now, set up this draft fact
 			SimpleDraftFact newSdf = new SimpleDraftFact(drugName, fact.getRoleName(), (fact.getConceptCode().equals("-") ? fact.getConceptName() : fact.getConceptCode()));
 			SimpleDraftFact existingSdf = drug.draftFacts.get(newSdf.getUniqueKey());
+				
 			if (existingSdf == null)
 			{
 				uniqueDraftFactCount_++;
@@ -626,7 +737,7 @@ public class SplMojo extends AbstractMojo
 			}
 			
 			//Add on the unique draft fact data for this instance of the draft fact
-			SimpleDraftFactSource sdfs = new SimpleDraftFactSource(fact.getRowId(), fact.getSplSetId(), fact.getSecName(), fact.getSentence(), fact.getDrugCode());
+			SimpleDraftFactSource sdfs = new SimpleDraftFactSource(fact.getRowId(), fact.getSplSetId(), version, fact.getSecName(), fact.getSentence(), fact.getDrugCode());
 			if (fact.getComment() != null && !fact.getComment().equals("-"))
 			{
 				sdfs.curationComment = fact.getComment();
@@ -652,7 +763,6 @@ public class SplMojo extends AbstractMojo
 					}
 					else if (fact.getCurationState().equalsIgnoreCase("NEW"))
 					{
-						//TODO deal with this how?
 						new_++;
 					}
 					else
@@ -670,25 +780,52 @@ public class SplMojo extends AbstractMojo
 					{
 						if (!existingSdf.curationState.equalsIgnoreCase("flag"))
 						{
-							mismatchedCurationStateErrors_.add(existingSdf.getUniqueKey()  + "," + existingSdf.curationState + "," + fact.getCurationState());
-							if (existingSdf.curationState.equalsIgnoreCase("Accept"))
+							if (existingSdf.curationState.equalsIgnoreCase("New"))
 							{
-								accept_--;
-							}
-							else if (existingSdf.curationState.equalsIgnoreCase("Reject"))
-							{
-								reject_--;
-							}
-							else if (existingSdf.curationState.equalsIgnoreCase("New"))
-							{
+								//If it is currently new - and we now have something more specific, switch it to the new value.
+								existingSdf.curationState = fact.getCurationState();
 								new_--;
+								if (fact.getCurationState().equalsIgnoreCase("Accept"))
+								{
+									accept_++;
+								}
+								else if (fact.getCurationState().equalsIgnoreCase("Reject"))
+								{
+									reject_++;
+								}
+								else if (fact.getCurationState().equalsIgnoreCase("flag"))
+								{
+									flagCurationDataForConflict_++;
+								}
+								else
+								{
+									ConsoleUtil.printErrorln("Unexpected curation state during switch from new: '" + fact.getCurationState() + "'");
+								}
+							}
+							else if (fact.getCurationState().equalsIgnoreCase("NEW"))
+							{
+								//If the new one is set to "new", but the old one is set to something else, just ignore the 
+								//this 'new' value.  The existing value is better.
 							}
 							else
 							{
-								//Unexpected state, but we already wrote an error about this when we put it in.
+								mismatchedCurationStateErrors_.add(new String[] {existingSdf.getUniqueKey(), existingSdf.curationState, fact.getCurationState()});
+								if (existingSdf.curationState.equalsIgnoreCase("Accept"))
+								{
+									accept_--;
+								}
+								else if (existingSdf.curationState.equalsIgnoreCase("Reject"))
+								{
+									reject_--;
+								}
+								
+								else
+								{
+									//Unexpected state, but we already wrote an error about this when we put it in.
+								}
+								flagCurationDataForConflict_++;
+								existingSdf.curationState = "flag";
 							}
-							flagCurationDataForConflict_++;
-							existingSdf.curationState = "flag";
 						}
 					}
 				}
@@ -696,37 +833,19 @@ public class SplMojo extends AbstractMojo
 		}
 	}
 	
-	private UUID loadSetId(Spl spl) throws Exception
+	private UUID getUUIDForSpl(Spl spl)
 	{
-		UUID setIdUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:setIds:" + spl.getSetId()).getBytes());
+		return UUID.nameUUIDFromBytes((uuidRoot_ + ":root:setIds:" + spl.getSetId()).getBytes());
+	}
+	
+	/**
+	 * This should only be called when the spl concept for this doc has not yet been created.
+	 */
+	private EConcept createSetId(Spl spl) throws Exception
+	{
+		UUID setIdUUID = getUUIDForSpl(spl);
 		
-		EConcept concept = splSetIdConcepts_.get(setIdUUID);
-		if (concept != null)
-		{
-			//It has to have the same version.  If it has the same version, nothing to do here.
-			//If it doesn't, we need to report back that this draft fact should be skipped, because it came from the wrong spl document.
-			TkConceptAttributes attribs = concept.getConceptAttributes();
-			String version = "";
-			for (TkRefsetAbstractMember<?> x : attribs.getAnnotations())
-			{
-				if (x.getRefsetUuid().equals(StaticDataType.SPL_VERSION))
-				{
-					version = ((TkRefsetStrMember)x).getStrValue();
-					break;
-				}
-			}
-			
-			if (spl.getVersion().equals(version))
-			{
-				return setIdUUID;
-			}
-			else
-			{
-				return null;
-			}
-		}
-		
-		concept = conceptUtility_.createConcept(setIdUUID, "SPL Source", System.currentTimeMillis());
+		EConcept concept = conceptUtility_.createConcept(setIdUUID, "SPL Source", System.currentTimeMillis());
 		
 		conceptUtility_.addAnnotation(concept, spl.getSetId(), StaticDataType.SPL_SET_ID.getUuid());
 		for (NDA nda : spl.getUniqueNDAs())
@@ -748,8 +867,12 @@ public class SplMojo extends AbstractMojo
 		}
 		
 		//Can't store these yet, because we need to add all the tree links first (which we don't know yet)
-		splSetIdConcepts_.put(setIdUUID, concept);
-		return setIdUUID;
+		EConcept c = splSetIdConcepts_.put(setIdUUID, concept);
+		if (c != null)
+		{
+			throw new Exception("Created a new spl concept one an old one already existed.  Programming error");
+		}
+		return concept;
 	}
 	
 	private void createMissingConceptIfNecessary(UUID uuid, String conceptName) throws IOException
@@ -791,12 +914,9 @@ public class SplMojo extends AbstractMojo
 		ConsoleUtil.println("NDC as key: " + rxNormMaps.getNdcAsKey().size());
 		ConsoleUtil.println("SPL as key: " + rxNormMaps.getSplAsKey().size());
 		
-		File f = new File(getOutputDirectory(), "mappingStats.csv");
-		ConsoleUtil.println("Also see: " + f + " for more stats");
-		
-		FileWriter statsFile = new FileWriter(f);
-		statsFile.write("Drug Name,SPL -> VUID,NDC->VUID,Unique VUIDs\r\n");
-		
+		StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"Drug Name", "SPL -> VUID", "NDC -> VUID", "Unique VUIDs"},
+				"\t", "\r\n", new File(getOutputDirectory(), "mappingStats.csv"), "VUID mapping statistics");
+			
 		//We only have 8 or 9 digits of the drug code.  RXNorm has more.  Create new maps from rxNorm that have 8 and 9 digits, respectively.
 		Hashtable<String, NdcAsKey> rxNormDrugCodeEightMatch = new Hashtable<String, NdcAsKey>();
 		Hashtable<String, NdcAsKey> rxNormDrugCodeNineMatch = new Hashtable<String, NdcAsKey>();
@@ -849,9 +969,9 @@ public class SplMojo extends AbstractMojo
 					}
 				}
 			}
-			statsFile.write(d.drugName + "," + foundBySpl + "," + foundByNDC + "," + d.rxNormVuids.size() + "\r\n");
+			sfp.addLine(new String[] {d.drugName, foundBySpl + "", foundByNDC + "", d.rxNormVuids.size() + ""});
 		}
-		statsFile.close();
+		sfp.close();
 	}
 	
 	private DynamicDataType getNDAType(String type) throws Exception

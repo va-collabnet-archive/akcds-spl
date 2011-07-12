@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 import java.util.zip.ZipInputStream;
 
 /**
- * read in the draft facts, return groups of them with the same setId.  Prefers that the source data be sorted by setId, 
+ * read in the draft facts, return groups of them with the same setId and version.  Prefers that the source data be sorted by setId and version, 
  * but it is ok if it isn't... just less efficient.
  * @author Daniel Armbrust
  */
@@ -56,11 +56,11 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 				return;
 			}
 	
-			String currentSetId = null;
+			String currentSetIdVersion = null;
 			
 			if (carryOver_ != null)
 			{
-				currentSetId = carryOver_.getSplSetId();
+				currentSetIdVersion = carryOver_.getSplSetId() + ":" + carryOver_.getSplVersion();
 				draftFacts.add(carryOver_);
 				carryOver_ = null;
 			}
@@ -95,11 +95,11 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 						
 						draftFactCounter++;
 						
-						if (currentSetId == null)
+						if (currentSetIdVersion == null)
 						{
-							currentSetId = setId;
+							currentSetIdVersion = setId + ":" + fact.getSplVersion();
 						}
-						if (!setId.equals(currentSetId))
+						if (!(setId + ":" + fact.getSplVersion()).equals(currentSetIdVersion))
 						{
 							carryOver_ = fact;
 							next_ = draftFacts;

@@ -1,6 +1,7 @@
 package gov.va.akcds.spl;
 
 import gov.va.akcds.util.ConsoleUtil;
+import gov.va.akcds.util.fileUtil.StatsFilePrinter;
 import gov.va.akcds.util.zipUtil.ZipContentsIterator;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
 
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
@@ -164,5 +166,18 @@ public class SplDataHolder
 		}
 		return spl;
 	}
-
+	
+	public void dumpIndex(File outputFolder) throws IOException
+	{
+		StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"Set ID", "Zip File", "File Name Inside Zip File"}, "\t", "\r\n", new File(outputFolder, "splMap.txt"), "SPL Set Id source mappings");
+		
+		for (Map.Entry<String, ArrayList<LocationPointer>> x : setIdMap_.entrySet())
+		{
+			for (LocationPointer lp : x.getValue())
+			{
+				sfp.addLine(new String[] {x.getKey(), lp.containingZipFile_.getName(), lp.fullFileNameInsideZipFile_});
+			}
+		}
+		sfp.close();
+	}
 }
