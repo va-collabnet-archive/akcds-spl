@@ -387,7 +387,14 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Processed " + draftFacts.getTotalDraftFactCount() + " draft facts");
 			ConsoleUtil.println("Merged " + duplicateDraftFactMerged_ + " duplicate draft facts onto an existing draft fact.");
 			ConsoleUtil.println("Loaded " + uniqueDraftFactCount_ + " draft facts");
-			ConsoleUtil.println("Ignored " + droppedFactsForNoNDAs_ + " facts because the corresponding SPL did not have any NDAs");	
+			if (isFilterNda())
+			{
+				ConsoleUtil.println("Ignored " + droppedFactsForNoNDAs_ + " facts because the corresponding SPL did not have any NDAs");
+			}
+			else
+			{
+				ConsoleUtil.println("Would have ignored " + droppedFactsForNoNDAs_ + " facts because the corresponding SPL did not have any NDAs, however the nda filter is disabled.");
+			}
 			ConsoleUtil.println("Ignored " + skipDraftFactForWrongVersion_ + " draft facts for not matching the draft fact version number of a previously loaded draft fact on the same set id");
 			if (loadFactsWithMissingSPL)
 			{
@@ -488,14 +495,17 @@ public class SplMojo extends AbstractMojo
 				return;
 			}
 		}
-		if (isFilterNda() && !spl.hasAtLeastOneNDA())
+		if (!spl.hasAtLeastOneNDA())
 		{
 			// if there are no facts don't add the spl (it complicates things) (but in the revised loader, this wont happen, 
 			//since we process from the draft facts file.
 			// So just drop anything with no nda values
-			ConsoleUtil.printErrorln("Spl " + spl.getZipFileName() + " has no NDAs.  Skipping all draft facts for this set id: " + spl.getSetId());
 			droppedFactsForNoNDAs_ += splDraftFacts.size();
-			return;
+			if (isFilterNda())
+			{
+				ConsoleUtil.printErrorln("Spl " + spl.getZipFileName() + " has no NDAs.  Skipping all draft facts for this set id: " + spl.getSetId());
+				return;
+			}
 		}
 
 		//Create the spl Set id object which will be attached to one (or more) drug concepts

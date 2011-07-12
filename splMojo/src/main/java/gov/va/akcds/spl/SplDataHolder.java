@@ -57,7 +57,7 @@ public class SplDataHolder
 				continue;
 			}
 
-			ConsoleUtil.println("Processing " + f);
+			ConsoleUtil.println("Indexing " + f);
 			ZipContentsIterator outerZCI = new ZipContentsIterator(f);
 
 			while (outerZCI.hasMoreElements())
