@@ -54,11 +54,14 @@
 						<phase>generate-resources</phase>
 						<configuration>
 							<facts>
-								<!-- param>data/splDraftFacts.txt.zip</param-->
-								<param>data/bwDraftFacts-B1-export-20110629-5.txt.zip</param>
-								<!--param>data/bwDraftFacts-B2-export-20110707-1.txt.zip</param-->
+								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110629-5.txt.zip</param-->
+								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B2-export-20110707-1.txt.zip</param-->
+								<!--param>../../../../Source Data/Draft Facts/ElkinDraftFacts.txt.zip</param-->
+								<param>data/draftFacts/SampleDraftFacts.txt.zip</param>
 							</facts>
-							<splZipFilesFolder>/media/truecrypt2/Source Data/SPL from BW/</splZipFilesFolder>
+							<!--splZipFilesFolder>../../../../Source Data/SPL from BW/</splZipFilesFolder-->
+							<!--splZipFilesFolder>../../../../Source Data/SPL 2010_11_02/</splZipFilesFolder-->
+							<splZipFilesFolder>data/splZipFiles/</splZipFilesFolder>
 							<rxNormMapFile>data/splRxNormMapData</rxNormMapFile>
 							<outputFileName>splData.jbin</outputFileName>
 							<filterNda>false</filterNda>
