@@ -1094,7 +1094,7 @@ public class SplMojo extends AbstractMojo
 		ConsoleUtil.disableFancy = true;
 		SplMojo mojo = new SplMojo();
 		//new File("../splData/data/splDraftFacts.txt.zip")
-		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-export-20110627-2-fixed.txt.zip")};
+		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-B1-export-20110629-5.txt.zip"), new File("../splData/data/bwDraftFacts-B2-export-20110707-1.txt.zip")};
 		mojo.rxNormMapFile = new File("../splData/data/splRxNormMapData");
 		mojo.splZipFilesFolder = new File("/media/truecrypt2/Source Data/SPL from BW/temp/");
 		mojo.outputFileName = "splData.jbin";
