@@ -38,6 +38,15 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 	{
 		ArrayList<DraftFact> draftFacts = new ArrayList<DraftFact>();
 		
+		String currentSetIdVersion = null;
+		
+		if (carryOver_ != null)
+		{
+			currentSetIdVersion = carryOver_.getSplSetId() + ":" + carryOver_.getSplVersion();
+			draftFacts.add(carryOver_);
+			carryOver_ = null;
+		}
+		
 		while (next_ == null)
 		{
 			if (sourceFiles_.length > sourceFile_)
@@ -55,16 +64,7 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 				}
 				return;
 			}
-	
-			String currentSetIdVersion = null;
-			
-			if (carryOver_ != null)
-			{
-				currentSetIdVersion = carryOver_.getSplSetId() + ":" + carryOver_.getSplVersion();
-				draftFacts.add(carryOver_);
-				carryOver_ = null;
-			}
-	
+
 			if (in_ == null)
 			{
 				if (zis_.getNextEntry() != null)
