@@ -55,11 +55,10 @@
 						<configuration>
 							<facts>
 								<!-- param>data/splDraftFacts.txt.zip</param-->
-								<param>data/bwDraftFacts-export-20110627-2-fixed.txt.zip</param>
+								<param>data/bwDraftFacts-B1-export-20110629-5.txt.zip</param>
+								<!--param>data/bwDraftFacts-B2-export-20110707-1.txt.zip</param-->
 							</facts>
-							<!-- splZipFile>data/splSrcFiles.zip</splZipFile-->
-							<splZipFilesFolder>/media/truecrypt2/Source Data/SPL from BW/temp/</splZipFilesFolder>
-							<!-- splZipFile>/media/truecrypt2/Source Data/SPL 2010_11_02/dm_spl_release_20101102-filtered - blackbox or aers top 100.zip</splZipFile-->
+							<splZipFilesFolder>/media/truecrypt2/Source Data/SPL from BW/</splZipFilesFolder>
 							<rxNormMapFile>data/splRxNormMapData</rxNormMapFile>
 							<outputFileName>splData.jbin</outputFileName>
 							<filterNda>false</filterNda>
