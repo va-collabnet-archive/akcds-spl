@@ -780,6 +780,15 @@ public class SplMojo extends AbstractMojo
 					{
 						if (!existingSdf.curationState.equalsIgnoreCase("flag"))
 						{
+							/*
+							 * The data now includes non-curated assertions.  
+							 * If a label has the same triple and it has been accepted or rejected, 
+							 * do not count any "New" as state mis-matches. In other words, you only count 
+							 * a state-mismatch if there is an Accept and Reject. For triples that are uniquely 
+							 * “NEW” (i.e., the same triple for that compound has not been accepted or rejected 
+							 * elsewhere) load it into the WB with a state = Reject 
+							 */
+						
 							if (existingSdf.curationState.equalsIgnoreCase("New"))
 							{
 								//If it is currently new - and we now have something more specific, switch it to the new value.
