@@ -1,0 +1,3875 @@
+Abacavir hypersensitivity reaction
+292826004
+412030005
+Abdomen scan
+441987005
+Abdominal adhesion
+30689000
+Abdominal cramp
+51197009
+Abdominal distention
+41931001
+Abdominal distress
+95516005
+Abdominal infection
+128070006
+Abdominal injury
+128069005
+Abdominal syndrome acute
+9209005
+Abnormal accommodation
+54552008
+Abnormal alanine aminotransferase level
+166646003
+Abnormal aminotransferase level
+166646003
+Abnormal aspartate aminotransferase level
+166668008
+Abnormal bleeding
+301822002
+165563002
+Abnormal cardiac tissue
+399617002
+Abnormal chest sounds
+301273002
+Abnormal coordination
+302289002
+Abnormal crying
+263654008
+304534000
+Abnormal dreams
+85418005
+Abnormal electroencephalogram
+274521009
+Abnormal feeling
+416383008
+Abnormal heart sounds
+123824001
+Abnormal hepatic enzyme level
+166643006
+Abnormal involuntary movements
+260912008
+Abnormal lacrimation
+31053003
+Abnormal liver function test
+166603001
+Abnormal liver transaminase level
+166643006
+Abnormal salivation
+283015002
+Abnormal test result
+442618008
+Abnormal urine color
+167239007
+Abnormal urine sediment
+437009
+Abnormal wound healing
+103681003
+Abnormality of accommodation
+54552008
+Abstinence syndrome
+363101005
+Acathisia
+285145004
+Accommodation difficulty
+232140004
+Accommodation disorder
+54552008
+Accommodation disturbance
+54552008
+Achiness
+27635008
+Acid-base equilibrium
+250570001
+Acne follicular
+11381005
+Acneiform dermatitis
+402644006
+Acneiform rash
+402644006
+Acquired hemangioma
+128903007
+Acquired hemophilia
+25904003
+Actinic keratoses
+201101007
+Activated partial thromboplastin time prolonged
+409675001
+Acute agranulocytosis
+17182001
+Acute anxiety
+48694002
+Acute dyskinesia
+9748009
+Acute dystonia
+230316009
+Acute fulminant liver failure
+197270009
+Acute graft rejection
+40442005
+Acute kidney failure
+14669001
+Acute kidney tubular necrosis
+35455006
+Acute leukemia
+91855006
+Acute liver failure
+197270009
+Acute malaria
+272118002
+61462000
+Acute mania
+268619003
+Acute migraine
+37796009
+Acute myelocytic leukemia
+91861009
+Acute psychosis
+231489001
+Acute rhabdomyolysis
+240131006
+Acute severe hepatitis
+37871000
+Acute sinusitis, maxillary
+68272006
+Adenitis
+19471005
+ADH disorder
+406506008
+Adrenal cortex insufficiency
+386584007
+Adrenal insufficiency
+237785004
+Adult maltreatment syndrome
+213015009
+Adult rheumatoid arthritis
+69896004
+Adverse cardiac reaction
+56265001
+40172005
+Adverse cardiovascular reaction
+56265001
+40172005
+Adverse cerebral vascular event
+230690007
+281647001
+Adverse kidney reaction
+90708001
+281647001
+Adverse liver reaction
+235856003
+281647001
+Adynamic ileus
+55525008
+Aggravated agitation
+162473008
+24199005
+Aggravated allergy
+106190000
+162473008
+Aggravated arthritis
+3723001
+162473008
+Aggravated asthma
+162473008
+195967001
+Aggravated convulsion
+162473008
+91175000
+Aggravated depression
+162473008
+35489007
+Aggravated diabetes mellitus
+162473008
+73211009
+Aggravated hypertension
+162473008
+38341003
+Aggravated hyperthyroidism
+162473008
+34486009
+Aggravated migraine
+162473008
+37796009
+Aggregation platelet abnormal
+280415008
+60649002
+Aggressive reaction
+61372001
+Agitation
+24199005
+Airway obstruction
+79688008
+Alanine aminotransferase level
+390961000
+Albumin level
+365801005
+Aldosterone decreased
+17832008
+83679004
+Alkaline phosphatase increased
+274770006
+Allergic exanthema
+422290000
+Alopecia reversible
+56317004
+Alveolar hemorrhage
+78144005
+Alveolar pneumonia
+7436001
+Amenorrhea secondary
+86030004
+Aminotransferase level
+390961000
+Ammonia increased
+35105006
+59960001
+Ammonia level
+59960001
+Amnestic symptoms
+48167000
+Analgesia
+38433004
+Anaphylactic-type reaction
+39579001
+Androgen replacement therapy
+266717002
+84629008
+Anemia, sideroblastic
+41841004
+Anemias hemolytic immune
+413603009
+Anesthesia adjunct
+373535000
+Anesthetic premedication
+48674006
+Anger
+75408008
+Angina pectoris aggravated
+162473008
+194828000
+Angina worsened
+170597008
+Angioneurotic edema
+41291007
+Angioneurotic edema of extremities
+2592007
+41291007
+Angioneurotic edema of the face
+445088006
+41291007
+Angioneurotic edema of tongue
+402407004
+Angitis necrotizing
+11791001
+Anion gap increased
+237854004
+Anorexia
+56882008
+Anorgasmia
+62607004
+Anosmia
+44169009
+Antibiotic associated diarrhea
+301469002
+Antibody test
+252318005
+Anticholinergic syndrome
+216593002
+Antidiuretic hormone secretion
+61966007
+Anti-nuclear antibodies
+359788000
+Antinuclear antibody positive
+165850001
+Antinuclear factor positive
+165850001
+Antisocial reaction
+60814007
+Antithrombin level
+401309004
+Anxiety depression
+231504006
+Anxiety reaction
+48694002
+Aortic dissection
+308546005
+Apathy disorder
+20602000
+Aplasia, pure red cell
+50715003
+Appetite
+289161009
+Appetite change
+249473004
+Appetite decrease
+64379006
+Appetite increase
+72405004
+Application site burning
+95365001
+Application site dermatitis
+95371007
+Application site dryness
+95365001
+Application site erythema
+213338000
+Application site itching
+95365001
+Application site paresthesia
+95399003
+Application site warmth
+95365001
+Arm pain
+102556003
+Arousal
+33105009
+27625002
+Arrest sinus
+5609005
+Arrhythmic disorder
+44808001
+Arterial blood gases
+278297009
+Arterial thrombosis limb
+90958004
+31529002
+Arthralgia
+57676002
+Arthritis pain
+57676002
+Arthropathy (NOS)
+399269003
+Aspartate aminotransferase level
+373679006
+Asthmatic wheezing
+18197001
+Atony stomach
+235675006
+Atrial bradycardia
+49710005
+Atrioventricular conduction
+366177003
+Atypical mycobacterium infection
+111812000
+Auditory hallucination
+45150006
+Autism spectrum disorder
+373618009
+Autonomic disease of nervous system
+15241006
+Autonomic instability
+15241006
+Bacterial infective disorder
+87628006
+Bacterial sepsis
+10001005
+Balance difficulty
+282302006
+Balance disorder
+387603000
+Basocellular carcinoma
+429114002
+BCG infection
+238431000
+Behavior change
+417350008
+Behavioral tic
+568005
+Benign hepatic adenomas
+424263008
+Benign neoplastic disorder
+20376005
+Bigeminy
+251173003
+251168009
+11157007
+Biliary lithiasis
+235919008
+Biliary secretion
+48882008
+Biliary spasm
+197432008
+Biliary tract disorder
+105997008
+Bilirubin level
+365786009
+Binge eating
+248122005
+Biopsy endomyocardial
+387829002
+Bipolar affective disorder, mixed
+191636007
+Birth defects
+66091009
+Bitter taste
+346138009
+36905001
+112107000
+BK virus infection
+431258001
+BK virus nephropathy
+129128006
+431258001
+BK virus-associated nephropathy
+431258001
+129128006
+Black stools
+2901004
+Bladder carcinoma
+255108000
+Bladder cramps
+6744007
+Bladder instability
+61033006
+Bladder irritation
+404220000
+Bladder paralysis
+398029001
+Bladder spasm
+249297006
+Blanching
+4470009
+Bleb formation
+271759003
+bleeding disorder
+64779008
+Bleeding hemorrhoid
+51551000
+Bleeding time prolonged
+123789000
+Blindness unilateral
+22950006
+Blistering
+247464001
+Bloating
+248490000
+Blood alkaline phosphatase increased
+274770006
+Blood ammonia level
+166604007
+Blood bicarbonate decreased
+312471006
+1250004
+Blood bilirubin level
+365786009
+Blood creatinine level
+365756002
+Blood dyscrasia
+20447006
+Blood glucose fluctuation
+16237004
+365811003
+166922008
+Blood iron
+250216004
+Blood loss, surgical
+242996005
+Blood monocytes increased
+418697001
+Blood pH
+60170009
+27051004
+9456006
+Blood potassium abnormal
+365760004
+263654008
+Blood pressure fluctuation
+129899009
+Blood pressure labile
+251080003
+Blood testosterone decreased
+131078003
+Blood testosterone increased
+131077008
+Blood testosterone level
+104957004
+Blood urea nitrogen increased
+166712009
+Blood urea nitrogen level
+105011006
+Blood uric acid level
+313998007
+Blood, electrolytes
+312474003
+Blood, potassium
+312468003
+Bloody diarrhea
+95545007
+Bloody stools
+405729008
+Bloody tarry stools
+2901004
+Bloody vomit
+8765009
+Blurred or decreased vision
+225581002
+246636008
+Blurred or double vision
+24982008
+246636008
+Blurred vision
+246636008
+Body movements involuntary
+26079004
+Body weight change
+365921005
+Bone deformity
+271084006
+Bone disorder
+76069003
+Bone fracture
+125605004
+Bone marrow aplasia
+303266002
+Bone marrow aplastic
+303266002
+Bone marrow failure
+304132006
+Bone marrow suppression
+307762000
+Bowel necrosis
+95519003
+Brain edema
+2032001
+Brain syndrome acute
+85821003
+76011009
+Brain trauma
+127295002
+Breakthrough cancer pain
+363346000
+22253000
+Breakthrough pain
+22253000
+255298001
+Breast cancer invasive
+408643008
+Breast cancer metastasis
+315004001
+Breast enlargement
+372281005
+Breast enlargement female
+372281005
+Breast fibroadenoma
+254845004
+Breast hyperplasia
+369462000
+Breast mass
+89164003
+Breast neoplasm female
+126927001
+Breast neoplastic disorder
+126926005
+Breast pain
+53430007
+Breast pain male
+53430007
+Breast primary tumor
+126926005
+Breathing difficulties
+230145002
+Brights disease
+236391006
+Brittle nail
+69192004
+Bronchial hyperreactivity
+4386001
+Bronchial spasm
+4386001
+Bronchiolitis obliterans
+40100001
+Bronchoconstriction
+21942000
+Buccoglossal syndrome
+229694001
+Bullous dermatitis
+7231009
+Bullous exanthema
+200923003
+Bullous rash
+14907004
+BUN increased
+166712009
+Bundle-branch block
+6374002
+Burning in eyes
+2070002
+Burning sensation in eyes
+2070002
+Burning sensation of eye
+2070002
+Burning sensation skin
+102604002
+Burning tongue
+399044006
+Ca++ decreased
+5291005
+Calcium excretion
+446889005
+Calcium Level Elevation
+166702002
+Cancer pain
+22253000
+363346000
+Canker sore
+426965005
+Carcinogenicity
+88376000
+Carcinoma
+68453008
+Cardiac conduction abnormality
+36358004
+Cardiac congestion
+42343007
+Cardiac contractile depression
+233928007
+Cardiac enzyme level
+365768006
+cardiac event
+405617006
+Cardiac failure (NOS)
+84114007
+Cardiac failure, congestive
+42343007
+Cardiac fibrillation
+40593004
+Cardiac monitoring
+23852006
+Cardiac mortality
+405617006
+409651001
+Cardiopulmonary arrest
+410430005
+Cardiopulmonary failure
+410430005
+Cardiotoxicity
+cardiovascular death risk
+395112001
+Cardiovascular defect
+128599005
+Cardiovascular disorder
+49601007
+Cardiovascular mortality
+Cardiovascular risk
+441829007
+395112001
+Carnitine decreased
+1250004
+36174000
+Carotene decreased
+131112007
+Carotid sinus hypersensitivity
+51723007
+Carotid stenosis
+64586002
+Cartilage developmental disorder
+50927007
+Casts urinary
+5277004
+Catalepsy
+247917007
+Cataract extraction
+54885007
+Catatonic state
+247917007
+Catecholamines increased
+237745005
+365775007
+Catheterisation venous
+392230005
+Catheter-related infection
+440653007
+Cellularity
+4421005
+Central nervous system injury
+128126004
+Central nervous system stimulation
+349897000
+Central nervous system toxicity
+87536007
+Cerebral artery embolism
+75543006
+Cerebral insufficiency
+29322000
+Cerebral ischemia disorder
+287731003
+Cerebral swelling
+2032001
+Cerebrovascular disorder
+62914000
+Cerebrovascular insufficiency
+29322000
+Cervix dysplasia
+73391008
+Change in libido
+8357008
+19072006
+Changes in color vision
+71676008
+23289000
+Changes in vaginal secretion
+3318003
+263703002
+Chemical phlebitis
+60555002
+61599003
+Chemistry test, not otherwise specified
+166312007
+Chest congestion
+418092006
+67599009
+Chest pain exertional
+81953000
+Chest tightness
+23924001
+Chest X-ray
+399208008
+Chest X-ray abnormal
+168734001
+Chills  fever
+274640006
+Cholelithiasis
+235919008
+Cholestatic jaundice
+44018007
+cholestatic syndrome
+44018007
+Cholesterol level
+365793008
+Cholesterol levels raised
+166830008
+Cholesterol serum increased
+166830008
+Cholesterol total increased
+124054003
+Cholinergic syndrome
+8563000
+Chromosomal damage
+107675007
+Chronic hepatitis b
+61977001
+Chronic kidney disease
+236425005
+Chronic kidney failure
+236425005
+Chronic lymphocytic leukemia
+92814006
+Chronic renal failure worsened
+231877006
+236425005
+Chronic stable angina
+233819005
+circulating lymphocytes
+64045003
+65929005
+56972008
+Circulatory depression
+Clearance creatinine decreased
+166714005
+365756002
+clinical chemistry
+166312007
+Clinical hepatitis
+128241005
+Clitoral hypertrophy
+428098006
+Clotting disorder
+64779008
+Clotting time increased
+409674002
+CMV viremia
+28944009
+CNS Demyelinating Disorder
+6118003
+CNS Depression
+220363002
+Coagulation Factor I Level
+90744006
+Coagulation factor II level decreased
+73975000
+165568006
+Coagulation test
+3116009
+Cognition
+373930000
+Cognitive impairment
+386806002
+Cogwheel rigidity
+55630000
+Cold and clammy skin
+162691005
+Cold clammy skin
+162691005
+Cold extremity
+66019005
+64713002
+Cold hand
+271584002
+Cold sweats
+83547004
+Coldness
+64713002
+Colitis, lymphocytic
+31437008
+Colon atonic
+29479008
+Colon hemorrhage
+95540002
+Colon obstruction
+40650009
+Color perception
+271726001
+193683001
+247706003
+Community-acquired pneumonia
+385093006
+Complete hearing loss
+15188001
+Complex absence seizure
+79631006
+Complex partial seizure
+407675009
+complicated skin and skin structure infections
+25626000
+Complication of delivery
+27541007
+Compulsive personality disorder
+106130002
+Conduction abnormality
+36358004
+Conduction delay
+251109003
+conduction disorder nos
+44808001
+Conduction disturbance
+36358004
+Confusion
+40917007
+Congenital anomalies of heart, Other
+253264007
+Congenital anomaly in offspring
+443341004
+Congenital cardiovascular disease
+9904008
+Congenital ear malformation
+275259005
+Congenital external ear malformations
+282038006
+Congenital genitourinary abnormality
+287085006
+Congenital goiter
+278503003
+Congenital hyperthyroidism
+190268003
+Congenital hypogonadotrophic hypogonadism
+33927004
+Congenital hypothyroid
+190268003
+Congenital skeletal malformation NOS
+8447006
+Congenital urinary tract disorder
+73262007
+Congenital urogenital disease
+287085006
+Consciousness clouding
+40917007
+Constipation aggravated
+162473008
+14760008
+Contractile dysfunction
+429589006
+Contralateral breast cancer
+254837009
+255209002
+Convulsive threshold lowered
+19260006
+Coombs test
+165771000
+Coombs test positive
+165775009
+165773002
+Coordination disturbance
+281016006
+Corneal disorder
+15250008
+Corneal infiltrates
+418638008
+Corneal perforation
+Coronary arterial disease
+53741008
+Coronary arteriosclerosis risk
+315290008
+Coronary artery disease aggravated
+162473008
+53741008
+Coronary artery disorder (NOS)
+414024009
+Coronary artery obstruction
+63739005
+Coronary artery vasospasm
+23687008
+Coronary disorder
+414024009
+Coronary insufficiency
+194823009
+Coronary obstruction
+63739005
+Coronary vascular spasm
+23687008
+Cortical opacity
+193576003
+Cough decreased
+52673003
+Cough increased
+62731002
+Cramps or muscle pain
+55300003
+68962001
+279093005
+Craniocerebral trauma
+275382005
+Craniofacial abnormality
+128225009
+Craniofacial defects
+268239009
+Creatine increased
+432352001
+Creatine kinase level
+16614002
+Creatinine blood increased
+35105006
+113075003
+Creatinine clearance
+167181009
+Creatinine clearance decreased
+167181009
+1250004
+Creatinine level
+365756002
+Creatinine serum increased
+166717003
+Crepitations
+284520004
+Crohns disease
+34000006
+Cryptorchidism
+204878001
+CSF analysis
+441967009
+CSF protein
+84130004
+CSF protein abnormal
+365808004
+CT scan
+77477000
+C-telopeptide
+121756009
+Cushingoid
+67967009
+Cutaneous candidiasis
+49883006
+Cutaneous candidosis
+49883006
+cutaneous rash
+271807003
+Cutaneous vasculitis
+53312001
+Cylinduria
+5277004
+Cytokine release syndrome
+75777003
+Cytomegalovirus retinitis
+22455005
+Dandruff
+200767005
+Dark urine
+39575007
+Dead fetus
+445548006
+Deafness
+15188001
+Deafness reversible
+44057004
+Decay dental
+80967001
+decrease in cardiac output
+86318000
+Decreased blood sugar
+51798006
+Decreased bone density
+125150003
+385342005
+Decreased consciousness
+443371007
+Decreased drug level
+166972005
+Decreased hemoglobin level
+264777008
+Decreased lacrimation
+246850001
+Decreased libido
+8357008
+Decreased prothrombin time
+165569003
+Decreased white blood cell count
+419188005
+Deep vein thrombosis
+128053003
+Deep venous thrombosis prophylaxis
+439993001
+Deep venous thrombosis proximal
+128053003
+Deglutition disorder
+40739000
+Delayed menstruation
+84292000
+Delusion
+2073000
+Delusional symptoms
+2073000
+demyelinating neuropathy
+230656003
+Dental pain
+301361000
+Dependence addictive
+191816009
+Deposit eye
+247153005
+Depression worsened
+231877006
+35489007
+Depression, bipolar
+191627008
+Derealisation
+40806005
+Dermatitis (NOS)
+182782007
+Dermopathy
+95320005
+Desquamation
+271767006
+Diabetic angiopathy
+127014009
+Diabetic gastric stasis
+34140002
+Diabetic ketoacidosis
+420422005
+Diastolic blood pressure elevation
+23154005
+Differential blood cell count
+165511009
+Differential WBC count
+165511009
+Difficulty concentrating
+26329005
+Difficulty voiding
+102835006
+Diffuse alveolar damage
+40541001
+Diffuse esophageal spasm
+79962008
+Diffuse lymphoma
+277626001
+Digestive system disorder
+53619000
+Dilatation pupillary
+37125009
+Discoid lupus erythematosis
+200938002
+Discolored feces
+271863002
+Disease flare
+64572001
+410661009
+Disequilibrium
+22631008
+Disorder caused by aspergillus infection
+65553006
+Disorder caused by blastomyces infection
+69996000
+Disorder caused by candida infection
+78048006
+Disorder caused by coccidioidomyces infection
+60826002
+Disorder caused by cryptococcal infection
+42386007
+Disorder caused by cytomegalovirus infection
+28944009
+Disorder caused by gonorrhea infection
+15628003
+Disorder caused by Hepatitis B Infection
+66071002
+Disorder caused by herpes simplex infection
+88594005
+Disorder caused by herpes zoster infection
+4740000
+Disorder caused by herpesviridae infection
+23513009
+Disorder caused by histoplasma infection
+12962009
+
+Disorder caused by listeria infection
+4241002
+Disorder caused by mite infestation
+240885009
+Disorder caused by polyomavirus infection
+5714002
+Disorder caused by protozoan infection
+95896000
+Disorder caused by staphylococcal infection
+56038003
+Disorder caused by streptococcal infection
+85769006
+Disulfiram like reaction
+292417007
+Diverticulosis
+397881000
+Dorsocervical fat accumulation
+10867005
+Drooling
+62718007
+Drowsiness
+271782001
+Drug addiction
+191816009
+Drug induced lupus erythematosus
+80258006
+Drug induced neutropenia
+47318007
+Drug resistance, bacterial
+31438003
+Drug-induced skin eruption
+28926001
+Drug-related death
+419620001
+410942007
+Dry nose
+42201002
+Dry throat
+102618009
+Duodenal ileus
+52232007
+281255004
+Dysgeusia
+271801002
+Dysphoria
+30819006
+Dyspnea exertional
+60845006
+Dystonic reaction
+15802004
+Ear disorder
+25906001
+Ear roaring
+162354008
+Early morning awakening
+401236004
+ECG Abnormality
+102594003
+Echocardiogram
+40701008
+ECOG performance status
+424122007
+Ectasia
+25322007
+Edema (NOS)
+267038008
+Edema application site
+95372000
+Edema infusion site
+95392007
+Edema of legs
+102574007
+Edema of mouth
+9067002
+Edema upper extremities
+102558002
+Edema, Interstitial
+53742001
+267038008
+Edema, Peripheral
+271809000
+Eighth cranial nerve lesion
+9441002
+Ejaculation delayed
+15405008
+Ejaculation disorder
+386790008
+Ejection fraction
+70822001
+Elastosis perforans
+49428008
+Elective surgery
+257556004
+103390000
+Electric shock sensation
+18213006
+272144002
+Electrocardiogram observation
+29303009
+Electrocardiogram variability
+29303009
+Electroencephalogram change
+292003
+Electrolyte homeostasis
+21979002
+86355000
+Electrolyte profile
+79301008
+Electrolytes NOS abnormal
+166686006
+Elevated aminotransferase level
+166646003
+Elevated amylase level
+75540009
+64435009
+Elevated HDL Cholesterol Level
+439953004
+Elevated hepatic enzyme level
+166643006
+Elevated sedimentation rate
+165468009
+Embolism and thrombosis
+266262004
+429098002
+Embolism embolus
+414086009
+Embryotoxicity
+57991002
+75478009
+Emesis
+422400008
+Emotional disturbance
+286735002
+Emotional lability
+432776007
+Encephalopathy
+81308009
+Endometrial adenocarcinoma
+123845008
+Endometrial sarcoma
+447266004
+Endometritis postpartum
+22399000
+Engorgement, breast
+49746001
+enlargement of the clitoris
+80212005
+enlargement of the penis
+441797008
+Enlargement parotid gland
+29748005
+Enteritis
+64613007
+Enterocolitis
+43752006
+Eosinophilic hepatitis
+128241005
+30981000
+Eosinophilic pneumonia
+367542003
+Epidermal necrolysis
+23067006
+Epidural infection
+30636001
+40733004
+Epigastric distress
+162031009
+Epilepsy petit mal
+79631006
+Erection increased
+41179007
+Eructation
+271834000
+Erythema facial
+247441003
+Erythema periorbital
+412740002
+Erythematous rash
+135888007
+Erythematous skin rash
+135888007
+Erythrocyte Count
+104098008
+Erythrocyte sedimentation increased
+165468009
+Erythrocyte vacuolisation
+80566003
+Erythrocytes increased
+3570003
+Escherichia coli pneumonia
+51530003
+Esophageal achalasia
+45564002
+Esophageal candidiasis
+20639004
+Esophageal lesion
+300286002
+Esophageal perforation
+23387001
+Esophageal ulceration
+30811009
+ESR raised
+165468009
+Euthyroid goiter
+271949009
+Exacerbation of disease
+64572001
+410661009
+Exanthema
+112625008
+Excessive crying
+162213003
+Excessive dreaming
+260378005
+7175000
+Excessive perspiration
+52613005
+Excessive tearing
+418035005
+Exercise tolerance decreased
+1250004
+248243004
+251892004
+Exfoliation
+271767006
+Exfoliation syndrome
+399992009
+Exfoliative dermatitis
+396350005
+Exfoliative rash
+125118008
+Extrapyramidal disorder
+76349003
+Extrasystoles (NOS)
+29717002
+Extravasation necrosis
+403660000
+Eye allergy
+244486005
+106190000
+Eye disorder
+371409005
+Eye disorder caused by infection
+128351009
+Eye edema
+248501007
+Eye exam
+373366005
+Eye hemorrhage
+93478000
+Eye irritation
+244486005
+257553007
+Eyelid edema
+89091004
+Eyelid injury
+231813003
+Eyelid irritation
+265782007
+257553007
+Face edema
+445088006
+Facial dystonia
+230326002
+Facial pain
+95668009
+Facial paralysis
+44695005
+56052001
+Facial rash
+302549007
+271807003
+Facial wasting
+302549007
+238896002
+Factor I Deficicency
+Failure kidney acute
+14669001
+Faint
+271594007
+False positive pregnancy test
+90213003
+74036000
+Fat intolerance
+303062005
+Fat redistribution
+256674009
+18565007
+Fatal allergic reaction
+418925002
+399166001
+Fatal fulminant hepatic failure
+399166001
+235884008
+Fatal fulminant hepatitis
+399166001
+427044009
+Fatal hepatic failure
+399166001
+59927004
+Fatal hepatitis
+399166001
+128241005
+Fatal hepatotoxicity
+399166001
+197354009
+Fatal outcomes
+Fatigueability generalized
+79915001
+Febrile infection
+40733004
+386661006
+Febrile reaction
+263851003
+386661006
+Fecal incontinence
+386707000
+Feeding behavior
+129007004
+Feeding disorder
+74142004
+Feeling cold
+64713002
+Feeling hot
+373932008
+Feeling sad
+420038007
+Female lactation
+63158009
+Female sexual disorder
+231532002
+Fertility
+118183008
+Fetal damage
+70591005
+199516000
+Fetal development
+289447005
+Fetal hypotension
+45007003
+27338002
+Fetal monitoring
+265642006
+Fetal morbidity
+70591005
+Fetal mortality
+10588007
+Fever chills
+274640006
+Fever of unknown origin
+7520000
+Fever or chills
+274640006
+Fibrin degradation products
+89086000
+Fibrocystic mastopathy
+27431007
+Fibroid uterine enlarged
+56246009
+95315005
+first-degree heart block
+270492004
+Flu like symptoms
+95891005
+Fluid homeostasis
+278022001
+251839006
+Fluid intake decreased
+161844003
+Flush hot
+270474007
+Flushed
+270474007
+Flushing of face
+271811009
+Follicle stimulating hormone increased
+131019001
+Foot drop
+6077001
+Foot infection
+299990002
+Foreign bodies
+125670008
+Forgetfulness
+55533009
+Frequent micturition
+162116003
+Fulminant hepatic necrosis
+235884008
+Function kidney abnormal
+39539005
+Function kidney decreased
+76114004
+Functional hepatic alteration
+365769003
+Fungal infective disorder
+3218000
+Gait ataxia
+25136009
+Gait disturbance
+22325002
+Galactorrhea
+78622004
+Galactorrhea female
+78622004
+Gallbladder disorder
+39621005
+Gamma-glutamyltransferase level
+258395000
+60153001
+Gasping syndrome
+133931009
+23141003
+Gastric carcinoma
+372143007
+Gastric dilation
+387666006
+Gastric emptying
+40117008
+Gastric ulcer perforated
+9829001
+Gastroduodenal hemorrhage
+37372002
+gastrointestinal adverse events
+24813008
+Gastrointestinal carcinoma
+286902000
+92600008
+Gastrointestinal disorder
+119292006
+Gastrointestinal disturbance
+95516005
+196757008
+Gastrointestinal events
+24813008
+Gastrointestinal infarction
+3558002
+Gastrointestinal infectious diseases
+128398001
+Gastrointestinal inflammation
+25374005
+Gastrointestinal intolerance
+95516005
+Gastrointestinal neoplastic disorder
+126768004
+Gastrointestinal observation
+386618008
+Gastrointestinal pain
+301362007
+Generalized eruption
+271807003
+Generalized erythema
+247441003
+Generalized flushing
+238810007
+Generalized macular rash
+271756005
+Generalized muscle weakness
+26544005
+Generalized rash
+271807003
+Generalized skin reaction
+251348006
+Generalized spasm
+45352006
+Generalized urticarial rash
+64305001
+247472004
+Genital candidiasis
+240706001
+Genital itching
+267802000
+Genital rash
+442279002
+Genitourinary disorder
+42030000
+Genotoxic potential
+Germ cell testicular cancer
+416769008
+GI neoplasm benign
+92118007
+Gingival disorder
+18718003
+Gingival hemorrhage
+86276007
+Gingival hypertrophy
+54711002
+Gingival ulceration
+71262003
+Gingivalgia
+11114002
+Glomerular disorder
+197679002
+Glossal edema
+81950002
+Glossalgia
+30731004
+Glucose tolerance
+113076002
+Glycemic control
+365811003
+Glycogen Storage Disease Type II
+274864009
+Glycosylated hemoglobin high
+131141003
+Glycosylated hemoglobin level
+408254005
+Gonadal dysfunction
+442761002
+Gonadotropin secretion
+252200005
+Goodpasture syndrome
+50581000
+Gout flare
+42959003
+90560007
+Graft loss
+239181006
+Graft thrombosis
+234194005
+Gram-negative bacteremia
+81325006
+5758002
+Granulocytopenia severe
+24484000
+417672002
+Gross hematuria
+34436003
+Growth retarded
+129815002
+Guillain-barre syndrome
+40956001
+Gum erosion
+4356008
+Gynecological examination
+83607001
+Hair dryness
+79395009
+Hair growth
+297999005
+Halitosis
+79879001
+Hallucination
+7011001
+Hand edema
+102564009
+Hangover effect
+32553006
+Haptoglobin increased
+35105006
+443308002
+Hashimoto's disease
+21983002
+Hay fever
+61582004
+HDL cholesterol decreased
+124055002
+28036006
+365794002
+Head and neck neoplastic disorder
+255055008
+Head edema
+445385004
+Hearing loss, bilateral
+95820000
+Hearing loss, high-frequency
+423303001
+Heart ischemic injury
+414545008
+Heart rhythm disturbances
+361136003
+Heart valve fibrosis
+398716006
+68602002
+Heart valve thickening
+253395003
+253604004
+Hematocrit
+365616005
+Hematocrit value decreased
+417186004
+Hematocrit value increased
+35105006
+365616005
+Hematological disorder
+414027002
+Hematoma injection site
+95376002
+5309003
+64572001
+Hematospermia
+34615008
+Hematotoxicity
+Hematuria
+34436003
+Hemodynamically unstable ventricular tachycardia
+422773005
+25569003
+Hemoglobin increased
+131141003
+Hemoglobin level
+104142005
+Hemolytic-uremic syndrome
+111407006
+Hemoperitoneum
+45626005
+Hemophilia a
+28293008
+Hemophilia b
+41788008
+Hemophilus influenza infection
+91428005
+Hemorrhage risk
+30207005
+50960005
+Hemorrhage symptom
+50960005
+Hemorrhagic pancreatitis
+4399003
+Hemorrhoid
+70153002
+Hepatic cholestasis
+33688009
+Hepatic enzyme level
+365769003
+Hepatic enzymes increased
+166643006
+Hepatic function
+79036002
+Hepatic function test
+26958001
+Hepatic granuloma
+10200004
+45647009
+Hepatic injury
+39400004
+Hepatic steatosis
+197321007
+Hepatic telangiectasia
+276328002
+Hepatic vein thrombus
+38739001
+Hepatic venous obstruction
+57348003
+hepatitis B exacerbation
+410661009
+66071002
+Hepatocellular adenoma
+78058005
+Hepatocellular hepatitis
+25370001
+Hepatocyte damage
+37782003
+30396005
+Hepatolenticular degeneration
+88518009
+Hepatomegaly
+80515008
+Hepatosplenic T-Cell Lymphoma
+445406001
+Herpes
+23513009
+Herpes zoster visceral
+263928002
+4740000
+Hiatus hernia
+84089009
+Hiccup
+65958008
+High density lipoprotein decrease
+124041005
+High density lipoprotein level
+17888004
+High diastolic blood pressure
+23154005
+High fever
+386661006
+High glucose level
+68256003
+Hip dislocation
+157265008
+Hip replacement
+397956004
+HIV-1 infection
+40780007
+Hoarseness
+50219008
+Hodgkin's lymphoma
+14537002
+Holter monitoring
+46825001
+Homicidal ideation
+6471006
+Hospitalization
+32485007
+Hypercholesteremia
+166830008
+Hypercoagulation
+123786007
+Hyperexcitability
+416259003
+Hyperglycemic hyperosmolar nonketotic coma
+237598005
+Hyperplasia, Erythroid
+68164004
+Hypersensitive vasculitis
+60555002
+Hypersensitivity syndrome
+421976005
+Hypersexuality
+73744004
+Hypertension
+38341003
+Hypertension rebound
+84094009
+Hypertension worsened
+231877006
+38341003
+Hypertensive crisis
+443482000
+Hypertensive episodes
+62275004
+Hypertonic uterine contraction
+289725009
+Hypertonicity
+41581000
+Hyperuricosuria
+Hyperventilation disorder
+68978004
+Hypnagogic hallucination
+44780000
+hypnotic effects
+70503004
+Hypochromic anemia
+44666001
+44452003
+Hypoesthesia
+397974008
+Hypoglycemic reaction
+317006
+Hypokinesia
+43994002
+Hypotension aggravated
+162473008
+45007003
+Hypotension symptomatic
+264931009
+45007003
+Idiosyncratic drug reaction
+33845003
+Idiosyncratic liver disease
+235856003
+IgA Glomerulonephritis
+236407003
+Ileus of colon
+40650009
+Ileus paralytic
+55525008
+Immune reconstitution inflammatory syndrome
+426202004
+Immunization reaction
+56393004
+Immunoglobulin production
+365720000
+Immunological disorder
+41266007
+Impaired urination
+49650001
+Implantation complication
+19220005
+Inappropriate ADH Syndrome
+55004003
+Incessant ventricular tachycardia
+25569003
+Incision site complication
+396183009
+Increased alanine aminotransferase level
+409673008
+Increased aldosterone
+35105006
+123765007
+Increased alkaline phosphatase level
+274770006
+Increased angina
+35105006
+194828000
+Increased aspartate aminotransferase level
+166669000
+Increased bleeding
+35105006
+131148009
+Increased blood urea nitrogen
+166712009
+Increased cholesterol level
+124054003
+Increased creatine level
+432352001
+Increased creatinine level
+35105006
+365756002
+Increased fecal fat
+167649004
+Increased gamma-glutamyltransferase level
+35105006
+60153001
+Increased glucocorticoids
+131086003
+Increased hemorrhage
+35105006
+50960005
+Increased insulin requirement
+32973009
+Increased interstitial fluid
+35105006
+8243008
+Increased intraocular pressure
+112222000
+Increased lactic dehydrogenase level
+274774002
+Increased liver function test
+67251005
+Increased low density lipoprotein
+445445006
+Increased permeability
+19313000
+Increased prothrombin time
+409674002
+Increased pulmonary vascular resistance
+18753005
+Increased reflexes
+130976008
+130974006
+Increased respiratory rate
+271823003
+Increased stool frequency
+15510009
+Increased sweating
+52613005
+Increased transaminase level
+409673008
+Increased triglyceride level
+166848004
+Increased urea level
+166712009
+Increased wound drainage
+35105006
+26514007
+Increased, painful, or difficult urination
+49650001
+Indecisiveness
+286776006
+Induction of anesthesia
+241687005
+Infected ear
+129127001
+Infection histoplasmosis
+12962009
+Infection prophylaxis
+439830001
+Infection susceptibility increased
+102466009
+Infection upper respiratory
+54150009
+Infections and infestations
+17322007
+40733004
+Infectious diseases
+40733004
+Infectious meningitis
+312216007
+Infertility
+8619003
+Infiltrative lung disease
+233714005
+Inflammation injection site
+95391000
+Inflammation of wound
+225540005
+Inflammatory arthropathy
+3723001
+399269003
+Inflammatory kidney disease
+197577008
+Inflammatory process
+23583003
+Influenza disorder
+6142004
+Infusion related reaction
+441940003
+Inhibited ejaculation
+42288005
+Injection site erythema
+213338000
+Injection site hives
+95377006
+Injection site reaction (NOS)
+95377006
+Injection site thrombophlebitis
+213219006
+
+Injury, poisoning and procedural complications
+116224001
+Insulin-dependent diabetes mellitus
+46635009
+Intermenstrual bleeding
+237130006
+Interstitial lung disorder
+233703007
+Interstitial nephritis acute
+28637003
+Intestinal atrophy
+75581001
+Intestinal edema
+113276009
+267038008
+Intestinal infarction
+82196007
+Intestinal motility
+76629003
+Intestinal stenosis
+23065003
+Intolerance reaction
+418038007
+Intracranial hypertension
+68267002
+Intrahepatic cholestatic jaundice
+44018007
+Intravascular coagulation
+67406007
+Intravenous pyelography
+32265006
+Invasive fungal infections
+10179008
+3218000
+Involuntary muscle contraction
+102542000
+Irregular pulse
+61086009
+Irreversible renal failure
+42399005
+Irritable bowel syndrome
+10743008
+Irritable mood
+55929007
+Irritable stomach
+162059005
+Ischemic cardiomyopathy
+281091000
+Ischemic complications
+213217008
+Ischemic coronary artery disease
+414545008
+Itching - generalized
+276444007
+Itchy
+418290006
+Itchy eye
+162288000
+Itchy throat
+162400007
+Jarisch-herxheimer reaction
+10803007
+Jaw spasm
+95418008
+Jitteriness
+424196004
+Joint and muscle pain
+68962001
+57676002
+Joint disorder
+399269003
+Joint disorder caused by infection
+396233005
+Judgment
+365837000
+Jugular vein thrombosis
+17912006
+111293003
+Junctional bradycardia
+251162005
+Junctional rhythm
+11849007
+K+ increased
+166689004
+Keraconjunctivitis sicca
+363677007
+Kidney calculus
+95570007
+Kidney disorder caused by infection
+129128006
+Kidney dysfunction
+197663003
+Kidney failure
+42399005
+Kidney failure acute
+14669001
+Kidney function test
+54610007
+Kidney papillary necrosis
+90241004
+Kidney tubular necrosis
+444794000
+Klebsiella pneumonia
+64479007
+Knee osteoarthritis
+239873007
+Labor stimulation
+48975005
+Laboratory test abnormality
+165346000
+Labyrinth disorder
+5239005
+Lack of coordination
+281016006
+Lack of drug effect
+58848006
+Lacrimation
+301973009
+Lacrimation disorder
+31053003
+Lacrimation increased
+35105006
+301974003
+Lactate high
+7501002
+Lactate pyruvate ratio increased
+35105006
+104772009
+Lactation
+290122005
+Lactic acid blood increased
+7501002
+Lactic dehydrogenase increased
+396697000
+Lactic dehydrogenase level
+11274001
+Lambert-eaton myasthenic syndrome
+56989000
+Laryngeal edema
+51599000
+Latent diabetes
+426875007
+Latent virus infection
+44104002
+34014006
+LDL cholesterol increased
+445445006
+Lead response
+88488004
+Left ventricular dysfunction
+429589006
+Left ventricular ejection decreased
+444522009
+1250004
+Left ventricular ejection fraction decreased
+1250004
+250908004
+Leg cramps
+102550009
+Leg pain
+10601006
+Lenticular deposit
+46623005
+Leukemia secondary
+128462008
+93143009
+Leukocyte count
+250271003
+Leukocyte count decreased
+419188005
+Light headedness
+386705008
+Limb ataxia
+11145003
+Limb deformity
+445144002
+Limb edema
+445126005
+Limb injury
+127279002
+127278005
+Limb ischemia
+233959009
+233961000
+267038008
+90678009
+Lipid level
+365791005
+Lipids
+70106000
+Lipoaccumulation
+Lipoprotein level
+104789001
+Liver alteration
+243978007
+Liver cirrhosis
+19943007
+Liver disorder
+235856003
+Liver disorder caused by infection
+235859005
+Liver failure
+59927004
+Liver neoplastic disorder
+126851005
+Liver tenderness
+102627005
+Local reaction
+255471002
+281647001
+Local swelling
+7939003
+Localized numbness
+255471002
+44077006
+Localized rash
+271807003
+255471002
+Localized skin reaction
+255471002
+366667001
+Lockjaw
+87866006
+Logorrhea
+75722007
+Long QT Interval
+111975006
+Long QTc Interval
+Loss of balance
+249984002
+Loss of coordination
+281016006
+Loss of hearing
+15188001
+Loss of sense of taste
+36955009
+Loss of sex drive
+248096004
+Loss of visual acuity
+13164000
+Low APGAR Score
+62482003
+302083008
+Low Blood HDL Cholesterol Level
+124041005
+Low grade fever
+304213008
+Low platelet aggregation
+Low platelet count
+302215000
+Lower oxygen saturation
+385440003
+104847001
+Lung carcinoma
+93880001
+Lung disorder
+19829001
+Lung disorder (NOS)
+19829001
+Lung disorder caused by infection
+128601007
+Lung function test
+23426006
+Lung hypoplasia
+80825009
+Lung lesion
+301232003
+Lung pneumonitis
+205237003
+Lung tuberculosis
+154283005
+Lupus erythematosus rash
+95332009
+Lupus-like syndrome
+200936003
+Lymphatic system disorder
+362971004
+Lymphocytic colitis
+31437008
+Lymphoedema
+234097001
+Lymphoma
+21964009
+Lymphomatous tumors
+118600007
+189958005
+Lymphopenia
+48813009
+Lymphorrhea
+79709007
+Macular edema
+37231002
+Maculopapular exanthema
+47725002
+major birth defects
+443341004
+major bleeding
+50960005
+Malaria prophylaxis
+129428001
+61462000
+Male erectile dysfunction
+398175007
+Male fertility
+248153007
+118183008
+Male fertility disorder
+2904007
+Male primary hypogonadism
+48723006
+Male sexual dysfunction
+5413009
+Malformations multiple
+116022009
+Malignant liver neoplasm
+93870000
+Malignant melanoma tumor
+372244006
+Malignant metastatic tumor
+14799000
+Malignant mixed mesodermal (mullerian) tumor
+112684005
+Malignant neoplastic disorder
+363346000
+Manic episode
+268619003
+Manic psychosis
+231494001
+Manic reaction
+284513006
+Manic state
+231494001
+Mask like facies
+248149005
+Mask-like face
+248149005
+Maternal toxicity
+289209003
+Maternal weight
+12803000
+28701003
+mean body weight gain
+8943002
+Mean pulmonary artery pressure
+250770003
+Megaloblastosis
+Memory disturbance
+386807006
+Meniere disease
+13445001
+Meningeal infection
+312216007
+Menstrual irregularity
+80182007
+Menstrual pain
+266599000
+Mental depression
+35489007
+Mental impairment
+228150001
+Mental status changes
+263703002
+36456004
+Mesenteric artery thrombosis
+243410003
+Mesenteric embolism
+276500007
+Metabolism and nutrition disorders
+75934005
+2492009
+Metabolism disorder with inborn errors
+86095007
+Metastatic Carcinoma Of Prostate
+93974005
+79282002
+Metastatic melanoma
+443493003
+372158004
+Metastatic prostate cancer
+14799000
+93974005
+Metastatic renal cell carcinoma
+363457009
+79282002
+Methicillin resistance
+373515001
+31438003
+Methionine level
+104811002
+Metrorrhagia
+64996003
+Micturition frequency
+300471006
+Migraine aura
+4473006
+Mild malaria
+61462000
+Mild to moderate pain
+22253000
+371923003
+Mitral valve insufficiency
+48724000
+Mobility decreased
+8510008
+Monocytes increased
+418697001
+Monomorphic ventricular tachycardia
+251158004
+Mood change
+281129008
+Mood elevated
+81548002
+Mood swing
+18963009
+Morbid dreams
+419748005
+Mortality
+409651001
+Motor neuropathy
+31513005
+386033004
+Motor restlessness
+285145004
+Motor tic
+230337001
+Motor weakness
+13791008
+Mottled skin
+406128001
+Mouth puckered
+423066003
+Movements involuntary of limbs
+66019005
+267078001
+MRI
+113091000
+Mucopolysaccharidosis type 1, hurler-scheie syndrome
+26745009
+Mucosal hemorrhage
+95351003
+50960005
+Mucosal inflammation
+95361005
+Mucosal injury
+417163006
+95351003
+Mucosal pigmentation
+235037007
+Mucosal ulcers
+95356008
+Mucositis
+95361005
+Mucous membrane disorder
+95351003
+MUGA scan
+404221001
+Multi-organ hypersensitivity reactions
+278452002
+421961002
+multiple hepatocellular adenoma
+78058005
+Multiple seizures
+128613002
+Muscle and joint pain
+68962001
+57676002
+Muscle cramp
+55300003
+Muscle fibrosis
+71616004
+112674009
+muscle flaccidity
+186611004
+Muscle hypertonia
+56731001
+Muscle hypotonia
+398152000
+Muscle or joint pain
+68962001
+57676002
+Muscle pain or cramps
+55300003
+68962001
+Muscle relaxation
+11977004
+Muscle spasm pain
+279070004
+16799003
+Muscle spasticity
+221360009
+Muscle sprain
+127954009
+384709000
+Muscle tightness
+71616004
+255365009
+Muscle twitching
+60238002
+Muscular aches
+263816006
+27635008
+Muscular atrophy
+88092000
+Muscular disorder
+129565002
+Musculoskeletal hemorrhage
+928000
+50960005
+Musculoskeletal injury
+105606008
+Musculoskeletal Stiffness
+106028002
+271587009
+Mutagenicity
+Myalgia
+68962001
+Mycobacterium tuberculosis infection
+373576009
+Mydriasis
+405270006
+Myelotoxicity
+Myocardial infarction risk
+30207005
+22298006
+Myocardial injury
+301122000
+Myolysis
+363058009
+Nail change
+416596008
+Nail disorder
+17790008
+Nasal irritation
+70076002
+Nasal sinus congestion
+82297005
+Neck edema
+301777002
+Neck muscle spasm
+95418008
+Neck rigid
+302550007
+16046003
+Neck stiffness or soreness
+71393004
+161882006
+Necrosis injection site
+95397001
+Necrosis tubular kidney
+444691002
+Necrotizing enterocolitis
+32097002
+Negative inotropy
+Negative T wave amplitude
+164933008
+Neonatal anuria
+255407002
+2472002
+Neonatal Morbidity
+255407002
+161168008
+Neonatal mortality
+255407002
+409651001
+Neonatal seizures
+87476004
+Neoplasia
+55342001
+Neoplasm (NOS)
+108369006
+Neoplastic disorder
+55342001
+Nephrogenic systemic fibrosis / nephrogenic fibrosing dermopathy
+424114000
+Nephrosis
+197577008
+Nephrotoxicity
+236514003
+nerve dysfunction
+13028004
+Nerve neuritis
+84299009
+Neurogenic diabetes insipidus
+15771004
+Neurologic symptoms
+308921004
+Neurological disorder
+118940003
+Neurological impairment
+18373002
+40226000
+Neuromuscular block
+55394004
+Neuropsychiatric disorder
+Neuropsychiatric events
+Neutrophil chemotaxis
+2465003
+Neutrophils
+30630007
+Nicotinic acid deficiency
+418279001
+Night sweat
+42984000
+Nightmare
+419145002
+Nipple discharge
+54302000
+Nitrogen balance negative
+260385009
+251836004
+Nitrogen depletion
+69251000
+36012007
+Nitrogen retention
+36850000
+36012007
+Nitrogen urea blood increased
+166712009
+Nocturnal confusion
+281793005
+Node-positive breast cancer
+445333001
+Non sustained ventricular tachycardia
+444658006
+Noncardiogenic pulmonary edema
+95437004
+Noninfectious hepatitis
+4517001
+16069000
+Non-insulin-dependent diabetes mellitus
+44054006
+Non-melanoma skin neoplasm
+126488004
+Nonprotein nitrogen increased
+442756004
+65757009
+Non-Q-Wave Myocardial Infarction
+314207007
+Non-small cell lung cancer metastatic
+14799000
+254637007
+Non-small cell lung carcinoma
+254637007
+Non-ST-segment elevation acute coronary syndrome
+428750005
+394659003
+Non-ST-Segment Elevation Myocardial Infarction
+401314000
+NPN increased
+442756004
+65757009
+N-telopeptide urine increased
+35105006
+397605005
+Nuclear magnetic resonance imaging gadolinium-enhanced
+51619007
+Numbness of extremities
+310501001
+Obstructive jaundice
+59848001
+Obtundation
+40917007
+Occult blood positive
+59614000
+167850002
+Ocular discomfort
+7751009
+Ocular pain
+41652007
+Ocular stinging
+2070002
+Oculomotor paralysis
+4439001
+Oculomucocutaneous syndrome
+95331002
+Olfaction
+397686008
+Oligospermia
+88311004
+Onychomycosis of fingernail
+403058003
+Onychomycosis of toenail
+403059006
+Open lung biopsy
+232628003
+Operative hemorrhage
+269302003
+Opisthotonos
+8652009
+Opportunistic infection
+61274003
+Optic nerve dysfunction
+77157004
+Oral candidal infection
+79740000
+Oral hemorrhage
+22490002
+Oral intake reduced
+260400001
+302118008
+Oral mucosal blistering
+285361005
+Oral ulcer
+26284000
+Oropharyngeal spasm
+232407000
+Oropharyngeal swelling
+300878007
+421581006
+Orthostatic hypertension
+28651003
+Ossification
+83323007
+Osteoarthritis pain
+57676002
+Osteocalcin level
+104844008
+Osteonecrosis
+240196003
+Other convulsions
+91175000
+Otitis media bacterial
+312218008
+Ovarian carcinoma
+363443007
+Ovarian cyst malignant
+363443007
+Ovarian neoplastic disorder
+123843001
+Overdose intentional
+59274003
+Ovulation
+34008004
+Oxygen consumption increased
+238163001
+Pain in extremity
+90834002
+Pain in hand
+53057004
+Pain injection site
+95388000
+Pain substernal
+22253000
+33547000
+Painful feet
+47933007
+Painful priapism
+6273006
+Painful urination
+49650001
+Pale skin
+403237004
+Palor
+403237004
+Palpitation
+82838007
+Pancreatic cancer metastatic
+14799000
+372003004
+Pancreatic hemorrhage
+95562002
+Pancreatic neoplastic disorder
+126859007
+Pancreatic secretion
+13226008
+Paranoid reaction
+268624000
+Paraosmia
+275462005
+Parasitic infective disorder
+17322007
+Parasthesia
+91019004
+Parathyroid function
+Parathyroid hormone level
+3352000
+Paresthesia circumoral
+1141007
+Paresthesia hand
+309086004
+Parkinsonian disorder
+32798002
+Parkinsonian-like tremor
+308909003
+Parotid gland edema
+Partial hearing loss
+343087000
+Partial permanent deafness
+343087000
+Partial transitory deafness
+14803004
+343087000
+Partial vision loss
+105597003
+Pathologic neovascularization
+13018008
+Pathologic nystagmus
+563001
+PBI decreased
+1250004
+166343000
+Peculiar taste
+271801002
+Peliosis
+58008004
+Pelvic inflammatory disease
+198130006
+Pelvic pain
+30473006
+Pemphigoid rash
+86142006
+Pemphigoid reaction
+86142006
+Pemphigus disorder
+65172003
+Peptic ulcer hemorrhage
+12274003
+Perforated bowel
+303078007
+pericarditis with effusion
+27017003
+Perinephric hemorrhage
+95571006
+Perioperative bleeding
+213261000
+Perioral edema
+109773002
+Perioral paresthesia
+263953004
+91019004
+Peripheral arterial disorder
+399957001
+Peripheral coldness
+15336001
+Peripheral eosinophilia
+419455006
+Peripheral nervous system disorder
+42658009
+Peripheral neuropathies and neuritis
+302226006
+Peripheral vascular abnormality
+400047006
+peripheral vascular collapse
+Peripheral vascular disorder
+400047006
+Persistent dry cough
+284523002
+11833005
+Persistent non-productive cough
+284523002
+409596002
+Petechial rash
+423716004
+Petit mal convulsion
+7033004
+Peyronie disease
+1335005
+Pharyngeal edema
+2129002
+Pharyngeal gonococcal infection
+74372003
+Pharyngolaryngeal pain
+162397003
+Pharyngotonsillitis
+Pharynx discomfort
+162397003
+Phonic tics
+230336005
+Phospholipidosis
+Photosensitivity allergic reaction
+115664001
+Photosensitivity reaction (NOS)
+90128006
+Physical drug dependence
+228434000
+Physical examination
+5880005
+Piloerection
+84817002
+Plasma aldosterone increased
+35105006
+390994002
+Plasma electrolytes NOS
+401142008
+Plasma insulin increased
+35105006
+401151000
+Plasma pH decreased
+Plasma protein extravasation
+76676007
+395835001
+Plasma protein level
+365807009
+Platelet aggregation dysfunction
+22716005
+Platelet aggregation inhibition
+22716005
+Pleural effusion recurrent
+60046008
+Pleural inflammation
+196075003
+Pleural pain
+2237002
+Pleural rub
+37636003
+Pleuritic chest pain
+2237002
+Pleuropericarditis
+17668000
+Pleuropulmonary fibrosis
+51615001
+Pneumocystis pneumonia
+415125002
+Pollakiuria
+162116003
+Polyarthralgia
+35678005
+Polyarticular juvenile arthritis
+445479007
+Polycythemia
+127062003
+Polydipsia
+17173007
+Polymorphic ventricular fibrillation
+71908006
+Polymorphic ventricular tachycardia
+251159007
+Porphyrin metabolism disorder
+29094004
+Post amputation
+77000007
+Post operative wound infection
+58126003
+Post-implantation loss
+Postmenopausal vaginal bleeding
+76742009
+Post-operative inflammation
+23583003
+Post-operative pain
+110364008
+postural hypotension
+28651003
+Potassium level
+365760004
+Potassium serum increased
+166689004
+Precoma
+272113006
+371632003
+Pregnancy loss
+17369002
+Pregnancy test
+74036000
+Premenstrual syndrome
+82639001
+Presyncope
+271594007
+272113006
+Pro-arrhythmia
+44808001
+Procedural complication
+116224001
+Procedural pain
+110363002
+progressive liver damage
+255314001
+243978007
+Prolonged bleeding time
+123789000
+Prolonged contraction
+Prolonged partial thromboplastin time
+409675001
+Prostate carcinoma
+254900004
+Prostate specific antigen level
+63476009
+Prostatic disorder
+30281009
+Prostatic neoplasm
+126906006
+Protein excretion
+88878007
+5608002
+Protein total decreased
+60439007
+Prothrombin decreased
+PSA increased
+396152005
+Pseudoparkinsonism
+Psoriaform rash
+Psychiatric observation
+182791006
+Psychic disturbance
+30599002
+Psychic drug dependence
+2403008
+Psychological dependence
+85758008
+Psychomotor restlessness
+162221009
+Psychomotor retardation
+398991009
+Psychomotor skills impaired
+416909000
+Psychosis depressive
+69322001
+Psychotic behavior
+280427006
+Psychotic depression
+191676002
+Psychotic episode
+69322001
+Psychotic reaction
+280427006
+PT increased
+PT prolonged
+Ptosis
+11934000
+Pulmonary change
+Pulmonary infiltrates
+367542003
+Pulmonary inflammation
+Pulmonary toxicity
+Pulse irregularity NOS
+61086009
+Pupil disorder
+68633000
+Pyridoxine deficiency
+QTc interval
+39632005
+radiation recall
+14836003
+Raised drug level
+166975007
+Rapid rise in blood pressure
+255330009
+Rapid weight gain
+161831008
+255358001
+Rash
+271807003
+Rash (nonspecific)
+271807003
+Rash injection site
+95377006
+Rash photosensitivity
+22649008
+Raynaud phenomenon
+266261006
+RBC count decreased
+165423001
+RBC count increased
+165424007
+Reaction anaphylactic anaphylactoid
+241929008
+Reactivated peptic ulcer
+13200003
+Reactive psychosis
+231437006
+Rectal disorder
+5964004
+Recurrent breast cancer
+314955001
+Recurrent ventricular fibrillation
+71908006
+Red blood cell aplasia
+50715003
+Red man syndrome
+238992001
+Redness
+386713009
+Redness of skin
+247441003
+Reflex loss
+37280007
+Renal and urinary disorders
+128606002
+Renal artery thrombosis
+95579008
+Renal calcification
+95570007
+Renal cyst
+77945009
+Renal disorder
+90708001
+Renal failure and impairment
+236423003
+Renal function test
+44277000
+Renal graft loss
+429451003
+Renal Injury
+40095003
+Renal irritation
+52845002
+Renal vein thrombosis
+15842009
+Reproductive dysfunction
+118255001
+Respiration disorder
+50043002
+Respiration Rate
+86290005
+Respiration rate decreased
+80954004
+Respiratory depression
+80954004
+Respiratory insufficiency disorder
+409623005
+Respiratory paralysis
+95430002
+Respiratory tract disorder caused by infection
+275498002
+Respiratory tract irritation
+363180009
+Retention Fluid
+43498006
+Retinal artery embolism
+404667009
+Retinal vein obstruction
+73757007
+Retinal vein thrombosis
+46085004
+Rheumatic disorder
+128139000
+Rhonchi
+24612001
+Rigidity neck
+161882006
+Rise in BP
+255330009
+Risk of death
+30207005
+419620001
+Sagittal sinus thrombosis
+70607008
+15742000
+Salivary gland enlargement
+45338009
+Salivary gland pain
+301361000
+Salivation
+300267005
+Salt retention
+36850000
+387390002
+Schizophrenic disorder
+191526005
+Schoenlein-henoch purpura
+191306005
+Scleroderma-like change
+403524003
+Scrotal swelling
+271687003
+Secondary acute myeloid leukemia
+91861009
+Sedation
+72641008
+Seizure threshold
+16058003
+91175000
+Self trauma
+248062006
+Semen viscosity abnormal
+134205008
+167767004
+Semen volume abnormal
+365428008
+167767004
+Sensation of cold
+84162001
+Sensation of heat
+264018002
+Sensitivity to sunlight
+258155009
+Sensory and motor neuritis
+3900008
+Sensory disturbance
+85972008
+Sensory perception of pain
+301370002
+Sensory peripheral neuropathy
+95662005
+Sepsis
+91302008
+Septic arthritis
+48245008
+serious arrhythmia
+44808001
+Serious blood clot
+75753009
+serious cardiac disorders
+56265001
+Serious cardiovascular adverse effect
+293416008
+serious cardiovascular complications
+40172005
+Serious hepatic injury
+39400004
+serious hypersensitivity reactions
+421961002
+Serious liver side effects
+427399008
+Serious skin reactions
+422290000
+Serum glutamic-oxaloacetic transaminase increased
+35105006
+250636007
+Serum glutamic-pyruvic transaminase increased
+409673008
+Serum sickness-like reaction
+82545002
+Serum transaminase increased
+35105006
+250636007
+Severe abdominal pain
+21522001
+Severe active rheumatoid arthritis
+24484000
+55561003
+69896004
+Severe acute pain
+274663001
+76948002
+Severe agitation
+24199005
+Severe allergic reaction
+39579001
+Severe anemia
+271737000
+Severe anxiety
+80583007
+Severe bronchial spasm
+4386001
+Severe constipation
+14760008
+Severe cutaneous reaction
+21626009
+Severe hepatic injury
+39400004
+severe hepatic reactions
+281647001
+235856003
+Severe hepatitis
+128241005
+severe hepatocellular injury
+39400004
+Severe hepatomegaly
+80515008
+Severe hepatotoxicity
+197354009
+Severe hypotension
+45007003
+Severe infections
+40733004
+Severe irritability
+55929007
+Severe nausea
+422587007
+Severe nausea or vomiting
+16932000
+Severe vomiting
+422400008
+Sex hormone-binding globulin level
+24753003
+Shakiness
+271713000
+Short of breath
+267036007
+Short term memory loss
+42176003
+Shunt infection
+230806005
+280978007
+Sialadenitis
+42982001
+Sialorrhea
+53827007
+Simple absence seizure
+79631006
+Sinoatrial node dysfunction
+60423000
+Sinus pause
+423175003
+Sinus rhythm maintenance
+251150006
+Sinusitus
+36971009
+Skeletal muscle relaxation
+11977004
+Skin atrophy
+400190005
+Skin bleeding
+297968009
+Skin blister
+417237009
+Skin discoloration
+3253007
+Skin disorder
+95320005
+Skin disorder caused by fungal infection
+3218000
+Skin disorder caused by infection
+40733004
+95320005
+Skin edema
+95322002
+Skin erythema
+444827008
+Skin exfoliation
+271767006
+Skin fibrosis
+74853008
+Skin fissure
+95321009
+Skin hypertrophy
+Skin laxity
+39937001
+12554006
+Skin neoplasm
+126488004
+Skin neoplasms benign
+92384009
+Skin papilloma
+255184001
+Skin patch test
+41778007
+Skin reaction localized
+428786006
+Skin slough
+95347000
+Skin wrinkling
+247434009
+Skin xerosis
+16386004
+Sleep apnea syndrome
+73430006
+Sleep driving
+248220008
+129060000
+Sleep talking
+36321004
+Slit-lamp examination
+55468007
+Sloughing of skin
+302432003
+Slow or irregular heartbeat
+418472007
+Small bowel angioedema
+41291007
+Small papule
+443871003
+Smell alteration
+112105008
+Sodium retention
+39355002
+Solar dermatitis
+11804009
+Solid tumor
+369757002
+Somnambulism
+80495009
+Sore throat pain
+162397003
+Spastic quadriparesis
+263875003
+91327001
+Specific gravity urine decreased
+1250004
+310406009
+Speech abnormality
+29164008
+Speech disorder
+231543005
+Speech disturbances
+29164008
+Spermatogenesis
+20412003
+Spermatogenesis disorder
+4529005
+Spina bifida, Without mention of hydrocephalus
+40130009
+Spinal compression fracture
+42942008
+Spinal disorder
+302934007
+Spinal dysraphism
+67531005
+Spinal hematoma
+428268007
+Spontaneous ecchymoses
+302228007
+Spots before eyes
+418008001
+Spotting menstrual
+9126005
+Sputum increased
+43055001
+ST changes
+55930002
+Staphylococcus aureus infection
+406602003
+Steatorrhea
+66187002
+Steatosis
+29185008
+Stiff joint
+84445001
+Stinging
+403599000
+Stomach cramp
+51197009
+Stomach cramping
+51197009
+Stomach discomfort
+300306001
+Stomach irritation
+95516005
+Stomach pain
+271681002
+Stomach perforation
+235674005
+Stomach ulcer
+397825006
+Stomach ulcer hemorrhage
+15902003
+Stomach upset
+162059005
+Streptococcal pneumonia
+34020007
+Stress test
+165092007
+Striae atrophica
+201066002
+Stroke disorder
+230690007
+ST-Segment Depression
+26141007
+ST-Segment Elevation Myocardial Infarction
+401303003
+subcutaneous fibromas
+424568000
+Subdural and cerebral hemorrhage
+206188000
+Substance withdrawal syndrome
+363101005
+Substernal chest pain
+29857009
+Suffocation feeling
+373909009
+Suicidal depression
+267073005
+Suicidal tendency
+225457007
+Suicidality
+425104003
+Suicide completed
+44301001
+Sulphemoglobinemia
+Sun sensitivity
+258155009
+Superficial punctate keratitis
+27019000
+Suppressed growth
+59576002
+Supraventricular ectopics
+72654001
+Surgical anesthesia
+410770002
+Susceptibility testing
+252511003
+Susceptible infections
+102463001
+Sweating disorders
+88232005
+Swelling of lip
+163140002
+Symptomatic congestive heart failure
+42343007
+Symptomatic gastroesophageal reflux disease
+235595009
+Symptomatic hepatitis
+128241005
+Symptomatic hyperlactatemia
+7501002
+Systemic fungal infection
+399314004
+Systemic hypersensitivity
+421976005
+Systemic lupus erythematosus disorder
+55464009
+Systolic pressure increased
+18050000
+Talkativeness
+106132005
+Tardive dystonia
+230317000
+Taste disorder
+399993004
+TB skin test
+424294008
+Teeth grinding
+90207007
+Temperature changed sensation
+397638001
+Temperature intolerance
+248467005
+Temperature sense
+299902004
+Tendinous contracture
+Tendon pain
+21545007
+Teratogenicity
+58694006
+Tertiary hypothyroidism
+40930008
+Testicular carcinoma
+Testicular dysfunction
+73820008
+249236000
+Testicular pain
+63901009
+Testis torsion
+81996005
+Tetanic Contraction
+8393005
+Tetanus like
+276202003
+Thallium stress test
+431511008
+Thermoregulation
+405014000
+Thinning of hair
+278040002
+Thiopurine S-Methyltransferase level
+121703007
+Thoughts of suicide
+6471006
+Throat edema
+2129002
+Throat tightness
+247323005
+Thrombocyte count decreased
+415116008
+thromboembolic risk
+30207005
+371039008
+Thrombotic purpura
+78129009
+Thyroid binding globulin
+38929004
+Thyroid neoplastic disorder
+127018007
+Thyroid stimulating hormone level
+61167004
+Thyroxine-binding globulin level
+38929004
+Tic(s)
+568005
+Tinea versicolor
+56454009
+Tingling of extremities
+162249002
+Tingling sensation
+162249002
+Tingling skin
+274676007
+Tired feeling
+314109004
+Tissue hypoxia
+389086002
+Tissue necrosis
+445125009
+To facilitate intubation
+52765003
+Tongue discoloration
+47415006
+Tongue disorder
+69244009
+Tongue edema
+81950002
+Tongue protrusion
+249872000
+Tongue spasm
+45352006
+Tongue ulcer
+66123000
+tonic spasm
+16799003
+Tonic/ clonic convulsions
+54200006
+Tooth abscess
+299709002
+Tooth decay
+80967001
+Tooth infection
+427898007
+Torsade De Pointes
+31722008
+Total bilirubin level
+359986008
+Total white blood cell count
+767002
+Tourette syndrome
+5158005
+Toxic cardiomyopathy
+1954004
+Toxic epidermal necrolysis
+23067006
+Toxic nephrosis
+236514003
+Toxic skin disorder
+95320005
+Transbronchial lung biopsy
+243685008
+Transplant rejection
+213148006
+Transverse myelitis
+16631009
+Tremor and involuntary movements
+26079004
+Tremulousness
+26079004
+Triglyceride level
+14740000
+Truncal obesity
+248311001
+Tuberculosis test
+424294008
+Tubular damage
+19665009
+Tumor pain
+22253000
+Twitch skeletal muscle
+60238002
+Ulcer hemorrhage
+74474003
+40845000
+Ulcer, Perforated
+91182001
+Ultrasound abdomen
+45036003
+Ultrasound examination
+16310003
+Unconscious state
+418107008
+Unilateral abnormal vision
+7973008
+Unintended pregnancy
+83074005
+Unpleasant taste
+349084003
+Unsteadiness
+271713000
+Unusual changes in behavior
+427797008
+Unusual mood
+48079002
+Unusual tiredness
+248269005
+Upper digestive tract hemorrhage
+37372002
+Upper gastrointestinal ulcer
+40845000
+Upper GI blood loss
+37372002
+Upper quadrant tenderness
+301402008
+Upper respiratory symptoms
+Upper respiratory tract disorder
+201060008
+Urea blood elevated
+166712009
+Urea nitrogen increased
+166712009
+Ureteric spasm
+45352006
+Urethral disorder
+4985009
+Urethral hemorrhage
+405555006
+Uric acid blood increased
+35885006
+Uric acid high
+49099001
+Uric acid level
+313998007
+Urinary abnormalities
+128606002
+Urinary calcium excretion
+446889005
+Urinary hesitancy
+5972002
+Urinary hesitation
+5972002
+Urinary output increased
+35105006
+130953005
+Urinary pain
+247382002
+Urinary sediment abnormal
+106102002
+Urinary tract dilation
+236591007
+Urinary tract infection
+68566005
+Urinary urgency
+75088002
+Urination
+28278009
+Urination abnormal
+49650001
+Urination difficulty
+102835006
+Urination disorder
+49650001
+Urine analysis
+27171005
+Urine electrolytes
+14830009
+Urine phosphorus
+72157007
+Urine potassium level
+49833001
+Urological disorder
+128606002
+Uterine adenocarcinoma
+309245001
+Uterine contraction
+70514001
+Uterine disorder
+12337004
+Uterine hemorrhage
+38280009
+Uterine inflammatory disease
+28783002
+Uterine myoma
+95315005
+Uterine rupture
+34430009
+Uterine volume
+366301005
+Vaginal atresia
+266593004
+Vaginal bleeding
+289530006
+Vaginal disorder caused by infection
+237091009
+Variant angina pectoris
+87343002
+Varicose vein
+128060009
+Vascular disorder
+27550009
+Vascular toxicity
+
+Vasoconstriction
+32318003
+Vasodilation
+91081006
+Vasospastic angina pectoris
+87343002
+Vein discoloration
+301174002
+Venipuncture site bruise
+95401009
+Venous disorder
+90507008
+Venous irritation
+61599003
+Venous thromboembolism
+429098002
+Ventricular bleeding
+Ventricular hypokinesia
+415991003
+ventricular rate
+364075005
+Vesiculation of skin
+Vesiculitis
+72095004
+Vesiculo-bullous eruption
+271759003
+Vestibular disorder
+399902003
+vestibular dysfunctions
+399902003
+Vestibular toxicity
+Violent behavior
+248004009
+Viral infective disorder
+34014006
+Virilism
+15160007
+Virus activation
+Visceral disorder
+238147009
+Vision disorder
+95677002
+Vision peripheral decreased
+19900004
+Visual changes
+263703002
+301978000
+Visual field defects
+12184005
+Visual hallucination
+64269007
+Visual perception
+311886005
+Vital capacity decreased
+607007
+Vitamin B12 Deficiency
+190634004
+vitamin D level
+83729008
+Vivid dreams
+416593000
+Vocalisation
+278288005
+Voice alteration
+118250006
+Voice disorder
+231543005
+Volume overload
+21639008
+Volume plasma increased
+24836004
+Vomited
+422400008
+Vomiting neonatal
+422400008
+Vulvar disorder
+5089007
+Wasting
+288517002
+Water intoxication
+71785001
+Water retention
+43498006
+WBC differential count
+165511009
+Weakness
+13791008
+Weakness voluntary muscle
+26544005
+Weariness
+84229001
+Weight gain
+8943002
+Weight loss
+89362005
+White papule
+443871003
+Withdrawal headache
+230483008
+Wound infection
+76844004
+Xerosis
+64718006
+52475004
+Xerostomia
+87715008
+X-ray
+168537006

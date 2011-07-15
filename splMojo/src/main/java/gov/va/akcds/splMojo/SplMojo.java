@@ -22,6 +22,7 @@ import gov.va.akcds.splMojo.model.SimpleDraftFactSource;
 import gov.va.akcds.util.ConsoleUtil;
 import gov.va.akcds.util.EConceptUtility;
 import gov.va.akcds.util.fileUtil.StatsFilePrinter;
+import gov.va.akcds.util.snomedMap.SnomedMap;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
@@ -127,6 +128,14 @@ public class SplMojo extends AbstractMojo
 	 * @required
 	 */
 	private File rxNormMapFile;
+	
+	/**
+	 * Location of the snomed mapping data.
+	 * 
+	 * @parameter
+	 * @required
+	 */
+	private File snomedMapFile;
 
 	private EConceptUtility conceptUtility_ = new EConceptUtility(uuidRoot_);
 
@@ -146,6 +155,7 @@ public class SplMojo extends AbstractMojo
 	private long accept_ = 0;
 	private long reject_ = 0;
 	private long new_ = 0;
+	private long snomedMapUse_ = 0;
 	private long droppedFactsForNoNDAs_ = 0;
 	private long droppedFactsForMissingSpl_ = 0;
 	private int flagCurationDataForConflict_ = 0;
@@ -165,6 +175,8 @@ public class SplMojo extends AbstractMojo
 	
 	private Set<UUID> nonSnomedTerms_ = new HashSet<UUID>();
 	private UUID rootConceptUUID_, nonSnomedRootConceptUUID_;
+	
+	private SnomedMap sm_ = null;
 	
 
 	public SplMojo() throws Exception
@@ -235,6 +247,9 @@ public class SplMojo extends AbstractMojo
 			
 			ConsoleUtil.println("");
 			ConsoleUtil.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
+			
+			//Load the snomed map data - used to fill in missing codes in the BW data.
+			sm_ = new SnomedMap(snomedMapFile);
 			
 			//Index / prepare the SPL zip files
 			ConsoleUtil.println("Preparing SPL source files:");
@@ -412,7 +427,7 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Facts marked as NEW which were remapped into reject: " + new_);
 			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
 			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
-			
+			ConsoleUtil.println("Snomed map data used to correct " + snomedMapUse_ + " instances");
 			ConsoleUtil.println("Unique real SCT concepts " + sctFactLabelCounts.size());
 			
 			StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"code", "unique draft facts", "unique label count", "unique drug count"},
@@ -703,8 +718,20 @@ public class SplMojo extends AbstractMojo
 				else if (fact.getConceptCode().equals("-"))
 				{
 					// if the code is not set then we have a non-snomed concept
-					existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName()).getBytes());
-					createMissingConceptIfNecessary(existingSdf.targetCodeUUID, fact.getConceptName());
+					
+					//See if we can map it using our extra map data.
+					Integer code = sm_.getCode(fact.getConceptName());
+					if (code != null)
+					{
+						fact.setConceptCode(code.toString());
+						existingSdf.targetCodeUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
+						snomedMapUse_++;
+					}
+					else
+					{
+						existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName()).getBytes());
+						createMissingConceptIfNecessary(existingSdf.targetCodeUUID, fact.getConceptName());
+					}
 				}
 				else // get the snomed concept
 				{
@@ -1096,6 +1123,7 @@ public class SplMojo extends AbstractMojo
 		//new File("../splData/data/splDraftFacts.txt.zip")
 		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-B1-export-20110629-5.txt.zip"), new File("../splData/data/bwDraftFacts-B2-export-20110707-1.txt.zip")};
 		mojo.rxNormMapFile = new File("../splData/data/splRxNormMapData");
+		mojo.snomedMapFile = new File("../splData/data/snomedNameCodeMap.txt");
 		mojo.splZipFilesFolder = new File("/media/truecrypt2/Source Data/SPL from BW/temp/");
 		mojo.outputFileName = "splData.jbin";
 		mojo.filterNda = false;
