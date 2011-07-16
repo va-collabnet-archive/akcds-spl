@@ -64,7 +64,7 @@
 							<splZipFilesFolder>data/splZipFiles/</splZipFilesFolder>
 							<rxNormMapFile>data/splRxNormMapData</rxNormMapFile>
 							<snomedCustomMapFile>data/snomedCustomNameCodeMap.txt</snomedCustomMapFile>
-							<snomedFullMapFile>data/snomedFullCodeNameMap.txt</snomedFullMapFile>
+							<snomedFullMapFile>../../../../Source Data/snomedFullCodeNameMap.txt</snomedFullMapFile>
 							<outputFileName>splData.jbin</outputFileName>
 							<filterNda>false</filterNda>
 							<loadFactsWithMissingSPL>true</loadFactsWithMissingSPL>
