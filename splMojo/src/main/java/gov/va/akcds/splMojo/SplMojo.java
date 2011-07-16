@@ -23,6 +23,7 @@ import gov.va.akcds.util.ConsoleUtil;
 import gov.va.akcds.util.EConceptUtility;
 import gov.va.akcds.util.fileUtil.StatsFilePrinter;
 import gov.va.akcds.util.snomedMap.SnomedCustomNameCodeMap;
+import gov.va.akcds.util.snomedMap.SnomedFullNameCodeMap;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
@@ -130,12 +131,20 @@ public class SplMojo extends AbstractMojo
 	private File rxNormMapFile;
 	
 	/**
-	 * Location of the snomed mapping data.
+	 * Location of the custom snomed mapping data.
 	 * 
 	 * @parameter
 	 * @required
 	 */
-	private File snomedMapFile;
+	private File snomedCustomMapFile;
+	
+	/**
+	 * Location of the full snomed mapping data.  Optional
+	 * 
+	 * @parameter
+	 * @optional
+	 */
+	private File snomedFullMapFile;
 
 	private EConceptUtility conceptUtility_ = new EConceptUtility(uuidRoot_);
 
@@ -176,7 +185,7 @@ public class SplMojo extends AbstractMojo
 	private Set<UUID> nonSnomedTerms_ = new HashSet<UUID>();
 	private UUID rootConceptUUID_, nonSnomedRootConceptUUID_;
 	
-	private SnomedCustomNameCodeMap sm_ = null;
+	private SnomedCustomNameCodeMap scncm_ = null;
 	
 
 	public SplMojo() throws Exception
@@ -249,7 +258,7 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
 			
 			//Load the snomed map data - used to fill in missing codes in the BW data.
-			sm_ = new SnomedCustomNameCodeMap(snomedMapFile);
+			scncm_ = new SnomedCustomNameCodeMap(snomedCustomMapFile);
 			
 			//Index / prepare the SPL zip files
 			ConsoleUtil.println("Preparing SPL source files:");
@@ -430,7 +439,13 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Snomed map data used to correct " + snomedMapUse_ + " instances");
 			ConsoleUtil.println("Unique real SCT concepts " + sctFactLabelCounts.size());
 			
-			StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"code", "unique draft facts", "unique label count", "unique drug count"},
+			//Clear some memory.
+			splDrugConcepts_ = null;
+			splSetIdConcepts_ = null;
+			scncm_ = null;
+			SnomedFullNameCodeMap sfncm = new SnomedFullNameCodeMap(snomedFullMapFile);
+			
+			StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"code", "concept name", "unique draft facts", "unique label count", "unique drug count"},
 					"\t", "\r\n", new File(getOutputDirectory(), "stats.csv"), "Load stats");
 			
 			for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : sctFactLabelCounts.entrySet())
@@ -452,7 +467,8 @@ public class SplMojo extends AbstractMojo
 					}
 				}
 				
-				sfp.addLine(new String[] {x.getKey(), factAndLabel.size() + "", labelTotal + "", uniqueDrugs.size() + ""});
+				String name = sfncm.getName(x.getKey());
+				sfp.addLine(new String[] {x.getKey(), (name == null ? "" : name), factAndLabel.size() + "", labelTotal + "", uniqueDrugs.size() + ""});
 			}
 			sfp.close();
 			
@@ -719,7 +735,7 @@ public class SplMojo extends AbstractMojo
 					// if the code is not set then we have a non-snomed concept
 					
 					//See if we can map it using our extra map data.
-					Integer code = sm_.getCode(fact.getConceptName());
+					Integer code = scncm_.getCode(fact.getConceptName());
 					if (code != null)
 					{
 						fact.setConceptCode(code.toString());
@@ -1122,7 +1138,8 @@ public class SplMojo extends AbstractMojo
 		//new File("../splData/data/splDraftFacts.txt.zip")
 		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-B1-export-20110629-5.txt.zip"), new File("../splData/data/bwDraftFacts-B2-export-20110707-1.txt.zip")};
 		mojo.rxNormMapFile = new File("../splData/data/splRxNormMapData");
-		mojo.snomedMapFile = new File("../splData/data/snomedNameCodeMap.txt");
+		mojo.snomedCustomMapFile = new File("../splData/data/snomedCustomNameCodeMap.txt");
+		mojo.snomedFullMapFile = new File("../splData/data/snomedCodeNameMap.txt");
 		mojo.splZipFilesFolder = new File("/media/truecrypt2/Source Data/SPL from BW/temp/");
 		mojo.outputFileName = "splData.jbin";
 		mojo.filterNda = false;

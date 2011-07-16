@@ -63,7 +63,8 @@
 							<!--splZipFilesFolder>../../../../Source Data/SPL 2010_11_02/</splZipFilesFolder-->
 							<splZipFilesFolder>data/splZipFiles/</splZipFilesFolder>
 							<rxNormMapFile>data/splRxNormMapData</rxNormMapFile>
-							<snomedMapFile>data/snomedCustomNameCodeMap.txt</snomedMapFile>
+							<snomedCustomMapFile>data/snomedCustomNameCodeMap.txt</snomedCustomMapFile>
+							<snomedFullMapFile>data/snomedFullCodeNameMap.txt</snomedFullMapFile>
 							<outputFileName>splData.jbin</outputFileName>
 							<filterNda>false</filterNda>
 							<loadFactsWithMissingSPL>true</loadFactsWithMissingSPL>
