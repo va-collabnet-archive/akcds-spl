@@ -82,7 +82,7 @@ public class Spl
 	
 	/**
 	 * Find all instances of the specified hierarchy under any parent path.
-	 * 
+	 *  copy-paste inheritance from aersList in splDataFiltering
 	 */
 	@SuppressWarnings("unchecked")
 	private ArrayList<String> findAllValues(Element lookUnder, List<String> childPath, String attributeName, int childPathPos)
