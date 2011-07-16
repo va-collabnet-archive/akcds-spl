@@ -21,11 +21,11 @@ import java.util.Hashtable;
  * 
  * @author Daniel Armbrust
  */
-public class SnomedMap
+public class SnomedCustomNameCodeMap
 {
 	private Hashtable<String, Integer> nameToCode_ = new Hashtable<String, Integer>();
 	
-	public SnomedMap(File mapData) throws IOException
+	public SnomedCustomNameCodeMap(File mapData) throws IOException
 	{
 		BufferedReader in = new BufferedReader(new FileReader(mapData));
 		
@@ -96,7 +96,7 @@ public class SnomedMap
 	
 	public static void main(String[] args) throws IOException
 	{
-		SnomedMap sm = new SnomedMap(new File("../splData/data/snomedNameCodeMap.txt"));
+		SnomedCustomNameCodeMap sm = new SnomedCustomNameCodeMap(new File("../splData/data/snomedCustomNameCodeMap.txt"));
 		System.out.println(sm);
 	}
 }

@@ -22,7 +22,7 @@ import gov.va.akcds.splMojo.model.SimpleDraftFactSource;
 import gov.va.akcds.util.ConsoleUtil;
 import gov.va.akcds.util.EConceptUtility;
 import gov.va.akcds.util.fileUtil.StatsFilePrinter;
-import gov.va.akcds.util.snomedMap.SnomedMap;
+import gov.va.akcds.util.snomedMap.SnomedCustomNameCodeMap;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
@@ -176,7 +176,7 @@ public class SplMojo extends AbstractMojo
 	private Set<UUID> nonSnomedTerms_ = new HashSet<UUID>();
 	private UUID rootConceptUUID_, nonSnomedRootConceptUUID_;
 	
-	private SnomedMap sm_ = null;
+	private SnomedCustomNameCodeMap sm_ = null;
 	
 
 	public SplMojo() throws Exception
@@ -249,7 +249,7 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
 			
 			//Load the snomed map data - used to fill in missing codes in the BW data.
-			sm_ = new SnomedMap(snomedMapFile);
+			sm_ = new SnomedCustomNameCodeMap(snomedMapFile);
 			
 			//Index / prepare the SPL zip files
 			ConsoleUtil.println("Preparing SPL source files:");
@@ -435,6 +435,7 @@ public class SplMojo extends AbstractMojo
 			
 			for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : sctFactLabelCounts.entrySet())
 			{
+				//Find all of the unique drugs that any involved setId points to.
 				HashSet<String> uniqueDrugs = new HashSet<String>();
 				int labelTotal = 0;
 				Hashtable<String, HashSet<String>> factAndLabel = x.getValue();
@@ -450,8 +451,6 @@ public class SplMojo extends AbstractMojo
 						}
 					}
 				}
-				
-				//Find all of the unique drugs that any involved setId points to.
 				
 				sfp.addLine(new String[] {x.getKey(), factAndLabel.size() + "", labelTotal + "", uniqueDrugs.size() + ""});
 			}
