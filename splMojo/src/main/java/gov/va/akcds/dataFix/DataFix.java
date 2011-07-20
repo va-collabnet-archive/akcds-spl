@@ -29,8 +29,8 @@ public class DataFix
 	 */
 	public static void main(String[] args) throws IOException
 	{
-		File factsIn = new File("../splData/data/bwDraftFacts-export-20110627-2.txt.zip");
-		File factsOut = new File("../splData/data/bwDraftFacts-export-20110627-2-fixed.txt.zip");
+		File factsIn = new File("../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110627-2.txt.zip");
+		File factsOut = new File("../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110627-2-fixed2.txt.zip");
 
 		long notDrop = 0;
 		
@@ -59,11 +59,11 @@ public class DataFix
 						continue;
 					}
 					
-					ArrayList<DraftFact> setIdFacts = facts.get(fact.getSplSetId());
+					ArrayList<DraftFact> setIdFacts = facts.get(fact.getSplSetId().toUpperCase());
 					if (setIdFacts == null)
 					{
 						setIdFacts = new ArrayList<DraftFact>();
-						facts.put(fact.getSplSetId(), setIdFacts);
+						facts.put(fact.getSplSetId().toUpperCase(), setIdFacts);
 					}
 					
 					if (setIdFacts.size() == 0)
@@ -84,7 +84,11 @@ public class DataFix
 						{
 							setIdFacts.clear();
 							setIdFacts.add(fact);
-							setIdsWithMultVer.add(fact.getSplSetId());
+							setIdsWithMultVer.add(fact.getSplSetId().toUpperCase());
+						}
+						else
+						{
+							setIdsWithMultVer.add(fact.getSplSetId().toUpperCase());
 						}
 					}
 				}
