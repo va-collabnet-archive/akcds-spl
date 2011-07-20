@@ -1,5 +1,7 @@
 package gov.va.akcds.util.wbDraftFacts;
 
+import gov.va.akcds.util.ConsoleUtil;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
@@ -53,6 +55,7 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 			{
 				if (zis_ == null)
 				{
+					ConsoleUtil.println("Reading " + sourceFiles_[sourceFile_]);
 					zis_ = new ZipInputStream(new BufferedInputStream(new FileInputStream(sourceFiles_[sourceFile_])));
 				}
 			}
