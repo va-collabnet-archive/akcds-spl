@@ -174,6 +174,9 @@ public class SplMojo extends AbstractMojo
 	//An uber mapping of unique SCT codes (real codes only) to (a set of) unique draft facts to the set of unique SPL Set IDs
 	private Hashtable<String, Hashtable<String, HashSet<String>>> sctFactLabelCounts = new Hashtable<String, Hashtable<String, HashSet<String>>>();
 	
+	//And the same uber mapping for non-sct codes.
+	private Hashtable<String, Hashtable<String, HashSet<String>>> nonSctFactLabelCounts = new Hashtable<String, Hashtable<String, HashSet<String>>>();
+	
 	//A mapping of splSetIds -> drug names
 	Hashtable <String, String> reverseDrugMap = new Hashtable<String, String>();
 	
@@ -445,36 +448,68 @@ public class SplMojo extends AbstractMojo
 			scncm_ = null;
 			SnomedFullNameCodeMap sfncm = new SnomedFullNameCodeMap(snomedFullMapFile);
 			
-			StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"code", "concept name", "unique draft facts", "unique label count", "unique drug count"},
-					"\t", "\r\n", new File(getOutputDirectory(), "stats.csv"), "Load stats");
-			
-			for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : sctFactLabelCounts.entrySet())
 			{
-				//Find all of the unique drugs that any involved setId points to.
-				HashSet<String> uniqueDrugs = new HashSet<String>();
-				int labelTotal = 0;
-				Hashtable<String, HashSet<String>> factAndLabel = x.getValue();
-				for (HashSet<String> i : factAndLabel.values())
+				StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"code", "concept name", "unique draft facts", "unique label count", "unique drug count"},
+						"\t", "\r\n", new File(getOutputDirectory(), "sct-stats.csv"), "Load stats");
+				
+				for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : sctFactLabelCounts.entrySet())
 				{
-					labelTotal = labelTotal + i.size();
-					for (String setId : i)
+					//Find all of the unique drugs that any involved setId points to.
+					HashSet<String> uniqueDrugs = new HashSet<String>();
+					int labelTotal = 0;
+					Hashtable<String, HashSet<String>> factAndLabel = x.getValue();
+					for (HashSet<String> i : factAndLabel.values())
 					{
-						String drug = reverseDrugMap.get(setId);
-						if (drug != null)
+						labelTotal = labelTotal + i.size();
+						for (String setId : i)
 						{
-							uniqueDrugs.add(drug);
+							String drug = reverseDrugMap.get(setId);
+							if (drug != null)
+							{
+								uniqueDrugs.add(drug);
+							}
 						}
 					}
+					
+					String name = sfncm.getName(x.getKey());
+					sfp.addLine(new String[] {x.getKey(), (name == null ? "" : name), factAndLabel.size() + "", labelTotal + "", uniqueDrugs.size() + ""});
 				}
-				
-				String name = sfncm.getName(x.getKey());
-				sfp.addLine(new String[] {x.getKey(), (name == null ? "" : name), factAndLabel.size() + "", labelTotal + "", uniqueDrugs.size() + ""});
+				sfp.close();
 			}
-			sfp.close();
+			
+			//Print the same stats for the non-snomed concepts.
+			{
+				StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"concept name", "unique draft facts", "unique label count", "unique drug count"},
+						"\t", "\r\n", new File(getOutputDirectory(), "nonsct-stats.csv"), "Load stats");
+				
+				for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : nonSctFactLabelCounts.entrySet())
+				{
+					//Find all of the unique drugs that any involved setId points to.
+					HashSet<String> uniqueDrugs = new HashSet<String>();
+					int labelTotal = 0;
+					Hashtable<String, HashSet<String>> factAndLabel = x.getValue();
+					for (HashSet<String> i : factAndLabel.values())
+					{
+						labelTotal = labelTotal + i.size();
+						for (String setId : i)
+						{
+							String drug = reverseDrugMap.get(setId);
+							if (drug != null)
+							{
+								uniqueDrugs.add(drug);
+							}
+						}
+					}
+					
+					sfp.addLine(new String[] {x.getKey(), factAndLabel.size() + "", labelTotal + "", uniqueDrugs.size() + ""});
+				}
+				sfp.close();
+			}
+			
 			
 			if (mismatchedCurationStateErrors_.size() > 0)
 			{
-				sfp = new StatsFilePrinter(new String[] {"unique key", "previously found state", "newly found state"},
+				StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"unique key", "previously found state", "newly found state"},
 						"\t", "\r\n", new File(getOutputDirectory(), "curationErrors.csv"), "curation state mismatches");
 				
 				for (String[] s : mismatchedCurationStateErrors_)
@@ -692,6 +727,73 @@ public class SplMojo extends AbstractMojo
 			//Ok, we want to load this one.  See if we have already started it.
 			String drugName = fact.getDrugName().toUpperCase();
 			
+//			//TODO hack code for batch 1...
+			if (drugName.equals("HYOSCYAMINE & SCOPOLAMINE & PHENOBARBITAL & ATROPINE"))
+			{
+				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+				for (DraftFact d : splDraftFacts)
+				{
+					if (!d.getCurationState().equalsIgnoreCase("NEW"))
+					{
+						System.out.println(d.getCurationState());
+					}
+				}
+				skipDraftFactForWrongVersion_ += splDraftFacts.size();
+				break;
+			}
+			if (drugName.equals("INTERFERON ALFA-2A"))
+			{
+				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+				for (DraftFact d : splDraftFacts)
+				{
+					if (!d.getCurationState().equalsIgnoreCase("NEW"))
+					{
+						System.out.println(d.getCurationState());
+					}
+				}
+				skipDraftFactForWrongVersion_ += splDraftFacts.size();
+				break;
+			}
+			if (drugName.equals("MECHLORETHAMINE"))
+			{
+				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+				for (DraftFact d : splDraftFacts)
+				{
+					if (!d.getCurationState().equalsIgnoreCase("NEW"))
+					{
+						System.out.println(d.getCurationState());
+					}
+				}
+				skipDraftFactForWrongVersion_ += splDraftFacts.size();
+				break;
+			}
+			if (drugName.equals("OXAPROZIN"))
+			{
+				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+				for (DraftFact d : splDraftFacts)
+				{
+					if (!d.getCurationState().equalsIgnoreCase("NEW"))
+					{
+						System.out.println(d.getCurationState());
+					}
+				}
+				skipDraftFactForWrongVersion_ += splDraftFacts.size();
+				break;
+			}
+			if (drugName.equals("TILMICOSIN"))
+			{
+				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+				for (DraftFact d : splDraftFacts)
+				{
+					if (!d.getCurationState().equalsIgnoreCase("NEW"))
+					{
+						System.out.println(d.getCurationState());
+					}
+				}
+				skipDraftFactForWrongVersion_ += splDraftFacts.size();
+				break;
+			}
+			
 			Drug drug = splDrugConcepts_.get(drugName);
 			
 			if (drug == null)
@@ -759,16 +861,29 @@ public class SplMojo extends AbstractMojo
 			}
 			
 			//Store some other stats....
-			
-			if (fact.getConceptCode().length() > 1)
 			{
-				//A real SCT code.
-				Hashtable<String, HashSet<String>> stats = sctFactLabelCounts.get(fact.getConceptCode());
-				if (stats == null)
+				Hashtable<String, HashSet<String>> stats = null;
+				if (fact.getConceptCode().length() > 1)
 				{
-					stats = new Hashtable<String, HashSet<String>>();
-					sctFactLabelCounts.put(fact.getConceptCode(), stats);
+					
+					//A real SCT code.
+					stats = sctFactLabelCounts.get(fact.getConceptCode());
+					if (stats == null)
+					{
+						stats = new Hashtable<String, HashSet<String>>();
+						sctFactLabelCounts.put(fact.getConceptCode(), stats);
+					}
 				}
+				else
+				{
+					stats = nonSctFactLabelCounts.get(fact.getConceptName());
+					if (stats == null)
+					{
+						stats = new Hashtable<String, HashSet<String>>();
+						nonSctFactLabelCounts.put(fact.getConceptName(), stats);
+					}
+				}
+					
 				HashSet<String> labels = stats.get(existingSdf.getUniqueKey());
 				if (labels == null)
 				{
@@ -777,6 +892,8 @@ public class SplMojo extends AbstractMojo
 				}
 				labels.add(fact.getSplSetId());
 			}
+				
+			//end of other stats...
 			
 			//Add on the unique draft fact data for this instance of the draft fact
 			SimpleDraftFactSource sdfs = new SimpleDraftFactSource(fact.getRowId(), fact.getSplSetId(), version, fact.getSecName(), fact.getSentence(), fact.getDrugCode());
