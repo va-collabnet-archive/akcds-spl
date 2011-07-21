@@ -164,7 +164,6 @@ public class SplMojo extends AbstractMojo
 	private long accept_ = 0;
 	private long reject_ = 0;
 	private long new_ = 0;
-	private long snomedMapUse_ = 0;
 	private long droppedFactsForNoNDAs_ = 0;
 	private long droppedFactsForMissingSpl_ = 0;
 	private int flagCurationDataForConflict_ = 0;
@@ -187,9 +186,6 @@ public class SplMojo extends AbstractMojo
 	
 	private Set<UUID> nonSnomedTerms_ = new HashSet<UUID>();
 	private UUID rootConceptUUID_, nonSnomedRootConceptUUID_;
-	
-	private SnomedCustomNameCodeMap scncm_ = null;
-	
 
 	public SplMojo() throws Exception
 	{
@@ -260,16 +256,14 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("");
 			ConsoleUtil.println("Created " + metadataConceptCounter_ + " initial metadata concepts");
 			
-			//Load the snomed map data - used to fill in missing codes in the BW data.
-			scncm_ = new SnomedCustomNameCodeMap(snomedCustomMapFile);
-			
 			//Index / prepare the SPL zip files
 			ConsoleUtil.println("Preparing SPL source files:");
 			SplDataHolder sdh = new SplDataHolder(splZipFilesFolder.listFiles());
 			
 			// Start iterating the draft facts
 			ConsoleUtil.println("Processing draft facts:");
-			draftFacts = new DraftFacts(getFacts());
+			//Load the snomed map data - used to fill in missing codes in the BW data.
+			draftFacts = new DraftFacts(getFacts(), new SnomedCustomNameCodeMap(snomedCustomMapFile));
 
 		
 			ConsoleUtil.println(new Date().toString());
@@ -411,13 +405,8 @@ public class SplMojo extends AbstractMojo
 			// Summarize
 			ConsoleUtil.println("Total workbench concepts created: " + conceptCounter_);
 			ConsoleUtil.println("Metadata concepts created: " + metadataConceptCounter_);
-			ConsoleUtil.println("Created " + nonSnomedTerms_.size() + " non-snomed concepts");
 			ConsoleUtil.println("SPL Drug Concepts created: " + splDrugConcepts_.size());
 			ConsoleUtil.println("Unique set IDs processed / SPL Set ID concepts created: " + splSetIdConcepts_.size());
-			if ((conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()) != splSetIdConcepts_.size())
-			{
-				ConsoleUtil.printErrorln("Math error in counters!");
-			}
 			ConsoleUtil.println("Processed " + draftFacts.getTotalDraftFactCount() + " draft facts");
 			ConsoleUtil.println("Merged " + duplicateDraftFactMerged_ + " duplicate draft facts onto an existing draft fact.");
 			ConsoleUtil.println("Loaded " + uniqueDraftFactCount_ + " draft facts");
@@ -438,14 +427,45 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Facts Rejected: " + reject_);
 			ConsoleUtil.println("Facts marked as NEW which were remapped into reject: " + new_);
 			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
+			ConsoleUtil.println("Snomed map data used to correct " + draftFacts.getSnomedUseCount() + " draft fact instances");
 			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
-			ConsoleUtil.println("Snomed map data used to correct " + snomedMapUse_ + " instances");
 			ConsoleUtil.println("Unique real SCT concepts " + sctFactLabelCounts.size());
+			ConsoleUtil.println("Created " + nonSnomedTerms_.size() + " non-snomed concepts");
+			
+			
+			//Sanity Checks (detect stupid programmer errors...)
+			{
+				if ((conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()) != splSetIdConcepts_.size())
+				{
+					ConsoleUtil.printErrorln("Math error in counters!");
+				}
+				if (duplicateDraftFactMerged_+ uniqueDraftFactCount_ + skipDraftFactForWrongVersion_  + (isFilterNda() ? droppedFactsForNoNDAs_ : 0) 
+						!= draftFacts.getTotalDraftFactCount())
+				{
+					ConsoleUtil.printErrorln("Programmer Error - draft fact numbers do not add up!");
+				}
+				
+				if (accept_ + reject_ + flagCurationDataForConflict_ !=  uniqueDraftFactCount_)
+				{
+					ConsoleUtil.printErrorln("Programmer Error - draft fact state numbers do not add up!");
+				}
+				
+				if (sctFactLabelCounts.size() + nonSnomedTerms_.size() != uniqueTargetConcepts_.size())
+				{
+					ConsoleUtil.printErrorln("Programmer Error - target counts do not add up!");
+				}
+				
+				if (nonSnomedTerms_.size() != nonSctFactLabelCounts.size())
+				{
+					ConsoleUtil.printErrorln("Programmer Error - non-snomed concept counts do not add up.!");
+				}
+			
+			}
+			
 			
 			//Clear some memory.
 			splDrugConcepts_ = null;
 			splSetIdConcepts_ = null;
-			scncm_ = null;
 			SnomedFullNameCodeMap sfncm = new SnomedFullNameCodeMap(snomedFullMapFile);
 			
 			{
@@ -647,17 +667,14 @@ public class SplMojo extends AbstractMojo
 							{
 								sdfsi.remove();
 								clearedCount++;
-								if (sdf.sources.size() >= 1)
-								{
-									//don't decrement if we went from 1 to 0...
-									duplicateDraftFactMerged_--;
-								}
+								duplicateDraftFactMerged_--;
 							}
 						}
 						//If there are no sources left... then this entire draft fact shouldn't have been created.  Need to un-create it.
 						if (sdf.sources.size() == 0)
 						{
 							uniqueDraftFactCount_--;
+							duplicateDraftFactMerged_++;  //it wasn't a duplicate.  Increment this back, decrement unique count instead.
 							if (sdf.curationState.equalsIgnoreCase("New"))
 							{
 								new_--;
@@ -835,20 +852,8 @@ public class SplMojo extends AbstractMojo
 				else if (fact.getConceptCode().equals("-"))
 				{
 					// if the code is not set then we have a non-snomed concept
-					
-					//See if we can map it using our extra map data.
-					Integer code = scncm_.getCode(fact.getConceptName());
-					if (code != null)
-					{
-						fact.setConceptCode(code.toString());
-						existingSdf.targetCodeUUID = Type3UuidFactory.fromSNOMED(fact.getConceptCode());
-						snomedMapUse_++;
-					}
-					else
-					{
-						existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName()).getBytes());
-						createMissingConceptIfNecessary(existingSdf.targetCodeUUID, fact.getConceptName());
-					}
+					existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName()).getBytes());
+					createMissingConceptIfNecessary(existingSdf.targetCodeUUID, fact.getConceptName());
 				}
 				else // get the snomed concept
 				{
@@ -1253,11 +1258,12 @@ public class SplMojo extends AbstractMojo
 		ConsoleUtil.disableFancy = true;
 		SplMojo mojo = new SplMojo();
 		//new File("../splData/data/splDraftFacts.txt.zip")
-		mojo.facts = new File[] {new File("../splData/data/bwDraftFacts-B1-export-20110629-5.txt.zip"), new File("../splData/data/bwDraftFacts-B2-export-20110707-1.txt.zip")};
+		mojo.facts = new File[] {new File("/media/truecrypt2/Source Data/Draft Facts/bwDraftFacts-B1-export-20110629-5.txt.zip"), 
+				new File("/media/truecrypt2/Source Data/Draft Facts/bwDraftFacts-B2-export-20110707-1.txt.zip")};
 		mojo.rxNormMapFile = new File("../splData/data/splRxNormMapData");
 		mojo.snomedCustomMapFile = new File("../splData/data/snomedCustomNameCodeMap.txt");
 		mojo.snomedFullMapFile = new File("../splData/data/snomedCodeNameMap.txt");
-		mojo.splZipFilesFolder = new File("/media/truecrypt2/Source Data/SPL from BW/temp/");
+		mojo.splZipFilesFolder = new File("/media/truecrypt2/Source Data/SPL from BW/");
 		mojo.outputFileName = "splData.jbin";
 		mojo.filterNda = false;
 		mojo.loadFactsWithMissingSPL = true;

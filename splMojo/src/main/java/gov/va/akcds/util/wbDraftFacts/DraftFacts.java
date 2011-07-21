@@ -1,6 +1,7 @@
 package gov.va.akcds.util.wbDraftFacts;
 
 import gov.va.akcds.util.ConsoleUtil;
+import gov.va.akcds.util.snomedMap.SnomedCustomNameCodeMap;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -28,12 +29,16 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 	
 	private int draftFactCounter = 0;
 	
+	private SnomedCustomNameCodeMap scncm_ = null;
+	private long snomedMapUse_ = 0;
+	
 	/**
 	 * Data file should be a zip file containing only the draft facts text file
 	 */
-	public DraftFacts(File[] dataFiles) throws Exception
+	public DraftFacts(File[] dataFiles, SnomedCustomNameCodeMap scncm) throws Exception
 	{
 		sourceFiles_ = dataFiles;
+		scncm_ = scncm;
 	}
 	
 	private void getNext() throws Exception
@@ -96,6 +101,8 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 							continue;
 						}
 						
+						fixFact(fact);
+						
 						draftFactCounter++;
 						
 						if (currentSetIdVersion == null)
@@ -132,6 +139,10 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 		}
 		if (next_ == null)
 		{
+			//cleanup
+			carryOver_ = null;
+			scncm_ = null;
+			sourceFiles_ = null;
 			return false;
 		}
 		return true;
@@ -163,5 +174,24 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 	public int getTotalDraftFactCount()
 	{
 		return draftFactCounter;
+	}
+	
+	private void fixFact(DraftFact fact)
+	{
+		if (scncm_ != null && fact.getConceptCode().equals("-"))
+		{
+			//See if we can map it using our extra map data.
+			Integer code = scncm_.getCode(fact.getConceptName());
+			if (code != null)
+			{
+				fact.setConceptCode(code.toString());
+				snomedMapUse_++;
+			}
+		}
+	}
+	
+	public long getSnomedUseCount()
+	{
+		return snomedMapUse_;
 	}
 }
