@@ -470,7 +470,7 @@ public class SplMojo extends AbstractMojo
 			
 			{
 				StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"code", "concept name", "unique draft facts", "unique label count", "unique drug count"},
-						"\t", "\r\n", new File(getOutputDirectory(), "sct-stats.csv"), "Load stats");
+						"\t", "\r\n", new File(getOutputDirectory(), "sct-stats.tsv"), "Load stats");
 				
 				for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : sctFactLabelCounts.entrySet())
 				{
@@ -500,7 +500,7 @@ public class SplMojo extends AbstractMojo
 			//Print the same stats for the non-snomed concepts.
 			{
 				StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"concept name", "unique draft facts", "unique label count", "unique drug count"},
-						"\t", "\r\n", new File(getOutputDirectory(), "nonsct-stats.csv"), "Load stats");
+						"\t", "\r\n", new File(getOutputDirectory(), "nonsct-stats.tsv"), "Load stats");
 				
 				for (Map.Entry<String, Hashtable<String, HashSet<String>>> x : nonSctFactLabelCounts.entrySet())
 				{
@@ -530,7 +530,7 @@ public class SplMojo extends AbstractMojo
 			if (mismatchedCurationStateErrors_.size() > 0)
 			{
 				StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"unique key", "previously found state", "newly found state"},
-						"\t", "\r\n", new File(getOutputDirectory(), "curationErrors.csv"), "curation state mismatches");
+						"\t", "\r\n", new File(getOutputDirectory(), "curationErrors.tsv"), "curation state mismatches");
 				
 				for (String[] s : mismatchedCurationStateErrors_)
 				{
@@ -1088,7 +1088,7 @@ public class SplMojo extends AbstractMojo
 		ConsoleUtil.println("SPL as key: " + rxNormMaps.getSplAsKey().size());
 		
 		StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"Drug Name", "SPL -> VUID", "NDC -> VUID", "Unique VUIDs"},
-				"\t", "\r\n", new File(getOutputDirectory(), "mappingStats.csv"), "VUID mapping statistics");
+				"\t", "\r\n", new File(getOutputDirectory(), "mappingStats.tsv"), "VUID mapping statistics");
 			
 		//We only have 8 or 9 digits of the drug code.  RXNorm has more.  Create new maps from rxNorm that have 8 and 9 digits, respectively.
 		Hashtable<String, NdcAsKey> rxNormDrugCodeEightMatch = new Hashtable<String, NdcAsKey>();
