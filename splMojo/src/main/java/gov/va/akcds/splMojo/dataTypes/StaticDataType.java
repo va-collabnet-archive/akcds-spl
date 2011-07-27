@@ -25,6 +25,7 @@ public enum StaticDataType
 	SPL_XML_TEXT("SPL XML Text", "The entire SPL XML document."), 
 	SPL_IMAGE("Image", "An image that is referenced from the SPL XML document"),
 	RXNorm_VUID("rxNorm VUID", "A VUID from rxNorm for this drug concept"), 
+	RXNorm_VUID_TRADENAME("rxNorm Tradename VUID", "A VUID from rxNorm for a tradename_of relation of this drug concept"), 
 	VERSION("Version","Version number of the SPL data load");
 	
 

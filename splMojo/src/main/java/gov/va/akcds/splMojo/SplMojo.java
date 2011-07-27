@@ -387,6 +387,10 @@ public class SplMojo extends AbstractMojo
 				{
 					conceptUtility_.addAnnotation(concept, vuid, StaticDataType.RXNorm_VUID.getUuid());
 				}
+				for (String vuid : d.rxNormTradeNameVuids)
+				{
+					conceptUtility_.addAnnotation(concept, vuid, StaticDataType.RXNorm_VUID_TRADENAME.getUuid());
+				}
 				
 				storeConcept(concept);
 			}
@@ -1087,8 +1091,11 @@ public class SplMojo extends AbstractMojo
 		ConsoleUtil.println("NDC as key: " + rxNormMaps.getNdcAsKey().size());
 		ConsoleUtil.println("SPL as key: " + rxNormMaps.getSplAsKey().size());
 		
-		StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"Drug Name", "SPL -> VUID", "NDC -> VUID", "Unique VUIDs"},
+		StatsFilePrinter sfp = new StatsFilePrinter(new String[] {"Drug Name", "SPL -> VUID", "SPL -> Tradename VUID", "NDC -> VUID", "Unique VUIDs", "Unique Tradename VUIDS"},
 				"\t", "\r\n", new File(getOutputDirectory(), "mappingStats.tsv"), "VUID mapping statistics");
+		
+		StatsFilePrinter splNotInRXNorm_ = new StatsFilePrinter(new String[] { "SPL Concept Name", "Set ID" }, "\t", "\r\n", 
+				new File(getOutputDirectory(), "SPL_Not_in_RXNorm.tsv"), "SPL Not in RXNorm");
 			
 		//We only have 8 or 9 digits of the drug code.  RXNorm has more.  Create new maps from rxNorm that have 8 and 9 digits, respectively.
 		Hashtable<String, NdcAsKey> rxNormDrugCodeEightMatch = new Hashtable<String, NdcAsKey>();
@@ -1109,6 +1116,7 @@ public class SplMojo extends AbstractMojo
 		for (Drug d : splDrugConcepts_.values())
 		{
 			int foundBySpl = 0;
+			int foundBySplTradename = 0;
 			int foundByNDC = 0;
 			for (String setId : d.setIds)
 			{
@@ -1118,8 +1126,14 @@ public class SplMojo extends AbstractMojo
 					for (SplAsKeyData sakd : sak.getCodes())
 					{
 						d.rxNormVuids.addAll(sakd.getVuid());
+						d.rxNormTradeNameVuids.addAll(sakd.getTradenameOfVuids());
 						foundBySpl += sakd.getVuid().size();
+						foundBySplTradename += sakd.getTradenameOfVuids().size();
 					}
+				}
+				else
+				{
+					splNotInRXNorm_.addLine(new String[] {d.drugName, setId});
 				}
 			}
 			
@@ -1142,9 +1156,11 @@ public class SplMojo extends AbstractMojo
 					}
 				}
 			}
-			sfp.addLine(new String[] {d.drugName, foundBySpl + "", foundByNDC + "", d.rxNormVuids.size() + ""});
+			sfp.addLine(new String[] {d.drugName, foundBySpl + "", foundBySplTradename + "", foundByNDC + "",
+					d.rxNormVuids.size() + "", d.rxNormTradeNameVuids.size() + ""});
 		}
 		sfp.close();
+		splNotInRXNorm_.close();
 	}
 	
 	private DynamicDataType getNDAType(String type) throws Exception
