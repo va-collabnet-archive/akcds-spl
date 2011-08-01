@@ -3873,3 +3873,127 @@ Xerostomia
 87715008
 X-ray
 168537006
+Nutrition disorder
+2492009
+Lymphatic vessel disorders
+3305006
+Hallucinating
+7011001
+Dyskinesia syndrome
+9748009
+Acnes
+11381005
+Chronic obstructive pulmonary disorder
+13645005
+Meninges disorder
+15758002
+Nausea and vomiting symptoms
+16932000
+Liver transplantation
+18027006
+Central nervous system disorder
+23853001
+Ear disorder (NOS)
+25906001
+Muscle strength loss
+26544005
+Renal hypertensions
+28119000
+Generalized chest pain
+29857009
+Back disorder
+33308003
+Sleep disorder (NOS)
+39898005
+Failure heart congestive
+42343007
+Circulatory system disorder (NOS)
+49601007
+Respiratory disorder (NOS)
+50043002
+Respiratory system disorder
+50043002
+Disorder respiratory system
+50043002
+Hemorrhage (NOS)
+50960005
+Gastrointestinal perforation (NOS)
+51875005
+Dermatitis, phototoxic
+53597009
+Infarct, Acute
+55470003
+Wheezes
+56018004
+Abnormal muscle
+56273005
+Calculi
+56381008
+Pregnancy trimester, first
+57630001
+First pregnancy trimester
+57630001
+Myocardial disorder
+57809008
+Ketones
+59431004
+Colitis (NOS)
+64226004
+Gastrointestinal tract bleed (NOS)
+74474003
+Breast disorder
+79604008
+Brain disorder
+81308009
+Collagen disorder (NOS)
+81573002
+Heart failure (NOS)
+84114007
+Skin disorder (NOS)
+95320005
+Excitable
+102893002
+Congestion, Acute
+103617007
+Inflammation, Hemorrhagic
+112649006
+Inflammation, Interstitial
+125333009
+Nose neoplasm
+126669004
+TUMOR; LUNG
+126713003
+Pregnancy disorder
+173300003
+Raynauds
+195295006
+Headache disorders
+230461009
+Heart block (NOS)
+233916004
+Damage liver
+243978007
+Dysfunction thyroid
+264580006
+Blood pressure systolic
+271649006
+Proctocolitis ulcerative
+295046003
+Depression bone marrow (NOS)
+307762000
+Coma (NOS)
+371632003
+Cardiovascular risk
+395112001
+Infant, premature
+395507008
+Ischemic cardiac disease
+414545008
+Febrile disorders
+416113008
+Pruritus cutaneous
+418363000
+Cross-sensitivity
+430149006
+Cardiac stress
+432655005
