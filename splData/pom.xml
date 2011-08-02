@@ -23,24 +23,29 @@
 	</properties>
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>attach-data</id>
-						<configuration>
-							<descriptors>
-								<descriptor>resources/assembly/generated-artifact.xml</descriptor>
-							</descriptors>
-						</configuration>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-				</executions>
-			</plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>truezip-maven-plugin</artifactId>
+                <version>1.0-beta-5</version>
+                <executions>
+                    <execution>
+                        <id>attach-data</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <fileset>
+                                <directory>${project.build.directory}</directory>
+                                <includes>
+									<include>*.jbin</include>
+								</includes>
+                                <outputDirectory>${project.build.directory}/${project.build.finalName}.zip</outputDirectory>
+                            </fileset>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 			<plugin>
 				<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
 				<artifactId>splMojo</artifactId>
@@ -54,8 +59,10 @@
 						<phase>generate-resources</phase>
 						<configuration>
 							<facts>
+								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110627-2.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110629-5.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B2-export-20110707-1.txt.zip</param-->
+								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B3-export-20110727-2.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/ElkinDraftFacts.txt.zip</param-->
 								<param>data/draftFacts/SampleDraftFacts.txt.zip</param>
 							</facts>
