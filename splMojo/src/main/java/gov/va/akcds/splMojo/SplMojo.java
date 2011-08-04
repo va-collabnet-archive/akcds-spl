@@ -290,6 +290,9 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("");
 			ConsoleUtil.println("Data loaded, filtered and normalized.  Found " + splDrugConcepts_.size() + " unique drugs.  Searching for RxNorm VUIDs");
 			
+			StatsFilePrinter distributionStats = new StatsFilePrinter(new String[] {"Drug Name", "SPL Count"}, "\t", "\r\n", 
+					new File(getOutputDirectory(), "spl-distribution-stats.tsv"), "SPL Distribution Stats");
+			
 			addVUIDMappings();
 			
 			ConsoleUtil.println("Converting results to workbench format");
@@ -297,6 +300,7 @@ public class SplMojo extends AbstractMojo
 			
 			for (Drug d : splDrugConcepts_.values())
 			{
+				distributionStats.addLine(new String[] {d.drugName, d.setIds.size() + ""});
 				UUID key = UUID.nameUUIDFromBytes((uuidRoot_ + ":" + d.drugName).getBytes());
 
 				EConcept concept = conceptUtility_.createConcept(key, d.drugName, System.currentTimeMillis());
@@ -394,6 +398,8 @@ public class SplMojo extends AbstractMojo
 				
 				storeConcept(concept);
 			}
+			
+			distributionStats.close();
 			
 			//Finally, store the setId concepts
 			for (EConcept concept : splSetIdConcepts_.values())
