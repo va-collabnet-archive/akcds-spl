@@ -46,6 +46,27 @@
                     </execution>
                 </executions>
             </plugin>
+             <plugin>
+		    	<groupId>org.apache.maven.plugins</groupId>
+		    	<artifactId>maven-install-plugin</artifactId>
+		    	<executions>
+					<execution>
+						<id>install-jbin-file</id>
+						<phase>install</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<file>${project.build.directory}/${project.build.finalName}.zip</file>
+							<generatePom>true</generatePom>
+							<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
+							<artifactId>spl-data-test</artifactId>
+							<packaging>zip</packaging>
+							<version>1</version>
+						</configuration>
+					</execution>
+				</executions>
+		    </plugin>
 			<plugin>
 				<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
 				<artifactId>splMojo</artifactId>
