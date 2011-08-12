@@ -3698,8 +3698,6 @@ Uric acid level
 313998007
 Urinary abnormalities
 128606002
-Urinary calcium excretion
-446889005
 Urinary hesitancy
 5972002
 Urinary hesitation
