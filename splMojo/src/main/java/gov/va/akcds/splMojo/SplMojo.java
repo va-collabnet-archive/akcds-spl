@@ -166,6 +166,7 @@ public class SplMojo extends AbstractMojo
 	private long new_ = 0;
 	private long droppedFactsForNoNDAs_ = 0;
 	private long droppedFactsForMissingSpl_ = 0;
+	private long droppedFactsForNot_ = 0;
 	private int flagCurationDataForConflict_ = 0;
 	private HashSet<String> uniqueTargetConcepts_ = new HashSet<String>();
 	private ArrayList<String[]> mismatchedCurationStateErrors_ = new ArrayList<String[]>();
@@ -420,6 +421,7 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Processed " + draftFacts.getTotalDraftFactCount() + " draft facts");
 			ConsoleUtil.println("Merged " + duplicateDraftFactMerged_ + " duplicate draft facts onto an existing draft fact.");
 			ConsoleUtil.println("Loaded " + uniqueDraftFactCount_ + " draft facts");
+			ConsoleUtil.println("Ignored " + droppedFactsForNot_ + " facts because the relationship started with 'not.'");
 			if (isFilterNda())
 			{
 				ConsoleUtil.println("Ignored " + droppedFactsForNoNDAs_ + " facts because the corresponding SPL did not have any NDAs");
@@ -837,6 +839,13 @@ public class SplMojo extends AbstractMojo
 			
 			//Now, set up this draft fact
 			SimpleDraftFact newSdf = new SimpleDraftFact(drugName, fact.getRoleName(), (fact.getConceptCode().equals("-") ? fact.getConceptName() : fact.getConceptCode()));
+			
+			if (newSdf.relName.toLowerCase().startsWith("not."))
+			{
+				droppedFactsForNot_++;
+				continue;
+			}
+			
 			SimpleDraftFact existingSdf = drug.draftFacts.get(newSdf.getUniqueKey());
 				
 			if (existingSdf == null)
