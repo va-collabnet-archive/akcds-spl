@@ -451,7 +451,11 @@ public class SplMojo extends AbstractMojo
 				{
 					ConsoleUtil.printErrorln("Math error in counters!");
 				}
-				if (duplicateDraftFactMerged_+ uniqueDraftFactCount_ + skipDraftFactForWrongVersion_  + (isFilterNda() ? droppedFactsForNoNDAs_ : 0) 
+				if (duplicateDraftFactMerged_ 
+						+ uniqueDraftFactCount_ 
+						+ skipDraftFactForWrongVersion_  
+						+ (isFilterNda() ? droppedFactsForNoNDAs_ : 0)
+						+ droppedFactsForNot_
 						!= draftFacts.getTotalDraftFactCount())
 				{
 					ConsoleUtil.printErrorln("Programmer Error - draft fact numbers do not add up!");
