@@ -84,6 +84,7 @@
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110629-5.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B2-export-20110707-1.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B3-export-20110727-2.txt.zip</param-->
+								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B4-export-20110821-1.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/ElkinDraftFacts.txt.zip</param-->
 								<param>data/draftFacts/SampleDraftFacts.txt.zip</param>
 							</facts>
@@ -92,6 +93,7 @@
 							<splZipFilesFolder>data/splZipFiles/</splZipFilesFolder>
 							<rxNormMapFile>data/splRxNormMapData</rxNormMapFile>
 							<snomedCustomMapFile>data/snomedCustomNameCodeMap.txt</snomedCustomMapFile>
+							<draftFactRemapFile>data/draftFactRemap.txt</draftFactRemapFile>
 							<snomedFullMapFile>../../../../Source Data/snomedFullCodeNameMap.txt</snomedFullMapFile>
 							<outputFileName>splData.jbin</outputFileName>
 							<filterNda>false</filterNda>
