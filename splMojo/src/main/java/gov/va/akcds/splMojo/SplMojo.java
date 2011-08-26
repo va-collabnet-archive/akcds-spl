@@ -26,6 +26,7 @@ import gov.va.akcds.util.snomedMap.SnomedCustomNameCodeMap;
 import gov.va.akcds.util.snomedMap.SnomedFullNameCodeMap;
 import gov.va.akcds.util.wbDraftFacts.DraftFact;
 import gov.va.akcds.util.wbDraftFacts.DraftFacts;
+import gov.va.akcds.util.wbDraftFacts.ManualTargetRemap;
 import gov.va.akcds.util.zipUtil.ZipFileContent;
 
 import java.io.BufferedOutputStream;
@@ -139,6 +140,14 @@ public class SplMojo extends AbstractMojo
 	private File snomedCustomMapFile;
 	
 	/**
+	 * Location of the custom draft fact remap data.  Optional
+	 * 
+	 * @parameter
+	 * @optional
+	 */
+	private File draftFactRemapFile;
+	
+	/**
 	 * Location of the full snomed mapping data.  Optional
 	 * 
 	 * @parameter
@@ -187,6 +196,9 @@ public class SplMojo extends AbstractMojo
 	
 	private Set<UUID> nonSnomedTerms_ = new HashSet<UUID>();
 	private UUID rootConceptUUID_, nonSnomedRootConceptUUID_;
+	
+//	private StatsFilePrinter cdifData_ = new StatsFilePrinter(new String[] {"Row ID", "Drug Name", "Role", "Target Code", "Sentence"}, "\t", "\r\n", 
+//			new File(getOutputDirectory(), "cdifData.tsv"), "Cdif Data");
 
 	public SplMojo() throws Exception
 	{
@@ -264,7 +276,7 @@ public class SplMojo extends AbstractMojo
 			// Start iterating the draft facts
 			ConsoleUtil.println("Processing draft facts:");
 			//Load the snomed map data - used to fill in missing codes in the BW data.
-			draftFacts = new DraftFacts(getFacts(), new SnomedCustomNameCodeMap(snomedCustomMapFile));
+			draftFacts = new DraftFacts(getFacts(), new SnomedCustomNameCodeMap(snomedCustomMapFile), new ManualTargetRemap(draftFactRemapFile));
 
 		
 			ConsoleUtil.println(new Date().toString());
@@ -288,6 +300,9 @@ public class SplMojo extends AbstractMojo
 				}
 			}
 			
+//			//Done with this.
+//			cdifData_.close();
+			
 			ConsoleUtil.println("");
 			ConsoleUtil.println("Data loaded, filtered and normalized.  Found " + splDrugConcepts_.size() + " unique drugs.  Searching for RxNorm VUIDs");
 			
@@ -298,9 +313,23 @@ public class SplMojo extends AbstractMojo
 			
 			ConsoleUtil.println("Converting results to workbench format");
 			
+			//Reduce memory footprint
+			ArrayList<Drug> drugs = new ArrayList<Drug>(splDrugConcepts_.size());
 			
-			for (Drug d : splDrugConcepts_.values())
+			Iterator<String> keys = splDrugConcepts_.keySet().iterator();
+			while (keys.hasNext())
 			{
+				String key = keys.next();
+				drugs.add(splDrugConcepts_.get(key));
+				keys.remove();
+			}
+			splDrugConcepts_ = null;
+			
+			
+			for (int j = 0; j < drugs.size(); j++)
+			{
+				Drug d = drugs.get(j);
+				drugs.set(j, null);  //clear memory as we go
 				distributionStats.addLine(new String[] {d.drugName, d.setIds.size() + ""});
 				UUID key = UUID.nameUUIDFromBytes((uuidRoot_ + ":" + d.drugName).getBytes());
 
@@ -416,7 +445,7 @@ public class SplMojo extends AbstractMojo
 			// Summarize
 			ConsoleUtil.println("Total workbench concepts created: " + conceptCounter_);
 			ConsoleUtil.println("Metadata concepts created: " + metadataConceptCounter_);
-			ConsoleUtil.println("SPL Drug Concepts created: " + splDrugConcepts_.size());
+			ConsoleUtil.println("SPL Drug Concepts created: " + drugs.size());
 			ConsoleUtil.println("Unique set IDs processed / SPL Set ID concepts created: " + splSetIdConcepts_.size());
 			ConsoleUtil.println("Processed " + draftFacts.getTotalDraftFactCount() + " draft facts");
 			ConsoleUtil.println("Merged " + duplicateDraftFactMerged_ + " duplicate draft facts onto an existing draft fact.");
@@ -439,6 +468,7 @@ public class SplMojo extends AbstractMojo
 			ConsoleUtil.println("Facts Rejected: " + reject_);
 			ConsoleUtil.println("Facts marked as NEW which were remapped into reject: " + new_);
 			ConsoleUtil.println("Facts flagged for review: " + flagCurationDataForConflict_);		
+			ConsoleUtil.println("Manual draft fact remap used to correct " + draftFacts.getManualRemapUseCount() + " draft facts.");
 			ConsoleUtil.println("Snomed map data used to correct " + draftFacts.getSnomedUseCount() + " draft fact instances");
 			ConsoleUtil.println("Unique target concepts: " + uniqueTargetConcepts_.size());	
 			ConsoleUtil.println("Unique real SCT concepts " + sctFactLabelCounts.size());
@@ -447,7 +477,7 @@ public class SplMojo extends AbstractMojo
 			
 			//Sanity Checks (detect stupid programmer errors...)
 			{
-				if ((conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - splDrugConcepts_.size()) != splSetIdConcepts_.size())
+				if ((conceptCounter_ - metadataConceptCounter_ - nonSnomedTerms_.size() - drugs.size()) != splSetIdConcepts_.size())
 				{
 					ConsoleUtil.printErrorln("Math error in counters!");
 				}
@@ -480,7 +510,6 @@ public class SplMojo extends AbstractMojo
 			
 			
 			//Clear some memory.
-			splDrugConcepts_ = null;
 			splSetIdConcepts_ = null;
 			SnomedFullNameCodeMap sfncm = new SnomedFullNameCodeMap(snomedFullMapFile);
 			
@@ -760,70 +789,8 @@ public class SplMojo extends AbstractMojo
 			//Ok, we want to load this one.  See if we have already started it.
 			String drugName = fact.getDrugName().toUpperCase();
 			
-//			//TODO hack code for batch 1...
-			if (drugName.equals("HYOSCYAMINE & SCOPOLAMINE & PHENOBARBITAL & ATROPINE"))
+			if (skipBadDataFromBatchOne(fact, drugName, splDraftFacts))
 			{
-				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
-				for (DraftFact d : splDraftFacts)
-				{
-					if (!d.getCurationState().equalsIgnoreCase("NEW"))
-					{
-						System.out.println(d.getCurationState());
-					}
-				}
-				skipDraftFactForWrongVersion_ += splDraftFacts.size();
-				break;
-			}
-			if (drugName.equals("INTERFERON ALFA-2A"))
-			{
-				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
-				for (DraftFact d : splDraftFacts)
-				{
-					if (!d.getCurationState().equalsIgnoreCase("NEW"))
-					{
-						System.out.println(d.getCurationState());
-					}
-				}
-				skipDraftFactForWrongVersion_ += splDraftFacts.size();
-				break;
-			}
-			if (drugName.equals("MECHLORETHAMINE"))
-			{
-				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
-				for (DraftFact d : splDraftFacts)
-				{
-					if (!d.getCurationState().equalsIgnoreCase("NEW"))
-					{
-						System.out.println(d.getCurationState());
-					}
-				}
-				skipDraftFactForWrongVersion_ += splDraftFacts.size();
-				break;
-			}
-			if (drugName.equals("OXAPROZIN"))
-			{
-				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
-				for (DraftFact d : splDraftFacts)
-				{
-					if (!d.getCurationState().equalsIgnoreCase("NEW"))
-					{
-						System.out.println(d.getCurationState());
-					}
-				}
-				skipDraftFactForWrongVersion_ += splDraftFacts.size();
-				break;
-			}
-			if (drugName.equals("TILMICOSIN"))
-			{
-				ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
-				for (DraftFact d : splDraftFacts)
-				{
-					if (!d.getCurationState().equalsIgnoreCase("NEW"))
-					{
-						System.out.println(d.getCurationState());
-					}
-				}
-				skipDraftFactForWrongVersion_ += splDraftFacts.size();
 				break;
 			}
 			
@@ -849,6 +816,17 @@ public class SplMojo extends AbstractMojo
 				droppedFactsForNot_++;
 				continue;
 			}
+			
+//			//Cdif check
+//			if (newSdf.targetCode.equals("62315008"))
+//			{
+//				if (fact.getSentence().toLowerCase().indexOf("clostridium difficile") >= 0 ||
+//						fact.getSentence().toLowerCase().indexOf("c. difficile") >= 0 ||
+//						fact.getSentence().toLowerCase().indexOf("cdad") >= 0)
+//				{
+//					cdifData_.addLine(new String[] {fact.getRowId(), drugName, newSdf.relName, newSdf.targetCode, fact.getSentence()});
+//				}
+//			}
 			
 			SimpleDraftFact existingSdf = drug.draftFacts.get(newSdf.getUniqueKey());
 				
@@ -1027,6 +1005,82 @@ public class SplMojo extends AbstractMojo
 				}
 			}
 		}
+	}
+	
+	private boolean skipBadDataFromBatchOne(DraftFact fact, String drugName, ArrayList<DraftFact> splDraftFacts)
+	{
+		if (fact.getFromFileName().indexOf("bwDraftFacts-B1-export-20110629-5") < 0)
+		{
+			//only check if it is from batch 1.
+			return false;
+		}
+		if (drugName.equals("HYOSCYAMINE & SCOPOLAMINE & PHENOBARBITAL & ATROPINE"))
+		{
+			ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+			for (DraftFact d : splDraftFacts)
+			{
+				if (!d.getCurationState().equalsIgnoreCase("NEW"))
+				{
+					System.out.println(d.getCurationState());
+				}
+			}
+			skipDraftFactForWrongVersion_ += splDraftFacts.size();
+			return true;
+		}
+		if (drugName.equals("INTERFERON ALFA-2A"))
+		{
+			ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+			for (DraftFact d : splDraftFacts)
+			{
+				if (!d.getCurationState().equalsIgnoreCase("NEW"))
+				{
+					System.out.println(d.getCurationState());
+				}
+			}
+			skipDraftFactForWrongVersion_ += splDraftFacts.size();
+			return true;
+		}
+		if (drugName.equals("MECHLORETHAMINE"))
+		{
+			ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+			for (DraftFact d : splDraftFacts)
+			{
+				if (!d.getCurationState().equalsIgnoreCase("NEW"))
+				{
+					System.out.println(d.getCurationState());
+				}
+			}
+			skipDraftFactForWrongVersion_ += splDraftFacts.size();
+			return true;
+		}
+		if (drugName.equals("OXAPROZIN"))
+		{
+			ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+			for (DraftFact d : splDraftFacts)
+			{
+				if (!d.getCurationState().equalsIgnoreCase("NEW"))
+				{
+					System.out.println(d.getCurationState());
+				}
+			}
+			skipDraftFactForWrongVersion_ += splDraftFacts.size();
+			return true;
+		}
+		if (drugName.equals("TILMICOSIN"))
+		{
+			ConsoleUtil.println("Skipping " + drugName + " - " + splDraftFacts.size());
+			for (DraftFact d : splDraftFacts)
+			{
+				if (!d.getCurationState().equalsIgnoreCase("NEW"))
+				{
+					System.out.println(d.getCurationState());
+				}
+			}
+			skipDraftFactForWrongVersion_ += splDraftFacts.size();
+			return true;
+		}
+		
+		return false;
 	}
 	
 	private UUID getUUIDForSpl(Spl spl)

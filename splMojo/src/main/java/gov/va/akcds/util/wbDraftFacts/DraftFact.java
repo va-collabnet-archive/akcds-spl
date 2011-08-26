@@ -2,9 +2,11 @@ package gov.va.akcds.util.wbDraftFacts;
 
 
 public class DraftFact {
-	public DraftFact(String initString) {
+	public DraftFact(String initString, String fromFileName) {
 		String[] tokens = initString.split("\t");
 
+		this.fromFileName = fromFileName;
+		
 		this.rowId = tokens[0];
 		this.splSetId = tokens[1].toUpperCase();
 		this.splDirName = tokens[2];
@@ -90,6 +92,8 @@ public class DraftFact {
 	private String curationState;
 	private String comment;
 	private String splVersion;
+	
+	private String fromFileName;
 
 	public String getRowId() {
 		return rowId;
@@ -311,6 +315,11 @@ public class DraftFact {
 		this.splVersion = version;
 	}
 	
+	public String getFromFileName()
+	{
+		return fromFileName;
+	}
+	
 	/**
 	 * Dump it back out in the format we read it in.
 	 * @return
@@ -318,6 +327,11 @@ public class DraftFact {
 	public String format()
 	{
 		StringBuilder sb = new StringBuilder();
+		if (this.fromFileName != null && this.fromFileName.length() > 0)
+		{
+			sb.append(this.fromFileName);
+			sb.append("\t");
+		}
 		sb.append(this.rowId);
 		sb.append("\t");
 		sb.append(this.splSetId);

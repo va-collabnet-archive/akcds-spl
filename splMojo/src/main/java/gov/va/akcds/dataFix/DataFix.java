@@ -51,7 +51,7 @@ public class DataFix
 			{
 				if (str.trim().length() > 0)
 				{
-					DraftFact fact = new DraftFact(str);
+					DraftFact fact = new DraftFact(str, factsIn.getName());
 					
 					if (fact.getRoleName().startsWith("not."))
 					{

@@ -2,6 +2,7 @@ package gov.va.akcds.util.wbDraftFacts;
 
 import gov.va.akcds.util.ConsoleUtil;
 import gov.va.akcds.util.snomedMap.SnomedCustomNameCodeMap;
+import gov.va.akcds.util.wbDraftFacts.ManualTargetRemap.ReplacementTarget;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -30,15 +31,18 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 	private int draftFactCounter = 0;
 	
 	private SnomedCustomNameCodeMap scncm_ = null;
+	private ManualTargetRemap mtr_ = null;
 	private long snomedMapUse_ = 0;
+	private long manualRemapUse_ = 0;
 	
 	/**
 	 * Data file should be a zip file containing only the draft facts text file
 	 */
-	public DraftFacts(File[] dataFiles, SnomedCustomNameCodeMap scncm) throws Exception
+	public DraftFacts(File[] dataFiles, SnomedCustomNameCodeMap scncm, ManualTargetRemap mtr) throws Exception
 	{
 		sourceFiles_ = dataFiles;
 		scncm_ = scncm;
+		mtr_ = mtr;
 	}
 	
 	private void getNext() throws Exception
@@ -93,7 +97,7 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 				{
 					if (str.trim().length() > 0)
 					{
-						DraftFact fact = new DraftFact(str);
+						DraftFact fact = new DraftFact(str, sourceFiles_[sourceFile_].getName());
 						String setId = fact.getSplSetId();
 						if (setId.equals("SPL_SET_ID"))
 						{
@@ -142,6 +146,7 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 			//cleanup
 			carryOver_ = null;
 			scncm_ = null;
+			mtr_ = null;
 			sourceFiles_ = null;
 			return false;
 		}
@@ -178,6 +183,16 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 	
 	private void fixFact(DraftFact fact)
 	{
+		if (mtr_ != null)
+		{
+			ReplacementTarget rt = mtr_.getRemap(fact.getRowId());
+			if (rt != null)
+			{
+				fact.setDrugCode(rt.targetDrugCode);
+				fact.setDrugName(rt.targetDrugName);
+				manualRemapUse_++;
+			}
+		}
 		if (scncm_ != null && fact.getConceptCode().equals("-"))
 		{
 			//See if we can map it using our extra map data.
@@ -193,5 +208,10 @@ public class DraftFacts implements Enumeration<ArrayList<DraftFact>> {
 	public long getSnomedUseCount()
 	{
 		return snomedMapUse_;
+	}
+	
+	public long getManualRemapUseCount()
+	{
+		return manualRemapUse_;
 	}
 }
