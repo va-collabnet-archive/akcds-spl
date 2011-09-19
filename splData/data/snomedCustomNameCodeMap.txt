@@ -3628,3 +3628,141 @@ Bone remodeling
 370549005
 Leukemic infiltration
 446688004
+Fatigueability
+84229001
+Rash and itching
+418290006
+Metastatic neoplastic disorder
+405843009
+Thoracic pain
+22913005
+Testicular function
+73820008
+Ventricular disorder
+44103008
+Congenital ocular motor apraxia
+53863007
+Blood hemoglobin
+38082009
+Acromesomelic dysplasia, maroteaux type
+279082008
+Cerebritis
+129132000
+Depressed mood disorders
+35489007
+Bilateral abnormal vision
+7973008
+Icteric hepatitis
+18165001
+Breast cancer male
+126937006
+White cells
+52501007
+Increased hemorrhage
+50960005
+Ventricular myocardial infarction
+22298006
+ventricular rate
+250876000
+Anxiety/depression
+231504006
+Increased bleeding
+131148009
+Cardiac necrosis
+6574001
+Ventricular infarction
+22298006
+Ventricular heart failure
+84114007
+Tenderness (NOS)
+247348008
+Cardiac hypertension
+38341003
+Febrile infection
+416113008
+Platelet disorder, familial, with associated myeloid malignancy
+22716005
+Anticonvulsant toxicity
+42377002
+Phosphatase alkaline increased
+274770006
+Lung pneumonia
+233604007
+Infection of amniotic sac and membranes
+10573002
+Thrombocytopenic hemorrhage
+302215000
+ventricular myocardial necrosis
+251061000
+Postmenopausal period
+307429007
+Xerosis
+89105000
+Raised bilirubin
+166612004
+Circulatory system disorder
+49601007
+Drug toxicity (NOS)
+7895008
+Urticarial erythema
+247472004
+Abnormal heart function
+301181009
+Diagnostic ultrasound
+16310003
+Perforated bleeding
+131148009
+Gastrointestinal ulcer bleeding
+74474003
+Muscular rigor
+16046003
+Gastrointestinal ulcer hemorrhage
+74474003
+Febrile reaction
+386661006
+Hemorrhage abnormal
+50960005
+Abnormal bleeding
+131148009
+DIABETES MELLITUS MATURITY ONSET
+190372001
+Phlebitis thrombosis
+61599003
+Congenital disorder of kidney
+92921005
+Menopausal effects NEC
+21801002
+Bipolar affective disorder, depressed
+191627008
+Severe heart failure
+84114007
+Injury to kidney, without mention of open wound into cavity
+20341008
+Renal function disorder
+197663003
+Menstruation prolonged
+386692008
+Fetal growth retardation, unspecified {weight}
+22033007
+cerebrovascular dysfunction
+62914000
+Throat sore
+162397003
+Urticarial wheal
+247472004
+Ischemic disease
+414545008
+Polymicrogyria, bilateral perisylvian
+438583008
+Renal stenosis
+302233006
+Sperm ejaculation
+40335009
+Intestinal disorder
+85919009
+Endocrine disorder (NOS)
+362969004
+Acute nasal congestion
+68235000
+Pulmonary failure
+409622000
