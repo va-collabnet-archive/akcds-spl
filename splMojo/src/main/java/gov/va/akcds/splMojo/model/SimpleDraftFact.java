@@ -17,9 +17,9 @@ public class SimpleDraftFact
 	
 	public SimpleDraftFact(String drugName, String relName, String targetCode)
 	{
-		this.drugName = drugName;
-		this.relName = relName;
-		this.targetCode = targetCode;
+		this.drugName = drugName.trim();
+		this.relName = relName.toUpperCase().trim();
+		this.targetCode = targetCode.toUpperCase().trim();  //this may be a name, in some cases.
 	}
 
 	public String getUniqueKey()

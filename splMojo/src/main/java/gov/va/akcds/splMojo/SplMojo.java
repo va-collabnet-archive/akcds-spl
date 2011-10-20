@@ -802,7 +802,7 @@ public class SplMojo extends AbstractMojo
 				splDrugConcepts_.put(drugName, drug);
 			}
 			
-			//Also load this mapping hashtable (used for stats, also used for "undos")
+			//Also load this mapping hashtable (used for stats, also used for "undo's")
 			reverseDrugMap.put(fact.getSplSetId(), drugName);
 			
 			drug.setIdUUIDs.add(setIdUUID);
@@ -853,7 +853,7 @@ public class SplMojo extends AbstractMojo
 				else if (fact.getConceptCode().equals("-"))
 				{
 					// if the code is not set then we have a non-snomed concept
-					existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName()).getBytes());
+					existingSdf.targetCodeUUID = UUID.nameUUIDFromBytes((uuidRoot_ + ":root:non-snomed:" + fact.getConceptName().toUpperCase().trim()).getBytes());
 					createMissingConceptIfNecessary(existingSdf.targetCodeUUID, fact.getConceptName());
 				}
 				else // get the snomed concept
@@ -882,11 +882,11 @@ public class SplMojo extends AbstractMojo
 				}
 				else
 				{
-					stats = nonSctFactLabelCounts.get(fact.getConceptName());
+					stats = nonSctFactLabelCounts.get(fact.getConceptName().toUpperCase().trim());
 					if (stats == null)
 					{
 						stats = new Hashtable<String, HashSet<String>>();
-						nonSctFactLabelCounts.put(fact.getConceptName(), stats);
+						nonSctFactLabelCounts.put(fact.getConceptName().toUpperCase().trim(), stats);
 					}
 				}
 					

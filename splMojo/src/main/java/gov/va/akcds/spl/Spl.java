@@ -22,7 +22,7 @@ public class Spl
 	private String setId_, version_, firstApprovedDate_;
 	private HashSet<NDA> uniqueNdas_ = new HashSet<NDA>();
 	
-	private static final HashSet<String> ndaTypesToDrop_ = new HashSet<String>(Arrays.asList(new String[] {"ANADA", "NADA", "part"}));
+	private static final HashSet<String> ndaTypesToDrop_ = new HashSet<String>(Arrays.asList(new String[] {"ANADA", "NADA", "PART"}));
 
 	/**
 	 * Hack constructor for inventing an SPL when the real one can't be found.

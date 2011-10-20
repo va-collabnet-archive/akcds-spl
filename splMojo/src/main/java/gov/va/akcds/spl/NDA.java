@@ -16,7 +16,7 @@ public class NDA
 				break;
 			}
 		}
-		type_ = rawValue.substring(0, split);
+		type_ = rawValue.substring(0, split).toUpperCase();
 		value_ = rawValue.substring(split, rawValue.length());
 	}
 
