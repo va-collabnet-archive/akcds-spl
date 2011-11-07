@@ -16,7 +16,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<wb-toolkit.version>2.6.0-trek-38</wb-toolkit.version>
+		<wb-toolkit.version>2.6.0-trek-52</wb-toolkit.version>
 	</properties>
 
 	<!-- dependency management -->
