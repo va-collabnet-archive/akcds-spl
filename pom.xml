@@ -6,11 +6,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.apelon.va.ihtsdo.wb.akcds</groupId>
-	<artifactId>akcds</artifactId>
+	<artifactId>akcds-spl</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>akcds</name>
-	<description>akcds</description>
+	<name>akcds-spl</name>
+	<description>akcds-spl</description>
 
 	<!-- properties -->
 
@@ -79,8 +79,8 @@
 	<!-- modules -->
 
 	<modules>
-		<module>splMojo</module>
-		<module>splData</module>
+		<module>akcds-spl-mojo</module>
+		<module>akcds-spl-data</module>
 	</modules>
 
 </project>
