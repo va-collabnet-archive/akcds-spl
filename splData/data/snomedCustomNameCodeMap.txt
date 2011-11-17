@@ -3766,3 +3766,89 @@ Acute nasal congestion
 68235000
 Pulmonary failure
 409622000
+Alk phos
+57056007
+Blood beryllium
+88014003
+Blood ACTH
+40789008
+Arterial disorder
+359557001
+coronary dysfunction
+53741008
+Creatinine high
+166717003
+Creatinine blood increased
+166717003
+Abdominal disorder
+118948005
+Sonogram
+16310003
+Ventricular obstruction
+448581008
+Blood bilirubin total
+359986008
+Low density lipoprotein level
+22644003
+Cardiac risk
+395112001
+Obstructive lung disorder
+13645005
+Blood cholesterol level
+365793008
+Anxiety symptoms
+48694002
+Paranasal sinus infection
+36971009
+Blood triglyceride level
+365796000
+Angioneurotic edema of the face
+445088006
+Reproduction disease
+362968007
+Mean BP decreased
+31013001
+Mean blood pressure decreased
+31013001
+Estrogen level
+373622004
+Artery stenosis
+68109007
+A-H interval
+251131006
+Pseudomembranes
+399016005
+Renin level
+391479001
+Recurrent depressive disorder
+191616006
+Estrogens increased
+110367001
+Anti-infective therapy
+47943005
+Melancholic depression
+320751009
+Bone disorder (NOS)
+76069003
+Low density lipoprotein apheresis
+448955002
+Blood and lymphatic system disorders NOS
+312425004
+Blood and lymphatic system disorder NOS
+312425004
+Bone density
+385342005
+Hemopoiesis
+127400004
+Alk phos raised
+166627004
+Voiding disorder
+236657002
+Serum liver enzyme level
+365769003
+Intravenous fluids
+118431008
+Ileitis, Regional
+52457000
+Acute bronchospasm
+4386001
