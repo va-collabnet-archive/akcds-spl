@@ -80,7 +80,6 @@
 						<phase>generate-resources</phase>
 						<configuration>
 							<facts>
-								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110627-2.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B1-export-20110629-5.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B2-export-20110707-1.txt.zip</param-->
 								<!--param>../../../../Source Data/Draft Facts/bwDraftFacts-B3-export-20110727-2.txt.zip</param-->
